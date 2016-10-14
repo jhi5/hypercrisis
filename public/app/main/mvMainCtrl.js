@@ -1,12 +1,7 @@
-angular.module('app').controller('mvMainCtrl', function($scope, $timeout, $location, mvCachedPolls, mvIdentity) {
+angular.module('app').controller('mvMainCtrl', function($scope, $timeout, $location, mvIdentity) {
 	
 	/* places user identity on the scope */
 	$scope.identity = mvIdentity;
-
-	/* places a list of polls on the scope */
-	mvCachedPolls.query().$promise.then(function(collection){
-		$scope.polls = collection;
-    });
 
 	/* set sorting options via angular */
 	$scope.sortOptions = [{

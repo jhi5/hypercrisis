@@ -1,12 +1,9 @@
 angular.module('app').factory('mvUser', function($resource){
-
-	/* Pulls info from database via api, then returns permissions*/
-	var UserResource = $resource('/api/users/:id', {_id: "@id"}, {
+	var UserResource = $resource('/api/users/:id', {_id: '@id'}, {
 		update: {method: 'PUT', isArray: false}
 	});
 	UserResource.prototype.isAdmin = function(){
 		return this.roles && this.roles.indexOf('admin') > -1;
 	}
-
 	return UserResource;
 });

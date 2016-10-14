@@ -1,7 +1,6 @@
-/* Setting up mongo for dev vs production */
+/* including paths for mongo */
 var path = require('path');
-var rootPath = path.normalize(__dirname + '/../../')
-
+var rootPath = path.normalize(__dirname + '/../../');
 
 module.exports = {
 	development: {
@@ -10,8 +9,8 @@ module.exports = {
 		port: process.env.PORT || 3000
 	},
 	production: {
-		db: 'mongodb://jhi5:1337SNKj@ds035826.mlab.com:35826/hypercrisis',
+		db: 'mongodb://jhi5:1337SNKj@',
 		rootPath: rootPath,
-		prot: process.env.PORT || 80
+		port: process.env.PORT || 80
 	}
 }

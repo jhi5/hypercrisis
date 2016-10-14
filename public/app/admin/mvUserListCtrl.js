@@ -1,4 +1,6 @@
-angular.module('app').controller('mvUserListCtrl', function($scope, mvUser){
-	/* Creates a list of users based on info from mvUser */
-	$scope.users = mvUser.query();
-})
+angular.module('app').controller('mvUserListCtrl', function($scope, $timeout, $location, mvIdentity) {
+	
+	/* places user identity on the scope */
+	$scope.identity = mvIdentity;
+
+});

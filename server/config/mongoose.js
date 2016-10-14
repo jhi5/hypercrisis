@@ -1,16 +1,17 @@
-/* mongoose for parsing, models for db schema */
+/* mongoose & data model includes */
 var mongoose = require('mongoose'),
 	userModel = require('../models/User'),
-	pollModel = require('../models/Poll');
+	cardModel = require('../models/Card'),
+	deckModel = require('../models/Deck'),
+	articleModel = require('../models/Article');
 
-/* creates the mongo instance & connects to the config */
+/* creates the mongo instance & connects */
 module.exports = function(config){
 	mongoose.connect(config.db);
 	var db = mongoose.connection;
-	db.on('error', console.error.bind(console, 'connection error...'));
+	db.on('error', console.error.bind(console, 'mongoose connection error...'));
 	db.once('open', function callback(){
-		console.log('db opened');
+		console.log('mongoose connection secured! db opening...')
 	});
-
 	userModel.createDefaultUsers();
 }

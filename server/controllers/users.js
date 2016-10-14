@@ -1,14 +1,12 @@
-var User = require('mongoose').model('User'),
-encrypt = require('../utilities/encryption');
+var User = require('mongoose').model("User"),
+	encrypt = require('../utilities/encryption');
 
-/* get all users */
-exports.getUsers = function(req, res) {
-	User.find({}).exec(function(err, collection) {
+exports.getUsers = function(req, res){
+	User.find({}).exec(function(err, collection){
 		res.send(collection);
-	});
+	})
 }
 
-/* creates a new user and encrypts */
 exports.createUser = function(req, res, next){
 	var userData = req.body;
 	userData.username = userData.username.toLowerCase();
@@ -17,8 +15,8 @@ exports.createUser = function(req, res, next){
 	userData.hashed_pwd = encrypt.hashPwd(userData.salt, userData.password);
 	User.create(userData, function(err, user){
 		if(err){
-			if(err.toString().indexOf('E11000') > -1){
-				err = new Error("Duplicate Username");
+			if(err.toString().indexof('E11000') > -1){
+				err = new Error("Duplicate Username!");
 			}
 			res.status(400);
 			return res.send({reason:err.toString()});
@@ -30,9 +28,8 @@ exports.createUser = function(req, res, next){
 	})
 }
 
-/* updates user in db based on data from api rout */
 exports.updateUser = function(req, res){
-	var userUpdates = req.body;
+	var userUPdates = req.body;
 	if(req.user._id != userUpdates._id && !req.user.hasRole('admin')){
 		res.status(403);
 		return res.end();
@@ -42,10 +39,10 @@ exports.updateUser = function(req, res){
 	req.user.username = userUpdates.username;
 	if(userUpdates.password && userUpdates.password.length > 0){
 		req.user.salt = encrypt.createSalt();
-		req.user.hashed_pwd = encrypt.hashPwd(req.user.salt, userUpdates.password)
+		req.user.hashed_pwd = encrypt.hashPwd(req.user.sale, userUpdates.password);
 	}
 	req.user.save(function(err){
-		if(err){res.status(400); return res.send({reason:err.toString()}); } 
+		if(err){res.status(400); return res.send({reason:err.toString()}); }
 		res.send(req.user);
 	});
 }

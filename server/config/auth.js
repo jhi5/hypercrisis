@@ -1,11 +1,10 @@
-/* Include passport for encryption */
+/* include passport */
 var passport = require('passport');
 
-/* Exports a user authentication function to the api route based
-on mongoDB value comparisons*/
+/* user auth */
 exports.authenticate = function(req, res, next){
 	req.body.username = req.body.username.toLowerCase();
-		var auth = passport.authenticate('local', function(err, user){
+		var auth = passport.authenticate('local', function (err, user){
 			if(err){
 				return next(err);
 			}
@@ -17,23 +16,23 @@ exports.authenticate = function(req, res, next){
 				if(err){
 					return next(err);
 				}
-				res.send({success: true, user: user});
+				res.send({success: true, user:user});
 			});
 		});
 	auth(req, res, next);
 }
 
-/* Prevents unverified users from accessing the api */
+/* blocks non-verified user from api */
 exports.requiresApiLogin = function(req, res, next){
-		if(!req.isAuthenticated()){
-			res.status(403);
-			res.end();
-		}else{
-			next();
-		}
+	if(!req.isAuthenticated()){
+		res.status(403);
+		res.end();
+	}else{
+		next();
+	}
 }
 
-/* Prevents users with improper permissions from accessing the api*/
+/* block users with bad permissions from api */
 exports.requiresRole = function(role){
 	return function(req, res, next){
 		if(!req.isAuthenticated() || req.user.roles.indexOf(role) === -1){

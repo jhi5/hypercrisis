@@ -1,5 +1,5 @@
 /* declaring external modules */
-angular.module('app', ['ngResource', 'ngRoute', 'googlechart']);
+angular.module('app', ['ngResource', 'ngRoute']);
 
 /* handling routing and route checks via angular*/
 angular.module('app').config(function($routeProvider, $locationProvider) {
@@ -44,21 +44,17 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
 		controller: 'mvProfileCtrl',
 		resolve: routeRoleChecks.user
 	})
-	.when('/yourpolls/', {
-		templateUrl: '/partials/polls/your-polls',
-		controller: 'mvYourPollsCtrl'
+	.when('/characters/gravitygirl', {
+		templateUrl: '/partials/characters/gg',
+		controller: 'mvGgCtrl'
 	})
-	.when('/polls/newpoll', {
-		templateUrl: '/partials/polls/newpoll',
-		controller: "mvNewPollCtrl"
+	.when('/characters/robonobo', {
+		templateUrl: '/partials/characters/rb',
+		controller: 'mvRbCtrl'
 	})
-	.when('/polls/:id', {
-		templateUrl: '/partials/polls/poll-details',
-		controller: 'mvPollDetailCtrl'
-	})
-	.when('/polls', {
-		templateUrl: '/partials/polls/poll-list',
-		controller: 'mvPollListCtrl'
+	.when('/articles', {
+		templateUrl: '/partials/articles/articles',
+		controller: 'mvArticleCtrl'
 	})
 });
 

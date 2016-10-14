@@ -1,16 +1,27 @@
 .container
 	.jumbotron.jumbotron-fluid
+		col-md-6
+			button.btn.btn-lg.btn-primary-outline(onClick="location.href='../polls'") See All Polls
+			br
+			button.btn.btn-lg.btn-primary-outline(onClick="location.href='../signup'") Sign Up Today!
+		col-md-6
+			.h1#jumbotitle.text-right The Poll Barn
+			p.lead#jumboslug.text-right &nbsp; Build, Vote & Share
+		
 
-	.h1.text-center HYPERCRISIS
-	.h3.text-center Open Beta
-		&nbsp; 
-	.container
-		col-md-3
-			h1 Articles
-		col-md-3
-			h1 Rules
-		col-md-3
-			h1 Characters
-		col-md-3
-			h1 Cards 
+	.h1.text-center Newest Polls
+	&nbsp; 
+	table.table.table-hover.table-striped.table-condensed
+		thread
+			tr
+				th Title
+				th Creation Date
+				th Created By
+			tbody
+				tr(ng-repeat="poll in polls | filter:searchText | orderBy:sortOrder")
+					td 
+						a(href="/polls/{{poll._id}}") {{poll.title}}
+					td {{poll.createdOn | date:"short"}}
+					td 
+						a(href="/users/{{poll.createdBy}}") {{poll.createdBy}}
 
