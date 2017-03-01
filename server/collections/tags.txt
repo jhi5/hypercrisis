@@ -1,0 +1,18 @@
+card roles
+
+aggressive
+defensive
+combo
+disruption
+versatile
+
+armor
+build-around
+card type
+card draw
+damage
+discard
+fight
+healing
+player damage
+utility damage

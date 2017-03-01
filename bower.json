@@ -6,16 +6,17 @@
     "J. Munford <jaemunford@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "",
+  "homepage": "https://github.com/jhi5/hypercrisis",
   "private": true,
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
+    "tests",
+    "public/vendor"
   ],
-    "dependencies": {
+  "dependencies": {
     "angular-mocks": "^1.5.5",
     "angular-resource": "^1.5.5",
     "angular-route": "^1.5.5",

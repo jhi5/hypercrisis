@@ -1,9 +1,7 @@
 /* mongoose & data model includes */
 var mongoose = require('mongoose'),
-	userModel = require('../models/User'),
-	cardModel = require('../models/Card'),
-	deckModel = require('../models/Deck'),
-	articleModel = require('../models/Article');
+	cardModel = require('../models/cardModel'),
+	articleModel = require('../models/articleModel');
 
 /* creates the mongo instance & connects */
 module.exports = function(config){
@@ -13,5 +11,4 @@ module.exports = function(config){
 	db.once('open', function callback(){
 		console.log('mongoose connection secured! db opening...')
 	});
-	userModel.createDefaultUsers();
 }

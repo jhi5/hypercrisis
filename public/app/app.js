@@ -4,20 +4,6 @@ angular.module('app', ['ngResource', 'ngRoute']);
 /* handling routing and route checks via angular*/
 angular.module('app').config(function($routeProvider, $locationProvider) {
 	
-	/* Sets user permissions upon routing*/
-	var routeRoleChecks = {
-		admin: {
-			auth: function(mvAuth) {
-				return mvAuth.authorizedCurrentUserForRoute('admin')
-			}
-		},
-		user: {
-			auth: function(mvAuth){
-				return mvAuth.authorizeAuthenticatedUserForRoute()
-			}
-		}
-	}
-
 	/* Declare html5 */
 	$locationProvider.html5Mode(true);
 	
@@ -29,20 +15,6 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
 	.when('/', {
 		templateUrl: '/partials/main/main',
 		controller: "mvMainCtrl"
-	})
-	.when('/admin/users', {
-		templateUrl: '/partials/admin/user-list',
-		controller: "mvUserListCtrl",
-		resolve: routeRoleChecks.admin
-	})
-	.when('/signup', {
-		templateUrl: '/partials/account/signup',
-		controller: 'mvSignupCtrl'
-	})
-	.when('/profile', {
-		templateUrl: '/partials/account/profile',
-		controller: 'mvProfileCtrl',
-		resolve: routeRoleChecks.user
 	})
 	.when('/characters/gravitygirl', {
 		templateUrl: '/partials/characters/gg',
@@ -56,13 +28,11 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
 		templateUrl: '/partials/articles/articles',
 		controller: 'mvArticleCtrl'
 	})
-});
-
-/* Redirects users if they lack permissions to be routed */
-angular.module('app').run(function($rootScope, $location) {
-	$rootScope.$on('$routeChangeError', function(evt, current, previous, rejection) {
-		if (rejection === 'not authorized') {
-			$location.path('/');
-		}
-	});
+	.when('/download', {
+		templateUrl: '/partials/download/download'
+	})
+	.when('/feedback', {
+		templateUrl: '/partials/feedback/feedback',
+		controller: 'mvFeedbackCtrl'
+	})
 });
