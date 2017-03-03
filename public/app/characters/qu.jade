@@ -1,0 +1,39 @@
+.container.top-padding-med
+	.row
+		.col.md.6
+			img(src="../../images/qu-character.png")
+		.col.md.6.text-right
+			h1 Query
+			h2 The Fundamental Force
+			h1 Download This Character!
+		.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
+			.modal-header
+				button.btn.btn-lg.btn-success(data-dismiss="modal" ng-click="emptyModal()") X
+			.modal-body
+				.col-md-6.text-center
+					img(src="{{modalContent.illustrations[0]}}")
+					h1 {{modalContent.name}}
+				.col-md-6.text-center
+					h2.text-center {{modalContent.rating}}
+					h2.text-center {{modalContent.type}}
+					h2.text-center {{modalContent.utilityValues}}
+					h2.text-center {{modalContent.text}}
+					h2.text-center {{modalContent.flavor}}
+					h3.text-center {{modalContent.comments}}
+		table.table.table-hover.table-striped.table-condensed(ng-if="loaded")
+			thread
+				tr
+					th 
+						h4 Card Name
+					th 
+						h4 Card Type
+					th 
+						h4 Text
+				tbody
+					tr(ng-repeat="card in cards | filter: { character: 'Query'} | orderBy: 'type'")
+						td
+							h4(style="color: green" ng-click="transferModalContent(card.name)") {{card.name}}
+						td 
+							h4 {{card.type}}
+						td 
+							h5 {{card.text}}

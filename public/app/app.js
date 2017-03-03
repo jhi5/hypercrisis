@@ -14,15 +14,35 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
 	$routeProvider
 	.when('/', {
 		templateUrl: '/partials/main/main',
-		controller: "mvMainCtrl"
+		controller: 'mvMainCtrl'
+	})
+	.when('/characterselect', {
+		templateUrl: '/partials/characters/charselect',
+		controller: 'mvCharSelectCtrl'
 	})
 	.when('/characters/gravitygirl', {
 		templateUrl: '/partials/characters/gg',
-		controller: 'mvGgCtrl'
+		controller: 'mvCharacterCtrl'
 	})
 	.when('/characters/robonobo', {
 		templateUrl: '/partials/characters/rb',
-		controller: 'mvRbCtrl'
+		controller: 'mvCharacterCtrl'
+	})
+	.when('/characters/deadeye', {
+		templateUrl: '/partials/characters/de',
+		controller: 'mvCharacterCtrl'
+	})
+	.when('/characters/knox', {
+		templateUrl: '/partials/characters/kx',
+		controller: 'mvCharacterCtrl'
+	})
+	.when('/characters/obscurity', {
+		templateUrl: '/partials/characters/ob',
+		controller: 'mvCharacterCtrl'
+	})
+	.when('/characters/query', {
+		templateUrl: '/partials/characters/qu',
+		controller: 'mvCharacterCtrl'
 	})
 	.when('/articles', {
 		templateUrl: '/partials/articles/articles',

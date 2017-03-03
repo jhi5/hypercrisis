@@ -1,0 +1,106 @@
+@font-face {
+  font-family: 'okudabold_italic';
+  src: url("okuda_bold_italic-webfont.woff2") format('woff2'), url("okuda_bold_italic-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'okudabold';
+  src: url("okuda_bold-webfont.woff2") format('woff2'), url("okuda_bold-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'okudaitalic';
+  src: url("okuda_italic-webfont.woff2") format('woff2'), url("okuda_italic-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'okudaregular';
+  src: url("okuda-webfont.woff2") format('woff2'), url("okuda-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+body {
+  padding-top: 70px;
+}
+.mainButton {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-size: 7rem;
+}
+.modal-admin {
+  background-color: #fff;
+}
+.charselect {
+  height: 30rem;
+  width: 30rem;
+  margin-right: 1.25rem;
+  margin-bottom: 1rem;
+  border: 2rem outset rgba(193,66,66,0.1);
+  border-radius: 0.25rem;
+}
+.ggcharselect:hover {
+  border: 3rem outset rgba(153,102,153,0.85);
+}
+.rbcharselect:hover {
+  border: 3rem outset rgba(102,102,102,0.85);
+}
+.kxcharselect:hover {
+  border: 3rem outset rgba(102,51,51,0.85);
+}
+.qucharselect:hover {
+  border: 3rem outset rgba(51,102,51,0.85);
+}
+.obcharselect:hover {
+  border: 3rem outset rgba(204,153,204,0.85);
+}
+.decharselect:hover {
+  border: 3rem outset rgba(51,51,102,0.85);
+}
+.crosscharselect:hover {
+  border: 3rem outset rgba(204,153,51,0.85);
+}
+#characterselecttitle {
+  width: 100%;
+  font-size: 15rem;
+  color: #fff;
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444;
+}
+.characterselectbasic {
+  background: linear-gradient(0deg, rgba(255,255,51,0.45), rgba(255,255,51,0.45)), url("../images/jumbotron.png");
+}
+.characterselectde {
+  background: linear-gradient(0deg, rgba(51,51,102,0.85), rgba(51,51,102,0.85)), url("../images/jumbotron.png");
+}
+.characterselectgg {
+  background: linear-gradient(0deg, rgba(153,102,153,0.85), rgba(153,102,153,0.85)), url("../images/jumbotron.png");
+}
+.characterselectkx {
+  background: linear-gradient(0deg, rgba(102,51,51,0.85), rgba(102,51,51,0.85)), url("../images/jumbotron.png");
+}
+.characterselectob {
+  background: linear-gradient(0deg, rgba(204,153,204,0.85), rgba(204,153,204,0.85)), url("../images/jumbotron.png");
+}
+.characterselectqu {
+  background: linear-gradient(0deg, rgba(51,102,51,0.85), rgba(51,102,51,0.85)), url("../images/jumbotron.png");
+}
+.characterselectrb {
+  background: linear-gradient(0deg, rgba(102,102,102,0.85), rgba(102,102,102,0.85)), url("../images/jumbotron.png");
+}
+.characterselectcross {
+  background: linear-gradient(0deg, rgba(204,153,51,0.85), rgba(204,153,51,0.85)), url("../images/jumbotron.png");
+}
+.okuda {
+  font-family: 'okuda';
+}
+.big {
+  font-size: 7rem;
+}
+.jumbotron {
+  background-image: url("../images/jumbotron.png");
+  background-color: #008000;
+  background-size: cover;
+  height: 35vh;
+}

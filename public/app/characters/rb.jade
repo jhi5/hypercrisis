@@ -1,25 +1,39 @@
-.container
-	.h1 Robonobo
-	.h2 The Modular Monkey
-	.h1 Download This Character!
-
-	ul.nav.nav-tabs
-		li
-			a(data-toggle='tab', href='#articles') Articles
-		li
-			a(data-toggle='tab', href='#cards') Cards
-		li
-			a(data-toggle='tab', href='#decklists') Decklists
-	.tab-content
-		#articles.tab-pane
-			h3 Articles
-			p
-				Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		#cards.tab-pane.fade
-			h3 Cards
-			p
-				Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-		#decklists.tab-pane.fade
-			h3 Decklists
-			p
-				Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam.
+.container.top-padding-med
+	.row
+		.col.md.6
+			img(src="../../images/rb-character.png")
+		.col.md.6.text-right
+			h1 Robonobo
+			h2 The Fundamental Force
+			h1 Download This Character!
+		.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
+			.modal-header
+				button.btn.btn-lg.btn-success(data-dismiss="modal" ng-click="emptyModal()") X
+			.modal-body
+				.col-md-6.text-center
+					img(src="{{modalContent.illustrations[0]}}")
+					h1 {{modalContent.name}}
+				.col-md-6.text-center
+					h2.text-center {{modalContent.rating}}
+					h2.text-center {{modalContent.type}}
+					h2.text-center {{modalContent.utilityValues}}
+					h2.text-center {{modalContent.text}}
+					h2.text-center {{modalContent.flavor}}
+					h3.text-center {{modalContent.comments}}
+		table.table.table-hover.table-striped.table-condensed(ng-if="loaded")
+			thread
+				tr
+					th 
+						h4 Card Name
+					th 
+						h4 Card Type
+					th 
+						h4 Text
+				tbody
+					tr(ng-repeat="card in cards | filter: { character: 'Robonobo'} | orderBy: 'type'")
+						td
+							h4(style="color: gray" ng-click="transferModalContent(card.name)") {{card.name}}
+						td 
+							h4 {{card.type}}
+						td 
+							h5 {{card.text}}

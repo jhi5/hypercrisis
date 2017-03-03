@@ -1,26 +1,24 @@
 .container.top-padding-med
 	.row
 		.col.md.6
-			img(src="../../images/gg03.png" class="img-responsive")
+			img(src="../../images/gg-character.png")
 		.col.md.6.text-right
 			h1 Gravity Girl
 			h2 The Fundamental Force
 			h1 Download This Character!
-		button.btn.btn-success(ng-click="openModal()") Show Modal
-		.modal-content(style='background-size: cover' ng-show='showModal' close='closeModal()')
-			button.btn.btn-block.btn-warning(ng-click="closeModal()") Close This Window
-			.row
-				.col-md-6
-					img(src="../../images/gg04.png" class="img-responsive")
-					h2.text-center {{modalContent.name}}
-					h2.text-center {{modalContent.character}}
+		.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
+			.modal-header
+				button.btn.btn-block.btn-success(data-dismiss="modal" ng-click="emptyModal()") Close This Window
+			.modal-body
+				.col-md-6.text-center
+					img(src="{{modalContent.illustrations[0]}}")
+					h1 {{modalContent.name}}
+				.col-md-6.text-center
 					h2.text-center {{modalContent.rating}}
-				.col-md-6
 					h2.text-center {{modalContent.type}}
 					h2.text-center {{modalContent.utilityValues}}
 					h2.text-center {{modalContent.text}}
 					h2.text-center {{modalContent.flavor}}
-				.col-md-12
 					h3.text-center {{modalContent.comments}}
 		table.table.table-hover.table-striped.table-condensed(ng-if="loaded")
 			thread
@@ -32,10 +30,10 @@
 					th 
 						h4 Text
 				tbody
-					tr(ng-repeat="card in cards | filter: { character: 'GG'} | orderBy: 'type'")		
+					tr(ng-repeat="card in cards | filter: { character: 'Gravity Girl'} | orderBy: 'type'")
 						td
 							h4(style="color: purple" ng-click="transferModalContent(card.name)") {{card.name}}
 						td 
 							h4 {{card.type}}
 						td 
-							h5 {{card.text}}					
+							h5 {{card.text}}
