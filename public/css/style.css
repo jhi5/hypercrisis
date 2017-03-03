@@ -238,13 +238,13 @@ body {
   font-style: italic;
 }
 .cross-charpage-name {
-  background: #336;
+  background: #c93;
   color: #fff;
   font-size: 10rem;
 }
 .cross-charpage-img {
   min-width: 100%;
-  border: 2em solid #336;
+  border: 2em solid #c93;
 }
 .characterselectcross {
   background: linear-gradient(0deg, rgba(204,153,51,0.85), rgba(204,153,51,0.85)), url("../images/jumbotron.png");
@@ -307,6 +307,9 @@ body {
 }
 .profiletext {
   font-size: 3.5rem;
+}
+.crosstext {
+  font-size: 6rem;
 }
 .okuda {
   font-family: 'okuda';
