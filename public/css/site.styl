@@ -26,6 +26,20 @@
     font-weight normal
     font-style normal
 
+@font-face
+    font-family 'adventure_hollowregular'
+    src url('adventure_hollow-webfont.woff2') format('woff2'),
+         url('adventure_hollow-webfont.woff') format('woff')
+    font-weight normal
+    font-style normal
+
+@font-face
+    font-family 'adventureregular'
+    src url('adventure-webfont.woff2') format('woff2'),
+         url('adventure-webfont.woff') format('woff')
+    font-weight normal
+    font-style normal
+
 deadeyecolor = rgba(51, 51, 102, .85)
 gravitygirlcolor = rgba(153, 102, 153, .85)
 knoxcolor = rgba(102, 51, 51, .85)
@@ -33,6 +47,7 @@ obscuritycolor = rgba(204, 153, 204, .85)
 querycolor = rgba(51, 102, 51, .85)
 robonobocolor = rgba(102, 102, 102, .85)
 crosscolor = rgba(204,153,51,.85)
+characterpagebg = url('../images/charpagebg.png')
 
 body
     padding-top 70px
@@ -74,9 +89,6 @@ body
 .crosscharselect:hover
 	border 3.0rem outset crosscolor
 
-
-characterselectbackground = rgba(255,255,51,0.45)
-
 #characterselecttitle	
 	width 100%
 	font-size 15rem
@@ -84,7 +96,7 @@ characterselectbackground = rgba(255,255,51,0.45)
 	text-shadow 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444
 
 .characterselectbasic
-	background linear-gradient(0deg,characterselectbackground,characterselectbackground),url(../images/jumbotron.png)
+	background linear-gradient(0deg,rgba(241,251,37,.85),rgba(241,251,37,.85)),url(../images/jumbotron.png)
 
 .characterselectde
 	background linear-gradient(0deg,deadeyecolor,deadeyecolor),url(../images/jumbotron.png)
@@ -107,14 +119,91 @@ characterselectbackground = rgba(255,255,51,0.45)
 .characterselectcross
 	background linear-gradient(0deg,crosscolor,crosscolor),url(../images/jumbotron.png)
 
+.gg-profilebg
+	background linear-gradient(0deg,gravitygirlcolor,gravitygirlcolor),url(../images/jumbotron.png)
+
+.gg-profileheadings
+	color white
+	background rgb(153, 102, 153)
+	font-size 5rem
+	border-radius .5rem
+
+.hpheading
+	color white
+	background rgb(237,38,144)
+	font-size 5rem
+	border-radius .5rem
+	font-family "adventureregular"
+
+.utilityvalue
+	font-family 'adventureregular'
+	font-size 10rem
+
+.fightheading
+	color white
+	background rgb(42, 173, 227)
+	font-size 5rem
+	border-radius .5rem
+	font-family "adventureregular"
+
+.armorheading
+	color white
+	background rgb(255, 239, 31)
+	font-size 5rem
+	border-radius .5rem
+	font-family "adventureregular"
+
+.gg-flavortext
+	color gray
+	font-style italic
+	font-shadow 10rem 10rem rgb(153, 102, 153)
+
+.gg-cardtitle
+	font-family "Adventure"
+	font-size 7rem
+
+.charpage-img
+	min-width 100%
+	border 2em solid rgb(153, 102, 153)
+ 	
+.charbio
+	border-radius 1.5rem
+
+.charpage-skill
+	background white
+
+.charpage-hero
+	background green
+	color white
+
+.charpage-name
+	background rgb(153, 102, 153)
+	color white
+	font-size 10rem
+
+.charpage-difficulty
+	margin-top 1rem
+
+.charpage-download
+	padding-top 5rem
+	padding-bottom 5rem
+	color white
+	font-size 5rem
+	font-weight bold
+	font-family 'adventureregular'
+	border-radius 2rem
+
+.profiletext
+	font-size 3.5rem
+
 .okuda
 	font-family 'okuda'
+
+.adventure
+	font-family 'adventureregular'
 
 .big
 	font-size 7rem
 
-.jumbotron
-  background-image url("../images/jumbotron.png")
-  background-color green
-  background-size cover
-  height 35vh
+.navbar
+	padding-bottom 1rem

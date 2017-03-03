@@ -22,6 +22,18 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: 'adventure_hollowregular';
+  src: url("adventure_hollow-webfont.woff2") format('woff2'), url("adventure_hollow-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'adventureregular';
+  src: url("adventure-webfont.woff2") format('woff2'), url("adventure-webfont.woff") format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
 body {
   padding-top: 70px;
 }
@@ -69,7 +81,7 @@ body {
   text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444;
 }
 .characterselectbasic {
-  background: linear-gradient(0deg, rgba(255,255,51,0.45), rgba(255,255,51,0.45)), url("../images/jumbotron.png");
+  background: linear-gradient(0deg, rgba(241,251,37,0.85), rgba(241,251,37,0.85)), url("../images/jumbotron.png");
 }
 .characterselectde {
   background: linear-gradient(0deg, rgba(51,51,102,0.85), rgba(51,51,102,0.85)), url("../images/jumbotron.png");
@@ -92,15 +104,92 @@ body {
 .characterselectcross {
   background: linear-gradient(0deg, rgba(204,153,51,0.85), rgba(204,153,51,0.85)), url("../images/jumbotron.png");
 }
+.gg-profilebg {
+  background: linear-gradient(0deg, rgba(153,102,153,0.85), rgba(153,102,153,0.85)), url("../images/jumbotron.png");
+}
+.gg-profileheadings {
+  color: #fff;
+  background: #969;
+  font-size: 5rem;
+  border-radius: 0.5rem;
+}
+.hpheading {
+  color: #fff;
+  background: #ed2690;
+  font-size: 5rem;
+  border-radius: 0.5rem;
+  font-family: "adventureregular";
+}
+.utilityvalue {
+  font-family: 'adventureregular';
+  font-size: 10rem;
+}
+.fightheading {
+  color: #fff;
+  background: #2aade3;
+  font-size: 5rem;
+  border-radius: 0.5rem;
+  font-family: "adventureregular";
+}
+.armorheading {
+  color: #fff;
+  background: #ffef1f;
+  font-size: 5rem;
+  border-radius: 0.5rem;
+  font-family: "adventureregular";
+}
+.gg-flavortext {
+  color: #808080;
+  font-style: italic;
+  font-shadow: 10rem 10rem #969;
+}
+.gg-cardtitle {
+  font-family: "Adventure";
+  font-size: 7rem;
+}
+.charpage-img {
+  min-width: 100%;
+  border: 2em solid #969;
+}
+.charbio {
+  border-radius: 1.5rem;
+}
+.charpage-skill {
+  background: #fff;
+}
+.charpage-hero {
+  background: #008000;
+  color: #fff;
+}
+.charpage-name {
+  background: #969;
+  color: #fff;
+  font-size: 10rem;
+}
+.charpage-difficulty {
+  margin-top: 1rem;
+}
+.charpage-download {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+  color: #fff;
+  font-size: 5rem;
+  font-weight: bold;
+  font-family: 'adventureregular';
+  border-radius: 2rem;
+}
+.profiletext {
+  font-size: 3.5rem;
+}
 .okuda {
   font-family: 'okuda';
+}
+.adventure {
+  font-family: 'adventureregular';
 }
 .big {
   font-size: 7rem;
 }
-.jumbotron {
-  background-image: url("../images/jumbotron.png");
-  background-color: #008000;
-  background-size: cover;
-  height: 35vh;
+.navbar {
+  padding-bottom: 1rem;
 }

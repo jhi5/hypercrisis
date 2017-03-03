@@ -16,6 +16,20 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		}
 		return sum + array.length+1;
 	}
+	detectFlavor = function(array){
+		if(array[0] !== 'none'){
+			return array;
+		}else{
+			return null;
+		}
+	}
+	detectUtility = function(string){
+		if(string == 'Utility'){
+			return $scope.cards[i].utilityValues;
+		}else{
+			return null;
+		}
+	}
 	$scope.modalContent = {
 		name: 'sample name',
 		character: 'sample character',
@@ -50,9 +64,9 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 					type: $scope.cards[i].type,
 					text: $scope.cards[i].text,
 					comments: $scope.cards[i].comments,
-					flavor: $scope.cards[i].flavor,
+					flavor: detectFlavor($scope.cards[i].flavor),
 					illustrations: $scope.cards[i].illustrations,
-					utilityValues: $scope.cards[i].utilityValues,
+					utilityValues: detectUtility($scope.cards[i].type),
 					rating: findAverage($scope.cards[i].rating)
 				}
 				console.log($scope.modalContent.utilityValues);
