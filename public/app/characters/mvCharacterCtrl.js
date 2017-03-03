@@ -24,7 +24,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		}
 	}
 	detectUtility = function(string){
-		if(string == 'Utility'){
+		if(string == 'Utility' | string == "Crossover"){
 			return $scope.cards[i].utilityValues;
 		}else{
 			return null;

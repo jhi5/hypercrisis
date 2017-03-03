@@ -40,13 +40,20 @@
     font-weight normal
     font-style normal
 
-deadeyecolor = rgba(51, 51, 102, .85)
-gravitygirlcolor = rgba(153, 102, 153, .85)
-knoxcolor = rgba(102, 51, 51, .85)
-obscuritycolor = rgba(204, 153, 204, .85)
-querycolor = rgba(51, 102, 51, .85)
-robonobocolor = rgba(102, 102, 102, .85)
-crosscolor = rgba(204,153,51,.85)
+deadeyecolor = rgb(51, 51, 102)
+deadeyealpha = rgba(51, 51, 102, .85)
+gravitygirlcolor = rgb(153, 102, 153)
+gravitygirlalpha = rgba(153, 102, 153, .85)
+knoxcolor = rgb(102, 51, 51)
+knoxalpha = rgba(102, 51, 51, .85)
+obscuritycolor = rgb(204, 153, 204)
+obscurityalpha = rgba(204, 153, 204, .85)
+querycolor = rgb(51, 102, 51)
+queryalpha = rgba(51, 102, 51, .85)
+robonobocolor = rgb(102, 102, 102)
+robonoboalpha = rgba(102, 102, 102, .85)
+crosscolor = rgb(204, 153, 51)
+crossalpha = rgba(204,153,51,.85)
 characterpagebg = url('../images/charpagebg.png')
 
 body
@@ -71,23 +78,199 @@ body
 .ggcharselect:hover
 	border 3.0rem outset gravitygirlcolor
 
-.rbcharselect:hover
-	border 3.0rem outset robonobocolor
+.gg-profilebg
+	background linear-gradient(0deg,gravitygirlalpha,gravitygirlalpha),url(../images/jumbotron.png)
 
-.kxcharselect:hover
-	border 3.0rem outset knoxcolor
+.gg-profileheadings
+	color white
+	background linear-gradient(0deg,gravitygirlalpha,gravitygirlalpha),url(../images/jumbotron.png)
+	font-size 5rem
+	border-radius .5rem
 
-.qucharselect:hover
-	border 3.0rem outset querycolor
+.gg-flavortext
+	color gray
+	font-style italic
 
-.obcharselect:hover
-	border 3.0rem outset obscuritycolor
+.gg-charpage-name
+	background gravitygirlcolor
+	color white
+	font-size 10rem
+
+.gg-charpage-img
+	min-width 100%
+	border 2em solid gravitygirlcolor
+
+.characterselectgg
+	background linear-gradient(0deg,gravitygirlalpha,gravitygirlalpha),url(../images/jumbotron.png)
+
 
 .decharselect:hover
 	border 3.0rem outset deadeyecolor
 
+.de-profilebg
+	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/jumbotron.png)
+
+.de-profileheadings
+	color white
+	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/jumbotron.png)
+	font-size 5rem
+	border-radius .5rem
+
+.de-flavortext
+	color gray
+	font-style italic
+
+.de-charpage-name
+	background deadeyecolor
+	color white
+	font-size 10rem
+
+.de-charpage-img
+	min-width 100%
+	border 2em solid deadeyecolor
+
+.characterselectde
+	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/jumbotron.png)
+
+.kxcharselect:hover
+	border 3.0rem outset knoxcolor
+
+.kx-profilebg
+	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/jumbotron.png)
+
+.kx-profileheadings
+	color white
+	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/jumbotron.png)
+	font-size 5rem
+	border-radius .5rem
+
+.kx-flavortext
+	color gray
+	font-style italic
+
+.kx-charpage-name
+	background knoxcolor
+	color white
+	font-size 10rem
+
+.kx-charpage-img
+	min-width 100%
+	border 2em solid knoxcolor
+
+.characterselectkx
+	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/jumbotron.png)
+
+.obcharselect:hover
+	border 3.0rem outset obscuritycolor
+
+.ob-profilebg
+	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/jumbotron.png)
+
+.ob-profileheadings
+	color white
+	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/jumbotron.png)
+	font-size 5rem
+	border-radius .5rem
+
+.ob-flavortext
+	color gray
+	font-style italic
+
+.ob-charpage-name
+	background obscuritycolor
+	color white
+	font-size 10rem
+
+.ob-charpage-img
+	min-width 100%
+	border 2em solid obscuritycolor
+
+.characterselectob
+	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/jumbotron.png)
+
+.rbcharselect:hover
+	border 3.0rem outset robonobocolor
+
+.rb-profilebg
+	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/jumbotron.png)
+
+.rb-profileheadings
+	color white
+	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/jumbotron.png)
+	font-size 5rem
+	border-radius .5rem
+
+.rb-flavortext
+	color gray
+	font-style italic
+
+.rb-charpage-name
+	background robonobocolor
+	color white
+	font-size 10rem
+
+.rb-charpage-img
+	min-width 100%
+	border 2em solid robonobocolor
+
+.characterselectrb
+	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/jumbotron.png)
+
+.qucharselect:hover
+	border 3.0rem outset querycolor
+
+.qu-profilebg
+	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/jumbotron.png)
+
+.qu-profileheadings
+	color white
+	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/jumbotron.png)
+	font-size 5rem
+	border-radius .5rem
+
+.qu-flavortext
+	color gray
+	font-style italic
+
+.qu-charpage-name
+	background querycolor
+	color white
+	font-size 10rem
+
+.qu-charpage-img
+	min-width 100%
+	border 2em solid querycolor
+
+.characterselectqu
+	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/jumbotron.png)
+
 .crosscharselect:hover
 	border 3.0rem outset crosscolor
+
+.cross-profilebg
+	background linear-gradient(0deg,crossalpha,crossalpha),url(../images/jumbotron.png)
+
+.cross-profileheadings
+	color white
+	background linear-gradient(0deg,crossalpha,crossalpha),url(../images/jumbotron.png)
+	font-size 5rem
+	border-radius .5rem
+
+.cross-flavortext
+	color gray
+	font-style italic
+
+.cross-charpage-name
+	background deadeyecolor
+	color white
+	font-size 10rem
+
+.cross-charpage-img
+	min-width 100%
+	border 2em solid deadeyecolor
+
+.characterselectcross
+	background linear-gradient(0deg,crossalpha,crossalpha),url(../images/jumbotron.png)
 
 #characterselecttitle	
 	width 100%
@@ -97,36 +280,6 @@ body
 
 .characterselectbasic
 	background linear-gradient(0deg,rgba(241,251,37,.85),rgba(241,251,37,.85)),url(../images/jumbotron.png)
-
-.characterselectde
-	background linear-gradient(0deg,deadeyecolor,deadeyecolor),url(../images/jumbotron.png)
-
-.characterselectgg
-	background linear-gradient(0deg,gravitygirlcolor,gravitygirlcolor),url(../images/jumbotron.png)
-
-.characterselectkx
-	background linear-gradient(0deg,knoxcolor,knoxcolor),url(../images/jumbotron.png)
-
-.characterselectob
-	background linear-gradient(0deg,obscuritycolor,obscuritycolor),url(../images/jumbotron.png)
-
-.characterselectqu
-	background linear-gradient(0deg,querycolor,querycolor),url(../images/jumbotron.png)
-
-.characterselectrb
-	background linear-gradient(0deg,robonobocolor,robonobocolor),url(../images/jumbotron.png)
-
-.characterselectcross
-	background linear-gradient(0deg,crosscolor,crosscolor),url(../images/jumbotron.png)
-
-.gg-profilebg
-	background linear-gradient(0deg,gravitygirlcolor,gravitygirlcolor),url(../images/jumbotron.png)
-
-.gg-profileheadings
-	color white
-	background rgb(153, 102, 153)
-	font-size 5rem
-	border-radius .5rem
 
 .hpheading
 	color white
@@ -153,33 +306,15 @@ body
 	border-radius .5rem
 	font-family "adventureregular"
 
-.gg-flavortext
-	color gray
-	font-style italic
-	font-shadow 10rem 10rem rgb(153, 102, 153)
-
-.gg-cardtitle
+.cardtitle
 	font-family "Adventure"
 	font-size 7rem
-
-.charpage-img
-	min-width 100%
-	border 2em solid rgb(153, 102, 153)
  	
 .charbio
 	border-radius 1.5rem
 
 .charpage-skill
 	background white
-
-.charpage-hero
-	background green
-	color white
-
-.charpage-name
-	background rgb(153, 102, 153)
-	color white
-	font-size 10rem
 
 .charpage-difficulty
 	margin-top 1rem
@@ -207,3 +342,9 @@ body
 
 .navbar
 	padding-bottom 1rem
+
+.btn-modal-close
+	font-family 'adventureregular'
+	background rgb(42, 173, 227)
+	color white
+	font-size 3rem

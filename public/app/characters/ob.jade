@@ -1,39 +1,74 @@
-.container.top-padding-med
+.container.top-padding-med.charpage
 	.row
-		.col.md.6
-			img(src="../../images/ob-character.png")
-		.col.md.6.text-right
-			h1 Obscurity
-			h2 The Fundamental Force
-			h1 Download This Character!
+		.col-md-6.text-center
+			div.ob-profilebg
+				img.ob-charpage-img.charpagebg(src="../../images/obscuritycharselect.png")
+			h1.ob-charpage-name.okuda OBSCURITY
+			button.btn.btn-block.btn-success.charpage-download Download Now!
+		.col-md-6.charbio.text-center
+			h3.ob-profileheadings.okuda POWERS
+				h3.profiletext.okuda Invisibility, Gadgets & A Detective's Intuition	
+			h3.ob-profileheadings.okuda STRENGTHS & WEAKNESSES
+				h3.okuda.profiletext + Card Draw, Defensive Options
+				h3.okuda.profiletext - Slow Start, Low Player Damage
+			h3.ob-profileheadings.okuda DIFFICULTY
+				div.charpage-skill
+					img.charpage-difficulty(src="../../images/hard.png")
+			h3.ob-profileheadings.okuda SKILL
+				div.charpage-skill				
+					img(src="../../images/vanish.png")
 		.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
 			.modal-header
-				button.btn.btn-lg.btn-success(data-dismiss="modal" ng-click="emptyModal()") X
+				button.btn.btn-block.btn-modal-close(data-dismiss="modal" ng-click="emptyModal()") Close This Window
 			.modal-body
 				.col-md-6.text-center
 					img(src="{{modalContent.illustrations[0]}}")
-					h1 {{modalContent.name}}
+					h1.cardtitle {{modalContent.name}}
+					h3.text-center.ob-flavortext(ng-hide="modalContent.flavor == null") {{modalContent.flavor[0]}}
 				.col-md-6.text-center
-					h2.text-center {{modalContent.rating}}
-					h2.text-center {{modalContent.type}}
-					h2.text-center {{modalContent.utilityValues}}
-					h2.text-center {{modalContent.text}}
-					h2.text-center {{modalContent.flavor}}
-					h3.text-center {{modalContent.comments}}
-		table.table.table-hover.table-striped.table-condensed(ng-if="loaded")
-			thread
-				tr
-					th 
-						h4 Card Name
-					th 
-						h4 Card Type
-					th 
-						h4 Text
+					.row
+						.col-md-6
+							h3.ob-profileheadings.okuda Rating
+							h2.text-center {{modalContent.rating}}
+						.col-md-6
+							h3.ob-profileheadings.okuda Type
+							h2.text-center {{modalContent.type}}
+					.row(ng-hide="modalContent.utilityValues == null")
+						.col-md-12
+							h3.ob-profileheadings.okuda Utility Values
+						.col-md-4
+							h2.utilityvalue {{modalContent.utilityValues[0]}}
+							h4.hpheading Hit Points
+						.col-md-4
+							h2.utilityvalue {{modalContent.utilityValues[1]}}
+							h4.fightheading Fight
+						.col-md-4
+							h2.utilityvalue {{modalContent.utilityValues[2]}}
+							h4.armorheading Armor
+					.row
+						.col-md-12
+							h3.ob-profileheadings.okuda Card Text
+							h3.text-center {{modalContent.text}}
+					.row
+						.com-md-12
+							h3.ob-profileheadings.okuda Comment
+							h3.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
+	h1.text-center Obscurity Card Database
+	h4.text-center Click On A Card Name To Open Its Details!
+	table.table.table-hover.table-striped.table-condensed(ng-if="loaded")
+		thread
+			tr
+				th 
+					h3 Card Name
+				th 
+					h3 Card Type
+				th 
+					h3.text-center Text
 				tbody
-					tr(ng-repeat="card in cards | filter: { character: 'Obscurity'} | orderBy: 'type'")
+					tr(ng-repeat="card in cards | filter: { character: 'Obscurity'} | orderBy: 'name'")
 						td
-							h4(style="color: pink" ng-click="transferModalContent(card.name)") {{card.name}}
+							h3.adventure(ng-click="transferModalContent(card.name)") {{card.name}}
 						td 
-							h4 {{card.type}}
+							h3 {{card.type}}
 						td 
-							h5 {{card.text}}
+							h3 {{card.text}}

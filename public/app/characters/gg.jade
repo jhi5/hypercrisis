@@ -2,8 +2,8 @@
 	.row
 		.col-md-6.text-center
 			div.gg-profilebg
-				img.charpage-img.charpagebg(src="../../images/gravitygirlcharselect.png")
-			h1.charpage-name.okuda GRAVITY GIRL 
+				img.gg-charpage-img.charpagebg(src="../../images/gravitygirlcharselect.png")
+			h1.gg-charpage-name.okuda GRAVITY GIRL
 			button.btn.btn-block.btn-success.charpage-download Download Now!
 		.col-md-6.charbio.text-center
 			h3.gg-profileheadings.okuda POWERS
@@ -19,11 +19,11 @@
 					img(src="../../images/throw.png")
 		.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
 			.modal-header
-				button.btn.btn-block.btn-success(data-dismiss="modal" ng-click="emptyModal()") Close This Window
+				button.btn.btn-block.btn-modal-close(data-dismiss="modal" ng-click="emptyModal()") Close This Window
 			.modal-body
 				.col-md-6.text-center
 					img(src="{{modalContent.illustrations[0]}}")
-					h1.gg-cardtitle {{modalContent.name}}
+					h1.cardtitle {{modalContent.name}}
 					h3.text-center.gg-flavortext(ng-hide="modalContent.flavor == null") {{modalContent.flavor[0]}}
 				.col-md-6.text-center
 					.row
@@ -63,7 +63,7 @@
 				th 
 					h3 Card Type
 				th 
-					h3 Text
+					h3.text-center Text
 				tbody
 					tr(ng-repeat="card in cards | filter: { character: 'Gravity Girl'} | orderBy: 'name'")
 						td
