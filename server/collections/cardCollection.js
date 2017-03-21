@@ -6,7 +6,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Throw. Deal 2 damage to target opponent. If you've thrown twice this turn, deal 4 damage instead.",
 		flavor: ["Didn't you learn the first time?"],
-		illustrations: ["../../images/gg-barrage.png"],
+		illustrations: ["../../images/barrage.png"],
 		rating: ["2"],		
 		tags: ["aggressive", "player damage", "combo", "throw"],
 		comments: ["Very good at keeping pressure but not very flexible. - JM"]
@@ -19,7 +19,7 @@ exports.defaultCards = [
 		utilityValues: ["2","3","0"],
 		text: "When this is destroyed, each player discards two cards.",
 		flavor: ["I haven't cleaned up yet. Watch your step."],
-		illustrations: ["../../images/gg-chainreactions.png"],
+		illustrations: ["../../images/chainreactions.png"],
 		rating: ["1"],
 		tags: ["disruption", "discard"],
 		comments: ["Solid stats and disruption, if that's something you want. - JM"]
@@ -31,7 +31,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Whenever a Utility is destroyed this turn, you may draw a card.",
 		flavor: ["Angles. Corners. I love geometry."],
-		illustrations: ["../../images/gg-controlledricochet.png"],
+		illustrations: ["../../images/controlledricochet.png"],
 		rating: ["2"],
 		tags: ["combo", "card draw"],
 		comments: ["Can get 3-4 cards consistently. Not amazing. - JM"]
@@ -43,7 +43,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Throw. Shuffle your hand into your deck and draw 2 cards.",
 		flavor: ["Time to regroup."],
-		illustrations: ["../../images/gg-distraction.png"],
+		illustrations: ["../../images/distraction.png"],
 		rating: ["2"],
 		tags: ["versatile", "card draw", "throw"],
 		comments: ["Swiss army knife: healing, card selection, throw trigger - JM"]
@@ -55,7 +55,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Discard your hand, then draw 3 cards.",
 		flavor: ["I return there in quiet moments."],
-		illustrations: ["../../images/gg-dreamsofspace.png"],
+		illustrations: ["../../images/dreamsofspace.png"],
 		rating: ["3"],
 		tags: ["versatile", "card draw"],
 		comments: ["Very good card draw for this deck. - JM"]
@@ -67,7 +67,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Throw. Target Utility gets +1 armor for each Utility destroyed this turn.",
 		flavor: ["A personal gravity field. Cool, huh?"],
-		illustrations: ["../../images/gg-fieldofdebris.png"],
+		illustrations: ["../../images/fieldofdebris.png"],
 		rating: ["1"],
 		tags: ["defensive", "armor", "combo", "throw"],
 		comments: ["Flagged as weak, not worth it unless you are getting 4+ armor. - JM"]
@@ -79,7 +79,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","7"],
 		text: "When you play this, destroy one of your Utilities.",
 		flavor: ["AAAAAAARGGGGGGH! I loved that truck."],
-		illustrations: ["../../images/gg-improvisedbarrier.png"],
+		illustrations: ["../../images/improvisedbarrier.png"],
 		rating: ["2"],
 		tags: ["defensive", "combo", "armor"],
 		comments: ["Utility destruction trigger and provides decent armor. Somewhat fragile. - JM"]
@@ -91,7 +91,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Throw. Deal 4 damage to target Utility.",
 		flavor: ["High school track. First in state."],
-		illustrations: ["../../images/gg-javelinthrow.png"],
+		illustrations: ["../../images/javelinthrow.png"],
 		rating: ["4"],
 		tags: ["aggressive", "utility damage", "throw"],
 		comments: ["All-purpose Utility removal. Gets rid of almost anything. - JM"]
@@ -103,7 +103,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","4"],
 		text: "At the beginning of your turn, you may discard a card. If you do, deal 2 damage to any target.",
 		flavor: ["You aren't going anywhere."],
-		illustrations: ["../../images/gg-lockedincombat.png"],
+		illustrations: ["../../images/lockedincombat.png"],
 		rating: ["2"],
 		tags: ["versatile", "damage"],
 		comments: ["Not as aggressive as it looks, but very playable in defensive builds. Good armor too. - JM"]
@@ -115,7 +115,7 @@ exports.defaultCards = [
 		utilityValues: ["1","3","0"],
 		text: "When you play this, draw a card.",
 		flavor: ["This gives me an idea..."],
-		illustrations: ["../../images/gg-mapletree.png"],
+		illustrations: ["../../images/mapletree.png"],
 		rating: ["3"],
 		tags: ["aggressive", "card draw"],
 		comments: ["All-star. Solid as a rock. - JM"]
@@ -127,7 +127,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Throw. Deal damage to any target equal to the thrown Utility's fight value.",
 		flavor: ["It's not about speed. It's velocity."],
-		illustrations: ["../../images/gg-maximizedmomentum.png"],
+		illustrations: ["../../images/maximizedmomentum.png"],
 		rating: ["3"],
 		tags: ["versatile", "damage", "throw"],
 		comments: ["Better than it reads. Flexible too. - JM"]
@@ -139,7 +139,7 @@ exports.defaultCards = [
 		utilityValues: ["3","1","2"],
 		text: "When you play this, target Utility gets +2 fight this turn.",
 		flavor: ["It's not my fault this is our last bike. Now duck!"],
-		illustrations: ["../../images/gg-motorcycle.png"],
+		illustrations: ["../../images/motorcycle.png"],
 		rating: ["2"],
 		tags: ["aggressive", "fight"],
 		comments: ["Good in an aggressive build and great throw target. - JM"]
@@ -151,7 +151,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Throw. Deal 3 damage to target Utility. If that destroys it, deal 3 damage to its owner.",
 		flavor: ["You can count your splinters in jail."],
-		illustrations: ["../../images/gg-obliterate.png"],
+		illustrations: ["../../images/obliterate.png"],
 		rating: ["4"],
 		tags: ["aggressive", "utility damage", "throw"],
 		comments: ["Doesn't get rid of big combo cards, but great otherwise. - JM"]
@@ -163,7 +163,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","0"],
 		text: "When this is destroyed, deal 3 damage to target opponent.",
 		flavor: ["Sorry about your tablecloth, folks."],
-		illustrations: ["../../images/gg-picnictable.png"],
+		illustrations: ["../../images/picnictable.png"],
 		rating: ["1"],
 		tags: ["aggressive", "player damage"],
 		comments: ["Aggressive builds only. Largely useless otherwise. - JM"]
@@ -175,7 +175,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","1"],
 		text: "When you play this, draw a card. When this is destroyed, each opponent discards a card.",
 		flavor: ["This should buy me some time."],
-		illustrations: ["../../images/gg-barrage.png"],
+		illustrations: ["../../images/barrage.png"],
 		rating: ["2"],
 		tags: ["combo", "card draw"],
 		comments: ["Good combo card. Great throw target. - JM"]
@@ -187,7 +187,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Throw. Draw 2 cards.",
 		flavor: ["Time to put on our thinking caps."],
-		illustrations: ["../../images/gg-repurpose.png"],
+		illustrations: ["../../images/repurpose.png"],
 		rating: ["1"],
 		tags: ["versatile", "card draw", "throw"],
 		comments: ["GG is short enough on drawing, this helps. Not amazing. - JM"]
@@ -199,7 +199,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Whenever a Utility is destroyed this turn, deal 2 damage to each opponent.",
 		flavor: ["Take shelter."],
-		illustrations: ["../../images/gg-shrapnelstorm.png"],
+		illustrations: ["../../images/shrapnelstorm.png"],
 		rating: ["4"],
 		tags: ["combo", "player damage"],
 		comments: ["Huge combo piece. Highest dmg in playtests so far is 18. - JM"]
@@ -211,7 +211,7 @@ exports.defaultCards = [
 		utilityValues: ["3", "2", "0"],
 		text: "none",
 		flavor: ["Can't you read this? Let me show you up close."],
-		illustrations: ["../../images/gg-stopsign.png"],
+		illustrations: ["../../images/stopsign.png"],
 		rating: ["2"],
 		tags: ["versatile", "aggressive"],
 		comments: ["Solid stats. Good early game but relatively weak late game. - JM"]
@@ -223,7 +223,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Return each of your Utilities to your hand. You may play any number of Utilities this turn..",
 		flavor: ["What goes up must come down."],
-		illustrations: ["../../images/gg-swirlingvacuum.png"],
+		illustrations: ["../../images/swirlingvacuum.png"],
 		rating: ["3"],
 		tags: ["combo", "build-around"],
 		comments: ["Very powerful and centerpiece of GG combo deck. - JM"]
@@ -235,7 +235,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","0"],
 		text: "When this is destroyed, deal 2 damage to target opponent and each of their Utilities.",
 		flavor: ["C'mon! These seats are brand new!"],
-		illustrations: ["../../images/gg-theteamsnewtruck.png"],
+		illustrations: ["../../images/theteamsnewtruck.png"],
 		rating: ["3"],
 		tags: ["aggressive", "damage"],
 		comments: ["Extremely powerful. Shrapnel Storm's best friend. - JM"]
@@ -247,7 +247,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Throw. Place target Utility on top of its owner's deck.",
 		flavor: ["Today feels like a beach day."],
-		illustrations: ["../../images/gg-thrownintoaportal.png"],
+		illustrations: ["../../images/thrownintoaportal.png"],
 		rating: ["2"],
 		tags: ["versatile", "utility damage", "throw"],
 		comments: ["Portal + any damage = destroys anything. - JM"]
@@ -259,7 +259,7 @@ exports.defaultCards = [
 		utilityValues: ["3","3","0"],
 		text: "When you play this, each of your Utilities gets +2 armor.",
 		flavor: ["Burly Bartender Taking Back The Streets"],
-		illustrations: ["../../images/cross-basalt.png"],
+		illustrations: ["../../images/basalt.png"],
 		rating: ["3"],
 		tags: ["versatile", "armor", "crossover"],
 		comments: ["Very versatile Crossover. All-purpose armor and good stats. - JM"]
@@ -271,7 +271,7 @@ exports.defaultCards = [
 		utilityValues: ["1","2","0"],
 		text: "When this is destroyed, each opponent destroys one of their Utilities. Their choice.",
 		flavor: ["The World's Most Dangerous Edgelord"],
-		illustrations: ["../../images/cross-basalt.png"],
+		illustrations: ["../../images/basalt.png"],
 		rating: ["2"],
 		tags: ["aggressive", "utility damage", "crossover"],
 		comments: ["If you can get rid of him consistently, this is a big swing. Great early. - JM"]
@@ -283,7 +283,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Each player discards their hand, then draws that many cards.",
 		flavor: ["none"],
-		illustrations: ["../../images/gg-blackhole.png"],
+		illustrations: ["../../images/blackhole.png"],
 		rating: ["3"],
 		tags: ["versatile", "player damage", "feat"],
 		comments: ["Keeps the pressure up and shows you new cards. Very strong mid-game. - JM"]
@@ -295,7 +295,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Throw. Deal 6 damage to target Utility.",
 		flavor: ["none"],
-		illustrations: ["../../images/gg-dunk.png"],
+		illustrations: ["../../images/dunk.png"],
 		rating: ["4"],
 		tags: ["versatile", "utility damage", "feat"],
 		comments: ["Get out of jail free card. Use wisely. - JM"]
@@ -307,7 +307,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Play an Action card from your hand for free, then play an Action card from your hand for free.",
 		flavor: ["none"],
-		illustrations: ["../../images/gg-fitofanger.png"],
+		illustrations: ["../../images/fitofanger.png"],
 		rating: ["1"],
 		tags: ["combo", "build-around", "feat"],
 		comments: ["Combo enabler. Doesn't work in every build. - JM"]
@@ -319,7 +319,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Destroy each of your Utilities. Deal 3 damage to each opponent.",
 		flavor: ["none"],
-		illustrations: ["../../images/gg-gravitywell.png"],
+		illustrations: ["../../images/gravitywell.png"],
 		rating: ["2"],
 		tags: ["aggressive", "build-around", "feat"],
 		comments: ["Build around. This + Shrapnel Storm = big game. - JM"]
@@ -331,7 +331,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Refresh the armor value on each of your Utilities. Draw 2 cards.",
 		flavor: ["none"],
-		illustrations: ["../../images/gg-reversetime.png"],
+		illustrations: ["../../images/reversetime.png"],
 		rating: ["3"],
 		tags: ["defensive", "card draw", "armor", "build-around", "feat"],
 		comments: ["Buys a surprising amount of time. Defensive but useful in any build. - JM"]
@@ -343,7 +343,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Double target Utility's current armor.",
 		flavor: ["The internet gave Robo a headache."],
-		illustrations: ["../../images/rb-antivirus.png"],
+		illustrations: ["../../images/antivirus.png"],
 		rating: ["2"],
 		tags: ["combo", "defensive", "armor"],
 		comments: ["Can be a huge swing. Big combo with Monkey See, Monkey Do - JM"]
@@ -355,7 +355,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","6"],
 		text: "none",
 		flavor: ["Robo want to look like bodybuilders on the internet."],
-		illustrations: ["../../images/rb-backplating.png"],
+		illustrations: ["../../images/backplating.png"],
 		rating: ["2"],
 		tags: ["defensive", "armor"],
 		comments: ["More useful as distraction. Opponents will go after big Armor aggressively. - JM"]
@@ -367,7 +367,7 @@ exports.defaultCards = [
 		utilityValues: ["1","4","4"],
 		text: "none",
 		flavor: ["Robo think new bomb vent good, but hard to clean."],
-		illustrations: ["../../images/rb-bombvent.png"],
+		illustrations: ["../../images/bombvent.png"],
 		rating: ["3"],
 		tags: ["aggressive", "armor"],
 		comments: ["Giant target. This almost never survives a turn. - JM"]
@@ -379,7 +379,7 @@ exports.defaultCards = [
 		utilityValues: ["3","3","0"],
 		text: "When you play this, you may Evolve.",
 		flavor: ["Why Robo...ZZZZZZ...at school...ZZZZZZ...no pants..."],
-		illustrations: ["../../images/rb-chargecable.png"],
+		illustrations: ["../../images/chargecable.png"],
 		rating: ["2"],
 		tags: ["aggressive", "evolve"],
 		comments: ["Stats and immediate Evolve trigger makes this a great role-filler. - JM"]
@@ -391,7 +391,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","0"],
 		text: "At the end of your turn, you may Evolve.",
 		flavor: ["Knox, who is Scopes? Monkey trial sounds fun!"],
-		illustrations: ["../../images/rb-darwinmatrix.png"],
+		illustrations: ["../../images/darwinmatrix.png"],
 		rating: ["1"],
 		tags: ["combo", "build-around", "evolve"],
 		comments: ["Not gonna win a game with this, but good for synergy decks. - JM"]
@@ -403,7 +403,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Evolve. Draw 2 cards.",
 		flavor: ["Knox, you got any more laser snacks?"],
-		illustrations: ["../../images/rb-emptycache.png"],
+		illustrations: ["../../images/emptycache.png"],
 		rating: ["2"],
 		tags: ["versatile", "card draw", "evolve"],
 		comments: ["Almost always good but never gradiose. Great 30th card. - JM"]
@@ -415,7 +415,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Target Utility gets +3 fight this turn.",
 		flavor: ["Robo say Robomania is running wild."],
-		illustrations: ["../../images/rb-gorillapress.png"],
+		illustrations: ["../../images/gorillapress.png"],
 		rating: ["3"],
 		tags: ["aggressive", "fight"],
 		comments: ["Strong damage source for Robo. Stronger than it looks because of Robo's limited Utility damage. - JM"]
@@ -427,7 +427,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Target Utility gets +2 fight this turn. If you've activated a Feat this turn, that Utility also gets +2 armor.",
 		flavor: ["Robo say it not a crime to look good."],
-		illustrations: ["../../images/rb-grooming.png"],
+		illustrations: ["../../images/grooming.png"],
 		rating: ["2"],
 		tags: ["versatile", "fight", "armor"],
 		comments: ["Completely middle of the road, but playable in aggro and armor combo builds. - JM"]
@@ -439,7 +439,7 @@ exports.defaultCards = [
 		utilityValues: ["2","2","3"],
 		text: "Whenever this deals damage to an opponent, you may Evolve.",
 		flavor: ["Robo's guidance system aims, but it find candy too."],
-		illustrations: ["../../images/rb-guidancesystems.png"],
+		illustrations: ["../../images/guidancesystems.png"],
 		rating: ["2"],
 		tags: ["versatile", "armor", "evolve"],
 		comments: ["Very popular in playtesting, but I don't see it. Completely fine and fragile. - JM"]
@@ -451,7 +451,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Evolve. 2 damage to target opponent.",
 		flavor: ["if (mad) then {punch} else {prank}"],
-		illustrations: ["../../images/rb-logicchain.png"],
+		illustrations: ["../../images/logicchain.png"],
 		rating: ["1"],
 		tags: ["aggressive", "player damage", "evolve"],
 		comments: ["If you need an Evolve trigger, this is probably the worst. Works better in aggressive decks. - JM"]
@@ -463,7 +463,7 @@ exports.defaultCards = [
 		utilityValues: ["2","2","3"],
 		text: "Whenever you Evolve, 3 damage to target Utility owned by an opponent.",
 		flavor: ["Robo practice this part online. 360 no scope."],
-		illustration: ["../../images/rb-lasercannon.png"],
+		illustration: ["../../images/lasercannon.png"],
 		rating: ["4"],
 		tags: ["aggressive", "utility damage", "combo", "evolve"],
 		comments: ["Better in the evolve deck, but a rock star in every game. Combos with Monkey Wrench. - JM"]
@@ -475,7 +475,7 @@ exports.defaultCards = [
 		utilityValues: ["1","4","0"],
 		text: "Whenever you play your second Action in a turn, you may Evolve.",
 		flavor: ["Robo now smart as 1000 apes. That's a lot of apes."],
-		illustrations: ["../../images/rb-microchimpprocessor.png"],
+		illustrations: ["../../images/microchimpprocessor.png"],
 		rating: ["2"],
 		tags: ["combo", "evolve"],
 		comments: ["Will basically stay on the board the entire game. Great early play and hard to get rid of. - JM"]
@@ -487,7 +487,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "This is a copy of the last Action card you played this turn.",
 		flavor: ["Robo want to drive the tank too!"],
-		illustrations: ["../../images/rb-monkeyseemonkeydo.png"],
+		illustrations: ["../../images/monkeyseemonkeydo.png"],
 		rating: ["3"],
 		tags: ["combo", "build-around"],
 		comments: ["Anti-Virus. Gorilla Press. Empty Cache. Monkey's Paw. Brutal card. Bomb. - JM"]
@@ -499,7 +499,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 2 damage to target Utility. If all of your Feats are face-down, destroy it instead.",
 		flavor: ["Robo think you have bad luck."],
-		illustrations: ["../../images/rb-monkeyspaw.png"],
+		illustrations: ["../../images/monkeyspaw.png"],
 		rating: ["3"],
 		tags: ["versatile", "utility damage"],
 		comments: ["Robo's limited Utility damage makes this a strong sideboard card. - JM"]
@@ -511,7 +511,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal two damage to target Opponent. If all of your Feats are face-down, 4 damage instead.",
 		flavor: ["Knox! Robo can't stop punching!"],
-		illustrations: ["../../images/rb-overclockedfists.png"],
+		illustrations: ["../../images/overclockedfists.png"],
 		rating: ["2"],
 		tags: ["aggressive", "player damage"],
 		comments: ["Doesn't work well in the Evolve deck, but aggressive Rocket Punch decks can use this. - JM"]
@@ -523,7 +523,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","0"],
 		text: "Whenever you Evolve, you may destroy this. If you do, deal 3 damage to target Opponent.",
 		flavor: ["Uh...Robo forgot what it was."],
-		illustrations: ["../../images/rb-robohasidea.png"],
+		illustrations: ["../../images/robohasidea.png"],
 		rating: ["1"],
 		tags: ["aggressive", "player damage", "combo"],
 		comments: ["Oddly enough, much worse in the Evolve deck. Aggro builds love this easy damage though. - JM"]
@@ -535,7 +535,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","5"],
 		text: "none",
 		flavor: ["Robo's thick skull is now much thicker. Robo smart."],
-		illustrations: ["../../images/rb-skullplating.png"],
+		illustrations: ["../../images/skullplating.png"],
 		rating: ["4"],
 		tags: ["defensive", "armor"],
 		comments: ["Robo's best defensive option - solid as a rock. Always works. Loves Anti-Virus. - JM"]
@@ -547,7 +547,7 @@ exports.defaultCards = [
 		utilityValues: ["3","1","3"],
 		text: "none",
 		flavor: ["Robo protect hands. Robo need hands for video games."],
-		illustrations: ["../../images/rb-steelgauntlet.png"],
+		illustrations: ["../../images/steelgauntlet.png"],
 		rating: ["2"],
 		tags: ["defensive", "armor"],
 		comments: ["Very playable as a 30th card. Doesn't win a game, but usually soaks damage and helps with Utility removal. - JM"]
@@ -559,7 +559,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Evolve twice.",
 		flavor: ["Robo can't do chores today. Updates."],
-		illustrations: ["../../images/rb-updating.png"],
+		illustrations: ["../../images/updating.png"],
 		rating: ["2"],
 		tags: ["combo", "build-around", "evolve"],
 		comments: ["Don't play this in offensive decks. It kind of does nothing. Laser Cannons likes it.- JM"]
@@ -571,7 +571,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","0"],
 		text: "Whenever you activate a Feat, this gets +2 fight this turn.",
 		flavor: ["Robo's new arm has spring-loaded action."],
-		illustrations: ["../../images/rb-wristweapon.png"],
+		illustrations: ["../../images/wristweapon.png"],
 		rating: ["3"],
 		tags: ["versatile", "combo", "evolve"],
 		comments: ["Not the most aggressive card, but reliable and tough to kill. - JM"]
@@ -583,7 +583,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","0"],
 		text: "Whenever you play another Utility, deal 2 damage to each player.",
 		flavor: ["Insurance Companies Hate This One Weird Chimp"],
-		illustrations: ["../../images/cross-apeomega.png"],
+		illustrations: ["../../images/apeomega.png"],
 		rating: ["3"],
 		tags: ["aggressive", "combo", "player damage", "crossover"],
 		comments: ["Racks up the damage. Punishes players without Armor. - JM"]
@@ -595,7 +595,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","0"],
 		text: "At the beginning of your turn, you may discard a card. If you do, your other Utilities get +1 fight this turn.",
 		flavor: ["This Patriot's Ape Army Is Coming To Tread On You"],
-		illustrations: ["../../images/cross-usape.png"],
+		illustrations: ["../../images/usape.png"],
 		rating: ["2"],
 		tags: ["aggressive", "discard", "crossover"],
 		comments: ["If you can keep a full hand, this is great for a pressure game. Semper Fi! - JM"]
@@ -607,7 +607,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Target Utility gets +1 fight this turn.",
 		flavor: ["none"],
-		illustrations: ["../../images/rb-fling.png"],
+		illustrations: ["../../images/fling.png"],
 		rating: ["2"],
 		tags: ["aggressive", "versatile", "feat"],
 		comments: ["Better than you think. Works in almost every deck, but keeps the aggressive deck going long into the mid-game."]
@@ -619,7 +619,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Each player discards a card.",
 		flavor: ["none"],
-		illustrations: ["../../images/rb-funnyprank.png"],
+		illustrations: ["../../images/funnyprank.png"],
 		rating: ["1"],
 		tags: ["defensive", "discard", "disruption", "feat"],
 		comments: ["This can honestly be very brutal in an Evolve deck. It doesn't take long to start whittling down hands. - JM"]
@@ -631,7 +631,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Evolve, then Evolve again.",
 		flavor: ["none"],
-		illustrations: ["../../images/rb-monkeywrench.png"],
+		illustrations: ["../../images/monkeywrench.png"],
 		rating: ["2"],
 		tags: ["combo", "build-around", "feat"],
 		comments: ["Doesn't work in every deck, but combos well and keeps the aggressive deck in new feats. - JM"]
@@ -643,7 +643,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 2 damage to each opponent.",
 		flavor: ["none"],
-		illustrations: ["../../images/rb-rocketpunch.png"],
+		illustrations: ["../../images/rocketpunch.png"],
 		rating: ["4"],
 		tags: ["aggressive", "player damage", "feat"],
 		comments: ["Use it every turn if you can. It's very good, but vulnerable to armor-heavy builds. - JM"]
@@ -655,7 +655,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Each player draws a card.",
 		flavor: ["none"],
-		illustrations: ["../../images/rb-jailbreak.png"],
+		illustrations: ["../../images/jailbreak.png"],
 		rating: ["3"],
 		tags: ["versatile", "card draw", "feat"],
 		comments: ["Keeps your hand full if you don't want to make space in your deck for card draw. Combos like it too. - JM"]
@@ -667,7 +667,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "To play this, you must first discard a card. 1 damage to target opponent and each of their Utilities.",
 		flavor: ["Don't bother ducking, idiots."],
-		illustrations: ["../../images/de-buckshot.png"],
+		illustrations: ["../../images/buckshot.png"],
 		rating: ["2"],
 		tags: ["aggressive", "player damage", "utility damage", "discard"],
 		comments: ["Powerful card in a deck with consistent aim. Low floor. - JM"]
@@ -679,7 +679,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Each opponent discards a card at random. Draw 2 cards.",
 		flavor: ["Which one? Blah. Doesn't matter."],
-		illustrations: ["../../images/de-callingshots.png"],
+		illustrations: ["../../images/callingshots.png"],
 		rating: ["2"],
 		tags: ["disruption", "card draw", "combo", "discard"],
 		comments: ["Better in a discard-based deck, but Deadeye needs some draw. It's fine. - JM"]
@@ -691,7 +691,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 2 damage to target player. That player discards a card.",
 		flavor: ["Ouch! Must be the shoes."],
-		illustrations: ["../../images/de-clipankle.png"],
+		illustrations: ["../../images/clipankle.png"],
 		rating: ["2"],
 		tags: ["disruption", "discard", "player damage"],
 		comments: ["Usually gets a card and some armor. Great filler card. - JM"]
@@ -703,7 +703,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","4"],
 		text: "none",
 		flavor: ["Well...can't shoot anybody if I'm dead."],
-		illustrations: ["../../images/de-decentcover.png"],
+		illustrations: ["../../images/decentcover.png"],
 		rating: ["3"],
 		tags: ["defensive", "armor"],
 		comments: ["Deadeye doesn't get a lot of defensive options and this is great with Duck Down. - JM"]
@@ -715,7 +715,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Discard up to three cards. Aim +1 for each card discarded.",
 		flavor: ["Wait for it...Wait for it..."],
-		illustrations: ["../../images/de-drawingabead.png"],
+		illustrations: ["../../images/drawingabead.png"],
 		rating: ["1"],
 		tags: ["combo", "discard", "aim"],
 		comments: ["Great combo piece in an aim deck. 3 aim out of one card is a bargain. - JM"]
@@ -727,7 +727,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Search your deck for a Utility with 3 or more Armor and draw it. Shuffle your deck after.",
 		flavor: ["Come and get me!"],
-		illustrations: ["../../images/de-duckdown.png"],
+		illustrations: ["../../images/duckdown.png"],
 		rating: ["4"],
 		tags: ["defensive", "armor"],
 		comments: ["Grabs crossovers too, but plays well with Decent Cover. - JM"]
@@ -739,7 +739,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "To play this, you must first discard two cards. 4 damage to target opponent.",
 		flavor: ["I hate wasting my bullets on you."],
-		illustrations: ["../../images/de-emptythechamber.png"],
+		illustrations: ["../../images/emptythechamber.png"],
 		rating: ["2"],
 		tags: ["aggressive", "player damage", "discard"],
 		comments: ["Hits hard and eats armor. - JM"]
@@ -751,7 +751,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Aim +2. 1 damage to any target.",
 		flavor: ["Like a hot knife through butter."],
-		illustrations: ["../../images/de-explosiverounds.png"],
+		illustrations: ["../../images/explosiverounds.png"],
 		rating: ["4"],
 		tags: ["versatile", "combo", "player damage", "utility damage", "aim"],
 		comments: ["This card does everything. Bomb. - JM"]
@@ -763,7 +763,7 @@ exports.defaultCards = [
 		utilityValues: ["1","3","0"],
 		text: "At the beginning of your turn, Aim +1.",
 		flavor: ["Perfectly untraceable."],
-		illustrations: ["../../images/de-ghostmagnum.png"],
+		illustrations: ["../../images/ghostmagnum.png"],
 		rating: ["2"],
 		tags: ["aggressive", "aim"],
 		comments: ["If you're looking for damage, this delivers. Don't expect it to stick around. - JM"]
@@ -775,7 +775,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Target Utility gains Fight equal to your Aim Score until end of turn.",
 		flavor: ["Nowhere to run. Nowhere to hide."],
-		illustrations: ["../../images/de-pinemdown.png"],
+		illustrations: ["../../images/hailofbullets.png"],
 		rating: ["3"],
 		tags: ["versatile", "combo", "fight", "aim"],
 		comments: ["If you get 2 or more out of this, it can close a game or break a utility. Great card. - JM"]
@@ -787,7 +787,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","0"],
 		text: "At the beginning of your turn, Aim +1.",
 		flavor: ["It's like a big necklace that makes me money."],
-		illustrations: ["../../images/de-hollowpointbandolier.png"],
+		illustrations: ["../../images/hollowpointbandolier.png"],
 		rating: ["2"],
 		tags: ["versatile", "aim"],
 		comments: ["The HP makes this a consistent source of damage. Might draw attention. - JM"]
@@ -799,7 +799,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","0"],
 		text: "At the beginning of your turn, Aim +1.",
 		flavor: [""],
-		illustrations: ["../../images/de-lasersights.png"],
+		illustrations: ["../../images/lasersights.png"],
 		rating: ["1"],
 		tags: ["combo", "aim"],
 		comments: ["Use at your own risk. Great source of Aim, but does nothing else. - JM"]
@@ -811,7 +811,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Target opponent discards a card at random. If that card is an Action, 2 damage to each opponent.",
 		flavor: ["Bad move. You got too close."],
-		illustrations: ["../../images/de-youtryingtorun.png"],
+		illustrations: ["../../images/muzzleflare.png"],
 		rating: ["2"],
 		tags: ["disruption", "discard", "player damage"],
 		comments: ["Good for the discard toolkit. Random discard is very brutal with 2-3 cards in hand. - JM"]
@@ -823,7 +823,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Draw three cards.",
 		flavor: ["C'mon...C'mon...one more second..."],
-		illustrations: ["../../images/de-reload.png"],
+		illustrations: ["../../images/reload.png"],
 		rating: ["4"],
 		tags: ["defensive", "card draw"],
 		comments: ["Deadeye struggles for card draw and this is pretty bog standard. - JM"]
@@ -835,7 +835,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Discard any number of cards. 2 damage to that many different targets.",
 		flavor: ["I'm about to get the high score!"],
-		illustrations: ["../../images/de-semiauto.png"],
+		illustrations: ["../../images/semiauto.png"],
 		rating: ["2"],
 		tags: ["versatile", "player damage", "utility damage"],
 		comments: ["It isn't wrong to do this for one or two targets, but you need Aim to make it sing. - JM"]
@@ -847,7 +847,7 @@ exports.defaultCards = [
 		utilityValues: ["5","0","0"],
 		text: "At the end of your turn, if your Aim Score is 3 or higher, each player discards two cards.",
 		flavor: ["Keep your head down. Or not. I don't care."],
-		illustrations: ["../../images/de-splashdamage.png"],
+		illustrations: ["../../images/splashdamage.png"],
 		rating: ["3"],
 		tags: ["disruption", "discard", "combo"],
 		comments: ["You won't need to use this too many times to empty everyone's hand. Good in the Aim deck. - JM"]
@@ -859,7 +859,7 @@ exports.defaultCards = [
 		utilityValues: ["2","0","0"],
 		text: "Whenever a player discards one or more cards from their hand, draw exactly that many cards.",
 		flavor: ["You're getting mad. I'm getting rich."],
-		illustrations: ["../../images/de-spoilsofwar.png"],
+		illustrations: ["../../images/spoilsofwar.png"],
 		rating: ["1"],
 		tags: ["combo", "disruption", "discard"],
 		comments: ["Don't let this stay on the board too long or you'll pay for it. - JM"]
@@ -871,7 +871,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Aim +2. Draw a card.",
 		flavor: ["I can't decide. They all look stupid."],
-		illustrations: ["../../images/de-targetspotted.png"],
+		illustrations: ["../../images/targetspotted.png"],
 		rating: ["3"],
 		tags: ["combo", "defensive", "card draw", "aim"],
 		comments: ["Excellent in the aim deck, but not great alone. - JM"]
@@ -883,7 +883,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "To play this, you must first discard a card. Each opponent discards two cards.",
 		flavor: ["Go ahead. Try to shoot first."],
-		illustrations: ["../../images/de-smokeemout.png"],
+		illustrations: ["../../images/smokeemout.png"],
 		rating: ["1"],
 		tags: ["disruption", "discard"],
 		comments: ["Excellent in the discard deck, but not unbeatable. Card draw can stuff this deck quickly. - JM"]
@@ -895,7 +895,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Aim +1. Deal 2 damage to target Utility.",
 		flavor: ["Check out the walking bullseye."],
-		illustrations: ["../../images/de-cleansnipe.png"],
+		illustrations: ["../../images/cleansnipe.png"],
 		rating: ["2"],
 		tags: ["aggressive", "utility damage", "aim"],
 		comments: ["Very good against a full board. Not worth playing just for the aim. - JM"]
@@ -907,7 +907,7 @@ exports.defaultCards = [
 		utilityValues: ["1","3","0"],
 		text: "At the beginning of your turn, you may discard two cards. If you do, your Utilities are a copy of Riot Grrrl this turn.",
 		flavor: ["One-Woman Rave With Expensive Taste"],
-		illustrations: ["../../images/cross-riotgrrrl.png"],
+		illustrations: ["../../images/riotgrrrl.png"],
 		rating: ["2"],
 		tags: ["crossover", "discard", "aggressive"],
 		comments: ["Guaranteed nine damage with a full board. Great if you can keep it safe. - JM"]
@@ -919,7 +919,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","0"],
 		text: "When you play this, prevent all damage that would be done to you and your Utilities until your next turn.",
 		flavor: ["Superhero Archer Tailing Her Dirtbag Sister."],
-		illustrations: ["../../images/cross-thwip.png"],
+		illustrations: ["../../images/thwip.png"],
 		rating: ["3"],
 		tags: ["crossover", "defensive"],
 		comments: ["Great way to keep your combo deck alive for one turn. - JM"]
@@ -931,7 +931,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal damage to each opponent equal to the number of cards in their hand.",
 		flavor: [""],
-		illustrations: ["../../images/de-bullseye.png"],
+		illustrations: ["../../images/bullseye.png"],
 		rating: ["3"],
 		tags: ["aggressive", "player damage"],
 		comments: ["Don't play this in the discard deck. - JM"]
@@ -943,7 +943,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Each player discards two cards.",
 		flavor: ["none"],
-		illustrations: ["../../images/de-handsup.png"],
+		illustrations: ["../../images/handsup.png"],
 		rating: ["1"],
 		tags: ["aggressive", "disruption"],
 		comments: ["Nauseating turn one play. Not worth it in a damage-based deck. - JM"]
@@ -955,7 +955,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Reveal cards from the top of your deck until you find an Action. Play that card for free and discard the rest.",
 		flavor: ["none"],
-		illustrations: ["../../images/de-handsup.png"],
+		illustrations: ["../../images/handsup.png"],
 		rating: ["3"],
 		tags: ["versatile", "combo"],
 		comments: ["If you get a free action, you can spend both of your other plays building aim. - JM"]
@@ -967,7 +967,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Draw three cards.",
 		flavor: ["none"],
-		illustrations: ["../../images/de-handsup.png"],
+		illustrations: ["../../images/handsup.png"],
 		rating: ["4"],
 		tags: ["defensive", "card draw"],
 		comments: ["Deadeye needs to keep her hands full to use her more explosive aim cards. - JM"]
@@ -979,7 +979,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Aim +1, 3 damage to target Utility.",
 		flavor: ["none"],
-		illustrations: ["../../images/de-handsup.png"],
+		illustrations: ["../../images/handsup.png"],
 		rating: ["3"],
 		tags: ["agggresive", "utility damage", "aim"],
 		comments: ["You'll need this to get those pesky combo decks out of the way. - JM"]
@@ -991,7 +991,7 @@ exports.defaultCards = [
 		utilityValues: ["4","4","0"],
 		text: "Minion. To play this, you must first discard two cards.",
 		flavor: ["Down boy! Oooh, this one has some spice. I like it!"],
-		illustrations: ["../../images/kx-aggressivebodyguard.png"],
+		illustrations: ["../../images/aggressivebodyguard.png"],
 		rating: ["3"],
 		tags: ["aggressive", "discard", "minion"],
 		comments: ["Keeping this alive for a turn or two can make up for the high cost. - JM"]
@@ -1003,7 +1003,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 4 damage to any target and yourself.",
 		flavor: ["Submit to you? I'd rather die!"],
-		illustrations: ["../../images/kx-angrylunge.png"],
+		illustrations: ["../../images/angrylunge.png"],
 		rating: ["4"],
 		tags: ["aggressive", "player damage", "utility damage"],
 		comments: ["Can always scrub a minion to avoid the penalty. - JM"]
@@ -1015,7 +1015,7 @@ exports.defaultCards = [
 		utilityValues: ["2","2","0"],
 		text: "Minion. When this is destroyed, skip your discard phase this turn.",
 		flavor: ["I'd do it myself, but who has the time"],
-		illustrations: ["../../images/kx-bankrobber.png"],
+		illustrations: ["../../images/bankrobber.png"],
 		rating: ["1"],
 		tags: ["combo", "card draw", "minion"],
 		comments: ["Only works if he dies on your turn. Minion him to save some damage.- JM"]
@@ -1027,7 +1027,7 @@ exports.defaultCards = [
 		utilityValues: ["1","2","0"],
 		text: "If you have seven or more cards in your hand at the end of your turn, you may destroy this and 5 damage to target opponent.",
 		flavor: ["Yes, there is a bomb. No, I don't know how it works."],
-		illustrations: ["../../images/kx-bombthreat.png"],
+		illustrations: ["../../images/bombthreat.png"],
 		rating: ["2"],
 		tags: ["combo", "player damage"],
 		comments: ["Doesn't hurt to throw this out there so your opponent will waste some removal. - JM"]
@@ -1039,7 +1039,7 @@ exports.defaultCards = [
 		utilityValues: ["1","4","0"],
 		text: "Minion.",
 		flavor: ["What's your name again? Tom? Go get 'em, Tom."],
-		illustrations: ["../../images/kx-cannonfodder.png"],
+		illustrations: ["../../images/cannonfodder.png"],
 		rating: ["2"],
 		tags: ["versatile", "minion"],
 		comments: ["Will hang around to soak some damage for as long as you want him. - JM"]
@@ -1051,7 +1051,7 @@ exports.defaultCards = [
 		utilityValues: ["2","2","0"],
 		text: "Minion. When you play this, draw a card.",
 		flavor: ["3"],
-		illustrations: ["../../images/kx-cutratemercenary.png"],
+		illustrations: ["../../images/cutratemercenary.png"],
 		rating: ["Which one of you buffoons spilled ink on the money?"],
 		tags: ["versatile", "card draw", "minion"],
 		comments: ["I always play this - it replaces itself and is good early. - JM"]
@@ -1063,7 +1063,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 2 damage to each opponent. If you have six or more cards in your hand, you may play this card for free.",
 		flavor: [""],
-		illustrations: ["../../images/kx-cheapshot.png"],
+		illustrations: ["../../images/cheapshot.png"],
 		rating: ["1"],
 		tags: ["combo", "aggressive", "card draw", "player damage"],
 		comments: ["Not worth it without the bonus, but the card draw deck is real and dangerous. - JM"]
@@ -1075,7 +1075,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 4 damage to each player.",
 		flavor: ["This sort of thing runs in the family."],
-		illustrations: ["../../images/kx-collateraldamage.png"],
+		illustrations: ["../../images/collateraldamage.png"],
 		rating: ["2"],
 		tags: ["aggressive", "player damage"],
 		comments: ["You can always minion this away. - JM"]
@@ -1087,7 +1087,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","2"],
 		text: "Minion. You have no maximum hand size.",
 		flavor: ["DONALDSON! Time to feed the feral dogs! Where is he?"],
-		illustrations: ["../../images/kx-donaldsonthebutler.png"],
+		illustrations: ["../../images/donaldsonthebutler.png"],
 		rating: ["4"],
 		tags: ["defensive", "armor", "card draw", "minion"],
 		comments: ["The ultimate minion. You can stack armor on this guy all day long. - JM"]
@@ -1099,7 +1099,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","0"],
 		text: "Whenever you draw a card, 1 damage to each opponent.",
 		flavor: ["I will not stop until the world fears the name of Knox!"],
-		illustrations: ["../../images/kx-endlessambition.png"],
+		illustrations: ["../../images/endlessambition.png"],
 		rating: ["1"],
 		tags: ["combo", "defensive", "card draw"],
 		comments: ["Good in the card draw deck, but aggressive decks might want something with fight. - JM"]
@@ -1111,7 +1111,7 @@ exports.defaultCards = [
 		utilityValues: ["4","4","0"],
 		text: "Minion. At the end of your turn, discard a card or destroy this.",
 		flavor: ["The check is in the mail. Please don't hurt me."],
-		illustrations: ["../../images/kx-expensivegoon.png"],
+		illustrations: ["../../images/expensivegoon.png"],
 		rating: ["3"],
 		tags: ["aggressive", "minion", "discard"],
 		comments: ["Worth the cost. Goon + Bodyguard is very hard to come back from. - JM"]
@@ -1123,7 +1123,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","3"],
 		text: "At the end of your turn, draw a card.",
 		flavor: ["After what happened to my last board, I expect fealty."],
-		illustrations: ["../../images/kx-extorttheboard.png"],
+		illustrations: ["../../images/extorttheboard.png"],
 		rating: ["2"],
 		tags: ["defensive", "combo", "card draw", "armor"],
 		comments: ["It won't win you the game, but it buys you a turn or two. Big target. - JM"]
@@ -1135,7 +1135,7 @@ exports.defaultCards = [
 		utilityValues: ["5","0","2"],
 		text: "At the beginning of your turn, you may destroy this. If you do, draw three cards.",
 		flavor: ["His empire. His pistol. His failures. All mine to keep."],
-		illustrations: ["../../images/kx-fathersvault.png"],
+		illustrations: ["../../images/fathersvault.png"],
 		rating: ["2"],
 		tags: ["defensive", "card draw", "armor"],
 		comments: ["Slots perfectly into the slower card draw combo deck. I've been impressed by this. - JM"]
@@ -1147,7 +1147,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","0"],
 		text: "Whenever you play a Utility with Minion, draw a card and skip your discard phase this turn.",
 		flavor: ["Shouldn't you be doing crime, Ted? Get out of my pool."],
-		illustrations: ["../../images/kx-floodthestreets.png"],
+		illustrations: ["../../images/floodthestreets.png"],
 		rating: ["2"],
 		tags: ["combo", "card draw", "minion"],
 		comments: ["The aggressive deck runs a lot of minions and this will help you if you run out of gas. - JM"]
@@ -1159,7 +1159,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Target Utility gets +2 Fight this turn. Draw 2 cards.",
 		flavor: ["Why do we only hire awful henchmen?"],
-		illustrations: ["../../images/kx-getthemyouidiots.png"],
+		illustrations: ["../../images/getthemyouidiots.png"],
 		rating: ["3"],
 		tags: ["aggressive", "card draw"],
 		comments: ["Pretty flexible, to be honest. Knox likes to run a lot of minions and this keeps the pressure up. - JM"]
@@ -1171,7 +1171,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "To play this, you must first discard a Utility card. Destroy target Utility.",
 		flavor: ["Eye for an eye? Only if you are weak."],
-		illustrations: ["../../images/kx-harassanddemean.png"],
+		illustrations: ["../../images/harassanddemean.png"],
 		rating: ["4"],
 		tags: ["disruption", "discard", "utility damage"],
 		comments: ["Unconditional removal is very powerful. Don't overlook this. - JM"]
@@ -1183,7 +1183,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","2"],
 		text: "At the end of your turn, 2 damage to each player.",
 		flavor: ["...are too dumb to reason with my brilliance! And..."],
-		illustrations: ["../../images/kx-incessantranting.png"],
+		illustrations: ["../../images/incessantranting.png"],
 		rating: ["3"],
 		tags: ["aggressive", "combo", "player damage"],
 		comments: ["Knox needs the game to end quickly and this definitely fits the bill. - JM"]
@@ -1195,7 +1195,7 @@ exports.defaultCards = [
 		utilityValues: ["3","3","0"],
 		text: "Minion.",
 		flavor: ["Don't you think that kevlar would just slow you down?"],
-		illustrations: ["../../images/kx-incessantranting.png"],
+		illustrations: ["../../images/incessantranting.png"],
 		rating: ["2"],
 		tags: ["versatile", "minion"],
 		comments: ["Solid stats. Don't do much, but does it well. - JM"]
@@ -1207,7 +1207,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal damage to target Utility equal to its current Armor Value. Draw a card.",
 		flavor: ["Broken! All of your toys are broken!"],
-		illustrations: ["../../images/kx-shattertobits.png"],
+		illustrations: ["../../images/shattertobits.png"],
 		rating: ["1"],
 		tags: ["disruption", "card draw", "utility damage"],
 		comments: ["This is a great sideboard card between matches. Excellent against pillowfort decks. - JM"]
@@ -1219,7 +1219,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Reveal any number of Utility cards from your hand. Target Utility gets +1 Armor for each card revealed.",
 		flavor: ["We have a plan! Stick to the plan!"],
-		illustrations: ["../../images/kx-sinistermachinations.png"],
+		illustrations: ["../../images/sinistermachinations.png"],
 		rating: ["2"],
 		tags: ["defensive", "card draw", "combo", "armor"],
 		comments: ["The card draw deck needs a bit of time and Donaldson is happy to take your orders. - JM"]
@@ -1231,7 +1231,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Draw the top 2 cards of your discard pile.",
 		flavor: ["Draw the top 2 cards of your discard pile."],
-		illustrations: ["../../images/kx-unfurlingschemes.png"],
+		illustrations: ["../../images/unfurlingschemes.png"],
 		rating: ["3"],
 		tags: ["versatile", "card draw", "combo"],
 		comments: ["This is so much better than drawing two off the top of the deck. - JM"]
@@ -1243,7 +1243,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "3 damage to target Utility. If you have 6 or more cards in your hand, you may play this card for free.",
 		flavor: ["Deadeye, can you take care of this?"],
-		illustrations: ["../../images/kx-viciousstrike.png"],
+		illustrations: ["../../images/viciousstrike.png"],
 		rating: ["3"],
 		tags: ["combo", "utility damage", "card draw"],
 		comments: ["This is playable without the bonus but excellent with it. - JM"]
@@ -1255,7 +1255,7 @@ exports.defaultCards = [
 		utilityValues: ["2","3","0"],
 		text: "Whenever this deals damage to an opponent, you may look at that player's hand and discard a card form it.",
 		flavor: ["A Failure Of Science Fueled By Hatred"],
-		illustrations: ["../../images/cross-darkbelle.png"],
+		illustrations: ["../../images/darkbelle.png"],
 		rating: ["3"],
 		tags: ["aggressive", "disruption", "discard"],
 		comments: ["Probably the strongest turn one play in the game. - JM"]
@@ -1267,7 +1267,7 @@ exports.defaultCards = [
 		utilityValues: ["2","4","0"],
 		text: "When you play this, destroy all Utilities whose current Armor value is four or higher.",
 		flavor: ["Eight Arms To Choke You"],
-		illustrations: ["../../images/cross-massacre.png"],
+		illustrations: ["../../images/massacre.png"],
 		rating: ["2"],
 		tags: ["defensive", "armor", "disruption"],
 		comments: ["Doesn't fit in every deck, but helps to break open defensive decks or setup utility destruction combos. - JM"]
@@ -1279,7 +1279,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Discard your hand. 1 damage to each opponent for each card discarded this way.",
 		flavor: ["none"],
-		illustrations: ["../../images/kx-grandioseplot.png"],
+		illustrations: ["../../images/grandioseplot.png"],
 		rating: ["2"],
 		tags: ["combo", "discard", "player damage"],
 		comments: ["Good in the aggressive deck but better in the card draw combo build. - JM"]
@@ -1291,7 +1291,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Draw 7 cards.",
 		flavor: ["none"],
-		illustrations: ["../../images/kx-deeppockets.png"],
+		illustrations: ["../../images/deeppockets.png"],
 		rating: ["1"],
 		tags: ["combo", "build-around", "card draw"],
 		comments: ["You can't do this with an overly aggressive deck because you'll be dead by turn five. - JM"]
@@ -1303,7 +1303,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Skip your discard phase this turn.",
 		flavor: ["none"],
-		illustrations: ["../../images/kx-cruelinsults.png"],
+		illustrations: ["../../images/cruelinsults.png"],
 		rating: ["2"],
 		tags: ["versatile", "card draw", "build-around"],
 		comments: ["Cool card. Having this on command makes sure your next turn is big. - JM"]
@@ -1315,7 +1315,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Whenever you play an Action this turn, deal 2 damage to each opponent.",
 		flavor: ["none"],
-		illustrations: ["../../images/kx-theonewhoisknox.png"],
+		illustrations: ["../../images/theonewhoisknox.png"],
 		rating: ["3"],
 		tags: ["aggressive", "combo", "player damage"],
 		comments: ["Cheap Shot and Violent Strike help to make sure you get 8-10 damage off of this. - JM"]
@@ -1327,7 +1327,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Destroy each of your Utilities with Minion. Deal 3 damage to each opponent for each Utility destroyed.",
 		flavor: ["none"],
-		illustrations: ["../../images/kx-recklessheist.png"],
+		illustrations: ["../../images/recklessheist.png"],
 		rating: ["3"],
 		tags: ["aggressive", "minion", "player damage"],
 		comments: ["Having up to nine damage on hand is nothing to ignore. Forces players into defensive positions. - JM"]
@@ -1339,7 +1339,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","3"],
 		text: "When you play this, look at the top two cards of your deck. You may draw one and discard the other.",
 		flavor: ["It's getting hard to find things in this jacket, let's see...I've got a DNA scanner, a skeletop key and...Yes! A granola bar!"],
-		illustrations: ["../../images/ob-whatafind.png"],
+		illustrations: ["../../images/asafeposition.png"],
 		rating: ["2"],
 		tags: ["defensive", "card draw"],
 		comments: ["Seeing two cards is big game. - JM"]
@@ -1351,7 +1351,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","0"],
 		text: "At the end of your turn, if all of your other Utilities are face-down, deal 5 damage to each opponent.",
 		flavor: ["One more win for the good guys!"],
-		illustrations: ["../../images/ob-caseclosed.png"],
+		illustrations: ["../../images/caseclosed.png"],
 		rating: ["2"],
 		tags: ["combo", "player damage", "vanish"],
 		comments: ["This requires good timing because vanish decks want to be flipping constantly. - JM"]
@@ -1363,7 +1363,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Draw 2 cards. OR Draw 6 cards.",
 		flavor: ["Oh geez, I hope he doesn't see me."],
-		illustrations: ["../../images/ob-casingthescene.png"],
+		illustrations: ["../../images/casingthescene.png"],
 		rating: ["2"],
 		tags: ["versatile", "card draw"],
 		comments: ["Drawing six isn't as good as it seems. It's a big chunk of health. Nice card though. - JM"]
@@ -1375,7 +1375,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Draw 2 cards. OR Vanish two target Gadgets.",
 		flavor: ["A quarter...a granola bar..."],
-		illustrations: ["../../images/ob-checkingmypockets.png"],
+		illustrations: ["../../images/checkingmypockets.png"],
 		rating: ["3"],
 		tags: ["versatile", "vanish", "card draw"],
 		comments: ["Two vanish triggers is a big deal. You won't want the card draw all too often. - JM"]
@@ -1387,7 +1387,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "2 damage to any target. OR Vanish target Gadget.",
 		flavor: ["Stand back, I've got this one."],
-		illustrations: ["../../images/ob-whatafind.png"],
+		illustrations: ["../../images/crackshot.png"],
 		rating: ["3"],
 		tags: ["aggressive", "player damage", "utility damage", "vanish"],
 		comments: ["Obscurity struggles with damage so keep this one close. - JM"]
@@ -1399,7 +1399,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Play the top card of your deck OR your discard pile for free.",
 		flavor: ["Brownie or cake? Pie? Baklava?"],
-		illustrations: ["../../images/ob-decisionsdecisions.png"],
+		illustrations: ["../../images/decisionsdecisions.png"],
 		rating: ["2"],
 		tags: ["card draw", "combo" ],
 		comments: ["Great in the vanish deck hungry for triggers, but just fine otherwise. - JM"]
@@ -1411,7 +1411,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 4 damage to target Utility. OR Vanish target Gadget.",
 		flavor: ["Here goes nothing..."],
-		illustrations: ["../../images/ob-pounce.png"],
+		illustrations: ["../../images/dropfromtheceiling.png"],
 		rating: ["4"],
 		tags: ["aggressive", "utility damage", "vanish"],
 		comments: ["Sometimes you just need to get rid of something. - JM"]
@@ -1423,7 +1423,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","0"],
 		text: "Gadget. When you Vanish this, Heal 2.",
 		flavor: ["It works, I promise! I use it almost every day."],
-		illustrations: ["../../images/ob-firstaidkit.png"],
+		illustrations: ["../../images/firstaidmicrokit.png"],
 		rating: ["2"],
 		tags: ["defensive", "vanish", "healing"],
 		comments: ["Use this to cycle your vanish cards back into your deck. - JM"]
@@ -1435,7 +1435,7 @@ exports.defaultCards = [
 		utilityValues: ["6","0","0"],
 		text: "Gadget. If this is the third Gadget you've turned upside-down this turn, take an extra turn after this one.",
 		flavor: ["Cover your ears everybody! Sorry! Sorry!"],
-		illustrations: ["../../images/ob-whatafind.png"],
+		illustrations: ["../../images/flashbangs.png"],
 		rating: ["1"],
 		tags: ["combo", "vanish", "disruption"],
 		comments: ["Hard to work, but definitely worth the effort. Decisions, Decisions helps. - JM"]
@@ -1447,7 +1447,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","4"],
 		text: "Replace the word OR with the word AND on all of your cards.",
 		flavor: ["You picked the wrong time, buddy. I'm missing lunch."],
-		illustrations: ["../../images/ob-illnevergiveup.png"],
+		illustrations: ["../../images/givingmyall.png"],
 		rating: ["2"],
 		tags: ["combo", "build-around"],
 		comments: ["If you've got a lot of modal cards, this is absolutely worth the effort of building around. - JM"]
@@ -1459,7 +1459,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","0"],
 		text: "Whenever you play a Gadget, you may Vanish it.",
 		flavor: ["I keep fidgeting with this thing...AAAAH!"],
-		illustrations: ["../../images/ob-highanxiety.png"],
+		illustrations: ["../../images/highanxiety.png"],
 		rating: ["2"],
 		tags: ["combo", "vanish"],
 		comments: ["Works well with aggressive gadgets and poorly with combo pieces. - JM"]
@@ -1471,7 +1471,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 2 damage to any target, then deal 2 damage to a different target.",
 		flavor: ["Please give up. My hand hurts."],
-		illustrations: ["../../images/ob-leftsandrights.png"],
+		illustrations: ["../../images/leftsandrights.png"],
 		rating: ["3"],
 		tags: ["aggressive", "player damage", "utility damage", "versatile"],
 		comments: ["Can really keep an aggressive player off their feet. Doesn't combo well with anything. - JM"]
@@ -1483,7 +1483,7 @@ exports.defaultCards = [
 		utilityValues: ["1","2","0"],
 		text: "Gadget. When you Vanish this, return target Utility to its owner's hand.",
 		flavor: ["I don't think you'll be firing that thing anytime soon."],
-		illustrations: ["../../images/ob-magnetichandcuffs.png"],
+		illustrations: ["../../images/magnetichandcuffs.png"],
 		rating: ["3"],
 		tags: ["aggressive", "utility damage", "vanish"],
 		comments: ["This into player damage gets rid of things permanently. - JM"]
@@ -1495,7 +1495,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Heal 2. Draw a card.",
 		flavor: ["Whew. Long day. Anybody hungry?"],
-		illustrations: ["../../images/ob-whatafind.png"],
+		illustrations: ["../../images/middaysnack.png"],
 		rating: ["1"],
 		tags: ["defensive", "card draw", "healing"],
 		comments: ["Not playable in every deck, but buys you a turn or so. - JM"]
@@ -1507,7 +1507,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","0"],
 		text: "Gadget. When you Vanish this, deal 2 damage to target opponent.",
 		flavor: ["Hate to do this, but..."],
-		illustrations: ["../../images/ob-pastelpistol.png"],
+		illustrations: ["../../images/pastelpistol.png"],
 		rating: ["4"],
 		tags: ["aggressive", "combo", "player damage", "vanish"],
 		comments: ["Centerpiece of the vanish deck. Keep it safe. - JM"]
@@ -1519,7 +1519,7 @@ exports.defaultCards = [
 		utilityValues: ["2","2","0"],
 		text: "Gadget. At the end of your turn, Heal 2 OR draw a card.",
 		flavor: ["Obscurity! This is Detective Wolf Cop! Stop hiding and answer your radio!"],
-		illustrations: ["../../images/ob-policeband.png"],
+		illustrations: ["../../images/policebandradio.png"],
 		rating: ["2"],
 		tags: ["versatile", "card draw", "healing"],
 		comments: ["Doesn't work face-down, but plays well with combo decks."]
@@ -1531,7 +1531,7 @@ exports.defaultCards = [
 		utilityValues: ["2","2","0"],
 		text: "Gadget. When you Vanish this, deal 1 damage to each opponent and each of their Utilities.",
 		flavor: ["It might be non-lethal, but it is really hecking loud."],
-		illustrations: ["../../images/ob-staticgrenades.png"],
+		illustrations: ["../../images/staticgrenade.png"],
 		rating: ["3"],
 		tags: ["aggressive", "combo", "vanish"],
 		comments: ["This deals a lot of damage over the course of the game if kept hidden. - JM"]
@@ -1543,7 +1543,7 @@ exports.defaultCards = [
 		utilityValues: ["5","0","0"],
 		text: "Whenever you play a card with the word OR in the text, Vanish target Gadget.",
 		flavor: ["Hold up...I have an idea."],
-		illustrations: ["../../images/ob-whatafind.png"],
+		illustrations: ["../../images/trustingmygut.png"],
 		rating: ["1"],
 		tags: ["combo", "vanish"],
 		comments: ["You can go down the modal path and basically play a detective deck. Fun combo piece. - JM"]
@@ -1555,7 +1555,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Draw 2 cards. OR Heal 3.",
 		flavor: ["Oh boy...I might need a second here."],
-		illustrations: ["../../images/ob-bidingmytime.png"],
+		illustrations: ["../../images/twiddlingmythumbs.png"],
 		rating: ["2"],
 		tags: ["defensive", "card draw", "healing"],
 		comments: ["You have a lot of defensive options, but balancing healing and card draw can buy you turns. - JM"]
@@ -1567,7 +1567,7 @@ exports.defaultCards = [
 		utilityValues: ["1","3","0"],
 		text: "Gadget. When you Vanish this, play the top card of your deck.",
 		flavor: ["I've always got something neat up my sleeve..."],
-		illustrations: ["../../images/ob-vibroknuckledusters.png"],
+		illustrations: ["../../images/vibroknuckledusters.png"],
 		rating: ["3"],
 		tags: ["combo", "card draw", "aggressive", "vanish"],
 		comments: ["Yeah the ability is good, but 3 fight is nothing to ignore. - JM"]
@@ -1579,7 +1579,7 @@ exports.defaultCards = [
 		utilityValues: ["5","0","0"],
 		text: "Gadget. When you Vanish this, you may play an Action from your hand for free.",
 		flavor: [""],
-		illustrations: ["../../images/ob-completelyinvisible.png"],
+		illustrations: ["../../images/xrayspex.png"],
 		rating: ["1"],
 		tags: ["versatile", "combo", "vanish"],
 		comments: ["This thing isn't great but it never goes away. - JM"]
@@ -1591,7 +1591,7 @@ exports.defaultCards = [
 		utilityValues: ["3","3","0"],
 		text: "Whenever this is dealt damage, deal 3 damage to each opponent.",
 		flavor: ["When It Bounces Off Her, She Sticks It To You"],
-		illustrations: ["../../images/cross-rubbermaiden.png"],
+		illustrations: ["../../images/rubbermaiden.png"],
 		rating: ["4"],
 		tags: ["crossover", "aggressive", "player damage", "utility damage", "versatile"],
 		comments: ["Fits in any deck that wants to be beating down. Scary. - JM"]
@@ -1603,7 +1603,7 @@ exports.defaultCards = [
 		utilityValues: ["3","1","3"],
 		text: "Your other Utilities can't be destroyed.",
 		flavor: ["Fighting Evil By Moonlight"],
-		illustrations: ["../../images/cross-detwolfcop.png"],
+		illustrations: ["../../images/detwolfcop.png"],
 		rating: ["2"],
 		tags: ["crossover", "defensive", "build-around"],
 		comments: ["Doesn't stay alive, but definitely draws attention. - JM"]
@@ -1615,7 +1615,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Replace the word OR with the word AND on all of your cards this turn.",
 		flavor: ["none"],
-		illustrations: ["../../images/ob-emerge.png"],
+		illustrations: ["../../images/emerge.png"],
 		rating: ["2"],
 		tags: ["combo", "versatile"],
 		comments: ["Works with a lot of cards in every deck. Very playable in the vanish deck too. - JM"]
@@ -1627,7 +1627,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Each player discards their hand.",
 		flavor: ["none"],
-		illustrations: ["../../images/ob-calmdown.png"],
+		illustrations: ["../../images/calmdown.png"],
 		rating: ["1"],
 		tags: ["defensive", "disruption"],
 		comments: ["Obscurity needs to bide time in order to win. This helps. - JM"]
@@ -1639,7 +1639,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Play a Gadget from your hand for free, then Vanish it.",
 		flavor: ["none"],
-		illustrations: ["../../images/ob-quickdraw.png"],
+		illustrations: ["../../images/quickdraw.png"],
 		rating: ["4"],
 		tags: ["aggressive", "combo", "vanish"],
 		comments: ["This can get an important vanish trigger or complete a combo. This speeds things up. - JM"]
@@ -1651,7 +1651,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 2 damage to three different targets.",
 		flavor: ["none"],
-		illustrations: ["../../images/ob-pistonkicks.png"],
+		illustrations: ["../../images/pistonkicks.png"],
 		rating: ["3"],
 		tags: ["versatile", "aggressive", "player damage", "utility damage"],
 		comments: ["Hard to follow up on, but can definitely shut down fragile strategies early. - JM"]
@@ -1663,7 +1663,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Vanish each of your Gadgets.",
 		flavor: ["none"],
-		illustrations: ["../../images/ob-subdue.png"],
+		illustrations: ["../../images/emptypockets.png"],
 		rating: ["2"],
 		tags: ["aggressive", "combo", "vanish", "build-around"],
 		comments: ["If you can set this up, it can finish out a game early. - JM"]
@@ -1675,7 +1675,7 @@ exports.defaultCards = [
 		utilityValues: ["3","3","0"],
 		text: "Whenever this damages an opponent, that player discards a card.",
 		flavor: ["Take one step closer and you'll be bankrupt."],
-		illustrations: ["../../images/qu-bankaccountnumbers.png"],
+		illustrations: ["../../images/bankaccountnumbers.png"],
 		rating: ["2"],
 		tags: ["aggressive", "disruption"],
 		comments: ["Isn't fancy but gets the job done. - JM"]
@@ -1687,7 +1687,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "1 damage to any target. Play the top card of target opponent's deck for free.",
 		flavor: ["Only three cypher layers? Do better."],
-		illustrations: ["../../images/qu-connectthedots.png"],
+		illustrations: ["../../images/connectingthedots.png"],
 		rating: ["2"],
 		tags: ["combo", "card draw"],
 		comments: ["The damage rarely matters, but can finish off a Utility. - JM"]
@@ -1699,7 +1699,7 @@ exports.defaultCards = [
 		utilityValues: ["5","1","0"],
 		text: "Whenever this deals damage to an opponent, Heal 1.",
 		flavor: ["How could I? Easily. I contain multitudes."],
-		illustrations: ["../../images/qu-stolenface.png"],
+		illustrations: ["../../images/counterfeitfaces.png"],
 		rating: ["3"],
 		tags: ["defensive", "versatile", "healing"],
 		comments: ["If you don't plan to be using a lot of Utilities this is a great early play. - JM"]
@@ -1711,7 +1711,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","0"],
 		text: "At the beginning of your turn, you may discard a card. If you do, play the top card of target opponent's deck.",
 		flavor: ["I've got safehouses everywhere. Come with me."],
-		illustrations: ["../../images/qu-stolenface.png"],
+		illustrations: ["../../images/deaddrop.png"],
 		rating: ["2"],
 		tags: ["defensive", "combo", "card draw", "discard"],
 		comments: ["This effect is about 50/50 but gets better in multiples. - JM"]
@@ -1723,7 +1723,7 @@ exports.defaultCards = [
 		utilityValues: ["2","3","2"],
 		text: "At the beginning of your turn, you may look at the top card of each player's deck.",
 		flavor: ["What's real and what's not? Who cares?"],
-		illustrations: ["../../images/qu-dezinformatsiya.png"],
+		illustrations: ["../../images/dezinformatsiya.png"],
 		rating: ["3"],
 		tags: ["aggressive", "armor", "disruption"],
 		comments: ["Great way to set up your stolen cards. Hits hard too. - JM"]
@@ -1735,7 +1735,7 @@ exports.defaultCards = [
 		utilityValues: ["1","1","0"],
 		text: "When you play this Heal 1 for each card in your hand.",
 		flavor: ["Down the hatch, I suppose."],
-		illustrations: ["../../images/qu-experimentalserum.png"],
+		illustrations: ["../../images/experimentalserum.png"],
 		rating: ["2"],
 		tags: ["defensive", "versatile", "healing"],
 		comments: ["Easy to get 4 or 5 out of it and works well with Psyops. - JM"]
@@ -1747,7 +1747,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "2 damage to any target. Spy.",
 		flavor: ["Who would do such a thing?"],
-		illustrations: ["../../images/qu-falseflagattacks.png"],
+		illustrations: ["../../images/falseflagattacks.png"],
 		rating: ["3"],
 		tags: ["aggressive", "player damage", "aggressive damage", "versatile", "spy"],
 		comments: ["Great way to dig yourself out of a hole. - JM"]
@@ -1759,7 +1759,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Spy. Draw a card.",
 		flavor: ["So many fingerprints. So little time."],
-		illustrations: ["../../images/qu-gatheringintel.png"],
+		illustrations: ["../../images/gatheringintelligence.png"],
 		rating: ["2"],
 		tags: ["defensive", "card draw", "disruption", "combo", "spy"],
 		comments: ["Great in a combo or thief deck. - JM"]
@@ -1771,7 +1771,7 @@ exports.defaultCards = [
 		utilityValues: ["3","1","0"],
 		text: "When this is destroyed, you may play the top card of target player's deck.",
 		flavor: ["Seducing some dullard is like a day off for me."],
-		illustrations: ["../../images/qu-honeypottrap.png"],
+		illustrations: ["../../images/honeypottrap.png"],
 		rating: ["2"],
 		tags: ["defensive", "disruption", "card draw"],
 		comments: ["This is extremely good as a live threat. Replace it with another Utility to guarantee the trigger. - JM"]
@@ -1783,7 +1783,7 @@ exports.defaultCards = [
 		utilityValues: ["1","2","0"],
 		text: "When this deals damage to an opponent, you may play the top card of your deck for free.",
 		flavor: ["Are you hiding from the world? I'm still listening in."],
-		illustrations: ["../../images/qu-informationleak.png"],
+		illustrations: ["../../images/informationleaks.png"],
 		rating: ["3"],
 		tags: ["aggressive", "disruption", "card draw"],
 		comments: ["Hit them fast and often. - JM"]
@@ -1795,7 +1795,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","0"],
 		text: "Whenever this deals damage to an opponent, you may Spy on them.",
 		flavor: ["I didn't hide a thing. I can't wait until they find it."],
-		illustrations: ["../../images/qu-lightningbug.png"],
+		illustrations: ["../../images/lightningbug.png"],
 		rating: ["3"],
 		tags: ["aggressive", "disrution", "spy"],
 		comments: ["Repeated spy triggers can bury good cards away from your opponent. - JM"]
@@ -1807,7 +1807,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Spy, then deal 1 damage to any target, then Spy again.",
 		flavor: ["John, whose voice is that? John? John?!"],
-		illustrations: ["../../images/qu-listeningin.png"],
+		illustrations: ["../../images/listeningin.png"],
 		rating: ["1"],
 		tags: ["versatile", "disruption", "spy"],
 		comments: ["Combine the first two effects to get rid of a nasty card in your opponent's deck. - JM"]
@@ -1819,7 +1819,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","2"],
 		text: "At the beginning and end of your turn, Heal 1.",
 		flavor: ["The gears will keep spinning long after I'm gone."],
-		illustrations: ["../../images/qu-musicbox.png"],
+		illustrations: ["../../images/musicbox.png"],
 		rating: ["4"],
 		tags: ["defensive", "healing", "armor"],
 		comments: ["Kill this thing on sight. - JM"]
@@ -1831,7 +1831,7 @@ exports.defaultCards = [
 		utilityValues: ["5","0","0"],
 		text: "At the beginning of your turn, you may discard a card. If you do, exchange this with another Utility in play.",
 		flavor: ["Have trouble seeing things clearly? Let me help."],
-		illustrations: ["../../images/qu-induceparanoia.png"],
+		illustrations: ["../../images/paranoiddelusions.png"],
 		rating: ["4"],
 		tags: ["disruption", "aggressive", "discard"],
 		comments: ["They can feed it cards or let you steal their best Utility. Excellent card. - JM"]
@@ -1843,7 +1843,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","2"],
 		text: "Your other Utilities get +1 Fight.",
 		flavor: ["Once you figure out what's going on, it'll be too late."],
-		illustrations: ["../../images/qu-psyopcampaign.png"],
+		illustrations: ["../../images/psyopcampaign.png"],
 		rating: ["3"],
 		tags: ["aggressive", "fight", "armor"],
 		comments: ["Query has some of the most aggressive Utiilities in the game and this turns them up a notch. - JM"]
@@ -1855,7 +1855,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Look at the top five cards of your deck. You may draw one of these cards, then return the rest in any order.",
 		flavor: ["Patience. Above all else, patience."],
-		illustrations: ["../../images/qu-revengeplot.png"],
+		illustrations: ["../../images/revengeplot.png"],
 		rating: ["3"],
 		tags: ["versatile", "card draw"],
 		comments: ["Great 30th card. Always finds you something. - JM"]
@@ -1867,7 +1867,7 @@ exports.defaultCards = [
 		utilityValues: ["2","0","0"],
 		text: "Whenever a card is playing from the top of a player's deck, destroy this and 3 damage to each opponent.",
 		flavor: ["Nothing you own is safe. Tread lightly."],
-		illustrations: ["../../images/qu-sabotage.png"],
+		illustrations: ["../../images/sabotage.png"],
 		rating: ["1"],
 		tags: ["aggressive", "combo", "player damage"],
 		comments: ["Query isn't always aggro, but this sure does help. - JM"]
@@ -1879,7 +1879,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "2 damage to target Utility. Heal 2.",
 		flavor: ["Not working? Burn it to the ground."],
-		illustrations: ["../../images/qu-sanitize.png"],
+		illustrations: ["../../images/sanitize.png"],
 		rating: ["2"],
 		tags: ["versatile", "utility damage", "healing"],
 		comments: ["Not great damage, but you'll take it if you need it. - JM"]
@@ -1891,7 +1891,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 3 damage to any target.",
 		flavor: ["I'm taking it all. Including your teeth."],
-		illustrations: ["../../images/qu-savatekick.png"],
+		illustrations: ["../../images/savatekick.png"],
 		rating: ["4"],
 		tags: ["versatile", "player damage", "utility damage"],
 		comments: ["Handles most problems. Always run this. - JM"]
@@ -1903,7 +1903,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Reveal the top card of target opponent's deck. You may play this card for free or discard it. Your choice.",
 		flavor: ["Anything owned can be taken."],
-		illustrations: ["../../images/qu-seizingassets.png"],
+		illustrations: ["../../images/seizingassets.png"],
 		rating: ["3"],
 		tags: ["defensive", "disruption", "card draw", "combo"],
 		comments: ["If you need to steal something, this isn't a bad option. - JM"]
@@ -1915,7 +1915,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Heal 2. Play the top card of your deck for free.",
 		flavor: ["Are you still struggling? I'm busy."],
-		illustrations: ["../../images/qu-untimelydatabreach.png"],
+		illustrations: ["../../images/untimelydatabreach.png"],
 		rating: ["2"],
 		tags: ["defensive", "healing", "card draw"],
 		comments: ["Sometimes you'll be stuck playing a lot of healing cards to fight back against big player damage. This works. - JM"]
@@ -1927,7 +1927,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","3"],
 		text: "At the end of your turn, you may shuffle this into your deck, If you do, draw 2 cards afterwards.",
 		flavor: ["Vagrant Shaman Reeking Of Cigarettes"],
-		illustrations: ["../../images/cross-blaireevasolomon.png"],
+		illustrations: ["../../images/blaireevasolomon.png"],
 		rating: ["2"],
 		tags: ["crossover", "defensive", "armor", "card draw"],
 		comments: ["Great if you need some card flow, but don't be afraid to tuck it if you are busy. - JM"]
@@ -1939,7 +1939,7 @@ exports.defaultCards = [
 		utilityValues: ["1","3","3"],
 		text: "Whenever this deals damage to an opponent, draw a card and Heal 2.",
 		flavor: ["Ridding The World Of Disease & Large Sandwiches"],
-		illustrations: ["../../images/cross-drdoodad.png"],
+		illustrations: ["../../images/drdoodad.png"],
 		rating: ["3"],
 		tags: ["crossover", "aggressive", "card draw", "healing"],
 		comments: ["Even one good hit is enough to play this card. Combo decks like it.- JM"]
@@ -1951,7 +1951,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Look at the top card of each player's deck. You may play one of those cards for free.",
 		flavor: ["none"],
-		illustrations: ["../../images/qu-ifnotnowwhen.png"],
+		illustrations: ["../../images/ifnotnowwhen.png"],
 		rating: ["3"],
 		tags: ["card draw", "aggressive", "feat"],
 		comments: ["Very strong turn one play. - JM"]
@@ -1963,7 +1963,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Each opponent reveals their hand. You may play a Utility revealed this way for free.",
 		flavor: ["none"],
-		illustrations: ["../../images/qu-whatdowehavehere.png"],
+		illustrations: ["../../images/whatdowehavehere.png"],
 		rating: ["2"],
 		tags: ["versatile", "card draw", "disruption", "discard"],
 		comments: ["This works quite well in almost any build. Good when you don't know what to expect. - JM"]
@@ -1975,7 +1975,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 3 damage to target Utility and target opponent.",
 		flavor: ["none"],
-		illustrations: ["../../images/qu-wherewereyougoing.png"],
+		illustrations: ["../../images/wherewereyougoing.png"],
 		rating: ["4"],
 		tags: ["aggressive", "player damage", "utility damage"],
 		comments: ["Not quite as good against defensive decks, but knocks most things out of the way. - JM"]
@@ -1987,7 +1987,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Target opponent sorts the top three cards of your deck into two piles. Draw one and discard the other.",
 		flavor: ["none"],
-		illustrations: ["../../images/qu-whoami.png"],
+		illustrations: ["../../images/whoami.png"],
 		rating: ["3"],
 		tags: ["versatile", "card draw"],
 		comments: ["Works well with spy and refills your hand. - JM"]
@@ -1999,7 +1999,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Heal 3. Look at the top card of each player's deck.",
 		flavor: ["none"],
-		illustrations: ["../../images/qu-whybother.png"],
+		illustrations: ["../../images/whybother.png"],
 		rating: ["1"],
 		tags: ["defensive", "combo", "healing"],
 		comments: ["Buys a turn and sets up a good steal. - JM"]
@@ -2011,7 +2011,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","0"],
 		text: "At the beginning of your turn, you may discard 3 cards. If you do, this gets +4 Fight this turn.",
 		flavor: ["Feels Nothing And Hates Everything - Especially You"],
-		illustrations: ["../../images/cross-adrenaline.png"],
+		illustrations: ["../../images/adrenaline.png"],
 		rating: ["2"],
 		tags: ["crossover", "aggressive", "discard", "fight"],
 		comments: ["If you keep a full hand, this guy's base stats are good enough to consider. - JM"]
@@ -2023,7 +2023,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","0"],
 		text: "Whenever this deals damage to a player, it gains that much Armor.",
 		flavor: ["His Aloof Cruelty Is Reflected In His Bank Account"],
-		illustrations: ["../../images/cross-albedo.png"],
+		illustrations: ["../../images/albedo.png"],
 		rating: ["3"],
 		tags: ["crossover", "defensive", "combo", "armor"],
 		comments: ["Great way to annoy the opponent, especially with multiple hits. - JM"]
@@ -2035,7 +2035,7 @@ exports.defaultCards = [
 		utilityValues: ["4","1","0"],
 		text: "At the end of your turn, flip a coin. If it is heads, 2 damage to any target and Heal 2.",
 		flavor: ["Somehow Things Just Keep Going His Way..."],
-		illustrations: ["../../images/cross-chance.png"],
+		illustrations: ["../../images/chance.png"],
 		rating: ["2"],
 		tags: ["crossover", "versatile", "player damage", "opponent damage", "healing"],
 		comments: ["Quite an all-star if you manage to get lucky. - JM"]
@@ -2047,7 +2047,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","2"],
 		text: "At the beginning of your turn, you may return this and the top card of your discard pile to your hand.",
 		flavor: ["Adolescent God Of Death & His Slime Golem Son"],
-		illustrations: ["../../images/cross-deathboyandgoobo.png"],
+		illustrations: ["../../images/deathboyandgoobo.png"],
 		rating: ["3"],
 		tags: ["crossover", "combo", "defensive", "card draw"],
 		comments: ["Definitely helps keep a combo engine running. - JM"]
@@ -2059,7 +2059,7 @@ exports.defaultCards = [
 		utilityValues: ["3","3","0"],
 		text: "Fiona cant fight the turn she is played. Whenever this deals damage, it gets +1 Armor",
 		flavor: ["Hot-Blooded Demigod With Something To Prove"],
-		illustrations: ["../../images/cross-fiona.png"],
+		illustrations: ["../../images/fiona.png"],
 		rating: ["4"],
 		tags: ["crossover", "aggressive", "armor", "armor"],
 		comments: ["She can't stay around too long until she takes over a game. - JM"]
@@ -2071,7 +2071,7 @@ exports.defaultCards = [
 		utilityValues: ["3","1","2"],
 		text: "When you play this, you may play the top card of your discard pile for free if it is a Utility.",
 		flavor: ["Collects Dead Historical Figures. Ick."],
-		illustrations: ["../../images/cross-graverobber.png"],
+		illustrations: ["../../images/graverobber.png"],
 		rating: ["2"],
 		tags: ["crossover", "combo", "card draw"],
 		comments: ["This card brings important stuff back to life, especially if you manage to wait a turn or two. - JM"]
@@ -2083,7 +2083,7 @@ exports.defaultCards = [
 		utilityValues: ["4","2","0"],
 		text: "You can't lose the game.",
 		flavor: ["The Invincible Guardian of Steel City"],
-		illustrations: ["../../images/cross-ironjustice.png"],
+		illustrations: ["../../images/ironjustice.png"],
 		rating: ["3"],
 		tags: ["crossover", "defensive", "disruption", "build-around", "combo"],
 		comments: ["Yeah this card is good, but much better if your deck is filled with fragile combos. - JM"]
@@ -2095,7 +2095,7 @@ exports.defaultCards = [
 		utilityValues: ["4","2","0"],
 		text: "At the beginning of your turn, draw 2 cards then discard 2 cards.",
 		flavor: ["The World's Fastest Walking Advertisement"],
-		illustrations: ["../../images/cross-lightspeed.png"],
+		illustrations: ["../../images/lightspeed.png"],
 		rating: ["2"],
 		tags: ["crossover", "aggressive", "card draw", "discard"],
 		comments: ["Don't let him stick around forever, you can't turn him off. - JM"]
@@ -2107,7 +2107,7 @@ exports.defaultCards = [
 		utilityValues: ["3","1","2"],
 		text: "When you play this, play the top card of your deck for free.",
 		flavor: ["The Magnificent Monarch Of Mindbenders!"],
-		illustrations: ["../../images/cross-puzzleking.png"],
+		illustrations: ["../../images/puzzleking.png"],
 		rating: ["3"],
 		tags: ["crossover", "defensive", "card draw"],
 		comments: ["Isn't too impactful alone, but is great when played multiple times. - JM"]
@@ -2119,7 +2119,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","2"],
 		text: "This gets +1 Fight for each Crossover in play.",
 		flavor: ["She And Her Six Ghost Hamsters Are New In Town"],
-		illustrations: ["../../images/cross-sophia.png"],
+		illustrations: ["../../images/sophia.png"],
 		rating: ["3"],
 		tags: ["crossover", "aggressive", "build-around"],
 		comments: ["If you can secure Crossovers, this gets out of control quickly. Great in multiplayer. - JM"]
@@ -2131,7 +2131,7 @@ exports.defaultCards = [
 		utilityValues: ["1","3","0"],
 		text: "At the end of your turn, 2 damage to target opponent.",
 		flavor: ["Shocking Bank Robber With A Lethal Touch"],
-		illustrations: ["../../images/cross-static.png"],
+		illustrations: ["../../images/static.png"],
 		rating: ["2"],
 		tags: ["aggressive", "player damage"],
 		comments: ["Can't be left alone. She's five per turn by herself. - JM"]
@@ -2143,7 +2143,7 @@ exports.defaultCards = [
 		utilityValues: ["5","0","0"],
 		text: "At the end of your turn, discard 3 cards. Search your deck for a Crossover and put it into your hand. Shuffle afterwards.",
 		flavor: ["Leading Lambs To The Slaughter"],
-		illustrations: ["../../images/cross-theevangelist.png"],
+		illustrations: ["../../images/theevangelist.png"],
 		rating: ["1"],
 		tags: ["combo", "discard", "card draw", "build-around"],
 		comments: ["Deal with the devil. Make sure whatever you get is worth the steep cost. - JM"]

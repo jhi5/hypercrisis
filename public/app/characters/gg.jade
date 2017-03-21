@@ -3,27 +3,33 @@
 		.col-md-6.text-center
 			div.gg-profilebg
 				img.gg-charpage-img.charpagebg(src="../../images/gravitygirlcharselect.png")
-			h1.gg-charpage-name.okuda GRAVITY GIRL
+			h1#charname.gg-charpage-name.okuda Gravity Girl
 			button.btn.btn-block.btn-success.charpage-download Download Now!
 		.col-md-6.charbio.text-center
 			h3.gg-profileheadings.okuda POWERS
 				h3.profiletext.okuda Gravity Manipulation, Time Manipulation, Teleportation Via Portals	
 			h3.gg-profileheadings.okuda STRENGTHS & WEAKNESSES
-				h3.okuda.profiletext + Versatile, Combo Friendly
-				h3.okuda.profiletext - Poor Card Draw, Hard To Deckbuild
+				h3.okuda.profile-text
+					span.plus +   
+					| Combo Friendly, Versatile
+				h3.okuda.profile-text
+					span.minus -   
+					| Poor Card Draw, Hard To Deckbuild
 			h3.gg-profileheadings.okuda DIFFICULTY
 				div.charpage-skill
 					img.charpage-difficulty(src="../../images/easy.png")
 			h3.gg-profileheadings.okuda SKILL
-				div.charpage-skill				
+				div.charpage-skill(data-toggle="popover" data-trigger="hover" data-content="To play a card with Throw, you must first destroy one of your own Utilities.")				
 					img(src="../../images/throw.png")
 		.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
-			.modal-header
-				button.btn.btn-block.btn-modal-close(data-dismiss="modal" ng-click="emptyModal()") Close This Window
+			.modal-header.text-center
+				button.btn.btn-modal-previous(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") Previous Card
+				button.btn.btn-modal-close(data-dismiss="modal" ng-click="emptyModal()") Close This Window
+				button.btn.btn-modal-next(ng-click="findNextEntry()" ng-hide="hideNext()") Next Card
 			.modal-body
 				.col-md-6.text-center
 					img(src="{{modalContent.illustrations[0]}}")
-					h1.cardtitle {{modalContent.name}}
+					h1.cardtitle#modaltitle {{modalContent.name}}
 					h3.text-center.gg-flavortext(ng-hide="modalContent.flavor == null") {{modalContent.flavor[0]}}
 				.col-md-6.text-center
 					.row
@@ -32,7 +38,7 @@
 							h2.text-center {{modalContent.rating}}
 						.col-md-6
 							h3.gg-profileheadings.okuda Type
-							h2.text-center {{modalContent.type}}
+							img.modaltypesymbol(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
 					.row(ng-hide="modalContent.utilityValues == null")
 						.col-md-12
 							h3.gg-profileheadings.okuda Utility Values
@@ -50,25 +56,30 @@
 							h3.gg-profileheadings.okuda Card Text
 							h3.text-center {{modalContent.text}}
 					.row
-						.com-md-12
+						.col-md-12
 							h3.gg-profileheadings.okuda Comment
 							h3.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
 	h1.text-center Gravity Girl Card Database
 	h4.text-center Click On A Card Name To Open Its Details!
 	table.table.table-hover.table-striped.table-condensed(ng-if="loaded")
 		thread
+			.row				
+				.div-col-3.tagrow.text-center(ng-repeat="tag in tagArray")
+					button.btn-primary.tagbutton {{tag}}
+				.div-col.12
+					button.btn-block.btn-warning.resetbutton RESET
 			tr
 				th 
-					h3 Card Name
+					h3.text-center Name
 				th 
-					h3 Card Type
+					h3.text-center Type
 				th 
 					h3.text-center Text
 				tbody
-					tr(ng-repeat="card in cards | filter: { character: 'Gravity Girl'} | orderBy: 'name'")
+					tr(ng-repeat="card in cards | filter: currentFilter | orderBy: 'name'")
 						td
-							h3.adventure(ng-click="transferModalContent(card.name)") {{card.name}}
+							h2.tablecardtitle.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
 						td 
-							h3 {{card.type}}
+							img.typesymbol.text-center(src='{{card.typeSymbol}}')
 						td 
-							h3 {{card.text}}
+							h3.text-center.cardtext.okuda {{card.text}}

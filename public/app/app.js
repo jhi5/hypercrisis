@@ -59,4 +59,22 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
 		templateUrl: '/partials/feedback/feedback',
 		controller: 'mvFeedbackCtrl'
 	})
+	.when('/articles/gravitygirlintro',{
+		templateUrl: '/partials/articles/introGG'
+	})
+	.when('/articles/robonobointro',{
+		templateUrl: '/partials/articles/introRB'
+	})
+	.when('/articles/deadeyeintro',{
+		templateUrl: '/partials/articles/introDE'
+	})
+	.when('/articles/knoxintro',{
+		templateUrl: '/partials/articles/introKX'
+	})
+	.when('/articles/obscurityintro',{
+		templateUrl: '/partials/articles/introOB'
+	})
+	.when('/articles/queryintro',{
+		templateUrl: '/partials/articles/introQU'
+	})
 });

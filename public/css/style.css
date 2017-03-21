@@ -284,8 +284,11 @@ body {
   font-family: "adventureregular";
 }
 .cardtitle {
-  font-family: "Adventure";
-  font-size: 7rem;
+  font-family: "adventureregular";
+  font-size: 8rem;
+}
+.tablecardtitle {
+  font-family: "adventureregular";
 }
 .charbio {
   border-radius: 1.5rem;
@@ -328,4 +331,58 @@ body {
   background: #2aade3;
   color: #fff;
   font-size: 3rem;
+  margin: 0 1rem 0 1rem;
+}
+.btn-modal-previous {
+  font-family: 'adventureregular';
+  background: #093;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 1rem 0 1rem;
+}
+.btn-modal-next {
+  font-family: 'adventureregular';
+  background: #f66;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 1rem 0 1rem;
+}
+.popover {
+  width: 20rem;
+}
+.popover-content {
+  color: Black;
+  font-family: "okuda";
+  font-size: 3rem;
+}
+.plus {
+  font-family: "okuda";
+  color: #008000;
+  font-size: 5rem;
+}
+.minus {
+  font-family: "okuda";
+  color: #f00;
+  font-size: 5rem;
+}
+.typesymbol {
+  max-width: 10rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.modaltypesymbol {
+  max-width: 15rem;
+}
+.cardtext {
+  font-size: 4rem;
+}
+.tagrow {
+  display: inline-block;
+}
+.tagbutton {
+  background-color: rgba(0,0,0,0);
+  color: #000;
+  margin-right: 1rem;
+  display: inline-block;
+  font-size: 150%;
 }
