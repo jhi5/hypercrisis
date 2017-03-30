@@ -2,15 +2,31 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	var cardCollection = [];
 	$scope.currentModalIndex = 0;
 	$scope.currentCollectionSize = 0;
-	$scope.tagArray = [];	
-	$scope.currentFilter = {};
+	$scope.tagArray = [];
+	$scope.currentTags = [];	
 	$scope.currentCharacter = $("#charname").text();
-	console.log($scope.currentCharacter);
-	filterBuilder = function(object){
-		object = {character: $scope.currentCharacter};
+	$scope.currentFilter = {};
+	console.log($scope.currentFilter);
+	$scope.filterBuilder = function(){
+		var currentChar = $scope.currentCharacter;
+		return { character : currentChar };
 	}
-	filterBuilder($scope.currentFilter);
-	$scope.currentFilter = {character: $scope.currentCharacter};
+	$scope.filterButton = function(string){
+		$scope.currentTags.push(string);			
+	}
+	$scope.hideTagButton = function(string){
+		if($scope.currentTags.length !== 0){
+			for(i=0;i<$scope.currentTags.length;i++){
+				if(string === $scope.currentTags[i]){
+					return true;
+				}
+			}			
+		}
+		return false;
+	}
+	$scope.removeFilterButton = function(string){		
+		$scope.currentTags.splice($scope.currentTags.indexOf(string), 1);
+	}	
 	findAverage = function(array){
 		var sum = 0;
 		for(i=0; i++; i<array.length){
@@ -90,7 +106,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 				}
 			}
 			}
-			$scope.tagArray = $.uniqueSort($scope.tagArray);
+			$scope.tagArray = $scope.tagArray.sort($.uniqueSort($scope.tagArray));
 			$scope.loaded = true;
 		});
 	}

@@ -77,4 +77,8 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
 	.when('/articles/queryintro',{
 		templateUrl: '/partials/articles/introQU'
 	})
+	.when('/articles/siliconartistintro',{
+		templateUrl: '/partials/articles/introSA'
+	})
+	
 });

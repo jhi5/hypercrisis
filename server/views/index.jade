@@ -2,11 +2,28 @@ extends ../includes/layout
 
 block main-content
 	.navbar.navbar-inverse.navbar-fixed-top
-		.container
+		.container-fluid
 			.navbar-header
-				a.navbar-brand.okuda.big(href='/') Hypercrisis Open Beta
+				button.navbar-toggle(type='button', data-toggle='collapse', data-target='#myNavbar')
+					span.icon-bar
+					span.icon-bar
+					span.icon-bar
+				a.navbar-brand.adventure.big(href='/') HYPERCRISIS
+			#myNavbar.collapse.navbar-collapse
+				ul.nav.navbar-nav.navbar-right.navbuttonmargin
+					li
+						a(href="")
+							button.btn.btn-primary.lg.navbutton.adventure(type='button') Characters
+						a(href="")
+							button.btn.btn-primary.lg.navbutton.adventure(type='button') How To Play
+						a(href="")
+							button.btn.btn-primary.lg.navbutton.adventure(type='button') Download Now!
+						a(href="")
+							button.btn.btn-primary.lg.navbutton.adventure(type='button') Submit Playtest
+
 	section.content
 			div(ng-view)
 
 	footer.container.text-center
+
 		p &copy; 2016 Poor Skeleton Games & S. House Studio

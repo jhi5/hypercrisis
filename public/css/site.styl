@@ -1,3 +1,5 @@
+//fonts
+
 @font-face
     font-family 'okudabold_italic'
     src url('okuda_bold_italic-webfont.woff2') format('woff2'),
@@ -40,246 +42,65 @@
     font-weight normal
     font-style normal
 
+.okuda
+	font-family 'okuda'
+
+.adventure
+	font-family 'adventureregular'
+
+.big
+	font-size 7rem
+
+.whitetext
+	color white
+
+//colors
+
 deadeyecolor = rgb(51, 51, 102)
 deadeyealpha = rgba(51, 51, 102, .85)
+deadeyeflavor = rgb(153, 153, 153)
 gravitygirlcolor = rgb(153, 102, 153)
 gravitygirlalpha = rgba(153, 102, 153, .85)
+gravitygirlflavor = rgb(204, 51, 153)
 knoxcolor = rgb(102, 51, 51)
 knoxalpha = rgba(102, 51, 51, .85)
+knoxflavor = rgb(197, 179, 88)
 obscuritycolor = rgb(204, 153, 204)
 obscurityalpha = rgba(204, 153, 204, .85)
+obscurityflavor = rgb(204, 204, 204)
 querycolor = rgb(51, 102, 51)
 queryalpha = rgba(51, 102, 51, .85)
+queryflavor = rgb(255, 102, 102)
 robonobocolor = rgb(102, 102, 102)
 robonoboalpha = rgba(102, 102, 102, .85)
+robonoboflavor = rgb(102, 204, 255)
+siliconartistcolor = rgb(51, 133, 51)
+siliconartistalpha = rgba(51, 133, 51, .85)
+siliconartistflavor = rgb(100, 111, 229)
 crosscolor = rgb(204, 153, 51)
 crossalpha = rgba(204,153,51,.85)
 characterpagebg = url('../images/charpagebg.png')
 
+//dom
+
 body
     padding-top 70px
+
+.navbar
+	padding-bottom 1rem
+
+//frontpage
 
 .mainButton
 	padding-top 3rem
 	padding-bottom 3rem
-	font-size 7rem
+	font-size 4rem
+	border-radius 1rem
+
+//card database
 
 .modal-admin
 	background-color white
-
-.charselect
-	height 30rem
-	width 30rem
-	margin-right 1.25rem
-	margin-bottom 1rem
-	border 2.0rem outset rgba(193, 66, 66, 0.1)
-	border-radius .25rem
-
-.ggcharselect:hover
-	border 3.0rem outset gravitygirlcolor
-
-.gg-profilebg
-	background linear-gradient(0deg,gravitygirlalpha,gravitygirlalpha),url(../images/jumbotron.png)
-
-.gg-profileheadings
-	color white
-	background linear-gradient(0deg,gravitygirlalpha,gravitygirlalpha),url(../images/jumbotron.png)
-	font-size 5rem
-	border-radius .5rem
-
-.gg-flavortext
-	color gray
-	font-style italic
-
-.gg-charpage-name
-	background gravitygirlcolor
-	color white
-	font-size 10rem
-
-.gg-charpage-img
-	min-width 100%
-	border 2em solid gravitygirlcolor
-
-.characterselectgg
-	background linear-gradient(0deg,gravitygirlalpha,gravitygirlalpha),url(../images/jumbotron.png)
-
-
-.decharselect:hover
-	border 3.0rem outset deadeyecolor
-
-.de-profilebg
-	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/jumbotron.png)
-
-.de-profileheadings
-	color white
-	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/jumbotron.png)
-	font-size 5rem
-	border-radius .5rem
-
-.de-flavortext
-	color gray
-	font-style italic
-
-.de-charpage-name
-	background deadeyecolor
-	color white
-	font-size 10rem
-
-.de-charpage-img
-	min-width 100%
-	border 2em solid deadeyecolor
-
-.characterselectde
-	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/jumbotron.png)
-
-.kxcharselect:hover
-	border 3.0rem outset knoxcolor
-
-.kx-profilebg
-	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/jumbotron.png)
-
-.kx-profileheadings
-	color white
-	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/jumbotron.png)
-	font-size 5rem
-	border-radius .5rem
-
-.kx-flavortext
-	color gray
-	font-style italic
-
-.kx-charpage-name
-	background knoxcolor
-	color white
-	font-size 10rem
-
-.kx-charpage-img
-	min-width 100%
-	border 2em solid knoxcolor
-
-.characterselectkx
-	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/jumbotron.png)
-
-.obcharselect:hover
-	border 3.0rem outset obscuritycolor
-
-.ob-profilebg
-	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/jumbotron.png)
-
-.ob-profileheadings
-	color white
-	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/jumbotron.png)
-	font-size 5rem
-	border-radius .5rem
-
-.ob-flavortext
-	color gray
-	font-style italic
-
-.ob-charpage-name
-	background obscuritycolor
-	color white
-	font-size 10rem
-
-.ob-charpage-img
-	min-width 100%
-	border 2em solid obscuritycolor
-
-.characterselectob
-	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/jumbotron.png)
-
-.rbcharselect:hover
-	border 3.0rem outset robonobocolor
-
-.rb-profilebg
-	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/jumbotron.png)
-
-.rb-profileheadings
-	color white
-	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/jumbotron.png)
-	font-size 5rem
-	border-radius .5rem
-
-.rb-flavortext
-	color gray
-	font-style italic
-
-.rb-charpage-name
-	background robonobocolor
-	color white
-	font-size 10rem
-
-.rb-charpage-img
-	min-width 100%
-	border 2em solid robonobocolor
-
-.characterselectrb
-	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/jumbotron.png)
-
-.qucharselect:hover
-	border 3.0rem outset querycolor
-
-.qu-profilebg
-	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/jumbotron.png)
-
-.qu-profileheadings
-	color white
-	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/jumbotron.png)
-	font-size 5rem
-	border-radius .5rem
-
-.qu-flavortext
-	color gray
-	font-style italic
-
-.qu-charpage-name
-	background querycolor
-	color white
-	font-size 10rem
-
-.qu-charpage-img
-	min-width 100%
-	border 2em solid querycolor
-
-.characterselectqu
-	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/jumbotron.png)
-
-.crosscharselect:hover
-	border 3.0rem outset crosscolor
-
-.cross-profilebg
-	background linear-gradient(0deg,crossalpha,crossalpha),url(../images/jumbotron.png)
-
-.cross-profileheadings
-	color white
-	background linear-gradient(0deg,crossalpha,crossalpha),url(../images/jumbotron.png)
-	font-size 5rem
-	border-radius .5rem
-
-.cross-flavortext
-	color gray
-	font-style italic
-
-.cross-charpage-name
-	background crosscolor
-	color white
-	font-size 10rem
-
-.cross-charpage-img
-	min-width 100%
-	border 2em solid crosscolor
-
-.characterselectcross
-	background linear-gradient(0deg,crossalpha,crossalpha),url(../images/jumbotron.png)
-
-#characterselecttitle	
-	width 100%
-	font-size 15rem
-	color white
-	text-shadow 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444
-
-.characterselectbasic
-	background linear-gradient(0deg,rgba(241,251,37,.85),rgba(241,251,37,.85)),url(../images/jumbotron.png)
 
 .hpheading
 	color white
@@ -337,18 +158,6 @@ body
 .crosstext
 	font-size 6rem
 
-.okuda
-	font-family 'okuda'
-
-.adventure
-	font-family 'adventureregular'
-
-.big
-	font-size 7rem
-
-.navbar
-	padding-bottom 1rem
-
 .btn-modal-close
 	font-family 'adventureregular'
 	background rgb(42, 173, 227)
@@ -400,7 +209,7 @@ body
 	font-size 4rem
 
 .tagrow
-	display inline-block
+	display inline-block 0
 
 .tagbutton
 	background-color rgba(0,0,0,0)
@@ -408,3 +217,721 @@ body
 	margin-right 1rem
 	display inline-block
 	font-size 150%
+
+//character specific card database classes
+
+//character select
+
+.characterselectname
+	color white
+
+.charselect
+	height 22rem
+	width 22rem
+	margin-right 1.25rem
+	margin-bottom 1rem
+	border 2.0rem outset rgba(193, 66, 66, 0.1)
+	border-radius 50%
+
+//character specific char select classes
+
+.decharselect:hover
+	border 3.0rem outset deadeyecolor
+
+.de-profilebg
+	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/defaultbg.png)
+
+.de-profileheadings
+	color white
+	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/defaultbg.png)
+	font-size 5rem
+	border-radius .5rem
+
+.de-flavortext
+	color gray
+	font-style italic
+
+.de-charpage-name
+	background deadeyecolor
+	color white
+	font-size 10rem
+
+.de-charpage-img
+	min-width 100%
+	border 2em solid deadeyecolor
+
+.characterselectde
+	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/defaultbg.png)
+
+.kxcharselect:hover
+	border 3.0rem outset knoxcolor
+
+.kx-profilebg
+	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/defaultbg.png)
+
+.kx-profileheadings
+	color white
+	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/defaultbg.png)
+	font-size 5rem
+	border-radius .5rem
+
+.kx-flavortext
+	color gray
+	font-style italic
+
+.kx-charpage-name
+	background knoxcolor
+	color white
+	font-size 10rem
+
+.kx-charpage-img
+	min-width 100%
+	border 2em solid knoxcolor
+
+.ggcharselect:hover
+	border 3.0rem outset gravitygirlcolor
+
+.characterselectgg
+	background linear-gradient(0deg,gravitygirlalpha,gravitygirlalpha),url(../images/defaultbg.png)
+
+.characterselectkx
+	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/defaultbg.png)
+
+.obcharselect:hover
+	border 3.0rem outset obscuritycolor
+
+.ob-profilebg
+	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/defaultbg.png)
+
+.ob-profileheadings
+	color white
+	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/defaultbg.png)
+	font-size 5rem
+	border-radius .5rem
+
+.ob-flavortext
+	color gray
+	font-style italic
+
+.ob-charpage-name
+	background obscuritycolor
+	color white
+	font-size 10rem
+
+.ob-charpage-img
+	min-width 100%
+	border 2em solid obscuritycolor
+
+.characterselectob
+	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/defaultbg.png)
+
+.rbcharselect:hover
+	border 3.0rem outset robonobocolor
+
+.rb-profilebg
+	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/defaultbg.png)
+
+.rb-profileheadings
+	color white
+	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/defaultbg.png)
+	font-size 5rem
+	border-radius .5rem
+
+.rb-flavortext
+	color gray
+	font-style italic
+
+.rb-charpage-name
+	background robonobocolor
+	color white
+	font-size 10rem
+
+.rb-charpage-img
+	min-width 100%
+	border 2em solid robonobocolor
+
+.characterselectrb
+	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/defaultbg.png)
+
+.qucharselect:hover
+	border 3.0rem outset querycolor
+
+.qu-profilebg
+	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/defaultbg.png)
+
+.qu-profileheadings
+	color white
+	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/defaultbg.png)
+	font-size 5rem
+	border-radius .5rem
+
+.qu-flavortext
+	color gray
+	font-style italic
+
+.qu-charpage-name
+	background querycolor
+	color white
+	font-size 10rem
+
+.qu-charpage-img
+	min-width 100%
+	border 2em solid querycolor
+
+.characterselectqu
+	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/defaultbg.png)
+
+.crosscharselect:hover
+	border 3.0rem outset crosscolor
+
+.cross-profilebg
+	background linear-gradient(0deg,crossalpha,crossalpha),url(../images/defaultbg.png)
+
+.cross-profileheadings
+	color white
+	background linear-gradient(0deg,crossalpha,crossalpha),url(../images/defaultbg.png)
+	font-size 5rem
+	border-radius .5rem
+
+.cross-flavortext
+	color gray
+	font-style italic
+
+.cross-charpage-name
+	background crosscolor
+	color white
+	font-size 10rem
+
+.cross-charpage-img
+	min-width 100%
+	border 2em solid crosscolor
+
+.characterselectcross
+	background linear-gradient(0deg,crossalpha,crossalpha),url(../images/defaultbg.png)
+
+#characterselectjumbo
+	min-height 50vh
+
+#characterselecttitle	
+	font-size 15rem
+	color white
+	text-shadow 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444
+
+.characterselectbasic
+	background linear-gradient(0deg,rgba(241,251,37,.85),rgba(241,251,37,.85)),url(../images/defaultbg.png)
+
+//articles
+
+.favfivecarddesc
+	color white
+	text-shadow .05rem .25rem .25rem black
+	font-size 4rem
+	font-family 'okuda'
+	display inline-block
+
+.articlebanner
+	border-radius 5rem
+	margin 0
+	width 100%
+
+.favfiveimage
+	border-radius 4rem
+	padding-top 2rem
+	padding-bottom 2rem
+	width 100%
+
+
+//character specific article classes
+
+//gravity girl articles
+
+.ggjumboimage
+	border 3rem solid gravitygirlcolor
+	border-radius 4rem
+	margin-bottom 0rem
+
+.ggjumbotron
+	background-color gravitygirlcolor
+	color white
+	font-family 'okuda'
+	font-size 6rem	
+	border-bottom-left-radius 5rem
+	border-bottom-right-radius 5rem
+
+.ggjumbobanner
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-bottom 1rem
+	padding-right 5rem
+
+.ggbanner
+	background-color gravitygirlcolor
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	border-radius 5rem
+	padding-top 2rem
+	margin-bottom 0rem
+
+.ggfavfive
+	color white
+	height 100%
+	vertical-align center
+	padding-top 1%
+	padding-bottom 3rem
+	font-size 6rem
+	padding 1rem
+
+.ggimagecontainer
+	background-color gravitygirlcolor
+	border-bottom-left-radius 4rem
+	border-bottom-right-radius 4rem
+
+.ggtextcontainer
+	background-color gravitygirlcolor
+
+.ggbanner h1
+	margin-top 0rem
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-right 3rem
+
+.ggfavfivecardtitle
+	color white
+	text-shadow 1rem .25rem .25rem gravitygirlflavor
+	font-size 9rem
+	font-family 'adventureregular'
+
+//robonobo articles
+
+.rbjumboimage
+	border 3rem solid robonobocolor
+	border-radius 4rem
+	margin-bottom 0rem
+
+.rbjumbotron
+	background-color robonobocolor
+	color white
+	font-family 'okuda'
+	font-size 6rem	
+	border-bottom-left-radius 5rem
+	border-bottom-right-radius 5rem
+
+.rbjumbobanner
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-bottom 1rem
+	padding-right 5rem
+
+.rbbanner
+	background-color robonobocolor
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	border-radius 5rem
+	padding-top 2rem
+	margin-bottom 0rem
+
+.rbfavfive
+	color white
+	height 100%
+	vertical-align center
+	padding-top 1%
+	padding-bottom 3rem
+	font-size 6rem
+	padding 1rem
+
+.rbimagecontainer
+	background-color robonobocolor
+	border-bottom-left-radius 4rem
+	border-bottom-right-radius 4rem
+
+.rbtextcontainer
+	background-color robonobocolor
+
+.rbbanner h1
+	margin-top 0rem
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-right 3rem
+
+.rbfavfivecardtitle
+	color white
+	text-shadow 1rem .25rem .25rem robonoboflavor
+	font-size 9rem
+	font-family 'adventureregular'
+
+//knox articles
+
+.kxjumboimage
+	border 3rem solid knoxcolor
+	border-radius 4rem
+	margin-bottom 0rem
+
+.kxjumbotron
+	background-color knoxcolor
+	color white
+	font-family 'okuda'
+	font-size 6rem	
+	border-bottom-left-radius 5rem
+	border-bottom-right-radius 5rem
+
+.kxjumbobanner
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-bottom 1rem
+	padding-right 5rem
+
+.kxbanner
+	background-color knoxcolor
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	border-radius 5rem
+	padding-top 2rem
+	margin-bottom 0rem
+
+.kxfavfive
+	color white
+	height 100%
+	vertical-align center
+	padding-top 1%
+	padding-bottom 3rem
+	font-size 6rem
+	padding 1rem
+
+.kximagecontainer
+	background-color knoxcolor
+	border-bottom-left-radius 4rem
+	border-bottom-right-radius 4rem
+
+.kxtextcontainer
+	background-color knoxcolor
+
+.kxbanner h1
+	margin-top 0rem
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-right 3rem
+
+.kxfavfivecardtitle
+	color white
+	text-shadow 1rem .25rem .25rem knoxflavor
+	font-size 9rem
+	font-family 'adventureregular'
+
+//obscurity articles
+
+.objumboimage
+	border 3rem solid obscuritycolor
+	border-radius 4rem
+	margin-bottom 0rem
+
+.objumbotron
+	background-color obscuritycolor
+	color white
+	font-family 'okuda'
+	font-size 6rem	
+	border-bottom-left-radius 5rem
+	border-bottom-right-radius 5rem
+
+.objumbobanner
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-bottom 1rem
+	padding-right 5rem
+
+.obbanner
+	background-color obscuritycolor
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	border-radius 5rem
+	padding-top 2rem
+	margin-bottom 0rem
+
+.obfavfive
+	color white
+	height 100%
+	vertical-align center
+	padding-top 1%
+	padding-bottom 3rem
+	font-size 6rem
+	padding 1rem
+
+.obimagecontainer
+	background-color obscuritycolor
+	border-bottom-left-radius 4rem
+	border-bottom-right-radius 4rem
+
+.obtextcontainer
+	background-color obscuritycolor
+
+.obbanner h1
+	margin-top 0rem
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-right 3rem
+
+.obfavfivecardtitle
+	color white
+	text-shadow 1rem .25rem .25rem obscurityflavor
+	font-size 9rem
+	font-family 'adventureregular'
+
+//query articles
+
+.dejumboimage
+	border 3rem solid deadeyecolor
+	border-radius 4rem
+	margin-bottom 0rem
+
+.dejumbotron
+	background-color deadeyecolor
+	color white
+	font-family 'okuda'
+	font-size 6rem	
+	border-bottom-left-radius 5rem
+	border-bottom-right-radius 5rem
+
+.dejumbobanner
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-bottom 1rem
+	padding-right 5rem
+
+.debanner
+	background-color deadeyecolor
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	border-radius 5rem
+	padding-top 2rem
+	margin-bottom 0rem
+
+.defavfive
+	color white
+	height 100%
+	vertical-align center
+	padding-top 1%
+	padding-bottom 3rem
+	font-size 6rem
+	padding 1rem
+
+.deimagecontainer
+	background-color deadeyecolor
+	border-bottom-left-radius 4rem
+	border-bottom-right-radius 4rem
+
+.detextcontainer
+	background-color deadeyecolor
+
+.debanner h1
+	margin-top 0rem
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-right 3rem
+
+.defavfivecardtitle
+	color white
+	text-shadow 1rem .25rem .25rem deadeyeflavor
+	font-size 9rem
+	font-family 'adventureregular'
+
+//query articles
+
+.qujumboimage
+	border 3rem solid querycolor
+	border-radius 4rem
+	margin-bottom 0rem
+
+.qujumbotron
+	background-color querycolor
+	color white
+	font-family 'okuda'
+	font-size 6rem	
+	border-bottom-left-radius 5rem
+	border-bottom-right-radius 5rem
+
+.qujumbobanner
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-bottom 1rem
+	padding-right 5rem
+
+.qubanner
+	background-color querycolor
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	border-radius 5rem
+	padding-top 2rem
+	margin-bottom 0rem
+
+.qufavfive
+	color white
+	height 100%
+	vertical-align center
+	padding-top 1%
+	padding-bottom 3rem
+	font-size 6rem
+	padding 1rem
+
+.quimagecontainer
+	background-color querycolor
+	border-bottom-left-radius 4rem
+	border-bottom-right-radius 4rem
+
+.qutextcontainer
+	background-color querycolor
+
+.qubanner h1
+	margin-top 0rem
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-right 3rem
+
+.qufavfivecardtitle
+	color white
+	text-shadow 1rem .25rem .25rem queryflavor
+	font-size 9rem
+	font-family 'adventureregular'
+
+//silicon artist articles
+
+.sajumboimage
+	border 3rem solid siliconartistcolor
+	border-radius 4rem
+	margin-bottom 0rem
+
+.sajumbotron
+	background-color siliconartistcolor
+	color white
+	font-family 'okuda'
+	font-size 6rem	
+	border-bottom-left-radius 5rem
+	border-bottom-right-radius 5rem
+
+.sajumbobanner
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-bottom 1rem
+	padding-right 5rem
+
+.sabanner
+	background-color siliconartistcolor
+	margin 0
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	border-radius 5rem
+	padding-top 2rem
+	margin-bottom 0rem
+
+.safavfive
+	color white
+	height 100%
+	vertical-align center
+	padding-top 1%
+	padding-bottom 3rem
+	font-size 6rem
+	padding 1rem
+
+.saimagecontainer
+	background-color siliconartistcolor
+	border-bottom-left-radius 4rem
+	border-bottom-right-radius 4rem
+
+.satextcontainer
+	background-color siliconartistcolor
+
+.sabanner h1
+	margin-top 0rem
+	color white
+	font-family 'okuda'
+	font-size 6rem
+	padding-right 3rem
+
+.safavfivecardtitle
+	color white
+	text-shadow 1rem .25rem .25rem siliconartistflavor
+	font-size 9rem
+	font-family 'adventureregular'
+
+.ggbackground
+	background-image url('../images/defaultbg.png')
+	background-color gravitygirlflavor
+	background-blend-mode color-burn
+	background-attachment fixed
+	background-repeat no-repeat
+
+.articlecontainer
+	background-color white
+	border-left 1rem solid black
+	border-right 1rem solid black
+
+#myNavbar ul
+	margin-top .7%
+
+#myNavbar ul a
+	line-height 1rem
+	display inline
+
+.navbutton
+	font-size 2rem
+
+
+//articles landing page
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

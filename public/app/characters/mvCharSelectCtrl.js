@@ -6,11 +6,15 @@ angular.module('app').controller('mvCharSelectCtrl', function($scope, $timeout, 
 			$scope.character = hovercharacter;
 			$("#characterselecttitle").removeClass("characterselectbasic");
 			$("#characterselecttitle").addClass(hoverclass);
+			$("#characterselectjumbo").removeClass("characterselectbasic");
+			$("#characterselectjumbo").addClass(hoverclass);
 			$scope.$apply();
 		}).mouseleave(function(){
 			$scope.character = "character select";
 			$("#characterselecttitle").removeClass(hoverclass);
 			$("#characterselecttitle").addClass("characterselectbasic");
+			$("#characterselectjumbo").removeClass(hoverclass);
+			$("#characterselectjumbo").addClass("characterselectbasic");
 			$scope.$apply();
 		})		
 	};	

@@ -1,4 +1,4 @@
-{
+f{
   "name": "hypercrisis",
   "description": "the official beta testing page for hypercrisis",
   "main": "index.js",
@@ -23,6 +23,7 @@
     "bootstrap": "^3.3.6",
     "toastr": "^2.1.2",
     "angular-google-chart": "^0.1.0",
-    "angular-ui": "^0.4.0"
+    "angular-ui": "^0.4.0",
+    "angular-filter": "^0.5.15"
   }
 }
