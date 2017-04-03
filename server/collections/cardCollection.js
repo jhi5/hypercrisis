@@ -175,7 +175,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","1"],
 		text: "When you play this, draw a card. When this is destroyed, each opponent discards a card.",
 		flavor: ["This should buy me some time."],
-		illustrations: ["../../images/barrage.png"],
+		illustrations: ["../../images/pileofrubble.png"],
 		rating: ["2"],
 		tags: ["combo", "card draw"],
 		comments: ["Good combo card. Great throw target. - JM"]
@@ -217,13 +217,13 @@ exports.defaultCards = [
 		comments: ["Solid stats. Good early game but relatively weak late game. - JM"]
 	},
 	{
-		name: "Swirling Vacuum",
+		name: "Swirling Vortex",
 		character: "Gravity Girl",
 		type: "Action",
 		utilityValues: ["none"],
 		text: "Return each of your Utilities to your hand. You may play any number of Utilities this turn..",
 		flavor: ["What goes up must come down."],
-		illustrations: ["../../images/swirlingvacuum.png"],
+		illustrations: ["../../images/swirlingvortex.png"],
 		rating: ["3"],
 		tags: ["combo", "build-around"],
 		comments: ["Very powerful and centerpiece of GG combo deck. - JM"]
@@ -241,41 +241,17 @@ exports.defaultCards = [
 		comments: ["Extremely powerful. Shrapnel Storm's best friend. - JM"]
 	},
 	{
-		name: "Thrown Into A Portal",
+		name: "Throw It Into A Portal",
 		character: "Gravity Girl",
 		type: "Action",
 		utilityValues: ["none"],
 		text: "Throw. Place target Utility on top of its owner's deck.",
 		flavor: ["Today feels like a beach day."],
-		illustrations: ["../../images/thrownintoaportal.png"],
+		illustrations: ["../../images/throwitintoaportal.png"],
 		rating: ["2"],
 		tags: ["versatile", "utility damage", "throw"],
 		comments: ["Portal + any damage = destroys anything. - JM"]
-	},
-	{
-		name: "Basalt",
-		character: "Gravity Girl",
-		type: "Crossover",
-		utilityValues: ["3","3","0"],
-		text: "When you play this, each of your Utilities gets +2 armor.",
-		flavor: ["Burly Bartender Taking Back The Streets"],
-		illustrations: ["../../images/basalt.png"],
-		rating: ["3"],
-		tags: ["versatile", "armor", "crossover"],
-		comments: ["Very versatile Crossover. All-purpose armor and good stats. - JM"]
-	},
-	{
-		name: "Dark Blades",
-		character: "Gravity Girl",
-		type: "Crossover",
-		utilityValues: ["1","2","0"],
-		text: "When this is destroyed, each opponent destroys one of their Utilities. Their choice.",
-		flavor: ["The World's Most Dangerous Edgelord"],
-		illustrations: ["../../images/basalt.png"],
-		rating: ["2"],
-		tags: ["aggressive", "utility damage", "crossover"],
-		comments: ["If you can get rid of him consistently, this is a big swing. Great early. - JM"]
-	},
+	},	
 	{
 		name: "Black Hole",
 		character: "Gravity Girl",
@@ -577,30 +553,6 @@ exports.defaultCards = [
 		comments: ["Not the most aggressive card, but reliable and tough to kill. - JM"]
 	},
 	{
-		name: "Ape Omega",
-		character: "Robonobo",
-		type: "Crossover",
-		utilityValues: ["3","2","0"],
-		text: "Whenever you play another Utility, deal 2 damage to each player.",
-		flavor: ["Insurance Companies Hate This One Weird Chimp"],
-		illustrations: ["../../images/apeomega.png"],
-		rating: ["3"],
-		tags: ["aggressive", "combo", "player damage", "crossover"],
-		comments: ["Racks up the damage. Punishes players without Armor. - JM"]
-	},
-	{
-		name: "U.S. Ape",
-		character: "Robonobo",
-		type: "Crossover",
-		utilityValues: ["3","2","0"],
-		text: "At the beginning of your turn, you may discard a card. If you do, your other Utilities get +1 fight this turn.",
-		flavor: ["This Patriot's Ape Army Is Coming To Tread On You"],
-		illustrations: ["../../images/usape.png"],
-		rating: ["2"],
-		tags: ["aggressive", "discard", "crossover"],
-		comments: ["If you can keep a full hand, this is great for a pressure game. Semper Fi! - JM"]
-	},
-	{
 		name: "Fling",
 		character: "Robonobo",
 		type: "Feat",
@@ -739,7 +691,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "To play this, you must first discard two cards. 4 damage to target opponent.",
 		flavor: ["I hate wasting my bullets on you."],
-		illustrations: ["../../images/emptythechamber.png"],
+		illustrations: ["../../images/emptytheclip.png"],
 		rating: ["2"],
 		tags: ["aggressive", "player damage", "discard"],
 		comments: ["Hits hard and eats armor. - JM"]
@@ -835,7 +787,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Discard any number of cards. 2 damage to that many different targets.",
 		flavor: ["I'm about to get the high score!"],
-		illustrations: ["../../images/semiauto.png"],
+		illustrations: ["../../images/semiautospread.png"],
 		rating: ["2"],
 		tags: ["versatile", "player damage", "utility damage"],
 		comments: ["It isn't wrong to do this for one or two targets, but you need Aim to make it sing. - JM"]
@@ -871,7 +823,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Aim +2. Draw a card.",
 		flavor: ["I can't decide. They all look stupid."],
-		illustrations: ["../../images/targetspotted.png"],
+		illustrations: ["../../images/spottingtargets.png"],
 		rating: ["3"],
 		tags: ["combo", "defensive", "card draw", "aim"],
 		comments: ["Excellent in the aim deck, but not great alone. - JM"]
@@ -883,7 +835,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "To play this, you must first discard a card. Each opponent discards two cards.",
 		flavor: ["Go ahead. Try to shoot first."],
-		illustrations: ["../../images/smokeemout.png"],
+		illustrations: ["../../images/staredown.png"],
 		rating: ["1"],
 		tags: ["disruption", "discard"],
 		comments: ["Excellent in the discard deck, but not unbeatable. Card draw can stuff this deck quickly. - JM"]
@@ -895,36 +847,12 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Aim +1. Deal 2 damage to target Utility.",
 		flavor: ["Check out the walking bullseye."],
-		illustrations: ["../../images/cleansnipe.png"],
+		illustrations: ["../../images/trickshot.png"],
 		rating: ["2"],
 		tags: ["aggressive", "utility damage", "aim"],
 		comments: ["Very good against a full board. Not worth playing just for the aim. - JM"]
 	},
 	{
-		name: "Riot Grrrl",
-		character: "Deadeye",
-		type: "Crossover",
-		utilityValues: ["1","3","0"],
-		text: "At the beginning of your turn, you may discard two cards. If you do, your Utilities are a copy of Riot Grrrl this turn.",
-		flavor: ["One-Woman Rave With Expensive Taste"],
-		illustrations: ["../../images/riotgrrrl.png"],
-		rating: ["2"],
-		tags: ["crossover", "discard", "aggressive"],
-		comments: ["Guaranteed nine damage with a full board. Great if you can keep it safe. - JM"]
-	},
-	{
-		name: "Thwip!",
-		character: "Deadeye",
-		type: "Crossover",
-		utilityValues: ["3","2","0"],
-		text: "When you play this, prevent all damage that would be done to you and your Utilities until your next turn.",
-		flavor: ["Superhero Archer Tailing Her Dirtbag Sister."],
-		illustrations: ["../../images/thwip.png"],
-		rating: ["3"],
-		tags: ["crossover", "defensive"],
-		comments: ["Great way to keep your combo deck alive for one turn. - JM"]
-	},
-		{
 		name: "Bullseye!",
 		character: "Deadeye",
 		type: "Feat",
@@ -955,7 +883,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Reveal cards from the top of your deck until you find an Action. Play that card for free and discard the rest.",
 		flavor: ["none"],
-		illustrations: ["../../images/handsup.png"],
+		illustrations: ["../../images/kneecap.png"],
 		rating: ["3"],
 		tags: ["versatile", "combo"],
 		comments: ["If you get a free action, you can spend both of your other plays building aim. - JM"]
@@ -967,7 +895,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Draw three cards.",
 		flavor: ["none"],
-		illustrations: ["../../images/handsup.png"],
+		illustrations: ["../../images/newclip.png"],
 		rating: ["4"],
 		tags: ["defensive", "card draw"],
 		comments: ["Deadeye needs to keep her hands full to use her more explosive aim cards. - JM"]
@@ -979,7 +907,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Aim +1, 3 damage to target Utility.",
 		flavor: ["none"],
-		illustrations: ["../../images/handsup.png"],
+		illustrations: ["../../images/sureshot.png"],
 		rating: ["3"],
 		tags: ["agggresive", "utility damage", "aim"],
 		comments: ["You'll need this to get those pesky combo decks out of the way. - JM"]
@@ -1057,18 +985,6 @@ exports.defaultCards = [
 		comments: ["I always play this - it replaces itself and is good early. - JM"]
 	},
 	{
-		name: "Cheap Shot",
-		character: "Knox",
-		type: "Action",
-		utilityValues: ["none"],
-		text: "Deal 2 damage to each opponent. If you have six or more cards in your hand, you may play this card for free.",
-		flavor: [""],
-		illustrations: ["../../images/cheapshot.png"],
-		rating: ["1"],
-		tags: ["combo", "aggressive", "card draw", "player damage"],
-		comments: ["Not worth it without the bonus, but the card draw deck is real and dangerous. - JM"]
-	},
-	{
 		name: "Collateral Damage",
 		character: "Knox",
 		type: "Action",
@@ -1123,7 +1039,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","3"],
 		text: "At the end of your turn, draw a card.",
 		flavor: ["After what happened to my last board, I expect fealty."],
-		illustrations: ["../../images/extorttheboard.png"],
+		illustrations: ["../../images/extortingtheboard.png"],
 		rating: ["2"],
 		tags: ["defensive", "combo", "card draw", "armor"],
 		comments: ["It won't win you the game, but it buys you a turn or two. Big target. - JM"]
@@ -1135,7 +1051,7 @@ exports.defaultCards = [
 		utilityValues: ["5","0","2"],
 		text: "At the beginning of your turn, you may destroy this. If you do, draw three cards.",
 		flavor: ["His empire. His pistol. His failures. All mine to keep."],
-		illustrations: ["../../images/fathersvault.png"],
+		illustrations: ["../../images/fathersinheritance.png"],
 		rating: ["2"],
 		tags: ["defensive", "card draw", "armor"],
 		comments: ["Slots perfectly into the slower card draw combo deck. I've been impressed by this. - JM"]
@@ -1183,7 +1099,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","2"],
 		text: "At the end of your turn, 2 damage to each player.",
 		flavor: ["...are too dumb to reason with my brilliance! And..."],
-		illustrations: ["../../images/incessantranting.png"],
+		illustrations: ["../../images/incoherentranting.png"],
 		rating: ["3"],
 		tags: ["aggressive", "combo", "player damage"],
 		comments: ["Knox needs the game to end quickly and this definitely fits the bill. - JM"]
@@ -1195,7 +1111,7 @@ exports.defaultCards = [
 		utilityValues: ["3","3","0"],
 		text: "Minion.",
 		flavor: ["Don't you think that kevlar would just slow you down?"],
-		illustrations: ["../../images/incessantranting.png"],
+		illustrations: ["../../images/moronicgangster.png"],
 		rating: ["2"],
 		tags: ["versatile", "minion"],
 		comments: ["Solid stats. Don't do much, but does it well. - JM"]
@@ -1247,31 +1163,7 @@ exports.defaultCards = [
 		rating: ["3"],
 		tags: ["combo", "utility damage", "card draw"],
 		comments: ["This is playable without the bonus but excellent with it. - JM"]
-	},
-	{
-		name: "Dark Belle",
-		character: "Knox",
-		type: "Crossover",
-		utilityValues: ["2","3","0"],
-		text: "Whenever this deals damage to an opponent, you may look at that player's hand and discard a card form it.",
-		flavor: ["A Failure Of Science Fueled By Hatred"],
-		illustrations: ["../../images/darkbelle.png"],
-		rating: ["3"],
-		tags: ["aggressive", "disruption", "discard"],
-		comments: ["Probably the strongest turn one play in the game. - JM"]
-	},
-	{
-		name: "Massacre",
-		character: "Knox",
-		type: "Crossover",
-		utilityValues: ["2","4","0"],
-		text: "When you play this, destroy all Utilities whose current Armor value is four or higher.",
-		flavor: ["Eight Arms To Choke You"],
-		illustrations: ["../../images/massacre.png"],
-		rating: ["2"],
-		tags: ["defensive", "armor", "disruption"],
-		comments: ["Doesn't fit in every deck, but helps to break open defensive decks or setup utility destruction combos. - JM"]
-	},		
+	},	
 	{
 		name: "Cruel Plot",
 		character: "Knox",
@@ -1279,7 +1171,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Discard your hand. 1 damage to each opponent for each card discarded this way.",
 		flavor: ["none"],
-		illustrations: ["../../images/grandioseplot.png"],
+		illustrations: ["../../images/cruelplot.png"],
 		rating: ["2"],
 		tags: ["combo", "discard", "player damage"],
 		comments: ["Good in the aggressive deck but better in the card draw combo build. - JM"]
@@ -1303,7 +1195,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Skip your discard phase this turn.",
 		flavor: ["none"],
-		illustrations: ["../../images/cruelinsults.png"],
+		illustrations: ["../../images/distractinginsults.png"],
 		rating: ["2"],
 		tags: ["versatile", "card draw", "build-around"],
 		comments: ["Cool card. Having this on command makes sure your next turn is big. - JM"]
@@ -1315,7 +1207,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Whenever you play an Action this turn, deal 2 damage to each opponent.",
 		flavor: ["none"],
-		illustrations: ["../../images/theonewhoisknox.png"],
+		illustrations: ["../../images/pileon.png"],
 		rating: ["3"],
 		tags: ["aggressive", "combo", "player damage"],
 		comments: ["Cheap Shot and Violent Strike help to make sure you get 8-10 damage off of this. - JM"]
@@ -1489,18 +1381,6 @@ exports.defaultCards = [
 		comments: ["This into player damage gets rid of things permanently. - JM"]
 	},
 	{
-		name: "Mid-Day Snack",
-		character: "Obscurity",
-		type: "Action",
-		utilityValues: ["none"],
-		text: "Heal 2. Draw a card.",
-		flavor: ["Whew. Long day. Anybody hungry?"],
-		illustrations: ["../../images/middaysnack.png"],
-		rating: ["1"],
-		tags: ["defensive", "card draw", "healing"],
-		comments: ["Not playable in every deck, but buys you a turn or so. - JM"]
-	},
-	{
 		name: "Pastel Pistol",
 		character: "Obscurity",
 		type: "Utility",
@@ -1585,37 +1465,13 @@ exports.defaultCards = [
 		comments: ["This thing isn't great but it never goes away. - JM"]
 	},	
 	{
-		name: "Rubber Maiden",
-		character: "Obscurity",
-		type: "Crossover",
-		utilityValues: ["3","3","0"],
-		text: "Whenever this is dealt damage, deal 3 damage to each opponent.",
-		flavor: ["When It Bounces Off Her, She Sticks It To You"],
-		illustrations: ["../../images/rubbermaiden.png"],
-		rating: ["4"],
-		tags: ["crossover", "aggressive", "player damage", "utility damage", "versatile"],
-		comments: ["Fits in any deck that wants to be beating down. Scary. - JM"]
-	},
-	{
-		name: "Det. Wolf Cop",
-		character: "Obscurity",
-		type: "Crossover",
-		utilityValues: ["3","1","3"],
-		text: "Your other Utilities can't be destroyed.",
-		flavor: ["Fighting Evil By Moonlight"],
-		illustrations: ["../../images/detwolfcop.png"],
-		rating: ["2"],
-		tags: ["crossover", "defensive", "build-around"],
-		comments: ["Doesn't stay alive, but definitely draws attention. - JM"]
-	},
-	{
-		name: "Suprise!",
+		name: "Surprise!",
 		character: "Obscurity",
 		type: "Feat",
 		utilityValues: ["none"],
 		text: "Replace the word OR with the word AND on all of your cards this turn.",
 		flavor: ["none"],
-		illustrations: ["../../images/emerge.png"],
+		illustrations: ["../../images/surprise.png"],
 		rating: ["2"],
 		tags: ["combo", "versatile"],
 		comments: ["Works with a lot of cards in every deck. Very playable in the vanish deck too. - JM"]
@@ -1801,18 +1657,6 @@ exports.defaultCards = [
 		comments: ["Repeated spy triggers can bury good cards away from your opponent. - JM"]
 	},
 	{
-		name: "Listening In...",
-		character: "Query",
-		type: "Action",
-		utilityValues: ["none"],
-		text: "Spy, then deal 1 damage to any target, then Spy again.",
-		flavor: ["John, whose voice is that? John? John?!"],
-		illustrations: ["../../images/listeningin.png"],
-		rating: ["1"],
-		tags: ["versatile", "disruption", "spy"],
-		comments: ["Combine the first two effects to get rid of a nasty card in your opponent's deck. - JM"]
-	},	
-	{
 		name: "Music Box",
 		character: "Query",
 		type: "Utility",
@@ -1921,30 +1765,6 @@ exports.defaultCards = [
 		comments: ["Sometimes you'll be stuck playing a lot of healing cards to fight back against big player damage. This works. - JM"]
 	},
 	{
-		name: "Blaire Eva Solomon",
-		character: "Query",
-		type: "Crossover",
-		utilityValues: ["3","2","3"],
-		text: "At the end of your turn, you may shuffle this into your deck, If you do, draw 2 cards afterwards.",
-		flavor: ["Vagrant Shaman Reeking Of Cigarettes"],
-		illustrations: ["../../images/blaireevasolomon.png"],
-		rating: ["2"],
-		tags: ["crossover", "defensive", "armor", "card draw"],
-		comments: ["Great if you need some card flow, but don't be afraid to tuck it if you are busy. - JM"]
-	},
-	{
-		name: "Dr. Doodad",
-		character: "Query",
-		type: "Crossover",
-		utilityValues: ["1","3","3"],
-		text: "Whenever this deals damage to an opponent, draw a card and Heal 2.",
-		flavor: ["Ridding The World Of Disease & Large Sandwiches"],
-		illustrations: ["../../images/drdoodad.png"],
-		rating: ["3"],
-		tags: ["crossover", "aggressive", "card draw", "healing"],
-		comments: ["Even one good hit is enough to play this card. Combo decks like it.- JM"]
-	},
-	{
 		name: "If Not Now, When?",
 		character: "Query",
 		type: "Feat",
@@ -1969,13 +1789,13 @@ exports.defaultCards = [
 		comments: ["This works quite well in almost any build. Good when you don't know what to expect. - JM"]
 	},
 	{
-		name: "Where Were You Going?",
+		name: "Where Are You Going?",
 		character: "Query",
 		type: "Feat",
 		utilityValues: ["none"],
 		text: "Deal 3 damage to target Utility and target opponent.",
 		flavor: ["none"],
-		illustrations: ["../../images/wherewereyougoing.png"],
+		illustrations: ["../../images/whereareyougoing.png"],
 		rating: ["4"],
 		tags: ["aggressive", "player damage", "utility damage"],
 		comments: ["Not quite as good against defensive decks, but knocks most things out of the way. - JM"]
@@ -2004,9 +1824,346 @@ exports.defaultCards = [
 		tags: ["defensive", "combo", "healing"],
 		comments: ["Buys a turn and sets up a good steal. - JM"]
 	},
+	
+	{
+		name: "Annoy",
+		character: "Silicon Artist",
+		type: "Action",
+		utilityValues: ["none"],
+		text: "Each player returns one of their Utilities to their hand.",
+		flavor: ["So...what are you doing?"],
+		illustrations: ["../../images/annoy.png"],
+		rating: ["3"],
+		tags: ["disruption", "build-around", "versatile", "combo"],
+		comments: ["This can be great, but not against every character. Can reset stretches. - JM"]
+	},
+	{
+		name: "Bodyrang",
+		character: "Silicon Artist",
+		type: "Action",
+		utilityValues: ["none"],
+		text: "2 damage to target player. You may destroy one of your STRETCHED! cards. If you do, return this to your hand.",
+		flavor: ["Can I have that back?"],
+		illustrations: ["../../images/bodyrang.png"],
+		rating: ["3"],
+		tags: ["player damage", "combo", "stretch", "aggressive"],
+		comments: ["This is a great way to race an aggressive opponent. - JM"]
+	},
+	{
+		name: "Flatten Out",
+		character: "Silicon Artist",
+		type: "Action",
+		utilityValues: ["none"],
+		text: "Replace any of your STRETCHED! cards with Utilities in your hand.",
+		flavor: ["I'M MELTING! WHAT A WORLD!"],
+		illustrations: ["../../images/flattenout.png"],
+		rating: ["3"],
+		tags: ["combo", "stretch", 'build-around'],
+		comments: ["Great way to empty a hand. - JM"]
+	},
+	{
+		name: "Fold Up",
+		character: "Silicon Artist",
+		type: "Action",
+		utilityValues: ["none"],
+		text: "Stretch. Return one of your Utilities to your hand.",
+		flavor: ["I'm gonna origami my own butt."],
+		illustrations: ["../../images/foldup.png"],
+		rating: ["2"],
+		tags: ["stretch", "combo", "build-around", "versatile"],
+		comments: ["The stretch is great and you can reset what's being stretched. - JM"]
+	},
+	{
+		name: "Impersonate",
+		character: "Silicon Artist",
+		type: "Action",
+		utilityValues: ["none"],
+		text: "Stretch. Heal 2.",
+		flavor: ["Look at me, I'm Knox. I cry a lot."],
+		illustrations: ["../../images/impersonate.png"],
+		rating: ["1"],
+		tags: ["healing", "versatile", "defensive", "stretch", "build-around"],
+		comments: ["This is the best stretch card so far. It fits in every deck. - JM"]
+	},
+	{
+		name: "Petty Crime",
+		character: "Silicon Artist",
+		type: "Action",
+		utilityValues: ["none"],
+		text: "Heal 2. Each player discards a card.",
+		flavor: [""],
+		illustrations: ["../../images/pettycrime.png"],
+		rating: ["3"],
+		tags: ["healing", "discard", "defensive", "disruption"],
+		comments: ["SA is low on Armor, so this can be subbed if you need time. - JM"]
+	},
+	{
+		name: "Slingshot Uppercut",
+		character: "Silicon Artist",
+		type: "Action",
+		utilityValues: ["none"],
+		text: "Stretch. 2 damage to target player.",
+		flavor: ["I can hit you fine from over here."],
+		illustrations: ["../../images/slingshotuppercut.png"],
+		rating: ["2"],
+		tags: ["player damage", "aggressive", "stretch"],
+		comments: ["Very playable, even if that damage isn't always useful. - JM"]
+	},
+	{
+		name: "Slink Away",
+		character: "Silicon Artist",
+		type: "Action",
+		utilityValues: ["none"],
+		text: "Destroy any of your STRETCHED! cards. Heal 3 for each card destroyed this way.",
+		flavor: ["I'm gonna...go over here for a while."],
+		illustrations: ["../../images/slinkaway.png"],
+		rating: ["2"],
+		tags: ["defensive", "healing", "stretch", "combo", "build-around"],
+		comments: ["This can be a big swing, but requires some setup. - JM"]
+	},
+	{
+		name: "Tornado Of Punches",
+		character: "Silicon Artist",
+		type: "Action",
+		utilityValues: ["none"],
+		text: "2 damage to each player and Utility.",
+		flavor: ["BEE-OOO! That's a tornado siren."],
+		illustrations: ["../../images/tornadoofpunches.png"],
+		rating: ["1"],
+		tags: ["aggressive", "player damage", "utility damage", "versatile"],
+		comments: ["If you've got a good stretch, this could be a one-sided blowout. - JM"]
+	},
+	{
+		name: "Worm Into",
+		character: "Silicon Artist",
+		type: "Action",
+		utilityValues: ["none"],
+		text: "Stretch. Target Utility loses all of its Armor.",
+		flavor: ["Hey, how did this thing break?"],
+		illustrations: ["../../images/worminto.png"],
+		rating: ["3"],
+		tags: ["disruption", "armor", "aggressive", "stretch"],
+		comments: ["Sometimes great sometimes ok. Great sideboard card. - JM"]
+	},
+	{
+		name: "Invincible Skin",
+		character: "Silicon Artist",
+		type: "Feat",
+		utilityValues: ["none"],
+		text: "Stretch. Until your next turn, your Utilities have 9 HP.",
+		flavor: [""],
+		illustrations: ["../../images/invincibleskin.png"],
+		rating: ["1"],
+		tags: ["stretch", "defensive", "versatile", "build-around"],
+		comments: ["Keeps your stretch setup safe for one turn. Pivotal for combos, but great anytime. - JM"]
+	},
+	{
+		name: "Making Faces",
+		character: "Silicon Artist",
+		type: "Feat",
+		utilityValues: ["none"],
+		text: "Heal 2. Draw 2 cards.",
+		flavor: [""],
+		illustrations: ["../../images/makingfaces.png"],
+		rating: ["3"],
+		tags: ["cards draw", "healing", "versatile"],
+		comments: ["SA has lots of card draw options, but this one helps keep aggressive builds in the game. - JM"]
+	},
+	{
+		name: "Mimicry",
+		character: "Silicon Artist",
+		type: "Feat",
+		utilityValues: ["none"],
+		text: "Play this as a copy of any face-up Feat owned by another player.",
+		flavor: [""],
+		illustrations: ["../../images/mimicry.png"],
+		rating: ["2"],
+		tags: ["disruption", "versatile", "combo"],
+		comments: ["Volatile card. Don't be afraid to use it early. - JM"]
+	},
+	{
+		name: "Pulling Shapes",
+		character: "Silicon Artist",
+		type: "Feat",
+		utilityValues: ["none"],
+		text: "Each of your Utilities gets +2 Armor.",
+		flavor: [""],
+		illustrations: ["../../images/pullingshapes.png"],
+		rating: ["3"],
+		tags: ["defensive", "armor"],
+		comments: ["This can be a good buffer, but is quite unreliable once stretch chains get broken. - JM"]
+	},
+	{
+		name: "Spread Thin",
+		character: "Silicon Artist",
+		type: "Feat",
+		utilityValues: ["none"],
+		text: "Stretch twice.",
+		flavor: [""],
+		illustrations: ["../../images/spreadthin.png"],
+		rating: ["2"],
+		tags: ["stretch", "versatile", "build-around", "combo"],
+		comments: ["This isn't always easy to get full value with, but can be very powerful. Try a Long Con... - JM"]
+	},
+	{
+		name: "STRETCHED",
+		character: "Silicon Artist",
+		type: "Special",
+		utilityValues: ["1", "0", "0"],
+		text: "This is a copy of the card to its right. When this is destoryed, place it under your Character card.",
+		flavor: [""],
+		illustrations: ["../../images/stretched.png"],
+		rating: ["1"],
+		tags: ["stretch", "combo", "build-around"],
+		comments: ["This card wins you games. Keep it safe and don't be afraid to cash them in. - JM"]
+	},
+	{
+		name: "Ballooning Bicep",
+		character: "Silicon Artist",
+		type: "Utility",
+		utilityValues: ["2", "3", "0"],
+		text: "At the end of your turn, you may destroy this. If you do, draw a card.",
+		flavor: ["Ha ha! It popped! Gross!"],
+		illustrations: ["../../images/ballooningbicep.png"],
+		rating: ["2"],
+		tags: ["card draw", "aggressive"],
+		comments: ["3 fight does a lot of work. Stretch to fill up your hand. - JM"]
+	},
+	{
+		name: "Drill Fingers",
+		character: "Silicon Artist",
+		type: "Utility",
+		utilityValues: ["2", "2", "0"],
+		text: "Whenever this deals damage to a Utility, that Utility gets -3 Armor.",
+		flavor: ["Remind me not to scratch myself."],
+		illustrations: ["../../images/drillfingers.png"],
+		rating: ["4"],
+		tags: ["armor", "disruption", "aggressive"],
+		comments: ["I don't usually run this, but it can crack open defensive decks. - JM"]
+	},
+	{
+		name: "Firm Grasp",
+		character: "Silicon Artist",
+		type: "Utility",
+		utilityValues: ["1", "3", "0"],
+		text: "At the end of your turn, each player discards a card.",
+		flavor: ["Wanna thumb wrestle?"],
+		illustrations: ["../../images/firmgrasp.png"],
+		rating: ["2"],
+		tags: ["discard", "disruption", "aggressive"],
+		comments: ["Very very aggressive. Make sure you can stretch this safely. - JM"]
+	},
+	{
+		name: "Fleshplate",
+		character: "Silicon Artist",
+		type: "Utility",
+		utilityValues: ["3", "1", "0"],
+		text: "At the end of your turn, this gets +1 Armor.",
+		flavor: ["What? Why wouldn't you want to hide under my skin?"],
+		illustrations: ["../../images/fleshplate.png"],
+		rating: ["3"],
+		tags: ["defensive", "build-around", "armor"],
+		comments: ["Gives stretch builds some defensive options. Neat card. - JM"]
+	},
+	{
+		name: "I Can Stop Anytime!",
+		character: "Silicon Artist",
+		type: "Utility",
+		utilityValues: ["2", "2", "0"],
+		text: "When you play this, draw a card for each STRETCHED! card you own.",
+		flavor: ["Not that I'm going to."],
+		illustrations: ["../../images/icanstopanytime.png"],
+		rating: ["3"],
+		tags: ["card draw", "versatile", "stretch"],
+		comments: ["Not useful in every deck, but a great early play. - JM"]
+	},
+	{
+		name: "Long Con",
+		character: "Silicon Artist",
+		type: "Utility",
+		utilityValues: ["4", "0", "0"],
+		text: "At the end of your turn, if you control 3 cards named Long Con, 3 damage to target opponent.",
+		flavor: ["See what I did there?"],
+		illustrations: ["../../images/longcon.png"],
+		rating: ["1"],
+		tags: ["combo", "player damage", "build-around"],
+		comments: ["Can drag you out some of holes with very little work. Does not stick around very long. - JM"]
+	},
+	{
+		name: "Skeleton Key",
+		character: "Silicon Artist",
+		type: "Utility",
+		utilityValues: ["4", "1", "0"],
+		text: "Whenever this deals damage to a Utility, place the top card of your discard pile on the top of your deck.",
+		flavor: ["Jackpot."],
+		illustrations: ["../../images/skeletonkey.png"],
+		rating: ["2"],
+		tags: ["defensive", "versatile"],
+		comments: ["This isn't going to play well in an aggressive deck, but this effect is stronger than healing. - JM"]
+	},
+	{
+		name: "Skin Wings",
+		character: "Silicon Artist",
+		type: "Utility",
+		utilityValues: ["2", "3", "0"],
+		text: "Damage this deals to players cannot be blocked by Armor.",
+		flavor: ["Oh weird, they kinda feel like uncooked bacon."],
+		illustrations: ["../../images/skinwings.png"],
+		rating: ["2"],
+		tags: ["aggressive", "armor", "disruption"],
+		comments: ["The 3 fight can be brutal. Must-play in aggressive builds. - JM"]
+	},
+	{
+		name: "Tied Together",
+		character: "Silicon Artist",
+		type: "Utility",
+		utilityValues: ["4", "0", "0"],
+		text: "At the beginning of your turn, each player draws a card.",
+		flavor: ["So look, I have personal space issues."],
+		illustrations: ["../../images/tiedtogether.png"],
+		rating: ["3"],
+		tags: ["combo", "build-around", "defensive"],
+		comments: ["You can absolutely use this to draw the other player out. Needs healing to work. - JM"]
+	},
+	{
+		name: "Wire Fraud",
+		character: "Silicon Artist",
+		type: "Utility",
+		utilityValues: ["3", "2", "0"],
+		text: "Whenever this deals damage to a Utility, draw a card.",
+		flavor: ["Hey, gimme a break. All I did was steal your money."],
+		illustrations: ["../../images/wirefraud.png"],
+		rating: ["3"],
+		tags: ["aggressive", "card draw"],
+		comments: ["SA has a lot of card draw options, but this one can stay around and brawl. - JM"]
+	},
+	{
+		name: "Basalt",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","3","0"],
+		text: "When you play this, each of your Utilities gets +2 armor.",
+		flavor: ["Burly Bartender Taking Back The Streets"],
+		illustrations: ["../../images/basalt.png"],
+		rating: ["3"],
+		tags: ["versatile", "armor", "crossover"],
+		comments: ["Very versatile Crossover. All-purpose armor and good stats. - JM"]
+	},
+	{
+		name: "Dark Blades",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["1","2","0"],
+		text: "When this is destroyed, each opponent destroys one of their Utilities. Their choice.",
+		flavor: ["The World's Most Dangerous Edgelord"],
+		illustrations: ["../../images/darkblades.png"],
+		rating: ["2"],
+		tags: ["aggressive", "utility damage", "crossover"],
+		comments: ["If you can get rid of him consistently, this is a big swing. Great early. - JM"]
+	},
 	{
 		name: "Adrenaline",
-		character: "Sportsman",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["3","2","0"],
 		text: "At the beginning of your turn, you may discard 3 cards. If you do, this gets +4 Fight this turn.",
@@ -2018,7 +2175,7 @@ exports.defaultCards = [
 	},
 	{
 		name: "Albedo",
-		character: "Sportsman",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["3","2","0"],
 		text: "Whenever this deals damage to a player, it gains that much Armor.",
@@ -2030,7 +2187,7 @@ exports.defaultCards = [
 	},
 	{
 		name: "Chance",
-		character: "Generation Justice",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["4","1","0"],
 		text: "At the end of your turn, flip a coin. If it is heads, 2 damage to any target and Heal 2.",
@@ -2042,7 +2199,7 @@ exports.defaultCards = [
 	},
 	{
 		name: "Death Boy & Goobo",
-		character: "Generation Justice",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["3","2","2"],
 		text: "At the beginning of your turn, you may return this and the top card of your discard pile to your hand.",
@@ -2054,7 +2211,7 @@ exports.defaultCards = [
 	},
 	{
 		name: "Fiona",
-		character: "Generation Justice",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["3","3","0"],
 		text: "Fiona cant fight the turn she is played. Whenever this deals damage, it gets +1 Armor",
@@ -2066,7 +2223,7 @@ exports.defaultCards = [
 	},
 	{
 		name: "Graverobber",
-		character: "Silicon Artist",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["3","1","2"],
 		text: "When you play this, you may play the top card of your discard pile for free if it is a Utility.",
@@ -2078,7 +2235,7 @@ exports.defaultCards = [
 	},
 	{
 		name: "Iron Justice",
-		character: "Wayfarer",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["4","2","0"],
 		text: "You can't lose the game.",
@@ -2090,7 +2247,7 @@ exports.defaultCards = [
 	},
 	{
 		name: "Lightspeed",
-		character: "Ladybug & Ze Flying Squirrel",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["4","2","0"],
 		text: "At the beginning of your turn, draw 2 cards then discard 2 cards.",
@@ -2102,7 +2259,7 @@ exports.defaultCards = [
 	},
 	{
 		name: "Puzzle King",
-		character: "Silicon Artist",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["3","1","2"],
 		text: "When you play this, play the top card of your deck for free.",
@@ -2114,7 +2271,7 @@ exports.defaultCards = [
 	},
 	{
 		name: "Sophia",
-		character: "Generation Justice",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["3","0","2"],
 		text: "This gets +1 Fight for each Crossover in play.",
@@ -2126,7 +2283,7 @@ exports.defaultCards = [
 	},
 	{
 		name: "Static",
-		character: "Ladybug & Ze Flying Squirrel",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["1","3","0"],
 		text: "At the end of your turn, 2 damage to target opponent.",
@@ -2138,7 +2295,7 @@ exports.defaultCards = [
 	},	
 	{
 		name: "The Evangelist",
-		character: "Wayfarer",
+		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["5","0","0"],
 		text: "At the end of your turn, discard 3 cards. Search your deck for a Crossover and put it into your hand. Shuffle afterwards.",
@@ -2148,4 +2305,124 @@ exports.defaultCards = [
 		tags: ["combo", "discard", "card draw", "build-around"],
 		comments: ["Deal with the devil. Make sure whatever you get is worth the steep cost. - JM"]
 	},
+		{
+		name: "Blaire Eva Solomon",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","2","3"],
+		text: "At the end of your turn, you may shuffle this into your deck, If you do, draw 2 cards afterwards.",
+		flavor: ["Vagrant Shaman Reeking Of Cigarettes"],
+		illustrations: ["../../images/blaireevasolomon.png"],
+		rating: ["2"],
+		tags: ["crossover", "defensive", "armor", "card draw"],
+		comments: ["Great if you need some card flow, but don't be afraid to tuck it if you are busy. - JM"]
+	},
+	{
+		name: "Dr. Doodad",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["1","3","3"],
+		text: "Whenever this deals damage to an opponent, draw a card and Heal 2.",
+		flavor: ["Ridding The World Of Disease & Large Sandwiches"],
+		illustrations: ["../../images/drdoodad.png"],
+		rating: ["3"],
+		tags: ["crossover", "aggressive", "card draw", "healing"],
+		comments: ["Even one good hit is enough to play this card. Combo decks like it.- JM"]
+	},
+	{
+		name: "Ape Omega",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","2","0"],
+		text: "Whenever you play another Utility, deal 2 damage to each player.",
+		flavor: ["Insurance Companies Hate This One Weird Chimp"],
+		illustrations: ["../../images/apeomega.png"],
+		rating: ["3"],
+		tags: ["aggressive", "combo", "player damage", "crossover"],
+		comments: ["Racks up the damage. Punishes players without Armor. - JM"]
+	},
+	{
+		name: "U.S. Ape",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","2","0"],
+		text: "At the beginning of your turn, you may discard a card. If you do, your other Utilities get +1 fight this turn.",
+		flavor: ["This Patriot's Ape Army Is Coming To Tread On You"],
+		illustrations: ["../../images/usape.png"],
+		rating: ["2"],
+		tags: ["aggressive", "discard", "crossover"],
+		comments: ["If you can keep a full hand, this is great for a pressure game. Semper Fi! - JM"]
+	},
+		{
+		name: "Riot Grrrl",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["1","3","0"],
+		text: "At the beginning of your turn, you may discard two cards. If you do, your Utilities are a copy of Riot Grrrl this turn.",
+		flavor: ["One-Woman Rave With Expensive Taste"],
+		illustrations: ["../../images/riotgrrrl.png"],
+		rating: ["2"],
+		tags: ["crossover", "discard", "aggressive"],
+		comments: ["Guaranteed nine damage with a full board. Great if you can keep it safe. - JM"]
+	},
+	{
+		name: "Thwip!",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","2","0"],
+		text: "When you play this, prevent all damage that would be done to you and your Utilities until your next turn.",
+		flavor: ["Superhero Archer Tailing Her Dirtbag Sister."],
+		illustrations: ["../../images/thwip.png"],
+		rating: ["3"],
+		tags: ["crossover", "defensive"],
+		comments: ["Great way to keep your combo deck alive for one turn. - JM"]
+	},
+	{
+		name: "Dark Belle",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["2","3","0"],
+		text: "Whenever this deals damage to an opponent, you may look at that player's hand and discard a card form it.",
+		flavor: ["A Failure Of Science Fueled By Hatred"],
+		illustrations: ["../../images/darkbelle.png"],
+		rating: ["3"],
+		tags: ["aggressive", "disruption", "discard"],
+		comments: ["Probably the strongest turn one play in the game. - JM"]
+	},
+	{
+		name: "Massacre",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["2","4","0"],
+		text: "When you play this, destroy all Utilities whose current Armor value is four or higher.",
+		flavor: ["Eight Arms To Choke You"],
+		illustrations: ["../../images/massacre.png"],
+		rating: ["2"],
+		tags: ["defensive", "armor", "disruption"],
+		comments: ["Doesn't fit in every deck, but helps to break open defensive decks or setup utility destruction combos. - JM"]
+	},
+	{
+		name: "Rubber Maiden",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","3","0"],
+		text: "Whenever this is dealt damage, deal 3 damage to each opponent.",
+		flavor: ["When It Bounces Off Her, She Sticks It To You"],
+		illustrations: ["../../images/rubbermaiden.png"],
+		rating: ["4"],
+		tags: ["crossover", "aggressive", "player damage", "utility damage", "versatile"],
+		comments: ["Fits in any deck that wants to be beating down. Scary. - JM"]
+	},
+	{
+		name: "Det. Wolf Cop",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","1","3"],
+		text: "Your other Utilities can't be destroyed.",
+		flavor: ["Fighting Evil By Moonlight"],
+		illustrations: ["../../images/detectivewolfcop.png"],
+		rating: ["2"],
+		tags: ["crossover", "defensive", "build-around"],
+		comments: ["Doesn't stay alive, but definitely draws attention. - JM"]
+	},	
 ]

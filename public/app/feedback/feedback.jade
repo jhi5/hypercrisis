@@ -1,55 +1,56 @@
 .container
 	.row
-		.col-md-12.text-center
 			form.form-horizontal(name='feedbackForm')
 				fieldset
-					legend Submit Your Playtest Data!
-					.form-group
-						label.control-label(for='character') Which Character Did You Play As? &nbsp;
-							select(name='character')
-								option(value='GG') Gravity Girl
-								option(value='RB') Robonobo
-								option(value='DE') Deadeye
-								option(value='QU') Query
-								option(value='KN') Knox
-								option(value='OB') Obscurity
-					.form-group
-						label.control-label(for='gamesWon') Games Won
-							input(type='number' name='gamesWon' min='1' max='20')
-						label.control-label(for='gamesPlayed') Games Played
-							input(type='number' name='gamesPlayed' min='1' max='20')
-					.form-group
-						label.control-label(for='crossovers') Crossovers
-							select(name='crossover1')
-								option(value='C01') Basalt
-								option(value='C02') Dark Blades
-								option(value='C03') US Ape
-								option(value='CO4') Ape Omega
-								option(value='CO5') Deathboy
-							select(name='crossover2')
-								option(value='C01') Basalt
-								option(value='C02') Dark Blades
-								option(value='C03') US Ape
-								option(value='CO4') Ape Omega
-								option(value='CO5') Deathboy
-							select(name='crossover3')
-								option(value='C01') Basalt
-								option(value='C02') Dark Blades
-								option(value='C03') US Ape
-								option(value='CO4') Ape Omega
-								option(value='CO5') Deathboy
-							select(name='crossover4')
-								option(value='C01') Basalt
-								option(value='C02') Dark Blades
-								option(value='C03') US Ape
-								option(value='CO4') Ape Omega
-								option(value='CO5') Deathboy
-							select(name='crossover5')
-								option(value='C01') Basalt
-								option(value='C02') Dark Blades
-								option(value='C03') US Ape
-								option(value='CO4') Ape Omega
-								option(value='CO5') Deathboy
+					.col-md-12.text-center
+						legend Submit Your Playtest Data!
+						.form-group
+							label.control-label(for='character').formlabel Which Character Did You Play As? &nbsp;
+								select(name='character').formfield
+									option(value='GG') Gravity Girl
+									option(value='RB') Robonobo
+									option(value='DE') Deadeye
+									option(value='QU') Query
+									option(value='KN') Knox
+									option(value='OB') Obscurity
+									option(value="SA") Silicon Artist
+					.col-md-12.text-center
+						.form-group
+							label.control-label(for='gamesWon').formlabel How Many Games Did You Play? &nbsp; 
+								input(type='number' name='gamesPlayed' min='1' max='20').formfield
+							br
+							label.control-label(for='gamesPlayed').formlabel How Many Of Them Did You Win? &nbsp; 
+								input(type='number' name='gamesWon' min='1' max='20').formfield
+					.col-md-12.text-center
+						.form-group
+							label.control-label(for='crossover').formlabel What Were The Best Crossovers? &nbsp;
+								br
+								select(name='character').formfield
+									option(value='GG') Gravity Girl
+									option(value='RB') Robonobo
+									option(value='DE') Deadeye
+									option(value='QU') Query
+									option(value='KN') Knox
+									option(value='OB') Obscurity
+									option(value="SA") Silicon Artist
+								&nbsp;
+								select(name='character').formfield
+									option(value='GG') Gravity Girl
+									option(value='RB') Robonobo
+									option(value='DE') Deadeye
+									option(value='QU') Query
+									option(value='KN') Knox
+									option(value='OB') Obscurity
+									option(value="SA") Silicon Artist
+								&nbsp;
+								select(name='character').formfield
+									option(value='GG') Gravity Girl
+									option(value='RB') Robonobo
+									option(value='DE') Deadeye
+									option(value='QU') Query
+									option(value='KN') Knox
+									option(value='OB') Obscurity
+									option(value="SA") Silicon Artist
 					.form-group
 						label.control-label(for='feats') Feats
 							select(name='feat1')

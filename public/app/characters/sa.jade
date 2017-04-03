@@ -1,0 +1,97 @@
+.container.top-padding-med.charpage
+	.row
+		.col-md-6.text-center
+			div.sa-profilebg
+				img.de-charpage-img.charpagebg(src="../../images/siliconartistcharselect.png")
+			h1#charname.de-charpage-name.okuda Silicon Artist
+			button.btn.btn-block.btn-success.charpage-download Download Now!
+		.col-md-6.charbio.text-center
+			h3.sa-profileheadings.okuda POWERS
+				h3.profiletext.okuda Superhuman Accuracy, Arsenal Of Deadly Weapons
+			h3.sa-profileheadings.okuda STRENGTHS & WEAKNESSES
+				h3.okuda.profiletext + High Player Damage, Strong Discard
+				h3.okuda.profiletext - Low Utility Damage, Poor Defensive Options
+			h3.sa-profileheadings.okuda DIFFICULTY
+				div.charpage-skill
+					img.charpage-difficulty(src="../../images/hard.png")
+			h3.sa-profileheadings.okuda SKILL
+				div.charpage-skill				
+					img(src="../../images/stretch.png")
+		.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
+			.modal-header
+				button.btn.btn-block.btn-modal-close(data-dismiss="modal" ng-click="emptyModal()") Close This Window
+			.modal-body
+				.col-md-6.text-center
+					img(src="{{modalContent.illustrations[0]}}")
+					h1.cardtitle {{modalContent.name}}
+					h3.text-center.de-flavortext(ng-hide="modalContent.flavor == null") {{modalContent.flavor[0]}}
+				.col-md-6.text-center
+					.row
+						.col-md-6
+							h3.de-profileheadings.okuda Rating
+							h2.text-center {{modalContent.rating}}
+						.col-md-6
+							h3.de-profileheadings.okuda Type
+							h2.text-center {{modalContent.type}}
+					.row(ng-hide="modalContent.utilityValues == null")
+						.col-md-12
+							h3.de-profileheadings.okuda Utility Values
+						.col-md-4
+							h2.utilityvalue {{modalContent.utilityValues[0]}}
+							h4.hpheading Hit Points
+						.col-md-4
+							h2.utilityvalue {{modalContent.utilityValues[1]}}
+							h4.fightheading Fight
+						.col-md-4
+							h2.utilityvalue {{modalContent.utilityValues[2]}}
+							h4.armorheading Armor
+					.row
+						.col-md-12
+							h3.de-profileheadings.okuda Card Text
+							h3.text-center {{modalContent.text}}
+					.row
+						.com-md-12
+							h3.de-profileheadings.okuda Comment
+							h3.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
+	h1.text-center Deadeye Card Database
+	h4.text-center Click On A Card Name To Open Its Details!
+	table.table.table-hover.table-striped.table-condensed(ng-if="loaded")
+		thread
+			.row				
+				.div-col-3.tagrow.text-center(ng-repeat="tag in tagArray")
+					button.btn-primary(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') {{tag}}
+					&nbsp;
+				.div-col-12
+					h2 Current Tags
+					.div(ng-repeat="tag in currentTags")
+						button.btn-success(ng-click='removeFilterButton(tag)') {{tag}}
+				.div-col-6
+					&nbsp;
+					button.btn-block.btn-warning.resetbutton(ng-click='resetTags()') RESET
+				.div-col-6
+					.form-group(class='[ ]')
+						input#fancy-checkbox-primary(type='checkbox', name='fancy-checkbox-primary', autocomplete='off', ng-model="checkBox" ng-click="logCheckbox()")
+						.btn-group(class='[ ]')
+							label.btn.btn-primary(for='fancy-checkbox-primary', class='[ ]')
+								span X
+								span  
+							label.btn.btn-default.active(for='fancy-checkbox-primary', class='[ ]')
+								| primary Checkbox
+
+
+
+			tr
+				th 
+					h3.text-center Name
+				th 
+					h3.text-center Type
+				th 
+					h3.text-center Text
+				tbody
+					tr(ng-repeat="card in cards | filter:containsTags | orderBy: 'name'")
+						td
+							h2.tablecardtitle.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
+						td
+							img.typesymbol.text-center(src='{{card.typeSymbol}}')
+						td
+							h3.text-center.cardtext.okuda {{card.text}}

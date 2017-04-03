@@ -24,5 +24,5 @@ angular.module('app').controller('mvCharSelectCtrl', function($scope, $timeout, 
 	hoverSwitch("Obscurity", "characterselectob", "#ob");
 	hoverSwitch("Query", "characterselectqu", "#qu");
 	hoverSwitch("Robonobo", "characterselectrb", "#rb");
-	hoverSwitch("Crossovers", "characterselectcross", "#cross")	
+	hoverSwitch("Silicon Artist", "characterselectsa", "#sa")	
 });

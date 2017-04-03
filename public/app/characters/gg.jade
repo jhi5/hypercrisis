@@ -71,9 +71,21 @@
 					h2 Current Tags
 					.div(ng-repeat="tag in currentTags")
 						button.btn-success(ng-click='removeFilterButton(tag)') {{tag}}
-				.div-col-12
+				.div-col-6
 					&nbsp;
-					button.btn-block.btn-warning.resetbutton RESET
+					button.btn-block.btn-warning.resetbutton(ng-click='resetTags()') RESET
+				.div-col-6
+					.form-group(class='[ ]')
+						input#fancy-checkbox-primary(type='checkbox', name='fancy-checkbox-primary', autocomplete='off', ng-model="checkBox" ng-click="logCheckbox()")
+						.btn-group(class='[ ]')
+							label.btn.btn-primary(for='fancy-checkbox-primary', class='[ ]')
+								span X
+								span  
+							label.btn.btn-default.active(for='fancy-checkbox-primary', class='[ ]')
+								| primary Checkbox
+
+
+
 			tr
 				th 
 					h3.text-center Name
@@ -82,7 +94,7 @@
 				th 
 					h3.text-center Text
 				tbody
-					tr(ng-repeat="card in cards | filter: filterBuilder() | orderBy: 'name'")
+					tr(ng-repeat="card in cards | filter:containsTags | orderBy: 'name'")
 						td
 							h2.tablecardtitle.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
 						td

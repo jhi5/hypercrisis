@@ -334,33 +334,33 @@ body {
 .characterselectqu {
   background: linear-gradient(0deg, rgba(51,102,51,0.85), rgba(51,102,51,0.85)), url("../images/defaultbg.png");
 }
-.crosscharselect:hover {
-  border: 3rem outset #c93;
+.sacharselect:hover {
+  border: 3rem outset #338533;
 }
-.cross-profilebg {
-  background: linear-gradient(0deg, rgba(204,153,51,0.85), rgba(204,153,51,0.85)), url("../images/defaultbg.png");
+.sa-profilebg {
+  background: linear-gradient(0deg, rgba(51,133,51,0.85), rgba(51,133,51,0.85)), url("../images/defaultbg.png");
 }
-.cross-profileheadings {
+.sa-profileheadings {
   color: #fff;
-  background: linear-gradient(0deg, rgba(204,153,51,0.85), rgba(204,153,51,0.85)), url("../images/defaultbg.png");
+  background: linear-gradient(0deg, rgba(51,133,51,0.85), rgba(51,133,51,0.85)), url("../images/defaultbg.png");
   font-size: 5rem;
   border-radius: 0.5rem;
 }
-.cross-flavortext {
+.sa-flavortext {
   color: #808080;
   font-style: italic;
 }
-.cross-charpage-name {
-  background: #c93;
+.sa-charpage-name {
+  background: #338533;
   color: #fff;
   font-size: 10rem;
 }
-.cross-charpage-img {
+.sa-charpage-img {
   min-width: 100%;
-  border: 2em solid #c93;
+  border: 2em solid #338533;
 }
-.characterselectcross {
-  background: linear-gradient(0deg, rgba(204,153,51,0.85), rgba(204,153,51,0.85)), url("../images/defaultbg.png");
+.characterselectsa {
+  background: linear-gradient(0deg, rgba(51,133,51,0.85), rgba(51,133,51,0.85)), url("../images/defaultbg.png");
 }
 #characterselectjumbo {
   min-height: 50vh;
@@ -839,4 +839,29 @@ body {
 }
 .navbutton {
   font-size: 2rem;
+}
+.form-group input[type="checkbox"] {
+  display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span {
+  width: 20px;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:first-child {
+  display: none;
+}
+.form-group input[type="checkbox"] + .btn-group > label span:last-child {
+  display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
+  display: inline-block;
+}
+.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
+  display: none;
+}
+.formfield {
+  width: 20rem;
+  font-size: 3rem;
+}
+.formlabel {
+  font-size: 3rem;
 }

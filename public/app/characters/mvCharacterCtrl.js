@@ -1,19 +1,14 @@
 angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $location, $http) {
 	var cardCollection = [];
+	$scope.cards = [];
 	$scope.currentModalIndex = 0;
 	$scope.currentCollectionSize = 0;
 	$scope.tagArray = [];
 	$scope.currentTags = [];	
 	$scope.currentCharacter = $("#charname").text();
 	$scope.currentFilter = {};
-	console.log($scope.currentFilter);
-	$scope.filterBuilder = function(){
-		var currentChar = $scope.currentCharacter;
-		return { character : currentChar };
-	}
-	$scope.filterButton = function(string){
-		$scope.currentTags.push(string);			
-	}
+	$scope.checkBox = false;
+
 	$scope.hideTagButton = function(string){
 		if($scope.currentTags.length !== 0){
 			for(i=0;i<$scope.currentTags.length;i++){
@@ -108,9 +103,10 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			}
 			$scope.tagArray = $scope.tagArray.sort($.uniqueSort($scope.tagArray));
 			$scope.loaded = true;
+			console.log($scope.cards);
 		});
 	}
-	loadCollection();	
+	loadCollection();
 	$scope.modalContent = {
 		name: 'sample name',
 		character: 'sample character',
@@ -198,5 +194,26 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			}			
 		}
 	}
-
+	$scope.filterButton = function(string){
+		$scope.currentTags.push(string);			
+	}
+	$scope.containsTags = function(actual, expected){
+		if(actual.character === $scope.currentCharacter || ($scope.checkBox === true && actual.character === "Crossover")){
+			if($scope.currentTags.length !== 0){
+				for(i=0;i<$scope.currentTags.length;i++){
+					for(j=0;j<actual.tags.length;j++){
+						if(actual.tags[j] === $scope.currentTags[i]){
+							return true;
+						}
+					}
+				}
+			}else{
+				return true;
+			}			
+		}
+	}
+	$scope.resetTags = function(){
+		loadCollection();
+		$scope.currentTags = [];
+	}
 });

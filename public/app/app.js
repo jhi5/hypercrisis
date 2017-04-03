@@ -44,8 +44,8 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
 		templateUrl: '/partials/characters/qu',
 		controller: 'mvCharacterCtrl'
 	})
-	.when('/characters/crossovers', {
-		templateUrl: '/partials/characters/cross',
+	.when('/characters/siliconartist', {
+		templateUrl: '/partials/characters/sa',
 		controller: 'mvCharacterCtrl'
 	})
 	.when('/articles', {
