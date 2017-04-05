@@ -133,15 +133,24 @@ body
 
 .tablecardtitle
 	font-family "adventureregular"
+	font-size 4rem
+	margin-left .5rem
+	margin-right .5rem
  	
 .charbio
 	border-radius 1.5rem
 
 .charpage-skill
 	background white
+	width 95%
+	margin auto
+	border 1rem solid black
+	border-radius 5rem
 
 .charpage-difficulty
-	margin-top 1rem
+	width 95%
+	height 95%
+	border-radius 5rem
 
 .charpage-download
 	padding-top 5rem
@@ -152,8 +161,17 @@ body
 	font-family 'adventureregular'
 	border-radius 2rem
 
-.profiletext
-	font-size 3.5rem
+.charpage-table
+	background-image url('../images/defaultbg.png')
+	background-color gravitygirlcolor
+	background-blend-mode screen	
+	background-attachment fixed
+	background-repeat no-repeat
+	border-radius 5rem
+	padding 2rem
+	margin-top 1rem
+	border 1rem solid black
+	box-shadow 1rem 1rem 1rem black	
 
 .crosstext
 	font-size 6rem
@@ -189,13 +207,21 @@ body
 
 .plus
 	font-family "okuda"
-	color green
+	color white
 	font-size 5rem
+	border-radius 2rem
+	background-color #228B22
+	padding 1rem
+	margin .5rem
 
 .minus
 	font-family "okuda"
-	color red
+	color white
 	font-size 5rem
+	border-radius 2rem
+	background-color #FF4847
+	padding 1rem
+	margin .5rem
 
 .typesymbol
 	max-width 10rem
@@ -207,6 +233,8 @@ body
 
 .cardtext
 	font-size 4rem
+	margin-left 1rem
+	margin-right 1rem
 
 .tagrow
 	display inline-block 0
@@ -493,6 +521,7 @@ body
 .ggtextcontainer
 	background-color gravitygirlcolor
 
+
 .ggbanner h1
 	margin-top 0rem
 	color white
@@ -505,6 +534,34 @@ body
 	text-shadow 1rem .25rem .25rem gravitygirlflavor
 	font-size 9rem
 	font-family 'adventureregular'
+
+.ggcharprofileleft
+	background-image url('../images/defaultbg.png')
+	background-color gravitygirlcolor
+	background-blend-mode screen	
+	background-attachment fixed
+	background-repeat no-repeat
+	border-radius 5rem
+	padding 2rem
+	margin-top 1rem
+	border 1rem solid black
+	box-shadow 1rem 1rem 1rem black
+	min-height 120rem
+
+.ggcharprofileright
+	background-image url('../images/defaultbg.png')
+	background-color gravitygirlcolor
+	background-blend-mode screen	
+	background-attachment fixed
+	background-repeat no-repeat
+	border-radius 5rem
+	padding 2rem
+	margin-top 1rem
+	border 1rem solid black
+	box-shadow 1rem 1rem 1rem black
+	min-height 120rem
+
+
 
 //robonobo articles
 
@@ -889,7 +946,8 @@ body
 	background-color gravitygirlflavor
 	background-blend-mode color-burn
 	background-attachment fixed
-	background-repeat no-repeat
+	background-repeat none
+	background-size cover
 
 .articlecontainer
 	background-color white
@@ -937,27 +995,196 @@ body
 
 
 
+.charpageheadshot
+	width 100%
+	border 1rem solid black
+	background-color gravitygirlflavor
+	border-radius 4rem
 
+.charpagepadding
+	padding-right 1rem
+	padding-left 1rem
 
+.ggcharpagename
+	font-family 'Okuda'
+	color white
+	border-radius 2rem
+	font-size 15rem
+	padding-bottom 1rem
+	border 1rem solid black
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+	background-color gravitygirlcolor
 
+.ggcharpageheading
+	font-family 'Okuda'
+	color white
+	border-radius 2rem
+	font-size 8rem
+	padding-bottom 1rem
+	border 1rem solid black
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	background-color gravitygirlcolor
 
+.ggcharpagedownload
+	font-family 'Adventure'
+	background-color DodgerBlue
+	color white
+	border-radius 2rem
+	border 1rem solid black
+	font-size 5rem
+	padding 1rem
+	text-shadow -.25rem .25rem .25rem black, -.25rem -.25rem .25rem black, .25rem .25rem .25rem black
 
+.ggcharpagedownload:hover
+	color white
+	background-color gravitygirlcolor
 
+.charprofiletext
+	font-size 4rem
+	color black
+	text-shadow 0rem 0rem 0rem
+	padding 1rem
+	margin 0rem
 
+.crosscheck
+	font-size 3.5rem
+	font-family 'Adventure'
+	border-radius 2rem
+	background-color DodgerBlue
 
+.crosstext
+	font-size 3.5rem
+	background-color white
+	font-family 'Adventure'
+	border-radius 2rem
 
+.panelbuttonrow
+	float none
+	margin 0 auto
 
+.resetbutton
+	margin-top 1rem
+	margin-bottom 1rem
+	font-size 3.5rem
+	font-family 'Adventure'
+	border-radius 2rem
+	margin-top 1rem
+	background-color #FF4847
+	padding-left 10rem
+	padding-right 10rem
+	color white
+	border 1rem solid black
+	margin-left 0rem
+	margin-right 0rem
 
+.gg-table
+	background-color gravitygirlcolor
+	width 95%
+	margin auto
+	padding auto
+	border-radius 2rem
+	border 1rem solid black
 
+.excluded-tag
+	padding-left 1rem
+	padding-right 1rem
+	padding-top 0rem
+	padding-bottom 0rem
+	margin .5rem
+	background-color #FF4847
+	font-family "Okuda"
+	color white
+	font-size 3.5rem
+	border-radius 2rem
+	border .5rem outset #FF4847
 
+.included-tag
+	padding-left 1rem
+	padding-right 1rem
+	padding-top 0rem
+	padding-bottom 0rem
+	margin .5rem
+	background-color #228B22
+	font-family "Okuda"
+	color white
+	font-size 3.5rem
+	border-radius 2rem
+	border .5rem outset #228B22
 
+.tagrow
+	display inline-block
 
+.tagcol
+	min-height 42rem
 
+.searchfilter
+	font-family 'Okuda'
+	color white
+	font-size 10rem
+	padding-bottom 1rem
+	margin-top 0
+	margin-bottom 0
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
 
+.searchinst
+	font-family 'Okuda'
+	color white
+	margin-top 0
+	margin-bottom 0
+	font-size 5rem
+	padding-bottom 1rem
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
 
+.tagbg
+	background-color white
+	margin-left 2rem
+	margin-right 2rem
+	padding 1rem
+	border 1rem solid black
+	border-radius 2rem
 
+.panelbuttonrow
+	width 95%
 
+.crossoverbuttonrow
+	width 90%
+	margin-top 1rem
+	margin-left 3%
 
+.tablebox
+	background-color white
+	border .5rem solid black
+	border-radius .2rem
 
+.tablefield
+	font-family "Adventure"
+	background-color DodgerBlue
+	border .5rem solid black
+	border-top-left-radius .25rem
+	border-top-right-radius .25rem
 
+.tablefield h3
+	color white
+	font-size 5rem
 
+.tablebody
+	background-color rgba(255,255,255,8)
+	border .5rem solid black
+	border-top-left-radius .25rem
+	border-top-right-radius .25rem
+
+.tablebodyrow
+	border-bottom .25rem solid DodgerBlue
+
+.tablebox:hover
+	background-color white
+
+.table-hover tbody tr:hover
+	background-color white
+
+.checkbutton
+	border 1rem solid black
+	border-radius 3rem
+
+.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default
+	background-color white
