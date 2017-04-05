@@ -61,34 +61,81 @@ body {
 .modal-admin {
   background-color: #fff;
 }
-.hpheading {
+.typeheading {
   color: #fff;
-  background: #ed2690;
+  background: #000;
   font-size: 5rem;
   border-radius: 0.5rem;
-  font-family: "adventureregular";
+  font-family: "Okuda";
+}
+.ratingheading {
+  color: #fff;
+  background: #000;
+  font-size: 5rem;
+  border-radius: 0.5rem;
+  font-family: "Okuda";
+}
+.hpheading {
+  color: #fff;
+  background: #000;
+  font-size: 5rem;
+  border-radius: 0.5rem;
+  font-family: "Okuda";
 }
 .utilityvalue {
-  font-family: 'adventureregular';
+  font-family: 'Okuda';
+  font-weight: bold;
   font-size: 10rem;
+  max-width: 15rem;
+  margin: auto;
+  box-shadow: 1rem 1rem 1rem #808080;
+  border-radius: 2rem;
+  border: 1rem solid #000;
+  color: #fff;
+  text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
+  line-height: 20%;
+  margin-top: 1.5rem;
+}
+#fightsymbol {
+  background-color: #09f;
+  background-size: 100%;
+  padding: 1rem;
+}
+#armorsymbol {
+  background-color: #ff0;
+  background-size: 100%;
+  padding: 1rem;
+}
+#hpsymbol {
+  background-color: #f09;
+  background-size: 100%;
+  padding: 1rem;
 }
 .fightheading {
   color: #fff;
-  background: #2aade3;
+  background: #000;
   font-size: 5rem;
   border-radius: 0.5rem;
-  font-family: "adventureregular";
+  font-family: "Okuda";
 }
 .armorheading {
   color: #fff;
-  background: #ffef1f;
+  background: #000;
   font-size: 5rem;
   border-radius: 0.5rem;
-  font-family: "adventureregular";
+  font-family: "Okuda";
 }
 .cardtitle {
   font-family: "adventureregular";
-  font-size: 8rem;
+  font-size: 7.5rem;
+  line-height: auto;
+  margin: 0;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+  background-color: DodgerBlue;
+  border: 1rem outset DodgerBlue;
+  border-radius: 2rem;
+  letter-spacing: 0.1rem;
 }
 .tablecardtitle {
   font-family: "adventureregular";
@@ -129,6 +176,7 @@ body {
   border-radius: 5rem;
   padding: 2rem;
   margin-top: 1rem;
+  margin-bottom: 2rem;
   border: 1rem solid #000;
   box-shadow: 1rem 1rem 1rem #000;
 }
@@ -141,6 +189,7 @@ body {
   color: #fff;
   font-size: 3rem;
   margin: 0 1rem 0 1rem;
+  border-radius: 2rem;
 }
 .btn-modal-previous {
   font-family: 'adventureregular';
@@ -148,6 +197,7 @@ body {
   color: #fff;
   font-size: 3rem;
   margin: 0 1rem 0 1rem;
+  border-radius: 2rem;
 }
 .btn-modal-next {
   font-family: 'adventureregular';
@@ -155,6 +205,17 @@ body {
   color: #fff;
   font-size: 3rem;
   margin: 0 1rem 0 1rem;
+  border-radius: 2rem;
+}
+.btn-modal-next:hover,
+.btn-modal-previous:hover,
+.btn-modal-close:hover {
+  color: Gold;
+}
+.btn-modal-next:focus,
+.btn-modal-previous:focus,
+.btn-modal-close:focus {
+  color: #fff;
 }
 .popover {
   width: 20rem;
@@ -189,6 +250,10 @@ body {
 }
 .modaltypesymbol {
   max-width: 15rem;
+  margin: auto;
+  box-shadow: 1rem 1rem 1rem #808080;
+  border-radius: 2rem;
+  border: 1rem solid #000;
 }
 .cardtext {
   font-size: 4rem;
@@ -1115,4 +1180,63 @@ body {
 .btn-default.active,
 .open > .dropdown-toggle.btn-default {
   background-color: #fff;
+}
+.modalcardimage {
+  border-radius: 3rem;
+  margin: auto;
+  max-height: 65rem;
+  box-shadow: 1rem 1rem 1rem #808080;
+}
+.ggmodalflavor {
+  font-family: "Adventure";
+  border: 1rem solid #000;
+  box-shadow: 0.5rem 0.5rem 0.5rem #808080;
+  max-width: 60rem;
+  margin: 0 auto;
+  margin-top: 2rem;
+  font-size: 4rem;
+  padding: 1rem;
+  color: #000;
+  font-style: bold;
+}
+.modalimagecontainer {
+  margin-top: 1rem;
+}
+.modaliconrow {
+  margin: 1rem;
+}
+.utilityiconrow {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.modalcardtext {
+  font-family: "Okuda";
+  font-size: 5rem;
+  margin: auto 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.modalcommenttext {
+  font-family: "Okuda";
+  font-size: 4.5rem;
+  margin: auto 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #808080;
+  font-style: italic;
+}
+.popover {
+  font-family: "Adventure";
+  min-width: 45rem;
+  min-height: 5rem;
+  border: 1rem solid #000;
+  border-radius: 2rem;
+  padding: auto;
+}
+.popover-content {
+  font-family: "Adventure";
+  font-size: 4rem;
+  text-align: center;
+  line-height: 4rem;
+  margin: auto;
 }

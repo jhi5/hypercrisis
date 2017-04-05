@@ -102,34 +102,80 @@ body
 .modal-admin
 	background-color white
 
-.hpheading
+.typeheading
 	color white
-	background rgb(237,38,144)
+	background black
 	font-size 5rem
 	border-radius .5rem
-	font-family "adventureregular"
+	font-family "Okuda"
+
+.ratingheading
+	color white
+	background black
+	font-size 5rem
+	border-radius .5rem
+	font-family "Okuda"
+
+.hpheading
+	color white
+	background black
+	font-size 5rem
+	border-radius .5rem
+	font-family "Okuda"
 
 .utilityvalue
-	font-family 'adventureregular'
+	font-family 'Okuda'
+	font-weight bold
 	font-size 10rem
+	max-width 15rem
+	margin auto
+	box-shadow 1rem 1rem 1rem grey
+	border-radius 2rem
+	border 1rem solid black
+	color white
+	text-shadow -.2rem .25rem .25rem black, -.2rem -.25rem .25rem black, .75rem .25rem .25rem black
+	line-height 20%
+	margin-top 1.5rem	
+
+#fightsymbol
+	background-color #0099ff
+	background-size 100%
+	padding 1rem
+#armorsymbol
+	background-color #ffff00
+	background-size 100%
+	padding 1rem
+#hpsymbol
+	background-color #ff0099
+	background-size 100%
+	padding 1rem
 
 .fightheading
 	color white
-	background rgb(42, 173, 227)
+	background black
 	font-size 5rem
 	border-radius .5rem
-	font-family "adventureregular"
+	font-family "Okuda"
 
 .armorheading
 	color white
-	background rgb(255, 239, 31)
+	background black
 	font-size 5rem
 	border-radius .5rem
-	font-family "adventureregular"
+	font-family "Okuda"
 
 .cardtitle
 	font-family "adventureregular"
-	font-size 8rem
+	font-size 7.5rem
+	line-height auto
+	margin 0
+	color white
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	background-color DodgerBlue
+	border 1rem outset DodgerBlue
+	border-radius 2rem
+	letter-spacing .1rem
+
 
 .tablecardtitle
 	font-family "adventureregular"
@@ -170,6 +216,7 @@ body
 	border-radius 5rem
 	padding 2rem
 	margin-top 1rem
+	margin-bottom 2rem
 	border 1rem solid black
 	box-shadow 1rem 1rem 1rem black	
 
@@ -182,6 +229,7 @@ body
 	color white
 	font-size 3rem
 	margin 0 1rem 0 1rem
+	border-radius 2rem
 
 .btn-modal-previous
 	font-family 'adventureregular'
@@ -189,6 +237,8 @@ body
 	color white
 	font-size 3rem
 	margin 0 1rem 0 1rem
+	border-radius 2rem
+
 
 .btn-modal-next
 	font-family 'adventureregular'
@@ -196,6 +246,13 @@ body
 	color white
 	font-size 3rem
 	margin 0 1rem 0 1rem
+	border-radius 2rem
+
+.btn-modal-next:hover, .btn-modal-previous:hover, .btn-modal-close:hover
+	color Gold
+
+.btn-modal-next:focus, .btn-modal-previous:focus, .btn-modal-close:focus
+	color white
 
 .popover
     width 20rem
@@ -230,6 +287,10 @@ body
 
 .modaltypesymbol
 	max-width 15rem
+	margin auto
+	box-shadow 1rem 1rem 1rem grey
+	border-radius 2rem
+	border 1rem solid black
 
 .cardtext
 	font-size 4rem
@@ -1188,3 +1249,62 @@ body
 
 .btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default
 	background-color white
+
+.modalcardimage
+	border-radius 3rem
+	margin auto
+	max-height 65rem
+	box-shadow 1rem 1rem 1rem grey
+
+.ggmodalflavor
+	font-family "Adventure"
+	border 1rem solid black
+	box-shadow .5rem .5rem .5rem grey
+	max-width 60rem
+	margin 0 auto
+	margin-top 2rem
+	font-size 4rem
+	padding 1rem
+	color black
+	font-style bold
+
+.modalimagecontainer
+	margin-top 1rem
+
+.modaliconrow
+	margin 1rem
+
+.utilityiconrow
+	margin-top 2rem
+	margin-bottom 3rem
+
+.modalcardtext
+	font-family "Okuda"
+	font-size 5rem
+	margin auto 0
+	padding-left 5%
+	padding-right 5%
+
+.modalcommenttext
+	font-family "Okuda"
+	font-size 4.5rem
+	margin auto 0
+	padding-left 5%
+	padding-right 5%
+	color grey
+	font-style italic
+
+.popover
+	font-family "Adventure"
+	min-width 45rem
+	min-height 5rem
+	border 1rem solid black
+	border-radius 2rem
+	padding auto
+
+.popover-content
+	font-family "Adventure"
+	font-size 4rem
+	text-align center
+	line-height 4rem
+	margin auto

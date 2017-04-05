@@ -8,6 +8,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	$scope.currentCharacter = $("#charname").text();
 	$scope.currentFilter = {};
 	$scope.checkBox = false;
+	$scope.featBox = false;
 
 	$scope.hideTagButton = function(string){
 		if($scope.currentTags.length !== 0){
@@ -23,11 +24,11 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		$scope.currentTags.splice($scope.currentTags.indexOf(string), 1);
 	}	
 	findAverage = function(array){
-		var sum = 0;
-		for(i=0; i++; i<array.length){
+		sum = 0;
+		for(i=0;i<array.length;i++){
 			sum += parseInt(array[i]);
 		}
-		return sum + array.length+1;
+		return (sum / array.length);
 	}
 	detectFlavor = function(array){
 		if(array[0] !== 'none'){
@@ -49,14 +50,48 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		}
 		if(string == "Crossover"){
 			object.typeSymbol = '../../images/crossover.png';
-		}
-		if(string == "Feat"){
-			object.typeSymbol = '../../images/feat.png';
-		}
+		}		
 		if(string == "Utility"){
 			object.typeSymbol = '../../images/utility.png';
 		}
+		if(string == "Feat" && object.character === "Gravity Girl"){
+			object.typeSymbol = '../../images/featgg.png';
+		}
+		if(string == "Feat" && object.character === "Robonobo"){
+			object.typeSymbol = '../../images/featrb.png';
+		}
+		if(string == "Feat" && object.character === "Deadeye"){
+			object.typeSymbol = '../../images/featde.png';
+		}
+		if(string == "Feat" && object.character === "Query"){
+			object.typeSymbol = '../../images/featqu.png';
+		}
+		if(string == "Feat" && object.character === "Obscurity"){
+			object.typeSymbol = '../../images/featob.png';
+		}
+		if(string == "Feat" && object.character === "Knox"){
+			object.typeSymbol = '../../images/featkn.png';
+		}
+		if(string == "Feat" && object.character === "Silicon Artist"){
+			object.typeSymbol = '../../images/featsa.png';
+		}
 	}
+	createRating = function(object, array){
+		ratingSymbol = findAverage(array);
+		console.log(typeof ratingSymbol);
+		if(ratingSymbol >= 3.5){
+			object.ratingSymbol = '../../images/ratingstar.png';
+		}
+		if(ratingSymbol >= 2.5 && ratingSymbol < 3.5){
+			object.ratingSymbol = '../../images/ratinggreat.png';
+		}
+		if(ratingSymbol >= 1.5 && ratingSymbol < 2.5){
+			object.ratingSymbol = '../../images/ratinggood.png';
+		}
+		if(ratingSymbol <= 1.5){
+			object.ratingSymbol = '../../images/ratingmaybe.png';
+		}
+	}	
 	refreshModal = function(string){
 		for(i=0; i<$scope.cards.length; i++){			
 			if(string == $scope.cards[i].name){
@@ -70,11 +105,12 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 					flavor: detectFlavor($scope.cards[i].flavor),
 					illustrations: $scope.cards[i].illustrations,
 					utilityValues: detectUtility($scope.cards[i].type),
-					rating: findAverage($scope.cards[i].rating),
-					typeSymbol: createSymbol(this, $scope.cards[i].type)
+					rating: $scope.cards[i].rating,
+					typeSymbol: createSymbol(this, $scope.cards[i].type),
+					ratingSymbol: ""					
 				}
  				createSymbol($scope.modalContent, $scope.modalContent.type);
- 				console.log($scope.currentModalIndex);
+ 				createRating($scope.modalContent, $scope.modalContent.rating);
 				$scope.cell = $scope.modalContent.name;
 				$('#myModal').modal('show');
 				break;
@@ -103,7 +139,6 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			}
 			$scope.tagArray = $scope.tagArray.sort($.uniqueSort($scope.tagArray));
 			$scope.loaded = true;
-			console.log($scope.cards);
 		});
 	}
 	loadCollection();
@@ -199,6 +234,9 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	}
 	$scope.containsTags = function(actual, expected){
 		if(actual.character === $scope.currentCharacter || ($scope.checkBox === true && actual.character === "Crossover")){
+			if(actual.type === "Feat" && $scope.featBox === false){
+				return false;
+			}
 			if($scope.currentTags.length !== 0){
 				for(i=0;i<$scope.currentTags.length;i++){
 					for(j=0;j<actual.tags.length;j++){

@@ -21,48 +21,48 @@
 							button.minus - Card Draw
 							button.minus - Discard
 				h2.ggcharpageheading SKILL
-					div.charpage-skill(data-toggle="popover" data-trigger="hover"
+					div.charpage-skill(data-toggle="popover" data-trigger="hover" data-placement="auto left"
 					data-content="To play a card with Throw, you must first destroy one of your own Utilities.")				
 						img(src="../../images/throw.png")
 				button.btn.btn-block.ggcharpagedownload Download Now!
 			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
 				.modal-header.text-center
-					button.btn.btn-modal-previous(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") Previous Card
-					button.btn.btn-modal-close(data-dismiss="modal" ng-click="emptyModal()") Close This Window
-					button.btn.btn-modal-next(ng-click="findNextEntry()" ng-hide="hideNext()") Next Card
+					.row
+						.col-md-6
+							button.btn.btn-modal-previous(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") Previous
+							button.btn.btn-modal-close(data-dismiss="modal" ng-click="emptyModal()") Close Window
+							button.btn.btn-modal-next(ng-click="findNextEntry()" ng-hide="hideNext()") Next
+						.col-md-6
+							h1.cardtitle.text-center#modaltitle {{modalContent.name}}
 				.modal-body
+					.col-md-6.text-center.modalimagecontainer
+						img.modalcardimage.img-responsive(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover"
+					data-content="{{modalContent.flavor[0]}}")
+						.row.utilityiconrow.text-center(ng-hide="modalContent.utilityValues == null")
+							.col-md-12
+							.col-md-4
+								h2#hpsymbol.utilityvalue.text-center {{modalContent.utilityValues[0]}} HP
+							.col-md-4
+								h2#fightsymbol.utilityvalue.text-center {{modalContent.utilityValues[1]}} FT					
+							.col-md-4
+								h2#armorsymbol.utilityvalue.text-center {{modalContent.utilityValues[2]}} AR					
 					.col-md-6.text-center
-						img(src="{{modalContent.illustrations[0]}}")
-						h1.cardtitle#modaltitle {{modalContent.name}}
-						h3.text-center.gg-flavortext(ng-hide="modalContent.flavor == null") {{modalContent.flavor[0]}}
-					.col-md-6.text-center
-						.row
-							.col-md-6
-								h3.gg-profileheadings.okuda Rating
-								h2.text-center {{modalContent.rating}}
-							.col-md-6
-								h3.gg-profileheadings.okuda Type
-								img.modaltypesymbol(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
-						.row(ng-hide="modalContent.utilityValues == null")
-							.col-md-12
-								h3.gg-profileheadings.okuda Utility Values
-							.col-md-4
-								h2.utilityvalue {{modalContent.utilityValues[0]}}
-								h4.hpheading Hit Points
-							.col-md-4
-								h2.utilityvalue {{modalContent.utilityValues[1]}}
-								h4.fightheading Fight
-							.col-md-4
-								h2.utilityvalue {{modalContent.utilityValues[2]}}
-								h4.armorheading Armor
+						.row.modaliconrow.text-center
+							.col-md-12.modalcardcells
+								.col-md-6
+									h4.ratingheading Rating
+									img.img-responsive.modaltypesymbol(src="{{modalContent.ratingSymbol}}")
+								.col-md-6
+									h4.typeheading Type
+									img.modaltypesymbol(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")						
 						.row
 							.col-md-12
-								h3.gg-profileheadings.okuda Card Text
-								h3.text-center {{modalContent.text}}
+								h3.typeheading Card Text
+								h3.text-center.modalcardtext {{modalContent.text}}
 						.row
 							.col-md-12
-								h3.gg-profileheadings.okuda Comment
-								h3.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
+								h3.typeheading Comment
+								h3.text-center.modalcommenttext(ng-repeat='comment in modalContent.comments') {{comment}}
 		br
 		.row
 			.col-md-12.charpage-table
