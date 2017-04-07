@@ -140,23 +140,15 @@ body {
 .tablecardtitle {
   font-family: "adventureregular";
   font-size: 4rem;
-  margin-left: 0.5rem;
-  margin-right: 0.5rem;
-}
-.charbio {
-  border-radius: 1.5rem;
-}
-.charpage-skill {
-  background: #fff;
-  width: 95%;
-  margin: auto;
-  border: 1rem solid #000;
-  border-radius: 5rem;
+  width: 80%;
+  margin-top: 1.5rem;
+  letter-spacing: 0.2rem;
 }
 .charpage-difficulty {
-  width: 95%;
-  height: 95%;
-  border-radius: 5rem;
+  margin: auto 0;
+  margin-top: 0rem;
+  border-radius: 2rem;
+  border: 1rem solid #000;
 }
 .charpage-download {
   padding-top: 5rem;
@@ -168,11 +160,7 @@ body {
   border-radius: 2rem;
 }
 .charpage-table {
-  background-image: url("../images/defaultbg.png");
-  background-color: #969;
-  background-blend-mode: screen;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
+  background-color: #fff;
   border-radius: 5rem;
   padding: 2rem;
   margin-top: 1rem;
@@ -181,7 +169,7 @@ body {
   box-shadow: 1rem 1rem 1rem #000;
 }
 .crosstext {
-  font-size: 6rem;
+  font-size: 2rem;
 }
 .btn-modal-close {
   font-family: 'adventureregular';
@@ -226,27 +214,39 @@ body {
   font-size: 3rem;
 }
 .plus {
-  font-family: "okuda";
+  font-family: "Okuda";
   color: #fff;
-  font-size: 5rem;
-  border-radius: 2rem;
+  font-size: 3.5rem;
   background-color: #228b22;
-  padding: 1rem;
-  margin: 0.5rem;
+  padding: 0rem;
+  box-shadow: none;
+  margin: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 2rem;
+  text-shadow: 0.15rem 0.15rem 0.15rem #000;
+  letter-spacing: 0rem;
 }
 .minus {
-  font-family: "okuda";
+  font-family: "Okuda";
   color: #fff;
-  font-size: 5rem;
-  border-radius: 2rem;
+  font-size: 3.5rem;
   background-color: #ff4847;
-  padding: 1rem;
-  margin: 0.5rem;
+  padding: 0rem;
+  padding: 0rem;
+  box-shadow: none;
+  margin: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 2rem;
+  text-shadow: 0.15rem 0.15rem 0.15rem #000;
+  letter-spacing: 0rem;
 }
 .typesymbol {
-  max-width: 10rem;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  width: 11rem;
+  height: 11rem;
+  margin: auto;
+  vertical-align: middle;
 }
 .modaltypesymbol {
   max-width: 15rem;
@@ -254,11 +254,14 @@ body {
   box-shadow: 1rem 1rem 1rem #808080;
   border-radius: 2rem;
   border: 1rem solid #000;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 .cardtext {
   font-size: 4rem;
-  margin-left: 1rem;
-  margin-right: 1rem;
+  margin-top: 1.5rem;
+  margin-left: 8%;
+  margin-right: 8%;
 }
 .tagrow {
   display: inline-block 0;
@@ -546,30 +549,10 @@ body {
   font-family: 'adventureregular';
 }
 .ggcharprofileleft {
-  background-image: url("../images/defaultbg.png");
-  background-color: #969;
-  background-blend-mode: screen;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  border-radius: 5rem;
-  padding: 2rem;
-  margin-top: 1rem;
-  border: 1rem solid #000;
-  box-shadow: 1rem 1rem 1rem #000;
-  min-height: 120rem;
+  padding: 1rem;
 }
 .ggcharprofileright {
-  background-image: url("../images/defaultbg.png");
-  background-color: #969;
-  background-blend-mode: screen;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  border-radius: 5rem;
-  padding: 2rem;
-  margin-top: 1rem;
-  border: 1rem solid #000;
-  box-shadow: 1rem 1rem 1rem #000;
-  min-height: 120rem;
+  padding: 1rem;
 }
 .rbjumboimage {
   border: 3rem solid #666;
@@ -963,9 +946,6 @@ body {
 .form-group input[type="checkbox"] {
   display: none;
 }
-.form-group input[type="checkbox"] + .btn-group > label span {
-  width: 20px;
-}
 .form-group input[type="checkbox"] + .btn-group > label span:first-child {
   display: none;
 }
@@ -989,7 +969,9 @@ body {
   width: 100%;
   border: 1rem solid #000;
   background-color: #c39;
-  border-radius: 4rem;
+  background-image: url("../images/gravitygirlcharselect.png");
+  background-size: cover;
+  border-radius: 5rem;
 }
 .charpagepadding {
   padding-right: 1rem;
@@ -998,22 +980,25 @@ body {
 .ggcharpagename {
   font-family: 'Okuda';
   color: #fff;
-  border-radius: 2rem;
-  font-size: 15rem;
-  padding-bottom: 1rem;
-  border: 1rem solid #000;
+  font-size: 10rem;
   text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  margin-top: 0rem;
+  margin-right: 0rem;
+  border: 1rem solid #000;
+  border-radius: 2rem;
   background-color: #969;
 }
 .ggcharpageheading {
   font-family: 'Okuda';
   color: #fff;
   border-radius: 2rem;
-  font-size: 8rem;
+  font-size: 6rem;
   padding-bottom: 1rem;
   border: 1rem solid #000;
+  margin-top: 0rem;
   text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
   background-color: #969;
+  letter-spacing: 0.5rem;
 }
 .ggcharpagedownload {
   font-family: 'Adventure';
@@ -1022,25 +1007,30 @@ body {
   border-radius: 2rem;
   border: 1rem solid #000;
   font-size: 5rem;
-  padding: 1rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   text-shadow: -0.25rem 0.25rem 0.25rem #000, -0.25rem -0.25rem 0.25rem #000, 0.25rem 0.25rem 0.25rem #000;
+  margin-top: 2rem;
+  margin-bottom: 0rem;
 }
 .ggcharpagedownload:hover {
   color: #fff;
   background-color: #969;
 }
 .charprofiletext {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #000;
   text-shadow: 0rem 0rem 0rem;
   padding: 1rem;
   margin: 0rem;
 }
 .crosscheck {
-  font-size: 3.5rem;
+  font-size: 7rem;
+  color: DodgerBlue;
   font-family: 'Adventure';
   border-radius: 2rem;
-  background-color: DodgerBlue;
+  width: 6rem;
+  height: 6rem;
 }
 .crosstext {
   font-size: 3.5rem;
@@ -1053,67 +1043,76 @@ body {
   margin: 0 auto;
 }
 .resetbutton {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
   font-size: 3.5rem;
   font-family: 'Adventure';
   border-radius: 2rem;
-  margin-top: 1rem;
   background-color: #ff4847;
-  padding-left: 10rem;
-  padding-right: 10rem;
   color: #fff;
   border: 1rem solid #000;
-  margin-left: 0rem;
-  margin-right: 0rem;
+  width: 100%;
+}
+.crossbutton {
+  font-size: 3.5rem;
+  font-family: 'Adventure';
+  border-radius: 2rem;
+  color: #fff;
+  background-color: #ff4847;
+  border: 1rem solid #000;
+  width: 100%;
+}
+.featbutton {
+  font-size: 3.5rem;
+  font-family: 'Adventure';
+  border-radius: 2rem;
+  color: #fff;
+  background-color: #ff4847;
+  border: 1rem solid #000;
+  width: 100%;
 }
 .gg-table {
-  background-color: #969;
-  width: 95%;
+  background-color: DodgerBlue;
   margin: auto;
+  margin-bottom: 1rem;
   padding: auto;
-  border-radius: 2rem;
   border: 1rem solid #000;
 }
 .excluded-tag {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
-  margin: 0.5rem;
+  margin: 0.2rem;
   background-color: #ff4847;
   font-family: "Okuda";
   color: #fff;
-  font-size: 3.5rem;
-  border-radius: 2rem;
-  border: 0.5rem outset #ff4847;
+  font-size: 3rem;
+  border-radius: 1rem;
 }
 .included-tag {
-  padding-left: 1rem;
-  padding-right: 1rem;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
   padding-top: 0rem;
   padding-bottom: 0rem;
-  margin: 0.5rem;
+  margin: 0.2rem;
   background-color: #228b22;
   font-family: "Okuda";
   color: #fff;
-  font-size: 3.5rem;
-  border-radius: 2rem;
-  border: 0.5rem outset #228b22;
+  font-size: 3rem;
+  border-radius: 1rem;
 }
 .tagrow {
   display: inline-block;
 }
 .tagcol {
-  min-height: 42rem;
+  min-height: 20rem;
 }
 .searchfilter {
-  font-family: 'Okuda';
-  color: #fff;
-  font-size: 10rem;
+  font-family: 'Adventure';
+  font-size: 8rem;
   padding-bottom: 1rem;
   margin-top: 0;
   margin-bottom: 0;
+  color: #fff;
   text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
 }
 .searchinst {
@@ -1132,26 +1131,32 @@ body {
   padding: 1rem;
   border: 1rem solid #000;
   border-radius: 2rem;
+  min-height: 30rem;
 }
 .panelbuttonrow {
   width: 95%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 .crossoverbuttonrow {
-  width: 90%;
+  width: 100%;
   margin-top: 1rem;
-  margin-left: 3%;
+  margin-left: 1%;
 }
 .tablebox {
   background-color: #fff;
-  border: 0.5rem solid #000;
+  border: 1rem solid #000;
   border-radius: 0.2rem;
 }
 .tablefield {
-  font-family: "Adventure";
   background-color: DodgerBlue;
   border: 0.5rem solid #000;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
+}
+.tablefield h3 {
+  font-family: "Adventure";
+  min-width: 15rem;
+  padding: 0rem;
+  margin: 0rem;
 }
 .tablefield h3 {
   color: #fff;
@@ -1159,12 +1164,12 @@ body {
 }
 .tablebody {
   background-color: #fff;
-  border: 0.5rem solid #000;
+  border: 1rem solid #000;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
 .tablebodyrow {
-  border-bottom: 0.25rem solid DodgerBlue;
+  border-bottom: 0.5rem solid DodgerBlue;
 }
 .tablebox:hover {
   background-color: #fff;
@@ -1239,4 +1244,79 @@ body {
   text-align: center;
   line-height: 4rem;
   margin: auto;
+}
+.charnamerow {
+  margin-top: 1rem;
+}
+.powers {
+  font-family: "Okuda";
+  color: #fff;
+  font-size: 3.5rem;
+  background-color: DodgerBlue;
+  padding: 0rem;
+  box-shadow: none;
+  margin: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  border-radius: 2rem;
+  text-shadow: 0.15rem 0.15rem 0.15rem #000;
+  letter-spacing: 0rem;
+}
+.skillimage {
+  background-color: #fff;
+  width: 95%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: auto 0;
+  border-radius: 2rem;
+  border: 1rem solid #000;
+}
+.skillheading {
+  margin-top: 0rem;
+}
+.psheading {
+  margin-top: 0rem;
+}
+.difficultycol {
+  margin-left: -1.4rem;
+  margin-right: -1.4rem;
+}
+.profilecard {
+  background-color: #fff;
+  border-radius: 5rem;
+  border: 1rem solid #000;
+  box-shadow: 1rem 1rem 1rem #000;
+  margin-top: 2rem;
+}
+.databaseheading {
+  font-family: "Okuda";
+  color: #fff;
+  background-color: #969;
+  border: 1rem solid #000;
+  margin-top: 0rem;
+  font-size: 7rem;
+  width: 100%;
+  border-radius: 4rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.25rem 0.25rem 0.25rem #000;
+}
+.charheadshotcol {
+  position: relative;
+  width: 100%;
+}
+.test {
+  background-color: #fff;
+  border: none;
+}
+.copyrightfooter {
+  background-color: DodgerBlue;
+  color: #fff;
+  font-family: 'Okuda';
+  margin-bottom: 0rem;
+  margin-top: 0rem;
+}
+.copyrightfooter h1 {
+  color: #fff;
+  font-size: 4rem;
 }

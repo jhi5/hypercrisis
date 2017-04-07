@@ -9,7 +9,38 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	$scope.currentFilter = {};
 	$scope.checkBox = false;
 	$scope.featBox = false;
-
+	$scope.logCheckBox = function(){
+		if($scope.checkBox === false){
+			$scope.checkBox = true;
+			$('#crossbutton').addClass('.active');
+			$('#crossbutton').text('Crossovers On');
+			$('.crossbutton').css('background-color', '#228B22');
+			return console.log($scope.checkBox);
+		}
+		if($scope.checkBox === true){
+			$scope.checkBox = false;
+			$('#crossbutton').removeClass('.active');
+			$('#crossbutton').text('Crossovers Off');			
+			$('.crossbutton').css('background-color', '#FF4847');
+			return console.log($scope.checkBox);
+		}
+	}
+	$scope.logFeatBox = function(){
+		if($scope.featBox === false){
+			$scope.featBox = true;
+			$('#featbutton').addClass('.active');
+			$('#featbutton').text('Feats On');
+			$('.featbutton').css('background-color', '#228B22');
+			return console.log($scope.featBox);
+		}
+		if($scope.featBox === true){
+			$scope.featBox = false;
+			$('#featbutton').removeClass('.active');
+			('#featbutton').text('Feats Off');
+			$('.featbutton').css('background-color', '#FF4847');
+			return console.log($scope.checkBox);
+		}
+	}
 	$scope.hideTagButton = function(string){
 		if($scope.currentTags.length !== 0){
 			for(i=0;i<$scope.currentTags.length;i++){
