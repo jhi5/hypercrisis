@@ -925,8 +925,6 @@ body {
 }
 .ggbackground {
   background-image: url("../images/defaultbg.png");
-  background-color: #c39;
-  background-blend-mode: color-burn;
   background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
@@ -1391,42 +1389,41 @@ body {
   background-image: url("../images/articles/mainbanner4h.png");
 }
 .maintext1 {
-  font-family: "Okuda";
-  font-size: 12rem;
+  font-family: "Adventure";
+  font-size: 8rem;
   color: #fff;
-  margin-top: 9rem;
+  margin-top: 12rem;
   margin-left: 2rem;
   margin-right: 2rem;
   margin-bottom: 0.25;
   text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
 }
 .maintext2 {
-  font-family: "Okuda";
-  font-size: 12rem;
+  font-family: "Adventure";
+  font-size: 8rem;
   color: #fff;
-  margin-top: 19rem;
+  margin-top: 23rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
 }
 .maintext3 {
-  font-family: "Okuda";
-  font-size: 12rem;
+  font-family: "Adventure";
+  font-size: 8rem;
   color: #fff;
-  margin-top: 19rem;
+  margin-top: 23rem;
   margin-left: 0.5rem;
   margin-right: 0.5rem;
   margin-bottom: 0rem;
   text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
 }
 .maintext4 {
-  font-family: "Okuda";
-  font-size: 12rem;
+  font-family: "Adventure";
+  font-size: 8rem;
   color: #fff;
   margin-left: 2rem;
   margin-right: 2rem;
   text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
   width: 100%;
-  margin-top: 9rem;
-margin-bottom
+  margin-top: 12rem;
 }
