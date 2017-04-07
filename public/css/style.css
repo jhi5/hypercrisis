@@ -53,10 +53,13 @@ body {
   padding-bottom: 1rem;
 }
 .mainButton {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  font-size: 4rem;
-  border-radius: 1rem;
+  background-color: rgba(255,255,255,0);
+  font-size: 5rem;
+  border-radius: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0rem;
 }
 .modal-admin {
   background-color: #fff;
@@ -477,8 +480,8 @@ body {
   display: inline-block;
 }
 .articlebanner {
-  border-radius: 5rem;
-  margin: 0;
+  border: 1rem solid #000;
+  margin-bottom: 0rem;
   width: 100%;
 }
 .favfiveimage {
@@ -1311,10 +1314,12 @@ body {
 }
 .copyrightfooter {
   font-family: 'Adventure';
-  margin-bottom: 0rem;
-  margin-top: 0rem;
   height: 4rem;
-  background-color: DodgerBlue;
+  width: 50%;
+  border-radius: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  background-color: rgba(0,0,0,0);
 }
 .copyrightfooter h1 {
   color: #fff;
@@ -1325,5 +1330,103 @@ body {
   font-size: 3.5rem;
 }
 .smallpage {
-  min-height: 86rem;
+  min-height: 80rem;
+}
+.mainpage {
+  background-color: #fff;
+  border: 1rem solid #000;
+  margin-top: 1rem;
+  border-radius: 5rem;
+}
+.mainbanner1col {
+  background-image: url("../images/articles/mainthinbanner.png");
+  background-size: cover;
+}
+.mainbanner1 {
+  background-image: url("../images/articles/mainbanner1.png");
+  border: 2rem solid #000;
+  background-color: rgba(255,255,255,0);
+  height: 25rem;
+  background-size: cover;
+  margin-bottom: 0.5rem;
+  margin-top: 1rem;
+}
+.mainbanner1:hover {
+  background-image: url("../images/articles/mainbanner1h.png");
+}
+.mainbanner2 {
+  background-image: url("../images/articles/mainbanner2.png");
+  border: 2rem solid #000;
+  background-color: rgba(255,255,255,0);
+  height: 35rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: right;
+  background-size: cover;
+}
+.mainbanner2:hover {
+  background-image: url("../images/articles/mainbanner2h.png");
+}
+.mainbanner3 {
+  background-image: url("../images/articles/mainbanner3.png");
+  border: 2rem solid #000;
+  background-color: rgba(255,255,255,0);
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  height: 35rem;
+  background-size: cover;
+}
+.mainbanner3:hover {
+  background-image: url("../images/articles/mainbanner3h.png");
+}
+.mainbanner4 {
+  margin-top: 0.5rem;
+  background-image: url("../images/articles/mainbanner4.png");
+  border: 2rem solid #000;
+  background-color: rgba(255,255,255,0);
+  height: 25rem;
+  background-size: cover;
+}
+.mainbanner4:hover {
+  background-image: url("../images/articles/mainbanner4h.png");
+}
+.maintext1 {
+  font-family: "Okuda";
+  font-size: 12rem;
+  color: #fff;
+  margin-top: 9rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  margin-bottom: 0.25;
+  text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
+}
+.maintext2 {
+  font-family: "Okuda";
+  font-size: 12rem;
+  color: #fff;
+  margin-top: 19rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
+}
+.maintext3 {
+  font-family: "Okuda";
+  font-size: 12rem;
+  color: #fff;
+  margin-top: 19rem;
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  margin-bottom: 0rem;
+  text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
+}
+.maintext4 {
+  font-family: "Okuda";
+  font-size: 12rem;
+  color: #fff;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 9rem;
+margin-bottom
 }

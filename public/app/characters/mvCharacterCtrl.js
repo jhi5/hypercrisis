@@ -21,7 +21,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			$scope.checkBox = false;
 			$('#crossbutton').removeClass('.active');
 			$('#crossbutton').text('Crossovers Off');			
-			$('.crossbutton').css('background-color', '#FF4847');
+			$('#crossbutton').css('background-color', '#FF4847');
 			return console.log($scope.checkBox);
 		}
 	}
@@ -36,8 +36,8 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		if($scope.featBox === true){
 			$scope.featBox = false;
 			$('#featbutton').removeClass('.active');
-			('#featbutton').text('Feats Off');
-			$('.featbutton').css('background-color', '#FF4847');
+			$('#featbutton').text('Feats Off');
+			$('#featbutton').css('background-color', '#FF4847');
 			return console.log($scope.checkBox);
 		}
 	}

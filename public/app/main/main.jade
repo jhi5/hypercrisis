@@ -1,14 +1,17 @@
-.container-fluid.smallpage
+.container.maincontainer
+	br
 	.row
-		.col-lg-3
-			img(class='img-responsive' src='../../images/frontpage1.png')
-			button.btn.btn-block.btn-primary.adventure.mainButton(onClick='location.href="../characterselect"') Characters
-		.col-lg-3
-			img(class='img-responsive' src='../../images/frontpage2.png')
-			button.btn.btn-block.btn-warning.adventure.mainButton(onClick='location.href="../articles"') How To Play
-		.col-lg-3
-			img(class='img-responsive' src='../../images/frontpage3.png')
-			button.btn.btn-block.btn-danger.adventure.mainButton(onClick='location.href="../download"') Download Now!
-		.col-lg-3
-			img(class='img-responsive' src='../../images/frontpage4.png')
-			button.btn.btn-block.btn-success.adventure.mainButton(onClick='location.href="../feedback"') Submit Playtests!
+		.col-lg-12.stiplebg
+			div.mainbanner1(onClick='location.href="../characterselect"')
+				h1.text-right.maintext1 CHARACTERS
+	.row
+		.col-lg-6
+			div.mainbanner2(onClick='location.href="../download"')
+				h1.text-center.maintext2 DOWNLOAD
+		.col-lg-6
+			div.mainbanner3(onClick='location.href="../articles"')
+				h1.text-center.maintext3 HOW TO PLAY
+	.row
+		.col-lg-12
+			div.mainbanner4(onClick='location.href="../feedback"')
+				h1.text-left.maintext4 SUBMIT PLAYTESTS

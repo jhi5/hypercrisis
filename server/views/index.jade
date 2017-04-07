@@ -12,17 +12,10 @@ block main-content
 			#myNavbar.collapse.navbar-collapse
 				ul.nav.navbar-nav.navbar-right.navbuttonmargin
 					li
-						a(href="")
-							button.btn.btn-primary.lg.navbutton.adventure(type='button') Characters
-						a(href="")
-							button.btn.btn-primary.lg.navbutton.adventure(type='button') How To Play
-						a(href="")
-							button.btn.btn-primary.lg.navbutton.adventure(type='button') Download Now!
-						a(href="")
-							button.btn.btn-primary.lg.navbutton.adventure(type='button') Submit Playtest
+						button.btn.btn-primary.lg.navbutton.adventure(type='button' onClick='location.href="../characterselect"') Characters
+						button.btn.btn-primary.lg.navbutton.adventure(type='button' onClick='location.href="../characterselect"') How To Play
+						button.btn.btn-primary.lg.navbutton.adventure(type='button' onClick='location.href="../download"') Download Now!
+						button.btn.btn-primary.lg.navbutton.adventure(type='button' onClick='location.href="../feedback"') Submit Playtest
 
 	section.content
 			div(ng-view)
-
-	footer.container-fluid.text-center.copyrightfooter
-		h1 &copy; 2016 Poor Skeleton Games & S. House Studio
