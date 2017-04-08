@@ -1,10 +1,13 @@
-.container-fluid.text-center.smallpage
-	.jumbotron#characterselectjumbo.characterselectbasic
-		h1.text-center.okuda#characterselecttitle.characterselectbasic {{character}}
-	img.charselect.decharselect#de(src="../../images/deadeyecharselect.png" onClick='location.href="../characters/deadeye"')
-	img.charselect.ggcharselect#gg(src="../../images/gravitygirlcharselect.png" onClick='location.href="../characters/gravitygirl"')
-	img.charselect.kxcharselect#kx(src="../../images/knoxcharselect.png" onClick='location.href="../characters/knox"')
-	img.charselect.obcharselect#ob(src="../../images/obscuritycharselect.png" onClick='location.href="../characters/obscurity"')
-	img.charselect.qucharselect#qu(src="../../images/querycharselect.png" onClick='location.href="../characters/query"')
-	img.charselect.rbcharselect#rb(src="../../images/robocharselect.png" onClick='location.href="../characters/robonobo"')
-	img.charselect.sacharselect#sa(src="../../images/siliconartistcharselect.png" onClick='location.href="../characters/siliconartist"')
+div.defaultbg
+	.container.text-center
+		.row.charselectcard
+			.col-md-12
+				img.charselect.decharselect#de(src="../../images/deadeyecharselect.png" onClick='location.href="../characters/deadeye"')
+				img.charselect.ggcharselect#gg(src="../../images/gravitygirlcharselect.png" onClick='location.href="../characters/gravitygirl"')
+				img.charselect.kxcharselect#kx(src="../../images/knoxcharselect.png" onClick='location.href="../characters/knox"')
+				img.charselect.obcharselect#ob(src="../../images/obscuritycharselect.png" onClick='location.href="../characters/obscurity"')			
+				img.charselect.qucharselect#qu(src="../../images/querycharselect.png" onClick='location.href="../characters/query"')
+				img.charselect.rbcharselect#rb(src="../../images/robocharselect.png" onClick='location.href="../characters/robonobo"')
+				img.text-center.charselect.sacharselect#sa(src="../../images/siliconartistcharselect.png" onClick='location.href="../characters/siliconartist"')
+			.col-lg-12#characterselectname.charselectnamedefault.text-center
+				h1.text-center.charselectlefttext#charselecttitle {{character}}

@@ -280,15 +280,16 @@ body {
   color: #fff;
 }
 .charselect {
-  height: 22rem;
-  width: 22rem;
-  margin-right: 1.25rem;
-  margin-bottom: 1rem;
-  border: 2rem outset rgba(193,66,66,0.1);
-  border-radius: 50%;
+  height: 25rem;
+  width: 25rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  border: 1.5rem outset #000;
+  border-radius: 1rem;
 }
 .decharselect:hover {
-  border: 3rem outset #336;
+  border: 2rem outset #336;
+  border-radius: 1rem;
 }
 .de-profilebg {
   background: linear-gradient(0deg, rgba(51,51,102,0.85), rgba(51,51,102,0.85)), url("../images/defaultbg.png");
@@ -313,10 +314,16 @@ body {
   border: 2em solid #336;
 }
 .characterselectde {
-  background: linear-gradient(0deg, rgba(51,51,102,0.85), rgba(51,51,102,0.85)), url("../images/defaultbg.png");
+  min-height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  margin-left: -1.5rem;
+  margin-right: -1.5rem;
+  background-image: url("/../images/deadeyecharselect.png");
 }
 .kxcharselect:hover {
-  border: 3rem outset #633;
+  border: 2rem outset #633;
+  border-radius: 1rem;
 }
 .kx-profilebg {
   background: linear-gradient(0deg, rgba(102,51,51,0.85), rgba(102,51,51,0.85)), url("../images/defaultbg.png");
@@ -341,7 +348,8 @@ body {
   border: 2em solid #633;
 }
 .ggcharselect:hover {
-  border: 3rem outset #969;
+  border: 2rem outset #969;
+  border-radius: 1rem;
 }
 .characterselectgg {
   background: linear-gradient(0deg, rgba(153,102,153,0.85), rgba(153,102,153,0.85)), url("../images/defaultbg.png");
@@ -350,7 +358,8 @@ body {
   background: linear-gradient(0deg, rgba(102,51,51,0.85), rgba(102,51,51,0.85)), url("../images/defaultbg.png");
 }
 .obcharselect:hover {
-  border: 3rem outset #c9c;
+  border: 2rem outset #c9c;
+  border-radius: 1rem;
 }
 .ob-profilebg {
   background: linear-gradient(0deg, rgba(204,153,204,0.85), rgba(204,153,204,0.85)), url("../images/defaultbg.png");
@@ -378,7 +387,8 @@ body {
   background: linear-gradient(0deg, rgba(204,153,204,0.85), rgba(204,153,204,0.85)), url("../images/defaultbg.png");
 }
 .rbcharselect:hover {
-  border: 3rem outset #666;
+  border: 2rem outset #666;
+  border-radius: 1rem;
 }
 .rb-profilebg {
   background: linear-gradient(0deg, rgba(102,102,102,0.85), rgba(102,102,102,0.85)), url("../images/defaultbg.png");
@@ -406,7 +416,8 @@ body {
   background: linear-gradient(0deg, rgba(102,102,102,0.85), rgba(102,102,102,0.85)), url("../images/defaultbg.png");
 }
 .qucharselect:hover {
-  border: 3rem outset #363;
+  border: 2rem outset #363;
+  border-radius: 1rem;
 }
 .qu-profilebg {
   background: linear-gradient(0deg, rgba(51,102,51,0.85), rgba(51,102,51,0.85)), url("../images/defaultbg.png");
@@ -434,7 +445,8 @@ body {
   background: linear-gradient(0deg, rgba(51,102,51,0.85), rgba(51,102,51,0.85)), url("../images/defaultbg.png");
 }
 .sacharselect:hover {
-  border: 3rem outset #338533;
+  border: 2rem outset #338533;
+  border-radius: 1rem;
 }
 .sa-profilebg {
   background: linear-gradient(0deg, rgba(51,133,51,0.85), rgba(51,133,51,0.85)), url("../images/defaultbg.png");
@@ -928,11 +940,23 @@ body {
   background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
+  margin-top: 1rem;
 }
 .articlecontainer {
   background-color: #fff;
   border-left: 1rem solid #000;
   border-right: 1rem solid #000;
+}
+#navbar-brand {
+  color: #fff;
+  font-family: 'Adventure';
+  font-size: 7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+}
+.navbar {
+  border-bottom: 1rem solid #000;
 }
 #myNavbar ul {
   margin-top: 0.7%;
@@ -942,7 +966,12 @@ body {
   display: inline;
 }
 .navbutton {
-  font-size: 2rem;
+  font-size: 3rem;
+  border: 0rem solid #000;
+  box-shadow: 0rem 0rem 0rem #000;
+}
+.navbutton:hover {
+  background-color: #f00;
 }
 .form-group input[type="checkbox"] {
   display: none;
@@ -1426,4 +1455,113 @@ body {
   text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
   width: 100%;
   margin-top: 12rem;
+}
+.charselectleftcol {
+  background-color: rgba(255,255,255,0);
+  min-height: 50rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: right;
+  background-size: cover;
+}
+.charselectrightcol {
+  background-color: rgba(255,255,255,0);
+  height: 50rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  position: right;
+  background-size: cover;
+}
+.charselectlefttext {
+  font-family: 'Adventure';
+  color: #fff;
+  font-size: 10rem;
+  margin-top: 0rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+}
+.charselectnamedefault {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: DodgerBlue;
+}
+.charnamede {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #336;
+}
+.charnamegg {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #969;
+}
+.charnamerb {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #666;
+}
+.charnamequ {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #363;
+}
+.charnamekx {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #633;
+}
+.charnameob {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #c9c;
+}
+.charnamesa {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #338533;
+}
+.charselectcard {
+  background-color: #fff;
+  border-left: 1rem solid #000;
+  border-right: 1rem solid #000;
+  border-top: none;
+  border-bottom: 1rem solid #000;
+  box-shadow: 1rem 1rem 1rem #000;
+  min-height: 92.5vh;
+  margin-bottom: 0rem;
+  padding-top: 4rem;
+}
+.defaultbg {
+  background-image: url("../images/defaultbg.png");
 }

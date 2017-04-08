@@ -322,17 +322,18 @@ body
 	color white
 
 .charselect
-	height 22rem
-	width 22rem
-	margin-right 1.25rem
-	margin-bottom 1rem
-	border 2.0rem outset rgba(193, 66, 66, 0.1)
-	border-radius 50%
+	height 25rem
+	width 25rem
+	margin-top 2rem
+	margin-right 1rem
+	border 1.5rem outset black
+	border-radius 1rem
 
 //character specific char select classes
 
 .decharselect:hover
-	border 3.0rem outset deadeyecolor
+	border 2rem outset deadeyecolor
+	border-radius 1rem
 
 .de-profilebg
 	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/defaultbg.png)
@@ -357,10 +358,16 @@ body
 	border 2em solid deadeyecolor
 
 .characterselectde
-	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/defaultbg.png)
+	min-height 100%
+	background-size 100% 
+	background-repeat no-repeat
+	margin-left -1.5rem
+	margin-right -1.5rem
+	background-image url('/../images/deadeyecharselect.png')
 
 .kxcharselect:hover
-	border 3.0rem outset knoxcolor
+	border 2rem outset knoxcolor
+	border-radius 1rem
 
 .kx-profilebg
 	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/defaultbg.png)
@@ -385,7 +392,8 @@ body
 	border 2em solid knoxcolor
 
 .ggcharselect:hover
-	border 3.0rem outset gravitygirlcolor
+	border 2rem outset gravitygirlcolor
+	border-radius 1rem
 
 .characterselectgg
 	background linear-gradient(0deg,gravitygirlalpha,gravitygirlalpha),url(../images/defaultbg.png)
@@ -394,7 +402,8 @@ body
 	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/defaultbg.png)
 
 .obcharselect:hover
-	border 3.0rem outset obscuritycolor
+	border 2rem outset obscuritycolor
+	border-radius 1rem
 
 .ob-profilebg
 	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/defaultbg.png)
@@ -422,7 +431,8 @@ body
 	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/defaultbg.png)
 
 .rbcharselect:hover
-	border 3.0rem outset robonobocolor
+	border 2rem outset robonobocolor
+	border-radius 1rem
 
 .rb-profilebg
 	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/defaultbg.png)
@@ -450,7 +460,8 @@ body
 	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/defaultbg.png)
 
 .qucharselect:hover
-	border 3.0rem outset querycolor
+	border 2rem outset querycolor
+	border-radius 1rem
 
 .qu-profilebg
 	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/defaultbg.png)
@@ -478,7 +489,8 @@ body
 	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/defaultbg.png)
 
 .sacharselect:hover
-	border 3.0rem outset siliconartistcolor
+	border 2rem outset siliconartistcolor
+	border-radius 1rem
 
 .sa-profilebg
 	background linear-gradient(0deg,siliconartistalpha,siliconartistalpha),url(../images/defaultbg.png)
@@ -994,11 +1006,23 @@ body
 	background-attachment fixed
 	background-repeat none
 	background-size cover
+	margin-top 1rem
 
 .articlecontainer
 	background-color white
 	border-left 1rem solid black
 	border-right 1rem solid black
+
+#navbar-brand
+	color white
+	font-family 'Adventure'
+	font-size 7rem
+	margin-top .5rem
+	margin-bottom .5rem
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+
+.navbar
+	border-bottom 1rem solid black
 
 #myNavbar ul
 	margin-top .7%
@@ -1008,7 +1032,12 @@ body
 	display inline
 
 .navbutton
-	font-size 2rem
+	font-size 3rem
+	border 0rem solid black
+	box-shadow 0rem 0rem 0rem black
+
+.navbutton:hover
+	background-color red
 
 .form-group
     input[type="checkbox"]
@@ -1500,3 +1529,112 @@ body
 	text-shadow -.2rem .25rem .25rem black, -.2rem -.25rem .25rem black, .75rem .25rem .25rem black
 	width 100%
 	margin-top 12rem
+
+.charselectleftcol
+	background-color rgba(255,255,255,0)
+	min-height 50rem
+	margin-top .5rem
+	margin-bottom .5rem
+	position right
+	background-size cover
+
+.charselectrightcol
+	background-color rgba(255,255,255,0)
+	height 50rem
+	margin-top .5rem
+	margin-bottom .5rem
+	position right
+	background-size cover
+
+.charselectlefttext
+	font-family 'Adventure'
+	color white
+	font-size 10rem
+	margin-top 0rem
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+
+.charselectnamedefault
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+	width 100%
+	margin-top 5rem
+	margin-bottom 0rem
+	border-top 1rem solid black
+	border-bottom 1rem solid black
+	background-color DodgerBlue
+
+.charnamede
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+	width 100%
+	margin-top 5rem
+	margin-bottom 0rem
+	border-top 1rem solid black
+	border-bottom 1rem solid black
+	background-color deadeyecolor
+
+.charnamegg
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+	width 100%
+	margin-top 5rem
+	margin-bottom 0rem
+	border-top 1rem solid black
+	border-bottom 1rem solid black
+	background-color gravitygirlcolor
+
+.charnamerb
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+	width 100%
+	margin-top 5rem
+	margin-bottom 0rem
+	border-top 1rem solid black
+	border-bottom 1rem solid black
+	background-color robonobocolor
+
+.charnamequ
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+	width 100%
+	margin-top 5rem
+	margin-bottom 0rem
+	border-top 1rem solid black
+	border-bottom 1rem solid black
+	background-color querycolor
+
+.charnamekx
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+	width 100%
+	margin-top 5rem
+	margin-bottom 0rem
+	border-top 1rem solid black
+	border-bottom 1rem solid black
+	background-color knoxcolor
+
+.charnameob
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+	width 100%
+	margin-top 5rem
+	margin-bottom 0rem
+	border-top 1rem solid black
+	border-bottom 1rem solid black
+	background-color obscuritycolor
+
+.charnamesa
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+	width 100%
+	margin-top 5rem
+	margin-bottom 0rem
+	border-top 1rem solid black
+	border-bottom 1rem solid black
+	background-color siliconartistcolor
+
+.charselectcard
+	background-color white
+	border-left 1rem solid black
+	border-right 1rem solid black
+	border-top none
+	border-bottom 1rem solid black
+	box-shadow 1rem 1rem 1rem black
+	min-height 92.5vh
+	margin-bottom 0rem
+	padding-top 4rem
+
+.defaultbg	
+	background-image url('../images/defaultbg.png')
