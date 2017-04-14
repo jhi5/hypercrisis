@@ -4,25 +4,25 @@ angular.module('app').controller('mvCharSelectCtrl', function($scope, $timeout, 
 		$(id)
 		.mouseenter(function(){
 			$scope.character = hovercharacter;
-			$("#characterselecttitle").removeClass("characterselectbasic");
-			$("#characterselecttitle").addClass(hoverclass);
-			$("#characterselectname").removeClass("charselectnamedefault");
-			$("#characterselectname").addClass(charname);
+			$("#charselecttitle").removeClass("characterselectbasic");
+			$("#charselecttitle").addClass(hoverclass);
+			$("#charselectname").removeClass("charselectnamedefault");
+			$("#charselectname").addClass(charname);
 			$scope.$apply();
 		}).mouseleave(function(){
 			$scope.character = "Select A Character";
-			$("#characterselecttitle").removeClass(hoverclass);
-			$("#characterselecttitle").addClass("characterselectbasic");
-			$("#characterselectname").removeClass(charname);
-			$("#characterselectname").addClass("charselectnamedefault");
+			$("#charselecttitle").removeClass(hoverclass);
+			$("#charselecttitle").addClass("characterselectbasic");
+			$("#charselectname").removeClass(charname);
+			$("#charselectname").addClass("charselectnamedefault");
 			$scope.$apply();
 		})		
 	};	
-	hoverSwitch("Deadeye", "characterselectde", "charnamede", "#de");
-	hoverSwitch("Gravity Girl", "characterselectgg", "charnamegg", "#gg");
-	hoverSwitch("Knox", "characterselectkx", "charnamekx", "#kx");
-	hoverSwitch("Obscurity", "characterselectob", "charnameob", "#ob");
-	hoverSwitch("Query", "characterselectqu", "charnamequ", "#qu");
-	hoverSwitch("Robonobo", "characterselectrb", "charnamerb", "#rb");
-	hoverSwitch("Silicon Artist", "characterselectsa", "charnamesa", "#sa")	
+	hoverSwitch("Deadeye", "de-charselectoval", "de-charname", "#de");
+	hoverSwitch("Gravity Girl", "gg-charselectoval", "gg-charname", "#gg");
+	hoverSwitch("Knox", "kx-charselectoval", "kx-charname", "#kx");
+	hoverSwitch("Obscurity", "ob-charselectoval", "ob-charname", "#ob");
+	hoverSwitch("Query", "qu-charselectoval", "qu-charname","#qu");
+	hoverSwitch("Robonobo", "rb-charselectoval", "rb-charname", "#rb");
+	hoverSwitch("Silicon Artist", "sa-charselectoval", "sa-charname", "#sa")	
 });

@@ -245,7 +245,7 @@ body {
   text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444;
 }
 .characterselectbasic {
-  background: linear-gradient(0deg, rgba(241,251,37,0.85), rgba(241,251,37,0.85)), url("../images/defaultbg.png");
+  background: none;
 }
 /* charpage */
 .charpagebg {
@@ -935,5 +935,172 @@ body {
   background-color: #093;
 }
 .sa-hover:hover {
+  background-color: #093;
+}
+.charselectbg {
+  background-image: url("../images/defaultbg.png");
+}
+.charselectroster {
+  background-color: #fff;
+  border-left: 1rem solid #000;
+  border-right: 1rem solid #000;
+  border-top: none;
+  border-bottom: 1rem solid #000;
+  box-shadow: 1rem 1rem 1rem #000;
+  min-height: 92.5vh;
+  margin-bottom: 0rem;
+  padding-top: 4rem;
+}
+.charselectoval {
+  height: 25rem;
+  width: 25rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  border: 1.5rem outset #000;
+  border-radius: 1rem;
+}
+.charselectnamedefault {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: DodgerBlue;
+}
+#charselecttitle {
+  font-size: 15rem;
+  font-family: 'Okuda';
+  margin-top: 0rem;
+  color: #fff;
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444;
+}
+.charselecttitle {
+  background-color: none;
+}
+.de-charselectoval:hover {
+  border: 2rem outset #336;
+  border-radius: 1rem;
+}
+.de-charselectoval {
+  min-height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.de-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #336;
+}
+.gg-charselectoval:hover {
+  border: 2rem outset #969;
+  border-radius: 1rem;
+}
+.gg-charselectoval {
+  min-height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.gg-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #969;
+}
+.kx-charselectoval:hover {
+  border: 2rem outset #633;
+  border-radius: 1rem;
+}
+.kx-charselectoval {
+  min-height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.kx-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #633;
+}
+.ob-charselectoval:hover {
+  border: 2rem outset #c69;
+  border-radius: 1rem;
+}
+.ob-charselectoval {
+  min-height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.ob-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #c69;
+}
+.qu-charselectoval:hover {
+  border: 2rem outset #363;
+  border-radius: 1rem;
+}
+.qu-charselectoval {
+  min-height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.qu-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #363;
+}
+.rb-charselectoval:hover {
+  border: 2rem outset #666;
+  border-radius: 1rem;
+}
+.rb-charselectoval {
+  min-height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.rb-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #666;
+}
+.sa-charselectoval:hover {
+  border: 2rem outset #093;
+  border-radius: 1rem;
+}
+.sa-charselectoval {
+  min-height: 100%;
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+.sa-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
   background-color: #093;
 }
