@@ -34,1231 +34,18 @@
   font-weight: normal;
   font-style: normal;
 }
-.okuda {
-  font-family: 'okuda';
-}
-.adventure {
-  font-family: 'adventureregular';
-}
-.big {
-  font-size: 7rem;
-}
-.whitetext {
-  color: #fff;
-}
+/* variables */
+/* common */
 body {
-  padding-top: 70px;
+  padding-top: 8rem;
 }
-.navbar {
-  padding-bottom: 1rem;
-}
-.mainButton {
-  background-color: rgba(255,255,255,0);
-  font-size: 5rem;
-  border-radius: 2rem;
-  margin-top: 0rem;
-  margin-bottom: 1rem;
-  width: 100%;
-  padding: 0rem;
+@media screen and (max-width: 768px) {
+  body {
+    padding-top: 8rem;
+  }
 }
 .modal-admin {
   background-color: #fff;
-}
-.typeheading {
-  color: #fff;
-  background: #000;
-  font-size: 5rem;
-  border-radius: 0.5rem;
-  font-family: "Okuda";
-}
-.ratingheading {
-  color: #fff;
-  background: #000;
-  font-size: 5rem;
-  border-radius: 0.5rem;
-  font-family: "Okuda";
-}
-.hpheading {
-  color: #fff;
-  background: #000;
-  font-size: 5rem;
-  border-radius: 0.5rem;
-  font-family: "Okuda";
-}
-.utilityvalue {
-  font-family: 'Okuda';
-  font-weight: bold;
-  font-size: 10rem;
-  max-width: 15rem;
-  margin: auto;
-  box-shadow: 1rem 1rem 1rem #808080;
-  border-radius: 2rem;
-  border: 1rem solid #000;
-  color: #fff;
-  text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
-  line-height: 20%;
-  margin-top: 1.5rem;
-}
-#fightsymbol {
-  background-color: #09f;
-  background-size: 100%;
-  padding: 1rem;
-}
-#armorsymbol {
-  background-color: #ff0;
-  background-size: 100%;
-  padding: 1rem;
-}
-#hpsymbol {
-  background-color: #f09;
-  background-size: 100%;
-  padding: 1rem;
-}
-.fightheading {
-  color: #fff;
-  background: #000;
-  font-size: 5rem;
-  border-radius: 0.5rem;
-  font-family: "Okuda";
-}
-.armorheading {
-  color: #fff;
-  background: #000;
-  font-size: 5rem;
-  border-radius: 0.5rem;
-  font-family: "Okuda";
-}
-.cardtitle {
-  font-family: "adventureregular";
-  font-size: 7.5rem;
-  line-height: auto;
-  margin: 0;
-  color: #fff;
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
-  background-color: DodgerBlue;
-  border: 1rem outset DodgerBlue;
-  border-radius: 2rem;
-  letter-spacing: 0.1rem;
-}
-.tablecardtitle {
-  font-family: "adventureregular";
-  font-size: 4rem;
-  width: 80%;
-  margin-top: 1.5rem;
-  letter-spacing: 0.2rem;
-}
-.charpage-difficulty {
-  margin: auto 0;
-  margin-top: 0rem;
-  border-radius: 2rem;
-  border: 1rem solid #000;
-}
-.charpage-download {
-  padding-top: 5rem;
-  padding-bottom: 5rem;
-  color: #fff;
-  font-size: 5rem;
-  font-weight: bold;
-  font-family: 'adventureregular';
-  border-radius: 2rem;
-}
-.charpage-table {
-  background-color: #fff;
-  border-radius: 5rem;
-  padding: 2rem;
-  margin-top: 1rem;
-  margin-bottom: 2rem;
-  border: 1rem solid #000;
-  box-shadow: 1rem 1rem 1rem #000;
-}
-.crosstext {
-  font-size: 2rem;
-}
-.btn-modal-close {
-  font-family: 'adventureregular';
-  background: #2aade3;
-  color: #fff;
-  font-size: 3rem;
-  margin: 0 1rem 0 1rem;
-  border-radius: 2rem;
-}
-.btn-modal-previous {
-  font-family: 'adventureregular';
-  background: #093;
-  color: #fff;
-  font-size: 3rem;
-  margin: 0 1rem 0 1rem;
-  border-radius: 2rem;
-}
-.btn-modal-next {
-  font-family: 'adventureregular';
-  background: #f66;
-  color: #fff;
-  font-size: 3rem;
-  margin: 0 1rem 0 1rem;
-  border-radius: 2rem;
-}
-.btn-modal-next:hover,
-.btn-modal-previous:hover,
-.btn-modal-close:hover {
-  color: Gold;
-}
-.btn-modal-next:focus,
-.btn-modal-previous:focus,
-.btn-modal-close:focus {
-  color: #fff;
-}
-.popover {
-  width: 20rem;
-}
-.popover-content {
-  color: Black;
-  font-family: "okuda";
-  font-size: 3rem;
-}
-.plus {
-  font-family: "Okuda";
-  color: #fff;
-  font-size: 3.5rem;
-  background-color: #228b22;
-  padding: 0rem;
-  box-shadow: none;
-  margin: 0;
-  margin-left: 5%;
-  margin-right: 5%;
-  border-radius: 2rem;
-  text-shadow: 0.15rem 0.15rem 0.15rem #000;
-  letter-spacing: 0rem;
-}
-.minus {
-  font-family: "Okuda";
-  color: #fff;
-  font-size: 3.5rem;
-  background-color: #ff4847;
-  padding: 0rem;
-  padding: 0rem;
-  box-shadow: none;
-  margin: 0;
-  margin-left: 5%;
-  margin-right: 5%;
-  border-radius: 2rem;
-  text-shadow: 0.15rem 0.15rem 0.15rem #000;
-  letter-spacing: 0rem;
-}
-.typesymbol {
-  width: 11rem;
-  height: 11rem;
-  margin: auto;
-  vertical-align: middle;
-}
-.modaltypesymbol {
-  max-width: 15rem;
-  margin: auto;
-  box-shadow: 1rem 1rem 1rem #808080;
-  border-radius: 2rem;
-  border: 1rem solid #000;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-}
-.cardtext {
-  font-size: 4rem;
-  margin-top: 1.5rem;
-  margin-left: 8%;
-  margin-right: 8%;
-}
-.tagrow {
-  display: inline-block 0;
-}
-.tagbutton {
-  background-color: rgba(0,0,0,0);
-  color: #000;
-  margin-right: 1rem;
-  display: inline-block;
-  font-size: 150%;
-}
-.characterselectname {
-  color: #fff;
-}
-.charselect {
-  height: 25rem;
-  width: 25rem;
-  margin-top: 2rem;
-  margin-right: 1rem;
-  border: 1.5rem outset #000;
-  border-radius: 1rem;
-}
-.decharselect:hover {
-  border: 2rem outset #336;
-  border-radius: 1rem;
-}
-.de-profilebg {
-  background: linear-gradient(0deg, rgba(51,51,102,0.85), rgba(51,51,102,0.85)), url("../images/defaultbg.png");
-}
-.de-profileheadings {
-  color: #fff;
-  background: linear-gradient(0deg, rgba(51,51,102,0.85), rgba(51,51,102,0.85)), url("../images/defaultbg.png");
-  font-size: 5rem;
-  border-radius: 0.5rem;
-}
-.de-flavortext {
-  color: #808080;
-  font-style: italic;
-}
-.de-charpage-name {
-  background: #336;
-  color: #fff;
-  font-size: 10rem;
-}
-.de-charpage-img {
-  min-width: 100%;
-  border: 2em solid #336;
-}
-.characterselectde {
-  min-height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  margin-left: -1.5rem;
-  margin-right: -1.5rem;
-  background-image: url("/../images/deadeyecharselect.png");
-}
-.kxcharselect:hover {
-  border: 2rem outset #633;
-  border-radius: 1rem;
-}
-.kx-profilebg {
-  background: linear-gradient(0deg, rgba(102,51,51,0.85), rgba(102,51,51,0.85)), url("../images/defaultbg.png");
-}
-.kx-profileheadings {
-  color: #fff;
-  background: linear-gradient(0deg, rgba(102,51,51,0.85), rgba(102,51,51,0.85)), url("../images/defaultbg.png");
-  font-size: 5rem;
-  border-radius: 0.5rem;
-}
-.kx-flavortext {
-  color: #808080;
-  font-style: italic;
-}
-.kx-charpage-name {
-  background: #633;
-  color: #fff;
-  font-size: 10rem;
-}
-.kx-charpage-img {
-  min-width: 100%;
-  border: 2em solid #633;
-}
-.ggcharselect:hover {
-  border: 2rem outset #969;
-  border-radius: 1rem;
-}
-.characterselectgg {
-  background: linear-gradient(0deg, rgba(153,102,153,0.85), rgba(153,102,153,0.85)), url("../images/defaultbg.png");
-}
-.characterselectkx {
-  background: linear-gradient(0deg, rgba(102,51,51,0.85), rgba(102,51,51,0.85)), url("../images/defaultbg.png");
-}
-.obcharselect:hover {
-  border: 2rem outset #c9c;
-  border-radius: 1rem;
-}
-.ob-profilebg {
-  background: linear-gradient(0deg, rgba(204,153,204,0.85), rgba(204,153,204,0.85)), url("../images/defaultbg.png");
-}
-.ob-profileheadings {
-  color: #fff;
-  background: linear-gradient(0deg, rgba(204,153,204,0.85), rgba(204,153,204,0.85)), url("../images/defaultbg.png");
-  font-size: 5rem;
-  border-radius: 0.5rem;
-}
-.ob-flavortext {
-  color: #808080;
-  font-style: italic;
-}
-.ob-charpage-name {
-  background: #c9c;
-  color: #fff;
-  font-size: 10rem;
-}
-.ob-charpage-img {
-  min-width: 100%;
-  border: 2em solid #c9c;
-}
-.characterselectob {
-  background: linear-gradient(0deg, rgba(204,153,204,0.85), rgba(204,153,204,0.85)), url("../images/defaultbg.png");
-}
-.rbcharselect:hover {
-  border: 2rem outset #666;
-  border-radius: 1rem;
-}
-.rb-profilebg {
-  background: linear-gradient(0deg, rgba(102,102,102,0.85), rgba(102,102,102,0.85)), url("../images/defaultbg.png");
-}
-.rb-profileheadings {
-  color: #fff;
-  background: linear-gradient(0deg, rgba(102,102,102,0.85), rgba(102,102,102,0.85)), url("../images/defaultbg.png");
-  font-size: 5rem;
-  border-radius: 0.5rem;
-}
-.rb-flavortext {
-  color: #808080;
-  font-style: italic;
-}
-.rb-charpage-name {
-  background: #666;
-  color: #fff;
-  font-size: 10rem;
-}
-.rb-charpage-img {
-  min-width: 100%;
-  border: 2em solid #666;
-}
-.characterselectrb {
-  background: linear-gradient(0deg, rgba(102,102,102,0.85), rgba(102,102,102,0.85)), url("../images/defaultbg.png");
-}
-.qucharselect:hover {
-  border: 2rem outset #363;
-  border-radius: 1rem;
-}
-.qu-profilebg {
-  background: linear-gradient(0deg, rgba(51,102,51,0.85), rgba(51,102,51,0.85)), url("../images/defaultbg.png");
-}
-.qu-profileheadings {
-  color: #fff;
-  background: linear-gradient(0deg, rgba(51,102,51,0.85), rgba(51,102,51,0.85)), url("../images/defaultbg.png");
-  font-size: 5rem;
-  border-radius: 0.5rem;
-}
-.qu-flavortext {
-  color: #808080;
-  font-style: italic;
-}
-.qu-charpage-name {
-  background: #363;
-  color: #fff;
-  font-size: 10rem;
-}
-.qu-charpage-img {
-  min-width: 100%;
-  border: 2em solid #363;
-}
-.characterselectqu {
-  background: linear-gradient(0deg, rgba(51,102,51,0.85), rgba(51,102,51,0.85)), url("../images/defaultbg.png");
-}
-.sacharselect:hover {
-  border: 2rem outset #338533;
-  border-radius: 1rem;
-}
-.sa-profilebg {
-  background: linear-gradient(0deg, rgba(51,133,51,0.85), rgba(51,133,51,0.85)), url("../images/defaultbg.png");
-}
-.sa-profileheadings {
-  color: #fff;
-  background: linear-gradient(0deg, rgba(51,133,51,0.85), rgba(51,133,51,0.85)), url("../images/defaultbg.png");
-  font-size: 5rem;
-  border-radius: 0.5rem;
-}
-.sa-flavortext {
-  color: #808080;
-  font-style: italic;
-}
-.sa-charpage-name {
-  background: #338533;
-  color: #fff;
-  font-size: 10rem;
-}
-.sa-charpage-img {
-  min-width: 100%;
-  border: 2em solid #338533;
-}
-.characterselectsa {
-  background: linear-gradient(0deg, rgba(51,133,51,0.85), rgba(51,133,51,0.85)), url("../images/defaultbg.png");
-}
-#characterselectjumbo {
-  min-height: 50vh;
-}
-#characterselecttitle {
-  font-size: 15rem;
-  color: #fff;
-  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444;
-}
-.characterselectbasic {
-  background: linear-gradient(0deg, rgba(241,251,37,0.85), rgba(241,251,37,0.85)), url("../images/defaultbg.png");
-}
-.favfivecarddesc {
-  color: #fff;
-  text-shadow: 0.05rem 0.25rem 0.25rem #000;
-  font-size: 4rem;
-  font-family: 'okuda';
-  display: inline-block;
-}
-.articlebanner {
-  border: 1rem solid #000;
-  margin-bottom: 0rem;
-  width: 100%;
-}
-.favfiveimage {
-  border-radius: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 100%;
-}
-.ggjumboimage {
-  border: 3rem solid #969;
-  border-radius: 4rem;
-  margin-bottom: 0rem;
-}
-.ggjumbotron {
-  background-color: #969;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-}
-.ggjumbobanner {
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-bottom: 1rem;
-  padding-right: 5rem;
-}
-.ggbanner {
-  background-color: #969;
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-radius: 5rem;
-  padding-top: 2rem;
-  margin-bottom: 0rem;
-}
-.ggfavfive {
-  color: #fff;
-  height: 100%;
-  vertical-align: center;
-  padding-top: 1%;
-  padding-bottom: 3rem;
-  font-size: 6rem;
-  padding: 1rem;
-}
-.ggimagecontainer {
-  background-color: #969;
-  border-bottom-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
-}
-.ggtextcontainer {
-  background-color: #969;
-}
-.ggbanner h1 {
-  margin-top: 0rem;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-right: 3rem;
-}
-.ggfavfivecardtitle {
-  color: #fff;
-  text-shadow: 1rem 0.25rem 0.25rem #c39;
-  font-size: 9rem;
-  font-family: 'adventureregular';
-}
-.ggcharprofileleft {
-  padding: 1rem;
-}
-.ggcharprofileright {
-  padding: 1rem;
-}
-.rbjumboimage {
-  border: 3rem solid #666;
-  border-radius: 4rem;
-  margin-bottom: 0rem;
-}
-.rbjumbotron {
-  background-color: #666;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-}
-.rbjumbobanner {
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-bottom: 1rem;
-  padding-right: 5rem;
-}
-.rbbanner {
-  background-color: #666;
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-radius: 5rem;
-  padding-top: 2rem;
-  margin-bottom: 0rem;
-}
-.rbfavfive {
-  color: #fff;
-  height: 100%;
-  vertical-align: center;
-  padding-top: 1%;
-  padding-bottom: 3rem;
-  font-size: 6rem;
-  padding: 1rem;
-}
-.rbimagecontainer {
-  background-color: #666;
-  border-bottom-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
-}
-.rbtextcontainer {
-  background-color: #666;
-}
-.rbbanner h1 {
-  margin-top: 0rem;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-right: 3rem;
-}
-.rbfavfivecardtitle {
-  color: #fff;
-  text-shadow: 1rem 0.25rem 0.25rem #6cf;
-  font-size: 9rem;
-  font-family: 'adventureregular';
-}
-.kxjumboimage {
-  border: 3rem solid #633;
-  border-radius: 4rem;
-  margin-bottom: 0rem;
-}
-.kxjumbotron {
-  background-color: #633;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-}
-.kxjumbobanner {
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-bottom: 1rem;
-  padding-right: 5rem;
-}
-.kxbanner {
-  background-color: #633;
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-radius: 5rem;
-  padding-top: 2rem;
-  margin-bottom: 0rem;
-}
-.kxfavfive {
-  color: #fff;
-  height: 100%;
-  vertical-align: center;
-  padding-top: 1%;
-  padding-bottom: 3rem;
-  font-size: 6rem;
-  padding: 1rem;
-}
-.kximagecontainer {
-  background-color: #633;
-  border-bottom-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
-}
-.kxtextcontainer {
-  background-color: #633;
-}
-.kxbanner h1 {
-  margin-top: 0rem;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-right: 3rem;
-}
-.kxfavfivecardtitle {
-  color: #fff;
-  text-shadow: 1rem 0.25rem 0.25rem #c5b358;
-  font-size: 9rem;
-  font-family: 'adventureregular';
-}
-.objumboimage {
-  border: 3rem solid #c9c;
-  border-radius: 4rem;
-  margin-bottom: 0rem;
-}
-.objumbotron {
-  background-color: #c9c;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-}
-.objumbobanner {
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-bottom: 1rem;
-  padding-right: 5rem;
-}
-.obbanner {
-  background-color: #c9c;
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-radius: 5rem;
-  padding-top: 2rem;
-  margin-bottom: 0rem;
-}
-.obfavfive {
-  color: #fff;
-  height: 100%;
-  vertical-align: center;
-  padding-top: 1%;
-  padding-bottom: 3rem;
-  font-size: 6rem;
-  padding: 1rem;
-}
-.obimagecontainer {
-  background-color: #c9c;
-  border-bottom-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
-}
-.obtextcontainer {
-  background-color: #c9c;
-}
-.obbanner h1 {
-  margin-top: 0rem;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-right: 3rem;
-}
-.obfavfivecardtitle {
-  color: #fff;
-  text-shadow: 1rem 0.25rem 0.25rem #ccc;
-  font-size: 9rem;
-  font-family: 'adventureregular';
-}
-.dejumboimage {
-  border: 3rem solid #336;
-  border-radius: 4rem;
-  margin-bottom: 0rem;
-}
-.dejumbotron {
-  background-color: #336;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-}
-.dejumbobanner {
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-bottom: 1rem;
-  padding-right: 5rem;
-}
-.debanner {
-  background-color: #336;
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-radius: 5rem;
-  padding-top: 2rem;
-  margin-bottom: 0rem;
-}
-.defavfive {
-  color: #fff;
-  height: 100%;
-  vertical-align: center;
-  padding-top: 1%;
-  padding-bottom: 3rem;
-  font-size: 6rem;
-  padding: 1rem;
-}
-.deimagecontainer {
-  background-color: #336;
-  border-bottom-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
-}
-.detextcontainer {
-  background-color: #336;
-}
-.debanner h1 {
-  margin-top: 0rem;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-right: 3rem;
-}
-.defavfivecardtitle {
-  color: #fff;
-  text-shadow: 1rem 0.25rem 0.25rem #999;
-  font-size: 9rem;
-  font-family: 'adventureregular';
-}
-.qujumboimage {
-  border: 3rem solid #363;
-  border-radius: 4rem;
-  margin-bottom: 0rem;
-}
-.qujumbotron {
-  background-color: #363;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-}
-.qujumbobanner {
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-bottom: 1rem;
-  padding-right: 5rem;
-}
-.qubanner {
-  background-color: #363;
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-radius: 5rem;
-  padding-top: 2rem;
-  margin-bottom: 0rem;
-}
-.qufavfive {
-  color: #fff;
-  height: 100%;
-  vertical-align: center;
-  padding-top: 1%;
-  padding-bottom: 3rem;
-  font-size: 6rem;
-  padding: 1rem;
-}
-.quimagecontainer {
-  background-color: #363;
-  border-bottom-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
-}
-.qutextcontainer {
-  background-color: #363;
-}
-.qubanner h1 {
-  margin-top: 0rem;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-right: 3rem;
-}
-.qufavfivecardtitle {
-  color: #fff;
-  text-shadow: 1rem 0.25rem 0.25rem #f66;
-  font-size: 9rem;
-  font-family: 'adventureregular';
-}
-.sajumboimage {
-  border: 3rem solid #338533;
-  border-radius: 4rem;
-  margin-bottom: 0rem;
-}
-.sajumbotron {
-  background-color: #338533;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
-}
-.sajumbobanner {
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-bottom: 1rem;
-  padding-right: 5rem;
-}
-.sabanner {
-  background-color: #338533;
-  margin: 0;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  border-radius: 5rem;
-  padding-top: 2rem;
-  margin-bottom: 0rem;
-}
-.safavfive {
-  color: #fff;
-  height: 100%;
-  vertical-align: center;
-  padding-top: 1%;
-  padding-bottom: 3rem;
-  font-size: 6rem;
-  padding: 1rem;
-}
-.saimagecontainer {
-  background-color: #338533;
-  border-bottom-left-radius: 4rem;
-  border-bottom-right-radius: 4rem;
-}
-.satextcontainer {
-  background-color: #338533;
-}
-.sabanner h1 {
-  margin-top: 0rem;
-  color: #fff;
-  font-family: 'okuda';
-  font-size: 6rem;
-  padding-right: 3rem;
-}
-.safavfivecardtitle {
-  color: #fff;
-  text-shadow: 1rem 0.25rem 0.25rem #646fe5;
-  font-size: 9rem;
-  font-family: 'adventureregular';
-}
-.ggbackground {
-  background-image: url("../images/defaultbg.png");
-  background-attachment: fixed;
-  background-repeat: none;
-  background-size: cover;
-  margin-top: 1rem;
-}
-.articlecontainer {
-  background-color: #fff;
-  border-left: 1rem solid #000;
-  border-right: 1rem solid #000;
-}
-#navbar-brand {
-  color: #fff;
-  font-family: 'Adventure';
-  font-size: 7rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-}
-.navbar {
-  border-bottom: 1rem solid #000;
-}
-#myNavbar ul {
-  margin-top: 0.7%;
-}
-#myNavbar ul a {
-  line-height: 1rem;
-  display: inline;
-}
-.navbutton {
-  font-size: 3rem;
-  border: 0rem solid #000;
-  box-shadow: 0rem 0rem 0rem #000;
-}
-.navbutton:hover {
-  background-color: #f00;
-}
-.form-group input[type="checkbox"] {
-  display: none;
-}
-.form-group input[type="checkbox"] + .btn-group > label span:first-child {
-  display: none;
-}
-.form-group input[type="checkbox"] + .btn-group > label span:last-child {
-  display: inline-block;
-}
-.form-group input[type="checkbox"]:checked + .btn-group > label span:first-child {
-  display: inline-block;
-}
-.form-group input[type="checkbox"]:checked + .btn-group > label span:last-child {
-  display: none;
-}
-.formfield {
-  width: 20rem;
-  font-size: 3rem;
-}
-.formlabel {
-  font-size: 3rem;
-}
-.charpageheadshot {
-  width: 100%;
-  border: 1rem solid #000;
-  background-color: #c39;
-  background-image: url("../images/gravitygirlcharselect.png");
-  background-size: cover;
-  border-radius: 5rem;
-}
-.charpagepadding {
-  padding-right: 1rem;
-  padding-left: 1rem;
-}
-.ggcharpagename {
-  font-family: 'Okuda';
-  color: #fff;
-  font-size: 10rem;
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  margin-top: 0rem;
-  margin-right: 0rem;
-  border: 1rem solid #000;
-  border-radius: 2rem;
-  background-color: #969;
-}
-.ggcharpageheading {
-  font-family: 'Okuda';
-  color: #fff;
-  border-radius: 2rem;
-  font-size: 6rem;
-  padding-bottom: 1rem;
-  border: 1rem solid #000;
-  margin-top: 0rem;
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
-  background-color: #969;
-  letter-spacing: 0.5rem;
-}
-.ggcharpagedownload {
-  font-family: 'Adventure';
-  background-color: DodgerBlue;
-  color: #fff;
-  border-radius: 2rem;
-  border: 1rem solid #000;
-  font-size: 5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  text-shadow: -0.25rem 0.25rem 0.25rem #000, -0.25rem -0.25rem 0.25rem #000, 0.25rem 0.25rem 0.25rem #000;
-  margin-top: 2rem;
-  margin-bottom: 0rem;
-}
-.ggcharpagedownload:hover {
-  color: #fff;
-  background-color: #969;
-}
-.charprofiletext {
-  font-size: 3rem;
-  color: #000;
-  text-shadow: 0rem 0rem 0rem;
-  padding: 1rem;
-  margin: 0rem;
-}
-.crosscheck {
-  font-size: 7rem;
-  color: DodgerBlue;
-  font-family: 'Adventure';
-  border-radius: 2rem;
-  width: 6rem;
-  height: 6rem;
-}
-.crosstext {
-  font-size: 3.5rem;
-  background-color: #fff;
-  font-family: 'Adventure';
-  border-radius: 2rem;
-}
-.panelbuttonrow {
-  float: none;
-  margin: 0 auto;
-}
-.resetbutton {
-  font-size: 3.5rem;
-  font-family: 'Adventure';
-  border-radius: 2rem;
-  background-color: #ff4847;
-  color: #fff;
-  border: 1rem solid #000;
-  width: 100%;
-}
-.crossbutton {
-  font-size: 3.5rem;
-  font-family: 'Adventure';
-  border-radius: 2rem;
-  color: #fff;
-  background-color: #ff4847;
-  border: 1rem solid #000;
-  width: 100%;
-}
-.featbutton {
-  font-size: 3.5rem;
-  font-family: 'Adventure';
-  border-radius: 2rem;
-  color: #fff;
-  background-color: #ff4847;
-  border: 1rem solid #000;
-  width: 100%;
-}
-.gg-table {
-  background-color: DodgerBlue;
-  margin: auto;
-  margin-bottom: 1rem;
-  padding: auto;
-  border: 1rem solid #000;
-}
-.excluded-tag {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  margin: 0.2rem;
-  background-color: #ff4847;
-  font-family: "Okuda";
-  color: #fff;
-  font-size: 3rem;
-  border-radius: 1rem;
-}
-.included-tag {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
-  padding-top: 0rem;
-  padding-bottom: 0rem;
-  margin: 0.2rem;
-  background-color: #228b22;
-  font-family: "Okuda";
-  color: #fff;
-  font-size: 3rem;
-  border-radius: 1rem;
-}
-.tagrow {
-  display: inline-block;
-}
-.tagcol {
-  min-height: 20rem;
-}
-.searchfilter {
-  font-family: 'Adventure';
-  font-size: 8rem;
-  padding-bottom: 1rem;
-  margin-top: 0;
-  margin-bottom: 0;
-  color: #fff;
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-}
-.searchinst {
-  font-family: 'Okuda';
-  color: #fff;
-  margin-top: 0;
-  margin-bottom: 0;
-  font-size: 5rem;
-  padding-bottom: 1rem;
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-}
-.tagbg {
-  background-color: #fff;
-  margin-left: 2rem;
-  margin-right: 2rem;
-  padding: 1rem;
-  border: 1rem solid #000;
-  border-radius: 2rem;
-  min-height: 30rem;
-}
-.panelbuttonrow {
-  width: 95%;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-}
-.crossoverbuttonrow {
-  width: 100%;
-  margin-top: 1rem;
-  margin-left: 1%;
-}
-.tablebox {
-  background-color: #fff;
-  border: 1rem solid #000;
-  border-radius: 0.2rem;
-}
-.tablefield {
-  background-color: DodgerBlue;
-  border: 0.5rem solid #000;
-}
-.tablefield h3 {
-  font-family: "Adventure";
-  min-width: 15rem;
-  padding: 0rem;
-  margin: 0rem;
-}
-.tablefield h3 {
-  color: #fff;
-  font-size: 5rem;
-}
-.tablebody {
-  background-color: #fff;
-  border: 1rem solid #000;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
-}
-.tablebodyrow {
-  border-bottom: 0.5rem solid DodgerBlue;
-}
-.tablebox:hover {
-  background-color: #fff;
-}
-.table-hover tbody tr:hover {
-  background-color: #fff;
-}
-.checkbutton {
-  border: 1rem solid #000;
-  border-radius: 3rem;
-}
-.btn-default:active,
-.btn-default.active,
-.open > .dropdown-toggle.btn-default {
-  background-color: #fff;
-}
-.modalcardimage {
-  border-radius: 3rem;
-  margin: auto;
-  max-height: 65rem;
-  box-shadow: 1rem 1rem 1rem #808080;
-}
-.ggmodalflavor {
-  font-family: "Adventure";
-  border: 1rem solid #000;
-  box-shadow: 0.5rem 0.5rem 0.5rem #808080;
-  max-width: 60rem;
-  margin: 0 auto;
-  margin-top: 2rem;
-  font-size: 4rem;
-  padding: 1rem;
-  color: #000;
-  font-style: bold;
-}
-.modalimagecontainer {
-  margin-top: 1rem;
-}
-.modaliconrow {
-  margin: 1rem;
-}
-.utilityiconrow {
-  margin-top: 2rem;
-  margin-bottom: 3rem;
-}
-.modalcardtext {
-  font-family: "Okuda";
-  font-size: 5rem;
-  margin: auto 0;
-  padding-left: 5%;
-  padding-right: 5%;
-}
-.modalcommenttext {
-  font-family: "Okuda";
-  font-size: 4.5rem;
-  margin: auto 0;
-  padding-left: 5%;
-  padding-right: 5%;
-  color: #808080;
-  font-style: italic;
 }
 .popover {
   font-family: "Adventure";
@@ -1267,6 +54,7 @@ body {
   border: 1rem solid #000;
   border-radius: 2rem;
   padding: auto;
+  color: #000;
 }
 .popover-content {
   font-family: "Adventure";
@@ -1274,70 +62,6 @@ body {
   text-align: center;
   line-height: 4rem;
   margin: auto;
-}
-.charnamerow {
-  margin-top: 1rem;
-}
-.powers {
-  font-family: "Okuda";
-  color: #fff;
-  font-size: 3.5rem;
-  background-color: DodgerBlue;
-  padding: 0rem;
-  box-shadow: none;
-  margin: 0;
-  margin-left: 5%;
-  margin-right: 5%;
-  border-radius: 2rem;
-  text-shadow: 0.15rem 0.15rem 0.15rem #000;
-  letter-spacing: 0rem;
-}
-.skillimage {
-  background-color: #fff;
-  width: 95%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
-  margin: auto 0;
-  border-radius: 2rem;
-  border: 1rem solid #000;
-}
-.skillheading {
-  margin-top: 0rem;
-}
-.psheading {
-  margin-top: 0rem;
-}
-.difficultycol {
-  margin-left: -1.4rem;
-  margin-right: -1.4rem;
-}
-.profilecard {
-  background-color: #fff;
-  border-radius: 5rem;
-  border: 1rem solid #000;
-  box-shadow: 1rem 1rem 1rem #000;
-  margin-top: 2rem;
-}
-.databaseheading {
-  font-family: "Okuda";
-  color: #fff;
-  background-color: #969;
-  border: 1rem solid #000;
-  margin-top: 0rem;
-  font-size: 7rem;
-  width: 100%;
-  border-radius: 4rem;
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.25rem 0.25rem 0.25rem #000;
-}
-.charheadshotcol {
-  position: relative;
-  width: 100%;
-}
-.test {
-  background-color: #fff;
-  border: none;
 }
 .copyrightfooter {
   font-family: 'Adventure';
@@ -1356,8 +80,52 @@ body {
   padding-bottom: 0rem;
   font-size: 3.5rem;
 }
-.smallpage {
-  min-height: 80rem;
+/* navbar */
+#navbar-brand {
+  color: #fff;
+  font-family: 'Adventure';
+  font-size: 7rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+}
+.navbar {
+  border-bottom: 1rem solid #000;
+  padding-bottom: 1rem;
+}
+#myNavbar ul {
+  margin-top: 1%;
+}
+#myNavbar ul a {
+  line-height: 1rem;
+  display: inline;
+}
+.navbutton {
+  font-size: 2.5rem;
+  font-family: 'adventure';
+  border: 0.5rem solid #000;
+  background-color: #fff;
+  margin-right: 0.5rem;
+  box-shadow: none;
+  border-radius: 2rem;
+  color: #000;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin-top: 0rem;
+  max-height: 7rem;
+}
+.navbutton:hover {
+  background-color: #f00;
+}
+/* frontpage */
+.mainButton {
+  background-color: rgba(255,255,255,0);
+  font-size: 5rem;
+  border-radius: 2rem;
+  margin-top: 0rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  padding: 0rem;
 }
 .mainpage {
   background-color: #fff;
@@ -1456,112 +224,716 @@ body {
   width: 100%;
   margin-top: 12rem;
 }
-.charselectleftcol {
-  background-color: rgba(255,255,255,0);
-  min-height: 50rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  position: right;
-  background-size: cover;
+/* charselect */
+.characterselectname {
+  color: #fff;
 }
-.charselectrightcol {
-  background-color: rgba(255,255,255,0);
-  height: 50rem;
-  margin-top: 0.5rem;
-  margin-bottom: 0.5rem;
-  position: right;
-  background-size: cover;
+.charselect {
+  height: 25rem;
+  width: 25rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  border: 1.5rem outset #000;
+  border-radius: 1rem;
 }
-.charselectlefttext {
-  font-family: 'Adventure';
+#characterselectjumbo {
+  min-height: 50vh;
+}
+#characterselecttitle {
+  font-size: 15rem;
+  color: #fff;
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444;
+}
+.characterselectbasic {
+  background: linear-gradient(0deg, rgba(241,251,37,0.85), rgba(241,251,37,0.85)), url("../images/defaultbg.png");
+}
+/* charpage */
+.charpagebg {
+  background-image: url("../images/defaultbg.png");
+  background-attachment: fixed;
+  background-repeat: none;
+  background-size: cover;
+  margin-top: 1rem;
+}
+.charpageinfocard {
+  background-color: #fff;
+  border-radius: 5rem;
+  border: 1rem solid #000;
+  box-shadow: 1rem 1rem 1rem #000;
+  margin-top: 2rem;
+}
+.charpagecardleft {
+  padding: 1rem;
+}
+.charpagecardright {
+  padding: 1rem;
+}
+.charpageheadshotbg {
+  position: relative;
+  width: 100%;
+}
+.charpageheadshot {
+  width: 100%;
+  border: 1rem solid #000;
+  background-color: #00f;
+  background-image: url("../images/gravitygirlcharselect.png");
+  background-size: cover;
+  border-radius: 5rem;
+}
+.charpagenamerow {
+  margin-top: 1rem;
+}
+.charpagename {
+  font-family: 'Okuda';
   color: #fff;
   font-size: 10rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
   margin-top: 0rem;
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  margin-right: 0rem;
+  border: 1rem solid #000;
+  border-radius: 2rem;
 }
-.charselectnamedefault {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: DodgerBlue;
+.charpagedifficultycol {
+  margin-left: -1.4rem;
+  margin-right: -1.4rem;
 }
-.charnamede {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #336;
+.charpagedifficulty {
+  margin: auto 0;
+  margin-top: 0rem;
+  border-radius: 2rem;
+  border: 1rem solid #000;
 }
-.charnamegg {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #969;
+.charpageheading {
+  font-family: 'Okuda';
+  color: #fff;
+  border-radius: 2rem;
+  font-size: 6rem;
+  padding-bottom: 1rem;
+  border: 1rem solid #000;
+  margin-top: 0rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+  letter-spacing: 0.5rem;
 }
-.charnamerb {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #666;
-}
-.charnamequ {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #363;
-}
-.charnamekx {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #633;
-}
-.charnameob {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #c9c;
-}
-.charnamesa {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #338533;
-}
-.charselectcard {
+.charpagepowers {
+  font-family: "Okuda";
+  color: #000;
+  font-size: 3.5rem;
   background-color: #fff;
+  padding: 0rem;
+  box-shadow: none;
+  margin: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-shadow: none;
+  letter-spacing: 0rem;
+  border: 0.1rem solid rgba(0,0,0,0.45);
+}
+.charpageplus {
+  font-family: "Okuda";
+  color: #fff;
+  font-size: 3.5rem;
+  background-color: #228b22;
+  padding: 0rem;
+  box-shadow: none;
+  margin: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  text-shadow: 0.15rem 0.15rem 0.15rem #000;
+  border: 0.1rem solid rgba(255,225,255,0.45);
+  letter-spacing: 0rem;
+}
+.charpageminus {
+  font-family: "Okuda";
+  color: #fff;
+  font-size: 3.5rem;
+  background-color: #ff4847;
+  padding: 0rem;
+  padding: 0rem;
+  box-shadow: none;
+  margin: 0;
+  margin-left: 5%;
+  margin-right: 5%;
+  border: 0.1rem solid rgba(255,225,255,0.45);
+  text-shadow: 0.15rem 0.15rem 0.15rem #000;
+  letter-spacing: 0rem;
+}
+.charpageskillimage {
+  background-color: #fff;
+  width: 95%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  margin: auto 0;
+  border-radius: 2rem;
+  border: 1rem solid #000;
+}
+.charpagedownloadbutton {
+  font-family: 'Adventure';
+  background-color: DodgerBlue;
+  color: #fff;
+  border-radius: 2rem;
+  border: 1rem solid #000;
+  font-size: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  text-shadow: -0.25rem 0.25rem 0.25rem #000, -0.25rem -0.25rem 0.25rem #000, 0.25rem 0.25rem 0.25rem #000;
+  margin-top: 1.25rem;
+  margin-bottom: 0rem;
+}
+.charpagedatabasepointer {
+  font-family: "Okuda";
+  color: #000;
+  margin-top: 0rem;
+  font-size: 7rem;
+  width: 100%;
+  border-radius: 4rem;
+}
+.charpagemodalpreviousbutton {
+  font-family: 'adventureregular';
+  background: #2aade3;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 1rem 0 1rem;
+  border-radius: 2rem;
+}
+.charpagemodalclosebutton {
+  font-family: 'adventureregular';
+  background: #2aade3;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 1rem 0 1rem;
+  border-radius: 2rem;
+}
+.charpagemodalnextbutton {
+  font-family: 'adventureregular';
+  background: #2aade3;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 1rem 0 1rem;
+  border-radius: 2rem;
+}
+.charpagemodalpreviousbutton:hover,
+.charpagemodalnextbutton:hover,
+.charpagemodalclosebutton:hover {
+  color: #fff;
+}
+.charpagemodalpreviousbutton:focus,
+.charpagemodalnextbutton:focus,
+.charpagemodalclosebutton:focus {
+  color: #fff;
+}
+.charpagemodalimagecontainer {
+  margin-top: 0.1rem;
+}
+.charpagemodalimage {
+  border-radius: 3rem;
+  margin: auto;
+  max-height: 65rem;
+  box-shadow: 1rem 1rem 1rem #808080;
+}
+.charpagemodalutilityrow {
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+.charpagemodalhpheading {
+  color: #fff;
+  background: #000;
+  font-size: 5rem;
+  font-family: "Okuda";
+  margin-bottom: 0;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.charpagemodalfightheading {
+  color: #fff;
+  background: #000;
+  font-size: 5rem;
+  font-family: "Okuda";
+  margin-bottom: 0;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.charpagemodalarmorheading {
+  color: #fff;
+  background: #000;
+  font-size: 5rem;
+  font-family: "Okuda";
+  margin-bottom: 0;
+  border-top-right-radius: 0.5rem;
+  border-top-left-radius: 0.5rem;
+}
+.charpagemodalutilityrow {
+  display: block;
+  text-align: center;
+}
+.charpagemodalutilitycell {
+  max-width: 25rem;
+}
+.charpagemodalutilityvalue {
+  margin: 0;
+  padding: 0;
+  border: 1rem solid #000;
+  border-top: 0rem solid #000;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+  color: #fff;
+  font-family: 'Okuda';
+  font-size: 10rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+}
+#hpsymbol {
+  background-color: #f09;
+}
+#fightsymbol {
+  background-color: #09f;
+}
+#armorsymbol {
+  background-color: #ff0;
+}
+.charpagemodalratingheading {
+  color: #fff;
+  background: #000;
+  font-size: 5rem;
+  border-radius: 0.5rem;
+  font-family: "Okuda";
+}
+.charpagemodalrating {
+  max-width: 15rem;
+  margin: auto;
+  border-radius: 2rem;
+  border: 1rem solid #000;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.charpagemodaltypeheading {
+  color: #fff;
+  background: #000;
+  font-size: 5rem;
+  border-radius: 0.5rem;
+  font-family: "Okuda";
+}
+.charpagemodaltype {
+  max-width: 15rem;
+  margin: auto;
+  border-radius: 2rem;
+  border: 1rem solid #000;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.charpagemodaltextheading {
+  color: #fff;
+  background: #000;
+  font-size: 5rem;
+  border-radius: 0.5rem;
+  font-family: "Okuda";
+}
+.charpagemodaltext {
+  font-family: "Okuda";
+  font-size: 5rem;
+  margin: auto 0;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.charpagemodalcommentheading {
+  color: #fff;
+  background: #000;
+  font-size: 5rem;
+  border-radius: 0.5rem;
+  font-family: "Okuda";
+}
+.charpagemodalcomment {
+  font-family: "Okuda";
+  font-size: 4.5rem;
+  margin: auto 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #808080;
+  font-style: italic;
+}
+.charpagesearchfiltertable {
+  background-color: #fff;
+  border-radius: 5rem;
+  padding: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+  border: 1rem solid #000;
+  box-shadow: 1rem 1rem 1rem #000;
+}
+.charpagesearchfiltercontainer {
+  background-color: DodgerBlue;
+  margin: auto;
+  margin-bottom: 1rem;
+  padding: auto;
+  border: 1rem solid #000;
+  border-radius: 2rem;
+}
+.charpagesearchfilterheading {
+  font-family: 'Adventure';
+  font-size: 8rem;
+  padding-bottom: 1rem;
+  margin-top: 0;
+  margin-bottom: 0;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+}
+.charpagesearchfiltertagbg {
+  background-color: #fff;
+  margin-left: 2rem;
+  margin-right: 2rem;
+  padding: 1rem;
+  border: 1rem solid #000;
+  border-radius: 2rem;
+  min-height: 30rem;
+}
+.charpagesearchfiltertagcol {
+  min-height: 20rem;
+}
+.charpagesearchfiltertagrow {
+  display: inline-block;
+}
+.charpagesearchfilterexcludedtag {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin: 0.2rem;
+  background-color: #228b22;
+  font-family: "Okuda";
+  color: #fff;
+  font-size: 3.5rem;
+}
+.charpagesearchfilterincludedtag {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 0rem;
+  padding-bottom: 0rem;
+  margin: 0.2rem;
+  background-color: #ff4847;
+  font-family: "Okuda";
+  color: #fff;
+  font-size: 3.5rem;
+}
+.charpagesearchfilterbuttonrow {
+  float: none;
+  margin: 0 auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.charpagesearchfilterresetbutton {
+  font-size: 3.5rem;
+  font-family: 'Adventure';
+  border-radius: 2rem;
+  background-color: #ff4847;
+  color: #fff;
+  border: 1rem solid #000;
+  width: 100%;
+}
+.charpagesearchfiltercrossoverbutton {
+  font-size: 3.5rem;
+  font-family: 'Adventure';
+  border-radius: 2rem;
+  color: #fff;
+  background-color: #ff4847;
+  border: 1rem solid #000;
+  width: 100%;
+}
+.charpagesearchfilterfeatbutton {
+  font-size: 3.5rem;
+  font-family: 'Adventure';
+  border-radius: 2rem;
+  color: #fff;
+  background-color: #ff4847;
+  border: 1rem solid #000;
+  width: 100%;
+}
+.charpagedatabaseheadingbg {
+  background-color: DodgerBlue;
+  margin: auto;
+  padding: auto;
   border-left: 1rem solid #000;
   border-right: 1rem solid #000;
-  border-top: none;
-  border-bottom: 1rem solid #000;
-  box-shadow: 1rem 1rem 1rem #000;
-  min-height: 92.5vh;
-  margin-bottom: 0rem;
-  padding-top: 4rem;
+  border-top: 1rem solid #000;
+  border-top-left-radius: 2rem;
+  border-top-right-radius: 2rem;
+  width: 96%;
+  margin-left: 2%;
+  margin-top: 1%;
 }
-.defaultbg {
-  background-image: url("../images/defaultbg.png");
+.charpagedatabaseheading {
+  font-family: 'Adventure';
+  color: #fff;
+  font-size: 6rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+  letter-spacing: 0.5rem;
+}
+.charpagedatabasesubheading {
+  font-family: 'Okuda';
+  color: #fff;
+  font-size: 5rem;
+  margin-top: 0rem;
+  padding-bottom: 1rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+  letter-spacing: 0.5rem;
+  font-style: italic;
+}
+.charpagedatabasetablebox {
+  background-color: #fff;
+  border-radius: 0.2rem;
+  border-left: 0.5rem solid #000;
+  border-right: 0.5rem solid #000;
+  border-top: 0.5rem solid #000;
+  margin-top: 0rem;
+}
+.charpagedatabasetablefield {
+  background-color: DodgerBlue;
+  border: 0.5rem solid #000;
+}
+.charpagedatabasefieldheading {
+  color: #fff;
+  font-family: 'Adventure';
+  margin: 0 auto;
+}
+.charpagetablebody {
+  background-color: #fff;
+  border: 1rem solid #000;
+  border-top-left-radius: 0.25rem;
+  border-top-right-radius: 0.25rem;
+}
+.charpagedatabasetablebodyrow {
+  border-bottom: 0.5rem solid DodgerBlue;
+  border-left: 0.5rem solid DodgerBlue;
+  border-right: 0.5rem solid DodgerBlue;
+}
+.charpagedatabasecardtitle {
+  font-family: "adventureregular";
+  font-size: 5rem;
+  width: 80%;
+  margin-left: 1;
+  margin-top: 1.5rem;
+  letter-spacing: 0.2rem;
+}
+.charpagedatabasetypesymbol {
+  max-width: 15rem;
+  margin: auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.charpagedatabasetext {
+  font-size: 4rem;
+  font-family: 'Okuda';
+  margin-top: 1.5rem;
+  margin-left: 8%;
+  margin-right: 8%;
+}
+/* articleselect */
+/* articles */
+.favfivecarddesc {
+  color: #fff;
+  text-shadow: 0.05rem 0.25rem 0.25rem #000;
+  font-size: 4rem;
+  font-family: 'okuda';
+  display: inline-block;
+}
+.articlebanner {
+  border: 1rem solid #000;
+  margin-bottom: 0rem;
+  width: 100%;
+}
+.favfiveimage {
+  border-radius: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 100%;
+}
+/* GG classes */
+.gg-charpageheadshot {
+  width: 100%;
+  border: 1rem solid #000;
+  background-color: #999;
+  background-image: url("../images/gravitygirlcharselect.png");
+  background-size: cover;
+  border-radius: 5rem;
+}
+.gg-charpagemodalcardname {
+  font-family: "adventureregular";
+  font-size: 7.5rem;
+  line-height: auto;
+  margin: 0;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+  background-color: #969;
+  border: 1rem outset #969;
+  border-radius: 2rem;
+  letter-spacing: 0.3rem;
+}
+.gg-backgroundcolor {
+  background-color: #969;
+}
+.gg-hover:hover {
+  background-color: #969;
+}
+/* RB classes */
+.rb-charpageheadshot {
+  width: 100%;
+  border: 1rem solid #000;
+  background-color: #f33;
+  background-image: url("../images/robonobocharselect.png");
+  background-size: cover;
+  border-radius: 5rem;
+}
+.rb-charpagemodalcardname {
+  font-family: "adventureregular";
+  font-size: 7.5rem;
+  line-height: auto;
+  margin: 0;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+  background-color: #666;
+  border: 1rem outset #666;
+  border-radius: 2rem;
+  letter-spacing: 0.3rem;
+}
+.rb-backgroundcolor {
+  background-color: #666;
+}
+.rb-hover:hover {
+  background-color: #666;
+}
+/* DE classes */
+.de-charpageheadshot {
+  width: 100%;
+  border: 1rem solid #000;
+  background-color: #666;
+  background-image: url("../images/deadeyecharselect.png");
+  background-size: cover;
+  border-radius: 5rem;
+}
+.de-charpagemodalcardname {
+  font-family: "adventureregular";
+  font-size: 7.5rem;
+  line-height: auto;
+  margin: 0;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+  background-color: #336;
+  border: 1rem outset #336;
+  border-radius: 2rem;
+  letter-spacing: 0.3rem;
+}
+.de-backgroundcolor {
+  background-color: #336;
+}
+.de-hover:hover {
+  background-color: #336;
+}
+/* QU classes */
+.qu-charpageheadshot {
+  width: 100%;
+  border: 1rem solid #000;
+  background-color: #933;
+  background-image: url("../images/querycharselect.png");
+  background-size: cover;
+  border-radius: 5rem;
+}
+.qu-charpagemodalcardname {
+  font-family: "adventureregular";
+  font-size: 7.5rem;
+  line-height: auto;
+  margin: 0;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+  background-color: #363;
+  border: 1rem outset #363;
+  border-radius: 2rem;
+  letter-spacing: 0.3rem;
+}
+.qu-backgroundcolor {
+  background-color: #363;
+}
+.qu-hover:hover {
+  background-color: #363;
+}
+/* KX classes */
+.kx-charpageheadshot {
+  width: 100%;
+  border: 1rem solid #000;
+  background-color: #993;
+  background-image: url("../images/knoxcharselect.png");
+  background-size: cover;
+  border-radius: 5rem;
+}
+.kx-charpagemodalcardname {
+  font-family: "adventureregular";
+  font-size: 7.5rem;
+  line-height: auto;
+  margin: 0;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+  background-color: #633;
+  border: 1rem outset #633;
+  border-radius: 2rem;
+  letter-spacing: 0.3rem;
+}
+.kx-backgroundcolor {
+  background-color: #633;
+}
+.kx-hover:hover {
+  background-color: #633;
+}
+/* OB classes */
+.ob-charpageheadshot {
+  width: 100%;
+  border: 1rem solid #000;
+  background-color: #ff9;
+  background-image: url("../images/obscuritycharselect.png");
+  background-size: cover;
+  border-radius: 5rem;
+}
+.ob-charpagemodalcardname {
+  font-family: "adventureregular";
+  font-size: 7.5rem;
+  line-height: auto;
+  margin: 0;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+  background-color: #c69;
+  border: 1rem outset #c69;
+  border-radius: 2rem;
+  letter-spacing: 0.3rem;
+}
+.ob-backgroundcolor {
+  background-color: #c69;
+}
+.ob-hover:hover {
+  background-color: #c69;
+}
+/* SA classes */
+.sa-charpageheadshot {
+  width: 100%;
+  border: 1rem solid #000;
+  background-color: #9cc;
+  background-image: url("../images/siliconartistcharselect.png");
+  background-size: cover;
+  border-radius: 5rem;
+}
+.sa-charpagemodalcardname {
+  font-family: "adventureregular";
+  font-size: 7.5rem;
+  line-height: auto;
+  margin: 0;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+  background-color: #093;
+  border: 1rem outset #093;
+  border-radius: 2rem;
+  letter-spacing: 0.3rem;
+}
+.sa-backgroundcolor {
+  background-color: #093;
+}
+.sa-hover:hover {
+  background-color: #093;
 }

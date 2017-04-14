@@ -1,114 +1,120 @@
-.container-fluid.ggbackground
+.container-fluid.charpagebg
 	.container.top-padding-med
-		.row.profilecard
-			.col-md-6.text-center.ggcharprofileleft
+		.row.charpageinfocard
+			.col-md-6.text-center.charpagecardleft
 				div
-					div.gg-profilebg.charheadshotcol
-						img.charpageheadshot.img-responsive(src="../../images/gravitygirlcharselect.png")
-					.row.charnamerow
+					div.charpageheadshotbg
+						img.gg-charpageheadshot.img-responsive(src="../../images/gravitygirlcharselect.png")
+					.row.charpagenamerow
 						.col-md-9
-							h2#charname.ggcharpagename.okuda Gravity Girl
-						.col-md-3.difficultycol
-							img.charpage-difficulty(src="../../images/easy.png")
+							h2#charname.charpagename.gg-backgroundcolor Gravity Girl
+						.col-md-3.charpagedifficultycol
+							img.charpagedifficulty(src="../../images/easy.png")
 							
-			.col-md-6.charbio.text-center.ggcharprofileright
+			.col-md-6.text-center.charpagecardright
 				.col-md-6
-						h3.ggcharpageheading POWERS
+						h3.charpageheading.gg-backgroundcolor POWERS
 							div
-								h3.powers Superstrength
-								h3.powers Gravity Manipulation
-								h3.powers Time Manipulation
-								h3.powers Teleportation Portals
+								h3.charpagepowers Superstrength
+								h3.charpagepowers Gravity Manipulation
+								h3.charpagepowers Time Manipulation
+								h3.charpagepowers Teleportation Portals
 				.col-md-6					
-						h3.ggcharpageheading STRATEGY
+						h3.charpageheading.gg-backgroundcolor STRATEGY
 							div
-								h3.plus + Combo Friendly
-								h3.plus + Versatile
-								h3.minus - Card Draw
-								h3.minus - Discard			
+								h3.charpageplus + Combo Friendly
+								h3.charpageplus + Versatile
+								h3.charpageminus - Card Draw
+								h3.charpageminus - Discard			
 				.col-md-12
-					h3.ggcharpageheading.skillheading SKILL
+					h3.charpageheading.gg-backgroundcolor SKILL
 						div(data-toggle="popover" data-trigger="hover" data-placement="auto top"
 						data-content="To play a card with Throw, you must first destroy one of your own Utilities.")				
-							img.skillimage(src="../../images/throw.png")				
-					button.btn.btn-block.ggcharpagedownload Download
+							img.charpageskillimage(src="../../images/throw.png")				
+					button.btn-block.charpagedownloadbutton.gg-hover Download
 			.col-md-12
-				h1.adventure.databaseheading.text-center ▼ CARD DATABASE ▼	
+				h1.charpagedatabasepointer.text-center ▼ CARD DATABASE ▼	
 			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
-				.modal-header.text-center
+				.modal-header
 					.row
+						.col-md-6.text-center
+							button.btn.charpagemodalpreviousbutton(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") Previous
+							button.btn.charpagemodalclosebutton(data-dismiss="modal" ng-click="emptyModal()") Close Window
+							button.btn.charpagemodalnextbutton(ng-click="findNextEntry()" ng-hide="hideNext()") Next
 						.col-md-6
-							button.btn.btn-modal-previous(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") Previous
-							button.btn.btn-modal-close(data-dismiss="modal" ng-click="emptyModal()") Close Window
-							button.btn.btn-modal-next(ng-click="findNextEntry()" ng-hide="hideNext()") Next
-						.col-md-6
-							h1.cardtitle.text-center#modaltitle {{modalContent.name}}
+							h1#modaltitle.gg-charpagemodalcardname.text-center {{modalContent.name}}
 				.modal-body
-					.col-md-6.text-center.modalimagecontainer
-						img.modalcardimage.img-responsive(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover"
+					.col-md-6.charpagemodalimagecontainer
+						img.charpagemodalimage.img-responsive(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover"
 					data-content="{{modalContent.flavor[0]}}")
-						.row.utilityiconrow.text-center(ng-hide="modalContent.utilityValues == null")
-							.col-md-12
-							.col-md-4
-								h2#hpsymbol.utilityvalue.text-center {{modalContent.utilityValues[0]}} HP
-							.col-md-4
-								h2#fightsymbol.utilityvalue.text-center {{modalContent.utilityValues[1]}} FT					
-							.col-md-4
-								h2#armorsymbol.utilityvalue.text-center {{modalContent.utilityValues[2]}} AR					
-					.col-md-6.text-center
-						.row.modaliconrow.text-center
-							.col-md-12.modalcardcells
+						.row.charpagemodalutilityrow(ng-hide="modalContent.utilityValues == null")
+							.col-md-8.col-md-offset-2
+									.col-md-4.charpagemodalutilitycell
+										h4.charpagemodalhpheading.text-center Hit Points					
+										h2#hpsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[1]}} 
+									.col-md-4.charpagemodalutilitycell.text-center
+										h4.charpagemodalfightheading.text-center Fight
+										h2#fightsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[1]}}
+									.col-md-4.charpagemodalutilitycell.text-center
+										h4.charpagemodalarmorheading.text-center Armor
+										h2#armorsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[2]}} 					
+					.col-md-6
+						.row.charpagemodaliconrow
+							.col-md-12.charpagemodalcardcells
 								.col-md-6
-									h4.ratingheading Rating
-									img.img-responsive.modaltypesymbol(src="{{modalContent.ratingSymbol}}")
+									h4.charpagemodalratingheading.text-center Rating
+									img.img-responsive.charpagemodalrating(src="{{modalContent.ratingSymbol}}")
 								.col-md-6
-									h4.typeheading Type
-									img.modaltypesymbol(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")						
+									h4.charpagemodaltypeheading.text-center Type
+									img.img-responsive.charpagemodaltype(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")						
 						.row
 							.col-md-12
-								h3.typeheading Card Text
-								h3.text-center.modalcardtext {{modalContent.text}}
+								h3.charpagemodaltextheading.text-center Card Text
+								h3.charpagemodaltext.text-center {{modalContent.text}}
 						.row
 							.col-md-12
-								h3.typeheading Comment
-								h3.text-center.modalcommenttext(ng-repeat='comment in modalContent.comments') {{comment}}
+								h3.charpagemodalcommentheading.text-center Comment
+								h3.charpagemodalcomment.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
 		br
 		.row
-			.col-md-12.charpage-table
+			.col-md-12.charpagesearchfiltertable
 				table.table.table-hover.table-condensed(ng-if="loaded")
 					thread
-						div.gg-table.text-center
+						div.charpagesearchfiltercontainer
 							.row
 								.col-md-12
-									h3.text-center.searchfilter Search Filter
-							.row.text-center.tagbg
-								.col-md-6.tagcol
-									div.tagrow.text-center(ng-repeat="tag in tagArray")
-										button.btn-primary.excluded-tag(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') - {{tag}}
-										br
-								.col-md-6.tagcol
-									div.tagrow.text-center(ng-repeat="tag in currentTags")
-										button.btn-success.included-tag(ng-click='removeFilterButton(tag)') + {{tag}}
+									h3.charpagesearchfilterheading.text-center Search Filters
+							.row.text-center.charpagesearchfiltertagbg
+								.col-md-6.charpagesearchfiltertagcol
+									div.charpagesearchfiltertagrow(ng-repeat="tag in tagArray")
+										button.charpagesearchfilterexcludedtag(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') - {{tag}}
+								.col-md-6.charpagesearchfiltertagcol
+									div.charpagesearchfiltertagrow(ng-repeat="tag in currentTags")
+										button.charpagesearchfilterincludedtag(ng-click='removeFilterButton(tag)') + {{tag}}
 										&nbsp;
-							.row.panelbuttonrow
+							.row.charpagesearchfilterbuttonrow
 								.col-md-4
-									button.resetbutton(ng-click='resetTags()') Reset Tags
+									button.charpagesearchfilterresetbutton(ng-click='resetTags()') Reset Tags
 								.col-md-4
-									button#crossbutton.crossbutton(type='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()') Crossovers Off			
+									button#crossbutton.crossbutton.charpagesearchfiltercrossoverbutton(type='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()') Crossovers Off			
 								.col-md-4
-									button#featbutton.featbutton(type='button' data-toggle='button' ng-model='featBox' ng-click='logFeatBox()') Feats Off		
-						tr.tablebox
-							th.tablefield
-								h3.text-center Name
-							th.tablefield
-								h3.text-center Type
-							th.tablefield
-								h3.text-center Text
-							tbody.tablebody
-								tr.tablebodyrow(ng-repeat="card in cards | filter:containsTags | orderBy: 'name'")
+									button#featbutton.featbutton.charpagesearchfilterfeatbutton(type='button' data-toggle='button' ng-model='featBox' ng-click='logFeatBox()') Feats Off
+						.row
+							.col-md-12.charpagedatabaseheadingbg
+								h2.text-center.charpagedatabaseheading Gravity Girl Card Database
+								h3.text-center.charpagedatabasesubheading click on a card's name to see more details!		
+						tr.charpagedatabasetablebox
+							th.charpagedatabasetablefield
+								h3.charpagedatabasefieldheading.text-center Name
+							th.charpagedatabasetablefield.text-center
+								h3.charpagedatabasefieldheading Type
+							th.charpagedatabasetablefield.text-center
+								h3.charpagedatabasefieldheading Text
+							tbody.charpagedatabasetablebody
+								tr.charpagedatabasetablebodyrow(ng-repeat="card in cards | filter:containsTags | orderBy: 'name'")
 									td
-										h2.tablecardtitle.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
+										h2.charpagedatabasecardtitle.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
 									td
-										img.typesymbol.img-responsive.text-center(src='{{card.typeSymbol}}')
-									td.text-center
-										h3.cardtext.okuda {{card.text}}
+										img.img-responsive.charpagedatabasetypesymbol.text-center(src='{{card.typeSymbol}}')
+									td
+										h3.charpagedatabasetext.text-center {{card.text}}

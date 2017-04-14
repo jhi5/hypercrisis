@@ -1,97 +1,120 @@
-.container.top-padding-med.charpage
-	.row
-		.col-md-6.text-center
-			div.de-profilebg
-				img.de-charpage-img.charpagebg(src="../../images/deadeyecharselect.png")
-			h1#charname.de-charpage-name.okuda Deadeye
-			button.btn.btn-block.btn-success.charpage-download Download Now!
-		.col-md-6.charbio.text-center
-			h3.de-profileheadings.okuda POWERS
-				h3.profiletext.okuda Superhuman Accuracy, Arsenal Of Deadly Weapons
-			h3.de-profileheadings.okuda STRENGTHS & WEAKNESSES
-				h3.okuda.profiletext + High Player Damage, Strong Discard
-				h3.okuda.profiletext - Low Utility Damage, Poor Defensive Options
-			h3.de-profileheadings.okuda DIFFICULTY
-				div.charpage-skill
-					img.charpage-difficulty(src="../../images/intermediate.png")
-			h3.de-profileheadings.okuda SKILL
-				div.charpage-skill				
-					img(src="../../images/aim.png")
-		.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
-			.modal-header
-				button.btn.btn-block.btn-modal-close(data-dismiss="modal" ng-click="emptyModal()") Close This Window
-			.modal-body
-				.col-md-6.text-center
-					img(src="{{modalContent.illustrations[0]}}")
-					h1.cardtitle {{modalContent.name}}
-					h3.text-center.de-flavortext(ng-hide="modalContent.flavor == null") {{modalContent.flavor[0]}}
-				.col-md-6.text-center
+.container-fluid.charpagebg
+	.container.top-padding-med
+		.row.charpageinfocard
+			.col-md-6.text-center.charpagecardleft
+				div
+					div.charpageheadshotbg
+						img.de-charpageheadshot.img-responsive(src="../../images/deadeyecharselect.png")
+					.row.charpagenamerow
+						.col-md-9
+							h2#charname.charpagename.de-backgroundcolor Deadeye
+						.col-md-3.charpagedifficultycol
+							img.charpagedifficulty(src="../../images/intermediate.png")
+							
+			.col-md-6.text-center.charpagecardright
+				.col-md-6
+						h3.charpageheading.de-backgroundcolor POWERS
+							div
+								h3.charpagepowers Perfect Vision
+								h3.charpagepowers Superhuman Accuracy
+								h3.charpagepowers Arsenal Of Firearms
+								h3.charpagepowers Explosives Expert
+				.col-md-6					
+						h3.charpageheading.de-backgroundcolor STRATEGY
+							div
+								h3.charpageplus + Player Damage
+								h3.charpageplus + Discard
+								h3.charpageminus - Armor
+								h3.charpageminus - Utility Damage			
+				.col-md-12
+					h3.charpageheading.de-backgroundcolor SKILL
+						div(data-toggle="popover" data-trigger="hover" data-placement="auto top"
+						data-content="Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.") 		
+							img.charpageskillimage(src="../../images/aim.png")				
+					button.btn-block.charpagedownloadbutton.de-hover Download
+			.col-md-12
+				h1.charpagedatabasepointer.text-center ▼ CARD DATABASE ▼	
+			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
+				.modal-header
 					.row
+						.col-md-6.text-center
+							button.btn.charpagemodalpreviousbutton(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") Previous
+							button.btn.charpagemodalclosebutton(data-dismiss="modal" ng-click="emptyModal()") Close Window
+							button.btn.charpagemodalnextbutton(ng-click="findNextEntry()" ng-hide="hideNext()") Next
 						.col-md-6
-							h3.de-profileheadings.okuda Rating
-							h2.text-center {{modalContent.rating}}
-						.col-md-6
-							h3.de-profileheadings.okuda Type
-							h2.text-center {{modalContent.type}}
-					.row(ng-hide="modalContent.utilityValues == null")
-						.col-md-12
-							h3.de-profileheadings.okuda Utility Values
-						.col-md-4
-							h2.utilityvalue {{modalContent.utilityValues[0]}}
-							h4.hpheading Hit Points
-						.col-md-4
-							h2.utilityvalue {{modalContent.utilityValues[1]}}
-							h4.fightheading Fight
-						.col-md-4
-							h2.utilityvalue {{modalContent.utilityValues[2]}}
-							h4.armorheading Armor
-					.row
-						.col-md-12
-							h3.de-profileheadings.okuda Card Text
-							h3.text-center {{modalContent.text}}
-					.row
-						.com-md-12
-							h3.de-profileheadings.okuda Comment
-							h3.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
-	h1.text-center Deadeye Card Database
-	h4.text-center Click On A Card Name To Open Its Details!
-	table.table.table-hover.table-striped.table-condensed(ng-if="loaded")
-		thread
-			.row				
-				.div-col-3.tagrow.text-center(ng-repeat="tag in tagArray")
-					button.btn-primary(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') {{tag}}
-					&nbsp;
-				.div-col-12
-					h2 Current Tags
-					.div(ng-repeat="tag in currentTags")
-						button.btn-success(ng-click='removeFilterButton(tag)') {{tag}}
-				.div-col-6
-					&nbsp;
-					button.btn-block.btn-warning.resetbutton(ng-click='resetTags()') RESET
-				.div-col-6
-					.form-group(class='[ ]')
-						input#fancy-checkbox-primary(type='checkbox', name='fancy-checkbox-primary', autocomplete='off', ng-model="checkBox" ng-click="logCheckbox()")
-						.btn-group(class='[ ]')
-							label.btn.btn-primary(for='fancy-checkbox-primary', class='[ ]')
-								span X
-								span  
-							label.btn.btn-default.active(for='fancy-checkbox-primary', class='[ ]')
-								| primary Checkbox
-
-
-
-			tr
-				th 
-					h3.text-center Name
-				th 
-					h3.text-center Type
-				th 
-					h3.text-center Text
-				tbody
-					tr(ng-repeat="card in cards | filter:containsTags | orderBy: 'name'")
-						td
-							h2.tablecardtitle.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
-						td
-							img.typesymbol.text-center(src='{{card.typeSymbol}}')
-						td
-							h3.text-center.cardtext.okuda {{card.text}}
+							h1#modaltitle.de-charpagemodalcardname.text-center {{modalContent.name}}
+				.modal-body
+					.col-md-6.charpagemodalimagecontainer
+						img.charpagemodalimage.img-responsive(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover"
+					data-content="{{modalContent.flavor[0]}}")
+						.row.charpagemodalutilityrow(ng-hide="modalContent.utilityValues == null")
+							.col-md-8.col-md-offset-2
+									.col-md-4.charpagemodalutilitycell
+										h4.charpagemodalhpheading.text-center Hit Points					
+										h2#hpsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[1]}} 
+									.col-md-4.charpagemodalutilitycell.text-center
+										h4.charpagemodalfightheading.text-center Fight
+										h2#fightsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[1]}}
+									.col-md-4.charpagemodalutilitycell.text-center
+										h4.charpagemodalarmorheading.text-center Armor
+										h2#armorsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[2]}} 					
+					.col-md-6
+						.row.charpagemodaliconrow
+							.col-md-12.charpagemodalcardcells
+								.col-md-6
+									h4.charpagemodalratingheading.text-center Rating
+									img.img-responsive.charpagemodalrating(src="{{modalContent.ratingSymbol}}")
+								.col-md-6
+									h4.charpagemodaltypeheading.text-center Type
+									img.img-responsive.charpagemodaltype(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")						
+						.row
+							.col-md-12
+								h3.charpagemodaltextheading.text-center Card Text
+								h3.charpagemodaltext.text-center {{modalContent.text}}
+						.row
+							.col-md-12
+								h3.charpagemodalcommentheading.text-center Comment
+								h3.charpagemodalcomment.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
+		br
+		.row
+			.col-md-12.charpagesearchfiltertable
+				table.table.table-hover.table-condensed(ng-if="loaded")
+					thread
+						div.charpagesearchfiltercontainer
+							.row
+								.col-md-12
+									h3.charpagesearchfilterheading.text-center Search Filters
+							.row.text-center.charpagesearchfiltertagbg
+								.col-md-6.charpagesearchfiltertagcol
+									div.charpagesearchfiltertagrow(ng-repeat="tag in tagArray")
+										button.charpagesearchfilterexcludedtag(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') - {{tag}}
+								.col-md-6.charpagesearchfiltertagcol
+									div.charpagesearchfiltertagrow(ng-repeat="tag in currentTags")
+										button.charpagesearchfilterincludedtag(ng-click='removeFilterButton(tag)') + {{tag}}
+										&nbsp;
+							.row.charpagesearchfilterbuttonrow
+								.col-md-4
+									button.charpagesearchfilterresetbutton(ng-click='resetTags()') Reset Tags
+								.col-md-4
+									button#crossbutton.crossbutton.charpagesearchfiltercrossoverbutton(type='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()') Crossovers Off			
+								.col-md-4
+									button#featbutton.featbutton.charpagesearchfilterfeatbutton(type='button' data-toggle='button' ng-model='featBox' ng-click='logFeatBox()') Feats Off
+						.row
+							.col-md-12.charpagedatabaseheadingbg
+								h2.text-center.charpagedatabaseheading Deadeye Card Database
+								h3.text-center.charpagedatabasesubheading click on a card's name to see more details!		
+						tr.charpagedatabasetablebox
+							th.charpagedatabasetablefield
+								h3.charpagedatabasefieldheading.text-center Name
+							th.charpagedatabasetablefield.text-center
+								h3.charpagedatabasefieldheading Type
+							th.charpagedatabasetablefield.text-center
+								h3.charpagedatabasefieldheading Text
+							tbody.charpagedatabasetablebody
+								tr.charpagedatabasetablebodyrow(ng-repeat="card in cards | filter:containsTags | orderBy: 'name'")
+									td
+										h2.charpagedatabasecardtitle.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
+									td
+										img.img-responsive.charpagedatabasetypesymbol.text-center(src='{{card.typeSymbol}}')
+									td
+										h3.charpagedatabasetext.text-center {{card.text}}

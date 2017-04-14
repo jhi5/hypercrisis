@@ -42,1296 +42,36 @@
     font-weight normal
     font-style normal
 
-.okuda
-	font-family 'okuda'
+/* variables */
 
-.adventure
-	font-family 'adventureregular'
+ggcolor = #996699
+ggsecondary = #999999
+qucolor = #336633
+qusecondary = #993333
+obcolor = #cc6699
+obsecondary = #ffff99
+rbcolor = #666666
+rbsecondary = #ff3333
+decolor = #333366
+desecondary = #666666
+kxcolor = #663333
+kxsecondary = #999933
+sacolor = #009933
+sasecondary = #99cccc
 
-.big
-	font-size 7rem
-
-.whitetext
-	color white
-
-//colors
-
-deadeyecolor = rgb(51, 51, 102)
-deadeyealpha = rgba(51, 51, 102, .85)
-deadeyeflavor = rgb(153, 153, 153)
-gravitygirlcolor = rgb(153, 102, 153)
-gravitygirlalpha = rgba(153, 102, 153, .85)
-gravitygirlflavor = rgb(204, 51, 153)
-knoxcolor = rgb(102, 51, 51)
-knoxalpha = rgba(102, 51, 51, .85)
-knoxflavor = rgb(197, 179, 88)
-obscuritycolor = rgb(204, 153, 204)
-obscurityalpha = rgba(204, 153, 204, .85)
-obscurityflavor = rgb(204, 204, 204)
-querycolor = rgb(51, 102, 51)
-queryalpha = rgba(51, 102, 51, .85)
-queryflavor = rgb(255, 102, 102)
-robonobocolor = rgb(102, 102, 102)
-robonoboalpha = rgba(102, 102, 102, .85)
-robonoboflavor = rgb(102, 204, 255)
-siliconartistcolor = rgb(51, 133, 51)
-siliconartistalpha = rgba(51, 133, 51, .85)
-siliconartistflavor = rgb(100, 111, 229)
-crosscolor = rgb(204, 153, 51)
-crossalpha = rgba(204,153,51,.85)
 characterpagebg = url('../images/charpagebg.png')
 
-//dom
+/* common */
 
 body
-    padding-top 70px
+    padding-top 8rem
 
-.navbar
-	padding-bottom 1rem
-
-//frontpage
-
-.mainButton
-	background-color rgba(255,255,255,0)
-	font-size 5rem
-	border-radius 2rem
-	margin-top 0rem
-	margin-bottom 1rem
-	width 100%
-	padding 0rem
-
-//card database
+@media screen and (max-width: 768px)
+    body
+        padding-top 8rem
 
 .modal-admin
 	background-color white
-
-.typeheading
-	color white
-	background black
-	font-size 5rem
-	border-radius .5rem
-	font-family "Okuda"
-
-.ratingheading
-	color white
-	background black
-	font-size 5rem
-	border-radius .5rem
-	font-family "Okuda"
-
-.hpheading
-	color white
-	background black
-	font-size 5rem
-	border-radius .5rem
-	font-family "Okuda"
-
-.utilityvalue
-	font-family 'Okuda'
-	font-weight bold
-	font-size 10rem
-	max-width 15rem
-	margin auto
-	box-shadow 1rem 1rem 1rem grey
-	border-radius 2rem
-	border 1rem solid black
-	color white
-	text-shadow -.2rem .25rem .25rem black, -.2rem -.25rem .25rem black, .75rem .25rem .25rem black
-	line-height 20%
-	margin-top 1.5rem	
-
-#fightsymbol
-	background-color #0099ff
-	background-size 100%
-	padding 1rem
-#armorsymbol
-	background-color #ffff00
-	background-size 100%
-	padding 1rem
-#hpsymbol
-	background-color #ff0099
-	background-size 100%
-	padding 1rem
-
-.fightheading
-	color white
-	background black
-	font-size 5rem
-	border-radius .5rem
-	font-family "Okuda"
-
-.armorheading
-	color white
-	background black
-	font-size 5rem
-	border-radius .5rem
-	font-family "Okuda"
-
-.cardtitle
-	font-family "adventureregular"
-	font-size 7.5rem
-	line-height auto
-	margin 0
-	color white
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	background-color DodgerBlue
-	border 1rem outset DodgerBlue
-	border-radius 2rem
-	letter-spacing .1rem
-
-
-.tablecardtitle
-	font-family "adventureregular"
-	font-size 4rem
-	width 80%
-	margin-top 1.5rem
-	letter-spacing .2rem
-
-.charpage-difficulty
-	margin auto 0
-	margin-top 0rem
-	border-radius 2rem
-	border 1rem solid black
-
-.charpage-download
-	padding-top 5rem
-	padding-bottom 5rem
-	color white
-	font-size 5rem
-	font-weight bold
-	font-family 'adventureregular'
-	border-radius 2rem
-
-.charpage-table
-	background-color white
-	border-radius 5rem
-	padding 2rem
-	margin-top 1rem
-	margin-bottom 2rem
-	border 1rem solid black
-	box-shadow 1rem 1rem 1rem black	
-
-.crosstext
-	font-size 2rem
-
-.btn-modal-close
-	font-family 'adventureregular'
-	background rgb(42, 173, 227)
-	color white
-	font-size 3rem
-	margin 0 1rem 0 1rem
-	border-radius 2rem
-
-.btn-modal-previous
-	font-family 'adventureregular'
-	background rgb(0, 153, 51)
-	color white
-	font-size 3rem
-	margin 0 1rem 0 1rem
-	border-radius 2rem
-
-
-.btn-modal-next
-	font-family 'adventureregular'
-	background rgb(255, 102, 102)
-	color white
-	font-size 3rem
-	margin 0 1rem 0 1rem
-	border-radius 2rem
-
-.btn-modal-next:hover, .btn-modal-previous:hover, .btn-modal-close:hover
-	color Gold
-
-.btn-modal-next:focus, .btn-modal-previous:focus, .btn-modal-close:focus
-	color white
-
-.popover
-    width 20rem
-
-.popover-content
-    color Black
-    font-family "okuda"
-    font-size 3rem
-
-.plus
-	font-family "Okuda"
-	color white
-	font-size 3.5rem
-	background-color #228B22
-	padding 0rem
-	box-shadow none
-	margin 0
-	margin-left 5%
-	margin-right 5%
-	border-radius 2rem
-	text-shadow .15rem .15rem .15rem black
-	letter-spacing 0rem
-
-.minus
-	font-family "Okuda"
-	color white
-	font-size 3.5rem
-	background-color #FF4847
-	padding 0rem
-	padding 0rem
-	box-shadow none
-	margin 0
-	margin-left 5%
-	margin-right 5%
-	border-radius 2rem
-	text-shadow .15rem .15rem .15rem black
-	letter-spacing 0rem
-
-.typesymbol
-	width 11rem
-	height 11rem
-	margin auto
-	vertical-align middle
-
-.modaltypesymbol
-	max-width 15rem
-	margin auto
-	box-shadow 1rem 1rem 1rem grey
-	border-radius 2rem
-	border 1rem solid black
-	padding-left 1.5rem
-	padding-right 1.5rem
-
-.cardtext
-	font-size 4rem
-	margin-top 1.5rem
-	margin-left 8%
-	margin-right 8%
-
-
-.tagrow
-	display inline-block 0
-
-.tagbutton
-	background-color rgba(0,0,0,0)
-	color black
-	margin-right 1rem
-	display inline-block
-	font-size 150%
-
-//character specific card database classes
-
-//character select
-
-.characterselectname
-	color white
-
-.charselect
-	height 25rem
-	width 25rem
-	margin-top 2rem
-	margin-right 1rem
-	border 1.5rem outset black
-	border-radius 1rem
-
-//character specific char select classes
-
-.decharselect:hover
-	border 2rem outset deadeyecolor
-	border-radius 1rem
-
-.de-profilebg
-	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/defaultbg.png)
-
-.de-profileheadings
-	color white
-	background linear-gradient(0deg,deadeyealpha,deadeyealpha),url(../images/defaultbg.png)
-	font-size 5rem
-	border-radius .5rem
-
-.de-flavortext
-	color gray
-	font-style italic
-
-.de-charpage-name
-	background deadeyecolor
-	color white
-	font-size 10rem
-
-.de-charpage-img
-	min-width 100%
-	border 2em solid deadeyecolor
-
-.characterselectde
-	min-height 100%
-	background-size 100% 
-	background-repeat no-repeat
-	margin-left -1.5rem
-	margin-right -1.5rem
-	background-image url('/../images/deadeyecharselect.png')
-
-.kxcharselect:hover
-	border 2rem outset knoxcolor
-	border-radius 1rem
-
-.kx-profilebg
-	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/defaultbg.png)
-
-.kx-profileheadings
-	color white
-	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/defaultbg.png)
-	font-size 5rem
-	border-radius .5rem
-
-.kx-flavortext
-	color gray
-	font-style italic
-
-.kx-charpage-name
-	background knoxcolor
-	color white
-	font-size 10rem
-
-.kx-charpage-img
-	min-width 100%
-	border 2em solid knoxcolor
-
-.ggcharselect:hover
-	border 2rem outset gravitygirlcolor
-	border-radius 1rem
-
-.characterselectgg
-	background linear-gradient(0deg,gravitygirlalpha,gravitygirlalpha),url(../images/defaultbg.png)
-
-.characterselectkx
-	background linear-gradient(0deg,knoxalpha,knoxalpha),url(../images/defaultbg.png)
-
-.obcharselect:hover
-	border 2rem outset obscuritycolor
-	border-radius 1rem
-
-.ob-profilebg
-	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/defaultbg.png)
-
-.ob-profileheadings
-	color white
-	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/defaultbg.png)
-	font-size 5rem
-	border-radius .5rem
-
-.ob-flavortext
-	color gray
-	font-style italic
-
-.ob-charpage-name
-	background obscuritycolor
-	color white
-	font-size 10rem
-
-.ob-charpage-img
-	min-width 100%
-	border 2em solid obscuritycolor
-
-.characterselectob
-	background linear-gradient(0deg,obscurityalpha,obscurityalpha),url(../images/defaultbg.png)
-
-.rbcharselect:hover
-	border 2rem outset robonobocolor
-	border-radius 1rem
-
-.rb-profilebg
-	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/defaultbg.png)
-
-.rb-profileheadings
-	color white
-	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/defaultbg.png)
-	font-size 5rem
-	border-radius .5rem
-
-.rb-flavortext
-	color gray
-	font-style italic
-
-.rb-charpage-name
-	background robonobocolor
-	color white
-	font-size 10rem
-
-.rb-charpage-img
-	min-width 100%
-	border 2em solid robonobocolor
-
-.characterselectrb
-	background linear-gradient(0deg,robonoboalpha,robonoboalpha),url(../images/defaultbg.png)
-
-.qucharselect:hover
-	border 2rem outset querycolor
-	border-radius 1rem
-
-.qu-profilebg
-	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/defaultbg.png)
-
-.qu-profileheadings
-	color white
-	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/defaultbg.png)
-	font-size 5rem
-	border-radius .5rem
-
-.qu-flavortext
-	color gray
-	font-style italic
-
-.qu-charpage-name
-	background querycolor
-	color white
-	font-size 10rem
-
-.qu-charpage-img
-	min-width 100%
-	border 2em solid querycolor
-
-.characterselectqu
-	background linear-gradient(0deg,queryalpha,queryalpha),url(../images/defaultbg.png)
-
-.sacharselect:hover
-	border 2rem outset siliconartistcolor
-	border-radius 1rem
-
-.sa-profilebg
-	background linear-gradient(0deg,siliconartistalpha,siliconartistalpha),url(../images/defaultbg.png)
-
-.sa-profileheadings
-	color white
-	background linear-gradient(0deg,siliconartistalpha,siliconartistalpha),url(../images/defaultbg.png)
-	font-size 5rem
-	border-radius .5rem
-
-.sa-flavortext
-	color gray
-	font-style italic
-
-.sa-charpage-name
-	background siliconartistcolor
-	color white
-	font-size 10rem
-
-.sa-charpage-img
-	min-width 100%
-	border 2em solid siliconartistcolor
-
-.characterselectsa
-	background linear-gradient(0deg,siliconartistalpha,siliconartistalpha),url(../images/defaultbg.png)
-
-#characterselectjumbo
-	min-height 50vh
-
-#characterselecttitle	
-	font-size 15rem
-	color white
-	text-shadow 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444
-
-.characterselectbasic
-	background linear-gradient(0deg,rgba(241,251,37,.85),rgba(241,251,37,.85)),url(../images/defaultbg.png)
-
-//articles
-
-.favfivecarddesc
-	color white
-	text-shadow .05rem .25rem .25rem black
-	font-size 4rem
-	font-family 'okuda'
-	display inline-block
-
-.articlebanner
-	border 1rem solid black
-	margin-bottom 0rem
-	width 100%
-
-.favfiveimage
-	border-radius 4rem
-	padding-top 2rem
-	padding-bottom 2rem
-	width 100%
-
-
-//character specific article classes
-
-//gravity girl articles
-
-.ggjumboimage
-	border 3rem solid gravitygirlcolor
-	border-radius 4rem
-	margin-bottom 0rem
-
-.ggjumbotron
-	background-color gravitygirlcolor
-	color white
-	font-family 'okuda'
-	font-size 6rem	
-	border-bottom-left-radius 5rem
-	border-bottom-right-radius 5rem
-
-.ggjumbobanner
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-bottom 1rem
-	padding-right 5rem
-
-.ggbanner
-	background-color gravitygirlcolor
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	border-radius 5rem
-	padding-top 2rem
-	margin-bottom 0rem
-
-.ggfavfive
-	color white
-	height 100%
-	vertical-align center
-	padding-top 1%
-	padding-bottom 3rem
-	font-size 6rem
-	padding 1rem
-
-.ggimagecontainer
-	background-color gravitygirlcolor
-	border-bottom-left-radius 4rem
-	border-bottom-right-radius 4rem
-
-.ggtextcontainer
-	background-color gravitygirlcolor
-
-
-.ggbanner h1
-	margin-top 0rem
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-right 3rem
-
-.ggfavfivecardtitle
-	color white
-	text-shadow 1rem .25rem .25rem gravitygirlflavor
-	font-size 9rem
-	font-family 'adventureregular'
-
-.ggcharprofileleft
-	padding 1rem
-
-.ggcharprofileright
-	padding 1rem
-
-
-
-//robonobo articles
-
-.rbjumboimage
-	border 3rem solid robonobocolor
-	border-radius 4rem
-	margin-bottom 0rem
-
-.rbjumbotron
-	background-color robonobocolor
-	color white
-	font-family 'okuda'
-	font-size 6rem	
-	border-bottom-left-radius 5rem
-	border-bottom-right-radius 5rem
-
-.rbjumbobanner
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-bottom 1rem
-	padding-right 5rem
-
-.rbbanner
-	background-color robonobocolor
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	border-radius 5rem
-	padding-top 2rem
-	margin-bottom 0rem
-
-.rbfavfive
-	color white
-	height 100%
-	vertical-align center
-	padding-top 1%
-	padding-bottom 3rem
-	font-size 6rem
-	padding 1rem
-
-.rbimagecontainer
-	background-color robonobocolor
-	border-bottom-left-radius 4rem
-	border-bottom-right-radius 4rem
-
-.rbtextcontainer
-	background-color robonobocolor
-
-.rbbanner h1
-	margin-top 0rem
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-right 3rem
-
-.rbfavfivecardtitle
-	color white
-	text-shadow 1rem .25rem .25rem robonoboflavor
-	font-size 9rem
-	font-family 'adventureregular'
-
-//knox articles
-
-.kxjumboimage
-	border 3rem solid knoxcolor
-	border-radius 4rem
-	margin-bottom 0rem
-
-.kxjumbotron
-	background-color knoxcolor
-	color white
-	font-family 'okuda'
-	font-size 6rem	
-	border-bottom-left-radius 5rem
-	border-bottom-right-radius 5rem
-
-.kxjumbobanner
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-bottom 1rem
-	padding-right 5rem
-
-.kxbanner
-	background-color knoxcolor
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	border-radius 5rem
-	padding-top 2rem
-	margin-bottom 0rem
-
-.kxfavfive
-	color white
-	height 100%
-	vertical-align center
-	padding-top 1%
-	padding-bottom 3rem
-	font-size 6rem
-	padding 1rem
-
-.kximagecontainer
-	background-color knoxcolor
-	border-bottom-left-radius 4rem
-	border-bottom-right-radius 4rem
-
-.kxtextcontainer
-	background-color knoxcolor
-
-.kxbanner h1
-	margin-top 0rem
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-right 3rem
-
-.kxfavfivecardtitle
-	color white
-	text-shadow 1rem .25rem .25rem knoxflavor
-	font-size 9rem
-	font-family 'adventureregular'
-
-//obscurity articles
-
-.objumboimage
-	border 3rem solid obscuritycolor
-	border-radius 4rem
-	margin-bottom 0rem
-
-.objumbotron
-	background-color obscuritycolor
-	color white
-	font-family 'okuda'
-	font-size 6rem	
-	border-bottom-left-radius 5rem
-	border-bottom-right-radius 5rem
-
-.objumbobanner
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-bottom 1rem
-	padding-right 5rem
-
-.obbanner
-	background-color obscuritycolor
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	border-radius 5rem
-	padding-top 2rem
-	margin-bottom 0rem
-
-.obfavfive
-	color white
-	height 100%
-	vertical-align center
-	padding-top 1%
-	padding-bottom 3rem
-	font-size 6rem
-	padding 1rem
-
-.obimagecontainer
-	background-color obscuritycolor
-	border-bottom-left-radius 4rem
-	border-bottom-right-radius 4rem
-
-.obtextcontainer
-	background-color obscuritycolor
-
-.obbanner h1
-	margin-top 0rem
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-right 3rem
-
-.obfavfivecardtitle
-	color white
-	text-shadow 1rem .25rem .25rem obscurityflavor
-	font-size 9rem
-	font-family 'adventureregular'
-
-//query articles
-
-.dejumboimage
-	border 3rem solid deadeyecolor
-	border-radius 4rem
-	margin-bottom 0rem
-
-.dejumbotron
-	background-color deadeyecolor
-	color white
-	font-family 'okuda'
-	font-size 6rem	
-	border-bottom-left-radius 5rem
-	border-bottom-right-radius 5rem
-
-.dejumbobanner
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-bottom 1rem
-	padding-right 5rem
-
-.debanner
-	background-color deadeyecolor
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	border-radius 5rem
-	padding-top 2rem
-	margin-bottom 0rem
-
-.defavfive
-	color white
-	height 100%
-	vertical-align center
-	padding-top 1%
-	padding-bottom 3rem
-	font-size 6rem
-	padding 1rem
-
-.deimagecontainer
-	background-color deadeyecolor
-	border-bottom-left-radius 4rem
-	border-bottom-right-radius 4rem
-
-.detextcontainer
-	background-color deadeyecolor
-
-.debanner h1
-	margin-top 0rem
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-right 3rem
-
-.defavfivecardtitle
-	color white
-	text-shadow 1rem .25rem .25rem deadeyeflavor
-	font-size 9rem
-	font-family 'adventureregular'
-
-//query articles
-
-.qujumboimage
-	border 3rem solid querycolor
-	border-radius 4rem
-	margin-bottom 0rem
-
-.qujumbotron
-	background-color querycolor
-	color white
-	font-family 'okuda'
-	font-size 6rem	
-	border-bottom-left-radius 5rem
-	border-bottom-right-radius 5rem
-
-.qujumbobanner
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-bottom 1rem
-	padding-right 5rem
-
-.qubanner
-	background-color querycolor
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	border-radius 5rem
-	padding-top 2rem
-	margin-bottom 0rem
-
-.qufavfive
-	color white
-	height 100%
-	vertical-align center
-	padding-top 1%
-	padding-bottom 3rem
-	font-size 6rem
-	padding 1rem
-
-.quimagecontainer
-	background-color querycolor
-	border-bottom-left-radius 4rem
-	border-bottom-right-radius 4rem
-
-.qutextcontainer
-	background-color querycolor
-
-.qubanner h1
-	margin-top 0rem
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-right 3rem
-
-.qufavfivecardtitle
-	color white
-	text-shadow 1rem .25rem .25rem queryflavor
-	font-size 9rem
-	font-family 'adventureregular'
-
-//silicon artist articles
-
-.sajumboimage
-	border 3rem solid siliconartistcolor
-	border-radius 4rem
-	margin-bottom 0rem
-
-.sajumbotron
-	background-color siliconartistcolor
-	color white
-	font-family 'okuda'
-	font-size 6rem	
-	border-bottom-left-radius 5rem
-	border-bottom-right-radius 5rem
-
-.sajumbobanner
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-bottom 1rem
-	padding-right 5rem
-
-.sabanner
-	background-color siliconartistcolor
-	margin 0
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	border-radius 5rem
-	padding-top 2rem
-	margin-bottom 0rem
-
-.safavfive
-	color white
-	height 100%
-	vertical-align center
-	padding-top 1%
-	padding-bottom 3rem
-	font-size 6rem
-	padding 1rem
-
-.saimagecontainer
-	background-color siliconartistcolor
-	border-bottom-left-radius 4rem
-	border-bottom-right-radius 4rem
-
-.satextcontainer
-	background-color siliconartistcolor
-
-.sabanner h1
-	margin-top 0rem
-	color white
-	font-family 'okuda'
-	font-size 6rem
-	padding-right 3rem
-
-.safavfivecardtitle
-	color white
-	text-shadow 1rem .25rem .25rem siliconartistflavor
-	font-size 9rem
-	font-family 'adventureregular'
-
-.ggbackground
-	background-image url('../images/defaultbg.png')
-	background-attachment fixed
-	background-repeat none
-	background-size cover
-	margin-top 1rem
-
-.articlecontainer
-	background-color white
-	border-left 1rem solid black
-	border-right 1rem solid black
-
-#navbar-brand
-	color white
-	font-family 'Adventure'
-	font-size 7rem
-	margin-top .5rem
-	margin-bottom .5rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-
-.navbar
-	border-bottom 1rem solid black
-
-#myNavbar ul
-	margin-top .7%
-
-#myNavbar ul a
-	line-height 1rem
-	display inline
-
-.navbutton
-	font-size 3rem
-	border 0rem solid black
-	box-shadow 0rem 0rem 0rem black
-
-.navbutton:hover
-	background-color red
-
-.form-group
-    input[type="checkbox"]
-        display none
-        & + .btn-group
-            & > label
-                span
-                    &:first-child
-                        display none
-                    &:last-child
-                        display inline-block
-    input[type="checkbox"]:checked
-        & + .btn-group
-            & > label
-                span
-                    &:first-child
-                        display inline-block
-                    &:last-child
-                        display none
-
-.formfield
-	width 20rem
-	font-size 3rem
-
-.formlabel
-	font-size 3rem
-
-//articles landing page
-
-
-
-.charpageheadshot
-	width 100%
-	border 1rem solid black
-	background-color gravitygirlflavor
-	background-image url('../images/gravitygirlcharselect.png')
-	background-size cover
-	border-radius 5rem
-
-.charpagepadding
-	padding-right 1rem
-	padding-left 1rem
-
-.ggcharpagename
-	font-family 'Okuda'
-	color white
-	font-size 10rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-	margin-top 0rem
-	margin-right 0rem
-	border 1rem solid black
-	border-radius 2rem
-	background-color gravitygirlcolor
-
-.ggcharpageheading
-	font-family 'Okuda'
-	color white
-	border-radius 2rem
-	font-size 6rem
-	padding-bottom 1rem
-	border 1rem solid black
-	margin-top 0rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	background-color gravitygirlcolor
-	letter-spacing .5rem
-
-.ggcharpagedownload
-	font-family 'Adventure'
-	background-color DodgerBlue
-	color white
-	border-radius 2rem
-	border 1rem solid black
-	font-size 5rem
-	padding-top 1rem
-	padding-bottom 1rem
-	text-shadow -.25rem .25rem .25rem black, -.25rem -.25rem .25rem black, .25rem .25rem .25rem black
-	margin-top 2rem
-	margin-bottom 0rem
-
-.ggcharpagedownload:hover
-	color white
-	background-color gravitygirlcolor
-
-.charprofiletext
-	font-size 3rem
-	color black
-	text-shadow 0rem 0rem 0rem
-	padding 1rem
-	margin 0rem
-
-.crosscheck
-	font-size 7rem
-	color DodgerBlue
-	font-family 'Adventure'
-	border-radius 2rem
-	width 6rem
-	height 6rem
-
-.crosstext
-	font-size 3.5rem
-	background-color white
-	font-family 'Adventure'
-	border-radius 2rem
-
-.panelbuttonrow
-	float none
-	margin 0 auto
-
-.resetbutton	
-	font-size 3.5rem
-	font-family 'Adventure'
-	border-radius 2rem
-	background-color #FF4847
-	color white
-	border 1rem solid black
-	width 100%
-
-.crossbutton	
-	font-size 3.5rem
-	font-family 'Adventure'
-	border-radius 2rem
-	color white
-	background-color #FF4847
-	border 1rem solid black
-	width 100%
-
-.featbutton	
-	font-size 3.5rem
-	font-family 'Adventure'
-	border-radius 2rem
-	color white
-	background-color #FF4847
-	border 1rem solid black
-	width 100%
-
-.gg-table
-	background-color DodgerBlue
-	margin auto
-	margin-bottom 1rem
-	padding auto
-	border 1rem solid black
-
-.excluded-tag
-	padding-left .75rem
-	padding-right .75rem
-	padding-top 0rem
-	padding-bottom 0rem
-	margin .2rem
-	background-color #FF4847
-	font-family "Okuda"
-	color white
-	font-size 3rem
-	border-radius 1rem
-
-.included-tag
-	padding-left .75rem
-	padding-right .75rem
-	padding-top 0rem
-	padding-bottom 0rem
-	margin .2rem
-	background-color #228B22
-	font-family "Okuda"
-	color white
-	font-size 3rem
-	border-radius 1rem
-
-.tagrow
-	display inline-block
-
-.tagcol
-	min-height 20rem
-
-.searchfilter
-	font-family 'Adventure'
-	font-size 8rem
-	padding-bottom 1rem
-	margin-top 0
-	margin-bottom 0
-	color white
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-
-.searchinst
-	font-family 'Okuda'
-	color white
-	margin-top 0
-	margin-bottom 0
-	font-size 5rem
-	padding-bottom 1rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-
-.tagbg
-	background-color white
-	margin-left 2rem
-	margin-right 2rem
-	padding 1rem
-	border 1rem solid black
-	border-radius 2rem
-	min-height 30rem
-
-.panelbuttonrow
-	width 95%
-	margin-top .5rem
-	margin-bottom .5rem
-
-.crossoverbuttonrow
-	width 100%
-	margin-top 1rem
-	margin-left 1%
-
-.tablebox
-	background-color white
-	border 1rem solid black
-	border-radius .2rem
-
-.tablefield
-	background-color DodgerBlue
-	border .5rem solid black
-
-.tablefield h3
-	font-family "Adventure"
-	min-width 15rem
-	padding 0rem
-	margin 0rem
-
-
-.tablefield h3
-	color white
-	font-size 5rem
-
-.tablebody
-	background-color rgba(255,255,255,8)
-	border 1rem solid black
-	border-top-left-radius .25rem
-	border-top-right-radius .25rem
-
-.tablebodyrow
-	border-bottom .5rem solid DodgerBlue
-
-.tablebox:hover
-	background-color white
-
-.table-hover tbody tr:hover
-	background-color white
-
-.checkbutton
-	border 1rem solid black
-	border-radius 3rem
-
-.btn-default:active, .btn-default.active, .open > .dropdown-toggle.btn-default
-	background-color white
-
-.modalcardimage
-	border-radius 3rem
-	margin auto
-	max-height 65rem
-	box-shadow 1rem 1rem 1rem grey
-
-.ggmodalflavor
-	font-family "Adventure"
-	border 1rem solid black
-	box-shadow .5rem .5rem .5rem grey
-	max-width 60rem
-	margin 0 auto
-	margin-top 2rem
-	font-size 4rem
-	padding 1rem
-	color black
-	font-style bold
-
-.modalimagecontainer
-	margin-top 1rem
-
-.modaliconrow
-	margin 1rem
-
-.utilityiconrow
-	margin-top 2rem
-	margin-bottom 3rem
-
-.modalcardtext
-	font-family "Okuda"
-	font-size 5rem
-	margin auto 0
-	padding-left 5%
-	padding-right 5%
-
-.modalcommenttext
-	font-family "Okuda"
-	font-size 4.5rem
-	margin auto 0
-	padding-left 5%
-	padding-right 5%
-	color grey
-	font-style italic
 
 .popover
 	font-family "Adventure"
@@ -1340,6 +80,7 @@ body
 	border 1rem solid black
 	border-radius 2rem
 	padding auto
+	color black
 
 .popover-content
 	font-family "Adventure"
@@ -1347,71 +88,6 @@ body
 	text-align center
 	line-height 4rem
 	margin auto
-
-.charnamerow
-	margin-top 1rem
-
-.powers
-	font-family "Okuda"
-	color white
-	font-size 3.5rem
-	background-color DodgerBlue
-	padding 0rem
-	box-shadow none
-	margin 0
-	margin-left 5%
-	margin-right 5%
-	border-radius 2rem
-	text-shadow .15rem .15rem .15rem black
-	letter-spacing 0rem
-
-
-.skillimage
-	background-color white
-	width 95%
-	padding-top 1rem
-	padding-bottom 1rem
-	padding-right 1rem
-	padding-left 1rem
-	margin auto 0
-	border-radius 2rem
-	border 1rem solid black
-
-.skillheading
-	margin-top 0rem
-
-.psheading
-	margin-top 0rem
-
-.difficultycol
-	margin-left -1.4rem
-	margin-right -1.4rem
-
-.profilecard
-	background-color white
-	border-radius 5rem	
-	border 1rem solid black
-	box-shadow 1rem 1rem 1rem black
-	margin-top 2rem
-
-.databaseheading
-	font-family "Okuda"
-	color white
-	background-color gravitygirlcolor
-	border 1rem solid black
-	margin-top 0rem
-	font-size 7rem
-	width 100%
-	border-radius 4rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .25rem .25rem .25rem black
-
-.charheadshotcol
-	position relative
-	width 100%
-
-.test
-	background-color white
-	border none
 
 .copyrightfooter
 	font-family 'Adventure'
@@ -1430,8 +106,54 @@ body
 	padding-bottom 0rem
 	font-size 3.5rem
 
-.smallpage
-	min-height 80rem
+/* navbar */
+
+#navbar-brand
+	color white
+	font-family 'Adventure'
+	font-size 7rem
+	margin-top .5rem
+	margin-bottom .5rem
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+
+.navbar
+	border-bottom 1rem solid black
+	padding-bottom 1rem
+
+#myNavbar ul
+	margin-top 1%
+
+#myNavbar ul a
+	line-height 1rem
+	display inline
+
+.navbutton
+	font-size 2.5rem
+	font-family 'adventure'
+	border .5rem solid black
+	background-color white
+	margin-right .5rem
+	box-shadow none
+	border-radius 2rem
+	color black
+	padding-top 0rem
+	padding-bottom 0rem
+	margin-top 0rem	
+	max-height 7rem
+
+.navbutton:hover
+	background-color red
+
+/* frontpage */
+
+.mainButton
+	background-color rgba(255,255,255,0)
+	font-size 5rem
+	border-radius 2rem
+	margin-top 0rem
+	margin-bottom 1rem
+	width 100%
+	padding 0rem
 
 .mainpage
 	background-color white
@@ -1530,111 +252,730 @@ body
 	width 100%
 	margin-top 12rem
 
-.charselectleftcol
-	background-color rgba(255,255,255,0)
-	min-height 50rem
-	margin-top .5rem
-	margin-bottom .5rem
-	position right
-	background-size cover
+/* charselect */
 
-.charselectrightcol
-	background-color rgba(255,255,255,0)
-	height 50rem
-	margin-top .5rem
-	margin-bottom .5rem
-	position right
-	background-size cover
+.characterselectname
+	color white
 
-.charselectlefttext
-	font-family 'Adventure'
+.charselect
+	height 25rem
+	width 25rem
+	margin-top 2rem
+	margin-right 1rem
+	border 1.5rem outset black
+	border-radius 1rem
+
+#characterselectjumbo
+	min-height 50vh
+
+#characterselecttitle	
+	font-size 15rem
+	color white
+	text-shadow 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444
+
+.characterselectbasic
+	background linear-gradient(0deg,rgba(241,251,37,.85),rgba(241,251,37,.85)),url(../images/defaultbg.png)
+
+/* charpage */
+
+.charpagebg
+	background-image url('../images/defaultbg.png')
+	background-attachment fixed
+	background-repeat none
+	background-size cover
+	margin-top 1rem
+
+.charpageinfocard
+	background-color white
+	border-radius 5rem	
+	border 1rem solid black
+	box-shadow 1rem 1rem 1rem black
+	margin-top 2rem
+
+.charpagecardleft
+	padding 1rem
+
+.charpagecardright
+	padding 1rem
+
+.charpageheadshotbg
+	position relative
+	width 100%
+
+.charpageheadshot
+	width 100%
+	border 1rem solid black
+	background-color blue
+	background-image url('../images/gravitygirlcharselect.png')
+	background-size cover
+	border-radius 5rem
+
+.charpagenamerow
+	margin-top 1rem
+
+
+.charpagename
+	font-family 'Okuda'
 	color white
 	font-size 10rem
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
 	margin-top 0rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+	margin-right 0rem
+	border 1rem solid black
+	border-radius 2rem
 
-.charselectnamedefault
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-	width 100%
-	margin-top 5rem
-	margin-bottom 0rem
-	border-top 1rem solid black
-	border-bottom 1rem solid black
-	background-color DodgerBlue
+.charpagedifficultycol
+	margin-left -1.4rem
+	margin-right -1.4rem
 
-.charnamede
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-	width 100%
-	margin-top 5rem
-	margin-bottom 0rem
-	border-top 1rem solid black
-	border-bottom 1rem solid black
-	background-color deadeyecolor
+.charpagedifficulty
+	margin auto 0
+	margin-top 0rem
+	border-radius 2rem
+	border 1rem solid black
 
-.charnamegg
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-	width 100%
-	margin-top 5rem
-	margin-bottom 0rem
-	border-top 1rem solid black
-	border-bottom 1rem solid black
-	background-color gravitygirlcolor
+.charpageheading
+	font-family 'Okuda'
+	color white
+	border-radius 2rem
+	font-size 6rem
+	padding-bottom 1rem
+	border 1rem solid black
+	margin-top 0rem
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	letter-spacing .5rem
 
-.charnamerb
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-	width 100%
-	margin-top 5rem
-	margin-bottom 0rem
-	border-top 1rem solid black
-	border-bottom 1rem solid black
-	background-color robonobocolor
-
-.charnamequ
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-	width 100%
-	margin-top 5rem
-	margin-bottom 0rem
-	border-top 1rem solid black
-	border-bottom 1rem solid black
-	background-color querycolor
-
-.charnamekx
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-	width 100%
-	margin-top 5rem
-	margin-bottom 0rem
-	border-top 1rem solid black
-	border-bottom 1rem solid black
-	background-color knoxcolor
-
-.charnameob
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-	width 100%
-	margin-top 5rem
-	margin-bottom 0rem
-	border-top 1rem solid black
-	border-bottom 1rem solid black
-	background-color obscuritycolor
-
-.charnamesa
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-	width 100%
-	margin-top 5rem
-	margin-bottom 0rem
-	border-top 1rem solid black
-	border-bottom 1rem solid black
-	background-color siliconartistcolor
-
-.charselectcard
+.charpagepowers
+	font-family "Okuda"
+	color black
+	font-size 3.5rem
 	background-color white
+	padding 0rem
+	box-shadow none
+	margin 0
+	margin-left 5%
+	margin-right 5%
+	text-shadow none
+	letter-spacing 0rem
+	border .1rem solid rgba(0, 0, 0, .45)
+
+.charpageplus	
+	font-family "Okuda"
+	color white
+	font-size 3.5rem
+	background-color #228B22
+	padding 0rem
+	box-shadow none
+	margin 0
+	margin-left 5%
+	margin-right 5%
+	text-shadow .15rem .15rem .15rem black
+	border .1rem solid rgba(255, 225, 255, .45)
+	letter-spacing 0rem
+
+.charpageminus
+	font-family "Okuda"
+	color white
+	font-size 3.5rem
+	background-color #FF4847
+	padding 0rem
+	padding 0rem
+	box-shadow none
+	margin 0
+	margin-left 5%
+	margin-right 5%
+	border .1rem solid rgba(255, 225, 255, .45)
+	text-shadow .15rem .15rem .15rem black
+	letter-spacing 0rem
+
+.charpageskillimage
+	background-color white
+	width 95%
+	padding-top 1rem
+	padding-bottom 1rem
+	padding-right 1rem
+	padding-left 1rem
+	margin auto 0
+	border-radius 2rem
+	border 1rem solid black
+
+.charpagedownloadbutton
+	font-family 'Adventure'
+	background-color DodgerBlue
+	color white
+	border-radius 2rem
+	border 1rem solid black
+	font-size 5rem
+	padding-top 1rem
+	padding-bottom 1rem
+	text-shadow -.25rem .25rem .25rem black, -.25rem -.25rem .25rem black, .25rem .25rem .25rem black
+	margin-top 1.25rem
+	margin-bottom 0rem
+
+.charpagedatabasepointer
+	font-family "Okuda"
+	color black
+	margin-top 0rem
+	font-size 7rem
+	width 100%
+	border-radius 4rem
+
+.charpagemodalpreviousbutton
+	font-family 'adventureregular'
+	background rgb(42, 173, 227)
+	color white
+	font-size 3rem
+	margin 0 1rem 0 1rem
+	border-radius 2rem
+
+.charpagemodalclosebutton
+	font-family 'adventureregular'
+	background rgb(42, 173, 227)
+	color white
+	font-size 3rem
+	margin 0 1rem 0 1rem
+	border-radius 2rem
+
+.charpagemodalnextbutton
+	font-family 'adventureregular'
+	background rgb(42, 173, 227)
+	color white
+	font-size 3rem
+	margin 0 1rem 0 1rem
+	border-radius 2rem
+
+.charpagemodalpreviousbutton:hover, .charpagemodalnextbutton:hover, .charpagemodalclosebutton:hover
+	color white
+
+.charpagemodalpreviousbutton:focus, .charpagemodalnextbutton:focus, .charpagemodalclosebutton:focus
+	color white
+
+.charpagemodalimagecontainer
+	margin-top .1rem
+
+.charpagemodalimage
+	border-radius 3rem
+	margin auto
+	max-height 65rem
+	box-shadow 1rem 1rem 1rem grey
+
+.charpagemodalutilityrow
+	margin-top 2rem
+	margin-bottom 3rem
+
+.charpagemodalhpheading
+	color white
+	background black
+	font-size 5rem
+	font-family "Okuda"
+	margin-bottom 0
+	border-top-right-radius .5rem
+	border-top-left-radius .5rem
+
+.charpagemodalfightheading
+	color white
+	background black
+	font-size 5rem
+	font-family "Okuda"
+	margin-bottom 0	
+	border-top-right-radius .5rem
+	border-top-left-radius .5rem
+
+.charpagemodalarmorheading
+	color white
+	background black
+	font-size 5rem
+	font-family "Okuda"
+	margin-bottom 0
+	border-top-right-radius .5rem
+	border-top-left-radius .5rem
+
+.charpagemodalutilityrow
+	display block
+	text-align center
+
+.charpagemodalutilitycell
+	max-width 25rem
+
+.charpagemodalutilityvalue
+	margin 0
+	padding 0
+	border 1rem solid black
+	border-top 0rem solid black
+	border-bottom-right-radius 2rem
+	border-bottom-left-radius 2rem
+	color white
+	font-family 'Okuda'
+	font-size 10rem
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+
+#hpsymbol
+	background-color rgba(255,0,153,1)
+
+#fightsymbol
+	background-color rgba(0,153,255,1)
+
+#armorsymbol
+	background-color rgba(255,255,0,1)
+
+.charpagemodalratingheading
+	color white
+	background black
+	font-size 5rem
+	border-radius .5rem
+	font-family "Okuda"
+
+.charpagemodalrating
+	max-width 15rem
+	margin auto
+	border-radius 2rem
+	border 1rem solid black
+	padding-left 1.5rem
+	padding-right 1.5rem
+
+.charpagemodaltypeheading
+	color white
+	background black
+	font-size 5rem
+	border-radius .5rem
+	font-family "Okuda"
+
+.charpagemodaltype
+	max-width 15rem
+	margin auto
+	border-radius 2rem
+	border 1rem solid black
+	padding-left 1.5rem
+	padding-right 1.5rem
+
+.charpagemodaltextheading
+	color white
+	background black
+	font-size 5rem
+	border-radius .5rem
+	font-family "Okuda"
+
+.charpagemodaltext
+	font-family "Okuda"
+	font-size 5rem
+	margin auto 0
+	padding-left 5%
+	padding-right 5%
+
+.charpagemodalcommentheading
+	color white
+	background black
+	font-size 5rem
+	border-radius .5rem
+	font-family "Okuda"
+
+.charpagemodalcomment
+	font-family "Okuda"
+	font-size 4.5rem
+	margin auto 0
+	padding-left 5%
+	padding-right 5%
+	color grey
+	font-style italic
+
+.charpagesearchfiltertable
+	background-color white
+	border-radius 5rem
+	padding 2rem
+	margin-top 1rem
+	margin-bottom 2rem
+	border 1rem solid black
+	box-shadow 1rem 1rem 1rem black	
+
+.charpagesearchfiltercontainer
+	background-color DodgerBlue
+	margin auto
+	margin-bottom 1rem
+	padding auto
+	border 1rem solid black
+	border-radius 2rem
+
+.charpagesearchfilterheading
+	font-family 'Adventure'
+	font-size 8rem
+	padding-bottom 1rem
+	margin-top 0
+	margin-bottom 0
+	color white
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+
+.charpagesearchfiltertagbg
+	background-color white
+	margin-left 2rem
+	margin-right 2rem
+	padding 1rem
+	border 1rem solid black
+	border-radius 2rem
+	min-height 30rem
+
+.charpagesearchfiltertagcol
+	min-height 20rem
+
+.charpagesearchfiltertagrow
+	display inline-block
+
+.charpagesearchfilterexcludedtag
+	padding-left 2rem
+	padding-right 2rem
+	padding-top 0rem
+	padding-bottom 0rem
+	margin .2rem 
+	background-color #228B22
+	font-family "Okuda"
+	color white
+	font-size 3.5rem
+
+.charpagesearchfilterincludedtag
+	padding-left 2rem
+	padding-right 2rem
+	padding-top 0rem
+	padding-bottom 0rem
+	margin .2rem 
+	background-color #FF4847
+	font-family "Okuda"
+	color white
+	font-size 3.5rem
+
+.charpagesearchfilterbuttonrow
+	float none
+	margin 0 auto
+	margin-top 1rem
+	margin-bottom 1rem
+
+.charpagesearchfilterresetbutton
+	font-size 3.5rem
+	font-family 'Adventure'
+	border-radius 2rem
+	background-color #FF4847
+	color white
+	border 1rem solid black
+	width 100%
+
+.charpagesearchfiltercrossoverbutton
+	font-size 3.5rem
+	font-family 'Adventure'
+	border-radius 2rem
+	color white
+	background-color #FF4847
+	border 1rem solid black
+	width 100%
+
+.charpagesearchfilterfeatbutton
+	font-size 3.5rem
+	font-family 'Adventure'
+	border-radius 2rem
+	color white
+	background-color #FF4847
+	border 1rem solid black
+	width 100%
+
+.charpagedatabaseheadingbg
+	background-color DodgerBlue
+	margin auto
+	padding auto 
 	border-left 1rem solid black
 	border-right 1rem solid black
-	border-top none
-	border-bottom 1rem solid black
-	box-shadow 1rem 1rem 1rem black
-	min-height 92.5vh
-	margin-bottom 0rem
-	padding-top 4rem
+	border-top 1rem solid black
+	border-top-left-radius 2rem
+	border-top-right-radius 2rem
+	width 96%
+	margin-left 2%
+	margin-top 1%
 
-.defaultbg	
-	background-image url('../images/defaultbg.png')
+.charpagedatabaseheading
+	font-family 'Adventure'
+	color white
+	font-size 6rem
+	margin-top 0rem
+	margin-bottom 0rem
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	letter-spacing .5rem
+
+.charpagedatabasesubheading
+	font-family 'Okuda'
+	color white
+	font-size 5rem
+	margin-top 0rem
+	padding-bottom 1rem
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	letter-spacing .5rem
+	font-style italic
+
+.charpagedatabasetablebox
+	background-color white
+	border-radius .2rem
+	border-left .5rem solid black
+	border-right .5rem solid black
+	border-top .5rem solid black
+	margin-top 0rem
+
+.charpagedatabasetablefield
+	background-color DodgerBlue
+	border .5rem solid black
+
+.charpagedatabasefieldheading
+	color white
+	font-family 'Adventure'
+	margin 0 auto
+
+.charpagetablebody
+	background-color rgba(255,255,255,8)
+	border 1rem solid black
+	border-top-left-radius .25rem
+	border-top-right-radius .25rem
+
+.charpagedatabasetablebodyrow
+	border-bottom .5rem solid DodgerBlue
+	border-left .5rem solid DodgerBlue
+	border-right .5rem solid DodgerBlue
+
+.charpagedatabasecardtitle
+	font-family "adventureregular"
+	font-size 5rem
+	width 80%
+	margin-left 1
+	margin-top 1.5rem
+	letter-spacing .2rem
+
+.charpagedatabasetypesymbol
+	max-width 15rem
+	margin auto
+	padding-left 1.5rem
+	padding-right 1.5rem
+
+.charpagedatabasetext
+	font-size 4rem
+	font-family 'Okuda'
+	margin-top 1.5rem
+	margin-left 8%
+	margin-right 8%
+
+/* articleselect */
+
+/* articles */
+
+.favfivecarddesc
+	color white
+	text-shadow .05rem .25rem .25rem black
+	font-size 4rem
+	font-family 'okuda'
+	display inline-block
+
+.articlebanner
+	border 1rem solid black
+	margin-bottom 0rem
+	width 100%
+
+.favfiveimage
+	border-radius 4rem
+	padding-top 2rem
+	padding-bottom 2rem
+	width 100%
+
+/* GG classes */
+
+.gg-charpageheadshot
+	width 100%
+	border 1rem solid black
+	background-color ggsecondary
+	background-image url('../images/gravitygirlcharselect.png')
+	background-size cover
+	border-radius 5rem
+
+
+.gg-charpagemodalcardname
+	font-family "adventureregular"
+	font-size 7.5rem
+	line-height auto
+	margin 0
+	color white
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	background-color ggcolor
+	border 1rem outset ggcolor
+	border-radius 2rem
+	letter-spacing .3rem
+
+.gg-backgroundcolor
+	background-color ggcolor
+
+.gg-hover:hover
+	background-color ggcolor
+
+/* RB classes */
+
+.rb-charpageheadshot
+	width 100%
+	border 1rem solid black
+	background-color rbsecondary
+	background-image url('../images/robonobocharselect.png')
+	background-size cover
+	border-radius 5rem
+
+
+.rb-charpagemodalcardname
+	font-family "adventureregular"
+	font-size 7.5rem
+	line-height auto
+	margin 0
+	color white
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	background-color rbcolor
+	border 1rem outset rbcolor
+	border-radius 2rem
+	letter-spacing .3rem
+
+.rb-backgroundcolor
+	background-color rbcolor
+
+.rb-hover:hover
+	background-color rbcolor
+
+/* DE classes */
+
+.de-charpageheadshot
+	width 100%
+	border 1rem solid black
+	background-color desecondary
+	background-image url('../images/deadeyecharselect.png')
+	background-size cover
+	border-radius 5rem
+
+
+.de-charpagemodalcardname
+	font-family "adventureregular"
+	font-size 7.5rem
+	line-height auto
+	margin 0
+	color white
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	background-color decolor
+	border 1rem outset decolor
+	border-radius 2rem
+	letter-spacing .3rem
+
+.de-backgroundcolor
+	background-color decolor
+
+.de-hover:hover
+	background-color decolor
+
+/* QU classes */
+
+.qu-charpageheadshot
+	width 100%
+	border 1rem solid black
+	background-color qusecondary
+	background-image url('../images/querycharselect.png')
+	background-size cover
+	border-radius 5rem
+
+
+.qu-charpagemodalcardname
+	font-family "adventureregular"
+	font-size 7.5rem
+	line-height auto
+	margin 0
+	color white
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	background-color qucolor
+	border 1rem outset qucolor
+	border-radius 2rem
+	letter-spacing .3rem
+
+.qu-backgroundcolor
+	background-color qucolor
+
+.qu-hover:hover
+	background-color qucolor
+
+/* KX classes */
+
+.kx-charpageheadshot
+	width 100%
+	border 1rem solid black
+	background-color kxsecondary
+	background-image url('../images/knoxcharselect.png')
+	background-size cover
+	border-radius 5rem
+
+
+.kx-charpagemodalcardname
+	font-family "adventureregular"
+	font-size 7.5rem
+	line-height auto
+	margin 0
+	color white
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	background-color kxcolor
+	border 1rem outset kxcolor
+	border-radius 2rem
+	letter-spacing .3rem
+
+.kx-backgroundcolor
+	background-color kxcolor
+
+.kx-hover:hover
+	background-color kxcolor
+
+/* OB classes */
+
+.ob-charpageheadshot
+	width 100%
+	border 1rem solid black
+	background-color obsecondary
+	background-image url('../images/obscuritycharselect.png')
+	background-size cover
+	border-radius 5rem
+
+
+.ob-charpagemodalcardname
+	font-family "adventureregular"
+	font-size 7.5rem
+	line-height auto
+	margin 0
+	color white
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	background-color obcolor
+	border 1rem outset obcolor
+	border-radius 2rem
+	letter-spacing .3rem
+
+.ob-backgroundcolor
+	background-color obcolor
+
+.ob-hover:hover
+	background-color obcolor
+
+/* SA classes */
+
+.sa-charpageheadshot
+	width 100%
+	border 1rem solid black
+	background-color sasecondary
+	background-image url('../images/siliconartistcharselect.png')
+	background-size cover
+	border-radius 5rem
+
+
+.sa-charpagemodalcardname
+	font-family "adventureregular"
+	font-size 7.5rem
+	line-height auto
+	margin 0
+	color white
+	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+	background-color sacolor
+	border 1rem outset sacolor
+	border-radius 2rem
+	letter-spacing .3rem
+
+.sa-backgroundcolor
+	background-color sacolor
+
+.sa-hover:hover
+	background-color sacolor
