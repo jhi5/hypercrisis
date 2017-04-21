@@ -70,6 +70,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	}
 	detectUtility = function(string){
 		if(string == 'Utility' | string == "Crossover"){
+			console.log($scope.cards[i].utilityValues);
 			return $scope.cards[i].utilityValues;
 		}else{
 			return null;
@@ -84,6 +85,9 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		}		
 		if(string == "Utility"){
 			object.typeSymbol = '../../images/utility.png';
+		}
+		if(string == "Special"){
+			object.typeSymbol = '../../images/special.png';
 		}
 		if(string == "Feat" && object.character === "Gravity Girl"){
 			object.typeSymbol = '../../images/featgg.png';
@@ -109,7 +113,6 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	}
 	createRating = function(object, array){
 		ratingSymbol = findAverage(array);
-		console.log(typeof ratingSymbol);
 		if(ratingSymbol >= 3.5){
 			object.ratingSymbol = '../../images/ratingstar.png';
 		}
