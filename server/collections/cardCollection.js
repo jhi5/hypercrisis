@@ -1833,7 +1833,7 @@ exports.defaultCards = [
 		text: "Each player returns one of their Utilities to their hand.",
 		flavor: ["So...what are you doing?"],
 		illustrations: ["../../images/sa/annoy.png"],
-		rating: ["3"],
+		rating: ["2"],
 		tags: ["disruption", "build-around", "versatile", "combo"],
 		comments: ["This can be great, but not against every character. Can reset stretches. - JM"]
 	},
@@ -1845,7 +1845,7 @@ exports.defaultCards = [
 		text: "2 damage to target player. You may destroy one of your STRETCHED! cards. If you do, return this to your hand.",
 		flavor: ["Can I have that back?"],
 		illustrations: ["../../images/sa/bodyrang.png"],
-		rating: ["3"],
+		rating: ["2"],
 		tags: ["player damage", "combo", "stretch", "aggressive"],
 		comments: ["This is a great way to race an aggressive opponent. - JM"]
 	},
@@ -1857,7 +1857,7 @@ exports.defaultCards = [
 		text: "Replace any of your STRETCHED! cards with Utilities in your hand.",
 		flavor: ["I'M MELTING! WHAT A WORLD!"],
 		illustrations: ["../../images/sa/flattenout.png"],
-		rating: ["3"],
+		rating: ["1"],
 		tags: ["combo", "stretch", 'build-around'],
 		comments: ["Great way to empty a hand. - JM"]
 	},
@@ -1869,7 +1869,7 @@ exports.defaultCards = [
 		text: "Stretch. Return one of your Utilities to your hand.",
 		flavor: ["I'm gonna origami my own butt."],
 		illustrations: ["../../images/sa/foldup.png"],
-		rating: ["2"],
+		rating: ["3"],
 		tags: ["stretch", "combo", "build-around", "versatile"],
 		comments: ["The stretch is great and you can reset what's being stretched. - JM"]
 	},
@@ -1881,7 +1881,7 @@ exports.defaultCards = [
 		text: "Stretch. Heal 2.",
 		flavor: ["Look at me, I'm Knox. I cry a lot."],
 		illustrations: ["../../images/sa/impersonate.png"],
-		rating: ["1"],
+		rating: ["4"],
 		tags: ["healing", "versatile", "defensive", "stretch", "build-around"],
 		comments: ["This is the best stretch card so far. It fits in every deck. - JM"]
 	},
@@ -1893,7 +1893,7 @@ exports.defaultCards = [
 		text: "Heal 2. Each player discards a card.",
 		flavor: ["So...y'all want to rob a bank?"],
 		illustrations: ["../../images/sa/pettycrime.png"],
-		rating: ["3"],
+		rating: ["1"],
 		tags: ["healing", "discard", "defensive", "disruption"],
 		comments: ["SA is low on Armor, so this can be subbed if you need time. - JM"]
 	},
@@ -1905,7 +1905,7 @@ exports.defaultCards = [
 		text: "Stretch. 2 damage to target player.",
 		flavor: ["I can hit you fine from over here."],
 		illustrations: ["../../images/sa/slingshotuppercut.png"],
-		rating: ["2"],
+		rating: ["3"],
 		tags: ["player damage", "aggressive", "stretch"],
 		comments: ["Very playable, even if that damage isn't always useful. - JM"]
 	},
@@ -1917,7 +1917,7 @@ exports.defaultCards = [
 		text: "Destroy any of your STRETCHED! cards. Heal 3 for each card destroyed this way.",
 		flavor: ["I'm gonna...go over here for a while."],
 		illustrations: ["../../images/sa/slinkaway.png"],
-		rating: ["2"],
+		rating: ["1"],
 		tags: ["defensive", "healing", "stretch", "combo", "build-around"],
 		comments: ["This can be a big swing, but requires some setup. - JM"]
 	},
@@ -1929,7 +1929,7 @@ exports.defaultCards = [
 		text: "2 damage to each player and Utility.",
 		flavor: ["BEE-OOO! That's a tornado siren."],
 		illustrations: ["../../images/sa/tornadoofpunches.png"],
-		rating: ["1"],
+		rating: ["4"],
 		tags: ["aggressive", "player damage", "utility damage", "versatile"],
 		comments: ["If you've got a good stretch, this could be a one-sided blowout. - JM"]
 	},
@@ -1941,7 +1941,7 @@ exports.defaultCards = [
 		text: "Stretch. Target Utility loses all of its Armor.",
 		flavor: ["Hey, how did this thing break?"],
 		illustrations: ["../../images/sa/worminto.png"],
-		rating: ["3"],
+		rating: ["1"],
 		tags: ["disruption", "armor", "aggressive", "stretch"],
 		comments: ["Sometimes great sometimes ok. Great sideboard card. - JM"]
 	},
@@ -1953,7 +1953,7 @@ exports.defaultCards = [
 		text: "Stretch. Until your next turn, your Utilities have 9 HP.",
 		flavor: [""],
 		illustrations: ["../../images/sa/invincibleskin.png"],
-		rating: ["1"],
+		rating: ["4"],
 		tags: ["stretch", "defensive", "versatile", "build-around"],
 		comments: ["Keeps your stretch setup safe for one turn. Pivotal for combos, but great anytime. - JM"]
 	},
@@ -1977,7 +1977,7 @@ exports.defaultCards = [
 		text: "Play this as a copy of any face-up Feat owned by another player.",
 		flavor: [""],
 		illustrations: ["../../images/sa/mimicry.png"],
-		rating: ["2"],
+		rating: ["1"],
 		tags: ["disruption", "versatile", "combo"],
 		comments: ["Volatile card. Don't be afraid to use it early. - JM"]
 	},
@@ -1989,7 +1989,7 @@ exports.defaultCards = [
 		text: "Each of your Utilities gets +2 Armor.",
 		flavor: [""],
 		illustrations: ["../../images/sa/pullingshapes.png"],
-		rating: ["3"],
+		rating: ["2"],
 		tags: ["defensive", "armor"],
 		comments: ["This can be a good buffer, but is quite unreliable once stretch chains get broken. - JM"]
 	},
@@ -2001,7 +2001,7 @@ exports.defaultCards = [
 		text: "Stretch twice.",
 		flavor: [""],
 		illustrations: ["../../images/sa/spreadthin.png"],
-		rating: ["2"],
+		rating: ["3"],
 		tags: ["stretch", "versatile", "build-around", "combo"],
 		comments: ["This isn't always easy to get full value with, but can be very powerful. Try a Long Con... - JM"]
 	},
@@ -2013,7 +2013,7 @@ exports.defaultCards = [
 		text: "This is a copy of the card to its right. When this is destoryed, place it under your Character card.",
 		flavor: [""],
 		illustrations: ["../../images/sa/stretched.png"],
-		rating: ["1"],
+		rating: ["4"],
 		tags: ["stretch", "combo", "build-around"],
 		comments: ["This card wins you games. Keep it safe and don't be afraid to cash them in. - JM"]
 	},
@@ -2025,7 +2025,7 @@ exports.defaultCards = [
 		text: "At the end of your turn, you may destroy this. If you do, draw a card.",
 		flavor: ["Ha ha! It popped! Gross!"],
 		illustrations: ["../../images/sa/ballooningbicep.png"],
-		rating: ["2"],
+		rating: ["3"],
 		tags: ["card draw", "aggressive"],
 		comments: ["3 fight does a lot of work. Stretch to fill up your hand. - JM"]
 	},
@@ -2037,7 +2037,7 @@ exports.defaultCards = [
 		text: "Whenever this deals damage to a Utility, that Utility gets -3 Armor.",
 		flavor: ["Remind me not to scratch myself."],
 		illustrations: ["../../images/sa/drillfingers.png"],
-		rating: ["4"],
+		rating: ["1"],
 		tags: ["armor", "disruption", "aggressive"],
 		comments: ["I don't usually run this, but it can crack open defensive decks. - JM"]
 	},
@@ -2049,7 +2049,7 @@ exports.defaultCards = [
 		text: "At the end of your turn, each player discards a card.",
 		flavor: ["Wanna thumb wrestle?"],
 		illustrations: ["../../images/sa/firmgrasp.png"],
-		rating: ["2"],
+		rating: ["3"],
 		tags: ["discard", "disruption", "aggressive"],
 		comments: ["Very very aggressive. Make sure you can stretch this safely. - JM"]
 	},
@@ -2061,7 +2061,7 @@ exports.defaultCards = [
 		text: "At the end of your turn, this gets +1 Armor.",
 		flavor: ["What? Why wouldn't you want to hide under my skin?"],
 		illustrations: ["../../images/sa/fleshplate.png"],
-		rating: ["3"],
+		rating: ["2"],
 		tags: ["defensive", "build-around", "armor"],
 		comments: ["Gives stretch builds some defensive options. Neat card. - JM"]
 	},
@@ -2073,7 +2073,7 @@ exports.defaultCards = [
 		text: "When you play this, draw a card for each STRETCHED! card you own.",
 		flavor: ["Not that I'm going to."],
 		illustrations: ["../../images/sa/icanstopanytime.png"],
-		rating: ["3"],
+		rating: ["1"],
 		tags: ["card draw", "versatile", "stretch"],
 		comments: ["Not useful in every deck, but a great early play. - JM"]
 	},
@@ -2085,7 +2085,7 @@ exports.defaultCards = [
 		text: "At the end of your turn, if you control 3 cards named Long Con, 3 damage to target opponent.",
 		flavor: ["See what I did there?"],
 		illustrations: ["../../images/sa/longcon.png"],
-		rating: ["1"],
+		rating: ["4"],
 		tags: ["combo", "player damage", "build-around"],
 		comments: ["Can drag you out some of holes with very little work. Does not stick around very long. - JM"]
 	},
@@ -2097,7 +2097,7 @@ exports.defaultCards = [
 		text: "Whenever this deals damage to a Utility, place the top card of your discard pile on the top of your deck.",
 		flavor: ["Jackpot."],
 		illustrations: ["../../images/sa/skeletonkey.png"],
-		rating: ["2"],
+		rating: ["3"],
 		tags: ["defensive", "versatile"],
 		comments: ["This isn't going to play well in an aggressive deck, but this effect is stronger than healing. - JM"]
 	},
@@ -2109,7 +2109,7 @@ exports.defaultCards = [
 		text: "Damage this deals to players cannot be blocked by Armor.",
 		flavor: ["Oh weird, they kinda feel like uncooked bacon."],
 		illustrations: ["../../images/sa/skinwings.png"],
-		rating: ["2"],
+		rating: ["4"],
 		tags: ["aggressive", "armor", "disruption"],
 		comments: ["The 3 fight can be brutal. Must-play in aggressive builds. - JM"]
 	},
@@ -2121,7 +2121,7 @@ exports.defaultCards = [
 		text: "At the beginning of your turn, each player draws a card.",
 		flavor: ["So look, I have personal space issues."],
 		illustrations: ["../../images/sa/tiedtogether.png"],
-		rating: ["3"],
+		rating: ["2"],
 		tags: ["combo", "build-around", "defensive"],
 		comments: ["You can absolutely use this to draw the other player out. Needs healing to work. - JM"]
 	},
