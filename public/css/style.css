@@ -1104,3 +1104,95 @@ body {
   border-bottom: 1rem solid #000;
   background-color: #093;
 }
+.form-group label {
+  width: 100%;
+  background-color: DodgerBlue;
+  color: White;
+  border: 0.25rem solid DodgerBlue;
+  border-radius: 1rem;
+  font-size: 2.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+.form-group input {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Adventure";
+  font-size: 5rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.form-group select {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.form-group {
+  font-family: Adventure;
+  width: 100%;
+}
+.form-group option {
+  font-size: 2.5rem;
+}
+.form-group select {
+  font-size: 3rem;
+  padding-left: 1rem;
+}
+select {
+  text-align-last: center;
+  text-align: center;
+  border-left: 0.5rem solid DodgerBlue;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+#commentfield {
+  background-color: #fff;
+  border-left: 0.5rem solid DodgerBlue;
+  font-family: Verdana;
+  padding-left: 0.5rem;
+  font-size: 2.5rem;
+}
+.full-input {
+  width: 100%;
+}
+.feedbackbutton {
+  padding: 1rem;
+  font-family: "Adventure";
+  font-size: 4rem;
+  margin-top: 2rem;
+  width: 95%;
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.feedbackbutton:hover {
+  background-color: Red;
+  color: #fff;
+}
+.feedbackbutton:focus {
+  color: #fff;
+}
+legend {
+  text-align: center;
+  font-family: "Okuda";
+  font-size: 5rem;
+}
+.feedbackheading {
+  font-family: 'Adventure';
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.25rem 0.25rem 0.25rem #000;
+  letter-spacing: 0.5rem;
+}
+.feedbacksubheading {
+  font-family: 'Okuda';
+  color: #000;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5rem;
+}

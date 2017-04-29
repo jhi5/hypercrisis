@@ -1,105 +1,75 @@
-.container
-	.row
-			form.form-horizontal(name='feedbackForm')
-				fieldset
-					.col-md-12.text-center
-						legend Submit Your Playtest Data!
+.container-fluid.charpagebg
+	.container
+		form.form-horizontal(name="feedbackForm")
+			fieldset
+				h5.feedbackheading Your Feedback Makes The Game Better! 
+				h4.feedbacksubheading Please fill out this quick form after playing.					
+				.row
+					.col-md-6
 						.form-group
-							label.control-label(for='character').formlabel Which Character Did You Play As? &nbsp;
-								select(name='character').formfield
-									option(value='GG') Gravity Girl
-									option(value='RB') Robonobo
-									option(value='DE') Deadeye
-									option(value='QU') Query
-									option(value='KN') Knox
-									option(value='OB') Obscurity
-									option(value="SA") Silicon Artist
-					.col-md-12.text-center
+							label.col-md-12.control-label(for='character') Character Select
+							.col-md-12
+								select.full-input(name='character', type='text', placeholder='Choose Your Character', ng-model='character', required)
+									option(ng-repeat='char in characterChoices' value="{{char}}") {{char}}
+						.row
+							.col-md-6
+								.form-group
+									label.col-md-12.control-label(for='gamesWon') Games Won Of
+									.col-md-12
+										input.form-control(name='gamesWon', type='number', placeholder='gamesWon', ng-model='gamesWon', required)
+							.col-md-6
+								.form-group
+									label.col-md-12.control-label(for='gamesPlayed') Games Played
+									.col-md-12
+										input.form-control(name='gamesPlayed', type='number', placeholder='gamesPlayed', ng-model='gamesPlayed', required)						
 						.form-group
-							label.control-label(for='gamesWon').formlabel How Many Games Did You Play? &nbsp; 
-								input(type='number' name='gamesPlayed' min='1' max='20').formfield
-							br
-							label.control-label(for='gamesPlayed').formlabel How Many Of Them Did You Win? &nbsp; 
-								input(type='number' name='gamesWon' min='1' max='20').formfield
-					.col-md-12.text-center
+							label.col-md-12.control-label(for='crossover') Top 5 Crossovers?
+							.col-md-12.cross-field
+								select.full-input#cross1(name='crossover', type='text', placeholder='Crossover', ng-model='cross1', required)
+									option(ng-repeat='cross in crossoverChoices | filter:crossFilter1' value="{{cross}}") {{cross}}
+							.col-md-12.cross-field
+								select.full-input#cross2(name='crossover', type='text', placeholder='Crossover', ng-model='cross2', required)
+									option(ng-repeat='cross in crossoverChoices | filter:crossFilter2' value="{{cross}}") {{cross}}
+							.col-md-12.cross-field
+								select.full-input#cross3(name='crossover', type='text', placeholder='Crossover', ng-model='cross3', required)
+									option(ng-repeat='cross in crossoverChoices | filter:crossFilter3' value="{{cross}}") {{cross}}
+							.col-md-12.cross-field
+								select.full-input#cross4(name='crossover', type='text', placeholder='Crossover', ng-model='cross4', required)
+									option(ng-repeat='cross in crossoverChoices | filter:crossFilter4' value="{{cross}}") {{cross}}
+							.col-md-12.cross-field
+								select.full-input#cross5(name='crossover', type='text', placeholder='Crossover', ng-model='cross5', required)
+									option(ng-repeat='cross in crossoverChoices | filter:crossFilter5' value="{{cross}}") {{cross}}
 						.form-group
-							label.control-label(for='crossover').formlabel What Were The Best Crossovers? &nbsp;
-								br
-								select(name='character').formfield
-									option(value='GG') Gravity Girl
-									option(value='RB') Robonobo
-									option(value='DE') Deadeye
-									option(value='QU') Query
-									option(value='KN') Knox
-									option(value='OB') Obscurity
-									option(value="SA") Silicon Artist
-								&nbsp;
-								select(name='character').formfield
-									option(value='GG') Gravity Girl
-									option(value='RB') Robonobo
-									option(value='DE') Deadeye
-									option(value='QU') Query
-									option(value='KN') Knox
-									option(value='OB') Obscurity
-									option(value="SA") Silicon Artist
-								&nbsp;
-								select(name='character').formfield
-									option(value='GG') Gravity Girl
-									option(value='RB') Robonobo
-									option(value='DE') Deadeye
-									option(value='QU') Query
-									option(value='KN') Knox
-									option(value='OB') Obscurity
-									option(value="SA") Silicon Artist
-					.form-group
-						label.control-label(for='feats') Feats
-							select(name='feat1')
-								option(value='F01') Feat 1
-								option(value='F02') Feat 2
-								option(value='F03') Feat 3
-								option(value='FO4') Feat 4
-								option(value='FO5') Feat 5
-							select(name='feat2')
-								option(value='F01') Feat 1
-								option(value='F02') Feat 2
-								option(value='F03') Feat 3
-								option(value='FO4') Feat 4
-								option(value='FO5') Feat 5
-							select(name='feat3')
-								option(value='F01') Feat 1
-								option(value='F02') Feat 2
-								option(value='F03') Feat 3
-								option(value='FO4') Feat 4
-								option(value='FO5') Feat 5
-					.form-group
-						label.control-label(for='card1') Card 1
-							select(name='card1')
-								option(value='D01') Card 1
-								option(value='D02') Card 2
-								option(value='D03') Card 3
-								option(value='DO4') Card 4
-								option(value='DO5') Card 5
-							input(type='text' name='card1comment')
-						label.control-label(for='card2') Card 2
-							select(name='card2')
-								option(value='D01') Card 1
-								option(value='D02') Card 2
-								option(value='D03') Card 3
-								option(value='DO4') Card 4
-								option(value='DO5') Card 5
-							input(type='text' name='card2comment')
-						label.control-label(for='card3') Card 3
-							select(name='card3')
-								option(value='D01') Card 1
-								option(value='D02') Card 2
-								option(value='D03') Card 3
-								option(value='DO4') Card 4
-								option(value='DO5') Card 5
-							input(type='text' name='card3comment')
-					.form-group
-						label.control-label(for='comments') Do you have any other comments for our developers?
-							input(type='text' name='playerComment')
-					button.btn.btn-success.btn-block(ng-disabled='feedbackForm.$invalid') Submit
-
-
-
+							label.col-md-12.control-label(for='comment') Any Comments?
+							.col-md-12
+								textarea.form-control#commentfield(rows='1' ng-model='comment')
+					.col-md-6
+						.form-group
+							label.col-md-12.control-label(for='feat') Top 3 Feats
+							.col-md-12
+								select.full-input#feat1(name='feat', type='text', placeholder='Feat', ng-model='feat1', required)
+									option(ng-repeat='feat in featChoices | filter:featFilter1' value="{{feat[0]}}") {{feat[0]}}
+							.col-md-12
+								select.full-input#feat2(name='feat', type='text', placeholder='Feat', ng-model='feat2', required)
+									option(ng-repeat='feat in featChoices | filter:featFilter2' value="{{feat[0]}}") {{feat[0]}}
+							.col-md-12
+								select.full-input#feat3(name='feat', type='text', placeholder='Feat', ng-model='feat3', required)
+									option(ng-repeat='feat in featChoices | filter:featFilter3' value="{{feat[0]}}") {{feat[0]}}
+						.form-group
+							label.col-md-12.control-label(for='deck') Top 5 Actions & Utilities
+							.col-md-12
+								select.full-input#deck1(name='deck', type='text', placeholder='Deck', ng-model='deck1', required)
+									option(ng-repeat='deck in deckChoices | filter:deckFilter1' value="{{deck[0]}}") {{deck[0]}}
+							.col-md-12
+								select.full-input#deck2(name='deck', type='text', placeholder='Deck', ng-model='deck2', required)
+									option(ng-repeat='deck in deckChoices | filter:deckFilter2' value="{{deck[0]}}") {{deck[0]}}
+							.col-md-12
+								select.full-input#deck3(name='deck', type='text', placeholder='Deck', ng-model='deck3', required)
+									option(ng-repeat='deck in deckChoices | filter:deckFilter3' value="{{deck[0]}}") {{deck[0]}}
+							.col-md-12
+								select.full-input#deck4(name='deck', type='text', placeholder='Deck', ng-model='deck4', required)
+									option(ng-repeat='deck in deckChoices | filter:deckFilter4' value="{{deck[0]}}") {{deck[0]}}
+							.col-md-12
+								select.full-input#deck5(name='deck', type='text', placeholder='Deck', ng-model='deck5', required)
+									option(ng-repeat='deck in deckChoices | filter:deckFilter5' value="{{deck[0]}}") {{deck[0]}}
+						button.btn.btn-block.feedbackbutton(ng-click='submitFeedback()') SUBMIT!
