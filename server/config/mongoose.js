@@ -1,7 +1,8 @@
 /* mongoose & data model includes */
 var mongoose = require('mongoose'),
 	cardModel = require('../models/cardModel'),
-	articleModel = require('../models/articleModel');
+	articleModel = require('../models/articleModel'),
+	feedbackModel = require('../models/feedbackModel');
 
 /* creates the mongo instance & connects */
 module.exports = function(config){

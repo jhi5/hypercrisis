@@ -3,7 +3,7 @@ var articles = require('../controllers/articleController'),
 	feedback = require('../controllers/feedbackController'),
 	mongoose = require('mongoose'),
 	cardModel = mongoose.model("Cards"),
-	articleModel = mongoose.model("Articles");
+	articleModel = mongoose.model("Articles"),
 	feedbackModel = mongoose.model("Feedback");
 
 module.exports = function(app){
