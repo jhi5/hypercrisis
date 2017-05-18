@@ -247,6 +247,47 @@ body {
 .characterselectbasic {
   background: none;
 }
+.charselectbg {
+  background-image: url("../images/defaultbg.png");
+}
+.charselectroster {
+  background-color: #fff;
+  border-left: 1rem solid #000;
+  border-right: 1rem solid #000;
+  border-top: none;
+  border-bottom: 1rem solid #000;
+  box-shadow: 1rem 1rem 1rem #000;
+  min-height: 92.5vh;
+  margin-bottom: 0rem;
+  padding-top: 4rem;
+}
+.charselectoval {
+  height: 25rem;
+  width: 25rem;
+  margin-top: 2rem;
+  margin-right: 1rem;
+  border: 1.5rem outset #000;
+  border-radius: 1rem;
+}
+.charselectnamedefault {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: DodgerBlue;
+}
+#charselecttitle {
+  font-size: 15rem;
+  font-family: 'Okuda';
+  margin-top: 0rem;
+  color: #fff;
+  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444;
+}
+.charselecttitle {
+  background-color: none;
+}
 /* charpage */
 .charpagebg {
   background-image: url("../images/defaultbg.png");
@@ -728,27 +769,209 @@ body {
   margin-left: 8%;
   margin-right: 8%;
 }
+/* Feedback Form */
+.form-group label {
+  width: 100%;
+  background-color: DodgerBlue;
+  color: White;
+  border: 0.25rem solid DodgerBlue;
+  border-radius: 1rem;
+  font-size: 2.75rem;
+  font-weight: bold;
+  text-align: center;
+}
+.form-group input {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  font-family: "Adventure";
+  font-size: 5rem;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 1rem;
+}
+.form-group select {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  text-align: center;
+}
+.form-group {
+  font-family: Adventure;
+  width: 100%;
+}
+.form-group option {
+  font-size: 2.5rem;
+}
+.form-group select {
+  font-size: 3rem;
+  padding-left: 1rem;
+}
+select {
+  text-align-last: center;
+  text-align: center;
+  border-left: 0.5rem solid DodgerBlue;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+#commentfield {
+  background-color: #fff;
+  border-left: 0.5rem solid DodgerBlue;
+  font-family: Verdana;
+  padding-left: 0.5rem;
+  font-size: 2.5rem;
+}
+.full-input {
+  width: 100%;
+}
+.feedbackbutton {
+  padding: 1rem;
+  font-family: "Adventure";
+  font-size: 4rem;
+  margin-top: 2rem;
+  width: 95%;
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.feedbackbutton:hover {
+  background-color: Red;
+  color: #fff;
+}
+.feedbackbutton:focus {
+  color: #fff;
+}
+legend {
+  text-align: center;
+  font-family: "Okuda";
+  font-size: 5rem;
+}
+.feedbackheading {
+  font-family: 'Adventure';
+  color: #fff;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 0rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.25rem 0.25rem 0.25rem #000;
+  letter-spacing: 0.5rem;
+}
+.feedbacksubheading {
+  font-family: 'Okuda';
+  color: #000;
+  font-size: 4rem;
+  text-align: center;
+  margin-top: 0rem;
+  margin-bottom: 0.5rem;
+  letter-spacing: 0.5rem;
+}
 /* articleselect */
 /* articles */
-.favfivecarddesc {
-  color: #fff;
-  text-shadow: 0.05rem 0.25rem 0.25rem #000;
-  font-size: 4rem;
-  font-family: 'okuda';
-  display: inline-block;
+.articlebg {
+  background-image: url("../images/defaultbg.png");
+  background-attachment: fixed;
+  background-repeat: none;
+  background-size: cover;
+  margin-top: 1rem;
+}
+.articlecontainerbg {
+  background-color: #fff;
+  border: 0.5rem solid #000;
 }
 .articlebanner {
-  border: 1rem solid #000;
+  margin-top: 1rem;
+  border-radius: 2%;
+  width: 98%;
+  margin: 1%;
+  margin-top: 1rem;
+  text-align: center;
+}
+.articlemasthead {
+  background-color: #336;
+  border-radius: 1rem;
+  width: 100%;
+  margin: auto 0;
+  margin-top: 1rem;
+}
+.articletitle {
+  font-family: Adventure;
+  font-size: 36px;
+  color: #fff;
+  margin-top: 0rem;
+  padding-top: 0rem;
+  padding-right: 1rem;
+  text-align: right;
+  padding-bottom: 0rem;
   margin-bottom: 0rem;
-  width: 100%;
 }
-.favfiveimage {
-  border-radius: 4rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  width: 100%;
+.articleauthor {
+  font-family: Okuda;
+  color: #fff;
+  font-size: 36px;
+  margin-top: 0rem;
+  padding-top: 0rem;
+  padding-bottom: 0.5rem;
+  padding-right: 1.5rem;
+  text-align: right;
 }
-/* GG classes */
+.articleheading {
+  font-size: 28px;
+  text-align: left;
+  color: #fff;
+  background-color: DodgerBlue;
+  padding: 1rem;
+  text-indent: 50px;
+  margin-bottom: 2rem;
+}
+.articletext {
+  font-size: 15px;
+  text-align: left;
+  text-indent: 50px;
+}
+.articlevertimg {
+  width: 250px;
+  height: 350px;
+}
+.articlehorzimg {
+  width: 350px;
+  height: 250px;
+}
+.articleskillheading {
+  font-size: 36px;
+}
+.articleskilltext {
+  font-size: 20px;
+  text-align: center;
+}
+.articlefiveheading {
+  font-family: Adventure;
+  font-size: 36px;
+}
+.articlefivetext {
+  font-size: 20px;
+}
+.articlefivevertimg {
+  width: 250px;
+  height: 350px;
+}
+.articlefivehorzimg {
+  width: 350px;
+  height: 250px;
+}
+.articlerow {
+  width: 99%;
+  margin: 0.5%;
+}
+.articleskillpanel {
+  color: #fff;
+  width: 50%;
+  margin-top: 2rem;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 2rem;
+  border-radius: 3%;
+}
+.articlecardpanel {
+  min-height: 500px;
+  line-height: 50%;
+}
 .gg-charpageheadshot {
   width: 100%;
   border: 1rem solid #000;
@@ -936,263 +1159,4 @@ body {
 }
 .sa-hover:hover {
   background-color: #093;
-}
-.charselectbg {
-  background-image: url("../images/defaultbg.png");
-}
-.charselectroster {
-  background-color: #fff;
-  border-left: 1rem solid #000;
-  border-right: 1rem solid #000;
-  border-top: none;
-  border-bottom: 1rem solid #000;
-  box-shadow: 1rem 1rem 1rem #000;
-  min-height: 92.5vh;
-  margin-bottom: 0rem;
-  padding-top: 4rem;
-}
-.charselectoval {
-  height: 25rem;
-  width: 25rem;
-  margin-top: 2rem;
-  margin-right: 1rem;
-  border: 1.5rem outset #000;
-  border-radius: 1rem;
-}
-.charselectnamedefault {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: DodgerBlue;
-}
-#charselecttitle {
-  font-size: 15rem;
-  font-family: 'Okuda';
-  margin-top: 0rem;
-  color: #fff;
-  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444;
-}
-.charselecttitle {
-  background-color: none;
-}
-.de-charselectoval:hover {
-  border: 2rem outset #336;
-  border-radius: 1rem;
-}
-.de-charselectoval {
-  min-height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.de-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #336;
-}
-.gg-charselectoval:hover {
-  border: 2rem outset #969;
-  border-radius: 1rem;
-}
-.gg-charselectoval {
-  min-height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.gg-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #969;
-}
-.kx-charselectoval:hover {
-  border: 2rem outset #633;
-  border-radius: 1rem;
-}
-.kx-charselectoval {
-  min-height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.kx-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #633;
-}
-.ob-charselectoval:hover {
-  border: 2rem outset #c69;
-  border-radius: 1rem;
-}
-.ob-charselectoval {
-  min-height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.ob-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #c69;
-}
-.qu-charselectoval:hover {
-  border: 2rem outset #363;
-  border-radius: 1rem;
-}
-.qu-charselectoval {
-  min-height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.qu-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #363;
-}
-.rb-charselectoval:hover {
-  border: 2rem outset #666;
-  border-radius: 1rem;
-}
-.rb-charselectoval {
-  min-height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.rb-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #666;
-}
-.sa-charselectoval:hover {
-  border: 2rem outset #093;
-  border-radius: 1rem;
-}
-.sa-charselectoval {
-  min-height: 100%;
-  background-size: 100%;
-  background-repeat: no-repeat;
-}
-.sa-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #093;
-}
-.form-group label {
-  width: 100%;
-  background-color: DodgerBlue;
-  color: White;
-  border: 0.25rem solid DodgerBlue;
-  border-radius: 1rem;
-  font-size: 2.75rem;
-  font-weight: bold;
-  text-align: center;
-}
-.form-group input {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  font-family: "Adventure";
-  font-size: 5rem;
-  text-align: center;
-  background-color: #fff;
-  border-radius: 1rem;
-}
-.form-group select {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  text-align: center;
-}
-.form-group {
-  font-family: Adventure;
-  width: 100%;
-}
-.form-group option {
-  font-size: 2.5rem;
-}
-.form-group select {
-  font-size: 3rem;
-  padding-left: 1rem;
-}
-select {
-  text-align-last: center;
-  text-align: center;
-  border-left: 0.5rem solid DodgerBlue;
-  border-top-right-radius: 1rem;
-  border-bottom-right-radius: 1rem;
-}
-#commentfield {
-  background-color: #fff;
-  border-left: 0.5rem solid DodgerBlue;
-  font-family: Verdana;
-  padding-left: 0.5rem;
-  font-size: 2.5rem;
-}
-.full-input {
-  width: 100%;
-}
-.feedbackbutton {
-  padding: 1rem;
-  font-family: "Adventure";
-  font-size: 4rem;
-  margin-top: 2rem;
-  width: 95%;
-  background-color: DodgerBlue;
-  color: #fff;
-}
-.feedbackbutton:hover {
-  background-color: Red;
-  color: #fff;
-}
-.feedbackbutton:focus {
-  color: #fff;
-}
-legend {
-  text-align: center;
-  font-family: "Okuda";
-  font-size: 5rem;
-}
-.feedbackheading {
-  font-family: 'Adventure';
-  color: #fff;
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 1rem;
-  margin-bottom: 0rem;
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.25rem 0.25rem 0.25rem #000;
-  letter-spacing: 0.5rem;
-}
-.feedbacksubheading {
-  font-family: 'Okuda';
-  color: #000;
-  font-size: 4rem;
-  text-align: center;
-  margin-top: 0rem;
-  margin-bottom: 0.5rem;
-  letter-spacing: 0.5rem;
 }
