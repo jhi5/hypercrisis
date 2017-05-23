@@ -1,46 +1,46 @@
 //fonts
 
 @font-face
-    font-family 'okudabold_italic'
-    src url('okuda_bold_italic-webfont.woff2') format('woff2'),
-         url('okuda_bold_italic-webfont.woff') format('woff')
-    font-weight normal
-    font-style normal
+	font-family 'okudabold_italic'
+	src url('okuda_bold_italic-webfont.woff2') format('woff2'),
+		 url('okuda_bold_italic-webfont.woff') format('woff')
+	font-weight normal
+	font-style normal
 
 @font-face
-    font-family 'okudabold'
-    src url('okuda_bold-webfont.woff2') format('woff2'),
-         url('okuda_bold-webfont.woff') format('woff')
-    font-weight normal
-    font-style normal
+	font-family 'okudabold'
+	src url('okuda_bold-webfont.woff2') format('woff2'),
+		 url('okuda_bold-webfont.woff') format('woff')
+	font-weight normal
+	font-style normal
 
 @font-face
-    font-family 'okudaitalic'
-    src url('okuda_italic-webfont.woff2') format('woff2'),
-         url('okuda_italic-webfont.woff') format('woff')
-    font-weight normal
-    font-style normal
+	font-family 'okudaitalic'
+	src url('okuda_italic-webfont.woff2') format('woff2'),
+		 url('okuda_italic-webfont.woff') format('woff')
+	font-weight normal
+	font-style normal
 
 @font-face
-    font-family 'okudaregular'
-    src url('okuda-webfont.woff2') format('woff2'),
-         url('okuda-webfont.woff') format('woff')
-    font-weight normal
-    font-style normal
+	font-family 'okudaregular'
+	src url('okuda-webfont.woff2') format('woff2'),
+		 url('okuda-webfont.woff') format('woff')
+	font-weight normal
+	font-style normal
 
 @font-face
-    font-family 'adventure_hollowregular'
-    src url('adventure_hollow-webfont.woff2') format('woff2'),
-         url('adventure_hollow-webfont.woff') format('woff')
-    font-weight normal
-    font-style normal
+	font-family 'adventure_hollowregular'
+	src url('adventure_hollow-webfont.woff2') format('woff2'),
+		 url('adventure_hollow-webfont.woff') format('woff')
+	font-weight normal
+	font-style normal
 
 @font-face
-    font-family 'adventureregular'
-    src url('adventure-webfont.woff2') format('woff2'),
-         url('adventure-webfont.woff') format('woff')
-    font-weight normal
-    font-style normal
+	font-family 'adventureregular'
+	src url('adventure-webfont.woff2') format('woff2'),
+		 url('adventure-webfont.woff') format('woff')
+	font-weight normal
+	font-style normal
 
 /* variables */
 
@@ -64,11 +64,11 @@ characterpagebg = url('../images/charpagebg.png')
 /* common */
 
 body
-    padding-top 8rem
+	padding-top 8rem
 
 @media screen and (max-width: 768px)
-    body
-        padding-top 8rem
+	body
+		padding-top 8rem
 
 .modal-admin
 	background-color white
@@ -918,6 +918,7 @@ legend
 	width 100%
 	margin auto 0
 	margin-top 1rem
+	margin-bottom 0rem
 
 .articletitle
 	font-family Adventure
@@ -941,56 +942,126 @@ legend
 	text-align right
 
 .articleheading
-	font-size 28px
+	font-size 36px
 	text-align left
 	color white
 	background-color DodgerBlue
 	padding 1rem
-	text-indent 50px
+	text-indent 15px
 	margin-bottom 2rem
+	margin-top 0rem
+	font-family okuda
+	font-styling italic
+	letter-spacing .5rem
 
 .articletext
 	font-size 15px
 	text-align left
-	text-indent 50px
+	padding 0 2% 0 2%
+	margin-top .5rem 0 .5rem 0
 
 .articlevertimg
 	width 250px
 	height 350px
+	border-radius 3%
+	margin-bottom 1%
 
 .articlehorzimg
-	width 350px
-	height 250px
+	width 425px
+	height 325px
+	border-radius 3%
+	margin-top 4.5% 
+	margin-bottom 4.5%
 
 .articleskillheading
 	font-size 36px
 
+.articleskillpanel
+	border-top solid .1rem DodgerBlue
+	border-bottom solid .1rem DodgerBlue
+
+.articlevertcardheading
+	font-size 36px
+	background-color DodgerBlue
+	color white
+	font-family Adventure
+	padding 1.5%
+	line-spacing 1rem
+
+.articlehorzcardheading
+	font-size 36px
+	background-color DodgerBlue
+	color white
+	font-family Adventure
+	padding 1.5%
+
 .articleskilltext
-	font-size 20px
+	font-size 25px
 	text-align center
+	margin-bottom 2%
+	font-family Okuda
+	color grey
+	width 80%
+	margin-left 10%
+	margin-right 10%
+
+.articleskillrow
+	width 60%
+	margin-left 20%
+	margin-right 20%
+	margin-top 2.5%
+	margin-bottom 2.5%
 
 .articlefiveheading
 	font-family Adventure
 	font-size 36px
+	background-color DodgerBlue
+	color white
+	padding 1.5%
+	margin-top 12.5%
+	border-radius 3%
 
 .articlefivetext
 	font-size 20px
 	
 .articlefivevertimg
-	width 250px
-	height 350px
+	width 275px
+	height 375px
+	border-radius 3%
+	margin-top 4.5%
+	margin-bottom 4.5%	
 
 .articlefivehorzimg
-	width 350p1x
-	height 250px
+	width 375px
+	height 275px
+	border-radius 3%
+	margin-top 9.5% 
+	margin-bottom 4.5%
+
+.articlefivepanel
+	min-height 400px
+	line-height 50%
+
+.articlefiverow
+	width 99%
+	margin .5%
+	margin-top 0%
+	margin-bottom 0%
+	border-bottom solid .1rem DodgerBlue
 
 .articlerow
 	width 99%
 	margin .5%
 
 .articlecardpanel
-	min-height 500px
+	min-height 400px
 	line-height 50%
+
+.articlecardrow
+	background-color white
+	border-radius 3%
+	margin-top 2%
+	margin-bottom 3.5%
 
 .gg-charpageheadshot
 	width 100%
