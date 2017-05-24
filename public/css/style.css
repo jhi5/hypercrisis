@@ -936,13 +936,14 @@ legend {
   height: 350px;
   border-radius: 3%;
   margin-bottom: 1%;
+  box-shadow: 4px 4px 2px #808080;
 }
 .articlehorzimg {
-  width: 425px;
-  height: 325px;
+  width: 375px;
+  height: 275px;
   border-radius: 3%;
-  margin-top: 4.5%;
-  margin-bottom: 4.5%;
+  margin-bottom: 1%;
+  box-shadow: 4px 4px 2px #808080;
 }
 .articleskillheading {
   font-size: 36px;
@@ -1001,13 +1002,15 @@ legend {
   border-radius: 3%;
   margin-top: 4.5%;
   margin-bottom: 4.5%;
+  box-shadow: 4px 4px 2px #808080;
 }
 .articlefivehorzimg {
   width: 375px;
   height: 275px;
   border-radius: 3%;
   margin-top: 9.5%;
-  margin-bottom: 4.5%;
+  margin-bottom: 0;
+  box-shadow: 4px 4px 2px #808080;
 }
 .articlefivepanel {
   min-height: 400px;
@@ -1027,6 +1030,18 @@ legend {
 .articlecardpanel {
   min-height: 400px;
   line-height: 50%;
+}
+.articleindextitle {
+  font-family: Okuda;
+  font-size: 36px;
+  text-align: center;
+  color: #000;
+  margin-bottom: 1.5rem;
+  margin-top: 0rem;
+}
+.articleindeximage {
+  margin-bottom: 0rem;
+  border-radius: 3%;
 }
 .articlecardrow {
   background-color: #fff;
@@ -1060,6 +1075,15 @@ legend {
 .gg-hover:hover {
   background-color: #969;
 }
+.gg-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #969;
+}
 /* RB classes */
 .rb-charpageheadshot {
   width: 100%;
@@ -1085,6 +1109,15 @@ legend {
   background-color: #666;
 }
 .rb-hover:hover {
+  background-color: #666;
+}
+.rb-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
   background-color: #666;
 }
 /* DE classes */
@@ -1114,6 +1147,15 @@ legend {
 .de-hover:hover {
   background-color: #336;
 }
+.de-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #336;
+}
 /* QU classes */
 .qu-charpageheadshot {
   width: 100%;
@@ -1139,6 +1181,15 @@ legend {
   background-color: #363;
 }
 .qu-hover:hover {
+  background-color: #363;
+}
+.qu-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
   background-color: #363;
 }
 /* KX classes */
@@ -1168,6 +1219,15 @@ legend {
 .kx-hover:hover {
   background-color: #633;
 }
+.kx-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #633;
+}
 /* OB classes */
 .ob-charpageheadshot {
   width: 100%;
@@ -1195,6 +1255,15 @@ legend {
 .ob-hover:hover {
   background-color: #c69;
 }
+.ob-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
+  background-color: #c69;
+}
 /* SA classes */
 .sa-charpageheadshot {
   width: 100%;
@@ -1220,5 +1289,14 @@ legend {
   background-color: #093;
 }
 .sa-hover:hover {
+  background-color: #093;
+}
+.sa-charname {
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
+  width: 100%;
+  margin-top: 5rem;
+  margin-bottom: 0rem;
+  border-top: 1rem solid #000;
+  border-bottom: 1rem solid #000;
   background-color: #093;
 }
