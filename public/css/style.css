@@ -1300,3 +1300,30 @@ legend {
   border-bottom: 1rem solid #000;
   background-color: #093;
 }
+.downloadheading {
+  font-size: 100px;
+  text-align: center;
+  color: DodgerBlue;
+  padding: 1rem;
+  margin-top: 0rem;
+  font-family: okuda;
+  font-styling: italic;
+  letter-spacing: 0.5rem;
+}
+.downloadtext {
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 2% 0 2%;
+  margin-top: 0.5rem 0 0.5rem 0;
+}
+.downloadbutton {
+  font-family: Okuda;
+  background-color: DodgerBlue;
+  color: #fff;
+  border-radius: 2rem;
+  font-size: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  margin-top: 1.25rem;
+  margin-bottom: 0rem;
+}
