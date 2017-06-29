@@ -264,8 +264,7 @@ body {
 .charselectoval {
   height: 25rem;
   width: 25rem;
-  margin-top: 2rem;
-  margin-right: 1rem;
+  margin-right: 0.25rem;
   border: 1.5rem outset #000;
   border-radius: 1rem;
 }
