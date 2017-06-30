@@ -2,24 +2,55 @@ div.charselectbg
 	.container.text-center
 		.row.charselectroster
 			.col-md-12
+				br
 				.col-md-6.articlecardpanel
-					img(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/deadeyecharselect.jpg" onClick='location.href="../characters/deadeye"')
-				.col-md-6.articlecardpanel
-					h1 DEADEYE
-					h3 THE SINISTER SNIPER
-					col-md-12
-						img.charpagedifficulty(src="../../images/intermediate.png")
-						&nbsp;
-						img.charpagedifficulty(src="../../images/intermediate.png")
-						&nbsp;
-						img.charpagedifficulty(src="../../images/intermediate.png")
-			.col-md-12
-				img#de(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/deoval.jpg" onClick='location.href="../characters/deadeye"')
-				img#gg(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/ggoval.jpg" onClick='location.href="../characters/gravitygirl"')
-				img#kx(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/kxoval.jpg" onClick='location.href="../characters/knox"')
-				img#ob(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/oboval.jpg" onClick='location.href="../characters/obscurity"')		
-				img#qu(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/quoval.jpg" onClick='location.href="../characters/query"')
-				img#rb(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/rboval.jpg" onClick='location.href="../characters/robonobo"')
-				img#sa(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/saoval.jpg" onClick='location.href="../characters/siliconartist"')
-			.col-lg-12#charselectname.charselectnamedefault
-				h1#charselecttitle.charselecttitle {{character}}
+					img#charselectheadshot(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/deadeyecharselect.jpg" onClick='location.href="../characters/deadeye"')
+				.col-md-6.charselectcardpanelright
+					.col-lg-12
+						h1#charselectname.charselecttitle {{character}}
+					.row.charselecticonrow
+						div.col-md-6.charselecticonsubrow
+							div.col-md-4.charselecticondivplus
+								img#charselectplus1.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/playerdamageicon.png")
+								hr.charselecticonhr
+								p#charselectplus1label.charselecticontext + player dmg
+							div.col-md-4.charselecticondivplus
+								img#charselectplus2.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/discardicon.png")
+								hr.charselecticonhr
+								p#charselectplus2label.charselecticontext + discard
+						div.col-md-6.charselecticonsubrow
+							div.col-md-4.charselecticondivminus
+								img#charselectminus1.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/armoricon.png")
+								hr.charselecticonhr
+								p#charselectminus1label.charselecticontext - armor
+							div.col-md-4.charselecticondivminus
+								img#charselectminus2.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/utilitydamageicon.png")
+								hr.charselecticonhr
+								p#charselectminus2label.charselecticontext - utility dmg
+					br
+					br
+					.row
+						div.col-md-6#charselectdifficultybg.charselectdifficulty
+							.row.charselectdifficultyrow
+								.col-md-3
+									img.charselectdifficultyicon#difficultyicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/intermediate.png")
+								.col-md-9
+									h3.charselectdifficultylabel DIFFICULTY
+						div.col-md-6#charselectalignmentbg.charselectalignment
+							.row.charselectalignmentrow
+								.col-md-3
+									img.charselectalignmenticon#alignmenticon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498843403/villainicon.png")
+								.col-md-9
+									h3.charselectalignmentlabel#alignmentlabel VILLAIN
+		.col-md-12
+			.row
+				.col-md-12.charselectrow					
+					img#gg.charselectovals(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/ggoval.jpg" onClick='location.href="../characters/gravitygirl"')					
+					img#ob.charselectovals(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/oboval.jpg" onClick='location.href="../characters/obscurity"')
+					img#qu.charselectovals(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/quova.jpg" onClick='location.href="../characters/query"')						
+				.col-md-12.charselectrow
+					img#de.charselectovals(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/deoval.jpg" onClick='location.href="../characters/deadeye"')
+					img#kx.charselectovals(src="http://res.cloudinary.com/jhi5/image/upload/q_54/v1498771393/kxoval.jpg" onClick='location.href="../characters/knox"')					
+					img#rb.charselectovals(src="http://res.cloudinary.com/jhi5/image/upload/q_54/v1498849911/rboval.jpg" onClick='location.href="../characters/robonobo"')
+					img#sa.charselectovals(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/saoval.jpg" onClick='location.href="../characters/siliconartist"')
+			

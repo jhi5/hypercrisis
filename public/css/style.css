@@ -256,40 +256,34 @@ body {
   border-right: 1rem solid #000;
   border-top: none;
   border-bottom: 1rem solid #000;
-  box-shadow: 1rem 1rem 1rem #000;
-  min-height: 92.5vh;
+  min-height: 500px;
   margin-bottom: 0rem;
   padding-top: 4rem;
+  border-radius: 2rem;
 }
 .charselectoval {
-  height: 25rem;
-  width: 25rem;
-  margin-right: 0.25rem;
   border: 1.5rem outset #000;
   border-radius: 1rem;
 }
-.charselectnamedefault {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: DodgerBlue;
-}
 #charselecttitle {
-  font-size: 15rem;
-  font-family: 'Okuda';
+  font-size: 7rem;
+  font-family: "Adventure";
   margin-top: 0rem;
-  color: #fff;
-  text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444;
+  color: #000;
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 .charselecttitle {
-  background-color: none;
+  font-size: 7rem;
+  font-family: "Okuda";
+  margin-top: 0rem;
+  color: #000;
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 /* charpage */
 .charpagebg {
-  background-image: url("../images/defaultbg.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/playerdamageicon.png");
   background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
@@ -1075,13 +1069,11 @@ legend {
   background-color: #969;
 }
 .gg-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #969;
+  font-family: Adventure;
+  font-size: 7rem;
+  margin-bottom: 10%;
+  color: #969;
+  text-shadow: -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9;
 }
 /* RB classes */
 .rb-charpageheadshot {
@@ -1111,13 +1103,11 @@ legend {
   background-color: #666;
 }
 .rb-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #666;
+  font-family: Adventure;
+  font-size: 7rem;
+  margin-bottom: 10%;
+  color: #666;
+  text-shadow: -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9;
 }
 /* DE classes */
 .de-charpageheadshot {
@@ -1147,13 +1137,11 @@ legend {
   background-color: #336;
 }
 .de-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #336;
+  font-family: Adventure;
+  font-size: 7rem;
+  margin-bottom: 10%;
+  color: #336;
+  text-shadow: -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9;
 }
 /* QU classes */
 .qu-charpageheadshot {
@@ -1183,13 +1171,11 @@ legend {
   background-color: #363;
 }
 .qu-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #363;
+  font-family: Adventure;
+  font-size: 7rem;
+  margin-bottom: 10%;
+  color: #363;
+  text-shadow: -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9;
 }
 /* KX classes */
 .kx-charpageheadshot {
@@ -1219,13 +1205,11 @@ legend {
   background-color: #633;
 }
 .kx-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #633;
+  font-family: Adventure;
+  font-size: 7rem;
+  margin-bottom: 10%;
+  color: #633;
+  text-shadow: -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9;
 }
 /* OB classes */
 .ob-charpageheadshot {
@@ -1255,13 +1239,11 @@ legend {
   background-color: #c69;
 }
 .ob-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #c69;
+  font-family: Adventure;
+  font-size: 7rem;
+  margin-bottom: 10%;
+  color: #c69;
+  text-shadow: -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9;
 }
 /* SA classes */
 .sa-charpageheadshot {
@@ -1291,13 +1273,11 @@ legend {
   background-color: #093;
 }
 .sa-charname {
-  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
-  width: 100%;
-  margin-top: 5rem;
-  margin-bottom: 0rem;
-  border-top: 1rem solid #000;
-  border-bottom: 1rem solid #000;
-  background-color: #093;
+  font-family: Adventure;
+  font-size: 7rem;
+  margin-bottom: 10%;
+  color: #093;
+  text-shadow: -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9;
 }
 .downloadheading {
   font-size: 100px;
@@ -1325,4 +1305,164 @@ legend {
   padding-bottom: 1rem;
   margin-top: 1.25rem;
   margin-bottom: 0rem;
+}
+.charselecticondivplus {
+  border-radius: 0.5rem;
+  color: #fff;
+  min-width: 100px;
+  padding: 0rem;
+  padding-bottom: 1.25rem;
+  margin: 0rem;
+  background-color: #282;
+  box-shadow: 1px 1px 1px #808080;
+  margin-right: 8px;
+}
+.charselecticondivminus {
+  border-radius: 0.5rem;
+  color: #fff;
+  min-width: 100px;
+  padding: 0rem;
+  padding-bottom: 1.25rem;
+  margin: 0rem;
+  background-color: #ff4847;
+  box-shadow: 1px 1px 1px #808080;
+  margin-right: 8px;
+}
+.charselecticonimage {
+  text-shadow: 0.15rem 0.15rem 0.15rem #808080;
+}
+.charselecticonhr {
+  margin-top: 5px;
+  margin-bottom: 8px;
+  width: 70%;
+  margin-left: 15%;
+  text-shadow: 0.15rem 0.15rem 0.15rem #808080;
+  color: #fff;
+}
+.charselecticontext {
+  color: #fff;
+  padding: 0rem;
+  margin: 0rem;
+  font-size: 20px;
+  font-family: okuda;
+  text-shadow: 0.15rem 0.15rem 0.15rem #808080;
+}
+.charselecticonminus {
+  background-color: #ff4847;
+  border-radius: 0.5rem;
+}
+.charselecticon {
+  background-color: #000;
+  border-radius: 0.5rem;
+}
+.charselecticonrow {
+  background-color: #fff;
+  margin-top: 1%;
+  margin-botton: 1%;
+}
+.charselectcardpanelright {
+  min-height: 400px;
+  line-height: 50%;
+  background-color: #fff;
+  margin: 0 auto;
+}
+.charselectdifficulty {
+  background-color: #00f;
+  border-radius: 0.5rem;
+  min-height: 75px;
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.charselectdifficultyhard {
+  background-color: #f00;
+  border-radius: 0.5rem;
+  min-height: 75px;
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.charselectdifficultyintermediate {
+  background-color: #ff0;
+  border-radius: 0.5rem;
+  min-height: 75px;
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.charselectdifficultyeasy {
+  background-color: #008000;
+  border-radius: 0.5rem;
+  min-height: 75px;
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.charselectdifficultyrow {
+  background-color: #000;
+  width: 96%;
+  margin-left: 2%;
+  height: 96%;
+  min-height: 64px;
+}
+.charselectdifficultylabel {
+  color: #fff;
+  font-family: okuda;
+  height: 100%;
+  margin-left: 20%;
+}
+.charselectalignment {
+  background-color: #800080;
+  border-radius: 0.5rem;
+  min-height: 75px;
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.charselectalignmenthero {
+  background-color: DodgerBlue;
+  border-radius: 0.5rem;
+  min-height: 75px;
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.charselectalignmentvillain {
+  background-color: #ff4847;
+  border-radius: 0.5rem;
+  min-height: 75px;
+  width: 45%;
+  margin-left: 2.5%;
+  margin-right: 2.5%;
+}
+.charselectalignmentrow {
+  background-color: #000;
+  width: 96%;
+  margin-left: 2%;
+  min-height: 64px;
+}
+.charselectalignmentlabel {
+  color: #fff;
+  font-family: okuda;
+  height: 100%;
+  width: 100%;
+}
+.charselectdifficultyicon {
+  margin: 25%;
+}
+.charselectalignmenticon {
+  margin: 25%;
+}
+.charselecticonsubrow {
+  padding-left: 6%;
+}
+.charselectovals {
+  width: 200px;
+  height: 200px;
+  max-width: 200px;
+  max-height: 200px;
+  margin-bottom: 0rem;
+}
+.charselectrow {
+  width: 100%;
 }
