@@ -78,52 +78,52 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	}
 	createSymbol = function(object, string){
 		if(string == "Action"){
-			object.typeSymbol = '../../images/action.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/action.png';
 		}
 		if(string == "Crossover"){
-			object.typeSymbol = '../../images/crossover.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/crossover.png';
 		}		
 		if(string == "Utility"){
-			object.typeSymbol = '../../images/utility.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/utility.png';
 		}
 		if(string == "Special"){
-			object.typeSymbol = '../../images/special.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/special.png';
 		}
 		if(string == "Feat" && object.character === "Gravity Girl"){
-			object.typeSymbol = '../../images/featgg.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featgg.png';
 		}
 		if(string == "Feat" && object.character === "Robonobo"){
-			object.typeSymbol = '../../images/featrb.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featrb.png';
 		}
 		if(string == "Feat" && object.character === "Deadeye"){
-			object.typeSymbol = '../../images/featde.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featde.png';
 		}
 		if(string == "Feat" && object.character === "Query"){
-			object.typeSymbol = '../../images/featqu.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featqu.png';
 		}
 		if(string == "Feat" && object.character === "Obscurity"){
-			object.typeSymbol = '../../images/featob.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featob.png';
 		}
 		if(string == "Feat" && object.character === "Knox"){
-			object.typeSymbol = '../../images/featkn.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featkn.png';
 		}
 		if(string == "Feat" && object.character === "Silicon Artist"){
-			object.typeSymbol = '../../images/featsa.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featsa.png';
 		}
 	}
 	createRating = function(object, array){
 		ratingSymbol = findAverage(array);
 		if(ratingSymbol >= 3.5){
-			object.ratingSymbol = '../../images/ratingstar.png';
+			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/ratingstar.png';
 		}
 		if(ratingSymbol >= 2.5 && ratingSymbol < 3.5){
-			object.ratingSymbol = '../../images/ratinggreat.png';
+			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/ratinggreat.png';
 		}
 		if(ratingSymbol >= 1.5 && ratingSymbol < 2.5){
-			object.ratingSymbol = '../../images/ratinggood.png';
+			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/ratinggood.png';
 		}
 		if(ratingSymbol <= 1.5){
-			object.ratingSymbol = '../../images/ratingmaybe.png';
+			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/ratingmaybe.png';
 		}
 	}	
 	refreshModal = function(string){
