@@ -4,30 +4,35 @@
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'okudabold';
   src: url("okuda_bold-webfont.woff2") format('woff2'), url("okuda_bold-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'okudaitalic';
   src: url("okuda_italic-webfont.woff2") format('woff2'), url("okuda_italic-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'okudaregular';
   src: url("okuda-webfont.woff2") format('woff2'), url("okuda-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'adventure_hollowregular';
   src: url("adventure_hollow-webfont.woff2") format('woff2'), url("adventure_hollow-webfont.woff") format('woff');
   font-weight: normal;
   font-style: normal;
 }
+
 @font-face {
   font-family: 'adventureregular';
   src: url("adventure-webfont.woff2") format('woff2'), url("adventure-webfont.woff") format('woff');
@@ -39,14 +44,17 @@
 body {
   padding-top: 8rem;
 }
+
 @media screen and (max-width: 768px) {
   body {
     padding-top: 8rem;
   }
 }
+
 .modal-admin {
   background-color: #fff;
 }
+
 .popover {
   font-family: "Adventure";
   min-width: 45rem;
@@ -56,6 +64,7 @@ body {
   padding: auto;
   color: #000;
 }
+
 .popover-content {
   font-family: "Adventure";
   font-size: 4rem;
@@ -63,6 +72,7 @@ body {
   line-height: 4rem;
   margin: auto;
 }
+
 .copyrightfooter {
   font-family: 'Adventure';
   height: 4rem;
@@ -72,6 +82,7 @@ body {
   margin-bottom: 1rem;
   background-color: rgba(0,0,0,0);
 }
+
 .copyrightfooter h1 {
   color: #fff;
   margin-top: 0rem;
@@ -89,17 +100,21 @@ body {
   margin-bottom: 0.5rem;
   text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
 }
+
 .navbar {
   border-bottom: 1rem solid #000;
   padding-bottom: 1rem;
 }
+
 #myNavbar ul {
   margin-top: 1%;
 }
+
 #myNavbar ul a {
   line-height: 1rem;
   display: inline;
 }
+
 .navbutton {
   font-size: 2.5rem;
   font-family: 'adventure';
@@ -114,6 +129,7 @@ body {
   margin-top: 0rem;
   max-height: 7rem;
 }
+
 .navbutton:hover {
   background-color: #f00;
 }
@@ -127,18 +143,21 @@ body {
   width: 100%;
   padding: 0rem;
 }
+
 .mainpage {
   background-color: #fff;
   border: 1rem solid #000;
   margin-top: 1rem;
   border-radius: 5rem;
 }
+
 .mainbanner1col {
-  background-image: url("../images/articles/mainthinbanner.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainthinbanner.png");
   background-size: cover;
 }
+
 .mainbanner1 {
-  background-image: url("../images/articles/mainbanner1.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner1.png");
   border: 2rem solid #000;
   background-color: rgba(255,255,255,0);
   height: 25rem;
@@ -146,11 +165,13 @@ body {
   margin-bottom: 0.5rem;
   margin-top: 1rem;
 }
+
 .mainbanner1:hover {
-  background-image: url("../images/articles/mainbanner1h.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner1h.png");
 }
+
 .mainbanner2 {
-  background-image: url("../images/articles/mainbanner2.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner2.png");
   border: 2rem solid #000;
   background-color: rgba(255,255,255,0);
   height: 35rem;
@@ -159,11 +180,13 @@ body {
   position: right;
   background-size: cover;
 }
+
 .mainbanner2:hover {
-  background-image: url("../images/articles/mainbanner2h.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner2h.png");
 }
+
 .mainbanner3 {
-  background-image: url("../images/articles/mainbanner3.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner3.png");
   border: 2rem solid #000;
   background-color: rgba(255,255,255,0);
   margin-top: 0.5rem;
@@ -171,20 +194,24 @@ body {
   height: 35rem;
   background-size: cover;
 }
+
 .mainbanner3:hover {
-  background-image: url("../images/articles/mainbanner3h.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner3h.png");
 }
+
 .mainbanner4 {
   margin-top: 0.5rem;
-  background-image: url("../images/articles/mainbanner4.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner4.png");
   border: 2rem solid #000;
   background-color: rgba(255,255,255,0);
   height: 25rem;
   background-size: cover;
 }
+
 .mainbanner4:hover {
-  background-image: url("../images/articles/mainbanner4h.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner4h.png");
 }
+
 .maintext1 {
   font-family: "Adventure";
   font-size: 8rem;
@@ -195,6 +222,7 @@ body {
   margin-bottom: 0.25;
   text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
 }
+
 .maintext2 {
   font-family: "Adventure";
   font-size: 8rem;
@@ -204,6 +232,7 @@ body {
   margin-right: 0.5rem;
   text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
 }
+
 .maintext3 {
   font-family: "Adventure";
   font-size: 8rem;
@@ -214,6 +243,7 @@ body {
   margin-bottom: 0rem;
   text-shadow: -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000;
 }
+
 .maintext4 {
   font-family: "Adventure";
   font-size: 8rem;
@@ -228,6 +258,7 @@ body {
 .characterselectname {
   color: #fff;
 }
+
 .charselect {
   height: 25rem;
   width: 25rem;
@@ -236,20 +267,25 @@ body {
   border: 1.5rem outset #000;
   border-radius: 1rem;
 }
+
 #characterselectjumbo {
   min-height: 50vh;
 }
+
 #characterselecttitle {
   font-size: 15rem;
   color: #fff;
   text-shadow: 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444;
 }
+
 .characterselectbasic {
   background: none;
 }
+
 .charselectbg {
-  background-image: url("../images/defaultbg.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/defaultbg.png");
 }
+
 .charselectroster {
   background-color: #fff;
   border-left: 1rem solid #000;
@@ -261,10 +297,12 @@ body {
   padding-top: 4rem;
   border-radius: 2rem;
 }
+
 .charselectoval {
   border: 1.5rem outset #000;
   border-radius: 1rem;
 }
+
 #charselecttitle {
   font-size: 7rem;
   font-family: "Adventure";
@@ -273,6 +311,7 @@ body {
   margin-top: 5%;
   margin-bottom: 10%;
 }
+
 .charselecttitle {
   font-size: 7rem;
   font-family: "Okuda";
@@ -289,6 +328,7 @@ body {
   background-size: cover;
   margin-top: 1rem;
 }
+
 .charpageinfocard {
   background-color: #fff;
   border-radius: 5rem;
@@ -296,27 +336,33 @@ body {
   box-shadow: 1rem 1rem 1rem #000;
   margin-top: 2rem;
 }
+
 .charpagecardleft {
   padding: 1rem;
 }
+
 .charpagecardright {
   padding: 1rem;
 }
+
 .charpageheadshotbg {
   position: relative;
   width: 100%;
 }
+
 .charpageheadshot {
   width: 100%;
   border: 1rem solid #000;
   background-color: #00f;
-  background-image: url("../images/gravitygirlcharselect.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/gravitygirlcharselect.png");
   background-size: cover;
   border-radius: 5rem;
 }
+
 .charpagenamerow {
   margin-top: 1rem;
 }
+
 .charpagename {
   font-family: 'Okuda';
   color: #fff;
@@ -327,16 +373,19 @@ body {
   border: 1rem solid #000;
   border-radius: 2rem;
 }
+
 .charpagedifficultycol {
   margin-left: -1.4rem;
   margin-right: -1.4rem;
 }
+
 .charpagedifficulty {
   margin: auto 0;
   margin-top: 0rem;
   border-radius: 2rem;
   border: 1rem solid #000;
 }
+
 .charpageheading {
   font-family: 'Okuda';
   color: #fff;
@@ -348,6 +397,7 @@ body {
   text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
   letter-spacing: 0.5rem;
 }
+
 .charpagepowers {
   font-family: "Okuda";
   color: #000;
@@ -362,6 +412,7 @@ body {
   letter-spacing: 0rem;
   border: 0.1rem solid rgba(0,0,0,0.45);
 }
+
 .charpageplus {
   font-family: "Okuda";
   color: #fff;
@@ -376,6 +427,7 @@ body {
   border: 0.1rem solid rgba(255,225,255,0.45);
   letter-spacing: 0rem;
 }
+
 .charpageminus {
   font-family: "Okuda";
   color: #fff;
@@ -391,6 +443,7 @@ body {
   text-shadow: 0.15rem 0.15rem 0.15rem #000;
   letter-spacing: 0rem;
 }
+
 .charpageskillimage {
   background-color: #fff;
   width: 95%;
@@ -402,6 +455,7 @@ body {
   border-radius: 2rem;
   border: 1rem solid #000;
 }
+
 .charpagedownloadbutton {
   font-family: 'Adventure';
   background-color: DodgerBlue;
@@ -415,6 +469,7 @@ body {
   margin-top: 1.25rem;
   margin-bottom: 0rem;
 }
+
 .charpagedatabasepointer {
   font-family: "Okuda";
   color: #000;
@@ -423,6 +478,7 @@ body {
   width: 100%;
   border-radius: 4rem;
 }
+
 .charpagemodalpreviousbutton {
   font-family: 'adventureregular';
   background: #2aade3;
@@ -431,6 +487,7 @@ body {
   margin: 0 1rem 0 1rem;
   border-radius: 2rem;
 }
+
 .charpagemodalclosebutton {
   font-family: 'adventureregular';
   background: #2aade3;
@@ -439,6 +496,7 @@ body {
   margin: 0 1rem 0 1rem;
   border-radius: 2rem;
 }
+
 .charpagemodalnextbutton {
   font-family: 'adventureregular';
   background: #2aade3;
@@ -447,29 +505,35 @@ body {
   margin: 0 1rem 0 1rem;
   border-radius: 2rem;
 }
+
 .charpagemodalpreviousbutton:hover,
 .charpagemodalnextbutton:hover,
 .charpagemodalclosebutton:hover {
   color: #fff;
 }
+
 .charpagemodalpreviousbutton:focus,
 .charpagemodalnextbutton:focus,
 .charpagemodalclosebutton:focus {
   color: #fff;
 }
+
 .charpagemodalimagecontainer {
   margin-top: 0.1rem;
 }
+
 .charpagemodalimage {
   border-radius: 3rem;
   margin: auto;
   max-height: 65rem;
   box-shadow: 1rem 1rem 1rem #808080;
 }
+
 .charpagemodalutilityrow {
   margin-top: 2rem;
   margin-bottom: 3rem;
 }
+
 .charpagemodalhpheading {
   color: #fff;
   background: #000;
@@ -479,6 +543,7 @@ body {
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
 }
+
 .charpagemodalfightheading {
   color: #fff;
   background: #000;
@@ -488,6 +553,7 @@ body {
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
 }
+
 .charpagemodalarmorheading {
   color: #fff;
   background: #000;
@@ -497,13 +563,16 @@ body {
   border-top-right-radius: 0.5rem;
   border-top-left-radius: 0.5rem;
 }
+
 .charpagemodalutilityrow {
   display: block;
   text-align: center;
 }
+
 .charpagemodalutilitycell {
   max-width: 25rem;
 }
+
 .charpagemodalutilityvalue {
   margin: 0;
   padding: 0;
@@ -516,15 +585,19 @@ body {
   font-size: 10rem;
   text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
 }
+
 #hpsymbol {
   background-color: #f09;
 }
+
 #fightsymbol {
   background-color: #09f;
 }
+
 #armorsymbol {
   background-color: #ff0;
 }
+
 .charpagemodalratingheading {
   color: #fff;
   background: #000;
@@ -532,6 +605,7 @@ body {
   border-radius: 0.5rem;
   font-family: "Okuda";
 }
+
 .charpagemodalrating {
   max-width: 15rem;
   margin: auto;
@@ -540,6 +614,7 @@ body {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
 .charpagemodaltypeheading {
   color: #fff;
   background: #000;
@@ -547,6 +622,7 @@ body {
   border-radius: 0.5rem;
   font-family: "Okuda";
 }
+
 .charpagemodaltype {
   max-width: 15rem;
   margin: auto;
@@ -555,6 +631,7 @@ body {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
 .charpagemodaltextheading {
   color: #fff;
   background: #000;
@@ -562,6 +639,7 @@ body {
   border-radius: 0.5rem;
   font-family: "Okuda";
 }
+
 .charpagemodaltext {
   font-family: "Okuda";
   font-size: 5rem;
@@ -569,6 +647,7 @@ body {
   padding-left: 5%;
   padding-right: 5%;
 }
+
 .charpagemodalcommentheading {
   color: #fff;
   background: #000;
@@ -576,6 +655,7 @@ body {
   border-radius: 0.5rem;
   font-family: "Okuda";
 }
+
 .charpagemodalcomment {
   font-family: "Okuda";
   font-size: 4.5rem;
@@ -585,6 +665,7 @@ body {
   color: #808080;
   font-style: italic;
 }
+
 .charpagesearchfiltertable {
   background-color: #fff;
   border-radius: 5rem;
@@ -594,6 +675,7 @@ body {
   border: 1rem solid #000;
   box-shadow: 1rem 1rem 1rem #000;
 }
+
 .charpagesearchfiltercontainer {
   background-color: DodgerBlue;
   margin: auto;
@@ -602,6 +684,7 @@ body {
   border: 1rem solid #000;
   border-radius: 2rem;
 }
+
 .charpagesearchfilterheading {
   font-family: 'Adventure';
   font-size: 8rem;
@@ -611,6 +694,7 @@ body {
   color: #fff;
   text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000;
 }
+
 .charpagesearchfiltertagbg {
   background-color: #fff;
   margin-left: 2rem;
@@ -620,12 +704,15 @@ body {
   border-radius: 2rem;
   min-height: 30rem;
 }
+
 .charpagesearchfiltertagcol {
   min-height: 20rem;
 }
+
 .charpagesearchfiltertagrow {
   display: inline-block;
 }
+
 .charpagesearchfilterexcludedtag {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -637,6 +724,7 @@ body {
   color: #fff;
   font-size: 3.5rem;
 }
+
 .charpagesearchfilterincludedtag {
   padding-left: 2rem;
   padding-right: 2rem;
@@ -648,12 +736,14 @@ body {
   color: #fff;
   font-size: 3.5rem;
 }
+
 .charpagesearchfilterbuttonrow {
   float: none;
   margin: 0 auto;
   margin-top: 1rem;
   margin-bottom: 1rem;
 }
+
 .charpagesearchfilterresetbutton {
   font-size: 3.5rem;
   font-family: 'Adventure';
@@ -663,6 +753,7 @@ body {
   border: 1rem solid #000;
   width: 100%;
 }
+
 .charpagesearchfiltercrossoverbutton {
   font-size: 3.5rem;
   font-family: 'Adventure';
@@ -672,6 +763,7 @@ body {
   border: 1rem solid #000;
   width: 100%;
 }
+
 .charpagesearchfilterfeatbutton {
   font-size: 3.5rem;
   font-family: 'Adventure';
@@ -681,6 +773,7 @@ body {
   border: 1rem solid #000;
   width: 100%;
 }
+
 .charpagedatabaseheadingbg {
   background-color: DodgerBlue;
   margin: auto;
@@ -694,6 +787,7 @@ body {
   margin-left: 2%;
   margin-top: 1%;
 }
+
 .charpagedatabaseheading {
   font-family: 'Adventure';
   color: #fff;
@@ -703,6 +797,7 @@ body {
   text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
   letter-spacing: 0.5rem;
 }
+
 .charpagedatabasesubheading {
   font-family: 'Okuda';
   color: #fff;
@@ -713,6 +808,7 @@ body {
   letter-spacing: 0.5rem;
   font-style: italic;
 }
+
 .charpagedatabasetablebox {
   background-color: #fff;
   border-radius: 0.2rem;
@@ -721,26 +817,31 @@ body {
   border-top: 0.5rem solid #000;
   margin-top: 0rem;
 }
+
 .charpagedatabasetablefield {
   background-color: DodgerBlue;
   border: 0.5rem solid #000;
 }
+
 .charpagedatabasefieldheading {
   color: #fff;
   font-family: 'Adventure';
   margin: 0 auto;
 }
+
 .charpagetablebody {
   background-color: #fff;
   border: 1rem solid #000;
   border-top-left-radius: 0.25rem;
   border-top-right-radius: 0.25rem;
 }
+
 .charpagedatabasetablebodyrow {
   border-bottom: 0.5rem solid DodgerBlue;
   border-left: 0.5rem solid DodgerBlue;
   border-right: 0.5rem solid DodgerBlue;
 }
+
 .charpagedatabasecardtitle {
   font-family: "adventureregular";
   font-size: 5rem;
@@ -749,12 +850,14 @@ body {
   margin-top: 1.5rem;
   letter-spacing: 0.2rem;
 }
+
 .charpagedatabasetypesymbol {
   max-width: 15rem;
   margin: auto;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
+
 .charpagedatabasetext {
   font-size: 4rem;
   font-family: 'Okuda';
@@ -773,6 +876,7 @@ body {
   font-weight: bold;
   text-align: center;
 }
+
 .form-group input {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -782,22 +886,27 @@ body {
   background-color: #fff;
   border-radius: 1rem;
 }
+
 .form-group select {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
   text-align: center;
 }
+
 .form-group {
   font-family: Adventure;
   width: 100%;
 }
+
 .form-group option {
   font-size: 2.5rem;
 }
+
 .form-group select {
   font-size: 3rem;
   padding-left: 1rem;
 }
+
 select {
   text-align-last: center;
   text-align: center;
@@ -805,6 +914,7 @@ select {
   border-top-right-radius: 1rem;
   border-bottom-right-radius: 1rem;
 }
+
 #commentfield {
   background-color: #fff;
   border-left: 0.5rem solid DodgerBlue;
@@ -812,9 +922,11 @@ select {
   padding-left: 0.5rem;
   font-size: 2.5rem;
 }
+
 .full-input {
   width: 100%;
 }
+
 .feedbackbutton {
   padding: 1rem;
   font-family: "Adventure";
@@ -824,18 +936,22 @@ select {
   background-color: DodgerBlue;
   color: #fff;
 }
+
 .feedbackbutton:hover {
   background-color: Red;
   color: #fff;
 }
+
 .feedbackbutton:focus {
   color: #fff;
 }
+
 legend {
   text-align: center;
   font-family: "Okuda";
   font-size: 5rem;
 }
+
 .feedbackheading {
   font-family: 'Adventure';
   color: #fff;
@@ -846,6 +962,7 @@ legend {
   text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.25rem 0.25rem 0.25rem #000;
   letter-spacing: 0.5rem;
 }
+
 .feedbacksubheading {
   font-family: 'Okuda';
   color: #000;
@@ -858,16 +975,18 @@ legend {
 /* articleselect */
 /* articles */
 .articlebg {
-  background-image: url("../images/defaultbg.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/defaultbg.png");
   background-attachment: fixed;
   background-repeat: none;
   background-size: cover;
   margin-top: 1rem;
 }
+
 .articlecontainerbg {
   background-color: #fff;
   border: 0.5rem solid #000;
 }
+
 .articlebanner {
   margin-top: 1rem;
   border-radius: 2%;
@@ -876,6 +995,7 @@ legend {
   margin-top: 1rem;
   text-align: center;
 }
+
 .articlemasthead {
   background-color: #336;
   border-radius: 1rem;
@@ -884,6 +1004,7 @@ legend {
   margin-top: 1rem;
   margin-bottom: 0rem;
 }
+
 .articletitle {
   font-family: Adventure;
   font-size: 36px;
@@ -895,6 +1016,7 @@ legend {
   padding-bottom: 0rem;
   margin-bottom: 0rem;
 }
+
 .articleauthor {
   font-family: Okuda;
   color: #fff;
@@ -905,6 +1027,7 @@ legend {
   padding-right: 1.5rem;
   text-align: right;
 }
+
 .articleheading {
   font-size: 36px;
   text-align: left;
@@ -918,12 +1041,14 @@ legend {
   font-styling: italic;
   letter-spacing: 0.5rem;
 }
+
 .articletext {
   font-size: 15px;
   text-align: left;
   padding: 0 2% 0 2%;
   margin-top: 0.5rem 0 0.5rem 0;
 }
+
 .articlevertimg {
   width: 250px;
   height: 350px;
@@ -931,6 +1056,7 @@ legend {
   margin-bottom: 1%;
   box-shadow: 4px 4px 2px #808080;
 }
+
 .articlehorzimg {
   width: 375px;
   height: 275px;
@@ -938,13 +1064,16 @@ legend {
   margin-bottom: 1%;
   box-shadow: 4px 4px 2px #808080;
 }
+
 .articleskillheading {
   font-size: 36px;
 }
+
 .articleskillpanel {
   border-top: solid 0.1rem DodgerBlue;
   border-bottom: solid 0.1rem DodgerBlue;
 }
+
 .articlevertcardheading {
   font-size: 36px;
   background-color: DodgerBlue;
@@ -953,6 +1082,7 @@ legend {
   padding: 1.5%;
   line-spacing: 1rem;
 }
+
 .articlehorzcardheading {
   font-size: 36px;
   background-color: DodgerBlue;
@@ -960,6 +1090,7 @@ legend {
   font-family: Adventure;
   padding: 1.5%;
 }
+
 .articleskilltext {
   font-size: 25px;
   text-align: center;
@@ -970,6 +1101,7 @@ legend {
   margin-left: 10%;
   margin-right: 10%;
 }
+
 .articleskillrow {
   width: 60%;
   margin-left: 20%;
@@ -977,6 +1109,7 @@ legend {
   margin-top: 2.5%;
   margin-bottom: 2.5%;
 }
+
 .articlefiveheading {
   font-family: Adventure;
   font-size: 36px;
@@ -986,9 +1119,11 @@ legend {
   margin-top: 12.5%;
   border-radius: 3%;
 }
+
 .articlefivetext {
   font-size: 20px;
 }
+
 .articlefivevertimg {
   width: 275px;
   height: 375px;
@@ -997,6 +1132,7 @@ legend {
   margin-bottom: 4.5%;
   box-shadow: 4px 4px 2px #808080;
 }
+
 .articlefivehorzimg {
   width: 375px;
   height: 275px;
@@ -1005,10 +1141,12 @@ legend {
   margin-bottom: 0;
   box-shadow: 4px 4px 2px #808080;
 }
+
 .articlefivepanel {
   min-height: 400px;
   line-height: 50%;
 }
+
 .articlefiverow {
   width: 99%;
   margin: 0.5%;
@@ -1016,14 +1154,17 @@ legend {
   margin-bottom: 0%;
   border-bottom: solid 0.1rem DodgerBlue;
 }
+
 .articlerow {
   width: 99%;
   margin: 0.5%;
 }
+
 .articlecardpanel {
   min-height: 400px;
   line-height: 50%;
 }
+
 .articleindextitle {
   font-family: Okuda;
   font-size: 36px;
@@ -1032,24 +1173,28 @@ legend {
   margin-bottom: 1.5rem;
   margin-top: 0rem;
 }
+
 .articleindeximage {
   margin-bottom: 0rem;
   border-radius: 3%;
 }
+
 .articlecardrow {
   background-color: #fff;
   border-radius: 3%;
   margin-top: 2%;
   margin-bottom: 3.5%;
 }
+
 .gg-charpageheadshot {
   width: 100%;
   border: 1rem solid #000;
   background-color: #999;
-  background-image: url("../images/gravitygirlcharselect.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/gravitygirlcharselect.png");
   background-size: cover;
   border-radius: 5rem;
 }
+
 .gg-charpagemodalcardname {
   font-family: "adventureregular";
   font-size: 7.5rem;
@@ -1062,12 +1207,15 @@ legend {
   border-radius: 2rem;
   letter-spacing: 0.3rem;
 }
+
 .gg-backgroundcolor {
   background-color: #969;
 }
+
 .gg-hover:hover {
   background-color: #969;
 }
+
 .gg-charname {
   font-family: Adventure;
   font-size: 7rem;
@@ -1080,10 +1228,11 @@ legend {
   width: 100%;
   border: 1rem solid #000;
   background-color: #f33;
-  background-image: url("../images/robonobocharselect.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/robonobocharselect.png");
   background-size: cover;
   border-radius: 5rem;
 }
+
 .rb-charpagemodalcardname {
   font-family: "adventureregular";
   font-size: 7.5rem;
@@ -1096,12 +1245,15 @@ legend {
   border-radius: 2rem;
   letter-spacing: 0.3rem;
 }
+
 .rb-backgroundcolor {
   background-color: #666;
 }
+
 .rb-hover:hover {
   background-color: #666;
 }
+
 .rb-charname {
   font-family: Adventure;
   font-size: 7rem;
@@ -1114,10 +1266,11 @@ legend {
   width: 100%;
   border: 1rem solid #000;
   background-color: #666;
-  background-image: url("../images/deadeyecharselect.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/deadeyecharselect.png");
   background-size: cover;
   border-radius: 5rem;
 }
+
 .de-charpagemodalcardname {
   font-family: "adventureregular";
   font-size: 7.5rem;
@@ -1130,12 +1283,15 @@ legend {
   border-radius: 2rem;
   letter-spacing: 0.3rem;
 }
+
 .de-backgroundcolor {
   background-color: #336;
 }
+
 .de-hover:hover {
   background-color: #336;
 }
+
 .de-charname {
   font-family: Adventure;
   font-size: 7rem;
@@ -1148,10 +1304,11 @@ legend {
   width: 100%;
   border: 1rem solid #000;
   background-color: #933;
-  background-image: url("../images/querycharselect.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/querycharselect.png");
   background-size: cover;
   border-radius: 5rem;
 }
+
 .qu-charpagemodalcardname {
   font-family: "adventureregular";
   font-size: 7.5rem;
@@ -1164,12 +1321,15 @@ legend {
   border-radius: 2rem;
   letter-spacing: 0.3rem;
 }
+
 .qu-backgroundcolor {
   background-color: #363;
 }
+
 .qu-hover:hover {
   background-color: #363;
 }
+
 .qu-charname {
   font-family: Adventure;
   font-size: 7rem;
@@ -1182,10 +1342,11 @@ legend {
   width: 100%;
   border: 1rem solid #000;
   background-color: #993;
-  background-image: url("../images/knoxcharselect.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/knoxcharselect.png");
   background-size: cover;
   border-radius: 5rem;
 }
+
 .kx-charpagemodalcardname {
   font-family: "adventureregular";
   font-size: 7.5rem;
@@ -1198,12 +1359,15 @@ legend {
   border-radius: 2rem;
   letter-spacing: 0.3rem;
 }
+
 .kx-backgroundcolor {
   background-color: #633;
 }
+
 .kx-hover:hover {
   background-color: #633;
 }
+
 .kx-charname {
   font-family: Adventure;
   font-size: 7rem;
@@ -1216,10 +1380,11 @@ legend {
   width: 100%;
   border: 1rem solid #000;
   background-color: #ff9;
-  background-image: url("../images/obscuritycharselect.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/obscuritycharselect.png");
   background-size: cover;
   border-radius: 5rem;
 }
+
 .ob-charpagemodalcardname {
   font-family: "adventureregular";
   font-size: 7.5rem;
@@ -1232,12 +1397,15 @@ legend {
   border-radius: 2rem;
   letter-spacing: 0.3rem;
 }
+
 .ob-backgroundcolor {
   background-color: #c69;
 }
+
 .ob-hover:hover {
   background-color: #c69;
 }
+
 .ob-charname {
   font-family: Adventure;
   font-size: 7rem;
@@ -1250,10 +1418,11 @@ legend {
   width: 100%;
   border: 1rem solid #000;
   background-color: #9cc;
-  background-image: url("../images/siliconartistcharselect.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/siliconartistcharselect.png");
   background-size: cover;
   border-radius: 5rem;
 }
+
 .sa-charpagemodalcardname {
   font-family: "adventureregular";
   font-size: 7.5rem;
@@ -1266,12 +1435,15 @@ legend {
   border-radius: 2rem;
   letter-spacing: 0.3rem;
 }
+
 .sa-backgroundcolor {
   background-color: #093;
 }
+
 .sa-hover:hover {
   background-color: #093;
 }
+
 .sa-charname {
   font-family: Adventure;
   font-size: 7rem;
@@ -1279,6 +1451,7 @@ legend {
   color: #093;
   text-shadow: -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9;
 }
+
 .downloadheading {
   font-size: 100px;
   text-align: center;
@@ -1289,12 +1462,14 @@ legend {
   font-styling: italic;
   letter-spacing: 0.5rem;
 }
+
 .downloadtext {
   font-size: 2rem;
   text-align: center;
   padding: 0 2% 0 2%;
   margin-top: 0.5rem 0 0.5rem 0;
 }
+
 .downloadbutton {
   font-family: Okuda;
   background-color: DodgerBlue;
@@ -1306,6 +1481,7 @@ legend {
   margin-top: 1.25rem;
   margin-bottom: 0rem;
 }
+
 .charselecticondivplus {
   border-radius: 0.5rem;
   color: #fff;
@@ -1317,6 +1493,7 @@ legend {
   box-shadow: 1px 1px 1px #808080;
   margin-right: 8px;
 }
+
 .charselecticondivminus {
   border-radius: 0.5rem;
   color: #fff;
@@ -1328,9 +1505,11 @@ legend {
   box-shadow: 1px 1px 1px #808080;
   margin-right: 8px;
 }
+
 .charselecticonimage {
   text-shadow: 0.15rem 0.15rem 0.15rem #808080;
 }
+
 .charselecticonhr {
   margin-top: 5px;
   margin-bottom: 8px;
@@ -1339,6 +1518,7 @@ legend {
   text-shadow: 0.15rem 0.15rem 0.15rem #808080;
   color: #fff;
 }
+
 .charselecticontext {
   color: #fff;
   padding: 0rem;
@@ -1347,25 +1527,30 @@ legend {
   font-family: okuda;
   text-shadow: 0.15rem 0.15rem 0.15rem #808080;
 }
+
 .charselecticonminus {
   background-color: #ff4847;
   border-radius: 0.5rem;
 }
+
 .charselecticon {
   background-color: #000;
   border-radius: 0.5rem;
 }
+
 .charselecticonrow {
   background-color: #fff;
   margin-top: 1%;
   margin-botton: 1%;
 }
+
 .charselectcardpanelright {
   min-height: 400px;
   line-height: 50%;
   background-color: #fff;
   margin: 0 auto;
 }
+
 .charselectdifficulty {
   background-color: #00f;
   border-radius: 0.5rem;
@@ -1374,6 +1559,7 @@ legend {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
+
 .charselectdifficultyhard {
   background-color: #f00;
   border-radius: 0.5rem;
@@ -1382,6 +1568,7 @@ legend {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
+
 .charselectdifficultyintermediate {
   background-color: #ff0;
   border-radius: 0.5rem;
@@ -1390,6 +1577,7 @@ legend {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
+
 .charselectdifficultyeasy {
   background-color: #008000;
   border-radius: 0.5rem;
@@ -1398,6 +1586,7 @@ legend {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
+
 .charselectdifficultyrow {
   background-color: #000;
   width: 96%;
@@ -1405,12 +1594,14 @@ legend {
   height: 96%;
   min-height: 64px;
 }
+
 .charselectdifficultylabel {
   color: #fff;
   font-family: okuda;
   height: 100%;
   margin-left: 20%;
 }
+
 .charselectalignment {
   background-color: #800080;
   border-radius: 0.5rem;
@@ -1419,6 +1610,7 @@ legend {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
+
 .charselectalignmenthero {
   background-color: DodgerBlue;
   border-radius: 0.5rem;
@@ -1427,6 +1619,7 @@ legend {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
+
 .charselectalignmentvillain {
   background-color: #ff4847;
   border-radius: 0.5rem;
@@ -1435,27 +1628,33 @@ legend {
   margin-left: 2.5%;
   margin-right: 2.5%;
 }
+
 .charselectalignmentrow {
   background-color: #000;
   width: 96%;
   margin-left: 2%;
   min-height: 64px;
 }
+
 .charselectalignmentlabel {
   color: #fff;
   font-family: okuda;
   height: 100%;
   width: 100%;
 }
+
 .charselectdifficultyicon {
   margin: 25%;
 }
+
 .charselectalignmenticon {
   margin: 25%;
 }
+
 .charselecticonsubrow {
   padding-left: 6%;
 }
+
 .charselectovals {
   width: 200px;
   height: 200px;
@@ -1463,6 +1662,7 @@ legend {
   max-height: 200px;
   margin-bottom: 0rem;
 }
+
 .charselectrow {
   width: 100%;
 }
