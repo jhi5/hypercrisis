@@ -7,8 +7,23 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	$scope.currentTags = [];	
 	$scope.currentCharacter = $("#charname").text();
 	$scope.currentFilter = {};
-	$scope.checkBox = false;
+	$scope.checkBox = false;	
 	$scope.featBox = false;
+	$scope.changePanel = function(string){
+		$("#default").removeClass("active");
+		$("#howtoplay").removeClass("active");
+		$("#bio").removeClass("active");
+		$("#skill").removeClass("active");
+		if(string === "#howtoplay"){
+			$("#howtoplay").addClass('active');
+		}
+		if(string === "#bio"){
+			$("#bio").addClass('active');
+		}
+		if(string === "#skill"){
+			$("#skill").addClass('active');
+		}
+	}
 	$scope.logCheckBox = function(){
 		if($scope.checkBox === false){
 			$scope.checkBox = true;
@@ -70,7 +85,6 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	}
 	detectUtility = function(string){
 		if(string == 'Utility' | string == "Crossover"){
-			console.log($scope.cards[i].utilityValues);
 			return $scope.cards[i].utilityValues;
 		}else{
 			return null;
@@ -175,7 +189,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			$scope.loaded = true;
 		});
 	}
-	loadCollection();
+	loadCollection();	
 	$scope.modalContent = {
 		name: 'sample name',
 		character: 'sample character',
@@ -205,9 +219,9 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	$scope.findNextEntry = function(){
 		var firstTds = [];
 		var currentCard = '';
-		var currentCardIndex = 0;
+		var currentCardIndex = 0;		
 		$('td:first-child').each(function() {
-    	firstTds.push($(this).text());
+    		firstTds.push($(this).text());
 		});
 		for(i=0;i<firstTds.length;i++){
 			if(firstTds[i] === $("#modaltitle").text()){
@@ -239,18 +253,28 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		}
     }
     $scope.hidePrevious = function(){
-		if($scope.currentModalIndex === 0){
-			return true;
-		}else{
-			return false;
-		}
+    	var firstTds = [];
+    	var currentCard = '';
+    	var currentCardIndex = 0;
+    	$('td:first-child').each(function(){
+    		firstTds.push($(this).text());
+    	})
+    	for(i=0;i<firstTds.length;i++){
+    		if(firstTds[i] === $("#modaltitle").text()){
+    			if(i === 0){
+    				return true;
+    			}else{
+    				return false;
+    			}
+    		}
+    	}
 	}
 	$scope.hideNext = function(){
 		var firstTds = [];
 		var currentCard = '';
 		var currentCardIndex = 0;
 		$('td:first-child').each(function() {
-    	firstTds.push($(this).text());
+    		firstTds.push($(this).text());
 		});
 		for(i=0;i<firstTds.length;i++){
 			if(firstTds[i] === $("#modaltitle").text()){

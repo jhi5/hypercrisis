@@ -80,5 +80,8 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
 	.when('/articles/siliconartistintro',{
 		templateUrl: '/partials/articles/introSA'
 	})
+	.when('/articles/manual', {
+		templateUrl: '/partials/manual/manual'
+	})
 	
 });

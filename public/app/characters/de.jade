@@ -1,39 +1,78 @@
 .container-fluid.charpagebg
 	.container.top-padding-med
-		.row.charpageinfocard
-			.col-md-6.text-center.charpagecardleft
-				div
-					div.charpageheadshotbg
-						img.de-charpageheadshot.img-responsive(src="http://res.cloudinary.com/jhi5/image/upload/deadeyecharselect.png")
-					.row.charpagenamerow
-						.col-md-9
-							h2#charname.charpagename.de-backgroundcolor Deadeye
-						.col-md-3.charpagedifficultycol
-							img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/intermediate.png")
-							
-			.col-md-6.text-center.charpagecardright
-				.col-md-6
-						h3.charpageheading.de-backgroundcolor POWERS
-							div
-								h3.charpagepowers Perfect Vision
-								h3.charpagepowers Superhuman Accuracy
-								h3.charpagepowers Arsenal Of Firearms
-								h3.charpagepowers Explosives Expert
-				.col-md-6					
-						h3.charpageheading.de-backgroundcolor STRATEGY
-							div
-								h3.charpageplus + Player Damage
-								h3.charpageplus + Discard
-								h3.charpageminus - Armor
-								h3.charpageminus - Utility Damage			
-				.col-md-12
-					h3.charpageheading.de-backgroundcolor SKILL
-						div(data-toggle="popover" data-trigger="hover" data-placement="auto top"
-						data-content="Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.") 		
-							img.charpageskillimage(src="http://res.cloudinary.com/jhi5/image/upload/aim.png")				
-					button.btn-block.charpagedownloadbutton.de-hover Download
-			.col-md-12
-				h1.charpagedatabasepointer.text-center ▼ CARD DATABASE ▼	
+		.row.charpageinfocard			
+			div.tab-content
+				#default.tab-pane.active
+					.col-md-12
+						img.articlebanner(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/debanner1.jpg")
+						.de-charname.text-center#charname Deadeye
+				#howtoplay.tab-pane
+					.col-md-4
+						div.charpageheadshotbg
+							img.de-charpageheadshot.img-responsive(src="http://res.cloudinary.com/jhi5/image/upload/deadeyecharselect.png")
+					.col-md-8												
+						row.charselecticonsubrow
+							div.col-md-6.charselecticondivplus
+								img#charselectplus1.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/playerdamageicon.png")
+								hr.charselecticonhr
+								p#charselectplus1label.charselecticontext + player dmg
+							div.col-md-6.charselecticondivplus
+								img#charselectplus2.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/discardicon.png")
+								hr.charselecticonhr
+								p#charselectplus2label.charselecticontext + discard
+							div.col-md-6.charselecticondivminus
+								img#charselectminus1.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/armoricon.png")
+								hr.charselecticonhr
+								p#charselectminus1label.charselecticontext - armor
+							div.col-md-6.charselecticondivminus
+								img#charselectminus2.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/utilitydamageicon.png")
+								hr.charselecticonhr
+								p#charselectminus2label.charselecticontext - utility dmg
+							.col-md-6
+								.button.btn.btn-block Read The Player's Guide
+							.col-md-6
+								#charselectdifficultybg.charselectdifficulty
+									.row.charselectdifficultyrow
+										.col-md-3
+											img.charselectdifficultyicon#difficultyicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/intermediate.png")
+										.col-md-9
+											h3.charselectdifficultylabel DIFFICULTY						
+				#bio.tab-pane
+					.col-md-4
+						div.charpageheadshotbg
+							img.de-charpageheadshot.img-responsive(src="http://res.cloudinary.com/jhi5/image/upload/deadeyecharselect.png")
+					.col-md-8
+						.row
+							.col-md-12
+								h1 THE SINISTER SNIPER						
+							.col-md-12
+								p Raised in a warzone, the sinister sniper DEADEYE grew up day and night with a gun in her hand. After escaping from her forced conscription alongside her estranged sister, DEADEYE kept that same gun on her waist for safety. Since that day, her gun has made her rich, powerful and feared. 
+
+								p DEADEYE is on a brutal sharpshooter contracted with Knox's Villain Underground. As a professional assassin, DEADEYE has quickly gained a reputation as a cold-blooded killer. Despite an everpresent disgust with her teammates, DEADEYE has proven to be a dangerous and loyal ally to the Villain Underground. 
+							.col-md-6
+								#charselectalignmentbg.charselectalignment
+									.row.charselectalignmentrow
+										.col-md-3
+											img.charselectalignmenticon#alignmenticon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498843403/villainicon.png")
+										.col-md-9
+											h3.charselectalignmentlabel#alignmentlabel VILLAIN
+							.col-md-6
+								button.btn.btn-block listen to the podcast
+				#skill.tab-pane
+					.col-md-4
+						div.charpageheadshotbg
+							img.de-charpageheadshot.img-responsive(src="http://res.cloudinary.com/jhi5/image/upload/deadeyecharselect.png")
+					.col-md-8
+						img.charpageskillimage(src="http://res.cloudinary.com/jhi5/image/upload/aim.png")
+						h3 Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.
+			.col-md-12				
+				a(href="../characterselect")
+					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
+				img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/strategylogo.jpg" ng-click="changePanel('#howtoplay')")
+				img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/villainicon.jpg" ng-click="changePanel('#bio')")
+				img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,e_auto_contrast,q_54,w_110/v1499890549/deadeyelogo.jpg" ng-click="changePanel('#skill')")
+				a(href="https://www.dropbox.com/s/6b23exhwrtynbrb/Hypercrisis%20Open%20Beta%20April.rar?dl=0")
+					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/downloadicon.jpg")
 			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
 				.modal-header
 					.row
@@ -79,30 +118,31 @@
 		.row
 			.col-md-12.charpagesearchfiltertable
 				table.table.table-hover.table-condensed(ng-if="loaded")
-					thread
-						div.charpagesearchfiltercontainer
-							.row
-								.col-md-12
-									h3.charpagesearchfilterheading.text-center Search Filters
-							.row.text-center.charpagesearchfiltertagbg
-								.col-md-6.charpagesearchfiltertagcol
-									div.charpagesearchfiltertagrow(ng-repeat="tag in tagArray")
-										button.charpagesearchfilterexcludedtag(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') - {{tag}}
-								.col-md-6.charpagesearchfiltertagcol
-									div.charpagesearchfiltertagrow(ng-repeat="tag in currentTags")
-										button.charpagesearchfilterincludedtag(ng-click='removeFilterButton(tag)') + {{tag}}
-										&nbsp;
-							.row.charpagesearchfilterbuttonrow
-								.col-md-4
-									button.charpagesearchfilterresetbutton(ng-click='resetTags()') Reset Tags
-								.col-md-4
-									button#crossbutton.crossbutton.charpagesearchfiltercrossoverbutton(type='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()') Crossovers Off			
-								.col-md-4
-									button#featbutton.featbutton.charpagesearchfilterfeatbutton(type='button' data-toggle='button' ng-model='featBox' ng-click='logFeatBox()') Feats Off
+					thread						
 						.row
 							.col-md-12.charpagedatabaseheadingbg
 								h2.text-center.charpagedatabaseheading Deadeye Card Database
-								h3.text-center.charpagedatabasesubheading click on a card's name to see more details!		
+								h3.text-center.charpagedatabasesubheading click on a card's name to see more details!
+								div.charpagesearchfiltercontainer
+									.row
+										.col-md-12
+											button.btn.btn-block.charpagesearchfilterheading.text-center(data-toggle="collapse" data-target="#searchfilter") Search Filters
+									#searchfilter.collapse
+										.row.text-center.charpagesearchfiltertagbg
+											.col-md-6.charpagesearchfiltertagcol
+												div.charpagesearchfiltertagrow(ng-repeat="tag in tagArray")
+													button.charpagesearchfilterexcludedtag(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') - {{tag}}
+											.col-md-6.charpagesearchfiltertagcol
+												div.charpagesearchfiltertagrow(ng-repeat="tag in currentTags")
+													button.charpagesearchfilterincludedtag(ng-click='removeFilterButton(tag)') + {{tag}}
+													&nbsp;
+										.row.charpagesearchfilterbuttonrow
+											.col-md-4
+												button.charpagesearchfilterresetbutton(ng-click='resetTags()') Reset Tags
+											.col-md-4
+												button#crossbutton.crossbutton.charpagesearchfiltercrossoverbutton(type='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()') Crossovers Off			
+											.col-md-4
+												button#featbutton.featbutton.charpagesearchfilterfeatbutton(type='button' data-toggle='button' ng-model='featBox' ng-click='logFeatBox()') Feats Off		
 						tr.charpagedatabasetablebox
 							th.charpagedatabasetablefield
 								h3.charpagedatabasefieldheading.text-center Name

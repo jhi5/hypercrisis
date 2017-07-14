@@ -45,37 +45,37 @@ angular.module('app').controller('mvCharSelectCtrl', function($scope, $timeout, 
 			$("#charselectname").removeClass("charselectnamedefault");
 			$("#charselectname").addClass(charname);
 			if(id === "#de"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/deovalh.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/deovalh.png");
 				$("#charselectheadshot").attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/deadeyecharselect.jpg");
 				hoverIsActive("intermediate", "villain");
 				hoverIcons("playerdamage","player dmg","discard","discard","defensive","poor defense","utilitydamage","utility dmg");
 			}else if(id === "#gg"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/ggovalh.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/ggovalh.png");
 				$("#charselectheadshot").attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/gravitygirlcharselect.jpg");
 				hoverIsActive("easy", "hero");
 				hoverIcons("combo","combo","utilitydamage","utility dmg","draw","card draw","disruption","disruption");
 			}else if(id === "#kx"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/kxovalh.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/kxovalh.png");
 				$("#charselectheadshot").attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/knoxcharselect.jpg");
 				hoverIsActive("intermediate", "villain");
 				hoverIcons("aggressive","aggressive","draw","card draw","healing","healing","versatile","not versatile");				
 			}else if(id === "#ob"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/obovalh.jpg");	
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/obovalh.png");	
 				$("#charselectheadshot").attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/obscuritycharselect.jpg");
-				hoverIsActive("hard", "hero");		
+				hoverIsActive("intermediate", "hero");		
 				hoverIcons("defensive","defense","disruption","disruption","aggressive","poor offense","playerdamage","player dmg");	
 			}else if(id === "#qu"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/quovah.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/quovah.png");
 				$("#charselectheadshot").attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/querycharselect.jpg");
-				hoverIsActive("easy", "hero");
+				hoverIsActive("intermediate", "hero");
 				hoverIcons("aggressive","aggressive","disruption","disruption","defensive","poor defense","discard","weak to discard");
 			}else if(id === "#rb"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/rbovalh.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/rbovalh.png");
 				$("#charselectheadshot").attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/robonobocharselect.jpg");
 				hoverIsActive("easy", "villain");
 				hoverIcons("armor","armor","combo","combo","versatile","not versatile","utilitydamage","utility dmg");
 			}else if(id === "#sa"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/saovalh.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/saovalh.png");
 				$("#charselectheadshot").attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/siliconartistcharselect.jpg");
 				hoverIsActive("hard", "villain");
 				hoverIcons("combo","combo","disruption","disruption","armor","armor","utilitydamage","utility dmg");
@@ -95,19 +95,19 @@ angular.module('app').controller('mvCharSelectCtrl', function($scope, $timeout, 
 			$("#charselectalignmentbg").removeClass('charselectalignmentvillain');
 			$("#charselectalignmentbg").addClass('charselectalignment');
 			if(id === "#de"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/deoval.jpg");					
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/deoval.png");					
 			}else if(id === "#gg"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/ggoval.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/ggoval.png");
 			}else if(id === "#kx"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/kxoval.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/kxoval.png");
 			}else if(id === "#ob"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/oboval.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/oboval.png");
 			}else if(id === "#qu"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/quova.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/quova.png");
 			}else if(id === "#rb"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/rboval.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/rboval.png");
 			}else if(id === "#sa"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/saoval.jpg");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/saoval.png");
 			}
 			$scope.$apply();
 		})		
