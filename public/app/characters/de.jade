@@ -149,6 +149,8 @@
 							th.charpagedatabasetablefield.text-center
 								h3.charpagedatabasefieldheading Type
 							th.charpagedatabasetablefield.text-center
+								h3.charpagedatabasefieldheading Rating
+							th.charpagedatabasetablefield.text-center
 								h3.charpagedatabasefieldheading Text
 							tbody.charpagedatabasetablebody
 								tr.charpagedatabasetablebodyrow(ng-repeat="card in cards | filter:containsTags | orderBy: 'name'")
@@ -156,5 +158,7 @@
 										h2.charpagedatabasecardtitle.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
 									td
 										img.img-responsive.charpagedatabasetypesymbol.text-center(src='{{card.typeSymbol}}')
+									td
+										img.img-responsive.charpagedtatbasetypesymbol.text-center(src='{{card.ratingSymbol}}')
 									td
 										h3.charpagedatabasetext.text-center {{card.text}}

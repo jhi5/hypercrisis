@@ -92,7 +92,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	}
 	createSymbol = function(object, string){
 		if(string == "Action"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/action.png';
+			object.typeSymbol  = 'http://res.cloudinary.com/jhi5/image/upload/action.png';
 		}
 		if(string == "Crossover"){
 			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/crossover.png';
@@ -155,7 +155,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 					utilityValues: detectUtility($scope.cards[i].type),
 					rating: $scope.cards[i].rating,
 					typeSymbol: createSymbol(this, $scope.cards[i].type),
-					ratingSymbol: ""					
+					ratingSymbol: createRating(this, $scope.cards[i].rating)				
 				}
  				createSymbol($scope.modalContent, $scope.modalContent.type);
  				createRating($scope.modalContent, $scope.modalContent.rating);
@@ -177,6 +177,8 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			$scope.cards = cardCollection.data;
 			for(i=0;i<$scope.cards.length;i++){
 				createSymbol($scope.cards[i], $scope.cards[i].type);
+				$scope.cards[i].ratingSymbol = '';
+				console.log($scope.cards[i]);
 			}
 			for(j=0;j<$scope.cards.length;j++){
 				if($scope.cards[j].character === $scope.currentCharacter){

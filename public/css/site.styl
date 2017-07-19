@@ -1,1509 +1,1454 @@
-//fonts
+@font-face
+    font-family 'okudabold_italic'
+    src url("okuda_bold_italic-webfont.woff2") format('woff2'), url("okuda_bold_italic-webfont.woff") format('woff')
+    font-weight normal
+    font-style normal
 
 @font-face
-	font-family 'okudabold_italic'
-	src url('okuda_bold_italic-webfont.woff2') format('woff2'),
-		 url('okuda_bold_italic-webfont.woff') format('woff')
-	font-weight normal
-	font-style normal
+    font-family 'okudabold'
+    src url("okuda_bold-webfont.woff2") format('woff2'), url("okuda_bold-webfont.woff") format('woff')
+    font-weight normal
+    font-style normal
 
 @font-face
-	font-family 'okudabold'
-	src url('okuda_bold-webfont.woff2') format('woff2'),
-		 url('okuda_bold-webfont.woff') format('woff')
-	font-weight normal
-	font-style normal
+    font-family 'okudaitalic'
+    src url("okuda_italic-webfont.woff2") format('woff2'), url("okuda_italic-webfont.woff") format('woff')
+    font-weight normal
+    font-style normal
 
 @font-face
-	font-family 'okudaitalic'
-	src url('okuda_italic-webfont.woff2') format('woff2'),
-		 url('okuda_italic-webfont.woff') format('woff')
-	font-weight normal
-	font-style normal
+    font-family 'okudaregular'
+    src url("okuda-webfont.woff2") format('woff2'), url("okuda-webfont.woff") format('woff')
+    font-weight normal
+    font-style normal
 
 @font-face
-	font-family 'okudaregular'
-	src url('okuda-webfont.woff2') format('woff2'),
-		 url('okuda-webfont.woff') format('woff')
-	font-weight normal
-	font-style normal
+    font-family 'adventure_hollowregular'
+    src url("adventure_hollow-webfont.woff2") format('woff2'), url("adventure_hollow-webfont.woff") format('woff')
+    font-weight normal
+    font-style normal
 
 @font-face
-	font-family 'adventure_hollowregular'
-	src url('adventure_hollow-webfont.woff2') format('woff2'),
-		 url('adventure_hollow-webfont.woff') format('woff')
-	font-weight normal
-	font-style normal
-
-@font-face
-	font-family 'adventureregular'
-	src url('adventure-webfont.woff2') format('woff2'),
-		 url('adventure-webfont.woff') format('woff')
-	font-weight normal
-	font-style normal
-
-/* variables */
-
-ggcolor = #996699
-ggsecondary = #999999
-qucolor = #336633
-qusecondary = #993333
-obcolor = #cc6699
-obsecondary = #ffff99
-rbcolor = #666666
-rbsecondary = #ff3333
-decolor = #333366
-desecondary = #666666
-kxcolor = #663333
-kxsecondary = #999933
-sacolor = #009933
-sasecondary = #99cccc
-
-characterpagebg = url('http://res.cloudinary.com/jhi5/image/upload/charpagebg.png')
-
-/* common */
+    font-family 'adventureregular'
+    src url("adventure-webfont.woff2") format('woff2'), url("adventure-webfont.woff") format('woff')
+    font-weight normal
+    font-style normal
 
 body
-	padding-top 8rem
+    padding-top 8rem
 
 @media screen and (max-width: 768px)
-	body
-		padding-top 8rem
+    body
+        padding-top 8rem
 
 .modal-admin
-	background-color white
+    background-color #fff
 
 .popover
-	font-family "Adventure"
-	min-width 45rem
-	min-height 5rem
-	border 1rem solid black
-	border-radius 2rem
-	padding auto
-	color black
+    font-family "Adventure"
+    min-width 45rem
+    min-height 5rem
+    border 1rem solid #000
+    border-radius 2rem
+    padding auto
+    color #000
 
 .popover-content
-	font-family "Adventure"
-	font-size 4rem
-	text-align center
-	line-height 4rem
-	margin auto
+    font-family "Adventure"
+    font-size 4rem
+    text-align center
+    line-height 4rem
+    margin auto
 
 .copyrightfooter
-	font-family 'Adventure'
-	height 4rem
-	width 50%
-	border-radius 1rem
-	margin-top 1rem
-	margin-bottom 1rem
-	background-color rgba(0, 0, 0, 0)
-
-.copyrightfooter h1
-	color white	
-	margin-top 0rem
-	margin-bottom 0rem
-	padding-top 0rem
-	padding-bottom 0rem
-	font-size 3.5rem
-
-/* navbar */
+    font-family 'Adventure'
+    height 4rem
+    width 50%
+    border-radius 1rem
+    margin-top 1rem
+    margin-bottom 1rem
+    background-color rgba(0,0,0,0)
+    h1
+        color #fff
+        margin-top 0rem
+        margin-bottom 0rem
+        padding-top 0rem
+        padding-bottom 0rem
+        font-size 3.5rem
 
 #navbar-brand
-	color white
-	font-family 'Adventure'
-	font-size 7rem
-	margin-top .5rem
-	margin-bottom .5rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+    color #fff
+    font-family 'Adventure'
+    font-size 7rem
+    margin-top 0.5rem
+    margin-bottom 0.5rem
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000
 
 .navbar
-	border-bottom 1rem solid black
-	padding-bottom 1rem
+    border-bottom 1rem solid #000
+    padding-bottom 1rem
 
-#myNavbar ul
-	margin-top 1%
-
-#myNavbar ul a
-	line-height 1rem
-	display inline
+#myNavbar
+    ul
+        margin-top 1%
+        a
+            line-height 1rem
+            display inline
 
 .navbutton
-	font-size 2.5rem
-	font-family 'adventure'
-	border .5rem solid black
-	background-color white
-	margin-right .5rem
-	box-shadow none
-	border-radius 2rem
-	color black
-	padding-top 0rem
-	padding-bottom 0rem
-	margin-top 0rem	
-	max-height 7rem
-
-.navbutton:hover
-	background-color red
-
-/* frontpage */
+    font-size 2.5rem
+    font-family 'adventure'
+    border 0.5rem solid #000
+    background-color #fff
+    margin-right 0.5rem
+    -webkit-box-shadow none
+    box-shadow none
+    border-radius 2rem
+    color #000
+    padding-top 0rem
+    padding-bottom 0rem
+    margin-top 0rem
+    max-height 7rem
+    &:hover
+        background-color #f00
 
 .mainButton
-	background-color rgba(255,255,255,0)
-	font-size 5rem
-	border-radius 2rem
-	margin-top 0rem
-	margin-bottom 1rem
-	width 100%
-	padding 0rem
+    background-color rgba(255,255,255,0)
+    font-size 5rem
+    border-radius 2rem
+    margin-top 0rem
+    margin-bottom 1rem
+    width 100%
+    padding 0rem
 
 .mainpage
-	background-color white
-	border 1rem solid black
-	margin-top 1rem
-	border-radius 5rem
+    background-color #fff
+    border 1rem solid #000
+    margin-top 1rem
+    border-radius 5rem
 
 .mainbanner1col
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/mainthinbanner.png')
-	background-size cover
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/mainthinbanner.png")
+    background-size cover
 
 .mainbanner1
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/mainbanner1.png')
-	border 2rem solid black
-	background-color rgba(255,255,255,0)
-	height 25rem
-	background-size cover
-	margin-bottom .5rem
-	margin-top 1rem
-
-.mainbanner1:hover
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/mainbanner1h.png')
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/mainbanner1.png")
+    border 2rem solid #000
+    background-color rgba(255,255,255,0)
+    height 25rem
+    background-size cover
+    margin-bottom 0.5rem
+    margin-top 1rem
+    &:hover
+        background-image url("http://res.cloudinary.com/jhi5/image/upload/mainbanner1h.png")
 
 .mainbanner2
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/mainbanner2.png')
-	border 2rem solid black
-	background-color rgba(255,255,255,0)
-	height 35rem
-	margin-top .5rem
-	margin-bottom .5rem
-	position right
-	background-size cover
-
-.mainbanner2:hover
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/mainbanner2h.png')
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/mainbanner2.png")
+    border 2rem solid #000
+    background-color rgba(255,255,255,0)
+    height 35rem
+    margin-top 0.5rem
+    margin-bottom 0.5rem
+    position right
+    background-size cover
+    &:hover
+        background-image url("http://res.cloudinary.com/jhi5/image/upload/mainbanner2h.png")
 
 .mainbanner3
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/mainbanner3.png')
-	border 2rem solid black
-	background-color rgba(255,255,255,0)
-	margin-top .5rem
-	margin-bottom .5rem
-	height 35rem
-	background-size cover
-
-.mainbanner3:hover
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/mainbanner3h.png')
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/mainbanner3.png")
+    border 2rem solid #000
+    background-color rgba(255,255,255,0)
+    margin-top 0.5rem
+    margin-bottom 0.5rem
+    height 35rem
+    background-size cover
+    &:hover
+        background-image url("http://res.cloudinary.com/jhi5/image/upload/mainbanner3h.png")
 
 .mainbanner4
-	margin-top .5rem
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/mainbanner4.png')
-	border 2rem solid black
-	background-color rgba(255,255,255,0)
-	height 25rem
-	background-size cover	
-
-.mainbanner4:hover
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/mainbanner4h.png')
+    margin-top 0.5rem
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/mainbanner4.png")
+    border 2rem solid #000
+    background-color rgba(255,255,255,0)
+    height 25rem
+    background-size cover
+    &:hover
+        background-image url("http://res.cloudinary.com/jhi5/image/upload/mainbanner4h.png")
 
 .maintext1
-	font-family "Adventure"
-	font-size 8rem
-	color white
-	margin-top 12rem
-	margin-left 2rem
-	margin-right 2rem
-	margin-bottom .25
-	text-shadow -.2rem .25rem .25rem black, -.2rem -.25rem .25rem black, .75rem .25rem .25rem black
+    font-family "Adventure"
+    font-size 8rem
+    color #fff
+    margin-top 12rem
+    margin-left 2rem
+    margin-right 2rem
+    margin-bottom 0.25
+    text-shadow -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000
 
 .maintext2
-	font-family "Adventure"
-	font-size 8rem
-	color white
-	margin-top 23rem
-	margin-left .5rem
-	margin-right .5rem
-	text-shadow -.2rem .25rem .25rem black, -.2rem -.25rem .25rem black, .75rem .25rem .25rem black
+    font-family "Adventure"
+    font-size 8rem
+    color #fff
+    margin-top 23rem
+    margin-left 0.5rem
+    margin-right 0.5rem
+    text-shadow -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000
 
 .maintext3
-	font-family "Adventure"
-	font-size 8rem
-	color white
-	margin-top 23rem
-	margin-left .5rem
-	margin-right .5rem
-	margin-bottom 0rem
-	text-shadow -.2rem .25rem .25rem black, -.2rem -.25rem .25rem black, .75rem .25rem .25rem black
+    font-family "Adventure"
+    font-size 8rem
+    color #fff
+    margin-top 23rem
+    margin-left 0.5rem
+    margin-right 0.5rem
+    margin-bottom 0rem
+    text-shadow -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000
 
 .maintext4
-	font-family "Adventure"
-	font-size 8rem
-	color white
-	margin-left 2rem
-	margin-right 2rem
-	text-shadow -.2rem .25rem .25rem black, -.2rem -.25rem .25rem black, .75rem .25rem .25rem black
-	width 100%
-	margin-top 12rem
-
-/* charselect */
+    font-family "Adventure"
+    font-size 8rem
+    color #fff
+    margin-left 2rem
+    margin-right 2rem
+    text-shadow -0.2rem 0.25rem 0.25rem #000, -0.2rem -0.25rem 0.25rem #000, 0.75rem 0.25rem 0.25rem #000
+    width 100%
+    margin-top 12rem
 
 .characterselectname
-	color white
+    color #fff
 
 .charselect
-	height 25rem
-	width 25rem
-	margin-top 2rem
-	margin-right 1rem
-	border 1.5rem outset black
-	border-radius 1rem
+    height 25rem
+    width 25rem
+    margin-top 2rem
+    margin-right 1rem
+    border 1.5rem outset #000
+    border-radius 1rem
 
 #characterselectjumbo
-	min-height 50vh
+    min-height 50vh
 
-#characterselecttitle	
-	font-size 15rem
-	color white
-	text-shadow 1px 1px 0 #CCC, 2px 2px 0 #CCC, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444
+#characterselecttitle
+    font-size 15rem
+    color #fff
+    text-shadow 1px 1px 0 #ccc, 2px 2px 0 #ccc, 3px 3px 0 #444, 4px 4px 0 #444, 5px 5px 0 #444, 6px 6px 0 #444
 
 .characterselectbasic
-	background none
+    background none
 
 .charselectbg
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/defaultbg.png')
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/defaultbg.png")
 
 .charselectroster
-	background-color white
-	border-left 1rem solid black
-	border-right 1rem solid black
-	border-top none
-	border-bottom 1rem solid black
-	min-height 500px
-	margin-bottom 0rem
-	padding-top 4rem
-	border-radius 2rem
+    background-color #fff
+    border-left 1rem solid #000
+    border-right 1rem solid #000
+    border-top none
+    border-bottom 1rem solid #000
+    min-height 500px
+    margin-bottom 0rem
+    padding-top 4rem
+    border-radius 2rem
 
 .charselectoval
-	border 1.5rem outset black
-	border-radius 1rem
+    border 1.5rem outset #000
+    border-radius 1rem
 
 #charselecttitle
-	font-size 7rem
-	font-family "Adventure"
-	margin-top 0rem
-	color black
-	margin-top 5%
-	margin-bottom 10%
+    font-size 7rem
+    font-family "Adventure"
+    margin-top 0rem
+    color #000
+    margin-top 5%
+    margin-bottom 10%
 
 .charselecttitle
-	font-size 7rem
-	font-family "Okuda"
-	margin-top 0rem
-	color black
-	margin-top 5%
-	margin-bottom 10%
-
-/* charpage */
+    font-size 7rem
+    font-family "Okuda"
+    margin-top 0rem
+    color #000
+    margin-top 5%
+    margin-bottom 10%
 
 .charpagebg
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/playerdamageicon.png')
-	background-attachment fixed
-	background-repeat none
-	background-size cover
-	margin-top 1rem
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/playerdamageicon.png")
+    background-attachment fixed
+    background-repeat none
+    background-size cover
+    margin-top 1rem
 
 .charpageinfocard
-	background-color white
-	border-radius 5rem	
-	border 1rem solid black
-	box-shadow 1rem 1rem 1rem black
-	margin-top 2rem
+    background-color #fff
+    border-radius 5rem
+    border 1rem solid #000
+    -webkit-box-shadow 1rem 1rem 1rem #000
+    box-shadow 1rem 1rem 1rem #000
+    margin-top 2rem
 
 .charpagecardleft
-	padding 1rem
+    padding 1rem
 
 .charpagecardright
-	padding 1rem
+    padding 1rem
 
 .charpageheadshotbg
-	position relative
-	width 100%
+    position relative
+    width 100%
 
 .charpageheadshot
-	width 100%
-	border 1rem solid black
-	background-color blue
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/gravitygirlcharselect.png')
-	background-size cover
-	border-radius 5rem
+    width 100%
+    border 1rem solid #000
+    background-color #00f
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/gravitygirlcharselect.png")
+    background-size cover
+    border-radius 5rem
 
 .charpagenamerow
-	margin-top 1rem
-
+    margin-top 1rem
 
 .charpagename
-	font-family 'Okuda'
-	color white
-	font-size 10rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
-	margin-top 0rem
-	margin-right 0rem
-	border 1rem solid black
-	border-radius 2rem
+    font-family 'Okuda'
+    color #fff
+    font-size 10rem
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000
+    margin-top 0rem
+    margin-right 0rem
+    border 1rem solid #000
+    border-radius 2rem
 
 .charpagedifficultycol
-	margin-left -1.4rem
-	margin-right -1.4rem
+    margin-left -1.4rem
+    margin-right -1.4rem
 
 .charpagedifficulty
-	margin auto 0
-	margin-top 0rem
-	border-radius 2rem
-	border 1rem solid black
+    margin auto 0
+    margin-top 0rem
+    border-radius 2rem
+    border 1rem solid #000
 
 .charpageheading
-	font-family 'Okuda'
-	color white
-	border-radius 2rem
-	font-size 6rem
-	padding-bottom 1rem
-	border 1rem solid black
-	margin-top 0rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	letter-spacing .5rem
+    font-family 'Okuda'
+    color #fff
+    border-radius 2rem
+    font-size 6rem
+    padding-bottom 1rem
+    border 1rem solid #000
+    margin-top 0rem
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000
+    letter-spacing 0.5rem
 
 .charpagepowers
-	font-family "Okuda"
-	color black
-	font-size 3.5rem
-	background-color white
-	padding 0rem
-	box-shadow none
-	margin 0
-	margin-left 5%
-	margin-right 5%
-	text-shadow none
-	letter-spacing 0rem
-	border .1rem solid rgba(0, 0, 0, .45)
+    font-family "Okuda"
+    color #000
+    font-size 3.5rem
+    background-color #fff
+    padding 0rem
+    -webkit-box-shadow none
+    box-shadow none
+    margin 0
+    margin-left 5%
+    margin-right 5%
+    text-shadow none
+    letter-spacing 0rem
+    border 0.1rem solid rgba(0,0,0,0.45)
 
-.charpageplus	
-	font-family "Okuda"
-	color white
-	font-size 3.5rem
-	background-color #228B22
-	padding 0rem
-	box-shadow none
-	margin 0
-	margin-left 5%
-	margin-right 5%
-	text-shadow .15rem .15rem .15rem black
-	border .1rem solid rgba(255, 225, 255, .45)
-	letter-spacing 0rem
+.charpageplus
+    font-family "Okuda"
+    color #fff
+    font-size 3.5rem
+    background-color #228b22
+    padding 0rem
+    -webkit-box-shadow none
+    box-shadow none
+    margin 0
+    margin-left 5%
+    margin-right 5%
+    text-shadow 0.15rem 0.15rem 0.15rem #000
+    border 0.1rem solid rgba(255,225,255,0.45)
+    letter-spacing 0rem
 
 .charpageminus
-	font-family "Okuda"
-	color white
-	font-size 3.5rem
-	background-color #FF4847
-	padding 0rem
-	padding 0rem
-	box-shadow none
-	margin 0
-	margin-left 5%
-	margin-right 5%
-	border .1rem solid rgba(255, 225, 255, .45)
-	text-shadow .15rem .15rem .15rem black
-	letter-spacing 0rem
+    font-family "Okuda"
+    color #fff
+    font-size 3.5rem
+    background-color #ff4847
+    padding 0rem
+    padding 0rem
+    -webkit-box-shadow none
+    box-shadow none
+    margin 0
+    margin-left 5%
+    margin-right 5%
+    border 0.1rem solid rgba(255,225,255,0.45)
+    text-shadow 0.15rem 0.15rem 0.15rem #000
+    letter-spacing 0rem
 
 .charpageskillimage
-	background-color white
-	width 95%
-	padding-top 1rem
-	padding-bottom 1rem
-	padding-right 1rem
-	padding-left 1rem
-	margin auto 0
-	border-radius 2rem
-	border 1rem solid black
+    background-color #fff
+    width 95%
+    padding-top 1rem
+    padding-bottom 1rem
+    padding-right 1rem
+    padding-left 1rem
+    margin auto 0
+    border-radius 2rem
+    border 1rem solid #000
 
 .charpagedownloadbutton
-	font-family 'Adventure'
-	background-color DodgerBlue
-	color white
-	border-radius 2rem
-	border 1rem solid black
-	font-size 5rem
-	padding-top 1rem
-	padding-bottom 1rem
-	text-shadow -.25rem .25rem .25rem black, -.25rem -.25rem .25rem black, .25rem .25rem .25rem black
-	margin-top 1.25rem
-	margin-bottom 0rem
+    font-family 'Adventure'
+    background-color DodgerBlue
+    color #fff
+    border-radius 2rem
+    border 1rem solid #000
+    font-size 5rem
+    padding-top 1rem
+    padding-bottom 1rem
+    text-shadow -0.25rem 0.25rem 0.25rem #000, -0.25rem -0.25rem 0.25rem #000, 0.25rem 0.25rem 0.25rem #000
+    margin-top 1.25rem
+    margin-bottom 0rem
 
 .charpagedatabasepointer
-	font-family "Okuda"
-	color black
-	margin-top 0rem
-	font-size 7rem
-	width 100%
-	border-radius 4rem
+    font-family "Okuda"
+    color #000
+    margin-top 0rem
+    font-size 7rem
+    width 100%
+    border-radius 4rem
 
 .charpagemodalpreviousbutton
-	font-family 'adventureregular'
-	background rgb(42, 173, 227)
-	color white
-	font-size 3rem
-	margin 0 1rem 0 1rem
-	border-radius 2rem
+    font-family 'adventureregular'
+    background #2aade3
+    color #fff
+    font-size 3rem
+    margin 0 1rem 0 1rem
+    border-radius 2rem
 
 .charpagemodalclosebutton
-	font-family 'adventureregular'
-	background rgb(42, 173, 227)
-	color white
-	font-size 3rem
-	margin 0 1rem 0 1rem
-	border-radius 2rem
+    font-family 'adventureregular'
+    background #2aade3
+    color #fff
+    font-size 3rem
+    margin 0 1rem 0 1rem
+    border-radius 2rem
 
 .charpagemodalnextbutton
-	font-family 'adventureregular'
-	background rgb(42, 173, 227)
-	color white
-	font-size 3rem
-	margin 0 1rem 0 1rem
-	border-radius 2rem
+    font-family 'adventureregular'
+    background #2aade3
+    color #fff
+    font-size 3rem
+    margin 0 1rem 0 1rem
+    border-radius 2rem
 
-.charpagemodalpreviousbutton:hover, .charpagemodalnextbutton:hover, .charpagemodalclosebutton:hover
-	color white
+.charpagemodalpreviousbutton:hover,
+.charpagemodalnextbutton:hover,
+.charpagemodalclosebutton:hover
+    color #fff
 
-.charpagemodalpreviousbutton:focus, .charpagemodalnextbutton:focus, .charpagemodalclosebutton:focus
-	color white
+.charpagemodalpreviousbutton:focus,
+.charpagemodalnextbutton:focus,
+.charpagemodalclosebutton:focus
+    color #fff
 
 .charpagemodalimagecontainer
-	margin-top .1rem
+    margin-top 0.1rem
 
 .charpagemodalimage
-	border-radius 3rem
-	margin auto
-	max-height 65rem
-	box-shadow 1rem 1rem 1rem grey
+    border-radius 3rem
+    margin auto
+    max-height 65rem
+    -webkit-box-shadow 1rem 1rem 1rem #808080
+    box-shadow 1rem 1rem 1rem #808080
 
 .charpagemodalutilityrow
-	margin-top 2rem
-	margin-bottom 3rem
+    margin-top 2rem
+    margin-bottom 3rem
+    display block
+    text-align center
 
 .charpagemodalhpheading
-	color white
-	background black
-	font-size 5rem
-	font-family "Okuda"
-	margin-bottom 0
-	border-top-right-radius .5rem
-	border-top-left-radius .5rem
+    color #fff
+    background #000
+    font-size 5rem
+    font-family "Okuda"
+    margin-bottom 0
+    border-top-right-radius 0.5rem
+    border-top-left-radius 0.5rem
 
 .charpagemodalfightheading
-	color white
-	background black
-	font-size 5rem
-	font-family "Okuda"
-	margin-bottom 0	
-	border-top-right-radius .5rem
-	border-top-left-radius .5rem
+    color #fff
+    background #000
+    font-size 5rem
+    font-family "Okuda"
+    margin-bottom 0
+    border-top-right-radius 0.5rem
+    border-top-left-radius 0.5rem
 
 .charpagemodalarmorheading
-	color white
-	background black
-	font-size 5rem
-	font-family "Okuda"
-	margin-bottom 0
-	border-top-right-radius .5rem
-	border-top-left-radius .5rem
-
-.charpagemodalutilityrow
-	display block
-	text-align center
+    color #fff
+    background #000
+    font-size 5rem
+    font-family "Okuda"
+    margin-bottom 0
+    border-top-right-radius 0.5rem
+    border-top-left-radius 0.5rem
 
 .charpagemodalutilitycell
-	max-width 25rem
+    max-width 25rem
 
 .charpagemodalutilityvalue
-	margin 0
-	padding 0
-	border 1rem solid black
-	border-top 0rem solid black
-	border-bottom-right-radius 2rem
-	border-bottom-left-radius 2rem
-	color white
-	font-family 'Okuda'
-	font-size 10rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
+    margin 0
+    padding 0
+    border 1rem solid #000
+    border-top 0rem solid #000
+    border-bottom-right-radius 2rem
+    border-bottom-left-radius 2rem
+    color #fff
+    font-family 'Okuda'
+    font-size 10rem
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000
 
 #hpsymbol
-	background-color rgba(255,0,153,1)
+    background-color #f09
 
 #fightsymbol
-	background-color rgba(0,153,255,1)
+    background-color #09f
 
 #armorsymbol
-	background-color rgba(255,255,0,1)
+    background-color #ff0
 
 .charpagemodalratingheading
-	color white
-	background black
-	font-size 5rem
-	border-radius .5rem
-	font-family "Okuda"
+    color #fff
+    background #000
+    font-size 5rem
+    border-radius 0.5rem
+    font-family "Okuda"
 
 .charpagemodalrating
-	max-width 15rem
-	margin auto
-	border-radius 2rem
-	border 1rem solid black
-	padding-left 1.5rem
-	padding-right 1.5rem
+    max-width 15rem
+    margin auto
+    border-radius 2rem
+    border 1rem solid #000
+    padding-left 1.5rem
+    padding-right 1.5rem
 
 .charpagemodaltypeheading
-	color white
-	background black
-	font-size 5rem
-	border-radius .5rem
-	font-family "Okuda"
+    color #fff
+    background #000
+    font-size 5rem
+    border-radius 0.5rem
+    font-family "Okuda"
 
 .charpagemodaltype
-	max-width 15rem
-	margin auto
-	border-radius 2rem
-	border 1rem solid black
-	padding-left 1.5rem
-	padding-right 1.5rem
+    max-width 15rem
+    margin auto
+    border-radius 2rem
+    border 1rem solid #000
+    padding-left 1.5rem
+    padding-right 1.5rem
 
 .charpagemodaltextheading
-	color white
-	background black
-	font-size 5rem
-	border-radius .5rem
-	font-family "Okuda"
+    color #fff
+    background #000
+    font-size 5rem
+    border-radius 0.5rem
+    font-family "Okuda"
 
 .charpagemodaltext
-	font-family "Okuda"
-	font-size 5rem
-	margin auto 0
-	padding-left 5%
-	padding-right 5%
+    font-family "Okuda"
+    font-size 5rem
+    margin auto 0
+    padding-left 5%
+    padding-right 5%
 
 .charpagemodalcommentheading
-	color white
-	background black
-	font-size 5rem
-	border-radius .5rem
-	font-family "Okuda"
+    color #fff
+    background #000
+    font-size 5rem
+    border-radius 0.5rem
+    font-family "Okuda"
 
 .charpagemodalcomment
-	font-family "Okuda"
-	font-size 4.5rem
-	margin auto 0
-	padding-left 5%
-	padding-right 5%
-	color grey
-	font-style italic
+    font-family "Okuda"
+    font-size 4.5rem
+    margin auto 0
+    padding-left 5%
+    padding-right 5%
+    color #808080
+    font-style italic
 
 .charpagesearchfiltertable
-	background-color white
-	border-radius 5rem
-	padding 2rem
-	margin-top 1rem
-	margin-bottom 2rem
-	border 1rem solid black
-	box-shadow 1rem 1rem 1rem black	
+    background-color #fff
+    border-radius 5rem
+    padding 2rem
+    margin-top 1rem
+    margin-bottom 2rem
+    border 1rem solid #000
+    -webkit-box-shadow 1rem 1rem 1rem #000
+    box-shadow 1rem 1rem 1rem #000
 
 .charpagesearchfiltercontainer
-	background-color DodgerBlue
-	margin auto
-	margin-bottom 1rem
-	padding auto
-	border 1rem solid black
-	border-radius 2rem
+    background-color DodgerBlue
+    margin auto
+    margin-bottom 1rem
+    padding auto
+    border 1rem solid #000
+    border-radius 2rem
 
 .charpagesearchfilterheading
-	font-family 'Adventure'
-	font-size 8rem
-	padding-bottom 1rem
-	margin-top 0
-	margin-bottom 0
-	color white
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, 1rem .25rem .25rem black
+    font-family 'Adventure'
+    font-size 8rem
+    padding-bottom 1rem
+    margin-top 0
+    margin-bottom 0
+    color #fff
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 1rem 0.25rem 0.25rem #000
 
 .charpagesearchfiltertagbg
-	background-color white
-	margin-left 2rem
-	margin-right 2rem
-	padding 1rem
-	border 1rem solid black
-	border-radius 2rem
-	min-height 30rem
+    background-color #fff
+    margin-left 2rem
+    margin-right 2rem
+    padding 1rem
+    border 1rem solid #000
+    border-radius 2rem
+    min-height 30rem
 
 .charpagesearchfiltertagcol
-	min-height 20rem
+    min-height 20rem
 
 .charpagesearchfiltertagrow
-	display inline-block
+    display inline-block
 
 .charpagesearchfilterexcludedtag
-	padding-left 2rem
-	padding-right 2rem
-	padding-top 0rem
-	padding-bottom 0rem
-	margin .2rem 
-	background-color #228B22
-	font-family "Okuda"
-	color white
-	font-size 3.5rem
+    padding-left 2rem
+    padding-right 2rem
+    padding-top 0rem
+    padding-bottom 0rem
+    margin 0.2rem
+    background-color #228b22
+    font-family "Okuda"
+    color #fff
+    font-size 3.5rem
 
 .charpagesearchfilterincludedtag
-	padding-left 2rem
-	padding-right 2rem
-	padding-top 0rem
-	padding-bottom 0rem
-	margin .2rem 
-	background-color #FF4847
-	font-family "Okuda"
-	color white
-	font-size 3.5rem
+    padding-left 2rem
+    padding-right 2rem
+    padding-top 0rem
+    padding-bottom 0rem
+    margin 0.2rem
+    background-color #ff4847
+    font-family "Okuda"
+    color #fff
+    font-size 3.5rem
 
 .charpagesearchfilterbuttonrow
-	float none
-	margin 0 auto
-	margin-top 1rem
-	margin-bottom 1rem
+    float none
+    margin 0 auto
+    margin-top 1rem
+    margin-bottom 1rem
 
 .charpagesearchfilterresetbutton
-	font-size 3.5rem
-	font-family 'Adventure'
-	border-radius 2rem
-	background-color #FF4847
-	color white
-	border 1rem solid black
-	width 100%
+    font-size 3.5rem
+    font-family 'Adventure'
+    border-radius 2rem
+    background-color #ff4847
+    color #fff
+    border 1rem solid #000
+    width 100%
 
 .charpagesearchfiltercrossoverbutton
-	font-size 3.5rem
-	font-family 'Adventure'
-	border-radius 2rem
-	color white
-	background-color #FF4847
-	border 1rem solid black
-	width 100%
+    font-size 3.5rem
+    font-family 'Adventure'
+    border-radius 2rem
+    color #fff
+    background-color #ff4847
+    border 1rem solid #000
+    width 100%
 
 .charpagesearchfilterfeatbutton
-	font-size 3.5rem
-	font-family 'Adventure'
-	border-radius 2rem
-	color white
-	background-color #FF4847
-	border 1rem solid black
-	width 100%
+    font-size 3.5rem
+    font-family 'Adventure'
+    border-radius 2rem
+    color #fff
+    background-color #ff4847
+    border 1rem solid #000
+    width 100%
 
 .charpagedatabaseheadingbg
-	background-color DodgerBlue
-	margin auto
-	padding auto 
-	border-left 1rem solid black
-	border-right 1rem solid black
-	border-top 1rem solid black
-	border-top-left-radius 2rem
-	border-top-right-radius 2rem
-	width 96%
-	margin-left 2%
-	margin-top 1%
+    background-color DodgerBlue
+    margin auto
+    padding auto
+    border-left 1rem solid #000
+    border-right 1rem solid #000
+    border-top 1rem solid #000
+    border-top-left-radius 2rem
+    border-top-right-radius 2rem
+    width 96%
+    margin-left 2%
+    margin-top 1%
 
 .charpagedatabaseheading
-	font-family 'Adventure'
-	color white
-	font-size 6rem
-	margin-top 0rem
-	margin-bottom 0rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	letter-spacing .5rem
+    font-family 'Adventure'
+    color #fff
+    font-size 6rem
+    margin-top 0rem
+    margin-bottom 0rem
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000
+    letter-spacing 0.5rem
 
 .charpagedatabasesubheading
-	font-family 'Okuda'
-	color white
-	font-size 5rem
-	margin-top 0rem
-	padding-bottom 1rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	letter-spacing .5rem
-	font-style italic
+    font-family 'Okuda'
+    color #fff
+    font-size 5rem
+    margin-top 0rem
+    padding-bottom 1rem
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000
+    letter-spacing 0.5rem
+    font-style italic
 
 .charpagedatabasetablebox
-	background-color white
-	border-radius .2rem
-	border-left .5rem solid black
-	border-right .5rem solid black
-	border-top .5rem solid black
-	margin-top 0rem
+    background-color #fff
+    border-radius 0.2rem
+    border-left 0.5rem solid #000
+    border-right 0.5rem solid #000
+    border-top 0.5rem solid #000
+    margin-top 0rem
 
 .charpagedatabasetablefield
-	background-color DodgerBlue
-	border .5rem solid black
+    background-color DodgerBlue
+    border 0.5rem solid #000
 
 .charpagedatabasefieldheading
-	color white
-	font-family 'Adventure'
-	margin 0 auto
+    color #fff
+    font-family 'Adventure'
+    margin 0 auto
 
 .charpagetablebody
-	background-color rgba(255,255,255,8)
-	border 1rem solid black
-	border-top-left-radius .25rem
-	border-top-right-radius .25rem
+    background-color #fff
+    border 1rem solid #000
+    border-top-left-radius 0.25rem
+    border-top-right-radius 0.25rem
 
 .charpagedatabasetablebodyrow
-	border-bottom .5rem solid DodgerBlue
-	border-left .5rem solid DodgerBlue
-	border-right .5rem solid DodgerBlue
+    border-bottom 0.5rem solid DodgerBlue
+    border-left 0.5rem solid DodgerBlue
+    border-right 0.5rem solid DodgerBlue
 
 .charpagedatabasecardtitle
-	font-family "adventureregular"
-	font-size 5rem
-	width 80%
-	margin-left 1
-	margin-top 1.5rem
-	letter-spacing .2rem
+    font-family "adventureregular"
+    font-size 5rem
+    width 80%
+    margin-left 1
+    margin-top 1.5rem
+    letter-spacing 0.2rem
 
 .charpagedatabasetypesymbol
-	max-width 15rem
-	margin auto
-	padding-left 1.5rem
-	padding-right 1.5rem
+    max-width 15rem
+    margin auto
+    padding-left 1.5rem
+    padding-right 1.5rem
 
 .charpagedatabasetext
-	font-size 4rem
-	font-family 'Okuda'
-	margin-top 1.5rem
-	margin-left 8%
-	margin-right 8%
-
-/* Feedback Form */
-
-.form-group label
-	width 100%
-	background-color DodgerBlue
-	color White
-	border .25rem solid DodgerBlue
-	border-radius 1rem
-	font-size 2.75rem
-	font-weight bold
-	text-align center
-	
-.form-group input
-	padding-top 3rem
-	padding-bottom 3rem
-	font-family "Adventure"
-	font-size 5rem
-	text-align center
-	background-color white
-	border-radius 1rem
-
-.form-group select
-	padding-top .5rem
-	padding-bottom .5rem
-	text-align center
+    font-size 4rem
+    font-family 'Okuda'
+    margin-top 1.5rem
+    margin-left 8%
+    margin-right 8%
 
 .form-group
-	font-family Adventure
-	width 100%
-
-.form-group option
-	font-size 2.5rem
-
-.form-group select
-	font-size 3rem
-	padding-left 1rem
+    font-family Adventure
+    width 100%
+    label
+        width 100%
+        background-color DodgerBlue
+        color White
+        border 0.25rem solid DodgerBlue
+        border-radius 1rem
+        font-size 2.75rem
+        font-weight bold
+        text-align center
+    input
+        padding-top 3rem
+        padding-bottom 3rem
+        font-family "Adventure"
+        font-size 5rem
+        text-align center
+        background-color #fff
+        border-radius 1rem
+    select
+        padding-top 0.5rem
+        padding-bottom 0.5rem
+        text-align center
+        font-size 3rem
+        padding-left 1rem
+    option
+        font-size 2.5rem
 
 select
-	text-align-last center
-	text-align center
-	border-left .5rem solid DodgerBlue
-	border-top-right-radius 1rem
-	border-bottom-right-radius 1rem
+    text-align-last center
+    text-align center
+    border-left 0.5rem solid DodgerBlue
+    border-top-right-radius 1rem
+    border-bottom-right-radius 1rem
 
 #commentfield
-	background-color white
-	border-left .5rem solid DodgerBlue
-	font-family Verdana
-	padding-left .5rem
-	font-size 2.5rem
+    background-color #fff
+    border-left 0.5rem solid DodgerBlue
+    font-family Verdana
+    padding-left 0.5rem
+    font-size 2.5rem
 
 .full-input
-	width 100%
+    width 100%
 
 .feedbackbutton
-	padding 1rem	
-	font-family "Adventure"
-	font-size 4rem
-	margin-top 2rem
-	width 95%
-	background-color DodgerBlue
-	color white
-
-.feedbackbutton:hover
-	background-color Red
-	color white
-
-.feedbackbutton:focus
-	color white
+    padding 1rem
+    font-family "Adventure"
+    font-size 4rem
+    margin-top 2rem
+    width 95%
+    background-color DodgerBlue
+    color #fff
+    &:hover
+        background-color Red
+        color #fff
+    &:focus
+        color #fff
 
 legend
-	text-align center
-	font-family "Okuda"
-	font-size 5rem
+    text-align center
+    font-family "Okuda"
+    font-size 5rem
 
 .feedbackheading
-	font-family 'Adventure'
-	color white
-	font-size 4rem
-	text-align center
-	margin-top 1rem
-	margin-bottom 0rem
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .25rem .25rem .25rem black
-	letter-spacing .5rem
+    font-family 'Adventure'
+    color #fff
+    font-size 4rem
+    text-align center
+    margin-top 1rem
+    margin-bottom 0rem
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.25rem 0.25rem 0.25rem #000
+    letter-spacing 0.5rem
 
 .feedbacksubheading
-	font-family 'Okuda'
-	color black
-	font-size 4rem
-	text-align center
-	margin-top 0rem
-	margin-bottom .5rem
-	letter-spacing .5rem
+    font-family 'Okuda'
+    color #000
+    font-size 4rem
+    text-align center
+    margin-top 0rem
+    margin-bottom 0.5rem
+    letter-spacing 0.5rem
 
-/* articleselect */
-
-/* articles */
 .articlebg
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/defaultbg.png')
-	background-attachment fixed
-	background-repeat none
-	background-size cover
-	margin-top 1rem
-	
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/defaultbg.png")
+    background-attachment fixed
+    background-repeat none
+    background-size cover
+    margin-top 1rem
+
 .articlecontainerbg
-	background-color white
-	border .5rem solid black
+    background-color #fff
+    border 0.5rem solid #000
 
 .articlebanner
-	margin-top 1rem
-	border-radius 2%
-	width 98%
-	margin 1%
-	margin-top 1rem
-	text-align center
+    margin-top 1rem
+    border-radius 2%
+    width 98%
+    margin 1%
+    margin-top 1rem
+    text-align center
 
 .articlemasthead
-	background-color decolor
-	border-radius 1rem
-	width 100%
-	margin auto 0
-	margin-top 1rem
-	margin-bottom 0rem
+    background-color #336
+    border-radius 1rem
+    width 100%
+    margin auto 0
+    margin-top 1rem
+    margin-bottom 0rem
 
 .articletitle
-	font-family Adventure
-	font-size 36px
-	color white
-	margin-top 0rem
-	padding-top 0rem
-	padding-right 1rem
-	text-align right
-	padding-bottom 0rem
-	margin-bottom 0rem
+    font-family Adventure
+    font-size 36px
+    color #fff
+    margin-top 0rem
+    padding-top 0rem
+    padding-right 1rem
+    text-align right
+    padding-bottom 0rem
+    margin-bottom 0rem
 
 .articleauthor
-	font-family Okuda
-	color white
-	font-size 36px
-	margin-top 0rem
-	padding-top 0rem
-	padding-bottom .5rem
-	padding-right 1.5rem
-	text-align right
+    font-family Okuda
+    color #fff
+    font-size 36px
+    margin-top 0rem
+    padding-top 0rem
+    padding-bottom 0.5rem
+    padding-right 1.5rem
+    text-align right
 
 .articleheading
-	font-size 36px
-	text-align left
-	color white
-	background-color DodgerBlue
-	padding 1rem
-	text-indent 15px
-	margin-bottom 2rem
-	margin-top 0rem
-	font-family okuda
-	font-styling italic
-	letter-spacing .5rem
+    font-size 36px
+    text-align left
+    color #fff
+    background-color DodgerBlue
+    padding 1rem
+    text-indent 15px
+    margin-bottom 2rem
+    margin-top 0rem
+    font-family okuda
+    font-styling italic
+    letter-spacing 0.5rem
 
 .articletext
-	font-size 15px
-	text-align left
-	padding 0 2% 0 2%
-	margin-top .5rem 0 .5rem 0
+    font-size 15px
+    text-align left
+    padding 0 2% 0 2%
+    margin-top 0.5rem 0 0.5rem 0
 
 .articlevertimg
-	width 250px
-	height 350px
-	border-radius 3%
-	margin-bottom 1%
-	box-shadow 4px 4px 2px grey
+    width 250px
+    height 350px
+    border-radius 3%
+    margin-bottom 1%
+    -webkit-box-shadow 4px 4px 2px #808080
+    box-shadow 4px 4px 2px #808080
 
 .articlehorzimg
-	width 375px
-	height 275px
-	border-radius 3% 
-	margin-bottom 1%
-	box-shadow 4px 4px 2px grey
+    width 375px
+    height 275px
+    border-radius 3%
+    margin-bottom 1%
+    -webkit-box-shadow 4px 4px 2px #808080
+    box-shadow 4px 4px 2px #808080
 
 .articleskillheading
-	font-size 36px
+    font-size 36px
 
 .articleskillpanel
-	border-top solid .1rem DodgerBlue
-	border-bottom solid .1rem DodgerBlue
+    border-top solid 0.1rem DodgerBlue
+    border-bottom solid 0.1rem DodgerBlue
 
 .articlevertcardheading
-	font-size 36px
-	background-color DodgerBlue
-	color white
-	font-family Adventure
-	padding 1.5%
-	line-spacing 1rem
+    font-size 36px
+    background-color DodgerBlue
+    color #fff
+    font-family Adventure
+    padding 1.5%
+    line-spacing 1rem
 
 .articlehorzcardheading
-	font-size 36px
-	background-color DodgerBlue
-	color white
-	font-family Adventure
-	padding 1.5%
+    font-size 36px
+    background-color DodgerBlue
+    color #fff
+    font-family Adventure
+    padding 1.5%
 
 .articleskilltext
-	font-size 25px
-	text-align center
-	margin-bottom 2%
-	font-family Okuda
-	color grey
-	width 80%
-	margin-left 10%
-	margin-right 10%
+    font-size 25px
+    text-align center
+    margin-bottom 2%
+    font-family Okuda
+    color #808080
+    width 80%
+    margin-left 10%
+    margin-right 10%
 
 .articleskillrow
-	width 60%
-	margin-left 20%
-	margin-right 20%
-	margin-top 2.5%
-	margin-bottom 2.5%
+    width 60%
+    margin-left 20%
+    margin-right 20%
+    margin-top 2.5%
+    margin-bottom 2.5%
 
 .articlefiveheading
-	font-family Adventure
-	font-size 36px
-	background-color DodgerBlue
-	color white
-	padding 1.5%
-	margin-top 12.5%
-	border-radius 3%
+    font-family Adventure
+    font-size 36px
+    background-color DodgerBlue
+    color #fff
+    padding 1.5%
+    margin-top 12.5%
+    border-radius 3%
 
 .articlefivetext
-	font-size 20px
-	
+    font-size 20px
+
 .articlefivevertimg
-	width 275px
-	height 375px
-	border-radius 3%
-	margin-top 4.5%
-	margin-bottom 4.5%	
-	box-shadow 4px 4px 2px grey
+    width 275px
+    height 375px
+    border-radius 3%
+    margin-top 4.5%
+    margin-bottom 4.5%
+    -webkit-box-shadow 4px 4px 2px #808080
+    box-shadow 4px 4px 2px #808080
 
 .articlefivehorzimg
-	width 375px
-	height 275px
-	border-radius 3%
-	margin-top 9.5% 
-	margin-bottom 0
-	box-shadow 4px 4px 2px grey
+    width 375px
+    height 275px
+    border-radius 3%
+    margin-top 9.5%
+    margin-bottom 0
+    -webkit-box-shadow 4px 4px 2px #808080
+    box-shadow 4px 4px 2px #808080
 
 .articlefivepanel
-	min-height 400px
-	line-height 50%
+    min-height 400px
+    line-height 50%
 
 .articlefiverow
-	width 99%
-	margin .5%
-	margin-top 0%
-	margin-bottom 0%
-	border-bottom solid .1rem DodgerBlue
+    width 99%
+    margin 0.5%
+    margin-top 0%
+    margin-bottom 0%
+    border-bottom solid 0.1rem DodgerBlue
 
 .articlerow
-	width 99%
-	margin .5%
+    width 99%
+    margin 0.5%
 
 .articlecardpanel
-	min-height 400px
-	line-height 50%
+    min-height 400px
+    line-height 50%
 
 .articleindextitle
-	font-family Okuda
-	font-size 36px
-	text-align center
-	color black
-	margin-bottom 1.5rem
-	margin-top 0rem
+    font-family Okuda
+    font-size 36px
+    text-align center
+    color #000
+    margin-bottom 1.5rem
+    margin-top 0rem
 
 .articleindeximage
-	margin-bottom 0rem
-	border-radius 3%
+    margin-bottom 0rem
+    border-radius 3%
 
 .articlecardrow
-	background-color white
-	border-radius 3%
-	margin-top 2%
-	margin-bottom 3.5%
+    background-color #fff
+    border-radius 3%
+    margin-top 2%
+    margin-bottom 3.5%
 
 .gg-charpageheadshot
-	width 100%
-	border 1rem solid black
-	background-color ggsecondary
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/gravitygirlcharselect.png')
-	background-size cover
-	border-radius 5rem
+    width 100%
+    border 1rem solid #000
+    background-color #999
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/gravitygirlcharselect.png")
+    background-size cover
+    border-radius 5rem
 
 .gg-charpagemodalcardname
-	font-family "adventureregular"
-	font-size 7.5rem
-	line-height auto
-	margin 0
-	color white
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	background-color ggcolor
-	border 1rem outset ggcolor
-	border-radius 2rem
-	letter-spacing .3rem
+    font-family "adventureregular"
+    font-size 7.5rem
+    line-height auto
+    margin 0
+    color #fff
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000
+    background-color #969
+    border 1rem outset #969
+    border-radius 2rem
+    letter-spacing 0.3rem
 
 .gg-backgroundcolor
-	background-color ggcolor
+    background-color #969
 
-.gg-hover:hover
-	background-color ggcolor
+.gg-hover
+    &:hover
+        background-color #969
 
 .gg-charname
-	font-family Adventure
-	font-size 7rem
-	margin-bottom 10%
-	color ggcolor
-	text-shadow -.1rem .25rem .25rem #d9d9d9, -.1rem -.25rem .25rem #d9d9d9, .5rem .25rem .25rem #d9d9d9
-
-/* RB classes */
+    font-family Adventure
+    font-size 7rem
+    margin-bottom 10%
+    color #969
+    text-shadow -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9
 
 .rb-charpageheadshot
-	width 100%
-	border 1rem solid black
-	background-color rbsecondary
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/robonobocharselect.png')
-	background-size cover
-	border-radius 5rem
-
+    width 100%
+    border 1rem solid #000
+    background-color #f33
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/robonobocharselect.png")
+    background-size cover
+    border-radius 5rem
 
 .rb-charpagemodalcardname
-	font-family "adventureregular"
-	font-size 7.5rem
-	line-height auto
-	margin 0
-	color white
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	background-color rbcolor
-	border 1rem outset rbcolor
-	border-radius 2rem
-	letter-spacing .3rem
+    font-family "adventureregular"
+    font-size 7.5rem
+    line-height auto
+    margin 0
+    color #fff
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000
+    background-color #666
+    border 1rem outset #666
+    border-radius 2rem
+    letter-spacing 0.3rem
 
 .rb-backgroundcolor
-	background-color rbcolor
+    background-color #666
 
-.rb-hover:hover
-	background-color rbcolor
+.rb-hover
+    &:hover
+        background-color #666
 
 .rb-charname
-	font-family Adventure
-	font-size 7rem
-	margin-bottom 10%
-	color rbcolor
-	text-shadow -.1rem .25rem .25rem #d9d9d9, -.1rem -.25rem .25rem #d9d9d9, .5rem .25rem .25rem #d9d9d9
-
-/* DE classes */
+    font-family Adventure
+    font-size 7rem
+    margin-bottom 10%
+    color #666
+    text-shadow -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9
 
 .de-charpageheadshot
-	width 100%
-	border 1rem solid black
-	background-color desecondary
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/deadeyecharselect.png')
-	background-size cover
-	border-radius 5rem
-
+    width 100%
+    border 1rem solid #000
+    background-color #666
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/deadeyecharselect.png")
+    background-size cover
+    border-radius 5rem
 
 .de-charpagemodalcardname
-	font-family "adventureregular"
-	font-size 7.5rem
-	line-height auto
-	margin 0
-	color white
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	background-color decolor
-	border 1rem outset decolor
-	border-radius 2rem
-	letter-spacing .3rem
+    font-family "adventureregular"
+    font-size 7.5rem
+    line-height auto
+    margin 0
+    color #fff
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000
+    background-color #336
+    border 1rem outset #336
+    border-radius 2rem
+    letter-spacing 0.3rem
 
 .de-backgroundcolor
-	background-color decolor
+    background-color #336
 
-.de-hover:hover
-	background-color decolor
+.de-hover
+    &:hover
+        background-color #336
 
 .de-charname
-	font-family Adventure
-	font-size 7rem
-	color decolor
-	text-shadow -.1rem .25rem .25rem #d9d9d9, -.1rem -.25rem .25rem #d9d9d9, .5rem .25rem .25rem #d9d9d9
-
-/* QU classes */
+    font-family Adventure
+    font-size 7rem
+    color #336
+    text-shadow -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9
 
 .qu-charpageheadshot
-	width 100%
-	border 1rem solid black
-	background-color qusecondary
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/querycharselect.png')
-	background-size cover
-	border-radius 5rem
-
+    width 100%
+    border 1rem solid #000
+    background-color #933
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/querycharselect.png")
+    background-size cover
+    border-radius 5rem
 
 .qu-charpagemodalcardname
-	font-family "adventureregular"
-	font-size 7.5rem
-	line-height auto
-	margin 0
-	color white
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	background-color qucolor
-	border 1rem outset qucolor
-	border-radius 2rem
-	letter-spacing .3rem
+    font-family "adventureregular"
+    font-size 7.5rem
+    line-height auto
+    margin 0
+    color #fff
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000
+    background-color #363
+    border 1rem outset #363
+    border-radius 2rem
+    letter-spacing 0.3rem
 
 .qu-backgroundcolor
-	background-color qucolor
+    background-color #363
 
-.qu-hover:hover
-	background-color qucolor
+.qu-hover
+    &:hover
+        background-color #363
 
 .qu-charname
-	font-family Adventure
-	font-size 7rem
-	margin-bottom 10%
-	color qucolor
-	text-shadow -.1rem .25rem .25rem #d9d9d9, -.1rem -.25rem .25rem #d9d9d9, .5rem .25rem .25rem #d9d9d9
-
-/* KX classes */
+    font-family Adventure
+    font-size 7rem
+    margin-bottom 10%
+    color #363
+    text-shadow -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9
 
 .kx-charpageheadshot
-	width 100%
-	border 1rem solid black
-	background-color kxsecondary
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/knoxcharselect.png')
-	background-size cover
-	border-radius 5rem
-
+    width 100%
+    border 1rem solid #000
+    background-color #993
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/knoxcharselect.png")
+    background-size cover
+    border-radius 5rem
 
 .kx-charpagemodalcardname
-	font-family "adventureregular"
-	font-size 7.5rem
-	line-height auto
-	margin 0
-	color white
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	background-color kxcolor
-	border 1rem outset kxcolor
-	border-radius 2rem
-	letter-spacing .3rem
+    font-family "adventureregular"
+    font-size 7.5rem
+    line-height auto
+    margin 0
+    color #fff
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000
+    background-color #633
+    border 1rem outset #633
+    border-radius 2rem
+    letter-spacing 0.3rem
 
 .kx-backgroundcolor
-	background-color kxcolor
+    background-color #633
 
-.kx-hover:hover
-	background-color kxcolor
+.kx-hover
+    &:hover
+        background-color #633
 
 .kx-charname
-	font-family Adventure
-	font-size 7rem
-	margin-bottom 10%
-	color kxcolor
-	text-shadow -.1rem .25rem .25rem #d9d9d9, -.1rem -.25rem .25rem #d9d9d9, .5rem .25rem .25rem #d9d9d9
-
-/* OB classes */
+    font-family Adventure
+    font-size 7rem
+    margin-bottom 10%
+    color #633
+    text-shadow -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9
 
 .ob-charpageheadshot
-	width 100%
-	border 1rem solid black
-	background-color obsecondary
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/obscuritycharselect.png')
-	background-size cover
-	border-radius 5rem
-
+    width 100%
+    border 1rem solid #000
+    background-color #ff9
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/obscuritycharselect.png")
+    background-size cover
+    border-radius 5rem
 
 .ob-charpagemodalcardname
-	font-family "adventureregular"
-	font-size 7.5rem
-	line-height auto
-	margin 0
-	color white
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	background-color obcolor
-	border 1rem outset obcolor
-	border-radius 2rem
-	letter-spacing .3rem
+    font-family "adventureregular"
+    font-size 7.5rem
+    line-height auto
+    margin 0
+    color #fff
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000
+    background-color #c69
+    border 1rem outset #c69
+    border-radius 2rem
+    letter-spacing 0.3rem
 
 .ob-backgroundcolor
-	background-color obcolor
+    background-color #c69
 
-.ob-hover:hover
-	background-color obcolor
+.ob-hover
+    &:hover
+        background-color #c69
 
 .ob-charname
-	font-family Adventure
-	font-size 7rem
-	margin-bottom 10%
-	color obcolor
-	text-shadow -.1rem .25rem .25rem #d9d9d9, -.1rem -.25rem .25rem #d9d9d9, .5rem .25rem .25rem #d9d9d9
-
-/* SA classes */
+    font-family Adventure
+    font-size 7rem
+    margin-bottom 10%
+    color #c69
+    text-shadow -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9
 
 .sa-charpageheadshot
-	width 100%
-	border 1rem solid black
-	background-color sasecondary
-	background-image url('http://res.cloudinary.com/jhi5/image/upload/siliconartistcharselect.png')
-	background-size cover
-	border-radius 5rem
-
+    width 100%
+    border 1rem solid #000
+    background-color #9cc
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/siliconartistcharselect.png")
+    background-size cover
+    border-radius 5rem
 
 .sa-charpagemodalcardname
-	font-family "adventureregular"
-	font-size 7.5rem
-	line-height auto
-	margin 0
-	color white
-	text-shadow -.1rem .25rem .25rem black, -.1rem -.25rem .25rem black, .5rem .25rem .25rem black
-	background-color sacolor
-	border 1rem outset sacolor
-	border-radius 2rem
-	letter-spacing .3rem
+    font-family "adventureregular"
+    font-size 7.5rem
+    line-height auto
+    margin 0
+    color #fff
+    text-shadow -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000
+    background-color #093
+    border 1rem outset #093
+    border-radius 2rem
+    letter-spacing 0.3rem
 
 .sa-backgroundcolor
-	background-color sacolor
+    background-color #093
 
-.sa-hover:hover
-	background-color sacolor
+.sa-hover
+    &:hover
+        background-color #093
 
 .sa-charname
-	font-family Adventure
-	font-size 7rem
-	margin-bottom 10%
-	color sacolor
-	text-shadow -.1rem .25rem .25rem #d9d9d9, -.1rem -.25rem .25rem #d9d9d9, .5rem .25rem .25rem #d9d9d9
+    font-family Adventure
+    font-size 7rem
+    margin-bottom 10%
+    color #093
+    text-shadow -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9
 
 .downloadheading
-	font-size 100px
-	text-align center
-	color DodgerBlue
-	padding 1rem
-	margin-top 0rem
-	font-family okuda
-	font-styling italic
-	letter-spacing .5rem
+    font-size 100px
+    text-align center
+    color DodgerBlue
+    padding 1rem
+    margin-top 0rem
+    font-family okuda
+    font-styling italic
+    letter-spacing 0.5rem
 
 .downloadtext
-	font-size 2rem
-	text-align center
-	padding 0 2% 0 2%
-	margin-top .5rem 0 .5rem 0
+    font-size 2rem
+    text-align center
+    padding 0 2% 0 2%
+    margin-top 0.5rem 0 0.5rem 0
 
 .downloadbutton
-	font-family Okuda
-	background-color DodgerBlue
-	color white
-	border-radius 2rem
-	font-size 5rem
-	padding-top 1rem
-	padding-bottom 1rem
-	margin-top 1.25rem
-	margin-bottom 0rem
+    font-family Okuda
+    background-color DodgerBlue
+    color #fff
+    border-radius 2rem
+    font-size 5rem
+    padding-top 1rem
+    padding-bottom 1rem
+    margin-top 1.25rem
+    margin-bottom 0rem
 
 .charselecticondivplus
-	border-radius .5rem
-	color white
-	min-width 100px
-	padding 0rem
-	padding-bottom 1.25rem
-	margin 0rem
-	background-color #228822
-	box-shadow 1px 1px 1px grey
-	margin-right 8px
+    border-radius 0.5rem
+    color #fff
+    min-width 100px
+    padding 0rem
+    padding-bottom 1.25rem
+    margin 0rem
+    background-color #282
+    -webkit-box-shadow 1px 1px 1px #808080
+    box-shadow 1px 1px 1px #808080
+    margin-right 8px
 
 .charselecticondivminus
-	border-radius .5rem
-	color white
-	min-width 100px
-	padding 0rem
-	padding-bottom 1.25rem
-	margin 0rem
-	background-color #FF4847
-	box-shadow 1px 1px 1px grey
-	margin-right 8px
+    border-radius 0.5rem
+    color #fff
+    min-width 100px
+    padding 0rem
+    padding-bottom 1.25rem
+    margin 0rem
+    background-color #ff4847
+    -webkit-box-shadow 1px 1px 1px #808080
+    box-shadow 1px 1px 1px #808080
+    margin-right 8px
 
 .charselecticonimage
-	text-shadow .15rem .15rem .15rem grey
+    text-shadow 0.15rem 0.15rem 0.15rem #808080
 
 .charselecticonhr
-	margin-top 5px
-	margin-bottom 8px
-	width 70%
-	margin-left 15%
-	text-shadow .15rem .15rem .15rem grey
-	color white
+    margin-top 5px
+    margin-bottom 8px
+    width 70%
+    margin-left 15%
+    text-shadow 0.15rem 0.15rem 0.15rem #808080
+    color #fff
 
 .charselecticontext
-	color white
-	padding 0rem
-	margin 0rem
-	font-size 20px
-	font-family okuda
-	text-shadow .15rem .15rem .15rem grey
-
+    color #fff
+    padding 0rem
+    margin 0rem
+    font-size 20px
+    font-family okuda
+    text-shadow 0.15rem 0.15rem 0.15rem #808080
 
 .charselecticonminus
-	background-color #FF4847
-	border-radius .5rem
+    background-color #ff4847
+    border-radius 0.5rem
 
 .charselecticon
-	background-color black
-	border-radius .5rem
+    background-color #000
+    border-radius 0.5rem
 
 .charselecticonrow
-	background-color white
-	margin-top 1%
-	margin-botton 1%
+    background-color #fff
+    margin-top 1%
+    margin-botton 1%
 
 .charselectcardpanelright
-	min-height 400px
-	line-height 50%
-	background-color white
-	margin 0 auto
+    min-height 400px
+    line-height 50%
+    background-color #fff
+    margin 0 auto
 
 .charselectdifficulty
-	background-color blue
-	border-radius .5rem
-	min-height 75px
-	width 45%
-	margin-left 2.5%
-	margin-right 2.5%
+    background-color #00f
+    border-radius 0.5rem
+    min-height 75px
+    width 45%
+    margin-left 2.5%
+    margin-right 2.5%
 
 .charselectdifficultyhard
-	background-color red
-	border-radius .5rem
-	min-height 75px
-	width 45%
-	margin-left 2.5%
-	margin-right 2.5%
+    background-color #f00
+    border-radius 0.5rem
+    min-height 75px
+    width 45%
+    margin-left 2.5%
+    margin-right 2.5%
 
 .charselectdifficultyintermediate
-	background-color yellow
-	border-radius .5rem
-	min-height 75px
-	width 45%
-	margin-left 2.5%
-	margin-right 2.5%
+    background-color #ff0
+    border-radius 0.5rem
+    min-height 75px
+    width 45%
+    margin-left 2.5%
+    margin-right 2.5%
 
 .charselectdifficultyeasy
-	background-color green
-	border-radius .5rem
-	min-height 75px
-	width 45%
-	margin-left 2.5%
-	margin-right 2.5%
+    background-color #008000
+    border-radius 0.5rem
+    min-height 75px
+    width 45%
+    margin-left 2.5%
+    margin-right 2.5%
 
 .charselectdifficultyrow
-	background-color black
-	width 96%
-	margin-left 2%
-	height 96%
-	min-height 64px
+    background-color #000
+    width 96%
+    margin-left 2%
+    height 96%
+    min-height 64px
 
 .charselectdifficultylabel
-	color white
-	font-family okuda
-	height 100%
-	margin-left 20%
-
+    color #fff
+    font-family okuda
+    height 100%
+    margin-left 20%
 
 .charselectalignment
-	background-color purple
-	border-radius .5rem
-	min-height 75px
-	width 45%
-	margin-left 2.5%
-	margin-right 2.5%
+    background-color #800080
+    border-radius 0.5rem
+    min-height 75px
+    width 45%
+    margin-left 2.5%
+    margin-right 2.5%
 
 .charselectalignmenthero
-	background-color DodgerBlue
-	border-radius .5rem
-	min-height 75px
-	width 45%
-	margin-left 2.5%
-	margin-right 2.5%
+    background-color DodgerBlue
+    border-radius 0.5rem
+    min-height 75px
+    width 45%
+    margin-left 2.5%
+    margin-right 2.5%
 
 .charselectalignmentvillain
-	background-color #FF4847
-	border-radius .5rem
-	min-height 75px
-	width 45%
-	margin-left 2.5%
-	margin-right 2.5%
+    background-color #ff4847
+    border-radius 0.5rem
+    min-height 75px
+    width 45%
+    margin-left 2.5%
+    margin-right 2.5%
 
 .charselectalignmentrow
-	background-color black
-	width 96%
-	margin-left 2%
-	min-height 64px
+    background-color #000
+    width 96%
+    margin-left 2%
+    min-height 64px
 
 .charselectalignmentlabel
-	color white
-	font-family okuda
-	height 100%
-	width 100%
+    color #fff
+    font-family okuda
+    height 100%
+    width 100%
 
 .charselectdifficultyicon
-	margin 25%
+    margin 25%
 
 .charselectalignmenticon
-	margin 25%
+    margin 25%
 
 .charselecticonsubrow
-	padding-left 6%
+    padding-left 6%
 
 .charselectovals
-	width 200px
-	height 200px
-	max-width 200px
-	max-height 200px
-	margin-bottom 0rem
+    width 200px
+    height 200px
+    max-width 200px
+    max-height 200px
+    margin-bottom 0rem
 
 .charselectrow
-	width 100%
+    width 100%
