@@ -2448,5 +2448,17 @@ exports.defaultCards = [
 		rating: ["2"],
 		tags: ["crossover", "aggressive", "combo"],
 		comments: ["No big numbers, but plays well with others. Especially with Silicon Artist or Ape Omega... - JM"]
+	},
+	{
+		name: "Scary Carrie",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","1","0"],
+		text: "Whenever you take damage on your own turn, this gets +2 Fight until end of turn.",
+		flavor: ["Back From The Dead To Raise Hell"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/scarycarrie.jpg"],
+		rating: ["2"],
+		tags: ["crossover", "aggressive", "combo"],
+		comments: ["Gets big real fast, great with Knox - JM"]	
 	}
 ]

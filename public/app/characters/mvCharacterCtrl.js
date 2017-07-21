@@ -104,25 +104,25 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/special.png';
 		}
 		if(string == "Feat" && object.character === "Gravity Girl"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featgg.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/ggfeat.jpg';
 		}
 		if(string == "Feat" && object.character === "Robonobo"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featrb.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/rbfeat.jpg';
 		}
 		if(string == "Feat" && object.character === "Deadeye"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featde.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/defeat.jpg';
 		}
 		if(string == "Feat" && object.character === "Query"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featqu.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/qufeat.jpg';
 		}
 		if(string == "Feat" && object.character === "Obscurity"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featob.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/obfeat.jpg';
 		}
 		if(string == "Feat" && object.character === "Knox"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featkn.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/kxfeat.jpg';
 		}
 		if(string == "Feat" && object.character === "Silicon Artist"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/featsa.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/safeat.jpg';
 		}
 	}
 	createRating = function(object, array){
