@@ -128,16 +128,16 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	createRating = function(object, array){
 		ratingSymbol = findAverage(array);
 		if(ratingSymbol >= 3.5){
-			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/ratingstar.png';
+			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/bombicon.png';
 		}
 		if(ratingSymbol >= 2.5 && ratingSymbol < 3.5){
-			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/ratinggreat.png';
+			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/goodicon.png';
 		}
 		if(ratingSymbol >= 1.5 && ratingSymbol < 2.5){
-			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/ratinggood.png';
+			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/okayicon.png';
 		}
 		if(ratingSymbol <= 1.5){
-			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/ratingmaybe.png';
+			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/maybeicon.png';
 		}
 	}	
 	refreshModal = function(string){
@@ -177,8 +177,20 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			$scope.cards = cardCollection.data;
 			for(i=0;i<$scope.cards.length;i++){
 				createSymbol($scope.cards[i], $scope.cards[i].type);
-				$scope.cards[i].ratingSymbol = '';
-				console.log($scope.cards[i]);
+				parsedRating = '';
+				if($scope.cards[i].rating[0] >= 3.5){
+					$scope.parsedRating = 'http://res.cloudinary.com/jhi5/image/upload/bombicon.png';
+				}
+				if($scope.cards[i].rating[0] >= 2.5 && $scope.cards[i].rating[0] < 3.5){
+					$scope.parsedRating = 'http://res.cloudinary.com/jhi5/image/upload/goodicon.png';
+				}
+				if($scope.cards[i].rating[0] >= 1.5 && $scope.cards[i].rating[0] < 2.5){
+					$scope.parsedRating = 'http://res.cloudinary.com/jhi5/image/upload/okayicon.png';
+				}
+				if($scope.cards[i].rating[0] <= 1.5){
+					$scope.parsedRating = 'http://res.cloudinary.com/jhi5/image/upload/maybeicon.png';
+				}
+				$scope.cards[i].ratingSymbol = $scope.parsedRating;
 			}
 			for(j=0;j<$scope.cards.length;j++){
 				if($scope.cards[j].character === $scope.currentCharacter){

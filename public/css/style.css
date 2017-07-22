@@ -133,11 +133,10 @@ body {
   border-radius: 5rem;
 }
 .mainbanner1col {
-  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainthinbanner.png");
   background-size: cover;
 }
 .mainbanner1 {
-  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner1.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/panel1.png");
   border: 2rem solid #000;
   background-color: rgba(255,255,255,0);
   height: 25rem;
@@ -146,10 +145,10 @@ body {
   margin-top: 1rem;
 }
 .mainbanner1:hover {
-  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner1h.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/panel1h.png");
 }
 .mainbanner2 {
-  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner2.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/panel2.png");
   border: 2rem solid #000;
   background-color: rgba(255,255,255,0);
   height: 35rem;
@@ -159,10 +158,10 @@ body {
   background-size: cover;
 }
 .mainbanner2:hover {
-  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner2h.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/panel2h.png");
 }
 .mainbanner3 {
-  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner3.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/panel3.png");
   border: 2rem solid #000;
   background-color: rgba(255,255,255,0);
   margin-top: 0.5rem;
@@ -171,18 +170,18 @@ body {
   background-size: cover;
 }
 .mainbanner3:hover {
-  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner3h.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/panel3h.png");
 }
 .mainbanner4 {
   margin-top: 0.5rem;
-  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner4.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/panel4.png");
   border: 2rem solid #000;
   background-color: rgba(255,255,255,0);
   height: 25rem;
   background-size: cover;
 }
 .mainbanner4:hover {
-  background-image: url("http://res.cloudinary.com/jhi5/image/upload/mainbanner4h.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/panel4h.png");
 }
 .maintext1 {
   font-family: "Adventure";
@@ -246,7 +245,7 @@ body {
   background: none;
 }
 .charselectbg {
-  background-image: url("http://res.cloudinary.com/jhi5/image/upload/defaultbg.png");
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/v1500614581/charselectsplash.png");
 }
 .charselectroster {
   background-color: #fff;
