@@ -1,4 +1,7 @@
 angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $location, $http) {
+	$.getJSON('//freegeoip.net/json/?callback=?', function(data) {
+	  console.log(data);
+	});
 	var cardCollection = [];
 	$scope.cards = [];
 	$scope.currentModalIndex = 0;
@@ -9,6 +12,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	$scope.currentFilter = {};
 	$scope.checkBox = false;	
 	$scope.featBox = false;
+	$scope.sortOrder = 'name';	
 	$scope.changePanel = function(string){
 		$("#default").removeClass("active");
 		$("#howtoplay").removeClass("active");
@@ -28,14 +32,14 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		if($scope.checkBox === false){
 			$scope.checkBox = true;
 			$('#crossbutton').addClass('.active');
-			$('#crossbutton').text('Crossovers On');
+			$('#crossbutton').text('+C');
 			$('.crossbutton').css('background-color', '#228B22');
 			return console.log($scope.checkBox);
 		}
 		if($scope.checkBox === true){
 			$scope.checkBox = false;
 			$('#crossbutton').removeClass('.active');
-			$('#crossbutton').text('Crossovers Off');			
+			$('#crossbutton').text('-C');			
 			$('#crossbutton').css('background-color', '#FF4847');
 			return console.log($scope.checkBox);
 		}
@@ -306,10 +310,15 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	}
 	$scope.containsTags = function(actual, expected){
 		if(actual.character === $scope.currentCharacter || ($scope.checkBox === true && actual.character === "Crossover")){
-			if(actual.type === "Feat" && $scope.featBox === false){
-				return false;
-			}
-			if($scope.currentTags.length !== 0){
+			if($scope.searchText !== undefined && $scope.currentTags.length === 0){
+				searchString = $scope.searchText.toLowerCase();
+				if(actual.text.toLowerCase().indexOf(searchString) !== -1){
+					return true;
+				}
+			}		   
+			
+			if(($scope.currentTags.length !== 0) && ($scope.searchText === undefined)){
+				console.log($scope.searchText);
 				for(i=0;i<$scope.currentTags.length;i++){
 					for(j=0;j<actual.tags.length;j++){
 						if(actual.tags[j] === $scope.currentTags[i]){
@@ -317,7 +326,32 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 						}
 					}
 				}
-			}else{
+			}
+
+			if($scope.currentTags.length !== 0 && $scope.searchText !== undefined){
+				var containsSearch = false;
+				var containsTags = false;
+				searchString = $scope.searchText.toLowerCase();
+				if(actual.text.toLowerCase().indexOf(searchString) !== -1){
+					containsSearch = true;
+				}
+				for(i=0;i<$scope.currentTags.length;i++){
+					for(j=0;j<actual.tags.length;j++){
+						if(actual.tags[j] === $scope.currentTags[i]){
+							containsTags = true;
+						}
+					}
+				}
+				console.log(containsSearch + " search");
+				console.log(containsTags + " tags");
+				if(containsSearch === true && containsTags === true){
+					return true;
+				}else{
+					return false;
+				}
+			}
+
+			if($scope.currentTags.length === 0 && $scope.searchText === undefined){
 				return true;
 			}			
 		}
@@ -325,5 +359,13 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	$scope.resetTags = function(){
 		loadCollection();
 		$scope.currentTags = [];
+	}
+	$scope.setOrder = function(string){
+		currentOrder = $scope.sortOrder;		
+		if($scope.sortOrder === string){
+			$scope.sortOrder = "-" + currentOrder;
+		}else{
+			$scope.sortOrder = string;
+		}
 	}
 });

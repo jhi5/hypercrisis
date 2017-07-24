@@ -5,7 +5,7 @@
 				#default.tab-pane.active
 					.col-md-12
 						img.articlebanner(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/desplash.jpg")
-						.de-charname.text-center#charname Deadeye
+						.de-charname.text-center#charname.hide Deadeye
 				#howtoplay.tab-pane
 					.col-md-4
 						div.charpageheadshotbg
@@ -65,95 +65,108 @@
 					.col-md-8
 						img.charpageskillimage(src="http://res.cloudinary.com/jhi5/image/upload/aim.png")
 						h3 Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.
-			.col-md-12				
+			.col-md-1
+				&nbsp;
+			.col-md-2
 				a(href="../characterselect")
 					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
+			.col-md-2
 				img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/strategylogo.jpg" ng-click="changePanel('#howtoplay')")
+			.col-md-2
 				img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/villainicon.jpg" ng-click="changePanel('#bio')")
+			.col-md-2
 				img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,e_auto_contrast,q_54,w_110/v1499890549/delogo.jpg" ng-click="changePanel('#skill')")
+			.col-md-2
 				a(href="https://www.dropbox.com/s/6b23exhwrtynbrb/Hypercrisis%20Open%20Beta%20April.rar?dl=0")
 					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/downloadicon.jpg")
+			.col-md-1
+				&nbsp;				
 			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
 				.modal-header
-					.row
-						.col-md-6.text-center
-							button.btn.charpagemodalpreviousbutton(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") Previous
-							button.btn.charpagemodalclosebutton(data-dismiss="modal" ng-click="emptyModal()") Close Window
-							button.btn.charpagemodalnextbutton(ng-click="findNextEntry()" ng-hide="hideNext()") Next
-						.col-md-6
+					.row(ng-hide="modalContent.utilityValues == null")						
+						.col-md-7
 							h1#modaltitle.de-charpagemodalcardname.text-center {{modalContent.name}}
+						.col-md-1.text-center(ng-hide="modalContent.utilityValues == null")
+							img.img-responsive.charpagemodaltype(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
+						.col-md-1
+							h2#hpsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[0]}} 
+						.col-md-1
+							h2#fightsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[1]}}
+						.col-md-1
+							h2#armorsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[2]}} 
+						.col-md-1
+							button.btn.charpagemodalclosebutton.btn-block(data-dismiss="modal" ng-click="emptyModal()") X
+					.row(ng-hide="modalContent.utilityValues !== null")
+						.col-md-10
+							h1#modaltitle.de-charpagemodalcardname.text-center {{modalContent.name}}
+						.col-md-1.text-center
+							img.img-responsive.charpagemodaltype(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
+						.col-md-1
+							button.btn.charpagemodalclosebutton.btn-block(data-dismiss="modal" ng-click="emptyModal()") X
 				.modal-body
 					.col-md-6.charpagemodalimagecontainer
-						img.charpagemodalimage.img-responsive(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover"
-					data-content="{{modalContent.flavor[0]}}")
-						.row.charpagemodalutilityrow(ng-hide="modalContent.utilityValues == null")
-							.col-md-8.col-md-offset-2
-									.col-md-4.charpagemodalutilitycell
-										h4.charpagemodalhpheading.text-center Hit Points					
-										h2#hpsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[0]}} 
-									.col-md-4.charpagemodalutilitycell.text-center
-										h4.charpagemodalfightheading.text-center Fight
-										h2#fightsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[1]}}
-									.col-md-4.charpagemodalutilitycell.text-center
-										h4.charpagemodalarmorheading.text-center Armor
-										h2#armorsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[2]}} 					
+						img.charpagemodalimage.img-responsive(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="click"
+					data-content="Flavor Text: {{modalContent.flavor[0]}}")
+						&nbsp;
+						.row					
+							.col-md-6
+								button.btn.btn-block.charpagemodalpreviousbutton(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") ◀	
+							.col-md-6															
+								button.btn.btn-block.charpagemodalnextbutton(ng-click="findNextEntry()" ng-hide="hideNext()") ▶
 					.col-md-6
 						.row.charpagemodaliconrow
 							.col-md-12.charpagemodalcardcells
-								.col-md-6
+								.col-md-3
 									h4.charpagemodalratingheading.text-center Rating
 									img.img-responsive.charpagemodalrating(src="{{modalContent.ratingSymbol}}")
-								.col-md-6
-									h4.charpagemodaltypeheading.text-center Type
-									img.img-responsive.charpagemodaltype(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")						
+								.col-md-9
+									h4.charpagemodaltypeheading.text-center Card Text
+									h3.charpagemodaltext.text-center {{modalContent.text}}
 						.row
 							.col-md-12
-								h3.charpagemodaltextheading.text-center Card Text
-								h3.charpagemodaltext.text-center {{modalContent.text}}
-						.row
-							.col-md-12
-								h3.charpagemodalcommentheading.text-center Comment
+								h3.charpagemodalcommentheading.text-center Comments
 								h3.charpagemodalcomment.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
 		br
 		.row
 			.col-md-12.charpagesearchfiltertable
+				h2.text-center.charpagedatabaseheading Deadeye Card Database
 				table.table.table-hover.table-condensed(ng-if="loaded")
 					thread						
 						.row
-							.col-md-12.charpagedatabaseheadingbg
-								h2.text-center.charpagedatabaseheading Deadeye Card Database
-								h3.text-center.charpagedatabasesubheading click on a card's name to see more details!
-								div.charpagesearchfiltercontainer
-									.row
-										.col-md-12
-											button.btn.btn-block.charpagesearchfilterheading.text-center(data-toggle="collapse" data-target="#searchfilter") Search Filters
-									#searchfilter.collapse
-										.row.text-center.charpagesearchfiltertagbg
-											.col-md-6.charpagesearchfiltertagcol
-												div.charpagesearchfiltertagrow(ng-repeat="tag in tagArray")
-													button.charpagesearchfilterexcludedtag(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') - {{tag}}
-											.col-md-6.charpagesearchfiltertagcol
+							.col-md-12.charpagedatabaseheadingbg								
+									#searchfilter
+										.row.charpagesearchfilterbuttonrow											
+											.col-md-2
+												.charpagesearchfilterresetbutton.charpagedatabasetext.text-center Search
+											.col-md-10
+												form.form-inline
+													.form-group
+														input.form-control(ng-model="searchText", placeholder="Filter")
+										.row
+											.col-md-2
+												button#crossbutton.crossbutton.charpagesearchfiltercrossoverbutton(type='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()') - C
+											.col-md-2
+												button.charpagesearchfilterresetbutton(ng-click='resetTags()') ↻		
+											.col-md-2
+												button.charpagesearchfilterresetbutton(data-toggle="collapse" data-target="#tagrow") + Tag
+											.col-md-6
 												div.charpagesearchfiltertagrow(ng-repeat="tag in currentTags")
 													button.charpagesearchfilterincludedtag(ng-click='removeFilterButton(tag)') + {{tag}}
-													&nbsp;
-										.row.charpagesearchfilterbuttonrow
-											.col-md-4
-												button.charpagesearchfilterresetbutton(ng-click='resetTags()') Reset Tags
-											.col-md-4
-												button#crossbutton.crossbutton.charpagesearchfiltercrossoverbutton(type='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()') Crossovers Off			
-											.col-md-4
-												button#featbutton.featbutton.charpagesearchfilterfeatbutton(type='button' data-toggle='button' ng-model='featBox' ng-click='logFeatBox()') Feats Off		
+										.row.collapse#tagrow
+											.col-md-12
+												div.charpagesearchfiltertagrow(ng-repeat="tag in tagArray")
+													button.charpagesearchfilterexcludedtag(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') {{tag}}
 						tr.charpagedatabasetablebox
 							th.charpagedatabasetablefield
-								h3.charpagedatabasefieldheading.text-center Name
+								button.btn.btn-block.charpagedatabasefieldheading.text-center(ng-click='setOrder("name")') Name
 							th.charpagedatabasetablefield.text-center
-								h3.charpagedatabasefieldheading Type
+								button.btn.btn-block.charpagedatabasefieldheading(ng-click='setOrder("type")') Type
 							th.charpagedatabasetablefield.text-center
-								h3.charpagedatabasefieldheading Rating
+								button.btn.btn-block.charpagedatabasefieldheading(ng-click='setOrder("rating")') Rating
 							th.charpagedatabasetablefield.text-center
-								h3.charpagedatabasefieldheading Text
+								button.btn.btn-block.charpagedatabasefieldheading(ng-click='setOrder("text")') Text
 							tbody.charpagedatabasetablebody
-								tr.charpagedatabasetablebodyrow(ng-repeat="card in cards | filter:containsTags | orderBy: 'name'")
+								tr.charpagedatabasetablebodyrow(ng-repeat="card in cards | filter:containsTags | orderBy: sortOrder")
 									td
 										h2.charpagedatabasecardtitle.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
 									td
