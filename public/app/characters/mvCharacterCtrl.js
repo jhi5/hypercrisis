@@ -309,16 +309,23 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		$scope.currentTags.push(string);			
 	}
 	$scope.containsTags = function(actual, expected){
-		if(actual.character === $scope.currentCharacter || ($scope.checkBox === true && actual.character === "Crossover")){
+		if(actual.character === $scope.currentCharacter || actual.type === "Crossover"){
+			console.log($scope.currentTags);
+			if($scope.checkBox === false && actual.type === "Crossover"){
+				return false;
+			}
 			if($scope.searchText !== undefined && $scope.currentTags.length === 0){
 				searchString = $scope.searchText.toLowerCase();
+				console.log(actual.name);
 				if(actual.text.toLowerCase().indexOf(searchString) !== -1){
+					return true;
+				}
+				if(actual.name.toLowerCase().indexOf(searchString) !== -1){
 					return true;
 				}
 			}		   
 			
 			if(($scope.currentTags.length !== 0) && ($scope.searchText === undefined)){
-				console.log($scope.searchText);
 				for(i=0;i<$scope.currentTags.length;i++){
 					for(j=0;j<actual.tags.length;j++){
 						if(actual.tags[j] === $scope.currentTags[i]){
@@ -335,6 +342,9 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 				if(actual.text.toLowerCase().indexOf(searchString) !== -1){
 					containsSearch = true;
 				}
+				if(actual.name.toLowerCase().indexOf(searchString) !== -1){
+					containsSearch = true;
+				}
 				for(i=0;i<$scope.currentTags.length;i++){
 					for(j=0;j<actual.tags.length;j++){
 						if(actual.tags[j] === $scope.currentTags[i]){
@@ -342,8 +352,6 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 						}
 					}
 				}
-				console.log(containsSearch + " search");
-				console.log(containsTags + " tags");
 				if(containsSearch === true && containsTags === true){
 					return true;
 				}else{
@@ -353,7 +361,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 
 			if($scope.currentTags.length === 0 && $scope.searchText === undefined){
 				return true;
-			}			
+			}		
 		}
 	}
 	$scope.resetTags = function(){
