@@ -71,7 +71,7 @@ angular.module('app').controller('mvCharSelectCtrl', function($scope, $timeout, 
 				hoverIsActive("intermediate", "hero");		
 				hoverIcons("defensive","defense","disruption","disruption","aggressive","poor offense","playerdamage","player dmg");	
 			}else if(id === "#qu"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/quovah.png");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/quovalh.png");
 				$("#charselectheadshot").attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/quheadshot.png");
 				hoverIsActive("intermediate", "hero");
 				hoverIcons("aggressive","aggressive","disruption","disruption","defensive","poor defense","discard","weak to discard");
@@ -112,7 +112,7 @@ angular.module('app').controller('mvCharSelectCtrl', function($scope, $timeout, 
 			}else if(id === "#ob"){
 				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/oboval.png");
 			}else if(id === "#qu"){
-				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/quova.png");
+				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/quoval.png");
 			}else if(id === "#rb"){
 				$(id).attr("src", "http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/rboval.png");
 			}else if(id === "#sa"){
