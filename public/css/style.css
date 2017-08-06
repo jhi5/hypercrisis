@@ -372,7 +372,7 @@ body {
   margin-left: 5%;
   margin-right: 5%;
   text-shadow: 0.15rem 0.15rem 0.15rem #000;
-  border: 0.1rem solid rgba(255,225,255,0.45);
+  border: 1rem groove #008000;
   letter-spacing: 0rem;
 }
 .charpageminus {
@@ -1107,11 +1107,12 @@ legend {
 }
 .de-charpageheadshot {
   width: 100%;
-  border: 1rem solid #000;
+  border: 0.5rem solid #000;
   background-color: #666;
   background-image: url("http://res.cloudinary.com/jhi5/image/upload/deadeyecharselect.png");
   background-size: cover;
-  border-radius: 5rem;
+  border-top-left-radius: 5rem;
+  border-top-right-radius: 5rem;
 }
 .de-charpagemodalcardname {
   font-family: "adventureregular";
@@ -1132,11 +1133,24 @@ legend {
   background-color: #336;
 }
 .de-charname {
+  margin: 0;
   font-family: Adventure;
   font-size: 7rem;
-  color: #336;
-  text-shadow: -0.1rem 0.25rem 0.25rem #d9d9d9, -0.1rem -0.25rem 0.25rem #d9d9d9, 0.5rem 0.25rem 0.25rem #d9d9d9;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.2rem #000, 0.5rem 0.25rem 0.25rem #000;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  background-color: rgba(51,51,102,0.95);
+  background-size: 10px 10px;
+  background-repeat: no-repeat;
+  border-radius: 20rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 3rem;
+  border: 0.5rem groove #000;
+  line-height: 100%;
 }
+.de-charpagebg,
 .qu-charpageheadshot {
   width: 100%;
   border: 1rem solid #000;
@@ -1464,4 +1478,155 @@ legend {
 .charselectbg {
   background-image: url("http://res.cloudinary.com/jhi5/image/upload/c_scale,h_500/v1500613615/charselectsplash.png");
   background-size: cover;
+}
+.charpagebanner {
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/desplash.jpg");
+  padding-top: 40%;
+  background-size: cover;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 5rem;
+}
+.charpagebuttonrow {
+  margin: auto;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+.charpagenavbuttonbg {
+  background-color: #336;
+  border: 1rem groove #000;
+  text-align: center;
+  padding: 0rem;
+  margin: 0rem;
+}
+.charpagebuttonimage {
+  padding: 0;
+  margin: 0;
+}
+.de-charpageheading {
+  margin: 0;
+  font-family: Adventure;
+  font-size: 7rem;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.2rem #000, 0.5rem 0.25rem 0.25rem #000;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  border-radius: 5rem;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1rem;
+  border: 0.5rem groove #000;
+  line-height: 125%;
+  background-color: #336;
+}
+.de-charpagesubtitle {
+  margin: 0;
+  font-family: Adventure;
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.2rem #000, 0.5rem 0.25rem 0.25rem #000;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 1rem;
+  border: 0.5rem groove #000;
+  line-height: 100%;
+  background-color: #336;
+}
+.charpageplus {
+  background-color: #008000;
+  text-align: center;
+  border-radius: 1rem;
+  margin: auto;
+  border: 0.5rem groove #fff;
+  line-height: 100%;
+}
+.charpageminus {
+  background-color: #f00;
+  text-align: center;
+  border-radius: 1rem;
+  margin: auto;
+  border: 0.5rem groove #fff;
+  line-height: 100%;
+}
+.charpageiconrow {
+  text-center: center;
+  margin: auto;
+  margin-bottom: none;
+}
+.charpageiconlabel {
+  color: #fff;
+  font: Okuda;
+  font-size: 4.5rem;
+  line-height: 100%;
+}
+.plusminusicon {
+  border-style: none;
+}
+.charpageblock {
+  background-color: #336;
+  font-family: Adventure;
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.2rem #000, 0.5rem 0.25rem 0.25rem #000;
+  letter-spacing: 0.3rem;
+  text-align: center;
+  border-radius: 5rem;
+  margin-top: 1rem;
+  border: 0.5rem groove #000;
+  line-height: 125%;
+  margin-bottom: 0rem;
+}
+.de-charpagedifficulty {
+  background-color: #336;
+  font-family: Adventure;
+  font-size: 5rem;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.2rem #000, 0.5rem 0.25rem 0.25rem #000;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+}
+.charpagedifficultylabel {
+  border: none;
+  color: #fff;
+  font-family: Okuda;
+  font-size: 4rem;
+  line-height: 100%;
+  margin-bottom: 2rem;
+}
+.charpageguidelabel {
+  background-color: #336;
+  font-family: Adventure;
+  font-size: 4.5rem;
+  color: #fff;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.2rem #000, 0.5rem 0.25rem 0.25rem #000;
+  margin: 0;
+  text-align: center;
+  line-height: 100%;
+  margin-top: 2%;
+}
+.charpagepluslabel {
+  font-family: Okuda;
+  font-size: 5rem;
+  border-bottom: 2.5rem double #808080;
+}
+.charpageminuslabel {
+  font-family: Okuda;
+  border-bottom: 2.5rem double #808080;
+}
+.charpagepluslabeltext {
+  color: #008000;
+}
+.charpageminuslabeltext {
+  color: #f00;
+}
+.charpageplusminusrow {
+  width: 90%;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-top: 3%;
 }

@@ -376,4 +376,29 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			$scope.sortOrder = string;
 		}
 	}
+	hoverSwitch = function(id){
+		$(id)
+		.mouseenter(function(){
+			if(id === "#downloadbutton"){
+				$('#charname').text("Download!");				
+			}else if(id === "#skillbutton"){
+				$('#charname').text("Character Skill");
+			}else if(id === "#biobutton"){
+				$('#charname').text("Biography");
+			}else if(id === "#howtoplaybutton"){
+				$('#charname').text("How To Play");
+			}else if(id === "#backbutton"){
+				$('#charname').text("Character Select");
+			}
+			$scope.$apply();
+		}).mouseleave(function(){			
+			$('#charname').text('Deadeye');			
+			$scope.$apply();
+		})		
+	};
+	hoverSwitch('#downloadbutton');
+	hoverSwitch('#skillbutton');
+	hoverSwitch('#biobutton');
+	hoverSwitch('#howtoplaybutton');
+	hoverSwitch('#backbutton');
 });

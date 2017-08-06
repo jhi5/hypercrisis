@@ -1,53 +1,55 @@
 .container-fluid.charpagebg
 	.container.top-padding-med
-		.row.charpageinfocard			
+		.row.charpageinfocard.charpageminheight		
 			div.tab-content
 				#default.tab-pane.active
 					.col-md-12
-						img.articlebanner(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/desplash.jpg")
-						.de-charname.text-center#charname.hide Deadeye
+						div.charpagebanner(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/desplash.jpg")
+							.de-charnamebg
+								.de-charname#charname Deadeye
+								&nbsp;
 				#howtoplay.tab-pane
+					.col-md-12
+						&nbsp;
 					.col-md-4
 						div.charpageheadshotbg
-							img.de-charpageheadshot.img-responsive(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png")
-							h3.text-center Sinister 
-							h3.text-center Sniper
+							img.de-charpageheadshot.img-responsive(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Weaknesses? Fat chance. Keep clicking, nerd.")
+							button.btn.btn-block.de-charpagedifficulty
+									.col-md-2.text-center
+										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/intermediateicon.png")
+									.col-md-10
+										h3.text-center.charpagedifficultylabel Intermediate
 					.col-md-8
-						.row
-							.col-md-12.text-center
-								h1 HOW TO PLAY											
-						.row.charselecticonsubrow
-							.col-md-3
-								img#charselectplus1.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/playerdamageicon.png")
-								hr.charselecticonhr
-								p#charselectplus1label.charselecticontext + player dmg
-							.col-md-3
-								img#charselectplus2.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/discardicon.png")
-								hr.charselecticonhr
-								p#charselectplus2label.charselecticontext + discard
-							.col-md-3
-								img#charselectminus1.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/armoricon.png")
-								hr.charselecticonhr
-								p#charselectminus1label.charselecticontext - armor
-							.col-md-3
-								img#charselectminus2.charselecticonimage(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/utilitydamageicon.png")
-								hr.charselecticonhr
-								p#charselectminus2label.charselecticontext - utility dmg
+						.row.charpageplusminusrow
+							.col-md-4.charpagepluslabel
+								h2.charpagepluslabeltext.text-center strengths						
+							.col-md-4.charpageplus
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/playerdamageicon.png")
+								h5.charpageiconlabel player dmg
+							.col-md-4.charpageplus
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/discardicon.png")
+								h5.charpageiconlabel discard
+						.row.charpageplusminusrow
+							.col-md-4.charpageminuslabel
+								h2.charpageminuslabeltext.text-center weaknesses
+							.col-md-4.charpageminus
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/armoricon.png")
+								h5.charpageiconlabel armor
+							.col-md-4.charpageminus
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/utilitydamageicon.png")
+								h5.charpageiconlabel utility dmg
 						&nbsp;							
-						.row
-							.col-md-6
-								button.btn.btn-block 
-									img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/guideicon.jpg")
-									h3 Player's 
-									h3 Guide
-							.col-md-6
-								button.btn.btn-block 
-									img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_110/v1498840640/intermediateicon.png")
-									h3 Intermediate
-									h3 Difficulty
-						.row
-							.col-md-12
-								&nbsp;				
+					.col-md-12
+							button.btn.btn-block.charpageblock
+								.col-md-2
+									img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_72/v1498845176/guideicon.jpg")
+								.col-md-8
+										h3.charpageguidelabel Read The Player's Guide!
+								.col-md-2
+									img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_72/v1498845176/guideicon.jpg")
+					.row
+						.col-md-12
+							&nbsp;				
 				#bio.tab-pane
 					.col-md-4
 						div.charpageheadshotbg
@@ -86,22 +88,24 @@
 						img.charpageskillimage(src="http://res.cloudinary.com/jhi5/image/upload/aim.png")
 						br
 						h3.text-center Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.
-			.col-md-1
-				&nbsp;
-			.col-md-2
-				a(href="../characterselect")
-					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
-			.col-md-2
-				img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/strategylogo.jpg" ng-click="changePanel('#howtoplay')")
-			.col-md-2
-				img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/villainicon.jpg" ng-click="changePanel('#bio')")
-			.col-md-2
-				img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,e_auto_contrast,q_54,w_110/v1499890549/delogo.jpg" ng-click="changePanel('#skill')")
-			.col-md-2
-				a(href="https://www.dropbox.com/s/6b23exhwrtynbrb/Hypercrisis%20Open%20Beta%20April.rar?dl=0")
-					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/downloadicon.jpg")
-			.col-md-1
-				&nbsp;				
+			.row.charpagebuttonrow
+				.col-md-1
+					&nbsp;
+				
+				.col-md-2.charpagenavbuttonbg#howtoplaybutton
+					img.charpagebuttonimage(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/strategylogo.jpg" ng-click="changePanel('#howtoplay')")
+				.col-md-2.charpagenavbuttonbg#biobutton
+					img.charpagebuttonimage(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/villainicon.jpg" ng-click="changePanel('#bio')")
+				.col-md-2.charpagenavbuttonbg#skillbutton
+					img.charpagebuttonimage(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,e_auto_contrast,q_54,w_110/v1499890549/delogo.jpg" ng-click="changePanel('#skill')")
+				.col-md-2.charpagenavbuttonbg#downloadbutton 
+					a(href="https://www.dropbox.com/s/6b23exhwrtynbrb/Hypercrisis%20Open%20Beta%20April.rar?dl=0")
+						img.charpagebuttonimage(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/downloadicon.jpg")
+				.col-md-2.charpagenavbuttonbg#backbutton
+					a(href="../characterselect")
+						img.charpagebuttonimage(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
+				.col-md-1
+					&nbsp;
 			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
 				.modal-header
 					.row
