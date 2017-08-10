@@ -109,56 +109,65 @@
 						img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
 				.col-md-1
 					&nbsp;
-			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")						
+			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")				
 				.modal-body
-					.col-md-6.charpagemodalimagecontainer
-						img.charpagemodalimage.img-responsive(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover" data-content="Flavor Text: {{modalContent.flavor[0]}}" data-placement="bottom")
+					.col-md-6.md-imgcntr
+						img.md-cardimg.img-responsive.curve(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover" data-content="Flavor Text: {{modalContent.flavor[0]}}" data-placement="bottom")
 						&nbsp;
 						.row(ng-hide="modalContent.type === 'Action' || modalContent.type === 'Feat' || modalContent.type === 'Special'")
 							.col-md-4
 								button.btn.btn-block
-									h2#hpsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[0]}}
-										img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/hpicon.jpg")
+									.row.de-bg
+										.col-md-4
+											h2#hpsymbol.md-utilval.wtxt.f-adv.text-left		{{modalContent.utilityValues[0]}}
+										.col-md-8
+											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/hpicon.jpg")
 							.col-md-4
 								button.btn.btn-block
-									h2#fightsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[1]}}
-										img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/fighticon.jpg")
+									.row.de-bg
+										.col-md-4
+											h2#fightsymbol.md-utilval.wtxt.f-adv {{modalContent.utilityValues[1]}}
+										.col-md-8
+											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/fighticon.jpg")
 							.col-md-4
 								button.btn-block
-									h2#armor.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[2]}}
-										img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/armoricon.jpg")
+									.row.de-bg
+										.col-md-4
+											h2#armor.md-utilval.wtxt.f-adv {{modalContent.utilityValues[2]}}
+										.col-md-8
+											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/armoricon.jpg")
 					.col-md-6
 						.row
 							.col-md-12
-								h1.de-charpagemodalcardname.text-center#modaltitle {{modalContent.name}}
-						.row.charpagemodaliconrow
-							.col-md-12.charpagemodalcardcells
+								h1.md-cardname.de-bg.text-center.f-adv.wtxt.outlinetxt#modaltitle {{modalContent.name}}
+						.row
+							.col-md-12
 								.col-md-6
-									h4.charpagemodalratingheading.text-center Rating
-									img.img-responsive.charpagemodalrating(src="{{modalContent.ratingSymbol}}")
+									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Rating
+									img.img-responsive.md-rating(src="{{modalContent.ratingSymbol}}")
 								.col-md-6
-									h4.charpagemodalratingheading.text-center Card Type
-									img.img-responsive.charpagemodaltype(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
+									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Card Type
+									img.img-responsive.md-type(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
 						.row
 							.col-md-12
 								.col-md-12
-									h4.charpagemodaltypeheading.text-center Card Text
-									h3.charpagemodaltext.text-center {{modalContent.text}}
+									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Card Text
+									h3.md-cardtext.f-oku.text-center {{modalContent.text}}
 						.row
 							.col-md-12
-								h3.charpagemodalcommentheading.text-center Comments
-								h3.charpagemodalcomment.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
+								h3.md-modallbl.text-center.wtxt.f-oku.de-bg Comments
+								h3.md-comments.f-oku.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
 					.col-md-12
 						.row
-							footer.navbar-fixed-bottom
-								.col-md-2
-									button.btn.btn-block.charpagemodalpreviousbutton(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") ◀
-								.col-md-2															
-									button.btn.btn-block.charpagemodalnextbutton(ng-click="findNextEntry()" ng-hide="hideNext()") ▶
-								.col-md-6
-									h1.text-center CARD VIEWER: {{modalContent.name}}
-								.col-md-2
-									button.btn.charpagemodalclosebutton.btn-block(data-dismiss="modal" ng-click="emptyModal()") X
+							footer.md-footer.navbar-fixed-bottom
+								.col-md-3
+									button.btn.btn-block.md-navbtn.outlinetxt(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") ◀
+								.col-md-3												
+									button.btn.btn-block.md-navbtn.outlinetxt(ng-click="findNextEntry()" ng-hide="hideNext()") ▶
+								.col-md-5
+									h1.text-center.md-cardview.f-oku CARD VIEWER: {{modalContent.name}}
+								.col-md-1
+									button.btn.btn-block.md-close.md-navbtn.outlinetxt(data-dismiss="modal" ng-click="emptyModal()") X
 		br
 		.row
 			.col-md-12.charpagesearchfiltertable

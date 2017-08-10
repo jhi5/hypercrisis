@@ -507,22 +507,10 @@ body {
   margin: 0;
   padding: 0;
   border: 1rem solid #000;
-  border-top: 0rem solid #000;
-  border-bottom-right-radius: 2rem;
-  border-bottom-left-radius: 2rem;
   color: #fff;
   font-family: 'Okuda';
   font-size: 10rem;
   text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
-}
-#hpsymbol {
-  background-color: #f09;
-}
-#fightsymbol {
-  background-color: #09f;
-}
-#armorsymbol {
-  background-color: #ff0;
 }
 .charpagemodalratingheading {
   color: #fff;
@@ -1870,4 +1858,90 @@ legend {
 .crp-taglbl {
   font-size: 5rem;
   line-height: 100%;
+}
+.md-armor {
+  background-color: #ff0;
+}
+.md-cardimg {
+  margin: auto;
+  max-height: 65rem;
+  -webkit-box-shadow: 1rem 1rem 1rem #808080;
+  box-shadow: 1rem 1rem 1rem #808080;
+}
+.md-cardname {
+  font-size: 7.5rem;
+  line-height: auto;
+  margin: 0;
+  border-style: outset;
+  border-radius: 2rem;
+  letter-spacing: 0.3rem;
+  border-width: 1rem;
+}
+.md-cardview {
+  color: #2aade3;
+  line-height: 100%;
+  margin: 0 0.5rem 0 0.5rem;
+}
+.md-cardtext {
+  font-size: 5rem;
+  border-radius: 0.5rem;
+}
+.md-comments {
+  font-size: 4.5rem;
+  margin: auto 0;
+  padding-left: 5%;
+  padding-right: 5%;
+  color: #808080;
+  font-style: italic;
+}
+.md-fight {
+  background-color: DodgerBlue;
+}
+.md-footer {
+  padding-bottom: 1.5rem;
+}
+.md-hp {
+  background-color: #ffc0cb;
+}
+.md-imgcntr {
+  margin-top: 0.1rem;
+}
+.md-modallbl {
+  font-size: 5rem;
+  border-radius: 0.5rem;
+}
+.md-navbtn {
+  background: #2aade3;
+  color: #fff;
+  font-size: 3rem;
+  margin: 0 1rem 0 1rem;
+  border-radius: 2rem;
+}
+.md-rating {
+  max-width: 15rem;
+  margin: auto;
+  border-radius: 2rem;
+  border: 1rem solid #000;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.md-type {
+  max-width: 15rem;
+  margin: auto;
+  border-radius: 2rem;
+  border: 1rem solid #000;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+.md-utilsymbol {
+  padding: 15%;
+}
+.md-utilval {
+  margin: 0;
+  padding: 0;
+  font-size: 13rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.25rem #000, 0.5rem 0.25rem 0.25rem #000;
+}
+.modal-admin {
+  background-color: #fff;
 }
