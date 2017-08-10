@@ -1,132 +1,120 @@
-.container-fluid.charpagebg
+.container-fluid.charpagebg.crp-bg
 	.container.top-padding-med
-		.row.charpageinfocard.charpageminheight		
+		.row.crp-info.wbg.curve
 			div.tab-content
 				#default.tab-pane.active
 					.col-md-12
-						div.charpagebanner(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/desplash.jpg")
+						div.crp-banner.de-banner.curve(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/desplash.jpg")
 							.de-charnamebg
-								.de-charname#charname Deadeye
+								.crp-name.de-bg#charname.f-adv.wtxt.outlinetxt Deadeye
 								&nbsp;
 				#howtoplay.tab-pane
 					.col-md-12
 						&nbsp;
 					.col-md-4
-						div.charpageheadshotbg
-							img.de-charpageheadshot.img-responsive(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Weaknesses? Fat chance. Keep clicking, nerd.")
-							button.btn.btn-block.de-charpagedifficulty
-									.col-md-2.text-center
+						div.crp-profilebg
+							img.crp-profileimg.de-headshot(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Weaknesses? Fat chance. Keep clicking, nerd.")
+							button.btn.btn-block.crp-profilesub.de-bg
+									.col-md-2
 										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/intermediateicon.png")
 									.col-md-10
-										h3.text-center.charpagedifficultylabel Intermediate
+										h3.crp-sublbl.wtxt.f-oku Intermediate
 					.col-md-8
-						.row.charpageplusminusrow
-							.col-md-4.charpagepluslabel
-								h2.charpagepluslabeltext.text-center strengths						
-							.col-md-4.charpageplus
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/playerdamageicon.png")
-								h5.charpageiconlabel player dmg
-							.col-md-4.charpageplus
+						.row.crp-chtagrow
+							.col-md-4
+								h2.crp-pluslbl.f-adv strengths			
+							.col-md-4.crp-chplustag
+								img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/playerdamageicon.png")
+								h5.crp-taglbl.wtxt.f-oku player dmg
+							.col-md-4.crp-chplustag
 								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/discardicon.png")
-								h5.charpageiconlabel discard
-						.row.charpageplusminusrow
-							.col-md-4.charpageminuslabel
-								h2.charpageminuslabeltext.text-center weaknesses
-							.col-md-4.charpageminus
+								h5.crp-taglbl.wtxt.f-oku discard
+						.row.crp-chtagrow
+							.col-md-4
+								h2.crp-minuslbl.f-adv weaknesses
+							.col-md-4.crp-chminustag
 								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/armoricon.png")
-								h5.charpageiconlabel armor
-							.col-md-4.charpageminus
+								h5.crp-taglbl.wtxt.f-oku armor
+							.col-md-4.crp-chminustag
 								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/utilitydamageicon.png")
-								h5.charpageiconlabel utility dmg
+								h5.crp-taglbl.wtxt.f-oku utility dmg
 						&nbsp;							
 					.col-md-12
-							button.btn.btn-block.charpageblock
+							button.btn.btn-block.crp-blockbtn.de-bg.f-adv.wtxt.outlinetxt
 								.col-md-2
 									img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_72/v1498845176/guideicon.jpg")
-								.col-md-8
-										h3.charpageguidelabel Read The Player's Guide!
-								.col-md-2
-									img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_72/v1498845176/guideicon.jpg")
+								.col-md-10
+									h3.crl-blockbtnlbl.wtxt Read The Player's Guide!
 					.row
 						.col-md-12
 							&nbsp;				
 				#bio.tab-pane
+					.col-md-12
+						&nbsp;
 					.col-md-4
-						div.charpageheadshotbg
-							img.de-charpageheadshot.img-responsive(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png")
-							h3.text-center Sinister 
-							h3.text-center Sniper
+						div.crp-profilebg
+							img.crp-profileimg.de-headshot(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Stop asking questions and start running.")
+							button.btn.btn-block.crp-profilesub.de-bg
+									.col-md-2
+										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/villainicon.png")
+									.col-md-10
+										h3.crp-sublbl.wtxt.f-oku Villain
 					.col-md-8
 						.row
 							.col-md-12.text-center
-								h1 BIOGRAPHY						
+								.de-bg
+									.crp-chheading.f-adv.wtxt.outlinetxt BIOGRAPHY				
 						.row
 							.col-md-12.text-center
-								p Raised in a warzone, the sinister sniper DEADEYE grew up day and night with a gun in her hand. After escaping from her forced conscription alongside her estranged sister, DEADEYE kept that same gun on her waist for safety. Since that day, her gun has made her rich, powerful and feared. 
+								p.crp-biotxt Raised in a warzone, the sinister sniper DEADEYE grew up day and night with a gun in her hand. After escaping from her forced conscription alongside her estranged sister, DEADEYE kept that same gun on her waist for safety. Since that day, her gun has made her rich, powerful and feared. 
 
-								p DEADEYE is on a brutal sharpshooter contracted with Knox's Villain Underground. As a professional assassin, DEADEYE has quickly gained a reputation as a cold-blooded killer. Despite an everpresent disgust with her teammates, DEADEYE has proven to be a dangerous and loyal ally to the Villain Underground. 
+								p.crp-biotxt DEADEYE is on a brutal sharpshooter contracted with Knox's Villain Underground. As a professional assassin, DEADEYE has quickly gained a reputation as a cold-blooded killer. Despite an everpresent disgust with her teammates, DEADEYE has proven to be a dangerous and loyal ally to the Villain Underground. 
 						.row
-							.col-md-6
-								button.btn.btn-block 
-									img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/villainicon.jpg")
-									h3 VILLAIN
-									h3 UNDERGROUND
-							.col-md-6
-								button.btn.btn-block 
-									img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_110/v1498840640/podcasticon.png")
-									h3 S.H.U
-									h3 Podcast!
+							.col-md-12
+								button.btn.btn-block.crp-blockbtn.de-bg.f-adv.wtxt.outlinetxt
+									.col-md-2
+										img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_72/v1498845176/podcasticon.jpg")
+									.col-md-10
+										h3.crp-blockbtnlbl.wtxt Listen To The Villain 
+										h3.crp-blockbtnlbl.wtxt Underground Podcast!
 				#skill.tab-pane
+					.col-md-12
+						&nbsp;
 					.col-md-4
-						div.charpageheadshotbg
-							img.de-charpageheadshot.img-responsive(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png")
-							h3.text-center Sinister 
-							h3.text-center Sniper
-					.col-md-8
-						h1.text-center CHARACTER SKILL
+						div.crp-profilebg
+							img.crp-profileimg.de-headshot(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Leave this to the professionals.")
+							button.btn.btn-block.crp-profilesub.de-bg
+									.col-md-2
+										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/delogo.png")
+									.col-md-10
+										h3.crp-sublbl.wtxt.f-oku SKILL : AIM				
+					.col-md-8.text-center
+						img.crp-skill.curved(src="http://res.cloudinary.com/jhi5/image/upload/aim.png")
 						br
-						img.charpageskillimage(src="http://res.cloudinary.com/jhi5/image/upload/aim.png")
-						br
-						h3.text-center Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.
-			.row.charpagebuttonrow
+						h3.crp-skilltxt Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.
+			.row.crp-btnrow
 				.col-md-1
-					&nbsp;
-				
-				.col-md-2.charpagenavbuttonbg#howtoplaybutton
-					img.charpagebuttonimage(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/strategylogo.jpg" ng-click="changePanel('#howtoplay')")
-				.col-md-2.charpagenavbuttonbg#biobutton
-					img.charpagebuttonimage(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/villainicon.jpg" ng-click="changePanel('#bio')")
-				.col-md-2.charpagenavbuttonbg#skillbutton
-					img.charpagebuttonimage(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,e_auto_contrast,q_54,w_110/v1499890549/delogo.jpg" ng-click="changePanel('#skill')")
-				.col-md-2.charpagenavbuttonbg#downloadbutton 
+					&nbsp;				
+				.col-md-2.crp-navbtn.de-bg#howtoplaybutton
+					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/strategylogo.jpg" ng-click="changePanel('#howtoplay')")
+				.col-md-2.crp-navbtn.de-bg#biobutton
+					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/villainicon.jpg" ng-click="changePanel('#bio')")
+				.col-md-2.crp-navbtn.de-bg#skillbutton
+					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,e_auto_contrast,q_54,w_110/v1499890549/delogo.jpg" ng-click="changePanel('#skill')")
+				.col-md-2.crp-navbtn.de-bg#downloadbutton 
 					a(href="https://www.dropbox.com/s/6b23exhwrtynbrb/Hypercrisis%20Open%20Beta%20April.rar?dl=0")
-						img.charpagebuttonimage(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/downloadicon.jpg")
-				.col-md-2.charpagenavbuttonbg#backbutton
+						img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/downloadicon.jpg")
+				.col-md-2.crp-navbtn.de-bg#backbutton
 					a(href="../characterselect")
-						img.charpagebuttonimage(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
+						img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
 				.col-md-1
 					&nbsp;
-			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
-				.modal-header
-					.row
-						.col-md-10
-							h1#modaltitle.de-charpagemodalcardname.text-center {{modalContent.name}}
-						.col-md-1.text-center
-							img.img-responsive.charpagemodaltype(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
-						.col-md-1
-							button.btn.charpagemodalclosebutton.btn-block(data-dismiss="modal" ng-click="emptyModal()") X
+			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")						
 				.modal-body
 					.col-md-6.charpagemodalimagecontainer
-						img.charpagemodalimage.img-responsive(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="click"
-					data-content="Flavor Text: {{modalContent.flavor[0]}}")
+						img.charpagemodalimage.img-responsive(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover" data-content="Flavor Text: {{modalContent.flavor[0]}}" data-placement="bottom")
 						&nbsp;
-						.row					
-							.col-md-6
-								button.btn.btn-block.charpagemodalpreviousbutton(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") ◀	
-							.col-md-6															
-								button.btn.btn-block.charpagemodalnextbutton(ng-click="findNextEntry()" ng-hide="hideNext()") ▶
-					.col-md-6
-						.row(ng-hide="modalContent.utilityValues.length < 1")
+						.row(ng-hide="modalContent.type === 'Action' || modalContent.type === 'Feat' || modalContent.type === 'Special'")
 							.col-md-4
 								button.btn.btn-block
 									h2#hpsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[0]}}
@@ -139,45 +127,71 @@
 								button.btn-block
 									h2#armor.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[2]}}
 										img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/armoricon.jpg")
+					.col-md-6
+						.row
+							.col-md-12
+								h1.de-charpagemodalcardname.text-center#modaltitle {{modalContent.name}}
 						.row.charpagemodaliconrow
 							.col-md-12.charpagemodalcardcells
-								.col-md-3
+								.col-md-6
 									h4.charpagemodalratingheading.text-center Rating
 									img.img-responsive.charpagemodalrating(src="{{modalContent.ratingSymbol}}")
-								.col-md-9
+								.col-md-6
+									h4.charpagemodalratingheading.text-center Card Type
+									img.img-responsive.charpagemodaltype(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
+						.row
+							.col-md-12
+								.col-md-12
 									h4.charpagemodaltypeheading.text-center Card Text
 									h3.charpagemodaltext.text-center {{modalContent.text}}
 						.row
 							.col-md-12
 								h3.charpagemodalcommentheading.text-center Comments
 								h3.charpagemodalcomment.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
+					.col-md-12
+						.row
+							footer.navbar-fixed-bottom
+								.col-md-2
+									button.btn.btn-block.charpagemodalpreviousbutton(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") ◀
+								.col-md-2															
+									button.btn.btn-block.charpagemodalnextbutton(ng-click="findNextEntry()" ng-hide="hideNext()") ▶
+								.col-md-6
+									h1.text-center CARD VIEWER: {{modalContent.name}}
+								.col-md-2
+									button.btn.charpagemodalclosebutton.btn-block(data-dismiss="modal" ng-click="emptyModal()") X
 		br
 		.row
 			.col-md-12.charpagesearchfiltertable
-				h2.text-center.charpagedatabaseheading Deadeye Card Database
+				h2.text-center.de-charname Deadeye Card Database
 				table.table.table-hover.table-condensed(ng-if="loaded")
 					thread						
 						.row
-							.col-md-12.charpagedatabaseheadingbg								
+							.col-md-12.charpagedatabaseheadingbg							
 									#searchfilter
-										.row.charpagesearchfilterbuttonrow											
-											.col-md-2
-												.charpagesearchfilterresetbutton.charpagedatabasetext.text-center 
-													img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/searchicon.jpg")
-											.col-md-10
+										.row.charpagesearchfilterbuttonrow
 												form.form-inline
-													.form-group
-														input.form-control(ng-model="searchText", placeholder="Filter")
+													.form-group.charpagedatabasesearchfield
+														input.form-control(ng-model="searchText", placeholder="Quick Search")
 										.row
-											.col-md-2
-												button#crossbutton.crossbutton.charpagesearchfiltercrossoverbutton(type='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
-													img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/crossovericon.jpg")
-											.col-md-2
-												button.charpagesearchfilterresetbutton(ng-click='resetTags()')
-													img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/refreshicon.jpg")
-											.col-md-2
-												button.charpagesearchfilterresetbutton(data-toggle="collapse" data-target="#tagrow")
-													img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/tagicon.jpg")
+											.col-md-4
+												button.btn.btn-block#crossbutton.crossbutton.charpagesearchfiltercrossoverbutton(ype='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
+													.col-md-2
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/crossovericon.jpg" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
+													.col-md-10
+															h3.charpageguidelabel Crossover
+											.col-md-4
+												button.btn.btn-block.charpagesearchfilterresetbutton(ng-click='resetTags()')
+													.col-md-2
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/refreshicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
+													.col-md-10
+															h3.charpageguidelabel Reset
+											.col-md-4
+												button.btn.btn-block.charpagesearchfilterresetbutton(data-toggle="collapse" data-target="#tagrow")
+													.col-md-2
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/tagicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
+													.col-md-10
+															h3.charpageguidelabel Tags
+										.row
 											.col-md-6
 												div.charpagesearchfiltertagrow(ng-repeat="tag in currentTags")
 													button.charpagesearchfilterincludedtag(ng-click='removeFilterButton(tag)') + {{tag}}
@@ -185,6 +199,8 @@
 											.col-md-12
 												div.charpagesearchfiltertagrow(ng-repeat="tag in tagArray")
 													button.charpagesearchfilterexcludedtag(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') {{tag}}
+										.row
+											&nbsp;
 						tr.charpagedatabasetablebox
 							th.charpagedatabasetablefield
 								button.btn.btn-block.charpagedatabasefieldheading.text-center(ng-click='setOrder("name")') Name

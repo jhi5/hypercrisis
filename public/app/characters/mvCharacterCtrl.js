@@ -32,15 +32,11 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		if($scope.checkBox === false){
 			$scope.checkBox = true;
 			$('#crossbutton').addClass('.active');
-			$('#crossbutton').text('+C');
-			$('.crossbutton').css('background-color', '#228B22');
 			return console.log($scope.checkBox);
 		}
 		if($scope.checkBox === true){
 			$scope.checkBox = false;
 			$('#crossbutton').removeClass('.active');
-			$('#crossbutton').text('-C');			
-			$('#crossbutton').css('background-color', '#FF4847');
 			return console.log($scope.checkBox);
 		}
 	}
@@ -310,13 +306,11 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	}
 	$scope.containsTags = function(actual, expected){
 		if(actual.character === $scope.currentCharacter || actual.type === "Crossover"){
-			console.log($scope.currentTags);
 			if($scope.checkBox === false && actual.type === "Crossover"){
 				return false;
 			}
 			if($scope.searchText !== undefined && $scope.currentTags.length === 0){
 				searchString = $scope.searchText.toLowerCase();
-				console.log(actual.name);
 				if(actual.text.toLowerCase().indexOf(searchString) !== -1){
 					return true;
 				}
@@ -367,6 +361,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	$scope.resetTags = function(){
 		loadCollection();
 		$scope.currentTags = [];
+		$scope.searchText = "";
 	}
 	$scope.setOrder = function(string){
 		currentOrder = $scope.sortOrder;		

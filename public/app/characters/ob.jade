@@ -1,58 +1,114 @@
-.container-fluid.charpagebg
+.container-fluid.charpagebg.crp-bg
 	.container.top-padding-med
-		.row.charpageinfocard
-			.col-md-12
-				.col-md-3.charpagedifficultycol
-					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/easyicon.jpg")
-				.col-md-3.charpagedifficultycol
-					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/intermediateicon.jpg")
-				.col-md-3.charpagedifficultycol
-					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/hardicon.jpg")
-				.col-md-3.charpagedifficultycol
-					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/villainicon.jpg")
-				.col-md-3.charpagedifficultycol
-					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/heroicon.jpg")
-				.col-md-3.charpagedifficultycol
-					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/downloadicon.jpg")
-				.col-md-3.charpagedifficultycol
-					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/podcasticon.jpg")
-				.col-md-3.charpagedifficultycol
-					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
-				.col-md-3.charpagedifficultycol
-					img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,e_auto_contrast,q_54,w_110/v1499890549/oblogo.jpg")
-			.col-md-6.text-center.charpagecardleft
-				div
-					div.charpageheadshotbg
-						img.ob-charpageheadshot.img-responsive(src="http://res.cloudinary.com/jhi5/image/upload/obscuritycharselect.png")
-					.row.charpagenamerow
-						.col-md-9
-							h2#charname.charpagename.ob-backgroundcolor Obscurity
-						.col-md-3.charpagedifficultycol
-							img.charpagedifficulty(src="http://res.cloudinary.com/jhi5/image/upload/hard.png")
-							
-			.col-md-6.text-center.charpagecardright
-				.col-md-6
-						h3.charpageheading.ob-backgroundcolor POWERS
+		.row.crp-info.wbg.curve
+			div.tab-content
+				#default.tab-pane.active
+					.col-md-12
+						div.crp-banner.ob-banner.curve(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/obsplash.jpg")
 							div
-								h3.charpagepowers Invisible To The Eye
-								h3.charpagepowers Invisible To Machines
-								h3.charpagepowers Hydraulic Robot Legs
-								h3.charpagepowers A Detective's Intuition
-				.col-md-6					
-						h3.charpageheading.ob-backgroundcolor STRATEGY
-							div
-								h3.charpageplus + Card Draw
-								h3.charpageplus + Disruption
-								h3.charpageminus - Player Damage
-								h3.charpageminus - Aggression			
-				.col-md-12
-					h3.charpageheading.ob-backgroundcolor SKILL
-						div(data-toggle="popover" data-trigger="hover" data-placement="auto top"
-						data-content="Turn one of your Gadgets upside-down. Face-down gadgets can be Vanished, but otherwise do not exist.")		
-							img.charpageskillimage(src="http://res.cloudinary.com/jhi5/image/upload/vanish.png")				
-					button.btn-block.charpagedownloadbutton.ob-hover Download
-			.col-md-12
-				h1.charpagedatabasepointer.text-center ▼ CARD DATABASE ▼	
+								.crp-name.ob-bg#charname.f-adv.wtxt.outlinetxt Obscurity
+								&nbsp;
+				#howtoplay.tab-pane
+					.col-md-12
+						&nbsp;
+					.col-md-4
+						div.crp-profilebg
+							img.crp-profileimg.ob-headshot(src="http://res.cloudinary.com/jhi5/image/upload/obheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Weaknesses? Fat chance. Keep clicking, nerd.")
+							button.btn.btn-block.crp-profilesub.ob-bg
+									.col-md-2
+										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/intermediateicon.png")
+									.col-md-10
+										h3.crp-sublbl.wtxt.f-oku Intermediate
+					.col-md-8
+						.row.crp-chtagrow
+							.col-md-4
+								h2.crp-pluslbl.f-adv strengths			
+							.col-md-4.crp-chplustag
+								img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/playerdamageicon.png")
+								h5.crp-taglbl.wtxt.f-oku player dmg
+							.col-md-4.crp-chplustag
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/discardicon.png")
+								h5.crp-taglbl.wtxt.f-oku discard
+						.row.crp-chtagrow
+							.col-md-4
+								h2.crp-minuslbl.f-adv weaknesses
+							.col-md-4.crp-chminustag
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/armoricon.png")
+								h5.crp-taglbl.wtxt.f-oku armor
+							.col-md-4.crp-chminustag
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/utilitydamageicon.png")
+								h5.crp-taglbl.wtxt.f-oku utility dmg
+						&nbsp;							
+					.col-md-12
+							button.btn.btn-block.crp-blockbtn.ob-bg.f-adv.wtxt.outlinetxt
+								.col-md-2
+									img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_72/v1498845176/guideicon.jpg")
+								.col-md-10
+									h3.crl-blockbtnlbl.wtxt Read The Player's Guide!
+					.row
+						.col-md-12
+							&nbsp;				
+				#bio.tab-pane
+					.col-md-12
+						&nbsp;
+					.col-md-4
+						div.crp-profilebg
+							img.crp-profileimg.ob-headshot(src="http://res.cloudinary.com/jhi5/image/upload/obheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Stop asking questions and start running.")
+							button.btn.btn-block.crp-profilesub.ob-bg
+									.col-md-2
+										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/heroicon.png")
+									.col-md-10
+										h3.crp-sublbl.wtxt.f-oku Hero
+					.col-md-8
+						.row
+							.col-md-12.text-center
+								div
+									.crp-chheading.f-adv.wtxt.outlinetxt.ob-bg BIOGRAPHY				
+						.row
+							.col-md-12.text-center
+								p.crp-biotxt Raised in a warzone, the sinister sniper DEADEYE grew up day and night with a gun in her hand. After escaping from her forced conscription alongside her estranged sister, DEADEYE kept that same gun on her waist for safety. Since that day, her gun has made her rich, powerful and feared. 
+
+								p.crp-biotxt DEADEYE is on a brutal sharpshooter contracted with Knox's Villain Underground. As a professional assassin, DEADEYE has quickly gained a reputation as a cold-blooded killer. Despite an everpresent disgust with her teammates, DEADEYE has proven to be a dangerous and loyal ally to the Villain Underground. 
+						.row
+							.col-md-12
+								button.btn.btn-block.crp-blockbtn.ob-bg.f-adv.wtxt.outlinetxt
+									.col-md-2
+										img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_72/v1498845176/podcasticon.jpg")
+									.col-md-10
+										h3.crp-blockbtnlbl.wtxt Listen To The Amberville 
+										h3.crp-blockbtnlbl.wtxt Heroes Podcast!
+				#skill.tab-pane
+					.col-md-12
+						&nbsp;
+					.col-md-4
+						div.crp-profilebg
+							img.crp-profileimg.ob-headshot(src="http://res.cloudinary.com/jhi5/image/upload/obheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Leave this to the professionals.")
+							button.btn.btn-block.crp-profilesub.ob-bg
+									.col-md-2
+										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/oblogo.png")
+									.col-md-10
+										h3.crp-sublbl.wtxt.f-oku SKILL : VANISH				
+					.col-md-8.text-center
+						img.crp-skill.curved(src="http://res.cloudinary.com/jhi5/image/upload/vanish.png")
+						br
+						h3.crp-skilltxt Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.
+			.row.crp-btnrow
+				.col-md-1
+					&nbsp;				
+				.col-md-2.crp-navbtn.ob-bg#howtoplaybutton
+					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/strategylogo.jpg" ng-click="changePanel('#howtoplay')")
+				.col-md-2.crp-navbtn.ob-bg#biobutton
+					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/heroicon.jpg" ng-click="changePanel('#bio')")
+				.col-md-2.crp-navbtn.ob-bg#skillbutton
+					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,e_auto_contrast,q_54,w_110/v1499890549/oblogo.jpg" ng-click="changePanel('#skill')")
+				.col-md-2.crp-navbtn.ob-bg#downloadbutton 
+					a(href="https://www.dropbox.com/s/6b23exhwrtynbrb/Hypercrisis%20Open%20Beta%20April.rar?dl=0")
+						img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/downloadicon.jpg")
+				.col-md-2.crp-navbtn.ob-bg#backbutton
+					a(href="../characterselect")
+						img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
+				.col-md-1
+					&nbsp;	
 			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
 				.modal-header
 					.row
