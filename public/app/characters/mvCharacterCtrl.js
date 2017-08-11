@@ -387,7 +387,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			}
 			$scope.$apply();
 		}).mouseleave(function(){			
-			$('#charname').text('Deadeye');			
+			$('#charname').text($scope.currentCharacter);			
 			$scope.$apply();
 		})		
 	};

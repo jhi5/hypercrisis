@@ -109,87 +109,129 @@
 						img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:009933,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
 				.col-md-1
 					&nbsp;	
-			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")
-				.modal-header
-					.row
-						.col-md-6.text-center
-							button.btn.charpagemodalpreviousbutton(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") Previous
-							button.btn.charpagemodalclosebutton(data-dismiss="modal" ng-click="emptyModal()") Close Window
-							button.btn.charpagemodalnextbutton(ng-click="findNextEntry()" ng-hide="hideNext()") Next
-						.col-md-6
-							h1#modaltitle.sa-charpagemodalcardname.text-center {{modalContent.name}}
+			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")				
 				.modal-body
-					.col-md-6.charpagemodalimagecontainer
-						img.charpagemodalimage.img-responsive(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover"
-					data-content="{{modalContent.flavor[0]}}")
-						.row.charpagemodalutilityrow(ng-hide="modalContent.utilityValues == null")
-							.col-md-8.col-md-offset-2
-									.col-md-4.charpagemodalutilitycell
-										h4.charpagemodalhpheading.text-center Hit Points					
-										h2#hpsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[0]}} 
-									.col-md-4.charpagemodalutilitycell.text-center
-										h4.charpagemodalfightheading.text-center Fight
-										h2#fightsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[1]}}
-									.col-md-4.charpagemodalutilitycell.text-center
-										h4.charpagemodalarmorheading.text-center Armor
-										h2#armorsymbol.charpagemodalutilityvalue.text-center {{modalContent.utilityValues[2]}} 					
+					.col-md-6.md-imgcntr
+						img.md-cardimg.img-responsive.curve(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover" data-content="Flavor Text: {{modalContent.flavor[0]}}" data-placement="bottom")
+						&nbsp;
+						.row(ng-hide="modalContent.type === 'Action' || modalContent.type === 'Feat' || modalContent.type === 'Special'")
+							.col-md-4
+								button.btn.btn-block
+									.row.de-bg
+										.col-md-4
+											h2#hpsymbol.md-utilval.wtxt.f-adv.text-left		{{modalContent.utilityValues[0]}}
+										.col-md-8
+											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/hpicon.jpg")
+							.col-md-4
+								button.btn.btn-block
+									.row.de-bg
+										.col-md-4
+											h2#fightsymbol.md-utilval.wtxt.f-adv {{modalContent.utilityValues[1]}}
+										.col-md-8
+											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/fighticon.jpg")
+							.col-md-4
+								button.btn-block
+									.row.de-bg
+										.col-md-4
+											h2#armor.md-utilval.wtxt.f-adv {{modalContent.utilityValues[2]}}
+										.col-md-8
+											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/armoricon.jpg")
 					.col-md-6
-						.row.charpagemodaliconrow
-							.col-md-12.charpagemodalcardcells
-								.col-md-6
-									h4.charpagemodalratingheading.text-center Rating
-									img.img-responsive.charpagemodalrating(src="{{modalContent.ratingSymbol}}")
-								.col-md-6
-									h4.charpagemodaltypeheading.text-center Type
-									img.img-responsive.charpagemodaltype(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")						
 						.row
 							.col-md-12
-								h3.charpagemodaltextheading.text-center Card Text
-								h3.charpagemodaltext.text-center {{modalContent.text}}
+								h1.md-cardname.de-bg.text-center.f-adv.wtxt.outlinetxt#modaltitle {{modalContent.name}}
 						.row
 							.col-md-12
-								h3.charpagemodalcommentheading.text-center Comment
-								h3.charpagemodalcomment.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
+								.col-md-6
+									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Rating
+									img.img-responsive.md-rating(src="{{modalContent.ratingSymbol}}")
+								.col-md-6
+									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Card Type
+									img.img-responsive.md-type(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
+						.row
+							.col-md-12
+								.col-md-12
+									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Card Text
+									h3.md-cardtext.f-oku.text-center {{modalContent.text}}
+						.row
+							.col-md-12
+								h3.md-modallbl.text-center.wtxt.f-oku.de-bg Comments
+								h3.md-comments.f-oku.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
+					.col-md-12
+						.row
+							footer.md-footer.navbar-fixed-bottom
+								.col-md-3
+									button.btn.btn-block.md-navbtn.outlinetxt(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") ◀
+								.col-md-3												
+									button.btn.btn-block.md-navbtn.outlinetxt(ng-click="findNextEntry()" ng-hide="hideNext()") ▶
+								.col-md-5
+									h1.text-center.md-cardview.f-oku CARD VIEWER: {{modalContent.name}}
+								.col-md-1
+									button.btn.btn-block.md-close.md-navbtn.outlinetxt(data-dismiss="modal" ng-click="emptyModal()") X
 		br
 		.row
-			.col-md-12.charpagesearchfiltertable
+			.col-md-12.db-tablebg.de-bg.curved
+				h2.text-center.f-adv.wtxt.outlinetxt.db-heading Deadeye Card Database
 				table.table.table-hover.table-condensed(ng-if="loaded")
-					thread
-						div.charpagesearchfiltercontainer
-							.row
-								.col-md-12
-									h3.charpagesearchfilterheading.text-center Search Filters
-							.row.text-center.charpagesearchfiltertagbg
-								.col-md-6.charpagesearchfiltertagcol
-									div.charpagesearchfiltertagrow(ng-repeat="tag in tagArray")
-										button.charpagesearchfilterexcludedtag(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') - {{tag}}
-								.col-md-6.charpagesearchfiltertagcol
-									div.charpagesearchfiltertagrow(ng-repeat="tag in currentTags")
-										button.charpagesearchfilterincludedtag(ng-click='removeFilterButton(tag)') + {{tag}}
-										&nbsp;
-							.row.charpagesearchfilterbuttonrow
-								.col-md-4
-									button.charpagesearchfilterresetbutton(ng-click='resetTags()') Reset Tags
-								.col-md-4
-									button#crossbutton.crossbutton.charpagesearchfiltercrossoverbutton(type='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()') Crossovers Off			
-								.col-md-4
-									button#featbutton.featbutton.charpagesearchfilterfeatbutton(type='button' data-toggle='button' ng-model='featBox' ng-click='logFeatBox()') Feats Off
+					thread						
 						.row
-							.col-md-12.charpagedatabaseheadingbg
-								h2.text-center.charpagedatabaseheading Silicon Artist Card Database
-								h3.text-center.charpagedatabasesubheading click on a card's name to see more details!		
-						tr.charpagedatabasetablebox
-							th.charpagedatabasetablefield
-								h3.charpagedatabasefieldheading.text-center Name
-							th.charpagedatabasetablefield.text-center
-								h3.charpagedatabasefieldheading Type
-							th.charpagedatabasetablefield.text-center
-								h3.charpagedatabasefieldheading Text
-							tbody.charpagedatabasetablebody
-								tr.charpagedatabasetablebodyrow(ng-repeat="card in cards | filter:containsTags | orderBy: 'name'")
+							.col-md-12.wbg.db-controlsbg
+								#searchfilter
+										.row.db-controlsrow
+												form.form-inline
+													.form-group.db-search
+														input.form-control(ng-model="searchText", placeholder="Quick Search")
+										.row
+											.col-md-4
+												button.btn.btn-block#crossbutton.db-buttons.f-adv.de-bg(ype='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
+													.col-md-2
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/crossovericon.jpg" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
+													.col-md-10
+															h3.db-btnlbl.wtxt Crossover
+											.col-md-4
+												button.btn.btn-block.db-buttons.de-bg.f-adv(ng-click='resetTags()')
+													.col-md-2
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/refreshicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
+													.col-md-10
+															h3.db-btnlbl.wtxt Reset
+											.col-md-4
+												button.btn.btn-block.db-buttons.de-bg.f-adv(data-toggle="collapse" data-target="#tagrow")
+													.col-md-2
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/tagicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
+													.col-md-10
+															h3.db-btnlbl.wtxt Tags
+										#tagrow.collapse
+											.row
+												.col-md-3
+													h3.db-taglbl.f-oku.text-center ACTIVE SEARCH TAGS: 
+												.col-md-9
+													div.db-tagrow(ng-repeat="tag in currentTags")
+															button.db-inctag.wtxt.f-oku(ng-click='removeFilterButton(tag)') + {{tag}}			
+											.row
+												.col-md-3
+													h3.db-taglbl.f-oku.text-center INACTIVE SEARCH TAGS: 
+												.col-md-9
+													div.db-tagrow(ng-repeat="tag in tagArray")
+														button.db-extag.wtxt.f-oku(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') {{tag}}
+										.row
+											&nbsp;
+						tr.db-tablebox
+							th.db-tableheading.f-oku.wtxt
+								button.btn.btn-block.db-fieldheading(ng-click='setOrder("name")') Name
+							th.db-tableheading.f-oku.wtxt
+								button.btn.btn-block.db-fieldheading(ng-click='setOrder("type")') Type
+							th.db-tableheading.f-oku.wtxt
+								button.btn.btn-block.db-fieldheading(ng-click='setOrder("rating")') Rating
+							th.db-tableheading.f-oku.wtxt
+								button.btn.btn-block.db-fieldheading(ng-click='setOrder("text")') Text
+							tbody.db-tablebody
+								tr.db-tablerow(ng-repeat="card in cards | filter:containsTags | orderBy: sortOrder")
 									td
-										h2.charpagedatabasecardtitle.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
+										h2.db-table-title.f-adv.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
 									td
-										img.img-responsive.charpagedatabasetypesymbol.text-center(src='{{card.typeSymbol}}')
+										img.db-table-symbol.img-responsive.text-center(src='{{card.typeSymbol}}')
 									td
-										h3.charpagedatabasetext.text-center {{card.text}}
+										
+										img.db-table-symbol.img-responsive.text-center(src='{{card.ratingSymbol}}')
+									td
+										h3.db-table-text.text-center.f-oku {{card.text}}
