@@ -24,20 +24,20 @@
 							.col-md-4
 								h2.crp-pluslbl.f-adv strengths			
 							.col-md-4.crp-chplustag
-								img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/playerdamageicon.png")
-								h5.crp-taglbl.wtxt.f-oku player dmg
+								img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/defensiveicon.png")
+								h5.crp-taglbl.wtxt.f-oku defense
 							.col-md-4.crp-chplustag
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/discardicon.png")
-								h5.crp-taglbl.wtxt.f-oku discard
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/disruptionicon.png")
+								h5.crp-taglbl.wtxt.f-oku disruption
 						.row.crp-chtagrow
 							.col-md-4
 								h2.crp-minuslbl.f-adv weaknesses
 							.col-md-4.crp-chminustag
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/armoricon.png")
-								h5.crp-taglbl.wtxt.f-oku armor
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/aggressiveicon.png")
+								h5.crp-taglbl.wtxt.f-oku poor offense
 							.col-md-4.crp-chminustag
 								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/utilitydamageicon.png")
-								h5.crp-taglbl.wtxt.f-oku utility dmg
+								h5.crp-taglbl.wtxt.f-oku player dmg
 						&nbsp;							
 					.col-md-12
 							button.btn.btn-block.crp-blockbtn.ob-bg.f-adv.wtxt.outlinetxt
@@ -66,9 +66,9 @@
 									.crp-chheading.f-adv.wtxt.outlinetxt.ob-bg BIOGRAPHY				
 						.row
 							.col-md-12.text-center
-								p.crp-biotxt Raised in a warzone, the sinister sniper DEADEYE grew up day and night with a gun in her hand. After escaping from her forced conscription alongside her estranged sister, DEADEYE kept that same gun on her waist for safety. Since that day, her gun has made her rich, powerful and feared. 
+								p.crp-biotxt After an embarassing college life and shaky start on the police force, Det. Ainsley Bryan knew that today would be the day to break her bad luck. After all, she did catch that bank robber...even if she did fall down a manhole during the press conference. Plus, she found a pack of gum inside her jacket! It can't all be bad. As she began unwrapped a stick of gum, she smiled to herself and thought 'Yup, today is going to be different.' Unfortunately, it wasn't. On the way to investigating a restaurant owner, she fell down another manhole. She would later fall through third manhole that evening while chasing a runaway cat.
 
-								p.crp-biotxt DEADEYE is on a brutal sharpshooter contracted with Knox's Villain Underground. As a professional assassin, DEADEYE has quickly gained a reputation as a cold-blooded killer. Despite an everpresent disgust with her teammates, DEADEYE has proven to be a dangerous and loyal ally to the Villain Underground. 
+								p.crp-biotxt Despite her crummy luck, Ainsley makes her living as a superhero detective working for the Amberville Police. Known as OBSCURITY due to her metahuman ability to become invisible, Ainsley is also a founding member of the Amberville Heroes. With her dedication to her friends and unshakeable courage, OBSCURITY has fought through the unfavorable odds and bureaocracy to become a powerful force of justice within her home of Amberville. With a detective's intuition, trenchcoat filled with cool gadgets and hydraulic robot legs, OBSCURITY has the tenacity and courage to stand up to any threat!
 						.row
 							.col-md-12
 								button.btn.btn-block.crp-blockbtn.ob-bg.f-adv.wtxt.outlinetxt
@@ -91,7 +91,7 @@
 					.col-md-8.text-center
 						img.crp-skill.curved(src="http://res.cloudinary.com/jhi5/image/upload/vanish.png")
 						br
-						h3.crp-skilltxt Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.
+						h3.crp-skilltxt To VANISH, turn one of your Gadgets upside down. Face-down Gadgets can be VANISHED to turn them face-up but otherwise do not exist.
 			.row.crp-btnrow
 				.col-md-1
 					&nbsp;				
@@ -117,21 +117,21 @@
 						.row(ng-hide="modalContent.type === 'Action' || modalContent.type === 'Feat' || modalContent.type === 'Special'")
 							.col-md-4
 								button.btn.btn-block
-									.row.de-bg
+									.row.ob-bg
 										.col-md-4
 											h2#hpsymbol.md-utilval.wtxt.f-adv.text-left		{{modalContent.utilityValues[0]}}
 										.col-md-8
 											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/hpicon.jpg")
 							.col-md-4
 								button.btn.btn-block
-									.row.de-bg
+									.row.ob-bg
 										.col-md-4
 											h2#fightsymbol.md-utilval.wtxt.f-adv {{modalContent.utilityValues[1]}}
 										.col-md-8
 											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/fighticon.jpg")
 							.col-md-4
 								button.btn-block
-									.row.de-bg
+									.row.ob-bg
 										.col-md-4
 											h2#armor.md-utilval.wtxt.f-adv {{modalContent.utilityValues[2]}}
 										.col-md-8
@@ -139,23 +139,23 @@
 					.col-md-6
 						.row
 							.col-md-12
-								h1.md-cardname.de-bg.text-center.f-adv.wtxt.outlinetxt#modaltitle {{modalContent.name}}
+								h1.md-cardname.ob-bg.text-center.f-adv.wtxt.outlinetxt#modaltitle {{modalContent.name}}
 						.row
 							.col-md-12
 								.col-md-6
-									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Rating
+									h4.md-modallbl.text-center.wtxt.f-oku.ob-bg Rating
 									img.img-responsive.md-rating(src="{{modalContent.ratingSymbol}}")
 								.col-md-6
-									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Card Type
+									h4.md-modallbl.text-center.wtxt.f-oku.ob-bg Card Type
 									img.img-responsive.md-type(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
 						.row
 							.col-md-12
 								.col-md-12
-									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Card Text
+									h4.md-modallbl.text-center.wtxt.f-oku.ob-bg Card Text
 									h3.md-cardtext.f-oku.text-center {{modalContent.text}}
 						.row
 							.col-md-12
-								h3.md-modallbl.text-center.wtxt.f-oku.de-bg Comments
+								h3.md-modallbl.text-center.wtxt.f-oku.ob-bg Comments
 								h3.md-comments.f-oku.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
 					.col-md-12
 						.row
@@ -170,8 +170,8 @@
 									button.btn.btn-block.md-close.md-navbtn.outlinetxt(data-dismiss="modal" ng-click="emptyModal()") X
 		br
 		.row
-			.col-md-12.db-tablebg.de-bg.curved
-				h2.text-center.f-adv.wtxt.outlinetxt.db-heading Deadeye Card Database
+			.col-md-12.db-tablebg.ob-bg.curved
+				h2.text-center.f-adv.wtxt.outlinetxt.db-heading Obscurity Card Database
 				table.table.table-hover.table-condensed(ng-if="loaded")
 					thread						
 						.row
@@ -183,21 +183,21 @@
 														input.form-control(ng-model="searchText", placeholder="Quick Search")
 										.row
 											.col-md-4
-												button.btn.btn-block#crossbutton.db-buttons.f-adv.de-bg(ype='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
+												button.btn.btn-block#crossbutton.db-buttons.f-adv.ob-bg(ype='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
 													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/crossovericon.jpg" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/crossovericon.jpg" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
 													.col-md-10
 															h3.db-btnlbl.wtxt Crossover
 											.col-md-4
-												button.btn.btn-block.db-buttons.de-bg.f-adv(ng-click='resetTags()')
+												button.btn.btn-block.db-buttons.ob-bg.f-adv(ng-click='resetTags()')
 													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/refreshicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/refreshicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
 													.col-md-10
 															h3.db-btnlbl.wtxt Reset
 											.col-md-4
-												button.btn.btn-block.db-buttons.de-bg.f-adv(data-toggle="collapse" data-target="#tagrow")
+												button.btn.btn-block.db-buttons.ob-bg.f-adv(data-toggle="collapse" data-target="#tagrow")
 													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/tagicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:cc6699,c_scale,q_54,w_110/v1498845176/tagicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
 													.col-md-10
 															h3.db-btnlbl.wtxt Tags
 										#tagrow.collapse

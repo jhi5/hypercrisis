@@ -24,20 +24,20 @@
 							.col-md-4
 								h2.crp-pluslbl.f-adv strengths			
 							.col-md-4.crp-chplustag
-								img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/playerdamageicon.png")
-								h5.crp-taglbl.wtxt.f-oku player dmg
+								img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/aggressiveicon.png")
+								h5.crp-taglbl.wtxt.f-oku aggressive
 							.col-md-4.crp-chplustag
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/discardicon.png")
-								h5.crp-taglbl.wtxt.f-oku discard
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/carddrawicon.png")
+								h5.crp-taglbl.wtxt.f-oku card draw
 						.row.crp-chtagrow
 							.col-md-4
 								h2.crp-minuslbl.f-adv weaknesses
 							.col-md-4.crp-chminustag
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/armoricon.png")
-								h5.crp-taglbl.wtxt.f-oku armor
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/healingicon.png")
+								h5.crp-taglbl.wtxt.f-oku healing
 							.col-md-4.crp-chminustag
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/utilitydamageicon.png")
-								h5.crp-taglbl.wtxt.f-oku utility dmg
+								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/versatileicon.png")
+								h5.crp-taglbl.wtxt.f-oku not versatile
 						&nbsp;							
 					.col-md-12
 							button.btn.btn-block.crp-blockbtn.kx-bg.f-adv.wtxt.outlinetxt
@@ -66,9 +66,9 @@
 									.crp-chheading.f-adv.wtxt.outlinetxt.kx-bg BIOGRAPHY				
 						.row
 							.col-md-12.text-center
-								p.crp-biotxt Raised in a warzone, the sinister sniper DEADEYE grew up day and night with a gun in her hand. After escaping from her forced conscription alongside her estranged sister, DEADEYE kept that same gun on her waist for safety. Since that day, her gun has made her rich, powerful and feared. 
+								p.crp-biotxt Knox watched his father gasp for air in his last breaths. The seething boy genius was visibly disturbed by what lay before him but did not move, anxiously tapping his fingers on the wall. As his father's eyes closed, the child peered down onto his father's limp body and spat in his face. In the husk of his hollow family lineage, KNOX discovered a terrible purpose - the boy genius must become the boy warlord! 
 
-								p.crp-biotxt DEADEYE is on a brutal sharpshooter contracted with Knox's Villain Underground. As a professional assassin, DEADEYE has quickly gained a reputation as a cold-blooded killer. Despite an everpresent disgust with her teammates, DEADEYE has proven to be a dangerous and loyal ally to the Villain Underground. 
+								p.crp-biotxt Inheriting his father's empire of organized crime, KNOX has used his vast fortune and arsenal of weapons to live out his greedy dreams. KNOX's team of henchmen and hired help have become infamously known as the Villain Underground after a number of violent criminal incidents. Even alone, KNOX should not be underestimated. His high-tech powersuit contains a number of deadly implements while his obsessive drive for power has led many heroes and villains to an early grave
 						.row
 							.col-md-12
 								button.btn.btn-block.crp-blockbtn.kx-bg.f-adv.wtxt.outlinetxt
@@ -91,7 +91,7 @@
 					.col-md-8.text-center
 						img.crp-skill.curved(src="http://res.cloudinary.com/jhi5/image/upload/minion.png")
 						br
-						h3.crp-skilltxt Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.
+						h3.crp-skilltxt Some Utilities in your deck are MINIONS. Whenever you would take damage, you may destroy one of your MINIONS instead.
 			.row.crp-btnrow
 				.col-md-1
 					&nbsp;				
@@ -117,21 +117,21 @@
 						.row(ng-hide="modalContent.type === 'Action' || modalContent.type === 'Feat' || modalContent.type === 'Special'")
 							.col-md-4
 								button.btn.btn-block
-									.row.de-bg
+									.row.kx-bg
 										.col-md-4
 											h2#hpsymbol.md-utilval.wtxt.f-adv.text-left		{{modalContent.utilityValues[0]}}
 										.col-md-8
 											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/hpicon.jpg")
 							.col-md-4
 								button.btn.btn-block
-									.row.de-bg
+									.row.kx-bg
 										.col-md-4
 											h2#fightsymbol.md-utilval.wtxt.f-adv {{modalContent.utilityValues[1]}}
 										.col-md-8
 											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/fighticon.jpg")
 							.col-md-4
 								button.btn-block
-									.row.de-bg
+									.row.kx-bg
 										.col-md-4
 											h2#armor.md-utilval.wtxt.f-adv {{modalContent.utilityValues[2]}}
 										.col-md-8
@@ -139,23 +139,23 @@
 					.col-md-6
 						.row
 							.col-md-12
-								h1.md-cardname.de-bg.text-center.f-adv.wtxt.outlinetxt#modaltitle {{modalContent.name}}
+								h1.md-cardname.kx-bg.text-center.f-adv.wtxt.outlinetxt#modaltitle {{modalContent.name}}
 						.row
 							.col-md-12
 								.col-md-6
-									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Rating
+									h4.md-modallbl.text-center.wtxt.f-oku.kx-bg Rating
 									img.img-responsive.md-rating(src="{{modalContent.ratingSymbol}}")
 								.col-md-6
-									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Card Type
+									h4.md-modallbl.text-center.wtxt.f-oku.kx-bg Card Type
 									img.img-responsive.md-type(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
 						.row
 							.col-md-12
 								.col-md-12
-									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Card Text
+									h4.md-modallbl.text-center.wtxt.f-oku.kx-bg Card Text
 									h3.md-cardtext.f-oku.text-center {{modalContent.text}}
 						.row
 							.col-md-12
-								h3.md-modallbl.text-center.wtxt.f-oku.de-bg Comments
+								h3.md-modallbl.text-center.wtxt.f-oku.kx-bg Comments
 								h3.md-comments.f-oku.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
 					.col-md-12
 						.row
@@ -170,8 +170,8 @@
 									button.btn.btn-block.md-close.md-navbtn.outlinetxt(data-dismiss="modal" ng-click="emptyModal()") X
 		br
 		.row
-			.col-md-12.db-tablebg.de-bg.curved
-				h2.text-center.f-adv.wtxt.outlinetxt.db-heading Deadeye Card Database
+			.col-md-12.db-tablebg.kx-bg.curved
+				h2.text-center.f-adv.wtxt.outlinetxt.db-heading Knox Card Database
 				table.table.table-hover.table-condensed(ng-if="loaded")
 					thread						
 						.row
@@ -183,21 +183,21 @@
 														input.form-control(ng-model="searchText", placeholder="Quick Search")
 										.row
 											.col-md-4
-												button.btn.btn-block#crossbutton.db-buttons.f-adv.de-bg(ype='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
+												button.btn.btn-block#crossbutton.db-buttons.f-adv.kx-bg(ype='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
 													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/crossovericon.jpg" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:663333,c_scale,q_54,w_110/v1498845176/crossovericon.jpg" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
 													.col-md-10
 															h3.db-btnlbl.wtxt Crossover
 											.col-md-4
-												button.btn.btn-block.db-buttons.de-bg.f-adv(ng-click='resetTags()')
+												button.btn.btn-block.db-buttons.kx-bg.f-adv(ng-click='resetTags()')
 													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/refreshicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:663333,c_scale,q_54,w_110/v1498845176/refreshicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
 													.col-md-10
 															h3.db-btnlbl.wtxt Reset
 											.col-md-4
-												button.btn.btn-block.db-buttons.de-bg.f-adv(data-toggle="collapse" data-target="#tagrow")
+												button.btn.btn-block.db-buttons.kx-bg.f-adv(data-toggle="collapse" data-target="#tagrow")
 													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/tagicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:663333,c_scale,q_54,w_110/v1498845176/tagicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
 													.col-md-10
 															h3.db-btnlbl.wtxt Tags
 										#tagrow.collapse
