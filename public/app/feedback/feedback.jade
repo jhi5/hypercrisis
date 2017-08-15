@@ -1,75 +1,75 @@
-.container-fluid.charpagebg
+.container-fluid
 	.container
 		form.form-horizontal(name="feedbackForm")
 			fieldset
-				h5.feedbackheading Your Feedback Makes The Game Better! 
-				h4.feedbacksubheading Please fill out this quick form after playing.					
+				h5.fb-heading.f-adv Your Feedback Makes The Game Better! 
+				h4.fb-subheading.f-oku Please fill out this quick form after playing.		
 				.row
 					.col-md-6
-						.form-group
-							label.col-md-12.control-label(for='character') Character Select
+						.form-group.f-adv
+							label.col-md-12.control-label.fb-lbl(for='character') Character Select
 							.col-md-12
-								select.full-input(name='character', type='text', placeholder='Choose Your Character', ng-model='character', required)
-									option(ng-repeat='char in characterChoices' value="{{char}}") {{char}}
+								select.fb-fullinput.fb-select(name='character', type='text', placeholder='Choose Your Character', ng-model='character', required)
+									option.fb-option(ng-repeat='char in characterChoices' value="{{char}}") {{char}}
 						.row
 							.col-md-6
-								.form-group
-									label.col-md-12.control-label(for='gamesWon') Games Won Of
+								.form-group.f-adv
+									label.col-md-12.control-label.fb-lbl(for='gamesWon') Games Won Of
 									.col-md-12
-										input.form-control(name='gamesWon', type='number', placeholder='gamesWon', ng-model='gamesWon', required)
+										input.form-control.fb-input.f-adv(name='gamesWon', type='number', placeholder='gamesWon', ng-model='gamesWon', required)
 							.col-md-6
-								.form-group
-									label.col-md-12.control-label(for='gamesPlayed') Games Played
+								.form-group.f-adv
+									label.col-md-12.control-label.fb-lbl(for='gamesPlayed') Games Played
 									.col-md-12
-										input.form-control(name='gamesPlayed', type='number', placeholder='gamesPlayed', ng-model='gamesPlayed', required)						
-						.form-group
-							label.col-md-12.control-label(for='crossover') Top 5 Crossovers?
+										input.form-control.fb-input.f-adv(name='gamesPlayed', type='number', placeholder='gamesPlayed', ng-model='gamesPlayed', required)						
+						.form-group.f-adv
+							label.col-md-12.control-label.fb-lbl(for='crossover') Top 5 Crossovers?
 							.col-md-12.cross-field
-								select.full-input#cross1(name='crossover', type='text', placeholder='Crossover', ng-model='cross1', required)
-									option(ng-repeat='cross in crossoverChoices | filter:crossFilter1' value="{{cross}}") {{cross}}
+								select.fb-fullinput#cross1.fb-select(name='crossover', type='text', placeholder='Crossover', ng-model='cross1', required)
+									option.fb-option(ng-repeat='cross in crossoverChoices | filter:crossFilter1' value="{{cross}}") {{cross}}
 							.col-md-12.cross-field
-								select.full-input#cross2(name='crossover', type='text', placeholder='Crossover', ng-model='cross2', required)
-									option(ng-repeat='cross in crossoverChoices | filter:crossFilter2' value="{{cross}}") {{cross}}
+								select.fb-fullinput#cross2.fb-select(name='crossover', type='text', placeholder='Crossover', ng-model='cross2', required)
+									option.fb-option(ng-repeat='cross in crossoverChoices | filter:crossFilter2' value="{{cross}}") {{cross}}
 							.col-md-12.cross-field
-								select.full-input#cross3(name='crossover', type='text', placeholder='Crossover', ng-model='cross3', required)
-									option(ng-repeat='cross in crossoverChoices | filter:crossFilter3' value="{{cross}}") {{cross}}
+								select.fb-fullinput#cross3.fb-select(name='crossover', type='text', placeholder='Crossover', ng-model='cross3', required)
+									option.fb-option(ng-repeat='cross in crossoverChoices | filter:crossFilter3' value="{{cross}}") {{cross}}
 							.col-md-12.cross-field
-								select.full-input#cross4(name='crossover', type='text', placeholder='Crossover', ng-model='cross4', required)
-									option(ng-repeat='cross in crossoverChoices | filter:crossFilter4' value="{{cross}}") {{cross}}
+								select.fb-fullinput#cross4.fb-select(name='crossover', type='text', placeholder='Crossover', ng-model='cross4', required)
+									option.fb-option(ng-repeat='cross in crossoverChoices | filter:crossFilter4' value="{{cross}}") {{cross}}
 							.col-md-12.cross-field
-								select.full-input#cross5(name='crossover', type='text', placeholder='Crossover', ng-model='cross5', required)
-									option(ng-repeat='cross in crossoverChoices | filter:crossFilter5' value="{{cross}}") {{cross}}
-						.form-group
-							label.col-md-12.control-label(for='comment') Any Comments?
+								select.fb-fullinput#cross5.fb-select(name='crossover', type='text', placeholder='Crossover', ng-model='cross5', required)
+									option.fb-option(ng-repeat='cross in crossoverChoices | filter:crossFilter5' value="{{cross}}") {{cross}}
+						.form-group.f-adv
+							label.col-md-12.control-label.fb-lbl(for='comment') Any Comments?
 							.col-md-12
-								textarea.form-control#commentfield(rows='1' ng-model='comment')
+								textarea.form-control#commentfield.fb-comments(rows='1' ng-model='comment')
 					.col-md-6
-						.form-group
-							label.col-md-12.control-label(for='feat') Top 3 Feats
+						.form-group.f-adv
+							label.col-md-12.control-label.fb-lbl(for='feat') Top 3 Feats
 							.col-md-12
-								select.full-input#feat1(name='feat', type='text', placeholder='Feat', ng-model='feat1', required)
-									option(ng-repeat='feat in featChoices | filter:featFilter1' value="{{feat[0]}}") {{feat[0]}}
+								select.fb-fullinput#feat1.fb-select(name='feat', type='text', placeholder='Feat', ng-model='feat1', required)
+									option.fb-option(ng-repeat='feat in featChoices | filter:featFilter1' value="{{feat[0]}}") {{feat[0]}}
 							.col-md-12
-								select.full-input#feat2(name='feat', type='text', placeholder='Feat', ng-model='feat2', required)
-									option(ng-repeat='feat in featChoices | filter:featFilter2' value="{{feat[0]}}") {{feat[0]}}
+								select.fb-fullinput#feat2.fb-select(name='feat', type='text', placeholder='Feat', ng-model='feat2', required)
+									option.fb-option(ng-repeat='feat in featChoices | filter:featFilter2' value="{{feat[0]}}") {{feat[0]}}
 							.col-md-12
-								select.full-input#feat3(name='feat', type='text', placeholder='Feat', ng-model='feat3', required)
-									option(ng-repeat='feat in featChoices | filter:featFilter3' value="{{feat[0]}}") {{feat[0]}}
-						.form-group
-							label.col-md-12.control-label(for='deck') Top 5 Actions & Utilities
+								select.fb-fullinput#feat3.fb-select(name='feat', type='text', placeholder='Feat', ng-model='feat3', required)
+									option.fb-option(ng-repeat='feat in featChoices | filter:featFilter3' value="{{feat[0]}}") {{feat[0]}}
+						.form-group.f-adv
+							label.col-md-12.control-label.fb-lbl(for='deck') Top 5 Actions & Utilities
 							.col-md-12
-								select.full-input#deck1(name='deck', type='text', placeholder='Deck', ng-model='deck1', required)
-									option(ng-repeat='deck in deckChoices | filter:deckFilter1' value="{{deck[0]}}") {{deck[0]}}
+								select.fb-fullinput#deck1.fb-select(name='deck', type='text', placeholder='Deck', ng-model='deck1', required)
+									option.fb-option(ng-repeat='deck in deckChoices | filter:deckFilter1' value="{{deck[0]}}") {{deck[0]}}
 							.col-md-12
-								select.full-input#deck2(name='deck', type='text', placeholder='Deck', ng-model='deck2', required)
-									option(ng-repeat='deck in deckChoices | filter:deckFilter2' value="{{deck[0]}}") {{deck[0]}}
+								select.fb-fullinput#deck2.fb-select(name='deck', type='text', placeholder='Deck', ng-model='deck2', required)
+									option.fb-option(ng-repeat='deck in deckChoices | filter:deckFilter2' value="{{deck[0]}}") {{deck[0]}}
 							.col-md-12
-								select.full-input#deck3(name='deck', type='text', placeholder='Deck', ng-model='deck3', required)
-									option(ng-repeat='deck in deckChoices | filter:deckFilter3' value="{{deck[0]}}") {{deck[0]}}
+								select.fb-fullinput#deck3.fb-select(name='deck', type='text', placeholder='Deck', ng-model='deck3', required)
+									option.fb-option(ng-repeat='deck in deckChoices | filter:deckFilter3' value="{{deck[0]}}") {{deck[0]}}
 							.col-md-12
-								select.full-input#deck4(name='deck', type='text', placeholder='Deck', ng-model='deck4', required)
-									option(ng-repeat='deck in deckChoices | filter:deckFilter4' value="{{deck[0]}}") {{deck[0]}}
+								select.fb-fullinput#deck4.fb-select(name='deck', type='text', placeholder='Deck', ng-model='deck4', required)
+									option.fb-option(ng-repeat='deck in deckChoices | filter:deckFilter4' value="{{deck[0]}}") {{deck[0]}}
 							.col-md-12
-								select.full-input#deck5(name='deck', type='text', placeholder='Deck', ng-model='deck5', required)
-									option(ng-repeat='deck in deckChoices | filter:deckFilter5' value="{{deck[0]}}") {{deck[0]}}
-						button.btn.btn-block.feedbackbutton(ng-click='submitFeedback()') SUBMIT!
+								select.fb-fullinput#deck5.fb-select(name='deck', type='text', placeholder='Deck', ng-model='deck5', required)
+									option.fb-option(ng-repeat='deck in deckChoices | filter:deckFilter5' value="{{deck[0]}}") {{deck[0]}}
+						button.btn.btn-block.fb-btn.f-adv(ng-click='submitFeedback()') SUBMIT!

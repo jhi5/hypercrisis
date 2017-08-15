@@ -262,15 +262,10 @@ angular.module('app').controller('mvFeedbackCtrl', function($scope, $timeout, $l
 		}
 	}
 
-	$scope.submitFeedback = function(){
-		console.log($scope.character);
-		console.log($scope.gamesWon);
-		console.log($scope.gamesPlayed);
-		console.log($scope.crossovers);
-		console.log($scope.feats);
-		console.log($scope.deck);
-		console.log($scope.comment);
-
+	$scope.submitFeedback = function(){		
+		if($scope.comment.length === 0){
+			$scope.comment = "none";
+		}
 		var obj = {
 			character: $scope.character,
 			gamesWon: $scope.gamesWon,
