@@ -1,3 +1,5 @@
+//font declarations
+
 @font-face
     font-family 'adventure'
     src url('adventure-webfont.woff2') format('woff2'),
@@ -10,9 +12,30 @@
         url('okuda-webfont.woff') format('woff'),
         url('okuda.ttf') format('truetype')
 
-primary-font = font-family 'okuda'
-secondary-font = font-family 'adventure'
-primary-spacing = letter-spacing .3em
+//universal variables
+
+$primary-font = 'okuda', helvetica
+$secondary-font = 'adventure', georgia
+$primary-spacing = letter-spacing .3em
+
+$l-border = 2rem solid black
+$m-border =  1rem solid black 
+$s-border = .5rem solid black
+$s-border-w = .5rem solid white
+
+
+
+$manual-color = #cc6699
+
+//character-specific variables
+
+$de-color = #336
+$gg-color = #969
+$kx-color = #663333
+$ob-color = #cc6699
+$qu-color = #336633
+$rb-color = #666666
+$sa-color = #009933
 
 body
     padding-top 8rem
@@ -21,23 +44,23 @@ body
     background-color #fff
 
 .popover
-    font-family "Adventure"
+    font-family $secondary-font
     min-width 45rem
     min-height 5rem
-    border 1rem solid #000
-    border-radius 2rem
+    border $m-border
+    border-radius 1rem
     padding auto
     color #000
 
 .popover-content
-    font-family "Adventure"
+    font-family $secondary-font
     font-size 4rem
     text-align center
     line-height 4rem
     margin auto
 
 .copyrightfooter
-    font-family 'Adventure'
+    font-family $secondary-font
     height 4rem
     width 50%
     border-radius 1rem
@@ -61,10 +84,10 @@ body
     border-radius 5rem
 
 .f-adv
-    font-family adventure
+    font-family $secondary-font
 
 .f-oku
-    font-family okuda
+    font-family $primary-font
 
 .no-border
     border none
@@ -75,73 +98,87 @@ body
 .outlinetxt
     text-shadow -0.1rem 0.25rem .25rem black, -0.1rem -0.25rem 0.2rem black, 0.5rem 0.25rem .25rem black
 
-//character classes
+//character-specific classes
+
+//deadeye
 
 .de-banner
     background-image url('http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/desplash.jpg')
 
 .de-bg
-    background-color #336
+    background-color $de-color
 
 .de-headshot
     background-image url("http://res.cloudinary.com/jhi5/image/upload/deadeyecharselect.png")
+
+//gravity girl
 
 .gg-banner
     background-image url('http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/ggsplash.jpg')
 
 .gg-bg
-    background-color #969
+    background-color $gg-color
 
 .gg-headshot
     background-image url("http://res.cloudinary.com/jhi5/image/upload/gravitygirlcharselect.png")
+
+//knox
 
 .kx-banner
     background-image url('http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/kxsplash.jpg')
 
 .kx-bg
-    background-color #663333
+    background-color $kx-color
 
 .kx-headshot
     background-image url("http://res.cloudinary.com/jhi5/image/upload/knoxcharselect.png")
+
+//obscurity
 
 .ob-banner
     background-image url('http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/obsplash.jpg')
 
 .ob-bg
-    background-color #cc6699
+    background-color $ob-color
 
 .ob-headshot
     background-image url("http://res.cloudinary.com/jhi5/image/upload/obscuritycharselect.png")
+
+//query
 
 .qu-banner
     background-image url('http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/qusplash.jpg')
 
 .qu-bg
-    background-color #336633
+    background-color $ob-color
 
 .qu-headshot
     background-image url("http://res.cloudinary.com/jhi5/image/upload/querycharselect.png")
 
-.pk-backgroundcolor
-    background-color #ff9900
+//robonobo
 
 .rb-banner
     background-image url('http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/rbsplash.jpg')
 
 .rb-bg
-    background-color #666666
+    background-color $rb-color
 
 .rb-headshot
     background-image url("http://res.cloudinary.com/jhi5/image/upload/robonobocharselect.png")
+
+//silicon artist
 
 .sa-banner
     background-image url('http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/sasplash.jpg')
 
 .sa-bg
-    background-color #009933
+    background-color $sa-color
 
 .sa-headshot
     background-image url("http://res.cloudinary.com/jhi5/image/upload/siliconartistcharselect.png")
+
+.pk-backgroundcolor
+    background-color $manual-color
 
 //charpage classes
 
@@ -152,7 +189,7 @@ body
     margin-bottom 1rem
 
 .crp-biotxt
-    font-size 15px
+    font-size 0.938em
     text-align left
     padding 0 2% 0 2%
     margin-top 0.5rem 0 0.5rem 0
@@ -163,7 +200,7 @@ body
     text-align center
     border-radius 5rem
     margin-top 1rem
-    border .5rem groove black
+    border $s-border
     line-height 125%
     margin-bottom 0rem
 
@@ -184,13 +221,13 @@ body
     font-size 7rem 
     letter-spacing 0.3rem
     text-align center
-    background-size 10px 10px
+    background-size 0.625em 0.625em
     background-repeat no-repeat
     border-radius 20rem
     margin-left 5%
     margin-right 5%
     margin-bottom 3rem
-    border .5rem groove black
+    border $s-border
     line-height 100%
 
 .crp-chminustag
@@ -198,7 +235,7 @@ body
     text-align center
     border-radius 1rem
     margin auto
-    border .5rem groove white
+    border $s-border-w
     line-height 100%
 
 .crp-chplustag
@@ -206,7 +243,7 @@ body
     text-align center
     border-radius 1rem
     margin auto
-    border .5rem groove white
+    border $s-border-w
     line-height 100%
 
 .crp-chtagrow
@@ -216,7 +253,7 @@ body
     margin-top 3%
 
 .crp-info
-    border 1rem solid #000
+    border $m-border
     -webkit-box-shadow 1rem 1rem 1rem #000
     box-shadow 1rem 1rem 1rem #000
     margin-top 2rem
@@ -232,17 +269,17 @@ body
     font-size 7rem       
     letter-spacing 0.3rem
     text-align center
-    background-size 10px 10px
+    background-size 0.625em 0.625em
     background-repeat no-repeat
     border-radius 20rem
     margin-left 5%
     margin-right 5%
     margin-bottom 3rem
-    border .5rem groove black
+    border $s-border
     line-height 100%
 
 .crp-navbtn
-    border 1rem groove black
+    border $m-border
     text-align center
     padding 0rem
     margin 0rem
@@ -266,7 +303,7 @@ body
 
 .crp-profileimg
     width 100%
-    border .5rem solid black
+    border $s-border
     background-size cover
     border-top-left-radius 5rem
     border-top-right-radius 5rem
@@ -278,10 +315,10 @@ body
     padding-right 1rem
     padding-left 1rem
     margin auto 0
-    border 1rem solid #000
+    border $m-border
 
 .crp-skilltxt
-    font-size 15px
+    font-size 0.938em
     text-align left
     padding 0 2% 0 2%
     margin-top 0.5rem 0 0.5rem 0
@@ -297,7 +334,7 @@ body
     line-height 100%
 
 .tab-content
-    min-height 590px
+    min-height 39.333em
 
 //cardviewer modal classes
 
@@ -363,7 +400,7 @@ body
     max-width 15rem
     margin auto
     border-radius 2rem
-    border 1rem solid #000
+    border $m-border
     padding-left 1.5rem
     padding-right 1.5rem
     
@@ -371,7 +408,7 @@ body
     max-width 15rem
     margin auto
     border-radius 2rem
-    border 1rem solid #000
+    border $m-border
     padding-left 1.5rem
     padding-right 1.5rem
 
@@ -399,7 +436,7 @@ body
     font-size 3.5rem
     border-radius 2rem
     color #fff
-    border 1rem solid #000
+    border $m-border
     width 100%
 
 .db-controlsbg
@@ -428,7 +465,7 @@ body
     padding-bottom 0rem
     margin 0.2rem
     background-color #ff4847
-    font-family "Okuda"
+    font-family $primary-font
     color #fff
     font-size 3.5rem
 
@@ -455,7 +492,7 @@ body
     margin 0
     font-size 7rem       
     letter-spacing 0.3rem
-    background-size 10px 10px
+    background-size 0.625em 0.625em
     background-repeat no-repeat
     border-radius 20rem
     margin-left 5%
@@ -470,7 +507,7 @@ body
     padding-bottom 0rem
     margin 0.2rem    
     background-color #228b22
-    font-family "Okuda"
+    font-family $primary-font
     color #fff
     font-size 3.5rem
 
@@ -487,13 +524,13 @@ body
     padding 2rem
     margin-top 1rem
     margin-bottom 2rem
-    border 1rem solid #000
+    border $m-border
     -webkit-box-shadow 1rem 1rem 1rem #000
     box-shadow 1rem 1rem 1rem #000
 
 .db-tablebody
     background-color white
-    border 1rem solid #000
+    border $m-border
     border-top-left-radius 0.25rem
     border-top-right-radius 0.25rem
 
@@ -555,7 +592,7 @@ body
     background-color DodgerBlue
 
 .cs-info
-    border 1rem solid #000
+    border $m-border
     -webkit-box-shadow 1rem 1rem 1rem #000
     box-shadow 1rem 1rem 1rem #000
     margin-top 2rem
@@ -565,20 +602,20 @@ body
     font-size 7rem       
     letter-spacing 0.3rem
     text-align center
-    background-size 10px 10px
+    background-size 0.625em 0.625em
     background-repeat no-repeat
     border-radius 20rem
     margin-left 5%
     margin-right 5%
     margin-bottom 3rem
-    border .5rem groove black
+    border $s-border
     line-height 100%
 
 .cs-ovals
-    width 160px
-    height 160px
-    max-width 160px
-    max-height 160px
+    width 16.000em
+    height 16.000em
+    max-width 16.000em
+    max-height 16.000em
     margin-bottom 0rem
 
 .cs-row
@@ -588,7 +625,7 @@ body
 
 .main-b1
     background-image url("http://res.cloudinary.com/jhi5/image/upload/panel1.png")
-    border 2rem solid #000
+    border $l-border
     background-color rgba(255,255,255,0)
     height 25rem
     background-size cover
@@ -599,7 +636,7 @@ body
 
 .main-b2
     background-image url("http://res.cloudinary.com/jhi5/image/upload/panel2.png")
-    border 2rem solid #000
+    border $l-border
     background-color rgba(255,255,255,0)
     height 35rem
     margin-top 0.5rem
@@ -611,7 +648,7 @@ body
 
 .main-b3
     background-image url("http://res.cloudinary.com/jhi5/image/upload/panel3.png")
-    border 2rem solid #000
+    border $l-border
     background-color rgba(255,255,255,0)
     margin-top 0.5rem
     margin-bottom 0.5rem
@@ -623,7 +660,7 @@ body
 .main-b4
     margin-top 0.5rem
     background-image url("http://res.cloudinary.com/jhi5/image/upload/panel4.png")
-    border 2rem solid #000
+    border $l-border
     background-color rgba(255,255,255,0)
     height 25rem
     background-size cover
@@ -667,7 +704,7 @@ body
     margin-bottom 0rem
 
 .dl-heading
-    font-size 100px
+    font-size 10.000em
     text-align center
     color DodgerBlue
     padding 1rem
@@ -699,7 +736,7 @@ body
 .fb-comments
     background-color #fff
     border-left 0.5rem solid DodgerBlue
-    font-family Verdana
+    font-family $primary-font
     padding-left 0.5rem
     font-size 2.5rem
 
@@ -717,7 +754,7 @@ body
 .fb-input
     padding-top 3rem
     padding-bottom 3rem
-    font-family "Adventure"
+    font-family $secondary-font
     font-size 5rem
     text-align center
     background-color #fff
@@ -763,7 +800,7 @@ body
     border .5rem solid DodgerBlue
 
 .ai-title
-    font-size 36px
+    font-size 3.600em
     text-align center
     margin-bottom 1.5rem
     margin-top 0rem
@@ -772,20 +809,20 @@ body
 //article classes
 
 .ar-5heading
-    font-size 36px
+    font-size 3.600em
     padding 1.5%
     border-radius 3%
 
 .ar-5himg
-    height 350px
+    height 35.000em
     border-radius 3%
-    -webkit-box-shadow 4px 4px 2px #808080
-    box-shadow 4px 4px 2px #808080
+    -webkit-box-shadow 0.4em 0.4em 0.2em #808080
+    box-shadow 0.4em 0.4em 0.2em #808080
     margin-top 4.5%
     margin-bottom 4.5%
 
 .ar-5panel
-    min-height 400px
+    min-height 40em
     line-height 50%
 
 .ar-5row
@@ -796,18 +833,18 @@ body
     border-bottom solid 0.1rem DodgerBlue
 
 .ar-5text
-    font-size 20px
+    font-size 1.250em
 
 .ar-5vimg
-    width 350px
+    width 17.5em
     border-radius 3%
     margin-top 4.5%
     margin-bottom 4.5%
-    -webkit-box-shadow 4px 4px 2px #808080
-    box-shadow 4px 4px 2px #808080
+    -webkit-box-shadow 0.4em 0.4em 0.2em #808080
+    box-shadow 0.4em 0.4em 0.2em #808080
 
 .ar-author
-    font-size 36px
+    font-size 1.800em
     margin-top 0rem
     padding-top 0rem
     padding-right 1.5rem
@@ -821,12 +858,12 @@ body
     background-size cover
 
 .ar-cardheading
-    font-size 36px
+    font-size 1.800em
     padding 1.5%
     line-spacing 1rem
 
 .ar-cardpanel
-    min-height 400px
+    min-height 20em
     line-height 50%
 
 .ar-cardrow
@@ -837,23 +874,23 @@ body
 
 .ar-contbg
     background-color #fff
-    border 0.5rem solid #000
+    border $s-border
 
 .ar-heading
-    font-size 36px
+    font-size 1.800em
     text-align left
     padding 1rem
-    text-indent 15px
+    text-indent 0.938em
     margin-bottom 2rem
     margin-top 0rem
     font-styling italic
     letter-spacing 0.5rem
 
 .ar-himg
-    height 370px
+    height 24.667em
     border-radius 3%
-    -webkit-box-shadow 4px 4px 2px #808080
-    box-shadow 4px 4px 2px #808080
+    -webkit-box-shadow 0.4em 0.4em 0.2em #808080
+    box-shadow 0.4em 0.4em 0.2em #808080
 
 .ar-mast
     border-radius 1rem
@@ -878,7 +915,7 @@ body
     margin-bottom 2.5%
 
 .ar-skilltext
-    font-size 30px
+    font-size 2em
     text-align center
     margin-bottom 2%
     color #808080
@@ -887,13 +924,13 @@ body
     margin-right 10%
 
 .ar-text
-    font-size 15px
+    font-size 1em
     text-align left
     padding 0 2% 0 2%
     margin-top 0.5rem 0 0.5rem 0
 
 .ar-title
-    font-size 36px
+    font-size 2.4em
     margin-top 1rem
     padding-top 0rem
     padding-right 1rem
@@ -902,7 +939,7 @@ body
     margin-bottom 0rem
 
 .ar-tutbtn
-    font-size 36px
+    font-size 2.4em
     line-height 100%
     &:hover
         color white
@@ -920,11 +957,11 @@ body
     padding-right 15%    
 
 .ar-vimg
-    width 350px
+    width 23.333em
     border-radius 3%
     margin-bottom 1%
-    -webkit-box-shadow 4px 4px 2px #808080
-    box-shadow 4px 4px 2px #808080
+    -webkit-box-shadow 0.4em 0.4em 0.2em #808080
+    box-shadow 0.4em 0.4em 0.2em #808080
 
 //navbar classes
 #myNavbar
@@ -935,7 +972,7 @@ body
             display inline
 
 .navbar
-    border-bottom .5rem solid #000
+    border-bottom $s-border
     padding-bottom 1rem
 
 .nv-btn
