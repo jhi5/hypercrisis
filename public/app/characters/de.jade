@@ -38,13 +38,12 @@
 							.col-md-4.crp-chminustag
 								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/utilitydamageicon.png")
 								h5.crp-taglbl.wtxt.f-oku utility dmg
-						&nbsp;							
-					.col-md-12
-							button.btn.btn-block.crp-blockbtn.de-bg.f-adv.wtxt.outlinetxt
-								.col-md-2
-									img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_72/v1498845176/guideicon.jpg")
-								.col-md-10
-									h3.crl-blockbtnlbl.wtxt Read The Player's Guide!
+						&nbsp;
+						button.btn.btn-block.crp-blockbtn.de-bg.f-adv.wtxt.outlinetxt
+							.col-md-2
+								img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_72/v1498845176/guideicon.jpg")
+							.col-md-10
+								h3.crl-blockbtnlbl.wtxt Read The Player's Guide!
 					.row
 						.col-md-12
 							&nbsp;				
@@ -62,8 +61,7 @@
 					.col-md-8
 						.row
 							.col-md-12.text-center
-								.de-bg
-									.crp-chheading.f-adv.wtxt.outlinetxt BIOGRAPHY				
+								h1.crp-chheading.f-adv.wtxt.outlinetxt.de-bg BIOGRAPHY				
 						.row
 							.col-md-12.text-center
 								p.crp-biotxt Raised in a warzone, the sinister sniper DEADEYE grew up day and night with a gun in her hand. After escaping from her forced conscription alongside her estranged sister, DEADEYE kept that same gun on her waist for safety. Since that day, her gun has made her rich, powerful and feared. 
@@ -75,8 +73,7 @@
 									.col-md-2
 										img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_72/v1498845176/podcasticon.jpg")
 									.col-md-10
-										h3.crp-blockbtnlbl.wtxt Listen To The Villain 
-										h3.crp-blockbtnlbl.wtxt Underground Podcast!
+										h3.crp-blockbtnlbl.wtxt S.H.U. Podcast!
 				#skill.tab-pane
 					.col-md-12
 						&nbsp;
@@ -180,39 +177,39 @@
 										.row.db-controlsrow
 												form.form-inline
 													.form-group.db-search
-														input.form-control(ng-model="searchText", placeholder="Quick Search")
+														input.form-control.input-lg(ng-model="searchText", placeholder="Quick Search")
 										.row
 											.col-md-4
 												button.btn.btn-block#crossbutton.db-buttons.f-adv.de-bg(ype='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
-													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/crossovericon.jpg" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
-													.col-md-10
-															h3.db-btnlbl.wtxt Crossover
+													.col-md-4
+														img#crosssymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_75/v1498845176/crossovericon.jpg" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
+													.col-md-8
+															h3.db-btnlbl.wtxt.f-oku Crossover
 											.col-md-4
 												button.btn.btn-block.db-buttons.de-bg.f-adv(ng-click='resetTags()')
 													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/refreshicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_75/v1498845176/refreshicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
 													.col-md-10
-															h3.db-btnlbl.wtxt Reset
+															h3.db-btnlbl.wtxt.f-oku Reset
 											.col-md-4
 												button.btn.btn-block.db-buttons.de-bg.f-adv(data-toggle="collapse" data-target="#tagrow")
 													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/tagicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
+														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_75/v1498845176/tagicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
 													.col-md-10
-															h3.db-btnlbl.wtxt Tags
+															h3.db-btnlbl.wtxt.f-oku Tags
 										#tagrow.collapse
 											.row
 												.col-md-3
 													h3.db-taglbl.f-oku.text-center ACTIVE SEARCH TAGS: 
 												.col-md-9
 													div.db-tagrow(ng-repeat="tag in currentTags")
-															button.db-inctag.wtxt.f-oku(ng-click='removeFilterButton(tag)') + {{tag}}			
+															button.db-inctag.wtxt.f-oku.curve(ng-click='removeFilterButton(tag)') {{tag}}		
 											.row
 												.col-md-3
 													h3.db-taglbl.f-oku.text-center INACTIVE SEARCH TAGS: 
 												.col-md-9
 													div.db-tagrow(ng-repeat="tag in tagArray")
-														button.db-extag.wtxt.f-oku(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') {{tag}}
+														button.db-extag.wtxt.f-oku.curve(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') {{tag}}
 										.row
 											&nbsp;
 						tr.db-tablebox

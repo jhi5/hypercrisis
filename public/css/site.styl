@@ -1,45 +1,21 @@
 @font-face
-    font-family 'okudabold_italic'
-    src url("okuda_bold_italic-webfont.woff2") format('woff2'), url("okuda_bold_italic-webfont.woff") format('woff')
-    font-weight normal
-    font-style normal
+    font-family 'adventure'
+    src url('adventure-webfont.woff2') format('woff2'),
+        url('adventure-webfont.woff') format('woff'),
+        url('adventure.ttf') format('truetype')
 
 @font-face
-    font-family 'okudabold'
-    src url("okuda_bold-webfont.woff2") format('woff2'), url("okuda_bold-webfont.woff") format('woff')
-    font-weight normal
-    font-style normal
+    font-family 'okuda'
+    src url('okuda-webfont.woff2') format('woff2'),
+        url('okuda-webfont.woff') format('woff'),
+        url('okuda.ttf') format('truetype')
 
-@font-face
-    font-family 'okudaitalic'
-    src url("okuda_italic-webfont.woff2") format('woff2'), url("okuda_italic-webfont.woff") format('woff')
-    font-weight normal
-    font-style normal
-
-@font-face
-    font-family 'okudaregular'
-    src url("okuda-webfont.woff2") format('woff2'), url("okuda-webfont.woff") format('woff')
-    font-weight normal
-    font-style normal
-
-@font-face
-    font-family 'adventure_hollowregular'
-    src url("adventure_hollow-webfont.woff2") format('woff2'), url("adventure_hollow-webfont.woff") format('woff')
-    font-weight normal
-    font-style normal
-
-@font-face
-    font-family 'adventureregular'
-    src url("adventure-webfont.woff2") format('woff2'), url("adventure-webfont.woff") format('woff')
-    font-weight normal
-    font-style normal
+primary-font = font-family 'okuda'
+secondary-font = font-family 'adventure'
+primary-spacing = letter-spacing .3em
 
 body
     padding-top 8rem
-
-@media screen and (max-width: 768px)
-    body
-        padding-top 8rem
 
 .modal-admin
     background-color #fff
@@ -76,10 +52,6 @@ body
         padding-bottom 0rem
         font-size 3.5rem
 
-
-
-
-
 //universal classes
 
 .wbg
@@ -89,10 +61,10 @@ body
     border-radius 5rem
 
 .f-adv
-    font-family Adventure
+    font-family adventure
 
 .f-oku
-    font-family Okuda
+    font-family okuda
 
 .no-border
     border none
@@ -324,6 +296,9 @@ body
     font-size 5rem
     line-height 100%
 
+.tab-content
+    min-height 590px
+
 //cardviewer modal classes
 
 .md-armor
@@ -418,7 +393,7 @@ body
     font-size 4.5rem
     text-align center
     line-height 100%
-    margin-top 2%
+    margin-top 1.5rem
 
 .db-buttons
     font-size 3.5rem
@@ -452,7 +427,7 @@ body
     padding-top 0rem
     padding-bottom 0rem
     margin 0.2rem
-    background-color #228b22
+    background-color #ff4847
     font-family "Okuda"
     color #fff
     font-size 3.5rem
@@ -462,7 +437,19 @@ body
     margin 0 auto
     font-size 4rem
     line-height 100%
-    border none
+    border-style none
+    border-radius 15rem
+    box-shadow none
+    &:hover
+        border-style 0rem
+        box-shadow none
+        color DodgerBlue
+        background-color white
+    &:focus
+        border-style 0rem
+        box-shadow none
+        color white
+        background-color DodgerBlue
 
 .db-heading
     margin 0
@@ -481,15 +468,20 @@ body
     padding-right 2rem
     padding-top 0rem
     padding-bottom 0rem
-    margin 0.2rem
-    background-color #ff4847
+    margin 0.2rem    
+    background-color #228b22
     font-family "Okuda"
     color #fff
     font-size 3.5rem
 
 .db-search
-    border 1rem solid DodgerBlue
     border-radius 2rem
+    padding-left 1rem
+    font-size 15rem
+
+.db-searchfield
+    font-size 18rem
+    color black
 
 .db-tablebg
     padding 2rem
@@ -543,7 +535,7 @@ body
     margin 0 auto
     font-size 4rem
     line-height 100%
-    border none
+    border none    
 
 .db-tagrow
     display inline-block

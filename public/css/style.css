@@ -1,46 +1,13 @@
 @font-face {
-  font-family: 'okudabold_italic';
-  src: url("okuda_bold_italic-webfont.woff2") format('woff2'), url("okuda_bold_italic-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'adventure';
+  src: url("adventure-webfont.woff2") format('woff2'), url("adventure-webfont.woff") format('woff'), url("adventure.ttf") format('truetype');
 }
 @font-face {
-  font-family: 'okudabold';
-  src: url("okuda_bold-webfont.woff2") format('woff2'), url("okuda_bold-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'okudaitalic';
-  src: url("okuda_italic-webfont.woff2") format('woff2'), url("okuda_italic-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'okudaregular';
-  src: url("okuda-webfont.woff2") format('woff2'), url("okuda-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'adventure_hollowregular';
-  src: url("adventure_hollow-webfont.woff2") format('woff2'), url("adventure_hollow-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
-}
-@font-face {
-  font-family: 'adventureregular';
-  src: url("adventure-webfont.woff2") format('woff2'), url("adventure-webfont.woff") format('woff');
-  font-weight: normal;
-  font-style: normal;
+  font-family: 'okuda';
+  src: url("okuda-webfont.woff2") format('woff2'), url("okuda-webfont.woff") format('woff'), url("okuda.ttf") format('truetype');
 }
 body {
   padding-top: 8rem;
-}
-@media screen and (max-width: 768px) {
-  body {
-    padding-top: 8rem;
-  }
 }
 .modal-admin {
   background-color: #fff;
@@ -85,10 +52,10 @@ body {
   border-radius: 5rem;
 }
 .f-adv {
-  font-family: Adventure;
+  font-family: adventure;
 }
 .f-oku {
-  font-family: Okuda;
+  font-family: okuda;
 }
 .no-border {
   border: none;
@@ -316,6 +283,9 @@ body {
   font-size: 5rem;
   line-height: 100%;
 }
+.tab-content {
+  min-height: 590px;
+}
 .md-armor {
   background-color: #ff0;
 }
@@ -406,7 +376,7 @@ body {
   font-size: 4.5rem;
   text-align: center;
   line-height: 100%;
-  margin-top: 2%;
+  margin-top: 1.5rem;
 }
 .db-buttons {
   font-size: 3.5rem;
@@ -440,7 +410,7 @@ body {
   padding-top: 0rem;
   padding-bottom: 0rem;
   margin: 0.2rem;
-  background-color: #228b22;
+  background-color: #ff4847;
   font-family: "Okuda";
   color: #fff;
   font-size: 3.5rem;
@@ -450,7 +420,21 @@ body {
   margin: 0 auto;
   font-size: 4rem;
   line-height: 100%;
-  border: none;
+  border-style: none;
+  border-radius: 15rem;
+  box-shadow: none;
+}
+.db-fieldheading:hover {
+  border-style: 0rem;
+  box-shadow: none;
+  color: DodgerBlue;
+  background-color: #fff;
+}
+.db-fieldheading:focus {
+  border-style: 0rem;
+  box-shadow: none;
+  color: #fff;
+  background-color: DodgerBlue;
 }
 .db-heading {
   margin: 0;
@@ -470,14 +454,19 @@ body {
   padding-top: 0rem;
   padding-bottom: 0rem;
   margin: 0.2rem;
-  background-color: #ff4847;
+  background-color: #228b22;
   font-family: "Okuda";
   color: #fff;
   font-size: 3.5rem;
 }
 .db-search {
-  border: 1rem solid DodgerBlue;
   border-radius: 2rem;
+  padding-left: 1rem;
+  font-size: 15rem;
+}
+.db-searchfield {
+  font-size: 18rem;
+  color: #000;
 }
 .db-tablebg {
   padding: 2rem;

@@ -32,11 +32,13 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		if($scope.checkBox === false){
 			$scope.checkBox = true;
 			$('#crossbutton').addClass('.active');
+			$('#crosssymbol').attr('src', src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_75/v1498845176/crossover.png");
 			return console.log($scope.checkBox);
 		}
 		if($scope.checkBox === true){
 			$scope.checkBox = false;
 			$('#crossbutton').removeClass('.active');
+			$('#crosssymbol').attr('src', src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_75/v1498845176/crossovericon.png");
 			return console.log($scope.checkBox);
 		}
 	}
