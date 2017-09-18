@@ -23,7 +23,13 @@ $m-border =  1rem solid black
 $s-border = .5rem solid black
 $s-border-w = .5rem solid white
 
+$heading-ts = 7rem
+$s-heading-ts = 2rem
 
+$l-label-ts = 5rem
+$label-ts = 3rem
+
+$plain-ts = 1.25rem
 
 $manual-color = #cc6699
 
@@ -48,13 +54,13 @@ body
     min-width 45rem
     min-height 5rem
     border $m-border
-    border-radius 1rem
+    border-radius 1.25rem
     padding auto
     color #000
 
 .popover-content
     font-family $secondary-font
-    font-size 4rem
+    font-size $l-label-ts
     text-align center
     line-height 4rem
     margin auto
@@ -73,30 +79,62 @@ body
         margin-bottom 0rem
         padding-top 0rem
         padding-bottom 0rem
-        font-size 3.5rem
+        font-size $label-ts
 
 //universal classes
 
-.wbg
-    background-color white
+.border-large 
+    border $l-border
+
+.border-med
+    border $m-border
+
+.border-small
+    border $s-border
+
+.border-small-white
+    border $s-border-w
+
+.border-small-white
 
 .curve
     border-radius 5rem
 
 .f-adv
     font-family $secondary-font
+    letter-spacing $primary-spacing
 
 .f-oku
     font-family $primary-font
+    letter-spacing $primary-spacing
+
+.heading-textsize
+    font-size $heading-ts
+
+.heading-small-textsize
+    font-size $s-heading-ts
+
+.label-large-textsize
+    font-size $l-label-ts
+
+.label-textsize
+    font-size $label-ts
 
 .no-border
     border none
 
+.outlinetxt
+    text-shadow -0.1rem 0.25rem .25rem black, -0.1rem -0.25rem 0.2rem black, 0.5rem 0.25rem .25rem black
+
+.plaintext
+    font-size $plain-ts
+
+.wbg
+    background-color white
+
 .wtxt
     color white
 
-.outlinetxt
-    text-shadow -0.1rem 0.25rem .25rem black, -0.1rem -0.25rem 0.2rem black, 0.5rem 0.25rem .25rem black
 
 //character-specific classes
 
@@ -180,6 +218,7 @@ body
 .pk-backgroundcolor
     background-color $manual-color
 
+
 //charpage classes
 
 .crp-banner
@@ -189,13 +228,13 @@ body
     margin-bottom 1rem
 
 .crp-biotxt
-    font-size 0.938em
+    font-size $plain-ts
     text-align left
     padding 0 2% 0 2%
     margin-top 0.5rem 0 0.5rem 0
 
 .crp-blockbtn
-    font-size 5rem 
+    font-size $l-label-ts 
     letter-spacing 0.3rem
     text-align center
     border-radius 5rem
@@ -205,7 +244,7 @@ body
     margin-bottom 0rem
 
 .crp-blockbtnlbl
-    font-size 4rem
+    font-size $l-label-ts
     margin 0 
     text-align center
     line-height 100%
@@ -218,7 +257,7 @@ body
 
 .crp-chheading
     margin 0
-    font-size 7rem 
+    font-size $heading-ts
     letter-spacing 0.3rem
     text-align center
     background-size 0.625em 0.625em
@@ -261,12 +300,12 @@ body
 .crp-minuslbl
     color red
     align text-left
-    font-size 3rem
+    font-size $label-ts
     border-bottom 1rem double red
 
 .crp-name
     margin 0
-    font-size 7rem       
+    font-size $heading-ts
     letter-spacing 0.3rem
     text-align center
     background-size 0.625em 0.625em
@@ -287,7 +326,7 @@ body
 .crp-pluslbl
     color green
     align text-left
-    font-size 3rem
+    font-size $label-ts
     border-bottom 1rem double green
 
 .crp-profilebg
@@ -318,19 +357,19 @@ body
     border $m-border
 
 .crp-skilltxt
-    font-size 0.938em
+    font-size $plain-ts
     text-align left
     padding 0 2% 0 2%
     margin-top 0.5rem 0 0.5rem 0
 
 .crp-sublbl
     border none
-    font-size 4rem
+    font-size $l-label-ts
     line-height 100%
     margin-bottom 2rem
 
 .crp-taglbl
-    font-size 5rem
+    font-size $l-label-ts
     line-height 100%
 
 .tab-content
@@ -348,7 +387,7 @@ body
     box-shadow 1rem 1rem 1rem #808080
 
 .md-cardname
-    font-size 7.5rem
+    font-size $heading-ts
     line-height auto
     margin 0
     border-style outset
@@ -362,11 +401,11 @@ body
     margin 0 .5rem 0 .5rem
 
 .md-cardtext
-    font-size 5rem
+    font-size $l-label-ts
     border-radius 0.5rem
 
 .md-comments
-    font-size 4.5rem
+    font-size $l-label-ts
     margin auto 0
     padding-left 5%
     padding-right 5%
@@ -386,13 +425,13 @@ body
     margin-top 0.1rem
 
 .md-modallbl
-    font-size 5rem
+    font-size $l-label-ts
     border-radius 0.5rem
 
 .md-navbtn
     background #2aade3
     color #fff
-    font-size 3rem
+    font-size $label-ts
     margin 0 1rem 0 1rem
     border-radius 2rem
 
@@ -427,13 +466,13 @@ body
 //card database classes
 
 .db-btnlbl
-    font-size 4.5rem
+    font-size $l-label-ts
     text-align center
     line-height 100%
     margin-top 1.5rem
 
 .db-buttons
-    font-size 3.5rem
+    font-size $label-ts
     border-radius 2rem
     color #fff
     border $m-border
@@ -467,12 +506,12 @@ body
     background-color #ff4847
     font-family $primary-font
     color #fff
-    font-size 3.5rem
+    font-size $label-ts
 
 .db-fieldheading
     background-color DodgerBlue
     margin 0 auto
-    font-size 4rem
+    font-size $l-label-ts
     line-height 100%
     border-style none
     border-radius 15rem
@@ -490,7 +529,7 @@ body
 
 .db-heading
     margin 0
-    font-size 7rem       
+    font-size $heading-ts     
     letter-spacing 0.3rem
     background-size 0.625em 0.625em
     background-repeat no-repeat
@@ -509,7 +548,7 @@ body
     background-color #228b22
     font-family $primary-font
     color #fff
-    font-size 3.5rem
+    font-size $label-ts
 
 .db-search
     border-radius 2rem
@@ -547,13 +586,13 @@ body
     padding-right 1.5rem
 
 .db-table-text
-    font-size 4rem
+    font-size $l-label-ts
     margin-top 1.5rem
     margin-left 8%
     margin-right 8%
 
 .db-table-title
-    font-size 5rem
+    font-size $l-label-ts
     width 80%
     margin-left 1
     margin-top 1.5rem
@@ -570,7 +609,7 @@ body
 .db-tableheading
     background-color DodgerBlue
     margin 0 auto
-    font-size 4rem
+    font-size $l-label-ts
     line-height 100%
     border none    
 
@@ -599,7 +638,7 @@ body
 
 .cs-name
     margin 0
-    font-size 7rem       
+    font-size $heading-ts    
     letter-spacing 0.3rem
     text-align center
     background-size 0.625em 0.625em
@@ -668,27 +707,27 @@ body
         background-image url("http://res.cloudinary.com/jhi5/image/upload/panel4h.png")
 
 .main-t1
-    font-size 8rem
+    font-size $heading-ts
     margin-top 12rem
     margin-left 2rem
     margin-right 2rem
     margin-bottom 0.25
 
 .main-t2
-    font-size 8rem
+    font-size $heading-ts
     margin-top 23rem
     margin-left 0.5rem
     margin-right 0.5rem
 
 .main-t3
-    font-size 8rem
+    font-size $heading-ts
     margin-top 23rem
     margin-left 0.5rem
     margin-right 0.5rem
     margin-bottom 0rem
 
 .main-t4
-    font-size 8rem
+    font-size $heading-ts
     margin-left 2rem
     margin-right 2rem
     margin-top 12rem
@@ -697,7 +736,7 @@ body
 
 .dl-button
     background-color DodgerBlue
-    font-size 5rem
+    font-size $l-label-ts
     padding-top 1rem
     padding-bottom 1rem
     margin-top 1.25rem
@@ -722,7 +761,7 @@ body
 
 .fb-btn
     padding 1rem
-    font-size 4rem
+    font-size $l-label-ts
     margin-top 2rem
     width 95%
     background-color DodgerBlue
@@ -738,14 +777,14 @@ body
     border-left 0.5rem solid DodgerBlue
     font-family $primary-font
     padding-left 0.5rem
-    font-size 2.5rem
+    font-size $label-ts
 
 .fb-fullinput
     width 100%
 
 .fb-heading
     color black
-    font-size 4rem
+    font-size $l-label-ts
     text-align center
     margin-top 1rem
     margin-bottom 0rem
@@ -755,7 +794,7 @@ body
     padding-top 3rem
     padding-bottom 3rem
     font-family $secondary-font
-    font-size 5rem
+    font-size $l-label-ts
     text-align center
     background-color #fff
     border-radius 1rem
@@ -766,18 +805,18 @@ body
     color White
     border 0.25rem solid DodgerBlue
     border-radius 1rem
-    font-size 2.75rem
+    font-size $label-ts
     font-weight bold
     text-align center
 
 .fb-option
-    font-size 2.5rem
+    font-size $label-ts
 
 .fb-select
     padding-top 0.5rem
     padding-bottom 0.5rem
     text-align center
-    font-size 3rem
+    font-size $label-ts
     padding-left 1rem
     text-align-last center
     text-align center
@@ -787,7 +826,7 @@ body
 
 .fb-subheading
     color #000
-    font-size 4rem
+    font-size $l-label-ts
     text-align center
     margin-top 0rem
     margin-bottom 0.5rem
@@ -800,7 +839,7 @@ body
     border .5rem solid DodgerBlue
 
 .ai-title
-    font-size 3.600em
+    font-size $label-ts
     text-align center
     margin-bottom 1.5rem
     margin-top 0rem
@@ -809,7 +848,7 @@ body
 //article classes
 
 .ar-5heading
-    font-size 3.600em
+    font-size $label-ts
     padding 1.5%
     border-radius 3%
 
@@ -844,7 +883,7 @@ body
     box-shadow 0.4em 0.4em 0.2em #808080
 
 .ar-author
-    font-size 1.800em
+    font-size $s-heading-ts
     margin-top 0rem
     padding-top 0rem
     padding-right 1.5rem
@@ -858,7 +897,7 @@ body
     background-size cover
 
 .ar-cardheading
-    font-size 1.800em
+    font-size $s-heading-ts
     padding 1.5%
     line-spacing 1rem
 
@@ -877,7 +916,7 @@ body
     border $s-border
 
 .ar-heading
-    font-size 1.800em
+    font-size $s-heading-ts
     text-align left
     padding 1rem
     text-indent 0.938em
@@ -915,7 +954,7 @@ body
     margin-bottom 2.5%
 
 .ar-skilltext
-    font-size 2em
+    font-size 2rem
     text-align center
     margin-bottom 2%
     color #808080
@@ -924,13 +963,13 @@ body
     margin-right 10%
 
 .ar-text
-    font-size 1em
+    font-size $plain-ts
     text-align left
     padding 0 2% 0 2%
     margin-top 0.5rem 0 0.5rem 0
 
 .ar-title
-    font-size 2.4em
+    font-size $label-ts
     margin-top 1rem
     padding-top 0rem
     padding-right 1rem
@@ -939,7 +978,7 @@ body
     margin-bottom 0rem
 
 .ar-tutbtn
-    font-size 2.4em
+    font-size $label-ts
     line-height 100%
     &:hover
         color white
@@ -976,7 +1015,7 @@ body
     padding-bottom 1rem
 
 .nv-btn
-    font-size 4.5rem
+    font-size $l-label-ts
     background-color DodgerBlue
     margin-right 0.5rem
     -webkit-box-shadow none
@@ -986,14 +1025,14 @@ body
     padding-top 0rem
     padding-bottom 0rem
     margin-top 0rem
-    max-height 7rem
+    max-height $heading-ts
     line-height 100%
     &:hover
         background-color #fff
         color DodgerBlue  
 
 .nv-title
-    font-size 8.5rem
+    font-size $heading-ts
     margin-top 0.5rem
     margin-bottom 0.5rem
     text-shadow none
