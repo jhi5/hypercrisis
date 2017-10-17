@@ -63,11 +63,11 @@ body {
 }
 .f-adv {
   font-family: 'adventure', georgia;
-  letter-spacing: letter-spacing 0.3em;
+  letter-spacing: letter-spacing 0.3rem;
 }
 .f-oku {
   font-family: 'okuda', helvetica;
-  letter-spacing: letter-spacing 0.3em;
+  letter-spacing: letter-spacing 0.3rem;
 }
 .heading-textsize {
   font-size: 7rem;
@@ -136,7 +136,7 @@ body {
   background-image: url("http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/qusplash.jpg");
 }
 .qu-bg {
-  background-color: #c69;
+  background-color: #363;
 }
 .qu-headshot {
   background-image: url("http://res.cloudinary.com/jhi5/image/upload/querycharselect.png");
@@ -786,7 +786,6 @@ body {
   border-radius: 3%;
 }
 .ar-5himg {
-  height: 35em;
   border-radius: 3%;
   -webkit-box-shadow: 0.4em 0.4em 0.2em #808080;
   box-shadow: 0.4em 0.4em 0.2em #808080;
@@ -808,7 +807,8 @@ body {
   font-size: 1.25em;
 }
 .ar-5vimg {
-  width: 17.5em;
+  height: 37.25em;
+  width: 26.563em;
   border-radius: 3%;
   margin-top: 4.5%;
   margin-bottom: 4.5%;
@@ -974,4 +974,86 @@ body {
   text-shadow: none;
   border-style: none;
   letter-spacing: 1.25rem;
+}
+@media (min-width: 0px) and (max-width: 576px) {
+  .ar-contbg {
+    border: 0;
+  }
+  .cs-ovals {
+    width: 8em;
+    height: 8em;
+    max-width: 8em;
+    max-height: 8em;
+    margin-bottom: 0rem;
+  }
+  .cs-bannerimg {
+    background-image: none;
+    background-color: DodgerBlue;
+  }
+  .cs-name {
+    border: none;
+  }
+  #cs-splash {
+    width: 100%;
+  }
+}
+@media (min-width: 577px) and (max-width: 768px) {
+  .cs-ovals {
+    width: 7em;
+    height: 7em;
+    max-width: 7em;
+    max-height: 7em;
+    margin-bottom: 0rem;
+  }
+  .popover {
+    display: none;
+  }
+  .popovercontent {
+    display: none;
+  }
+}
+@media (min-width: 769px) and (max-width: 992px) {
+  .cs-ovals {
+    width: 7em;
+    height: 7em;
+    max-width: 7em;
+    max-height: 7em;
+    margin-bottom: 0rem;
+  }
+  .popover {
+    display: none;
+  }
+  .popovercontent {
+    display: none;
+  }
+}
+@media (min-width: 993px) and (max-width: 1200px) {
+  .cs-ovals {
+    width: 10em;
+    height: 10em;
+    max-width: 10em;
+    max-height: 10em;
+    margin-bottom: 0rem;
+  }
+  .popover {
+    display: none;
+  }
+  .popovercontent {
+    display: none;
+  }
+}
+@media (min-width: 1201px) {
+  .cs-ovals {
+    width: 12em;
+    height: 12em;
+    max-width: 12em;
+    max-height: 12em;
+    margin-bottom: 0rem;
+  }
+  .popover {
+    display: none;
+  }
+  .popovercontent {
+    display: none;
+  }
 }

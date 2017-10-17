@@ -16,7 +16,7 @@
 
 $primary-font = 'okuda', helvetica
 $secondary-font = 'adventure', georgia
-$primary-spacing = letter-spacing .3em
+$primary-spacing = letter-spacing .3rem
 
 $l-border = 2rem solid black
 $m-border =  1rem solid black 
@@ -35,8 +35,8 @@ $manual-color = #cc6699
 
 //character-specific variables
 
-$de-color = #336
-$gg-color = #969
+$de-color = #333366
+$gg-color = #996699
 $kx-color = #663333
 $ob-color = #cc6699
 $qu-color = #336633
@@ -188,7 +188,7 @@ body
     background-image url('http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/qusplash.jpg')
 
 .qu-bg
-    background-color $ob-color
+    background-color $qu-color
 
 .qu-headshot
     background-image url("http://res.cloudinary.com/jhi5/image/upload/querycharselect.png")
@@ -853,7 +853,6 @@ body
     border-radius 3%
 
 .ar-5himg
-    height 35.000em
     border-radius 3%
     -webkit-box-shadow 0.4em 0.4em 0.2em #808080
     box-shadow 0.4em 0.4em 0.2em #808080
@@ -875,7 +874,8 @@ body
     font-size 1.250em
 
 .ar-5vimg
-    width 17.5em
+    height 37.250em
+    width 26.563em
     border-radius 3%
     margin-top 4.5%
     margin-bottom 4.5%
@@ -1038,3 +1038,83 @@ body
     text-shadow none
     border-style none
     letter-spacing 1.25rem
+
+@media (min-width: 0px) and (max-width: 576px)
+    .ar-contbg
+        border 0
+
+    .cs-ovals
+        width 8em
+        height 8em
+        max-width 8em
+        max-height 8em
+        margin-bottom 0rem
+
+    .cs-bannerimg
+        background-image none
+        background-color DodgerBlue
+
+    .cs-name
+        border none
+
+    #cs-splash
+        width 100%
+
+@media (min-width: 577px) and (max-width: 768px)
+    .cs-ovals
+        width 7em
+        height 7em
+        max-width 7em
+        max-height 7em
+        margin-bottom 0rem
+
+    .popover
+        display none
+
+    .popovercontent
+        display none
+
+@media (min-width: 769px) and (max-width: 992px)
+
+    .cs-ovals
+        width 7em
+        height 7em
+        max-width 7em
+        max-height 7em
+        margin-bottom 0rem
+
+    .popover
+        display none
+
+    .popovercontent
+        display none
+
+@media (min-width: 993px) and (max-width: 1200px)
+
+    .cs-ovals
+        width 10em
+        height 10em
+        max-width 10em
+        max-height 10em
+        margin-bottom 0rem
+
+    .popover
+        display none
+
+    .popovercontent
+        display none
+
+@media (min-width: 1201px)
+
+    .cs-ovals
+        width 12em
+        height 12em
+        max-width 12em
+        max-height 12em
+        margin-bottom 0rem
+
+    .popover
+        display none
+
+    .popovercontent
+        display none
