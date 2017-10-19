@@ -11,6 +11,6 @@ module.exports = {
 	production: {
 		db: 'mongodb://jhi5:1337SNKj@ds035826.mlab.com:35826/hypercrisis',
 		rootPath: rootPath,
-		port: process.env.PORT || 80
+		port: process.env.PORT || 3000
 	}
 }

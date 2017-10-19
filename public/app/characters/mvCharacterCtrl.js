@@ -170,7 +170,9 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		}
 	}
 	$(document).ready(function(){
-    $('[data-toggle="popover"]').popover();   
+		if(screen.width > 768){
+			$('[data-toggle="popover"]').popover();
+	    }	       
 	});
 	loadCollection = function(){
 		$http({method: 'GET', url: '/api/cards/' })
