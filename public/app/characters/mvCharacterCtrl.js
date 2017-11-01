@@ -13,6 +13,13 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	$scope.checkBox = false;	
 	$scope.featBox = false;
 	$scope.sortOrder = 'name';	
+	$scope.cardDatabase = function(){
+		if($("#db-heading").text() === "Close Card Database"){
+			$("#db-heading").text("Open Card Database");
+		}else if($("#db-heading").text() === "Open Card Database"){
+			$("#db-heading").text("Close Card Database");
+		}		
+	}
 	$scope.changePanel = function(string){
 		$("#default").removeClass("active");
 		$("#howtoplay").removeClass("active");
@@ -204,6 +211,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			}
 			}
 			$scope.tagArray = $scope.tagArray.sort($.uniqueSort($scope.tagArray));
+			console.log($scope.tagArray);
 			$scope.loaded = true;
 		});
 	}
@@ -378,20 +386,33 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	hoverSwitch = function(id){
 		$(id)
 		.mouseenter(function(){
-			if(id === "#downloadbutton"){
-				$('#charname').text("Download!");				
-			}else if(id === "#skillbutton"){
-				$('#charname').text("Character Skill");
+			buttonbg = "";
+			if($scope.currentCharacter === "Deadeye"){
+				buttonbg = ($scope.currentCharacter.slice(0,2).toLowerCase()) + "-bg";
+				console.log(buttonbg);
+			}
+			if(id === "#skillbutton"){				
+				$('#skillbutton').removeClass(buttonbg);
+				$('#skillbutton').addClass("blue-bg");
 			}else if(id === "#biobutton"){
-				$('#charname').text("Biography");
+				$('#biobutton').removeClass(buttonbg);
+				$('#biobutton').addClass("blue-bg");
 			}else if(id === "#howtoplaybutton"){
-				$('#charname').text("How To Play");
-			}else if(id === "#backbutton"){
-				$('#charname').text("Character Select");
+				$('#howtoplaybutton').removeClass(buttonbg);
+				$('#howtoplaybutton').addClass("blue-bg");
 			}
 			$scope.$apply();
 		}).mouseleave(function(){			
-			$('#charname').text($scope.currentCharacter);			
+			if(id === "#skillbutton"){
+				$('#skillbutton').removeClass("blue-bg");
+				$('#skillbutton').addClass(buttonbg);
+			}else if(id === "#biobutton"){
+				$('#biobutton').removeClass("blue-bg");
+				$('#biobutton').addClass(buttonbg);
+			}else if(id === "#howtoplaybutton"){
+				$('#howtoplaybutton').removeClass("blue-bg");
+				$('#howtoplaybutton').addClass(buttonbg);			
+			}
 			$scope.$apply();
 		})		
 	};

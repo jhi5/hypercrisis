@@ -14,12 +14,13 @@ body {
 }
 .popover {
   font-family: 'adventure', georgia;
-  min-width: 45rem;
+  min-width: 70rem;
   min-height: 5rem;
   border: 1rem solid #000;
-  border-radius: 1.25rem;
+  border-radius: 5rem;
   padding: auto;
   color: #000;
+  letter-spacing: 0.4rem;
 }
 .popover-content {
   font-family: 'adventure', georgia;
@@ -45,6 +46,10 @@ body {
   padding-bottom: 0rem;
   font-size: 3rem;
 }
+.blue-bg {
+  background-color: DodgerBlue;
+  border: 0.1rem inset #fff;
+}
 .border-large {
   border: 2rem solid #000;
 }
@@ -55,11 +60,13 @@ body {
   border: 0.5rem solid #000;
 }
 .border-small-white {
-  border: 0.5rem solid #fff;
+  border: 0.1rem solid #fff;
 }
-.border-small-white,
 .curve {
   border-radius: 5rem;
+}
+.drop-shadow {
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
 }
 .f-adv {
   font-family: 'adventure', georgia;
@@ -81,11 +88,17 @@ body {
 .label-textsize {
   font-size: 3rem;
 }
+.line-height {
+  line-height: 175%;
+}
 .no-border {
   border: none;
 }
 .outlinetxt {
   text-shadow: -0.1rem 0.25rem 0.25rem #000, -0.1rem -0.25rem 0.2rem #000, 0.5rem 0.25rem 0.25rem #000;
+}
+.outlinetxt-soft {
+  text-shadow: -0.1rem 0.25rem 0.25rem rgba(0,0,0,0.3), -0.1rem -0.25rem 0.2rem rgba(0,0,0,0.3), 0.5rem 0.25rem 0.25rem rgba(0,0,0,0.3);
 }
 .plaintext {
   font-size: 1.25rem;
@@ -162,6 +175,9 @@ body {
 .pk-backgroundcolor {
   background-color: #c69;
 }
+.crp-3margin {
+  margin-top: 3rem;
+}
 .crp-banner {
   padding-top: 40%;
   background-size: cover;
@@ -169,20 +185,28 @@ body {
   margin-bottom: 1rem;
 }
 .crp-biotxt {
-  font-size: 1.25rem;
-  text-align: left;
-  padding: 0 2% 0 2%;
-  margin-top: 0.5rem 0 0.5rem 0;
+  font-size: 2rem;
+  text-align: center;
+  padding: 0 1% 0 1%;
+  margin: 0.5rem 0 0.5rem 0;
+}
+.crp-biotxtlbl {
+  padding: 0;
+  margin: 0;
+  font-size: 6rem;
+  padding-bottom: 1rem;
+  letter-spacing: 0.3rem;
 }
 .crp-blockbtn {
   font-size: 5rem;
   letter-spacing: 0.3rem;
   text-align: center;
-  border-radius: 5rem;
-  margin-top: 1rem;
-  border: 0.5rem solid #000;
-  line-height: 125%;
+  margin-top: 1.5rem;
   margin-bottom: 0rem;
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
+}
+.crp-blockbtn:hover {
+  background-color: rgba(0,0,0,0.3);
 }
 .crp-blockbtnlbl {
   font-size: 5rem;
@@ -193,8 +217,8 @@ body {
 }
 .crp-btnrow {
   margin: auto;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
 }
 .crp-chheading {
   margin: 0;
@@ -210,20 +234,30 @@ body {
   border: 0.5rem solid #000;
   line-height: 100%;
 }
-.crp-chminustag {
+.crp-chminuslabel {
   background-color: #f00;
+  color: #fff;
+  border-radius: 1rem;
+  border: 0.5rem solid #000;
+}
+.crp-chminustag {
   text-align: center;
   border-radius: 1rem;
   margin: auto;
-  border: 0.5rem solid #fff;
+  margin-top: 1rem;
   line-height: 100%;
 }
-.crp-chplustag {
+.crp-chpluslabel {
   background-color: #008000;
+  color: #fff;
+  border-radius: 1rem;
+  border: 0.5rem solid #000;
+}
+.crp-chplustag {
   text-align: center;
   border-radius: 1rem;
   margin: auto;
-  border: 0.5rem solid #fff;
+  margin-top: 1rem;
   line-height: 100%;
 }
 .crp-chtagrow {
@@ -232,11 +266,26 @@ body {
   margin-right: 5%;
   margin-top: 3%;
 }
+.crp-drkbg {
+  background-color: rgba(0,0,0,0.2);
+}
+.crp-headcol {
+  min-height: 45rem;
+}
+.crp-icon {
+  margin-top: 3%;
+  margin-bottom: 3%;
+  width: 9rem;
+  height: 9rem;
+}
 .crp-info {
   border: 1rem solid #000;
   -webkit-box-shadow: 1rem 1rem 1rem #000;
   box-shadow: 1rem 1rem 1rem #000;
   margin-top: 2rem;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-bottom: 1rem;
 }
 .crp-minuslbl {
   color: #f00;
@@ -246,23 +295,36 @@ body {
 }
 .crp-name {
   margin: 0;
-  font-size: 7rem;
+  font-size: 6rem;
   letter-spacing: 0.3rem;
   text-align: center;
   background-size: 0.625em 0.625em;
   background-repeat: no-repeat;
-  border-radius: 20rem;
-  margin-left: 5%;
-  margin-right: 5%;
-  margin-bottom: 3rem;
-  border: 0.5rem solid #000;
   line-height: 100%;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 0;
+  padding: 1%;
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
 }
 .crp-navbtn {
-  border: 1rem solid #000;
   text-align: center;
   padding: 0rem;
   margin: 0rem;
+  min-height: 10rem;
+  border: 0.5rem outset rgba(0,0,0,0.3);
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
+  text-shadow: -0.1rem 0.25rem 0.25rem rgba(0,0,0,0.3), -0.1rem -0.25rem 0.2rem rgba(0,0,0,0.3), 0.5rem 0.25rem 0.25rem rgba(0,0,0,0.3);
+}
+.crp-navbtnimg {
+  height: 10rem;
+  margin-top: 20%;
+  margin-left: 10%;
+}
+.crp-pane {
+  min-height: 45rem;
 }
 .crp-pluslbl {
   color: #008000;
@@ -278,43 +340,44 @@ body {
   margin: 0;
   text-align: center;
   padding: 0;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
+  border: none;
+  box-shadow: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
 }
 .crp-profileimg {
   width: 100%;
-  border: 0.5rem solid #000;
   background-size: cover;
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
+  margin-bottom: 0;
+  box-shadow: 1rem 0rem 1rem rgba(0,0,0,0.5);
 }
 .crp-skill {
-  width: 95%;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  padding-right: 1rem;
-  padding-left: 1rem;
   margin: auto 0;
-  border: 1rem solid #000;
+  background-color: #fff;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
 }
 .crp-skilltxt {
-  font-size: 1.25rem;
-  text-align: left;
-  padding: 0 2% 0 2%;
-  margin-top: 0.5rem 0 0.5rem 0;
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0.5rem 0 0.5rem 0rem;
 }
-.crp-sublbl {
-  border: none;
-  font-size: 5rem;
-  line-height: 100%;
-  margin-bottom: 2rem;
+.crp-tabcontent {
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
 }
 .crp-taglbl {
   font-size: 5rem;
   line-height: 100%;
+  margin-top: 0;
+  padding-top: 0;
+  margin-bottom: 0;
 }
 .tab-content {
   min-height: 39.333em;
+  margin-top: 1rem;
 }
 .md-armor {
   background-color: #ff0;
@@ -329,10 +392,7 @@ body {
   font-size: 7rem;
   line-height: auto;
   margin: 0;
-  border-style: outset;
-  border-radius: 2rem;
   letter-spacing: 0.3rem;
-  border-width: 1rem;
 }
 .md-cardview {
   color: #2aade3;
@@ -368,11 +428,16 @@ body {
   border-radius: 0.5rem;
 }
 .md-navbtn {
-  background: #2aade3;
   color: #fff;
   font-size: 3rem;
   margin: 0 1rem 0 1rem;
   border-radius: 2rem;
+}
+.md-navbtn:hover {
+  color: #fff;
+}
+.md-navbtn:active {
+  color: #fff;
 }
 .md-rating {
   max-width: 15rem;
@@ -422,11 +487,7 @@ body {
   border-left: 1rem solid #000;
   border-right: 1rem solid #000;
   border-top: 1rem solid #000;
-  border-top-left-radius: 2rem;
-  border-top-right-radius: 2rem;
-  width: 96%;
-  margin-left: 2%;
-  margin-top: 1%;
+  border-bottom: 1rem solid #000;
 }
 .db-controlsrow {
   float: none;
@@ -451,7 +512,6 @@ body {
   font-size: 5rem;
   line-height: 100%;
   border-style: none;
-  border-radius: 15rem;
   box-shadow: none;
 }
 .db-fieldheading:hover {
@@ -466,16 +526,21 @@ body {
   color: #fff;
   background-color: DodgerBlue;
 }
+.db-fieldheading:active {
+  border-style: 0rem;
+  box-shadow: none;
+  color: #fff;
+  background-color: DodgerBlue;
+}
 .db-heading {
   margin: 0;
-  font-size: 7rem;
+  font-size: 4rem;
   letter-spacing: 0.3rem;
   background-size: 0.625em 0.625em;
   background-repeat: no-repeat;
   border-radius: 20rem;
   margin-left: 5%;
   margin-right: 5%;
-  margin-bottom: 3rem;
   line-height: 100%;
 }
 .db-inctag {
@@ -489,10 +554,16 @@ body {
   color: #fff;
   font-size: 3rem;
 }
+.db-input {
+  font-size: 50rem;
+}
 .db-search {
-  border-radius: 2rem;
   padding-left: 1rem;
-  font-size: 15rem;
+  font-size: 20rem;
+  color: #000;
+  background-color: #fff;
+  padding: 2rem;
+  margin: 2rem;
 }
 .db-searchfield {
   font-size: 18rem;
@@ -543,11 +614,10 @@ body {
   border-left: 0.5rem solid #000;
   border-right: 0.5rem solid #000;
   border-top: 0.5rem solid #000;
-  margin-top: 0rem;
+  margin-top: 1rem;
 }
 .db-tableheading {
-  background-color: DodgerBlue;
-  margin: 0 auto;
+  background-color: #000;
   font-size: 5rem;
   line-height: 100%;
   border: none;

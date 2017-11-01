@@ -1,220 +1,195 @@
 .container-fluid
 	.container.top-padding-med
-		.row.crp-info.wbg.curve
-			div.tab-content
-				#default.tab-pane.active
-					.col-md-12
-						div.crp-banner.de-banner.curve(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/desplash.jpg")
-							.de-charnamebg
-								.crp-name.de-bg#charname.f-adv.wtxt.outlinetxt Deadeye
-								&nbsp;
-				#howtoplay.tab-pane
-					.col-md-12
-						&nbsp;
-					.col-md-4
-						div.crp-profilebg
-							img.crp-profileimg.de-headshot(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Weaknesses? Fat chance. Keep clicking, nerd.")
-							button.btn.btn-block.crp-profilesub.de-bg
-									.col-md-2
-										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/intermediateicon.png")
-									.col-md-10
-										h3.crp-sublbl.wtxt.f-oku Intermediate
-					.col-md-8
-						.row.crp-chtagrow
-							.col-md-4
-								h2.crp-pluslbl.f-adv strengths			
-							.col-md-4.crp-chplustag
-								img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/playerdamageicon.png")
-								h5.crp-taglbl.wtxt.f-oku player dmg
-							.col-md-4.crp-chplustag
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/discardicon.png")
-								h5.crp-taglbl.wtxt.f-oku discard
-						.row.crp-chtagrow
-							.col-md-4
-								h2.crp-minuslbl.f-adv weaknesses
-							.col-md-4.crp-chminustag
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/armoricon.png")
-								h5.crp-taglbl.wtxt.f-oku armor
-							.col-md-4.crp-chminustag
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/utilitydamageicon.png")
-								h5.crp-taglbl.wtxt.f-oku utility dmg
-						&nbsp;
-						button.btn.btn-block.crp-blockbtn.de-bg.f-adv.wtxt.outlinetxt
-							.col-md-2
-								img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_72/v1498845176/guideicon.jpg")
-							.col-md-10
-								h3.crl-blockbtnlbl.wtxt Read The Player's Guide!
-					.row
-						.col-md-12
-							&nbsp;				
+		.row.crp-info.curve
+			.tab-content.crp-tabcontent.de-bg.curve.border-small-white		
+				.col-md-4
+					&nbsp;
+					.crp-headcol
+						img.crp-profileimg.de-headshot(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Win? Lose? Who cares? Just pay me and get out of my way.")
+						.crp-name#charname.f-adv.wtxt.outlinetxt-soft.crp-drkbg Deadeye
+				#howtoplay.tab-pane.active
+					&nbsp;
+					.col-md-8.crp-pane
+						.de-charnamebg
+							.row.text-center
+								.col-md-6
+									.col-md-12
+										h1.crp-taglbl.wtxt.f-oku.curve.crp-drkbg.border-small-white.outlinetxt-soft ALIGNMENT	
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_90/v1498840640/villainicon.png")
+										h1.crp-taglbl.wtxt.f-oku.curve.outlinetxt-soft villain
+								.col-md-6
+									.col-md-12
+										h1.crp-taglbl.wtxt.f-oku.curve.crp-drkbg.border-small-white.outlinetxt-soft DIFFICULTY
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_90/v1508785460/star.png")
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_90/v1508785460/star.png")
+										h1.crp-taglbl.wtxt.f-oku.curve.outlinetxt-soft average						
+							.row.crp-3margin
+								.col-md-6
+									h1.wtxt.f-oku.text-center.crp-taglbl.curve.crp-drkbg.border-small-white.outlinetxt-soft STRENGTHS
+									.col-md-6.crp-chplustag
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/playerdamageicon.png")
+										h5.crp-taglbl.wtxt.f-oku.curve.outlinetxt-soft player dmg
+									.col-md-6.crp-chplustag
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/,c_scale,w_100/v1498840640/discardicon.png")
+										h5.crp-taglbl.wtxt.f-oku.curve.outlinetxt-soft discard									
+								.col-md-6
+									h1.wtxt.f-oku.text-center.curve.crp-taglbl.crp-drkbg.border-small-white.outlinetxt-soft WEAKNESSES
+									.col-md-6.crp-chminustag
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/armoricon.png")
+										h5.crp-taglbl.wtxt.f-oku.outlinetxt-soft armor
+									.col-md-6.crp-chminustag
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/utilitydamageicon.png")
+										h5.crp-taglbl.wtxt.f-oku.curve.outlinetxt-soft utility dmg						
 				#bio.tab-pane
-					.col-md-12
-						&nbsp;
-					.col-md-4
-						div.crp-profilebg
-							img.crp-profileimg.de-headshot(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Stop asking questions and start running.")
-							button.btn.btn-block.crp-profilesub.de-bg
-									.col-md-2
-										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/villainicon.png")
-									.col-md-10
-										h3.crp-sublbl.wtxt.f-oku Villain
-					.col-md-8
+					&nbsp;
+					.col-md-8.crp-pane		
 						.row
-							.col-md-12.text-center
-								h1.crp-chheading.f-adv.wtxt.outlinetxt.de-bg BIOGRAPHY				
-						.row
-							.col-md-12.text-center
-								p.crp-biotxt Raised in a warzone, the sinister sniper DEADEYE grew up day and night with a gun in her hand. After escaping from her forced conscription alongside her estranged sister, DEADEYE kept that same gun on her waist for safety. Since that day, her gun has made her rich, powerful and feared. 
-
-								p.crp-biotxt DEADEYE is on a brutal sharpshooter contracted with Knox's Villain Underground. As a professional assassin, DEADEYE has quickly gained a reputation as a cold-blooded killer. Despite an everpresent disgust with her teammates, DEADEYE has proven to be a dangerous and loyal ally to the Villain Underground. 
+							.col-md-12.text-center								
+								h2.crp-biotxtlbl.wtxt.f-adv.outlinetxt-soft SINISTER SNIPER
+								p.crp-biotxt.wtxt.outlinetxt-soft Raised in a warzone, the hardened sharpshooter DEADEYE is the most ruthless member of The Villain Underground. With her hair-trigger reflexes and vast arsenal of weapons, DEADEYE has quickly gained a reputation in the superhero community as a cold-blooded killer. Despite being constantly disgusted with her reckless teammates, DEADEYE has proven to be a dangerous and loyal ally to the Villain Underground. 
 						.row
 							.col-md-12
-								button.btn.btn-block.crp-blockbtn.de-bg.f-adv.wtxt.outlinetxt
+								button.btn.btn-block.crp-blockbtn.f-adv.wtxt.de-bg.curve.border-small-white
 									.col-md-2
-										img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_72/v1498845176/podcasticon.jpg")
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_100/v1498845176/podcasticon.png")
 									.col-md-10
-										h3.crp-blockbtnlbl.wtxt S.H.U. Podcast!
+										h3.wtxt.f-adv.line-height.outlinetxt-soft Listen to the SHU Podcast!
 				#skill.tab-pane
-					.col-md-12
-						&nbsp;
-					.col-md-4
-						div.crp-profilebg
-							img.crp-profileimg.de-headshot(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Leave this to the professionals.")
-							button.btn.btn-block.crp-profilesub.de-bg
-									.col-md-2
-										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/delogo.png")
-									.col-md-10
-										h3.crp-sublbl.wtxt.f-oku SKILL : AIM				
-					.col-md-8.text-center
-						img.crp-skill.curved(src="http://res.cloudinary.com/jhi5/image/upload/aim.png")
+					.col-md-8.crp-pane.text-center
+						img.crp-skill.curve(src="http://res.cloudinary.com/jhi5/image/upload/aim.png")
 						br
-						h3.crp-skilltxt Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.
-			.row.crp-btnrow
-				.col-md-1
-					&nbsp;				
-				.col-md-2.crp-navbtn.de-bg#howtoplaybutton
-					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/strategylogo.jpg" ng-click="changePanel('#howtoplay')")
-				.col-md-2.crp-navbtn.de-bg#biobutton
-					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/villainicon.jpg" ng-click="changePanel('#bio')")
-				.col-md-2.crp-navbtn.de-bg#skillbutton
-					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,e_auto_contrast,q_54,w_110/v1499890549/delogo.jpg" ng-click="changePanel('#skill')")
-				.col-md-2.crp-navbtn.de-bg#downloadbutton 
-					a(href="https://www.dropbox.com/s/6b23exhwrtynbrb/Hypercrisis%20Open%20Beta%20April.rar?dl=0")
-						img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/downloadicon.jpg")
-				.col-md-2.crp-navbtn.de-bg#backbutton
-					a(href="../characterselect")
-						img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
-				.col-md-1
-					&nbsp;
+						h3.crp-skilltxt.wtxt.outlinetxt-soft Whenever your Actions or Feats deal damage, add your Aim to that damage. At the end of each turn, reset your Aim to 0.
+						&nbsp;
+						.row
+							.col-md-12
+								button.btn.btn-block.crp-blockbtn.f-adv.wtxt.de-bg.curve.border-small-white
+									.col-md-2
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_100/v1498845176/guideicon.png")
+									.col-md-10
+										h3.wtxt.f-adv.line-height.outlinetxt-soft Read The Player's Guide!
+			.row.crp-btnrow			
+				.col-md-4.de-bg.crp-navbtn#howtoplaybutton.text-center.curve(ng-click="changePanel('#howtoplay')")
+					.col-md-3
+						img.crp-navbtnimg(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_100/v1498845176/strategylogo.png")
+					.col-md-9
+						h1.wtxt.f-adv.line-height basics
+				.col-md-4.de-bg.crp-navbtn#biobutton.curve(ng-click="changePanel('#bio')")
+					.col-md-3
+						img.crp-navbtnimg(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_100/v1498845176/villainicon.png")
+					.col-md-9
+						h1.wtxt.f-adv.line-height lore
+				.col-md-4.de-bg.crp-navbtn#skillbutton.curve(ng-click="changePanel('#skill')")
+					.col-md-3
+						img.crp-navbtnimg(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_100/v1498845176/delogo.png")
+					.col-md-9
+						h1.wtxt.f-adv.line-height skill
 			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")				
 				.modal-body
 					.col-md-6.md-imgcntr
 						img.md-cardimg.img-responsive.curve(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover" data-content="Flavor Text: {{modalContent.flavor[0]}}" data-placement="bottom")
 						&nbsp;
+						.row
+							.col-md-12
+								.col-md-4
+									a.btn.btn-block.md-navbtn.outlinetxt-soft.de-bg.curve.border-small-white.drop-shadow(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") ◀
+								.col-md-4												
+									a.btn.btn-block.md-navbtn.outlinetxt-soft.de-bg.curve.border-small-white.drop-shadow(ng-click="findNextEntry()" ng-hide="hideNext()") ▶
+								.col-md-4
+									a.btn.btn-block.md-close.md-navbtn.outlinetxt-soft.de-bg.curve.border-small-white.drop-shadow(data-dismiss="modal" ng-click="emptyModal()") X			
+					.col-md-6
+						.row
+							.col-md-12
+								h1.md-cardname.de-bg.text-center.f-adv.wtxt.outlinetxt-soft#modaltitle.curve.border-small-white.drop-shadow {{modalContent.name}}
+						.row
+							.col-md-12
+								.col-md-8
+									h4.md-modallbl.text-center.wtxt.f-oku.de-bg.curve.border-small-white.drop-shadow Card Text
+									h3.md-cardtext.f-oku.text-center {{modalContent.text}}	
+								.col-md-4
+									h4.md-modallbl.text-center.wtxt.f-oku.de-bg.curve.border-small-white.drop-shadow Card Type
+									img.img-responsive.md-type(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
 						.row(ng-hide="modalContent.type === 'Action' || modalContent.type === 'Feat' || modalContent.type === 'Special'")
 							.col-md-4
-								button.btn.btn-block
+								button.btn.btn-block.curve.border-small-white.drop-shadow
 									.row.de-bg
 										.col-md-4
 											h2#hpsymbol.md-utilval.wtxt.f-adv.text-left		{{modalContent.utilityValues[0]}}
 										.col-md-8
 											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/hpicon.jpg")
 							.col-md-4
-								button.btn.btn-block
+								button.btn.btn-block.curve.border-small-white.drop-shadow
 									.row.de-bg
 										.col-md-4
 											h2#fightsymbol.md-utilval.wtxt.f-adv {{modalContent.utilityValues[1]}}
 										.col-md-8
 											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/fighticon.jpg")
 							.col-md-4
-								button.btn-block
+								button.btn-block.curve.border-small-white.drop-shadow
 									.row.de-bg
 										.col-md-4
 											h2#armor.md-utilval.wtxt.f-adv {{modalContent.utilityValues[2]}}
 										.col-md-8
 											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/armoricon.jpg")
-					.col-md-6
 						.row
 							.col-md-12
-								h1.md-cardname.de-bg.text-center.f-adv.wtxt.outlinetxt#modaltitle {{modalContent.name}}
-						.row
-							.col-md-12
-								.col-md-6
-									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Rating
+								.col-md-8
+									h3.md-modallbl.text-center.wtxt.f-oku.de-bg.curve.border-small-white.drop-shadow Comments
+									h3.md-comments.f-oku.text-center(ng-repeat='comment in modalContent.comments') {{comment}}									
+								.col-md-4(alt="{{modalContent.type}}")
+									h4.md-modallbl.text-center.wtxt.f-oku.de-bg.curve.border-small-white.drop-shadow Rating
 									img.img-responsive.md-rating(src="{{modalContent.ratingSymbol}}")
-								.col-md-6
-									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Card Type
-									img.img-responsive.md-type(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
-						.row
-							.col-md-12
-								.col-md-12
-									h4.md-modallbl.text-center.wtxt.f-oku.de-bg Card Text
-									h3.md-cardtext.f-oku.text-center {{modalContent.text}}
-						.row
-							.col-md-12
-								h3.md-modallbl.text-center.wtxt.f-oku.de-bg Comments
-								h3.md-comments.f-oku.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
-					.col-md-12
-						.row
-							footer.md-footer.navbar-fixed-bottom
-								.col-md-3
-									button.btn.btn-block.md-navbtn.outlinetxt(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") ◀
-								.col-md-3												
-									button.btn.btn-block.md-navbtn.outlinetxt(ng-click="findNextEntry()" ng-hide="hideNext()") ▶
-								.col-md-5
-									h1.text-center.md-cardview.f-oku CARD VIEWER: {{modalContent.name}}
-								.col-md-1
-									button.btn.btn-block.md-close.md-navbtn.outlinetxt(data-dismiss="modal" ng-click="emptyModal()") X
 		br
 		.row
-			.col-md-12.db-tablebg.de-bg.curved
-				h2.text-center.f-adv.wtxt.outlinetxt.db-heading Deadeye Card Database
-				table.table.table-hover.table-condensed(ng-if="loaded")
-					thread						
-						.row
-							.col-md-12.wbg.db-controlsbg
-								#searchfilter
-										.row.db-controlsrow
-												form.form-inline
-													.form-group.db-search
-														input.form-control.input-lg(ng-model="searchText", placeholder="Quick Search")
-										.row
-											.col-md-4
-												button.btn.btn-block#crossbutton.db-buttons.f-adv.de-bg(ype='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
-													.col-md-4
-														img#crosssymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_75/v1498845176/crossovericon.jpg" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
-													.col-md-8
-															h3.db-btnlbl.wtxt.f-oku Crossover
-											.col-md-4
-												button.btn.btn-block.db-buttons.de-bg.f-adv(ng-click='resetTags()')
-													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_75/v1498845176/refreshicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
-													.col-md-10
-															h3.db-btnlbl.wtxt.f-oku Reset
-											.col-md-4
-												button.btn.btn-block.db-buttons.de-bg.f-adv(data-toggle="collapse" data-target="#tagrow")
-													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_75/v1498845176/tagicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
-													.col-md-10
-															h3.db-btnlbl.wtxt.f-oku Tags
-										#tagrow.collapse
+			.col-md-12.db-tablebg.de-bg.curved 
+				.h2.text-center.f-adv.wtxt.outlinetxt-soft.db-heading#db-heading(ng-click="cardDatabase()" data-toggle="collapse" data-target="#database") Open Card Database
+				#database.collapse
+					table.table.table-hover.table-condensed(ng-if="loaded")
+						thread						
+							.row
+								.col-md-12.wbg.db-controlsbg.curve
+									#searchfilter
+											.row.db-controlsrow.de-bg.outlinetxt-soft.border-small.drop-shadow
+													form.form-inline
+														.form-group.db-search.curve.border-small.drop-shadow
+															input.form-control.input-lg.db-input(ng-model="searchText", placeholder="Quick Search")
 											.row
-												.col-md-3
-													h3.db-taglbl.f-oku.text-center ACTIVE SEARCH TAGS: 
-												.col-md-9
-													div.db-tagrow(ng-repeat="tag in currentTags")
-															button.db-inctag.wtxt.f-oku.curve(ng-click='removeFilterButton(tag)') {{tag}}		
+												.col-md-4
+													button.btn.btn-block#crossbutton.db-buttons.f-adv.de-bg(ype='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
+														.col-md-4
+															img#crosssymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_75/v1498845176/crossovericon.jpg" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
+														.col-md-8
+																h3.db-btnlbl.wtxt.f-oku Crossover
+												.col-md-4
+													button.btn.btn-block.db-buttons.de-bg.f-adv(ng-click='resetTags()')
+														.col-md-2
+															img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_75/v1498845176/refreshicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
+														.col-md-10
+																h3.db-btnlbl.wtxt.f-oku Reset
+												.col-md-4
+													button.btn.btn-block.db-buttons.de-bg.f-adv(data-toggle="collapse" data-target="#tagrow")
+														.col-md-2
+															img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_75/v1498845176/tagicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
+														.col-md-10
+																h3.db-btnlbl.wtxt.f-oku Tags
+											#tagrow.collapse
+												.row
+													.col-md-3
+														h3.db-taglbl.f-oku.text-center ACTIVE SEARCH TAGS: 
+													.col-md-9
+														div.db-tagrow(ng-repeat="tag in currentTags")
+																button.db-inctag.wtxt.f-oku.curve(ng-click='removeFilterButton(tag)') {{tag}}		
+												.row
+													.col-md-3
+														h3.db-taglbl.f-oku.text-center INACTIVE SEARCH TAGS: 
+													.col-md-9
+														div.db-tagrow(ng-repeat="tag in tagArray track by $index")
+															button.db-extag.wtxt.f-oku.curve(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') {{tag}}
 											.row
-												.col-md-3
-													h3.db-taglbl.f-oku.text-center INACTIVE SEARCH TAGS: 
-												.col-md-9
-													div.db-tagrow(ng-repeat="tag in tagArray")
-														button.db-extag.wtxt.f-oku.curve(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') {{tag}}
-										.row
-											&nbsp;
+												&nbsp;
+						br
 						tr.db-tablebox
 							th.db-tableheading.f-oku.wtxt
-								button.btn.btn-block.db-fieldheading(ng-click='setOrder("name")') Name
+								button.btn.btn-block.db-fieldheading.de-bg(ng-click='setOrder("name")') Name
 							th.db-tableheading.f-oku.wtxt
 								button.btn.btn-block.db-fieldheading(ng-click='setOrder("type")') Type
 							th.db-tableheading.f-oku.wtxt

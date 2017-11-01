@@ -909,7 +909,7 @@ exports.defaultCards = [
 		flavor: ["none"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/sureshot.jpg"],
 		rating: ["3"],
-		tags: ["agggresive", "utility damage", "aim"],
+		tags: ["agggressive", "utility damage", "aim"],
 		comments: ["You'll need this to get those pesky combo decks out of the way. - JM"]
 	},
 	{
