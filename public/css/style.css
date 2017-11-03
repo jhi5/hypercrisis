@@ -68,6 +68,9 @@ body {
 .drop-shadow {
   box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
 }
+.drop-shadow-small {
+  box-shadow: 0.4rem 0.4rem 1rem rgba(0,0,0,0.4);
+}
 .f-adv {
   font-family: 'adventure', georgia;
   letter-spacing: letter-spacing 0.3rem;
@@ -185,17 +188,18 @@ body {
   margin-bottom: 1rem;
 }
 .crp-biotxt {
-  font-size: 2rem;
+  font-size: 2.5rem;
   text-align: center;
   padding: 0 1% 0 1%;
   margin: 0.5rem 0 0.5rem 0;
+  line-height: 3.5rem;
 }
 .crp-biotxtlbl {
   padding: 0;
   margin: 0;
-  font-size: 6rem;
-  padding-bottom: 1rem;
-  letter-spacing: 0.3rem;
+  font-size: 7rem;
+  padding-bottom: 0.5rem;
+  letter-spacing: 0.4rem;
 }
 .crp-blockbtn {
   font-size: 5rem;
@@ -217,8 +221,6 @@ body {
 }
 .crp-btnrow {
   margin: auto;
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
 }
 .crp-chheading {
   margin: 0;
@@ -267,7 +269,7 @@ body {
   margin-top: 3%;
 }
 .crp-drkbg {
-  background-color: rgba(0,0,0,0.2);
+  background-color: rgba(0,0,0,0.4);
 }
 .crp-headcol {
   min-height: 45rem;
@@ -280,8 +282,6 @@ body {
 }
 .crp-info {
   border: 1rem solid #000;
-  -webkit-box-shadow: 1rem 1rem 1rem #000;
-  box-shadow: 1rem 1rem 1rem #000;
   margin-top: 2rem;
   padding-right: 1rem;
   padding-left: 1rem;
@@ -301,20 +301,20 @@ body {
   background-size: 0.625em 0.625em;
   background-repeat: no-repeat;
   line-height: 100%;
-  border-bottom-left-radius: 5rem;
-  border-bottom-right-radius: 5rem;
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top: 0;
   padding: 1%;
-  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
+  border: 1rem solid #fff;
+  border-bottom-left-radius: 5rem;
+  border-bottom-right-radius: 5rem;
 }
 .crp-navbtn {
-  text-align: center;
   padding: 0rem;
-  margin: 0rem;
-  min-height: 10rem;
-  border: 0.5rem outset rgba(0,0,0,0.3);
+  margin: auto;
+  margin: 1.25rem;
+  border: 0.5rem outset #fff;
+  width: 35rem;
   box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
   text-shadow: -0.1rem 0.25rem 0.25rem rgba(0,0,0,0.3), -0.1rem -0.25rem 0.2rem rgba(0,0,0,0.3), 0.5rem 0.25rem 0.25rem rgba(0,0,0,0.3);
 }
@@ -351,7 +351,6 @@ body {
   border-top-left-radius: 5rem;
   border-top-right-radius: 5rem;
   margin-bottom: 0;
-  box-shadow: 1rem 0rem 1rem rgba(0,0,0,0.5);
 }
 .crp-skill {
   margin: auto 0;
@@ -363,10 +362,12 @@ body {
 .crp-skilltxt {
   font-size: 2.5rem;
   text-align: center;
-  margin: 0.5rem 0 0.5rem 0rem;
+  padding: 0 1% 0 1%;
+  margin: 0.5rem 0 0.5rem 0;
+  line-height: 3.5rem;
 }
 .crp-tabcontent {
-  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
+  box-shadow: 0rem 0rem 0rem rgba(0,0,0,0.5);
 }
 .crp-taglbl {
   font-size: 5rem;
@@ -380,13 +381,16 @@ body {
   margin-top: 1rem;
 }
 .md-armor {
-  background-color: #ff0;
+  background-color: #fcee21;
 }
 .md-cardimg {
   margin: auto;
   max-height: 65rem;
   -webkit-box-shadow: 1rem 1rem 1rem #808080;
   box-shadow: 1rem 1rem 1rem #808080;
+}
+.md-cardimgcontainer {
+  min-height: 68rem;
 }
 .md-cardname {
   font-size: 7rem;
@@ -410,28 +414,33 @@ body {
   padding-right: 5%;
   color: #808080;
   font-style: italic;
+  min-height: 25rem;
 }
 .md-fight {
-  background-color: DodgerBlue;
+  background-color: #2bace3;
 }
 .md-footer {
   padding-bottom: 1.5rem;
 }
 .md-hp {
-  background-color: #ffc0cb;
+  background-color: #ed2690;
+  margin: auto;
 }
 .md-imgcntr {
   margin-top: 0.1rem;
+  min-height: 100rem;
 }
 .md-modallbl {
   font-size: 5rem;
-  border-radius: 0.5rem;
 }
 .md-navbtn {
-  color: #fff;
-  font-size: 3rem;
-  margin: 0 1rem 0 1rem;
-  border-radius: 2rem;
+  text-align: center;
+  padding: 0rem 5rem 0rem 5rem;
+  margin: 0rem;
+  border: 0.5rem outset #fff;
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
+  text-shadow: -0.1rem 0.25rem 0.25rem rgba(0,0,0,0.3), -0.1rem -0.25rem 0.2rem rgba(0,0,0,0.3), 0.5rem 0.25rem 0.25rem rgba(0,0,0,0.3);
+  font-size: 5rem;
 }
 .md-navbtn:hover {
   color: #fff;
@@ -440,23 +449,30 @@ body {
   color: #fff;
 }
 .md-rating {
-  max-width: 15rem;
+  height: 12rem;
   margin: auto;
   border-radius: 2rem;
-  border: 1rem solid #000;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  margin-bottom: 0;
 }
 .md-type {
-  max-width: 15rem;
+  height: 12rem;
   margin: auto;
   border-radius: 2rem;
-  border: 1rem solid #000;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
+  margin-bottom: 0;
 }
 .md-utilsymbol {
   padding: 15%;
+}
+.md-utilicon {
+  margin-top: 40%;
+}
+.md-utiltxt {
+  color: #fff;
+  size: 10rem;
 }
 .md-utilval {
   margin: 0;
@@ -474,11 +490,16 @@ body {
   margin-top: 1.5rem;
 }
 .db-buttons {
-  font-size: 3rem;
-  border-radius: 2rem;
-  color: #fff;
-  border: 1rem solid #000;
-  width: 100%;
+  text-align: center;
+  padding: 0rem;
+  margin: 0rem;
+  min-height: 10rem;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  border: 0.5rem outset #fff;
+  box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
+  text-shadow: -0.1rem 0.25rem 0.25rem rgba(0,0,0,0.3), -0.1rem -0.25rem 0.2rem rgba(0,0,0,0.3), 0.5rem 0.25rem 0.25rem rgba(0,0,0,0.3);
+  font-size: $s-label-ts;
 }
 .db-controlsbg {
   background-color: #fff;
@@ -502,9 +523,11 @@ body {
   padding-bottom: 0rem;
   margin: 0.2rem;
   background-color: #ff4847;
-  font-family: 'okuda', helvetica;
   color: #fff;
   font-size: 3rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem rgba(0,0,0,0.3), -0.1rem -0.25rem 0.2rem rgba(0,0,0,0.3), 0.5rem 0.25rem 0.25rem rgba(0,0,0,0.3);
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0,0,0,0.2);
+  letter-spacing: 0.3rem;
 }
 .db-fieldheading {
   background-color: DodgerBlue;
@@ -550,9 +573,11 @@ body {
   padding-bottom: 0rem;
   margin: 0.2rem;
   background-color: #228b22;
-  font-family: 'okuda', helvetica;
   color: #fff;
   font-size: 3rem;
+  text-shadow: -0.1rem 0.25rem 0.25rem rgba(0,0,0,0.3), -0.1rem -0.25rem 0.2rem rgba(0,0,0,0.3), 0.5rem 0.25rem 0.25rem rgba(0,0,0,0.3);
+  box-shadow: 0.4rem 0.4rem 0.4rem rgba(0,0,0,0.2);
+  letter-spacing: 0.3rem;
 }
 .db-input {
   font-size: 50rem;
@@ -579,14 +604,9 @@ body {
 }
 .db-tablebody {
   background-color: #fff;
-  border: 1rem solid #000;
-  border-top-left-radius: 0.25rem;
-  border-top-right-radius: 0.25rem;
 }
 .db-tablerow {
   border-bottom: 0.5rem solid DodgerBlue;
-  border-left: 0.5rem solid DodgerBlue;
-  border-right: 0.5rem solid DodgerBlue;
   background-color: #fff;
 }
 .db-table-symbol {
@@ -610,14 +630,11 @@ body {
 }
 .db-tablebox {
   background-color: #fff;
-  border-radius: 0.2rem;
-  border-left: 0.5rem solid #000;
-  border-right: 0.5rem solid #000;
-  border-top: 0.5rem solid #000;
-  margin-top: 1rem;
+  margin: 0;
+  padding: 0;
 }
 .db-tableheading {
-  background-color: #000;
+  background-color: #fff;
   font-size: 5rem;
   line-height: 100%;
   border: none;

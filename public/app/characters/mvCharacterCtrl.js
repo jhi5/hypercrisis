@@ -18,6 +18,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			$("#db-heading").text("Open Card Database");
 		}else if($("#db-heading").text() === "Open Card Database"){
 			$("#db-heading").text("Close Card Database");
+			$("#db-heading").addClass("hide");
 		}		
 	}
 	$scope.changePanel = function(string){
@@ -138,15 +139,19 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		ratingSymbol = findAverage(array);
 		if(ratingSymbol >= 3.5){
 			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/bombicon.png';
+			object.ratingText = "Bomb";
 		}
 		if(ratingSymbol >= 2.5 && ratingSymbol < 3.5){
 			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/goodicon.png';
+			object.ratingText = "Good";
 		}
 		if(ratingSymbol >= 1.5 && ratingSymbol < 2.5){
 			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/okayicon.png';
+			object.ratingText = "Okay";
 		}
 		if(ratingSymbol <= 1.5){
 			object.ratingSymbol = 'http://res.cloudinary.com/jhi5/image/upload/maybeicon.png';
+			object.ratingText = "Maybe";
 		}
 	}	
 	refreshModal = function(string){
@@ -164,7 +169,8 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 					utilityValues: detectUtility($scope.cards[i].type),
 					rating: $scope.cards[i].rating,
 					typeSymbol: createSymbol(this, $scope.cards[i].type),
-					ratingSymbol: createRating(this, $scope.cards[i].rating)				
+					ratingSymbol: createRating(this, $scope.cards[i].rating),
+					ratingText: $scope.cards[i].ratingText				
 				}
  				createSymbol($scope.modalContent, $scope.modalContent.type);
  				createRating($scope.modalContent, $scope.modalContent.rating);
@@ -238,6 +244,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		$scope.modalContent.rating = 'sample rating';
 		$scope.modalContent.utilityValues = 'sample Utility values';
 		$scope.modalContent.typeSymbol = 'sample type symbol';
+		$("#db-heading").removeClass("hide");
 	}
 	$scope.transferModalContent = function(dataPassed){
 		refreshModal(dataPassed);
