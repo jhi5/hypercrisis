@@ -125,7 +125,7 @@ body {
   background-image: url("http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/ggsplash.jpg");
 }
 .gg-bg {
-  background-color: #969;
+  background-color: #8952a1;
 }
 .gg-headshot {
   background-image: url("http://res.cloudinary.com/jhi5/image/upload/gravitygirlcharselect.png");
@@ -295,7 +295,7 @@ body {
 }
 .crp-name {
   margin: 0;
-  font-size: 6rem;
+  font-size: 5.5rem;
   letter-spacing: 0.3rem;
   text-align: center;
   background-size: 0.625em 0.625em;
@@ -304,8 +304,8 @@ body {
   padding-top: 1rem;
   padding-bottom: 1rem;
   border-top: 0;
-  padding: 1%;
-  border: 1rem solid #fff;
+  padding: 2%;
+  border: 0.5rem solid #fff;
   border-bottom-left-radius: 5rem;
   border-bottom-right-radius: 5rem;
 }
@@ -382,6 +382,7 @@ body {
 }
 .md-armor {
   background-color: #fcee21;
+  border: 0.5rem outset #fff;
 }
 .md-cardimg {
   margin: auto;
@@ -418,6 +419,7 @@ body {
 }
 .md-fight {
   background-color: #2bace3;
+  border: 0.5rem outset #fff;
 }
 .md-footer {
   padding-bottom: 1.5rem;
@@ -425,6 +427,7 @@ body {
 .md-hp {
   background-color: #ed2690;
   margin: auto;
+  border: 0.5rem outset #fff;
 }
 .md-imgcntr {
   margin-top: 0.1rem;
@@ -435,7 +438,7 @@ body {
 }
 .md-navbtn {
   text-align: center;
-  padding: 0rem 5rem 0rem 5rem;
+  width: 100%;
   margin: 0rem;
   border: 0.5rem outset #fff;
   box-shadow: 1rem 1rem 1rem rgba(0,0,0,0.5);
@@ -473,6 +476,7 @@ body {
 .md-utiltxt {
   color: #fff;
   size: 10rem;
+  letter-spacing: 0.3rem;
 }
 .md-utilval {
   margin: 0;

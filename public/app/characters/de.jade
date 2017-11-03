@@ -6,7 +6,7 @@
 					&nbsp;
 					.crp-headcol
 						img.crp-profileimg.de-headshot(src="http://res.cloudinary.com/jhi5/image/upload/deheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Win? Lose? Who cares? Just pay me and get out of my way.")
-						.crp-name#charname.f-adv.wtxt.outlinetxt Deadeye
+						.crp-name#charname.f-adv.wtxt.outlinetxt.crp-drkbg Deadeye
 				#howtoplay.tab-pane.active
 					&nbsp;
 					.col-md-8.crp-pane
@@ -35,7 +35,7 @@
 								.col-md-6
 									h1.wtxt.f-adv.text-center.curve.crp-taglbl.crp-drkbg.border-small-white.outlinetxt-soft WEAKNESSES
 									.col-md-6.crp-chminustag
-										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/armoricon.png")
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/armor.png")
 										h5.crp-taglbl.wtxt.f-oku.outlinetxt-soft armor
 									.col-md-6.crp-chminustag
 										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/utilitydamageicon.png")
@@ -110,32 +110,33 @@
 									h3.md-cardtext.f-oku.text-center {{modalContent.text}}
 									.row(ng-hide="modalContent.type === 'Action' || modalContent.type === 'Feat' || modalContent.type === 'Special'")
 										.col-md-12
-											h1.f-oku.text-center Utility Values
-											.col-md-4.md-hp.border-small-white
-												.col-md-6
-													img.md-utilicon.line-height(src="http://res.cloudinary.com/jhi5/image/upload/e_outline,w_54/v1500962388/hpicon.png")
-												.col-md-6
-													h1.wtxt.md-utiltxt.f-adv.outlinetxt {{modalContent.utilityValues[0]}}
-											.col-md-4.md-fight.border-small-white
-												.col-md-6
-													img.md-utilicon.line-height(src="http://res.cloudinary.com/jhi5/image/upload/e_outline,w_54/v1500962388/fighticon.png")
-												.col-md-6
-													h1.wtxt.md-utiltxt.f-adv.outlinetxt {{modalContent.utilityValues[1]}}
-											.col-md-4.md-armor.border-small-white
-												.col-md-6
-													img.md-utilicon.line-height(src="http://res.cloudinary.com/jhi5/image/upload/e_outline,w_54/v1500962388/armoricon.png")
-												.col-md-6
-													h1.wtxt.md-utiltxt.f-adv.outlinetxt{{modalContent.utilityValues[2]}}											
+											h4.md-modallbl.text-center.wtxt.f-oku.de-bg.curve.border-small-white.drop-shadow-small Utility Values
+											.row
+												.col-md-4.md-hp.curve
+													.col-md-6
+														img.md-utilicon.line-height(src="http://res.cloudinary.com/jhi5/image/upload/w_54/v1500962388/hpicon.png")
+													.col-md-6
+														h1.wtxt.md-utiltxt.f-adv.outlinetxt {{modalContent.utilityValues[0]}}
+												.col-md-4.md-fight.curve
+													.col-md-6
+														img.md-utilicon.line-height(src="http://res.cloudinary.com/jhi5/image/upload/w_54/v1500962388/fighticon.png")
+													.col-md-6
+														h1.wtxt.md-utiltxt.f-adv.outlinetxt {{modalContent.utilityValues[1]}}
+												.col-md-4.md-armor.curve
+													.col-md-6
+														img.md-utilicon.line-height(src="http://res.cloudinary.com/jhi5/image/upload/w_54/v1500962388/armoricon.png")
+													.col-md-6
+														h1.wtxt.md-utiltxt.f-adv.outlinetxt{{modalContent.utilityValues[2]}}											
 									h3.md-modallbl.text-center.wtxt.f-oku.de-bg.curve.border-small-white.drop-shadow Comments
 									h3.md-comments.f-oku.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
 								.col-md-4
 									h4.md-modallbl.text-center.wtxt.f-oku.de-bg.curve.border-small-white.drop-shadow-small Card Type
 									img.img-responsive.md-type(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
-									h2.f-adv.text-center {{modalContent.type}}
+									h2.f-oku.text-center {{modalContent.type}}
 								.col-md-4(alt="{{modalContent.type}}")
 									h4.md-modallbl.text-center.wtxt.f-oku.de-bg.curve.border-small-white.drop-shadow Rating
 									img.img-responsive.md-rating(src="{{modalContent.ratingSymbol}}")
-									h2.f-adv.text-center {{modalContent.ratingText}}
+									h2.f-oku.text-center {{modalContent.ratingText}}
 		br
 		.row
 			.col-md-12.db-tablebg.de-bg.curve
@@ -205,8 +206,10 @@
 										h2.db-table-title.f-adv.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
 									td
 										img.db-table-symbol.img-responsive.text-center(src='{{card.typeSymbol}}')
+										h1.f-oku.text-center {{card.type}}
 									td
 										
 										img.db-table-symbol.img-responsive.text-center(src='{{card.ratingSymbol}}')
+										h1.f-oku.text-center {{card.ratingText}}
 									td
 										h3.db-table-text.text-center.f-oku {{card.text}}

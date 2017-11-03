@@ -102,37 +102,37 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 	}
 	createSymbol = function(object, string){
 		if(string == "Action"){
-			object.typeSymbol  = 'http://res.cloudinary.com/jhi5/image/upload/action.png';
+			object.typeSymbol  = 'http://res.cloudinary.com/jhi5/image/upload/actionicon.png';
 		}
 		if(string == "Crossover"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/crossover.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/crossovericon.png';
 		}		
 		if(string == "Utility"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/utility.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/utilityicon.png';
 		}
 		if(string == "Special"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/special.png';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/specialicon.png';
 		}
 		if(string == "Feat" && object.character === "Gravity Girl"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/ggfeat.jpg';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/ggfeat.png';
 		}
 		if(string == "Feat" && object.character === "Robonobo"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/rbfeat.jpg';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/rbfeat.png';
 		}
 		if(string == "Feat" && object.character === "Deadeye"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/defeat.jpg';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/defeat.png';
 		}
 		if(string == "Feat" && object.character === "Query"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/qufeat.jpg';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/qufeat.png';
 		}
 		if(string == "Feat" && object.character === "Obscurity"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/obfeat.jpg';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/obfeat.png';
 		}
 		if(string == "Feat" && object.character === "Knox"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/kxfeat.jpg';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/kxfeat.png';
 		}
 		if(string == "Feat" && object.character === "Silicon Artist"){
-			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/safeat.jpg';
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/safeat.png';
 		}
 	}
 	createRating = function(object, array){
@@ -197,15 +197,19 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 				parsedRating = '';
 				if($scope.cards[i].rating[0] >= 3.5){
 					$scope.parsedRating = 'http://res.cloudinary.com/jhi5/image/upload/bombicon.png';
+					$scope.cards[i].ratingText = "Bomb";
 				}
 				if($scope.cards[i].rating[0] >= 2.5 && $scope.cards[i].rating[0] < 3.5){
 					$scope.parsedRating = 'http://res.cloudinary.com/jhi5/image/upload/goodicon.png';
+					$scope.cards[i].ratingText = "Good";
 				}
 				if($scope.cards[i].rating[0] >= 1.5 && $scope.cards[i].rating[0] < 2.5){
 					$scope.parsedRating = 'http://res.cloudinary.com/jhi5/image/upload/okayicon.png';
+					$scope.cards[i].ratingText = "Okay";
 				}
 				if($scope.cards[i].rating[0] <= 1.5){
 					$scope.parsedRating = 'http://res.cloudinary.com/jhi5/image/upload/maybeicon.png';
+					$scope.cards[i].ratingText = "Maybe";
 				}
 				$scope.cards[i].ratingSymbol = $scope.parsedRating;
 			}
@@ -395,8 +399,19 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		.mouseenter(function(){
 			buttonbg = "";
 			if($scope.currentCharacter === "Deadeye"){
-				buttonbg = ($scope.currentCharacter.slice(0,2).toLowerCase()) + "-bg";
-				console.log(buttonbg);
+				buttonbg = ("de-bg");
+			}else if($scope.currentCharacter === "Gravity Girl"){
+				buttonbg = ("gg-bg");
+			}else if($scope.currentCharacter === "Knox"){
+				buttonbg = ("kx-bg");
+			}else if($scope.currentCharacter === "Obscurity"){
+				buttonbg = ("ob-bg");
+			}else if($scope.currentCharacter === "Query"){
+				buttonbg = ("qu-bg");
+			}else if($scope.currentCharacter === "Robonobo"){
+				buttonbg = ("rb-bg");
+			}else if($scope.currentCharacter === "Silicon Artist"){
+				buttonbg = ("sa-bg");
 			}
 			if(id === "#skillbutton"){				
 				$('#skillbutton').removeClass(buttonbg);

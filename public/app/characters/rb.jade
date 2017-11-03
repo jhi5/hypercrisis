@@ -1,223 +1,198 @@
 .container-fluid
 	.container.top-padding-med
-		.row.crp-info.wbg.curve
-			div.tab-content
-				#default.tab-pane.active
-					.col-md-12
-						div.crp-banner.rb-banner.curve(src="http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/rbsplash.jpg")
-							div
-								.crp-name.rb-bg#charname.f-adv.wtxt.outlinetxt Robonobo
-								&nbsp;
-				#howtoplay.tab-pane
-					.col-md-12
-						&nbsp;
-					.col-md-4
-						div.crp-profilebg
-							img.crp-profileimg.rb-headshot(src="http://res.cloudinary.com/jhi5/image/upload/rbheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Weaknesses? Fat chance. Keep clicking, nerd.")
-							button.btn.btn-block.crp-profilesub.rb-bg
-									.col-md-2
-										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/easyicon.png")
-									.col-md-10
-										h3.crp-sublbl.wtxt.f-oku Easy
-					.col-md-8
-						.row.crp-chtagrow
-							.col-md-4
-								h2.crp-pluslbl.f-adv strengths			
-							.col-md-4.crp-chplustag
-								img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/armoricon.png")
-								h5.crp-taglbl.wtxt.f-oku armor
-							.col-md-4.crp-chplustag
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/comboicon.png")
-								h5.crp-taglbl.wtxt.f-oku combo
-						.row.crp-chtagrow
-							.col-md-4
-								h2.crp-minuslbl.f-adv weaknesses
-							.col-md-4.crp-chminustag
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/versatileicon.png")
-								h5.crp-taglbl.wtxt.f-oku not versatile
-							.col-md-4.crp-chminustag
-								img.plusminusicon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/utilitydamageicon.png")
-								h5.crp-taglbl.wtxt.f-oku utility dmg
-						&nbsp;							
-					.col-md-12
-							button.btn.btn-block.crp-blockbtn.rb-bg.f-adv.wtxt.outlinetxt
-								.col-md-2
-									img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:666666,c_scale,q_54,w_72/v1498845176/guideicon.jpg")
-								.col-md-10
-									h3.crl-blockbtnlbl.wtxt Read The Player's Guide!
-					.row
-						.col-md-12
-							&nbsp;				
+		.row.crp-info.curve.rb-bg.curve.border-small-white.drop-shadow
+			.tab-content.crp-tabcontent		
+				.col-md-4
+					&nbsp;
+					.crp-headcol
+						img.crp-profileimg.rb-headshot(src="http://res.cloudinary.com/jhi5/image/upload/rbheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Robo can see you through webcam. Robo think you ugly.")
+						.crp-name#charname.f-adv.wtxt.outlinetxt.crp-drkbg Robonobo
+				#howtoplay.tab-pane.active
+					&nbsp;
+					.col-md-8.crp-pane
+						.rb-charnamebg
+							.row.text-center
+								.col-md-6
+									.col-md-12
+										h1.crp-taglbl.wtxt.f-adv.curve.crp-drkbg.border-small-white.outlinetxt-soft ALIGNMENT	
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_90/v1498840640/villainicon.png")
+										h1.crp-taglbl.wtxt.f-oku.curve.outlinetxt-soft villain
+								.col-md-6
+									.col-md-12
+										h1.crp-taglbl.wtxt.f-adv.curve.crp-drkbg.border-small-white.outlinetxt-soft DIFFICULTY
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_90/v1508785460/star.png")
+										h1.crp-taglbl.wtxt.f-oku.curve.outlinetxt-soft easy						
+							.row.crp-3margin
+								.col-md-6
+									h1.wtxt.f-adv.text-center.crp-taglbl.curve.crp-drkbg.border-small-white.outlinetxt-soft STRENGTHS
+									.col-md-6.crp-chplustag
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/armor.png")
+										h5.crp-taglbl.wtxt.f-oku.curve.outlinetxt-soft armor
+									.col-md-6.crp-chplustag
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/,c_scale,w_100/v1498840640/comboicon.png")
+										h5.crp-taglbl.wtxt.f-oku.curve.outlinetxt-soft combo									
+								.col-md-6
+									h1.wtxt.f-adv.text-center.curve.crp-taglbl.crp-drkbg.border-small-white.outlinetxt-soft WEAKNESSES
+									.col-md-6.crp-chminustag
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/versatileicon.png")
+										h5.crp-taglbl.wtxt.f-oku.outlinetxt-soft versatility
+									.col-md-6.crp-chminustag
+										img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_100/v1498840640/utilitydamageicon.png")
+										h5.crp-taglbl.wtxt.f-oku.curve.outlinetxt-soft utility dmg						
 				#bio.tab-pane
-					.col-md-12
-						&nbsp;
-					.col-md-4
-						div.crp-profilebg
-							img.crp-profileimg.rb-headshot(src="http://res.cloudinary.com/jhi5/image/upload/rbheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Stop asking questions and start running.")
-							button.btn.btn-block.crp-profilesub.rb-bg
-									.col-md-2
-										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/villainicon.png")
-									.col-md-10
-										h3.crp-sublbl.wtxt.f-oku Villain
-					.col-md-8
+					&nbsp;
+					.col-md-8.crp-pane		
 						.row
-							.col-md-12.text-center
-								div
-									.crp-chheading.f-adv.wtxt.outlinetxt.rb-bg BIOGRAPHY				
-						.row
-							.col-md-12.text-center
-								p.crp-biotxt The android ape dreamed of running outside of his cage. After being forcably digitized by an amoral cosmetics company, an innocent bonobo became ROBONOBO - weaponized robot ape for hire. He was scared. His life was so violent. Until the day he was introduced to the crime lord KNOX. KNOX opened the door of ROBONOBO's cage and him home to become his faithful son. It was a good life for a young chimp but Robo still couldn't quite shake the feeling that something was very wrong.
-
-								p.crp-biotxt Strapped up with rockets, machine guns, bombs and battle armor, cybernetic ape ROBONOBO is a founding member of KNOX's criminal organization. Childish and aloof, ROBONOBO is far more likely to play video games or eat cereal than rob a bank. Somewhere along the line, Robo's personality began to change. As his intelligence began to increase, ROBO became withdrawn and militant. Torn between his loyalty to KNOX and his own traumatic memories, ROBONOBO's inner turmoil is surfacing in an unpredicatable and violent way.
+							.col-md-12.text-center								
+								h3.crp-biotxtlbl.wtxt.f-adv.outlinetxt MODULAR MONKEY
+								h3.crp-biotxt.wtxt.outlinetxt Strapped up with rockets, machine guns, bombs and battle armor, cybernetic ape ROBONOBO is a founding member of The Villain Underground. Childish and aloof, ROBONOBO is far more likely to play video games or eat cereal than rob a bank. Recently, Robo's personality began to change. Torn between his loyalty to KNOX and his own traumatic memories, ROBONOBO's inner turmoil surfaces in unpredicatable and violent ways.
 						.row
 							.col-md-12
-								button.btn.btn-block.crp-blockbtn.rb-bg.f-adv.wtxt.outlinetxt
-									.col-md-2
-										img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:666666,c_scale,q_54,w_72/v1498845176/podcasticon.jpg")
-									.col-md-10
-										h3.crp-blockbtnlbl.wtxt Listen To The Villain 
-										h3.crp-blockbtnlbl.wtxt Underground Podcast!
+								button.btn.btn-block.crp-blockbtn.f-adv.wtxt.rb-bg.curve.border-small-white
+									a(href="http://shousestudio.libsyn.com/")
+										.col-md-2
+											img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_100/v1498845176/guideicon.png")
+										.col-md-10
+											h3.wtxt.f-adv.line-height.outlinetxt Listen to the SHU Podcast!
 				#skill.tab-pane
-					.col-md-12
-						&nbsp;
-					.col-md-4
-						div.crp-profilebg
-							img.crp-profileimg.rb-headshot(src="http://res.cloudinary.com/jhi5/image/upload/rbheadshot.png" data-toggle="popover" data-trigger="hover" data-content="Leave this to the professionals.")
-							button.btn.btn-block.crp-profilesub.rb-bg
-									.col-md-2
-										img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,w_64/v1498840640/rblogo.png")
-									.col-md-10
-										h3.crp-sublbl.wtxt.f-oku SKILL : EVOLVE				
-					.col-md-8.text-center
-						img.crp-skill.curved(src="http://res.cloudinary.com/jhi5/image/upload/evolve.png")
+					.col-md-8.crp-pane.text-center
+						img.crp-skill.curve(src="http://res.cloudinary.com/jhi5/image/upload/evolve.png")
 						br
-						h3.crp-skilltxt To Evolve, turn one of your face-down Feats face-up.
-			.row.crp-btnrow
-				.col-md-1
-					&nbsp;				
-				.col-md-2.crp-navbtn.rb-bg#howtoplaybutton
-					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:666666,c_scale,q_54,w_110/v1498845176/strategylogo.jpg" ng-click="changePanel('#howtoplay')")
-				.col-md-2.crp-navbtn.rb-bg#biobutton
-					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:666666,c_scale,q_54,w_110/v1498845176/villainicon.jpg" ng-click="changePanel('#bio')")
-				.col-md-2.crp-navbtn.rb-bg#skillbutton
-					img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:666666,c_scale,e_auto_contrast,q_54,w_110/v1499890549/rblogo.jpg" ng-click="changePanel('#skill')")
-				.col-md-2.crp-navbtn.rb-bg#downloadbutton 
-					a(href="https://www.dropbox.com/s/6b23exhwrtynbrb/Hypercrisis%20Open%20Beta%20April.rar?dl=0")
-						img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:666666,c_scale,q_54,w_110/v1498845176/downloadicon.jpg")
-				.col-md-2.crp-navbtn.rb-bg#backbutton
-					a(href="../characterselect")
-						img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:666666,c_scale,q_54,w_110/v1498845176/backarrowicon.jpg")
-				.col-md-1
-					&nbsp;	
+						h3.crp-skilltxt.wtxt.outlinetxt To Evolve, turn one of your face-down Feats face-up.
+						&nbsp;
+						.row
+							.col-md-12
+								a(href="https://www.dropbox.com/s/6b23exhwrtynbrb/Hypercrisis%20Open%20Beta%20April.rar?dl=0")
+									button.btn.btn-block.crp-blockbtn.f-adv.wtxt.rb-bg.curve.border-small-white
+										.col-md-2
+											img.crp-icon(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_100/v1498845176/guideicon.png")
+										.col-md-10
+											h3.wtxt.f-adv.line-height.outlinetxt Read The Player's Guide!
+			.row.crp-btnrow			
+				.col-md-4.rb-bg#howtoplaybutton.btn.crp-navbtn.rb-bg.f-adv.curve(ng-click="changePanel('#howtoplay')")
+					.col-md-3
+						img.crp-navbtnimg(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_100/v1498845176/strategylogo.png")
+					.col-md-9
+						h1.wtxt.f-adv.line-height basics
+				.col-md-4.rb-bg#biobutton.btn.crp-navbtn.rb-bg.f-adv.curve(ng-click="changePanel('#bio')")
+					.col-md-3
+						img.crp-navbtnimg(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_100/v1498845176/villainicon.png")
+					.col-md-9
+						h1.wtxt.f-adv.line-height lore
+				.col-md-4.rb-bg#skillbutton.btn.crp-navbtn.rb-bg.f-adv.curve(ng-click="changePanel('#skill')")
+					.col-md-3
+						img.crp-navbtnimg(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_100/v1498845176/delogo.png")
+					.col-md-9
+						h1.wtxt.f-adv.line-height skill
 			.modal.fade.top-padding-med.modal-admin#myModal(role="dialog")				
 				.modal-body
 					.col-md-6.md-imgcntr
-						img.md-cardimg.img-responsive.curve(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover" data-content="Flavor Text: {{modalContent.flavor[0]}}" data-placement="bottom")
-						&nbsp;
-						.row(ng-hide="modalContent.type === 'Action' || modalContent.type === 'Feat' || modalContent.type === 'Special'")
-							.col-md-4
-								button.btn.btn-block
-									.row.rb-bg
-										.col-md-4
-											h2#hpsymbol.md-utilval.wtxt.f-adv.text-left		{{modalContent.utilityValues[0]}}
-										.col-md-8
-											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/hpicon.jpg")
-							.col-md-4
-								button.btn.btn-block
-									.row.rb-bg
-										.col-md-4
-											h2#fightsymbol.md-utilval.wtxt.f-adv {{modalContent.utilityValues[1]}}
-										.col-md-8
-											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/fighticon.jpg")
-							.col-md-4
-								button.btn-block
-									.row.rb-bg
-										.col-md-4
-											h2#armor.md-utilval.wtxt.f-adv {{modalContent.utilityValues[2]}}
-										.col-md-8
-											img.md-utilsymbol(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:333366,c_scale,q_54,w_110/v1498845176/armoricon.jpg")
+						.md-cardimgcontainer
+							img.md-cardimg.img-responsive.curve(src="{{modalContent.illustrations[0]}}" data-toggle="popover" data-trigger="hover" data-content="Flavor Text: {{modalContent.flavor[0]}}" data-placement="bottom")
+							&nbsp;
+						.row
+							.col-md-12
+								.col-md-4
+									a.btn.md-navbtn.outlinetxt-soft.rb-bg.curve.border-small-white.drop-shadow-small.wtxt.f-adv(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") ◀
+								.col-md-4												
+									a.btn.md-navbtn.outlinetxt-soft.rb-bg.curve.border-small-white.drop-shadow-small.wtxt.f-adv(ng-click="findNextEntry()" ng-hide="hideNext()") ▶
+								.col-md-4
+									a.btn.md-close.md-navbtn.outlinetxt-soft.rb-bg.curve.border-small-white.wtxt.drop-shadow.f-adv(data-dismiss="modal" ng-click="emptyModal()") CLOSE			
 					.col-md-6
 						.row
 							.col-md-12
-								h1.md-cardname.rb-bg.text-center.f-adv.wtxt.outlinetxt#modaltitle {{modalContent.name}}
+								h1.md-cardname.rb-bg.text-center.f-adv.wtxt.outlinetxt-soft#modaltitle.curve.border-small-white.drop-shadow-small {{modalContent.name}}
 						.row
 							.col-md-12
-								.col-md-6
-									h4.md-modallbl.text-center.wtxt.f-oku.rb-bg Rating
-									img.img-responsive.md-rating(src="{{modalContent.ratingSymbol}}")
-								.col-md-6
-									h4.md-modallbl.text-center.wtxt.f-oku.rb-bg Card Type
-									img.img-responsive.md-type(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
-						.row
-							.col-md-12
-								.col-md-12
-									h4.md-modallbl.text-center.wtxt.f-oku.rb-bg Card Text
+								.col-md-8
+									h4.md-modallbl.text-center.wtxt.f-oku.rb-bg.curve.border-small-white.drop-shadow-small Card Text
 									h3.md-cardtext.f-oku.text-center {{modalContent.text}}
-						.row
-							.col-md-12
-								h3.md-modallbl.text-center.wtxt.f-oku.rb-bg Comments
-								h3.md-comments.f-oku.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
-					.col-md-12
-						.row
-							footer.md-footer.navbar-fixed-bottom
-								.col-md-3
-									button.btn.btn-block.md-navbtn.outlinetxt(ng-click="findPreviousEntry()" ng-hide="hidePrevious()") ◀
-								.col-md-3												
-									button.btn.btn-block.md-navbtn.outlinetxt(ng-click="findNextEntry()" ng-hide="hideNext()") ▶
-								.col-md-5
-									h1.text-center.md-cardview.f-oku CARD VIEWER: {{modalContent.name}}
-								.col-md-1
-									button.btn.btn-block.md-close.md-navbtn.outlinetxt(data-dismiss="modal" ng-click="emptyModal()") X
+									.row(ng-hide="modalContent.type === 'Action' || modalContent.type === 'Feat' || modalContent.type === 'Special'")
+										.col-md-12
+											h4.md-modallbl.text-center.wtxt.f-oku.rb-bg.curve.border-small-white.drop-shadow-small Utility Values
+											.row
+												.col-md-4.md-hp.curve
+													.col-md-6
+														img.md-utilicon.line-height(src="http://res.cloudinary.com/jhi5/image/upload/w_54/v1500962388/hpicon.png")
+													.col-md-6
+														h1.wtxt.md-utiltxt.f-adv.outlinetxt {{modalContent.utilityValues[0]}}
+												.col-md-4.md-fight.curve
+													.col-md-6
+														img.md-utilicon.line-height(src="http://res.cloudinary.com/jhi5/image/upload/w_54/v1500962388/fighticon.png")
+													.col-md-6
+														h1.wtxt.md-utiltxt.f-adv.outlinetxt {{modalContent.utilityValues[1]}}
+												.col-md-4.md-armor.curve
+													.col-md-6
+														img.md-utilicon.line-height(src="http://res.cloudinary.com/jhi5/image/upload/w_54/v1500962388/armoricon.png")
+													.col-md-6
+														h1.wtxt.md-utiltxt.f-adv.outlinetxt{{modalContent.utilityValues[2]}}											
+									h3.md-modallbl.text-center.wtxt.f-oku.rb-bg.curve.border-small-white.drop-shadow Comments
+									h3.md-comments.f-oku.text-center(ng-repeat='comment in modalContent.comments') {{comment}}
+								.col-md-4
+									h4.md-modallbl.text-center.wtxt.f-oku.rb-bg.curve.border-small-white.drop-shadow-small Card Type
+									img.img-responsive.md-type(src="{{modalContent.typeSymbol}}" alt="{{modalContent.type}}")
+									h2.f-oku.text-center {{modalContent.type}}
+								.col-md-4(alt="{{modalContent.type}}")
+									h4.md-modallbl.text-center.wtxt.f-oku.rb-bg.curve.border-small-white.drop-shadow Rating
+									img.img-responsive.md-rating(src="{{modalContent.ratingSymbol}}")
+									h2.f-oku.text-center {{modalContent.ratingText}}
 		br
 		.row
-			.col-md-12.db-tablebg.rb-bg.curved
-				h2.text-center.f-adv.wtxt.outlinetxt.db-heading Robonobo Card Database
-				table.table.table-hover.table-condensed(ng-if="loaded")
-					thread						
-						.row
-							.col-md-12.wbg.db-controlsbg
-								#searchfilter
-										.row.db-controlsrow
-												form.form-inline
-													.form-group.db-search
-														input.form-control(ng-model="searchText", placeholder="Quick Search")
-										.row
-											.col-md-4
-												button.btn.btn-block#crossbutton.db-buttons.f-adv.rb-bg(ype='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
-													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:666666,c_scale,q_54,w_110/v1498845176/crossovericon.jpg" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
-													.col-md-10
-															h3.db-btnlbl.wtxt Crossover
-											.col-md-4
-												button.btn.btn-block.db-buttons.rb-bg.f-adv(ng-click='resetTags()')
-													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:666666,c_scale,q_54,w_110/v1498845176/refreshicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
-													.col-md-10
-															h3.db-btnlbl.wtxt Reset
-											.col-md-4
-												button.btn.btn-block.db-buttons.rb-bg.f-adv(data-toggle="collapse" data-target="#tagrow")
-													.col-md-2
-														img(src="http://res.cloudinary.com/jhi5/image/upload/b_rgb:666666,c_scale,q_54,w_110/v1498845176/tagicon.jpg" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
-													.col-md-10
-															h3.db-btnlbl.wtxt Tags
-										#tagrow.collapse
+			.col-md-12.db-tablebg.rb-bg.curve
+				row.db-bg(ng-click="cardDatabase()" data-toggle="collapse" data-target="#database")
+					h2.text-center.f-adv.wtxt.outlinetxt-soft.db-heading#db-heading Open Card Database
+				#database.collapse
+					table.table.table-hover.table-condensed(ng-if="loaded")
+						thread						
+							.row
+								.col-md-12.wbg.db-controlsbg.curve
+									h1.f-oku &nbsp; CARD SEARCH
+									#searchfilter
+											.row.db-controlsrow.rb-bg.outlinetxt-soft.drop-shadow.curve
+													form.form-inline
+														.form-group.db-search.curve.border-small
+															input.form-control.input-lg.db-input(ng-model="searchText", placeholder="Quick Search")
 											.row
-												.col-md-3
-													h3.db-taglbl.f-oku.text-center ACTIVE SEARCH TAGS: 
-												.col-md-9
-													div.db-tagrow(ng-repeat="tag in currentTags")
-															button.db-inctag.wtxt.f-oku(ng-click='removeFilterButton(tag)') + {{tag}}			
+												.col-md-12
+													h1.f-oku &nbsp; QUICK FILTERS
 											.row
-												.col-md-3
-													h3.db-taglbl.f-oku.text-center INACTIVE SEARCH TAGS: 
-												.col-md-9
-													div.db-tagrow(ng-repeat="tag in tagArray")
-														button.db-extag.wtxt.f-oku(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') {{tag}}
-										.row
-											&nbsp;
+												.col-md-4
+													button.btn.btn-block#crossbutton.db-buttons.f-adv.rb-bg.curve(ype='button' data-toggle='button' ng-model='checkBox' ng-click='logCheckBox()')
+														.col-md-2
+															img#crosssymbol(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_75/v1498845176/crossovericon.png" data-toggle="popover" data-trigger="hover" data-content="Include Crossovers In Search?")
+														.col-md-10
+																h3.db-btnlbl.wtxt.f-adv Xover					
+												.col-md-4
+													button.btn.btn-block.db-buttons.rb-bg.f-adv.curve(data-toggle="collapse" data-target="#tagrow")
+														.col-md-2
+															img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_75/v1498845176/tagicon.png" data-toggle="popover" data-trigger="hover" data-content="Add Search Tag")
+														.col-md-10
+																h3.db-btnlbl.wtxt.f-adv Tags
+												.col-md-4
+													button.btn.btn-block.db-buttons.rb-bg.f-adv.curve(ng-click='resetTags()')
+														.col-md-2
+															img(src="http://res.cloudinary.com/jhi5/image/upload/c_scale,q_54,w_75/v1498845176/refreshicon.png" data-toggle="popover" data-trigger="hover" data-content="Reset Search")
+														.col-md-10
+																h3.db-btnlbl.wtxt.f-adv Reset
+											#tagrow.collapse
+												.row.crp-3margin
+													.col-md-3
+														h1.db-taglbl.f-oku.text-center ACTIVE TAGS: 
+													.col-md-9
+														div.db-tagrow(ng-repeat="tag in currentTags")
+																button.db-inctag.wtxt.f-adv.curve.border-small-white(ng-click='removeFilterButton(tag)') {{tag}}
+												.row.crp-3margin
+													.col-md-3
+														h1.db-taglbl.f-oku.text-center INACTIVE TAGS: 
+													.col-md-9
+														div.db-tagrow(ng-repeat="tag in tagArray track by $index")
+															button.db-extag.wtxt.f-adv.curve.border-small-white(ng-click='filterButton(tag)' ng-hide='hideTagButton(tag)') {{tag}}
+											.row
+												&nbsp;
+						br
 						tr.db-tablebox
 							th.db-tableheading.f-oku.wtxt
-								button.btn.btn-block.db-fieldheading(ng-click='setOrder("name")') Name
+								button.btn.btn-block.db-fieldheading.rb-bg(ng-click='setOrder("name")') Name
 							th.db-tableheading.f-oku.wtxt
 								button.btn.btn-block.db-fieldheading(ng-click='setOrder("type")') Type
 							th.db-tableheading.f-oku.wtxt
@@ -230,8 +205,10 @@
 										h2.db-table-title.f-adv.text-center(ng-click="transferModalContent(card.name)") {{card.name}}
 									td
 										img.db-table-symbol.img-responsive.text-center(src='{{card.typeSymbol}}')
+										h1.f-oku.text-center {{card.type}}
 									td
 										
 										img.db-table-symbol.img-responsive.text-center(src='{{card.ratingSymbol}}')
+										h1.f-oku.text-center {{card.ratingText}}
 									td
 										h3.db-table-text.text-center.f-oku {{card.text}}
