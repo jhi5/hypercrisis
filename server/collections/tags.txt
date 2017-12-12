@@ -10,7 +10,6 @@ armor
 build-around
 card type
 card draw
-damage
 discard
 fight
 healing

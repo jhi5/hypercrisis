@@ -220,8 +220,7 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 				}
 			}
 			}
-			$scope.tagArray = $scope.tagArray.sort($.uniqueSort($scope.tagArray));
-			console.log($scope.tagArray);
+			$scope.tagArray = $scope.tagArray.sort();
 			$scope.loaded = true;
 		});
 	}
