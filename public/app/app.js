@@ -48,6 +48,10 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
 		templateUrl: '/partials/characters/sa',
 		controller: 'mvCharacterCtrl'
 	})
+	.when('/characters/wayfarer', {
+		templateUrl: '/partials/characters/wf',
+		controller: 'mvCharacterCtrl'
+	})
 	.when('/articles', {
 		templateUrl: '/partials/articles/articles',
 		controller: 'mvArticleCtrl'
@@ -79,6 +83,9 @@ angular.module('app').config(function($routeProvider, $locationProvider) {
 	})
 	.when('/articles/siliconartistintro',{
 		templateUrl: '/partials/articles/introSA'
+	})
+	.when('/articles/wayfarerintro',{
+		templateUrl: '/partials/articles/introWF'
 	})
 	.when('/articles/manual', {
 		templateUrl: '/partials/manual/manual'

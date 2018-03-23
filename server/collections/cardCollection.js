@@ -17,11 +17,23 @@ exports.defaultCards = [
 		type: "Crossover",
 		utilityValues: ["3","2","0"],
 		text: "Villain. Whenever this deals damage it gains that much Armor.",
-		flavor: ["Eradicating Light Powers For Hire"],
+		flavor: ["Eradicating Beams Of Light, For Hire"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/albedo.jpg"],
 		rating: ["3"],
 		tags: ["crossover", "defensive", "combo", "armor"],
 		comments: ["Great way to annoy the opponent, especially with multiple hits. - JM"]
+	},
+	{
+		name: "Alex Mueller",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","2","0"],
+		text: "Hero. At the end of your turn, reveal the top card of your deck. If it is a Crossover, you may exchange it with Alex Mueller.",
+		flavor: ["Teleporting Vigilante On A Search For Truth"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/alexmueller.jpg"],
+		rating: ["2"],
+		tags: ["crossover", "combo", "versatile"],
+		comments: ["If your decks relies on crossover combos, this is a great way to fish 'em out. - JM"]
 	},
 	{
 		name: "Ape Omega",
@@ -29,7 +41,7 @@ exports.defaultCards = [
 		type: "Crossover",
 		utilityValues: ["3","2","0"],
 		text: "Villain. Whenever you play another Utility, deal 2 damage to each player.",
-		flavor: ["Insurance Companies Hate This One Weird Chimp"],
+		flavor: ["Feral Animal Toting Weapons From The Future"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/apeomega.jpg"],
 		rating: ["3"],
 		tags: ["aggressive", "combo", "player damage", "crossover"],
@@ -45,7 +57,7 @@ exports.defaultCards = [
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/baronvonheat.jpg"],
 		rating: ["3"],
 		tags: ["crossover", "defensive", "utility damage", "build-around"],
-		comments: ["Toasts your own stuff too, but can fend off an early blitz. - JM"]
+		comments: ["Kills himself without help, but can fend off an early blitz. - JM"]
 	},
 	{
 		name: "Basalt",
@@ -69,7 +81,7 @@ exports.defaultCards = [
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/blaireevasolomon.jpg"],
 		rating: ["2"],
 		tags: ["crossover", "defensive", "armor", "card draw"],
-		comments: ["Great if you need some card flow, but don't be afraid to tuck it if you are busy. - JM"]
+		comments: ["Great if you need some defense, but don't be afraid to tuck it if you are busy. - JM"]
 	},
 	{
 		name: "Bonestar",
@@ -88,19 +100,19 @@ exports.defaultCards = [
 		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["4","1","0"],
-		text: "Hero. At the end of your turn, flip a coin. If it is heads, 2 damage to any target and Heal 2.",
+		text: "Hero. At the end of your turn, flip a coin. If it is heads, 2 damage to any target and you may Heal 2.",
 		flavor: ["Somehow Things Just Keep Going His Way..."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/chance.jpg"],
 		rating: ["2"],
 		tags: ["crossover", "versatile", "player damage", "healing"],
-		comments: ["Quite an all-star if you manage to get lucky. - JM"]
+		comments: ["Quite an all-star for control decks if you manage to get lucky. - JM"]
 	},
 	{
 		name: "Dark Belle",
 		character: "Crossover",
 		type: "Crossover",
 		utilityValues: ["2","3","0"],
-		text: "Villain. Whenever this deals damage to an opponent, you may look at that player's hand and discard a card form it.",
+		text: "Villain. Whenever this deals damage to an opponent, you may look at that player's hand and discard a card from it.",
 		flavor: ["Failure Of Science Fueled By Hatred"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/darkbelle.jpg"],
 		rating: ["3"],
@@ -137,7 +149,7 @@ exports.defaultCards = [
 		type: "Crossover",
 		utilityValues: ["3","1","3"],
 		text: "Hero. Your other Utilities can't be destroyed.",
-		flavor: ["Fighting Evil By Moonlight"],
+		flavor: ["Cursed In The Line Of Duty Protecting Amberville"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/detectivewolfcop.jpg"],
 		rating: ["2"],
 		tags: ["crossover", "defensive", "build-around"],
@@ -147,8 +159,8 @@ exports.defaultCards = [
 		name: "Dr. Doodad",
 		character: "Crossover",
 		type: "Crossover",
-		utilityValues: ["1","3","3"],
-		text: "Hero. Whenever this deals damage to an opponent, draw a card and Heal 2.",
+		utilityValues: ["1","3","0"],
+		text: "Hero. Whenever this deals damage to an opponent, draw a card and you may Heal 2.",
 		flavor: ["Eccentric Inventor With An Android Brain"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/drdoodad.jpg"],
 		rating: ["3"],
@@ -168,6 +180,30 @@ exports.defaultCards = [
 		comments: ["She can't stay around too long until she takes over a game. - JM"]
 	},
 	{
+		name: "Formula One",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["4","1","0"],
+		text: "Villain. Formula One may attack twice per turn.",
+		flavor: ["Speed Kills"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/formulaone.jpg"],
+		rating: ["3"],
+		tags: ["crossover", "aggressive", "combo"],
+		comments: ["Added to encourage combo-based archetypes for aggressive characters like Silicon Artist and Robo. - JM"]
+	},
+	{
+		name: "Frosty Cop",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["4","1","0"],
+		text: "Hero. Whenever this deals damage to a Crossover, that card can't attack until your next turn.",
+		flavor: ["The Cold Blue Line"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/frostycop.jpg"],
+		rating: ["2"],
+		tags: ["crossover", "defensive", "disruption"],
+		comments: ["Get out of jail free card for troublesome crossovers. - JM"]
+	},
+	{
 		name: "Graverobber",
 		character: "Crossover",
 		type: "Crossover",
@@ -180,6 +216,18 @@ exports.defaultCards = [
 		comments: ["This card brings important stuff back to life, especially if you manage to wait a turn or two. - JM"]
 	},
 	{
+		name: "Greg",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["1","1","0"],
+		text: "Hero. Greg takes no damage. At the end of your turn, this gains +1 armor.",
+		flavor: ["Unshakeable Public Servant"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/greg.jpg"],
+		rating: ["2"],
+		tags: ["crossover", "defensive", "armor"],
+		comments: ["Gets much worse if you don't play him early and let him ramble on. - JM"]
+	},
+	{
 		name: "Iron Justice",
 		character: "Crossover",
 		type: "Crossover",
@@ -190,6 +238,18 @@ exports.defaultCards = [
 		rating: ["3"],
 		tags: ["crossover", "defensive", "disruption", "build-around", "combo"],
 		comments: ["Yeah this card is good, but much better if your deck is filled with fragile combos. - JM"]
+	},
+	{
+		name: "Kendra Fang",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["1","4","0"],
+		text: "Villain. Kendra Fang takes no damage. After this attacks, shuffle it into your deck.",
+		flavor: ["Anarchy's Immortal Daughter"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/kendrafang.jpg"],
+		rating: ["2"],
+		tags: ["crossover", "aggressive"],
+		comments: ["It's a lot of damage, make it count. - JM"]
 	},
 	{
 		name: "Lightspeed",
@@ -252,6 +312,30 @@ exports.defaultCards = [
 		comments: ["Sideboard tech, but strong sideboard tech. Really hurts characters like Deadeye & Robo - JM"]
 	},
 	{
+		name: "Ohm",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","1","2"],
+		text: "Hero. At the beginning of your turn, draw cards until you have at most 3 in your hand.",
+		flavor: ["Quartzstar City's Human Dynamo"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/ohm.jpg"],
+		rating: ["3"],
+		tags: ["crossover", "defensive", "card draw"],
+		comments: ["More tools to counteract discard strategies that can be difficult to interact with. - JM"]
+	},
+	{
+		name: "Orion",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","2","0"],
+		text: "Villain. If an opponent controls a Crossover, this gets +2 fight.",
+		flavor: ["Synthetic Goddess Of Entropy"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/orion.jpg"],
+		rating: ["2"],
+		tags: ["crossover", "aggressive"],
+		comments: ["Gets very out of control with the condition on, good for mindgames. - JM"]
+	},
+	{
 		name: "Phalanx",
 		character: "Crossover",
 		type: "Crossover",
@@ -274,6 +358,18 @@ exports.defaultCards = [
 		rating: ["3"],
 		tags: ["crossover", "defensive", "card draw"],
 		comments: ["Isn't too impactful alone, but is great when played multiple times. - JM"]
+	},
+	{
+		name: "Recoil",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","2","2"],
+		text: "Villain. When this deals damage to an opponent, each player discards a card at random.",
+		flavor: ["Sociopathic Sharpshooter Hunter Her Family"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/recoil.jpg"],
+		rating: ["3"],
+		tags: ["crossover", "aggressive", "discard", "disruption"],
+		comments: ["Hits hard but this is usually a hell of a drawback. - JM"]
 	},
 	{
 		name: "Riot Grrrl",
@@ -375,13 +471,25 @@ exports.defaultCards = [
 		name: "Thwip!",
 		character: "Crossover",
 		type: "Crossover",
-		utilityValues: ["3","2","0"],
-		text: "Hero. When you play this, prevent all damage that would be done to you and your other Utilities until your next turn.",
+		utilityValues: ["3","2","3"],
+		text: "Hero. When you play this, you and your other Utilities take no damage until your turn.",
 		flavor: ["Superhero Archer Tailing Her Wayward Sister."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/thwip.jpg"],
-		rating: ["3"],
+		rating: ["2"],
 		tags: ["crossover", "defensive"],
-		comments: ["Great way to keep your combo deck alive for one turn. - JM"]
+		comments: ["Been highly picked in testing and quite strong against top tier aggro decks. - JM"]
+	},
+	{
+		name: "Ursinous",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["3","1","3"],
+		text: "Hero. At the beginning of your turn, you may discard a Utility card from your hand. If you do, this gets +2 fight this turn.",
+		flavor: ["Cybernetic Guardian Of The Woods"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/ursinous.jpg"],
+		rating: ["3"],
+		tags: ["crossover", "defensive", "discard", "combo"],
+		comments: ["Great in slow controlling builds where you'll always have food for smokey. - JM"]
 	},
 	{
 		name: "U.S. Ape",
@@ -406,6 +514,18 @@ exports.defaultCards = [
 		rating: ["2"],
 		tags: ["crossover", "aggressive", "armor"],
 		comments: ["Been popular in early playtests for aggressive builds. Drawback is powerful against Deadeye, Knox, Wayfarer, Silicon Artist. - JM"]
+	},
+	{
+		name: "Zero Tolerance",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["4","1","0"],
+		text: "Villain. At the beginning of your turn, this gets +3 Fight this turn and you take 3 damage.",
+		flavor: ["A Violent Stain On His Family's Heroic Legacy"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/zerotolerance.jpg"],
+		rating: ["2"],
+		tags: ["crossover", "aggressive", "player damage", "combo"],
+		comments: ["Gives every deck a suicide black option, although you've gotta have a plan for the damage. - JM"]
 	},
 	{
 		name: "Buckshot",
@@ -437,7 +557,7 @@ exports.defaultCards = [
 		type: "Action",
 		utilityValues: ["none"],
 		text: "Deal 2 damage to target player. That player discards a card.",
-		flavor: ["Ouch! Time for new shoes."],
+		flavor: ["Ouch. Time for some new shoes."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/clipankle.jpg"],
 		rating: ["2"],
 		tags: ["disruption", "discard", "player damage"],
@@ -472,7 +592,7 @@ exports.defaultCards = [
 		character: "Deadeye",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "Search your deck for a Utility with 3 or more HP and draw it. Shuffle your deck after.",
+		text: "Search your deck for a Utility with 4 or more HP and draw it. Shuffle your deck after.",
 		flavor: ["Come and get me."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/duckdown.jpg"],
 		rating: ["4"],
@@ -581,7 +701,7 @@ exports.defaultCards = [
 		type: "Action",
 		utilityValues: ["none"],
 		text: "Discard any number of cards from your hand. 2 damage to that many different targets.",
-		flavor: ["I'm going for the high score!"],
+		flavor: ["I'm going for the high score."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/semiautospread.jpg"],
 		rating: ["2"],
 		tags: ["versatile", "player damage", "utility damage"],
@@ -592,7 +712,7 @@ exports.defaultCards = [
 		character: "Deadeye",
 		type: "Utility",
 		utilityValues: ["3","0","2"],
-		text: "At the end of your turn, this gains Armor equal to your Aim..",
+		text: "At the end of your turn, this gains Armor equal to your Aim.",
 		flavor: ["Shut your mouth and enjoy the fireworks."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/snipersnest.jpg"],
 		rating: ["3"],
@@ -616,7 +736,7 @@ exports.defaultCards = [
 		character: "Deadeye",
 		type: "Action",
 		utilityValues: ["4","0","0"],
-		text: "Whenever a player discards one or more cards from their hand, draw exactly that many cards.",
+		text: "Whenever a player discards one or more cards from their hand, you draw exactly that many cards.",
 		flavor: ["Guess she won't be needing this..."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/spoilsofwar.jpg"],
 		rating: ["1"],
@@ -640,7 +760,7 @@ exports.defaultCards = [
 		character: "Deadeye",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "To play this, you must first discard a card. Each opponent discards two cards.",
+		text: "To play this, you must first discard a card. Each opponent discards 2 cards.",
 		flavor: ["Go ahead...reach for it. I dare you."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/staredown.jpg"],
 		rating: ["1"],
@@ -700,7 +820,7 @@ exports.defaultCards = [
 		character: "Deadeye",
 		type: "Feat",
 		utilityValues: ["none"],
-		text: "Reveal cards from the top of your deck until you find an Action. Play that card for free and discard the rest.",
+		text: "Reveal cards from the top of your deck until you reveal an Action card. Play that card for free and discard the rest.",
 		flavor: ["none"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/kneecap.jpg"],
 		rating: ["3"],
@@ -728,7 +848,7 @@ exports.defaultCards = [
 		flavor: ["none"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/sureshot.jpg"],
 		rating: ["3"],
-		tags: ["agggressive", "utility damage", "aim"],
+		tags: ["aggressive", "utility damage", "aim"],
 		comments: ["You'll need this to get those pesky combo decks out of the way. - JM"]
 	},
 	{
@@ -809,7 +929,7 @@ exports.defaultCards = [
 		type: "Utility",
 		utilityValues: ["4","0","7"],
 		text: "When you play this, destroy one of your Utilities.",
-		flavor: ["AAAAAAARGGGGGGH! I loved that truck."],
+		flavor: ["You'll pay for that. I loved that truck."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/improvisedbarrier.jpg"],
 		rating: ["2"],
 		tags: ["defensive", "combo", "armor", "build-around"],
@@ -833,7 +953,7 @@ exports.defaultCards = [
 		type: "Utility",
 		utilityValues: ["4","0","4"],
 		text: "At the beginning of your turn, you may discard a card. If you do, deal 2 damage to any target.",
-		flavor: ["You aren't going anywhere."],
+		flavor: ["Increased gravity. Couldn't run if you wanted to."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/lockedincombat.jpg"],
 		rating: ["2"],
 		tags: ["versatile", "player damage", "utility damage", "armor", "defensive"],
@@ -941,7 +1061,7 @@ exports.defaultCards = [
 		type: "Utility",
 		utilityValues: ["4", "2", "0"],
 		text: "none",
-		flavor: ["Can't you rea? Maybe you need to see it up close?"],
+		flavor: ["Can't you read? Maybe you need to see it up close?"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/stopsign.jpg"],
 		rating: ["2"],
 		tags: ["versatile", "aggressive"],
@@ -952,12 +1072,12 @@ exports.defaultCards = [
 		character: "Gravity Girl",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "Return each of your Utilities to your hand. You may play any number of Utilities this turn..",
+		text: "Return each of your Utilities to your hand. You may play any number of Utilities this turn.",
 		flavor: ["What goes up must come down."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/swirlingvortex.jpg"],
 		rating: ["3"],
 		tags: ["combo", "build-around", "versatile"],
-		comments: ["Very powerful and centerpiece of GG combo deck. - JM"]
+		comments: ["Very powerful and centerpiece of GG combo deck. The any number part is important. - JM"]
 	},
 	{
 		name: "Team's New Truck",
@@ -965,7 +1085,7 @@ exports.defaultCards = [
 		type: "Utility",
 		utilityValues: ["3","2","0"],
 		text: "When this is destroyed, deal 2 damage to each player and Utility.",
-		flavor: ["C'mon! These seats are brand new!"],
+		flavor: ["Such a shame. These seats are like brand new."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/teamsnewtruck.jpg"],
 		rating: ["3"],
 		tags: ["aggressive", "utility damage", "player damage", "combo"],
@@ -1061,7 +1181,7 @@ exports.defaultCards = [
 		type: "Utility",
 		utilityValues: ["3","4","0"],
 		text: "Minion. To play this, you must first discard 2 cards.",
-		flavor: ["Down boy! Oooh, this one has some spice. I like it!"],
+		flavor: ["Down boy! Oooh, this one's got spice. I like it!"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/aggressivebodyguard.jpg"],
 		rating: ["3"],
 		tags: ["aggressive", "discard", "minion"],
@@ -1072,7 +1192,7 @@ exports.defaultCards = [
 		character: "Knox",
 		type: "Utility",
 		utilityValues: ["2","2","0"],
-		text: "Minion. When this is destroyed, skip your discard phase that turn.",
+		text: "Minion. When this is destroyed, you have no max hand size this turn.",
 		flavor: ["I'd do it myself, but who has the time?"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/bankrobber.jpg"],
 		rating: ["1"],
@@ -1084,7 +1204,7 @@ exports.defaultCards = [
 		character: "Knox",
 		type: "Utility",
 		utilityValues: ["1","2","0"],
-		text: "If you have seven or more cards in your hand at the end of your turn, you may destroy this and 4 damage to target opponent.",
+		text: "If you have 7 or more cards in your hand at the beginning of your turn, you may destroy this and 4 damage to each player.",
 		flavor: ["Yes, there's a bomb. No, I don't know how it works."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/bombthreat.jpg"],
 		rating: ["2"],
@@ -1133,7 +1253,7 @@ exports.defaultCards = [
 		type: "Utility",
 		utilityValues: ["4","0","2"],
 		text: "Minion. You have no maximum hand size.",
-		flavor: ["DONALDSON! Time to feed the feral dogs! Where is he?"],
+		flavor: ["Donnelson! Time to feed the feral dogs! Where is he?"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/donaldsonthebutler.jpg"],
 		rating: ["4"],
 		tags: ["defensive", "armor", "card draw", "minion"],
@@ -1180,7 +1300,7 @@ exports.defaultCards = [
 		character: "Knox",
 		type: "Utility",
 		utilityValues: ["6","0","2"],
-		text: "At the beginning of your turn, you may destroy this. If you do, draw three cards.",
+		text: "At the beginning of your turn, you may destroy this. If you do, draw 3 cards.",
 		flavor: ["His pistol. His fortune. His failures. All mine to keep."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/fathersinheritance.jpg"],
 		rating: ["2"],
@@ -1192,8 +1312,8 @@ exports.defaultCards = [
 		character: "Knox",
 		type: "Utility",
 		utilityValues: ["4","0","0"],
-		text: "Whenever you play a Minion, you have no maximum hand size this turn. Whenever a Minion is destroyed, draw a card.",
-		flavor: ["Shouldn't you be doing crime, Ted? Get out of my pool."],
+		text: "Whenever you play a Minion, you have no maximum hand size that turn turn. Whenever a Minion is destroyed, draw a card.",
+		flavor: ["Spread fear in my name! Make them respect me!"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/floodthestreets.jpg"],
 		rating: ["2"],
 		tags: ["combo", "card draw", "minion"],
@@ -1216,7 +1336,7 @@ exports.defaultCards = [
 		character: "Knox",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "To play this, you must first discard a Utility card. Destroy target Utility.",
+		text: "To play this, you must first discard a card. Destroy target Utility.",
 		flavor: ["Eye for an eye, you simpletons!"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/harassanddemean.jpg"],
 		rating: ["4"],
@@ -1288,8 +1408,8 @@ exports.defaultCards = [
 		character: "Knox",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "2 damage to target Utility. If you have 6 or more cards in your hand, you may play this card for free.",
-		flavor: ["Deadeye, take care of this?"],
+		text: "2 damage to target Utility. If you have 6 or more cards in your hand, you may play this for free.",
+		flavor: ["Deadeye, take care of this."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/violentstrike.jpg"],
 		rating: ["3"],
 		tags: ["combo", "utility damage", "card draw"],
@@ -1355,6 +1475,28 @@ exports.defaultCards = [
 		tags: ["aggressive", "minion", "player damage"],
 		comments: ["Having up to nine damage on hand is nothing to ignore. Forces players into defensive positions. - JM"]
 	},
+	/* Casing The Scene
+		Checking My Pockets
+		Decisions, Decisions
+		Drop From The Vents
+		Lefts & Rights
+		Lucky Bumble
+		Mid-Day Snack
+		Rollin Up My Sleeves
+		Case Closed!
+		First Aid Microkit
+		Flash Bangs
+		Gut Feeling
+		Hangry Sleuth
+		Hiding Spot
+		High Anxiety
+		Magnetic Handcuffs
+		Pastel Pistol
+		Police Band Radio
+		Static Grenades
+		Vibroknuckle Duster
+		X-Ray Spex */
+
 	{
 		name: "Case Closed!",
 		character: "Obscurity",
@@ -1373,7 +1515,7 @@ exports.defaultCards = [
 		type: "Action",
 		utilityValues: ["none"],
 		text: "Draw 2 cards. OR Draw 6 cards.",
-		flavor: ["I'm okay! Just tripped on the caution tape."],
+		flavor: ["I'm okay! Just tripped on the caution tape!"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/casingthescene.jpg"],
 		rating: ["2"],
 		tags: ["versatile", "card draw"],
@@ -1384,7 +1526,7 @@ exports.defaultCards = [
 		character: "Obscurity",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "Draw 2 cards. OR Vanish two target Gadgets.",
+		text: "Draw 2 cards OR Vanish two target Gadgets.",
 		flavor: ["37 cents...lip balm...oh! A granola bar!"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/checkingmypockets.jpg"],
 		rating: ["3"],
@@ -1404,13 +1546,13 @@ exports.defaultCards = [
 		comments: ["Great in the vanish deck hungry for triggers, but just fine otherwise. - JM"]
 	},
 	{
-		name: "Drop From The Ceiling",
+		name: "Drop From The Vents",
 		character: "Obscurity",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "Deal 4 damage to target Utility. OR Vanish target Gadget.",
+		text: "Deal 4 damage to target Utility OR Vanish target Gadget.",
 		flavor: ["Well, here goes nothing..."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/dropfromtheceiling.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/dropfromthevents.jpg"],
 		rating: ["4"],
 		tags: ["aggressive", "utility damage", "vanish"],
 		comments: ["Sometimes you just need to get rid of something. - JM"]
@@ -1679,6 +1821,27 @@ exports.defaultCards = [
 		tags: ["aggressive", "combo", "vanish", "build-around"],
 		comments: ["If you can set this up, it can finish out a game early. - JM"]
 	},
+	/* Careful Timing
+		Connecting The Dots
+		False Flag Attacks
+		Gathering Intel
+		Revenge Plot
+		Sanitize
+		Savate Kick
+		Seizing Assets
+		Untimely Data Breach
+		Counterfeit Face
+		Dead Drop
+		Dezinformatsiya
+		Experimental Serum
+		Honeypot Trap
+		Information Leaks
+		Lightning Bug
+		Music Box
+		Offshore Accounts
+		Paranoid Delusions
+		Psyop Campaign
+		Sabotage! */
 	{
 		name: "Careful Timing",
 		character: "Query",
@@ -1760,7 +1923,7 @@ exports.defaultCards = [
 		flavor: ["But who...?"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/falseflagattacks.jpg"],
 		rating: ["3"],
-		tags: ["aggressive", "player damage", "aggressive damage", "versatile", "spy"],
+		tags: ["aggressive", "player damage", "utility damage", "versatile", "spy"],
 		comments: ["Great way to dig yourself out of a hole. - JM"]
 	},
 	{
@@ -1991,6 +2154,27 @@ exports.defaultCards = [
 		tags: ["defensive", "combo", "healing"],
 		comments: ["Buys a turn and sets up a good steal. - JM"]
 	},
+	/* Anti-Virus
+		Code Loop
+		Empty Cache
+		Gorilla Press
+		Grooming
+		Logic Chain
+		Monkeys Paw
+		Overclocked Fists
+		Reboot
+		Updating
+		Back Plating
+		Bomb Vent
+		Charge Cable
+		Darwin Matrix
+		Eureka Engine
+		Guidance System
+		Laser Cannon
+		Microchip Heatsink
+		Skull Plating
+		Steel Gauntlet
+		Wrist Weapon */
 	{
 		name: "Anti-Virus",
 		character: "Robonobo",
@@ -2304,6 +2488,27 @@ exports.defaultCards = [
 		tags: ["versatile", "card draw", "feat"],
 		comments: ["Keeps your hand full if you don't want to make space in your deck for card draw. Combos like it too. - JM"]
 	},
+	/* Annoy
+		Bodyrang
+		Flatten Out
+		Fold Up
+		Impersonate
+		Petty Crime
+		Slingshot Uppercut
+		Slink Away
+		Whirling Dervish
+		Worm Into
+		Ballooning Bicep
+		Drill Fingers
+		Extend-O-Arms
+		Firm Grasp
+		Fleshplate
+		Hammer Fists
+		Long Con
+		Skeleton Key
+		Skin Wings
+		Tied Together
+		Wire Fraud */
 	{
 		name: "Annoy",
 		character: "Silicon Artist",
@@ -2628,6 +2833,27 @@ exports.defaultCards = [
 		tags: ["stretch", "combo", "build-around"],
 		comments: ["This card wins you games. Keep it safe and don't be afraid to cash them in. - JM"]
 	},
+	/* Adjust Antennae
+		Cosmic Flare
+		Courage From Beyond
+		Deconstruct
+		Good Vibrations
+		Infrared Pulsewave
+		Inner Peace
+		New Half-Lives
+		Oscillating Aura
+		Ultrasonic Quake
+		Afterimage
+		Crackling Air
+		Displaced Memory
+		Electric Touch
+		Fleeting Thoughts
+		Heat Shadow
+		Music Of The Spheres
+		Protective Bubble
+		Refractive Barrier
+		Resonance
+		Self-Reflection */
 	{
 		name: "Adjust Antennae",
 		character: "Wayfarer",
@@ -2877,7 +3103,7 @@ exports.defaultCards = [
 		flavor: ["Put your weapons down. You're going to get hurt."],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/refractivebarrier.jpg"],
 		rating: ["2"],
-		tags: ["aggressive", "aggro", "armor"],
+		tags: ["aggressive", "aggressive", "armor"],
 		comments: ["Playing aggro WF means playing lots of high-damage Utilities that you play over and over again. This one fits the bill. - JM"]
 	},
 	{

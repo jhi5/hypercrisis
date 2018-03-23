@@ -134,6 +134,10 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 		if(string == "Feat" && object.character === "Silicon Artist"){
 			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/safeat.png';
 		}
+		if(string == "Feat" && object.character === "Wayfarer"){
+			object.typeSymbol = 'http://res.cloudinary.com/jhi5/image/upload/wffeat.png';
+		}
+
 	}
 	createRating = function(object, array){
 		ratingSymbol = findAverage(array);
@@ -216,11 +220,14 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 			for(j=0;j<$scope.cards.length;j++){
 				if($scope.cards[j].character === $scope.currentCharacter){
 				for(k=0;k<$scope.cards[j].tags.length;k++){
-					$scope.tagArray.push($scope.cards[j].tags[k]);
+					if($scope.tagArray.indexOf($scope.cards[j].tags[k]) === -1){
+						$scope.tagArray.push($scope.cards[j].tags[k]);
+					}
 				}
 			}
 			}
 			$scope.tagArray = $scope.tagArray.sort();
+			console.log($scope.tagArray);
 			$scope.loaded = true;
 		});
 	}
@@ -411,6 +418,8 @@ angular.module('app').controller('mvCharacterCtrl', function($scope, $timeout, $
 				buttonbg = ("rb-bg");
 			}else if($scope.currentCharacter === "Silicon Artist"){
 				buttonbg = ("sa-bg");
+			}else if($scope.currentCharacter === "Wayfarer"){
+				buttonbg = ("wf-bg");
 			}
 			if(id === "#skillbutton"){				
 				$('#skillbutton').removeClass(buttonbg);

@@ -42,6 +42,7 @@ $ob-color = #cc6699
 $qu-color = #336633
 $rb-color = #666666
 $sa-color = #009933
+$wf-color = #336666
 
 body
     padding-top 8rem
@@ -230,8 +231,19 @@ body
 .sa-headshot
     background-image url("http://res.cloudinary.com/jhi5/image/upload/siliconartistcharselect.png")
 
-.pk-backgroundcolor
+.sa-backgroundcolor
     background-color $manual-color
+
+//wayfarer
+
+.wf-banner
+    background-image url('http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/wfsplash.jpg')
+
+.wf-bg
+    background-color $wf-color
+
+.wf-headshot
+    background-image url("http://res.cloudinary.com/jhi5/image/upload/wayfarercharselect.png")
 
 
 //charpage classes
@@ -708,16 +720,22 @@ body
 //character select classes
 
 .cs-banner
-    padding-top 40%
     background-size cover
-    margin-top 1rem
-    margin-bottom 1rem
-    
-.cs-bannerimg
-    background-image url("http://res.cloudinary.com/jhi5/image/upload/v1502742496/charselectsplash.jpg")
 
 .cs-bg
     background-color DodgerBlue
+
+.cs-btn
+    padding .25rem
+    font-size $l-label-ts
+    width 100%
+    background-color DodgerBlue
+    color #fff
+    &:hover
+        background-color Red
+        color #fff
+    &:focus
+        color #fff
 
 .cs-info
     border $m-border
@@ -738,6 +756,8 @@ body
     margin-bottom 3rem
     border $s-border
     line-height 100%
+    padding-top 1rem
+    padding-bottom 1rem
 
 .cs-ovals
     width 16.000em
@@ -746,8 +766,11 @@ body
     max-height 16.000em
     margin-bottom 0rem
 
+.cs-imgrow
+    width 70%
+
 .cs-row
-    width 100%
+    width 30%
 
 //main page classes
 
@@ -826,9 +849,7 @@ body
 .dl-button
     background-color DodgerBlue
     font-size $l-label-ts
-    padding-top 1rem
-    padding-bottom 1rem
-    margin-top 1.25rem
+    margin-top .1rem
     margin-bottom 0rem
 
 .dl-heading
@@ -873,7 +894,7 @@ body
 
 .fb-heading
     color black
-    font-size $l-label-ts
+    font-size $m-label-ts
     text-align center
     margin-top 1rem
     margin-bottom 0rem

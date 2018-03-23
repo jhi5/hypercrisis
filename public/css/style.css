@@ -175,8 +175,17 @@ body {
 .sa-headshot {
   background-image: url("http://res.cloudinary.com/jhi5/image/upload/siliconartistcharselect.png");
 }
-.pk-backgroundcolor {
+.sa-backgroundcolor {
   background-color: #c69;
+}
+.wf-banner {
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/wfsplash.jpg");
+}
+.wf-bg {
+  background-color: #366;
+}
+.wf-headshot {
+  background-image: url("http://res.cloudinary.com/jhi5/image/upload/wayfarercharselect.png");
 }
 .crp-3margin {
   margin-top: 3rem;
@@ -647,16 +656,24 @@ body {
   display: inline-block;
 }
 .cs-banner {
-  padding-top: 40%;
   background-size: cover;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-.cs-bannerimg {
-  background-image: url("http://res.cloudinary.com/jhi5/image/upload/v1502742496/charselectsplash.jpg");
 }
 .cs-bg {
   background-color: DodgerBlue;
+}
+.cs-btn {
+  padding: 0.25rem;
+  font-size: 5rem;
+  width: 100%;
+  background-color: DodgerBlue;
+  color: #fff;
+}
+.cs-btn:hover {
+  background-color: Red;
+  color: #fff;
+}
+.cs-btn:focus {
+  color: #fff;
 }
 .cs-info {
   border: 1rem solid #000;
@@ -677,6 +694,8 @@ body {
   margin-bottom: 3rem;
   border: 0.5rem solid #000;
   line-height: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
 }
 .cs-ovals {
   width: 16em;
@@ -685,8 +704,11 @@ body {
   max-height: 16em;
   margin-bottom: 0rem;
 }
+.cs-imgrow {
+  width: 70%;
+}
 .cs-row {
-  width: 100%;
+  width: 30%;
 }
 .main-b1 {
   background-image: url("http://res.cloudinary.com/jhi5/image/upload/panel1.png");
@@ -765,9 +787,7 @@ body {
 .dl-button {
   background-color: DodgerBlue;
   font-size: 5rem;
-  padding-top: 1rem;
-  padding-bottom: 1rem;
-  margin-top: 1.25rem;
+  margin-top: 0.1rem;
   margin-bottom: 0rem;
 }
 .dl-heading {
@@ -812,7 +832,7 @@ body {
 }
 .fb-heading {
   color: #000;
-  font-size: 5rem;
+  font-size: $m-label-ts;
   text-align: center;
   margin-top: 1rem;
   margin-bottom: 0rem;
