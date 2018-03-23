@@ -72,6 +72,7 @@ angular.module('app').controller('mvCharSelectCtrl', function($scope, $timeout, 
 			$("#cs-name").addClass("cs-bg");
 			$("#cs-name").addClass("cs-defaultname");
 			$("#cs-splash").addClass("cs-bannerimg");
+			$scope.splash = "http://res.cloudinary.com/jhi5/image/upload/v1502742496/charselectsplash.jpg";
 			if(id === "#de"){				
 				$("#cs-name").removeClass("de-bg");
 				$("#cs-splash").removeClass("de-banner");
