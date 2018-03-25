@@ -1514,24 +1514,24 @@ exports.defaultCards = [
 		character: "Obscurity",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "Draw 2 cards. OR Draw 6 cards.",
+		text: "2 damage to target Utilty OR Destroy target Villain.",
 		flavor: ["I'm okay! Just tripped on the caution tape!"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/casingthescene.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1522009184/casingthescene.jpg"],
 		rating: ["2"],
 		tags: ["versatile", "card draw"],
-		comments: ["Drawing six isn't as good as it seems. It's a big chunk of health. Nice card though. - JM"]
+		comments: ["Drawing six isn't as good as it seems. It's a big chunk of health. Nice card though. - JM", "Too easy to misplay, here's some increntive to turtle down for the detective deck. - JM"]
 	},
 	{
 		name: "Checking My Pockets",
 		character: "Obscurity",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "Draw 2 cards OR Vanish two target Gadgets.",
+		text: "Draw 3 cards OR Vanish two target Gadgets.",
 		flavor: ["37 cents...lip balm...oh! A granola bar!"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/checkingmypockets.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1522009193/checkingmypockets.jpg"],
 		rating: ["3"],
 		tags: ["versatile", "vanish", "card draw"],
-		comments: ["Two vanish triggers is a big deal. You won't want the card draw all too often. - JM"]
+		comments: ["Two vanish triggers is a big deal. You won't want the card draw all too often. - JM", "Juiced the card draw a bit - other charactes are outdrawing her too easily. - JM"]
 	},
 	{
 		name: "Decisions, Decisions...",
@@ -1586,24 +1586,24 @@ exports.defaultCards = [
 		character: "Obscurity",
 		type: "Utility",
 		utilityValues: ["5","0","0"],
-		text: "Whenever you play another card with the word OR in the text, you may Vanish target Gadget.",
+		text: "Whenever you play another card with the word OR in the text, you may heal 2.",
 		flavor: ["Hold up...I have an idea."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/gutfeeling.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1522009191/gutfeeling.jpg"],
 		rating: ["1"],
 		tags: ["combo", "vanish"],
-		comments: ["You can go down the modal path and basically play a detective deck. Fun combo piece. - JM"]
+		comments: ["You can go down the modal path and basically play a detective deck. Fun combo piece. - JM", "Played well, but not good enough in either deck. Here's more pillowfort to help against aggro. - JM"]
 	},
 	{
 		name: "Hiding Spot",
 		character: "Obscurity",
 		type: "Utility",
 		utilityValues: ["3","0","3"],
-		text: "When you play this, look at the top 2 cards of your deck. You may draw one and discard the other.",
+		text: "Whenever an opponent attacks with a Utility, that player must discard a card from their hand at random.",
 		flavor: ["Ok...so what do I do next?"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/hidingspot.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1522009194/hidingspot.jpg"],
 		rating: ["2"],
 		tags: ["defensive", "card draw"],
-		comments: ["Seeing two cards is big game. - JM"]
+		comments: ["Seeing two cards is big game. - JM", "Bad card draw is bad. Dueling tax seems thematic - JM"]
 	},
 	{
 		name: "High Anxiety",
@@ -1708,7 +1708,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Replace the word OR with the word AND on all of your cards this turn. Draw a card.",
 		flavor: ["Oh boy...I might need a second here."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/rollinupmysleeves.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1513143076/rollinupmysleeves.jpg"],
 		rating: ["2"],
 		tags: ["defensive", "card draw", "healing"],
 		comments: ["You have a lot of defensive options, but balancing healing and card draw can buy you turns. - JM"]
@@ -1730,21 +1730,21 @@ exports.defaultCards = [
 		character: "Obscurity",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "Heal 3 OR Draw 2 cards.",
+		text: "You may heal 3 OR Draw 3 cards.",
 		flavor: ["Getting flustered here...might need a sec."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/twiddlingmythumbs.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1522009194/twiddlingmythumbs.jpg"],
 		rating: ["2"],
 		tags: ["defensive", "card draw", "healing"],
-		comments: ["You have a lot of defensive options, but balancing healing and card draw can buy you turns. - JM"]
+		comments: ["You have a lot of defensive options, but balancing healing and card draw can buy you turns. - JM", "More card draw juicing to emphasize her identity. Good defensive card. - JM"]
 	},
 	{
 		name: "Vibroknuckle Duster",
 		character: "Obscurity",
 		type: "Utility",
 		utilityValues: ["1","3","0"],
-		text: "Gadget. When you Vanish this, play the top card of your deck.",
+		text: "Gadget. When you Vanish this, play the top card of your deck for free.",
 		flavor: ["Works like a charm."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/vibroknuckleduster.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1522009188/vibroknuckleduster.jpg"],
 		rating: ["3"],
 		tags: ["combo", "card draw", "aggressive", "vanish", "gadget"],
 		comments: ["Yeah the ability is good, but 3 fight is nothing to ignore. - JM"]
@@ -1778,12 +1778,12 @@ exports.defaultCards = [
 		character: "Obscurity",
 		type: "Feat",
 		utilityValues: ["none"],
-		text: "Each player discards their hand.",
+		text: "Each player discards their hand, then draws 2 cards.",
 		flavor: ["none"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/calmdown.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1522009188/calmdown.jpg"],
 		rating: ["1"],
 		tags: ["defensive", "disruption"],
-		comments: ["Obscurity needs to bide time in order to win. This helps. - JM"]
+		comments: ["Obscurity needs to bide time in order to win. This helps. - JM", "Still good, but not quite a time warp. - JM"]
 	},
 	{
 		name: "Quick Draw",
