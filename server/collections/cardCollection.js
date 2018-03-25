@@ -198,7 +198,7 @@ exports.defaultCards = [
 		utilityValues: ["4","1","0"],
 		text: "Hero. Whenever this deals damage to a Crossover, that card can't attack until your next turn.",
 		flavor: ["The Cold Blue Line"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/frostycop.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1520889955/frostycop.jpg"],
 		rating: ["2"],
 		tags: ["crossover", "defensive", "disruption"],
 		comments: ["Get out of jail free card for troublesome crossovers. - JM"]
@@ -294,7 +294,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","0"],
 		text: "Hero. When this deals damage to a Utility, destroy that Utility.",
 		flavor: ["Space Orc Slinging His Trademark Axe"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/morgthrakka.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1520890082/morgthrakka.jpg"],
 		rating: ["2"],
 		tags: ["crossover", "aggressive", "utility damage"],
 		comments: ["Doesn't fit in every deck, but helps to break open defensive decks or setup utility destruction combos. - JM"]
@@ -501,6 +501,18 @@ exports.defaultCards = [
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/usape.jpg"],
 		rating: ["2"],
 		tags: ["aggressive", "discard", "crossover"],
+		comments: ["If you can keep a full hand, this is great for a pressure game. Semper Fi! - JM"]
+	},
+	{
+		name: "V.I.N.N.",
+		character: "Crossover",
+		type: "Crossover",
+		utilityValues: ["4","1","0"],
+		text: "Hero. When you play V.I.N.N., another target Crossover gets +3 Armor. If you have Greg in play, this gets +2 Fight.",
+		flavor: ["Twin Diesel Doolie"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/vinn.jpg"],
+		rating: ["2"],
+		tags: ["aggressive", "combo", "armor", "crossover"],
 		comments: ["If you can keep a full hand, this is great for a pressure game. Semper Fi! - JM"]
 	},
 	{
@@ -738,7 +750,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","0"],
 		text: "Whenever a player discards one or more cards from their hand, you draw exactly that many cards.",
 		flavor: ["Guess she won't be needing this..."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/spoilsofwar.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1498676135/spoilsofwar.jpg"],
 		rating: ["1"],
 		tags: ["combo", "disruption", "discard"],
 		comments: ["Don't let this stay on the board too long or you'll pay for it. - JM"]
@@ -766,18 +778,6 @@ exports.defaultCards = [
 		rating: ["1"],
 		tags: ["disruption", "discard"],
 		comments: ["Excellent in the discard deck, but not unbeatable. Card draw can stuff this deck quickly. - JM"]
-	},
-	{
-		name: "Throwing Lead",
-		character: "Deadeye",
-		type: "Action",
-		utilityValues: ["none"],
-		text: "Target Utility gains Fight equal to your Aim Score until end of turn.",
-		flavor: ["Nowhere to run. Nowhere to hide."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/throwinglead.jpg"],
-		rating: ["3"],
-		tags: ["versatile", "combo", "fight", "aim"],
-		comments: ["If you get 2 or more out of this, it can close a game or break a utility. Great card. - JM"]
 	},
 	{
 		name: "Trick Shot",
@@ -1182,7 +1182,7 @@ exports.defaultCards = [
 		utilityValues: ["3","4","0"],
 		text: "Minion. To play this, you must first discard 2 cards.",
 		flavor: ["Down boy! Oooh, this one's got spice. I like it!"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/aggressivebodyguard.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/annoyedbodyguard.jpg"],
 		rating: ["3"],
 		tags: ["aggressive", "discard", "minion"],
 		comments: ["Keeping this alive for a turn or two can make up for the high cost. - JM"]
@@ -1228,12 +1228,12 @@ exports.defaultCards = [
 		character: "Knox",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "Deal 4 damage to each player.",
+		text: "Deal 3 damage to each player. If you have 6 or more cards in your hand, you may play this for free.",
 		flavor: ["Destruction runs in the family!"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/collateraldamage.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1521951917/collateraldamage.jpg"],
 		rating: ["2"],
-		tags: ["aggressive", "player damage"],
-		comments: ["You can always minion this away. - JM"]
+		tags: ["aggressive", "player damage", "combo"],
+		comments: ["You can always minion this away. - JM", "Respecced for Knox nerfs - very good. - JM"]
 	},
 	{
 		name: "Cut-Rate Merc",
@@ -1242,7 +1242,7 @@ exports.defaultCards = [
 		utilityValues: ["2","2","0"],
 		text: "Minion. When you play this, draw a card.",
 		flavor: ["3"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/cutratemerc.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1521951929/cutratemerc.jpg"],
 		rating: ["Ok, who spilled ink on all of the bank stuff?"],
 		tags: ["versatile", "card draw", "minion"],
 		comments: ["I always play this - it replaces itself and is good early. - JM"]
@@ -1254,7 +1254,7 @@ exports.defaultCards = [
 		utilityValues: ["4","0","2"],
 		text: "Minion. You have no maximum hand size.",
 		flavor: ["Donnelson! Time to feed the feral dogs! Where is he?"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/donaldsonthebutler.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/donnelsonthebutler.jpg"],
 		rating: ["4"],
 		tags: ["defensive", "armor", "card draw", "minion"],
 		comments: ["The ultimate minion. You can stack armor on this guy all day long. - JM"]
@@ -1284,18 +1284,6 @@ exports.defaultCards = [
 		comments: ["Worth the cost. Goon + Bodyguard is very hard to come back from. - JM", "-1 FP, +1 HP to make keeping it around more enticing. - JM"]
 	},
 	{
-		name: "Extortion",
-		character: "Knox",
-		type: "Utility",
-		utilityValues: ["3","0","3"],
-		text: "At the end of your turn, draw a card.",
-		flavor: ["I expect fealty."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/extortingtheboard.jpg"],
-		rating: ["2"],
-		tags: ["defensive", "combo", "card draw", "armor"],
-		comments: ["It won't win you the game, but it buys you a turn or two. Big target. - JM"]
-	},
-	{
 		name: "Father's Inheritance",
 		character: "Knox",
 		type: "Utility",
@@ -1308,16 +1296,16 @@ exports.defaultCards = [
 		comments: ["Slots perfectly into the slower card draw combo deck. I've been impressed by this. - JM", "+1HP to make it stand out, card is fun. - JM"]
 	},
 	{
-		name: "Flood The Streets",
+		name: "Freeman",
 		character: "Knox",
 		type: "Utility",
-		utilityValues: ["4","0","0"],
-		text: "Whenever you play a Minion, you have no maximum hand size that turn turn. Whenever a Minion is destroyed, draw a card.",
-		flavor: ["Spread fear in my name! Make them respect me!"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/floodthestreets.jpg"],
+		utilityValues: ["2","2","0"],
+		text: "Minion. If you have 6 or more cards in your hand, you may play this for free.",
+		flavor: ["No paycheck today, Travis. Bad henchperson."],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/freeman.jpg"],
 		rating: ["2"],
-		tags: ["combo", "card draw", "minion"],
-		comments: ["The aggressive deck runs a lot of minions and this will help you if you run out of gas. - JM", "Retooled to give motive to keep around - JM"]
+		tags: ["minion", "combo"],
+		comments: ["Not outstanding, but solid. Curious about its role in the card draw build. - JM"]
 	},
 	{
 		name: "Get Them You Idiots!",
@@ -1350,11 +1338,23 @@ exports.defaultCards = [
 		utilityValues: ["3","0","3"],
 		text: "Each opponent draws 2 extra cards at the end of their turn.",
 		flavor: ["...are too dumb to reason with my brilliance! And..."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/incoherentranting.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/incoherentrants.jpg"],
 		rating: ["3"],
 		tags: ["aggressive", "combo", "player damage"],
 		comments: ["Knox needs the game to end quickly and this definitely fits the bill. - JM"]
 	},
+	{
+		name: "Magpie",
+		character: "Knox",
+		type: "Utility",
+		utilityValues: ["4","0","2"],
+		text: "Minion. Whenever you play a Minion, Magpie gets +2 Fight this turn. Whenever a Minion is destroyed, draw a card.",
+		flavor: ["I don't have time to deal with this. Ladybird!"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/magpie.jpg"],
+		rating: ["2"],
+		tags: ["combo", "minion", "card draw"],
+		comments: ["Minion engine card with a pretty solid upside of hitting for 4. - JM"]
+	},	
 	{
 		name: "Moronic Gangster",
 		character: "Knox",
@@ -1366,18 +1366,18 @@ exports.defaultCards = [
 		rating: ["2"],
 		tags: ["versatile", "minion"],
 		comments: ["Solid stats. Don't do much, but does it well. - JM"]
-	},
+	},	
 	{
-		name: "Shatter To Bits",
+		name: "Noble Sacrifice",
 		character: "Knox",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "Deal damage to target Utility equal to its current Armor Value. Draw a card.",
-		flavor: ["Broken! We've broken all of your best toys!"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/shattertobits.jpg"],
-		rating: ["1"],
-		tags: ["disruption", "card draw", "utility damage"],
-		comments: ["This is a great sideboard card between matches. Excellent against pillowfort decks. - JM"]
+		text: "Destroy one of your Minions. Each of your Minions gets +2 Fight this turn.",
+		flavor: ["Wow, he's just going in head first huh?"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/noblesacrifice.jpg"],
+		rating: ["2"],
+		tags: ["aggressive", "minion", "combo"],
+		comments: ["Can represent a 4 point swing, so better than it looks. - JM"]
 	},
 	{
 		name: "Sinister Machinations",
@@ -1404,13 +1404,13 @@ exports.defaultCards = [
 		comments: ["This is so much better than drawing two off the top of the deck. - JM"]
 	},
 	{
-		name: "Violent Strike",
+		name: "Vicious Strike",
 		character: "Knox",
 		type: "Action",
 		utilityValues: ["none"],
 		text: "2 damage to target Utility. If you have 6 or more cards in your hand, you may play this for free.",
 		flavor: ["Deadeye, take care of this."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/violentstrike.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/viciousstrike.jpg"],
 		rating: ["3"],
 		tags: ["combo", "utility damage", "card draw"],
 		comments: ["This is playable without the bonus but excellent with it. - JM", "-1D because the aggro deck doesn't need great removal. - JM"]
@@ -1420,24 +1420,24 @@ exports.defaultCards = [
 		character: "Knox",
 		type: "Feat",
 		utilityValues: ["none"],
-		text: "Discard your hand. 1 damage to each opponent for each card discarded this way.",
+		text: "Discard up to 8 cards from your hand. 1 damage to each opponent for each card discarded this way.",
 		flavor: ["none"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/cruelplot.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1521951929/cruelplot.jpg"],
 		rating: ["2"],
 		tags: ["combo", "discard", "player damage"],
-		comments: ["Good in the aggressive deck but better in the card draw combo build. - JM"]
+		comments: ["Good in the aggressive deck but better in the card draw combo build. - JM", "Respecced to have a hard ceiling after breaking in playtesting. - JM"]
 	},
 	{
 		name: "Deep Pockets",
 		character: "Knox",
 		type: "Feat",
 		utilityValues: ["none"],
-		text: "Draw 7 cards.",
+		text: "Draw 4 cards.",
 		flavor: ["none"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/deeppockets.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1521951929/deeppockets.jpg"],
 		rating: ["1"],
 		tags: ["combo", "build-around", "card draw"],
-		comments: ["You can't do this with an overly aggressive deck because you'll be dead by turn five. - JM"]
+		comments: ["You can't do this with an overly aggressive deck because you'll be dead by turn five. - JM", "Turns out this is way too strong in the aggro deck, still a good grip. - JM"]
 	},
 	{
 		name: "Distracting Insults",
@@ -1468,12 +1468,12 @@ exports.defaultCards = [
 		character: "Knox",
 		type: "Feat",
 		utilityValues: ["none"],
-		text: "Destroy each of your Utilities with Minion. Deal 3 damage to target opponent for each Utility destroyed.",
+		text: "Return each of your Minions to your hand. 3 damage to target opponent for each Minion returned to your hand this way.",
 		flavor: ["none"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/recklessheist.jpg"],
 		rating: ["3"],
 		tags: ["aggressive", "minion", "player damage"],
-		comments: ["Having up to nine damage on hand is nothing to ignore. Forces players into defensive positions. - JM"]
+		comments: ["Having up to nine damage on hand is nothing to ignore. Forces players into defensive positions. - JM", "A potentially weaker version with upside for hand size deck. Was fine as is but too similar to other feats. - JM"]
 	},
 	/* Casing The Scene
 		Checking My Pockets
@@ -1624,7 +1624,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","3"],
 		text: "Replace the word OR with the word AND on all of your cards.",
 		flavor: ["You picked the wrong time, buddy. I'm missing lunch."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/givingmyall.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/hangrysleuth.jpg"],
 		rating: ["2"],
 		tags: ["combo", "build-around"],
 		comments: ["If you've got a lot of modal cards, this is absolutely worth the effort of building around. - JM"]
@@ -1672,7 +1672,7 @@ exports.defaultCards = [
 		utilityValues: [""],
 		text: "Heal 2. Draw a card.",
 		flavor: ["Whew. Long day. Anybody hungry?"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/magnetichandcuffs.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/middaysnack.jpg"],
 		rating: ["3"],
 		tags: ["aggressive", "utility damage", "vanish"],
 		comments: ["This into player damage gets rid of things permanently. - JM"]
@@ -1708,19 +1708,19 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Replace the word OR with the word AND on all of your cards this turn. Draw a card.",
 		flavor: ["Oh boy...I might need a second here."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/twiddlingmythumbs.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/rollinupmysleeves.jpg"],
 		rating: ["2"],
 		tags: ["defensive", "card draw", "healing"],
 		comments: ["You have a lot of defensive options, but balancing healing and card draw can buy you turns. - JM"]
 	},
 	{
-		name: "Static Grenade",
+		name: "Static Grenades",
 		character: "Obscurity",
 		type: "Utility",
 		utilityValues: ["2","2","0"],
 		text: "Gadget. When you Vanish this, deal 1 damage to each opponent and each of their Utilities.",
 		flavor: ["It's non-lethal, but it is really loud."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/staticgrenade.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/staticgrenades.jpg"],
 		rating: ["3"],
 		tags: ["aggressive", "combo", "vanish", "gadget"],
 		comments: ["This deals a lot of damage over the course of the game if kept hidden. - JM"]
@@ -1738,13 +1738,13 @@ exports.defaultCards = [
 		comments: ["You have a lot of defensive options, but balancing healing and card draw can buy you turns. - JM"]
 	},
 	{
-		name: "Vibroknuckle Dusters",
+		name: "Vibroknuckle Duster",
 		character: "Obscurity",
 		type: "Utility",
 		utilityValues: ["1","3","0"],
 		text: "Gadget. When you Vanish this, play the top card of your deck.",
 		flavor: ["Works like a charm."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/vibroknuckledusters.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/vibroknuckleduster.jpg"],
 		rating: ["3"],
 		tags: ["combo", "card draw", "aggressive", "vanish", "gadget"],
 		comments: ["Yeah the ability is good, but 3 fight is nothing to ignore. - JM"]
@@ -1933,7 +1933,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Reveal the top card of your deck. If that card is an Action, play it for free. If not, draw that card.",
 		flavor: ["So little time."],
-		illustrations: ["hhttp://res.cloudinary.com/jhi5/image/upload/v1512584971/gatheringintel.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/gatheringintel.jpg"],
 		rating: ["2"],
 		tags: ["defensive", "card draw", "disruption", "combo", "spy"],
 		comments: ["Great in a combo or thief deck. - JM"]
@@ -1993,7 +1993,7 @@ exports.defaultCards = [
 		utilityValues: ["3","2","0"],
 		text: "Whenever this damages an opponent, that player discards a card.",
 		flavor: ["Take one more step and you'll be bankrupt."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/bankaccountnumbers.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/offshoreaccounts.jpg"],
 		rating: ["2"],
 		tags: ["aggressive", "disruption"],
 		comments: ["Isn't fancy but gets the job done. - JM"]
@@ -2125,7 +2125,7 @@ exports.defaultCards = [
 		utilityValues: ["none"],
 		text: "Deal 3 damage to target Utility and target opponent.",
 		flavor: ["none"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/wherewereyougoing.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512580460/wherewereyougoing.jpg"],
 		rating: ["4"],
 		tags: ["aggressive", "player damage", "utility damage"],
 		comments: ["Not quite as good against defensive decks, but knocks most things out of the way. - JM"]
@@ -2266,7 +2266,7 @@ exports.defaultCards = [
 		utilityValues: ["3","0","0"],
 		text: "Whenever you Evolve, you may destroy this. If you do, deal 3 damage to target Opponent.",
 		flavor: ["Robo has idea! Wait...wait...forgot what it was."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/robohasidea.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/eurekaengine.jpg"],
 		rating: ["1"],
 		tags: ["aggressive", "player damage", "combo"],
 		comments: ["Oddly enough, much worse in the Evolve deck. Aggro builds love this easy damage though. - JM"]
@@ -2564,7 +2564,7 @@ exports.defaultCards = [
 		utilityValues: ["1", "2", "0"],
 		text: "When this deals damage to a Utility, you may STRETCH.",
 		flavor: ["High five?"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/icanstopanytime.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/extendoarms.jpg"],
 		rating: ["1"],
 		tags: ["card draw", "versatile", "stretch"],
 		comments: ["Not useful in every deck, but a great early play. - JM"]
@@ -2586,7 +2586,7 @@ exports.defaultCards = [
 		character: "Silicon Artist",
 		type: "Action",
 		utilityValues: ["none"],
-		text: "You may replace any of your STRETCHED! cards with Utilities in your hand.",
+		text: "You may replace any of your BODY PART cards with Utilities in your hand.",
 		flavor: ["I'M MELTING! OH WHAT A WORLD!"],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/flattenout.jpg"],
 		rating: ["1"],
@@ -2802,7 +2802,7 @@ exports.defaultCards = [
 		character: "Silicon Artist",
 		type: "Feat",
 		utilityValues: ["none"],
-		text: "Destroy all of your STRETCHED! cards and draw the top card of your discapile for each.",
+		text: "Destroy all of your BODY PARTS and draw the top card of your discard pile for each.",
 		flavor: [""],
 		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/pullingshapes.jpg"],
 		rating: ["2"],
@@ -2810,25 +2810,25 @@ exports.defaultCards = [
 		comments: ["This can be a good buffer, but is quite unreliable once stretch chains get broken. - JM", "Stretch and Armor can get confusing. This is a bit more on-theme for the defensive build. - JM"]
 	},
 	{
-		name: "Spread Thin",
+		name: "Snapback",
 		character: "Silicon Artist",
 		type: "Feat",
 		utilityValues: ["none"],
 		text: "Stretch twice.",
 		flavor: [""],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/spreadthin.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/snapback.jpg"],
 		rating: ["3"],
 		tags: ["stretch", "versatile", "build-around", "combo"],
 		comments: ["This isn't always easy to get full value with, but can be very powerful. Try a Long Con... - JM"]
 	},
 	{
-		name: "STRETCHED",
+		name: "BODY PART",
 		character: "Silicon Artist",
 		type: "Special",
 		utilityValues: ["1", "0", "0"],
 		text: "This is a copy of the card to its right. When this is destoryed, place it under your Character card.",
 		flavor: [""],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/stretched.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1512584971/bodypart.jpg"],
 		rating: ["4"],
 		tags: ["stretch", "combo", "build-around"],
 		comments: ["This card wins you games. Keep it safe and don't be afraid to cash them in. - JM"]
@@ -2897,7 +2897,7 @@ exports.defaultCards = [
 		utilityValues: [""],
 		text: "REVERB. Deal 2 damage to target opponent.",
 		flavor: ["I'm overwhelmed with feelings!"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/cosmicflares.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/cosmicflare.jpg"],
 		rating: ["4"],
 		tags: ["reverb", "player damage"],
 		comments: ["The best Reverb action and there's no reason not to play it. - JM"]
@@ -3017,7 +3017,7 @@ exports.defaultCards = [
 		utilityValues: [""],
 		text: "REVERB. All Utilities get -3 Armor.",
 		flavor: ["That's nice. Put your toys away."],
-		illustrations: ["hhttp://res.cloudinary.com/jhi5/image/upload/v1512584971/infraredpulsewave.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/infraredpulsewave.jpg"],
 		rating: ["1"],
 		tags: ["aggressive", "reverb"],
 		comments: ["Very conditional but great out of the sideboard. - JM"]
@@ -3029,7 +3029,7 @@ exports.defaultCards = [
 		utilityValues: [""],
 		text: "Heal 10 if you have 10 or more cards in your Trash.",
 		flavor: ["I haven't felt this good in a century!"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/hypersonicharmony.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/innerpeace.jpg"],
 		rating: ["3"],
 		tags: ["build-around", "combo", "healing"],
 		comments: ["This is a very strong incentive to go Trash since it's hard to get to 10 without taking hits. - JM"]
@@ -3083,13 +3083,13 @@ exports.defaultCards = [
 		comments: ["Your best defensive option, WF needs defense because Reverb can make you very fragile. - JM"]
 	},
 	{
-		name: "Pulse Of The Void",
+		name: "Pulse From The Void",
 		character: "Wayfarer",
 		type: "Action",
 		utilityValues: [""],
 		text: "Target Utility gets +10 Fight this turn if you have 10 or more cards in your Trash.",
 		flavor: ["I've been everywhere. You're nothing."],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/pulseofthevoid.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/pulsefromthevoid.jpg"],
 		rating: ["2"],
 		tags: ["build-around", "combo", "fight"],
 		comments: ["Not a bad win condition but not quite as good as direct damage. - JM"]
@@ -3161,7 +3161,7 @@ exports.defaultCards = [
 		utilityValues: [""],
 		text: "Discard any number of cards from your hand. Deal that much damage to target Utility.",
 		flavor: [""],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/sonicbarrage.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1498676135/sonicboom.jpg"],
 		rating: ["3"],
 		tags: ["discard", "utility damage"],
 		comments: ["WF has a hard time with removal but this is pretty solid. - JM"]
@@ -3173,7 +3173,7 @@ exports.defaultCards = [
 		utilityValues: [""],
 		text: "REVERB.",
 		flavor: [""],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/innerreflection.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1498676135/tremors.jpg"],
 		rating: ["4"],
 		tags: ["build-around", "reverb"],
 		comments: ["You'll probably play this 90% of the time just to stay alive on turn 3. - JM"]
@@ -3185,7 +3185,7 @@ exports.defaultCards = [
 		utilityValues: [""],
 		text: "Deal 3 damage to each player.",
 		flavor: [""],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/warpreality.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1498676135/warpreality.jpg"],
 		rating: ["2"],
 		tags: ["aggressive", "player damage"],
 		comments: ["Useful for multiplayer but you can negate this with a Reverb. - JM"]
@@ -3197,7 +3197,7 @@ exports.defaultCards = [
 		utilityValues: [""],
 		text: "Play the top card of your discard pile.",
 		flavor: [""],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/e_auto_contrast,q_54:420,r_25/v1498676135/weirdenergy.jpg"],
+		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/a_270/v1498676135/weirdenergy.jpg"],
 		rating: ["3"],
 		tags: ["combo", "versatile"],
 		comments: ["I've been very impressed by this - WF gets a lot of options. - JM"]
