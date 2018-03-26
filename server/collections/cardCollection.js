@@ -1666,18 +1666,6 @@ exports.defaultCards = [
 		comments: ["This into player damage gets rid of things permanently. - JM", "Added clause to give her help with Crossovers - JM"]
 	},
 	{
-		name: "Mid-Day Snack",
-		character: "Obscurity",
-		type: "Action",
-		utilityValues: [""],
-		text: "Heal 2. Draw a card.",
-		flavor: ["Whew. Long day. Anybody hungry?"],
-		illustrations: ["http://res.cloudinary.com/jhi5/image/upload/v1512584971/middaysnack.jpg"],
-		rating: ["3"],
-		tags: ["aggressive", "utility damage", "vanish"],
-		comments: ["This into player damage gets rid of things permanently. - JM"]
-	},
-	{
 		name: "Pastel Pistol",
 		character: "Obscurity",
 		type: "Utility",
