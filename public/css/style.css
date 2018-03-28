@@ -376,6 +376,7 @@ body {
   line-height: 3.5rem;
 }
 .crp-tabcontent {
+  min-height: 39.333em;
   box-shadow: 0rem 0rem 0rem rgba(0,0,0,0.5);
 }
 .crp-taglbl {
@@ -386,8 +387,8 @@ body {
   margin-bottom: 0;
 }
 .tab-content {
-  min-height: 39.333em;
   margin-top: 1rem;
+  margin-bottom: 1rem;
 }
 .md-armor {
   background-color: #fcee21;
@@ -941,12 +942,16 @@ body {
   background-size: cover;
 }
 .ar-cardheading {
-  font-size: 2rem;
-  padding: 1.5%;
+  font-size: m-heading-ts;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   line-spacing: 1rem;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
 }
 .ar-cardpanel {
-  min-height: 20em;
+  min-height: 15em;
   line-height: 50%;
 }
 .ar-cardrow {
@@ -989,6 +994,13 @@ body {
   width: 99%;
   margin: 0.5%;
 }
+.ar-skillimage {
+  margin: auto 0;
+  background-color: #fff;
+  margin-left: 10%;
+  margin-right: 10%;
+  width: 80%;
+}
 .ar-skillpanel {
   border-top: solid 0.1rem DodgerBlue;
   border-bottom: solid 0.1rem DodgerBlue;
@@ -1024,6 +1036,7 @@ body {
 .ar-tutbtn {
   font-size: 3rem;
   line-height: 100%;
+  margin-bottom: 0.5rem;
 }
 .ar-tutbtn:hover {
   color: #fff;

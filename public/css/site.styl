@@ -437,6 +437,7 @@ body
     line-height 3.5rem
 
 .crp-tabcontent
+    min-height 39.333em
     box-shadow 0rem 0rem 0rem rgba(0, 0, 0, 0.5)
 
 .crp-taglbl
@@ -447,8 +448,8 @@ body
     margin-bottom 0 
 
 .tab-content
-    min-height 39.333em
     margin-top 1rem
+    margin-bottom 1rem
 
 //cardviewer modal classes
 
@@ -1007,12 +1008,16 @@ body
     background-size cover
 
 .ar-cardheading
-    font-size $s-heading-ts
-    padding 1.5%
+    font-size m-heading-ts
+    padding-top .5rem
+    padding-bottom .5rem
     line-spacing 1rem
+    width 80%
+    margin-left 10%
+    margin-right 10%
 
 .ar-cardpanel
-    min-height 20em
+    min-height 15em
     line-height 50%
 
 .ar-cardrow
@@ -1054,6 +1059,13 @@ body
 .ar-row
     width 99%
     margin 0.5%
+
+.ar-skillimage
+    margin auto 0
+    background-color white
+    margin-left 10%
+    margin-right 10%
+    width 80%
 
 .ar-skillpanel
     border-top solid 0.1rem DodgerBlue
@@ -1099,6 +1111,7 @@ body
     &:focus
         color white
         background-color red
+    margin-bottom .5rem
 
 .ar-tutheading
     line-height 125%
